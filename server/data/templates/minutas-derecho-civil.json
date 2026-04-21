@@ -135,5 +135,27 @@
       { "name": "valor_letras", "label": "Valor comercial de cada inmueble en letras (ej: cien millones de pesos m/cte)", "type": "text", "required": true },
       { "name": "valor_numeros", "label": "Valor comercial en números (ej: 100.000.000)", "type": "text", "required": true }
     ]
+  },
+  {
+    "id": 5,
+    "title": "Modelo de contrato de compraventa de bien mueble con pacto de reserva de dominio",
+    "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}, entre los suscritos {{nombre_comprador}}, mayor y vecino de {{ciudad_comprador}}, quien en adelante se denominará El Comprador, y {{nombre_vendedor}}, mayor y vecino de {{ciudad_vendedor}}, en su condición de representante legal de la empresa {{nombre_empresa}}, domiciliada en {{domicilio_empresa}}, han celebrado un contrato de compraventa con pacto de reserva de dominio, que se regirá por las siguientes cláusulas:\n\nPRIMERA: El vendedor ha entregado desde hoy a El Comprador, en perfecto buen estado, y el último confiesa haber recibido el bien mueble que a continuación se describe: {{descripcion_bien}}.\n\nSEGUNDA: El Comprador se obliga a conservar en debida forma el bien antes citado, pero tendrá facultad para hacer uso de dicho bien destinándolo en su provecho al objeto u objetos para los cuales fueron construidos.\n\nTERCERA: El Vendedor, no obstante, seguirá ejerciendo la posesión del bien de que se trata, dado que El Comprador solamente tendrá la tenencia del bien indicado, en lugar y a nombre de El Vendedor, de acuerdo con lo previsto en el artículo 762 del Código Civil.\n\nCUARTA: El precio de este contrato es la suma de {{valor_letras}} (${{valor_numeros}}) que El Comprador se obliga a pagar a El Vendedor, en la ciudad de {{ciudad_pago}}, en la siguiente forma: {{forma_pago}}.\n\nQUINTA: El dominio del bien objeto de este contrato no se transferirá a El Comprador sino en virtud del pago total del precio, pues el vendedor se reserva expresamente el dominio de lo vendido.\n\nSEXTA: La mora en el pago de una cualquiera de las cuotas, causará de inmediato el vencimiento de todas las demás cuotas pendientes aún cuando no estuvieren vencidas. Desde el momento de la mora El Vendedor podrá exigir ejecutivamente el pago de las cuotas pendientes o la entrega inmediata del bien mueble de su propiedad. Si El Vendedor opta por lo último no tendrá que devolver, por ningún motivo, a El Comprador, las cuotas que éste le hubiere abonado, las cuales retendrá como indemnización por el uso, deterioro y demérito del objeto u objetos a que se refiere este contrato, como indemnización por el incumplimiento de esta convención.\n\nSÉPTIMA: Es entendido que si El Comprador vende, grava o dispone en cualquier forma del bien o bienes sobre que versa este contrato, incurre en el delito de abuso de confianza, de conformidad con el Código Penal.\n\nOCTAVA: En el caso de embargo o secuestro del bien o bienes en referencia, el comprador queda obligado a lo siguiente: a) A dar aviso inmediatamente a El Vendedor; b) A oponerse al embargo o secuestro manifestando que es mero tenedor; y c) A hacer todas las diligencias a su alcance a fin de evitar el embargo o secuestro.\n\nPara constancia, se firma en dos ejemplares de un mismo tenor, por las partes que intervienen en la negociación y ante dos testigos.\n\nEL VENDEDOR\n_________________________\nCC Nº: ...........\n\nEL COMPRADOR\n_________________________\nCC Nº: ...........",
+    "fields": [
+      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma el contrato", "type": "text", "required": true },
+      { "name": "dia", "label": "Día (número)", "type": "number", "required": true },
+      { "name": "mes", "label": "Mes (ej: abril)", "type": "text", "required": true },
+      { "name": "anio", "label": "Año (ej: 2026)", "type": "number", "required": true },
+      { "name": "nombre_comprador", "label": "Nombre completo del comprador", "type": "text", "required": true },
+      { "name": "ciudad_comprador", "label": "Ciudad o municipio donde vive el comprador", "type": "text", "required": true },
+      { "name": "nombre_vendedor", "label": "Nombre completo del vendedor o representante legal", "type": "text", "required": true },
+      { "name": "ciudad_vendedor", "label": "Ciudad o municipio donde vive el vendedor", "type": "text", "required": true },
+      { "name": "nombre_empresa", "label": "Nombre de la empresa vendedora (si aplica, si no escriba: no aplica)", "type": "text", "required": true },
+      { "name": "domicilio_empresa", "label": "Ciudad donde está domiciliada la empresa (si no aplica escriba: no aplica)", "type": "text", "required": true },
+      { "name": "descripcion_bien", "label": "Descripción detallada del bien mueble (ej: vehículo marca Toyota, modelo 2020, placa ABC123)", "type": "text", "required": true },
+      { "name": "valor_letras", "label": "Precio total en letras (ej: diez millones de pesos m/cte)", "type": "text", "required": true },
+      { "name": "valor_numeros", "label": "Precio total en números (ej: 10.000.000)", "type": "text", "required": true },
+      { "name": "ciudad_pago", "label": "Ciudad donde se realizará el pago", "type": "text", "required": true },
+      { "name": "forma_pago", "label": "Forma de pago (ej: cuotas mensuales de $500.000 durante 20 meses)", "type": "text", "required": true }
+    ]
   }
 ]

@@ -72,7 +72,14 @@ const FIELD_HELP = {
   fecha_escritura2: 'Escribe la fecha de la escritura con la que la segunda parte adquirió su bien. Ejemplo: 15 de mayo de 2018.',
   notaria2: 'Solo el nombre de la notaría donde se otorgó la escritura del bien de la segunda parte, sin escribir la palabra Notaría. Ejemplo: Única, Primera.',
   circulo2: 'Solo la ciudad del círculo notarial del bien de la segunda parte. Ejemplo: El Cerrito, Cali.',
-  folio_matricula2: 'Es el número de matrícula inmobiliaria del bien de la segunda parte. Ejemplo: 370-123456.'
+  folio_matricula2: 'Es el número de matrícula inmobiliaria del bien de la segunda parte. Ejemplo: 370-123456.',
+  ciudad_comprador: 'Escribe la ciudad o municipio donde vive el comprador. Ejemplo: Cali, El Cerrito, Bogotá.',
+  ciudad_vendedor: 'Escribe la ciudad o municipio donde vive el vendedor. Ejemplo: Cali, El Cerrito, Bogotá.',
+  nombre_empresa: 'Si el vendedor actúa como representante de una empresa, escribe el nombre completo de esa empresa. Si no aplica escribe: no aplica.',
+  domicilio_empresa: 'Escribe la ciudad donde está registrada la empresa. Si no aplica escribe: no aplica.',
+  descripcion_bien: 'Describe detalladamente el bien mueble que se vende. Ejemplo: vehículo marca Toyota, modelo Corolla 2020, color blanco, placa ABC123. O: televisor Samsung 55 pulgadas, serial 12345.',
+  ciudad_pago: 'Escribe la ciudad donde el comprador realizará los pagos. Ejemplo: Cali, El Cerrito.',
+  forma_pago: 'Describe cómo se pagará el precio. Ejemplo: cuotas mensuales de $500.000 durante 20 meses, pagaderas los días 5 de cada mes.'
 }
 
 function TooltipField({ field, onChange }) {
