@@ -11,9 +11,15 @@ function generateFromTemplate(template, data) {
   return filled;
 }
 
+function cleanTitle(title) {
+  return title
+    .replace(/^Modelo de /i, '')
+    .replace(/^Modelo /i, '');
+}
+
 function toHTML(filledText, title) {
-  const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:'];
-  const FIRMAS = ['EL PROMINENTE', 'TESTIGOS'];
+  const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:', 'PRIMERA.', 'SEGUNDA.', 'TERCERA.', 'CUARTA.', 'QUINTA.', 'SEXTA.', 'SÉPTIMA.', 'OCTAVA.'];
+  const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE'];
 
   const parrafos = filledText
     .split('\n')
@@ -65,15 +71,15 @@ function toHTML(filledText, title) {
   </style>
 </head>
 <body>
-  <h1>${title}</h1>
+  <h1>${cleanTitle(title)}</h1>
   ${parrafos}
 </body>
 </html>`;
 }
 
 async function toDocx(filledText, title) {
-  const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:'];
-  const FIRMAS = ['EL PROMINENTE', 'TESTIGOS'];
+  const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:', 'PRIMERA.', 'SEGUNDA.', 'TERCERA.', 'CUARTA.', 'QUINTA.', 'SEXTA.', 'SÉPTIMA.', 'OCTAVA.'];
+  const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE'];
 
   const lines = filledText
     .split('\n')
@@ -82,13 +88,12 @@ async function toDocx(filledText, title) {
 
   const paragraphs = [];
 
-  // Título
   paragraphs.push(new Paragraph({
     alignment: AlignmentType.CENTER,
     spacing: { after: 200 },
     children: [
       new TextRun({
-        text: title.toUpperCase(),
+        text: cleanTitle(title).toUpperCase(),
         bold: true,
         size: 28,
         font: 'Times New Roman'
@@ -96,7 +101,6 @@ async function toDocx(filledText, title) {
     ]
   }));
 
-  // Contenido
   lines.forEach(line => {
     const isClausula = CLAUSULAS.some(c => line.startsWith(c));
     const isFirma = FIRMAS.some(f => line.startsWith(f));
@@ -158,7 +162,7 @@ router.post('/word', async (req, res) => {
     const buffer = await toDocx(filled, title);
     res.set({
       'Content-Type': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-      'Content-Disposition': `attachment; filename="${title}.docx"`
+      'Content-Disposition': `attachment; filename="${cleanTitle(title)}.docx"`
     });
     res.send(buffer);
   } catch (error) {
