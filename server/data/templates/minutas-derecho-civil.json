@@ -66,5 +66,74 @@
       { "name": "hora_escritura", "label": "Hora de la escritura (ej: 10:00 AM)", "type": "text", "required": true },
       { "name": "responsable_gastos", "label": "Quién paga los gastos (ej: el donante / el donatario / ambos por partes iguales)", "type": "text", "required": true }
     ]
+  },
+
+  {
+    "id": 3,
+    "title": "Modelo de contrato de compraventa de inmueble",
+    "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos {{nombre_vendedor}} (vendedor) y {{nombre_comprador}} (comprador), ambos mayores de edad, vecinos de esta ciudad, de estado civil {{estado_civil_vendedor}} y {{estado_civil_comprador}} respectivamente, {{sociedad_conyugal}}, identificados como aparece al pie de nuestras respectivas firmas, manifestamos que mediante el presente escrito hemos decidido celebrar un contrato de compraventa que consignamos en las siguientes cláusulas:\n\nPRIMERA: {{nombre_vendedor}} transfiere a título de venta llana y simple a favor de {{nombre_comprador}} el derecho de dominio y posesión que tiene y ejerce sobre el siguiente bien inmueble: {{tipo_inmueble}}, ubicado en el barrio {{barrio}}, con dirección {{direccion_inmueble}}, con superficie aproximada de {{metros}} metros cuadrados, Registro Catastral número {{registro_catastral}}, localizada en el Perímetro Urbano de la ciudad de {{ciudad}}.\n\nSEGUNDA: El precio o valor del inmueble materia de este contrato, es la cantidad de {{valor_letras}} (${{valor_numeros}}), suma que el vendedor declara tener recibida del comprador, en este acto, a su entera satisfacción.\n\nTERCERA: Declara el vendedor que el inmueble que enajena mediante este instrumento, lo adquirió en su estado civil actual por compra que de él hizo a {{fecha_adquisicion}}, mediante escritura pública número {{numero_escritura}} de fecha {{fecha_escritura}}, otorgada en la Notaría {{notaria}} del Círculo de {{circulo}}, la cual fue registrada en la oficina de registro de Instrumentos Públicos del mismo Círculo al folio de Matrícula Inmobiliaria número {{folio_matricula}}.\n\nCUARTA: Declara igualmente el vendedor que el inmueble que transfiere por medio de esta escritura pública, se encuentra libre de censo, hipoteca, embargo, pleito pendiente, demanda civil registrada, arrendamiento, anticresis, y patrimonio de familia inembargable consignado por escritura pública, condiciones resolutorias de dominio, limitaciones del mismo y en general, libre de todo gravamen, pero que, en todo caso, se compromete a salir al saneamiento de lo vendido, conforme a la ley.\n\nQUINTA: Que desde esta misma fecha, el vendedor le hace entrega real y material del inmueble al comprador, junto con todos sus usos y costumbres que legalmente le corresponden, sin reserva ni limitación alguna y en el estado en que se encuentra, aclarando que en esta venta queda incluido el derecho a la línea telefónica número {{telefono}}, junto con su respectivo aparato.\n\nEL VENDEDOR\n_________________________\nCC Nº: ...........\n\nEL COMPRADOR\n_________________________\nCC Nº: ...........",
+    "fields": [
+      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma el contrato", "type": "text", "required": true },
+      { "name": "dia", "label": "Día (número)", "type": "number", "required": true },
+      { "name": "mes", "label": "Mes (ej: abril)", "type": "text", "required": true },
+      { "name": "anio", "label": "Año (ej: 2026)", "type": "number", "required": true },
+      { "name": "nombre_vendedor", "label": "Nombre completo del vendedor", "type": "text", "required": true },
+      { "name": "nombre_comprador", "label": "Nombre completo del comprador", "type": "text", "required": true },
+      { "name": "estado_civil_vendedor", "label": "Estado civil del vendedor (ej: soltero / casado / divorciado / viudo)", "type": "text", "required": true },
+      { "name": "estado_civil_comprador", "label": "Estado civil del comprador (ej: soltero / casado / divorciado / viudo)", "type": "text", "required": true },
+      { "name": "sociedad_conyugal", "label": "Sociedad conyugal (ej: con sociedad conyugal vigente / sin sociedad conyugal)", "type": "text", "required": true },
+      { "name": "tipo_inmueble", "label": "Tipo de bien (ej: casa / apartamento / local / lote / finca)", "type": "text", "required": true },
+      { "name": "barrio", "label": "Barrio donde está ubicado el bien", "type": "text", "required": true },
+      { "name": "direccion_inmueble", "label": "Dirección exacta del inmueble (ej: Calle 4 Sur # 2A-56)", "type": "text", "required": true },
+      { "name": "metros", "label": "Área total en metros cuadrados (solo el número)", "type": "number", "required": true },
+      { "name": "registro_catastral", "label": "Número de Registro Catastral", "type": "text", "required": true },
+      { "name": "valor_letras", "label": "Precio total en letras (ej: cien millones de pesos m/cte)", "type": "text", "required": true },
+      { "name": "valor_numeros", "label": "Precio total en números (ej: 100.000.000)", "type": "text", "required": true },
+      { "name": "fecha_adquisicion", "label": "Fecha en que el vendedor compró el bien (ej: 15 de mayo de 2018)", "type": "text", "required": true },
+      { "name": "numero_escritura", "label": "Número de la escritura pública (solo el número, ej: 1245)", "type": "text", "required": true },
+      { "name": "fecha_escritura", "label": "Fecha de esa escritura pública (ej: 21 de abril de 2018)", "type": "text", "required": true },
+      { "name": "notaria", "label": "Nombre de la notaría — sin escribir 'Notaría' (ej: Única / Primera / Segunda)", "type": "text", "required": true },
+      { "name": "circulo", "label": "Círculo notarial — solo la ciudad (ej: Cali / El Cerrito / Bogotá)", "type": "text", "required": true },
+      { "name": "folio_matricula", "label": "Número de Folio de Matrícula Inmobiliaria (ej: 370-123456)", "type": "text", "required": true },
+      { "name": "telefono", "label": "Número de teléfono incluido en el contrato", "type": "text", "required": true }
+    ]
+  },
+
+  {
+    "id": 4,
+    "title": "Modelo de contrato de permuta",
+    "template": "En la ciudad de {{ciudad}}, entre los suscritos {{nombre_parte1}} y {{nombre_parte2}}, mayores de edad, vecinos de esta ciudad, de estado civil {{estado_civil_parte1}} y {{estado_civil_parte2}} respectivamente, {{sociedad_conyugal}}, identificados como aparece al pie de nuestras respectivas firmas, mediante el presente documento manifestamos que hemos celebrado un Contrato de Permuta que consignamos en las siguientes cláusulas:\n\nPRIMERA: {{nombre_parte1}} transfiere a título de permuta, a favor de {{nombre_parte2}}, el siguiente bien inmueble: {{tipo_inmueble1}}, ubicado en el barrio {{barrio1}}, con dirección {{direccion1}}, con superficie aproximada de {{metros1}} metros cuadrados, Registro Catastral número {{registro_catastral1}}, localizada en el Perímetro Urbano de la ciudad de {{ciudad}}, adquirido mediante escritura pública número {{numero_escritura1}} de fecha {{fecha_escritura1}}, otorgada en la Notaría {{notaria1}} del Círculo de {{circulo1}}, debidamente registrada en la Oficina de Registro de Instrumentos Públicos al Folio de Matrícula Inmobiliaria número {{folio_matricula1}}, por compra que de él hizo a {{vendedor_original1}}, adquisición que se operó en su estado civil actual.\n\nSEGUNDA: A su turno, {{nombre_parte2}} transfiere al mismo título de permuta a favor de {{nombre_parte1}}, el siguiente bien inmueble: {{tipo_inmueble2}}, ubicado en el barrio {{barrio2}}, con dirección {{direccion2}}, con superficie aproximada de {{metros2}} metros cuadrados, Registro Catastral número {{registro_catastral2}}, localizada en el Perímetro Urbano de la ciudad de {{ciudad}}, el cual adquirió en su estado civil actual por compra que de él hizo a {{vendedor_original2}}, mediante escritura pública número {{numero_escritura2}} de fecha {{fecha_escritura2}}, otorgada en la Notaría {{notaria2}} del Círculo de {{circulo2}}, registrada en la Oficina de Registro de Instrumentos Públicos al Folio de Matrícula Inmobiliaria número {{folio_matricula2}}.\n\nTERCERA: Para todos los efectos legales, acordamos dar a los inmuebles materia de este contrato un valor comercial de {{valor_letras}} (${{valor_numeros}}) a cada uno.\n\nCUARTA: Expresamos y así lo declaramos que los bienes que son objeto de esta permuta los garantizamos libres de censo, hipoteca, embargo, pleito pendiente, demanda civil registrada, arrendamiento y patrimonio de familia inembargable consignado por escritura pública, condiciones resolutorias de dominio, limitaciones del mismo y en general, libres de todo gravamen, pero en todo caso nos comprometemos a salir a su saneamiento conforme a la ley.\n\nQUINTA: Manifestamos que desde esta misma fecha, hacemos entrega real y material de los inmuebles, junto con todos sus usos, costumbres y servidumbres que legalmente les corresponde, sin reserva ni limitación alguna y en el estado en que se encuentran.\n\nLAS COMPARECIENTES\n\n_________________________\nCC Nº: ...........\n\n_________________________\nCC Nº: ...........",
+    "fields": [
+      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma el contrato", "type": "text", "required": true },
+      { "name": "nombre_parte1", "label": "Nombre completo de la primera parte", "type": "text", "required": true },
+      { "name": "nombre_parte2", "label": "Nombre completo de la segunda parte", "type": "text", "required": true },
+      { "name": "estado_civil_parte1", "label": "Estado civil de la primera parte (ej: soltero / casado / divorciado / viudo)", "type": "text", "required": true },
+      { "name": "estado_civil_parte2", "label": "Estado civil de la segunda parte (ej: soltero / casado / divorciado / viudo)", "type": "text", "required": true },
+      { "name": "sociedad_conyugal", "label": "Sociedad conyugal (ej: con sociedad conyugal vigente / sin sociedad conyugal)", "type": "text", "required": true },
+      { "name": "tipo_inmueble1", "label": "Tipo de bien de la primera parte (ej: casa / apartamento / local / lote)", "type": "text", "required": true },
+      { "name": "barrio1", "label": "Barrio del bien de la primera parte", "type": "text", "required": true },
+      { "name": "direccion1", "label": "Dirección del bien de la primera parte (ej: Calle 4 Sur # 2A-56)", "type": "text", "required": true },
+      { "name": "metros1", "label": "Área del bien de la primera parte en metros cuadrados", "type": "number", "required": true },
+      { "name": "registro_catastral1", "label": "Registro Catastral del bien de la primera parte", "type": "text", "required": true },
+      { "name": "numero_escritura1", "label": "Número de escritura del bien de la primera parte (solo el número)", "type": "text", "required": true },
+      { "name": "fecha_escritura1", "label": "Fecha de esa escritura (ej: 15 de mayo de 2018)", "type": "text", "required": true },
+      { "name": "notaria1", "label": "Notaría del bien de la primera parte — sin escribir 'Notaría' (ej: Única / Primera)", "type": "text", "required": true },
+      { "name": "circulo1", "label": "Círculo notarial del bien de la primera parte — solo la ciudad", "type": "text", "required": true },
+      { "name": "folio_matricula1", "label": "Folio de Matrícula Inmobiliaria del bien de la primera parte (ej: 370-123456)", "type": "text", "required": true },
+      { "name": "vendedor_original1", "label": "Nombre de quien le vendió el bien a la primera parte", "type": "text", "required": true },
+      { "name": "tipo_inmueble2", "label": "Tipo de bien de la segunda parte (ej: casa / apartamento / local / lote)", "type": "text", "required": true },
+      { "name": "barrio2", "label": "Barrio del bien de la segunda parte", "type": "text", "required": true },
+      { "name": "direccion2", "label": "Dirección del bien de la segunda parte (ej: Calle 4 Sur # 2A-56)", "type": "text", "required": true },
+      { "name": "metros2", "label": "Área del bien de la segunda parte en metros cuadrados", "type": "number", "required": true },
+      { "name": "registro_catastral2", "label": "Registro Catastral del bien de la segunda parte", "type": "text", "required": true },
+      { "name": "vendedor_original2", "label": "Nombre de quien le vendió el bien a la segunda parte", "type": "text", "required": true },
+      { "name": "numero_escritura2", "label": "Número de escritura del bien de la segunda parte (solo el número)", "type": "text", "required": true },
+      { "name": "fecha_escritura2", "label": "Fecha de esa escritura (ej: 15 de mayo de 2018)", "type": "text", "required": true },
+      { "name": "notaria2", "label": "Notaría del bien de la segunda parte — sin escribir 'Notaría' (ej: Única / Primera)", "type": "text", "required": true },
+      { "name": "circulo2", "label": "Círculo notarial del bien de la segunda parte — solo la ciudad", "type": "text", "required": true },
+      { "name": "folio_matricula2", "label": "Folio de Matrícula Inmobiliaria del bien de la segunda parte (ej: 370-123456)", "type": "text", "required": true },
+      { "name": "valor_letras", "label": "Valor comercial de cada inmueble en letras (ej: cien millones de pesos m/cte)", "type": "text", "required": true },
+      { "name": "valor_numeros", "label": "Valor comercial en números (ej: 100.000.000)", "type": "text", "required": true }
+    ]
   }
 ]
