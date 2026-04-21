@@ -41,5 +41,30 @@
       { "name": "multa_letras", "label": "Valor de la multa por incumplimiento en letras", "type": "text", "required": true },
       { "name": "multa_numeros", "label": "Valor de la multa por incumplimiento en números", "type": "text", "required": true }
     ]
+  },
+  {
+    "id": 2,
+    "title": "Modelo de promesa de donación (inmueble o mueble)",
+    "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos {{nombre_donante}} y {{nombre_donatario}}, mayores de edad y vecinos de la ciudad de {{ciudad}}, identificados como aparece al pie de nuestras correspondientes firmas, denominados en adelante promitente donante y promitente donatario, respectivamente, hemos acordado celebrar el contrato de promesa de donación, regido por las siguientes cláusulas:\n\nPRIMERA. OBJETO. El donante, con plena capacidad para disponer, obrando en nombre propio, promete donar a favor del donatario, también plenamente capaz, y el último promete aceptar la donación objeto del presente contrato, consistente en {{descripcion_bien}}.\n\nSEGUNDA. El bien que por este contrato se promete donar lo adquirió el prometiente donante por {{forma_adquisicion}}, según consta en {{documento_adquisicion}}.\n\nTERCERA. INSINUACIÓN DONATARIA. Las partes contratantes convienen que el aquí prometiente donatario, en su propio nombre y también en el del donante, haga la solicitud en debida forma para la obtención de la insinuación ante el Notario que sea indispensable, sin perjuicio de la suscripción también por el donante y el donatario, de la escritura pública correspondiente.\n\nCUARTA. DONACIÓN PROMETIDA. La donación que aquí se promete y que será recogida en la escritura pública correspondiente contendrá además lo siguiente: Los bienes objeto de la presente promesa de donación, estarán destinados exclusivamente a {{destinacion_bien}}. El donatario adquiere la obligación de no vender los objetos donados durante los próximos {{plazo_no_venta}} años, y la de no arrendar o entregar en comodato a otras personas o entidades sin autorización expresa del donante.\n\nQUINTA. PLAZO. La Escritura Pública que recoja la insinuación notarial necesaria para la donación del bien, será extendida en la Notaría {{notaria}}, del círculo de {{circulo}}, el día {{dia_escritura}}, del mes {{mes_escritura}} del año {{anio_escritura}} a las {{hora_escritura}}.\n\nSEXTA. PRÓRROGA. Mediante acuerdo expreso por escrito, firmado por ambas partes, podrán convenir un término diferente para la firma de la referida escritura pública.\n\nSÉPTIMA. ENTREGA. En la fecha del otorgamiento de la escritura pública el prominente donante hará la entrega material del bien al promitente donatario, libre de limitaciones al dominio, gravámenes, condiciones resolutorias, pleito pendiente, embargo y paz y salvo de impuestos, tasas y contribuciones causadas hasta la fecha de la escritura pública.\n\nOCTAVA. GASTOS. Los gastos que ocasione este instrumento de promesa, así como los que demande la autorización y registro de la escritura pública de insinuación y donación, serán de cargo de {{responsable_gastos}}.\n\nEn señal de asentimiento firman las partes intervinientes.\n\nPROMITIENTE DONANTE\n_________________________\nCC Nº: ...........\n\nPROMITIENTE DONATARIO\n_________________________\nCC Nº: ...........",
+    "fields": [
+      { "name": "ciudad", "label": "Ciudad o Municipio", "type": "text", "required": true },
+      { "name": "dia", "label": "Día", "type": "number", "required": true },
+      { "name": "mes", "label": "Mes", "type": "text", "required": true },
+      { "name": "anio", "label": "Año", "type": "number", "required": true },
+      { "name": "nombre_donante", "label": "Nombre completo del donante", "type": "text", "required": true },
+      { "name": "nombre_donatario", "label": "Nombre completo del donatario", "type": "text", "required": true },
+      { "name": "descripcion_bien", "label": "Descripción del bien a donar", "type": "text", "required": true },
+      { "name": "forma_adquisicion", "label": "Forma en que adquirió el bien (compra, donación, sucesión, etc.)", "type": "text", "required": true },
+      { "name": "documento_adquisicion", "label": "Documento que acredita la adquisición", "type": "text", "required": true },
+      { "name": "destinacion_bien", "label": "Destinación del bien donado", "type": "text", "required": true },
+      { "name": "plazo_no_venta", "label": "Plazo en años sin poder vender el bien", "type": "number", "required": true },
+      { "name": "notaria", "label": "Notaría donde se otorgará la escritura", "type": "text", "required": true },
+      { "name": "circulo", "label": "Círculo notarial", "type": "text", "required": true },
+      { "name": "dia_escritura", "label": "Día de la escritura", "type": "number", "required": true },
+      { "name": "mes_escritura", "label": "Mes de la escritura", "type": "text", "required": true },
+      { "name": "anio_escritura", "label": "Año de la escritura", "type": "number", "required": true },
+      { "name": "hora_escritura", "label": "Hora de la escritura", "type": "text", "required": true },
+      { "name": "responsable_gastos", "label": "Quién asume los gastos", "type": "text", "required": true }
+    ]
   }
 ]
