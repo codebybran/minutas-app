@@ -1,5 +1,138 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './App.css'
+
+const FIELD_HELP = {
+  ciudad: 'Escribe el nombre de la ciudad o municipio donde se está firmando el contrato. Ejemplo: Cali, El Cerrito, Bogotá.',
+  dia: 'Escribe el número del día en que se firma el contrato. Ejemplo: 21',
+  mes: 'Escribe el nombre del mes. Ejemplo: abril, mayo, enero.',
+  anio: 'Escribe el año en que se firma el contrato. Ejemplo: 2026',
+  nombre_vendedor: 'Escribe el nombre completo del vendedor tal como aparece en su cédula de ciudadanía.',
+  nombre_comprador: 'Escribe el nombre completo del comprador tal como aparece en su cédula de ciudadanía.',
+  estado_civil_vendedor: 'Escribe el estado civil del vendedor. Las opciones son: soltero, casado, divorciado o viudo.',
+  estado_civil_comprador: 'Escribe el estado civil del comprador. Las opciones son: soltero, casado, divorciado o viudo.',
+  sociedad_conyugal_vendedor: 'Si el vendedor es casado escribe: con sociedad conyugal vigente. Si es soltero, divorciado o viudo escribe: sin sociedad conyugal.',
+  sociedad_conyugal_comprador: 'Si el comprador es casado escribe: con sociedad conyugal vigente. Si es soltero, divorciado o viudo escribe: sin sociedad conyugal.',
+  tipo_inmueble: 'Escribe el tipo de bien que se está vendiendo. Ejemplo: casa, apartamento, local comercial, lote, finca.',
+  barrio: 'Escribe el nombre del barrio donde está ubicado el inmueble.',
+  direccion_inmueble: 'Escribe la dirección completa del inmueble. Ejemplo: Calle 4 Sur # 2A-56.',
+  metros: 'Escribe solo el número de metros cuadrados del inmueble. Ejemplo: 120',
+  registro_catastral: 'Es el número que identifica el inmueble ante la autoridad catastral. Lo encuentras en el certificado catastral o en la escritura.',
+  folio_matricula: 'Es el número de matrícula inmobiliaria. Lo encuentras en el certificado de tradición y libertad. Ejemplo: 370-123456.',
+  fecha_adquisicion: 'Escribe la fecha en que el vendedor compró el inmueble. Ejemplo: 15 de mayo de 2018.',
+  numero_escritura: 'Es el número de la escritura pública. Solo el número. Ejemplo: 1245.',
+  fecha_escritura: 'Escribe la fecha de esa escritura pública. Ejemplo: 21 de abril de 2018.',
+  notaria: 'Solo el nombre de la notaría, sin escribir la palabra Notaría. Ejemplo: Única, Primera, Segunda.',
+  circulo: 'Solo el nombre de la ciudad del círculo notarial. Ejemplo: El Cerrito, Cali, Bogotá.',
+  hora_escritura: 'Escribe la hora en que se firmará la escritura. Ejemplo: 10:00 AM, 2:00 PM.',
+  dia_escritura: 'Escribe el número del día en que se firmará la escritura. Ejemplo: 22.',
+  mes_escritura: 'Escribe el nombre del mes en que se firmará la escritura. Ejemplo: mayo.',
+  anio_escritura: 'Escribe el año en que se firmará la escritura. Ejemplo: 2026.',
+  notaria_escritura: 'Solo el nombre de la notaría para la nueva escritura, sin escribir Notaría. Ejemplo: Única, Primera.',
+  circulo_escritura: 'Solo la ciudad del círculo notarial para la nueva escritura. Ejemplo: El Cerrito, Cali.',
+  valor_letras: 'Escribe el precio total en letras. Ejemplo: cien millones de pesos m/cte.',
+  valor_numeros: 'Escribe el precio total en números con puntos. Ejemplo: 100.000.000.',
+  pago_inicial_letras: 'Escribe el valor del pago que se hace hoy, en letras. Ejemplo: veinte millones de pesos.',
+  pago_inicial_numeros: 'Escribe ese valor en números. Ejemplo: 20.000.000.',
+  saldo_letras: 'Escribe el valor que queda pendiente de pagar, en letras. Ejemplo: ochenta millones de pesos.',
+  saldo_numeros: 'Escribe ese saldo en números. Ejemplo: 80.000.000.',
+  telefono: 'Escribe el número de teléfono que se incluirá en el contrato.',
+  multa_letras: 'Escribe el valor de la multa por incumplimiento, en letras. Ejemplo: diez millones de pesos.',
+  multa_numeros: 'Escribe ese valor en números. Ejemplo: 10.000.000.',
+  nombre_donante: 'Escribe el nombre completo de la persona que dona el bien.',
+  nombre_donatario: 'Escribe el nombre completo de la persona que recibe el bien donado.',
+  descripcion_bien: 'Describe el bien que se va a donar. Ejemplo: apartamento ubicado en la Calle 5 # 3-20, Barrio El Prado, Cali.',
+  forma_adquisicion: 'Escribe cómo obtuvo el bien el donante. Ejemplo: compra, herencia, donación.',
+  documento_adquisicion: 'Escribe el documento que prueba que el donante es dueño. Ejemplo: escritura pública No. 123 de la Notaría Primera de Cali.',
+  destinacion_bien: 'Escribe para qué se usará el bien donado. Ejemplo: vivienda familiar, uso educativo.',
+  plazo_no_venta: 'Escribe el número de años sin poder vender el bien. Ejemplo: 5.',
+  responsable_gastos: 'Escribe quién pagará los gastos. Ejemplo: el donante, el donatario, ambos por partes iguales.'
+}
+
+function TooltipField({ field, onChange }) {
+  const [showTooltip, setShowTooltip] = useState(false)
+  const [tooltipPos, setTooltipPos] = useState({ top: 0, left: 0 })
+  const btnRef = useRef(null)
+  const help = FIELD_HELP[field.name]
+
+  const handleMouseEnter = () => {
+    if (btnRef.current) {
+      const rect = btnRef.current.getBoundingClientRect()
+      const tooltipWidth = 260
+      let left = rect.left
+      if (left + tooltipWidth > window.innerWidth - 20) {
+        left = rect.right - tooltipWidth
+      }
+      setTooltipPos({ top: rect.bottom + 6, left })
+    }
+    setShowTooltip(true)
+  }
+
+  return (
+    <div style={{ position: 'relative' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+        <label style={{ fontSize: '11px', fontWeight: 'bold', color: '#3a6a9a', letterSpacing: '0.5px', textTransform: 'uppercase' }}>
+          {field.label}
+        </label>
+        {help && (
+          <div
+            ref={btnRef}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={() => setShowTooltip(false)}
+            style={{
+              width: '16px', height: '16px', borderRadius: '50%',
+              background: '#b8962e', color: '#fff',
+              fontSize: '10px', fontWeight: 'bold',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              cursor: 'help', flexShrink: 0
+            }}
+          >
+            ?
+          </div>
+        )}
+      </div>
+      <input
+        type={field.type}
+        placeholder={`Ingrese ${field.label.toLowerCase()}`}
+        onChange={e => onChange(field.name, e.target.value)}
+        style={{
+          width: '100%',
+          padding: '10px 14px',
+          background: '#f7fafc',
+          border: '1px solid #c8d8e8',
+          borderRadius: '6px',
+          fontSize: '13px',
+          color: '#1a3a5c',
+          boxSizing: 'border-box',
+          outline: 'none',
+          fontFamily: 'Georgia, serif'
+        }}
+      />
+      {showTooltip && help && (
+        <div style={{
+          position: 'fixed',
+          top: tooltipPos.top,
+          left: tooltipPos.left,
+          background: '#1a3a5c',
+          color: '#e0eaf5',
+          fontSize: '12px',
+          lineHeight: '1.6',
+          padding: '10px 14px',
+          borderRadius: '6px',
+          width: '260px',
+          zIndex: 9999,
+          boxShadow: '0 4px 16px rgba(0,0,0,0.25)',
+          border: '1px solid #b8962e',
+          pointerEvents: 'none'
+        }}>
+          <div style={{ color: '#e2b94a', fontSize: '10px', fontWeight: 'bold', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+            ¿Cómo llenar este campo?
+          </div>
+          {help}
+        </div>
+      )}
+    </div>
+  )
+}
 
 function App() {
   const [categories, setCategories] = useState([])
@@ -68,7 +201,7 @@ function App() {
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
-      a.download = `${minutaDetail.title}.doc`
+      a.download = `${minutaDetail.title}.docx`
       a.click()
       URL.revokeObjectURL(url)
     } catch (error) {
@@ -78,134 +211,120 @@ function App() {
   }
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', fontFamily: 'Arial, sans-serif' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', width: '100vw', background: '#f0f4f8', fontFamily: 'Georgia, serif' }}>
 
-      {/* SIDEBAR */}
-      <div style={{ width: '300px', background: '#1e3a5f', color: '#fff', padding: '20px', overflowY: 'auto' }}>
-        <h2 style={{ fontSize: '16px', marginBottom: '20px', borderBottom: '1px solid #fff3', paddingBottom: '10px' }}>
-          ⚖️ Minutas Legales Colombia
-        </h2>
-        {categories.length === 0 && (
-          <p style={{ fontSize: '13px', color: '#aaa' }}>No hay minutas cargadas aún.</p>
-        )}
-        {categories.map(cat => (
-          <div key={cat.id} style={{ marginBottom: '16px' }}>
-            <div
-              onClick={() => setSelectedCategory(cat)}
-              style={{
-                cursor: 'pointer',
-                padding: '8px 12px',
-                background: selectedCategory?.id === cat.id ? '#2d5a8e' : '#16305a',
-                borderRadius: '6px',
-                fontSize: '13px',
-                fontWeight: 'bold',
-                marginBottom: '6px'
-              }}
-            >
-              📁 {cat.name}
+      <header style={{ background: 'linear-gradient(135deg, #1a3a5c 0%, #2c5282 100%)', borderBottom: '3px solid #b8962e', padding: '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '68px', flexShrink: 0, boxShadow: '0 2px 12px rgba(0,0,0,0.15)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <div style={{ fontSize: '28px' }}>⚖️</div>
+          <div>
+            <div style={{ color: '#e2b94a', fontSize: '22px', fontWeight: 'bold', letterSpacing: '2px' }}>LEXDOC</div>
+            <div style={{ color: '#a0bcd8', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase' }}>Generador de Minutas Legales · Colombia</div>
+          </div>
+        </div>
+        <div style={{ color: '#a0bcd8', fontSize: '13px', letterSpacing: '1px' }}>
+          {categories.reduce((acc, cat) => acc + cat.minutas.length, 0)} minutas disponibles
+        </div>
+      </header>
+
+      <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
+        <aside style={{ width: '300px', background: '#1e3a5c', borderRight: '1px solid #2c5282', overflowY: 'auto', overflowX: 'hidden', flexShrink: 0 }}>
+          <div style={{ padding: '20px' }}>
+            <div style={{ color: '#e2b94a', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '14px', borderBottom: '1px solid #2c5282', paddingBottom: '8px' }}>
+              Categorías de Minutas
             </div>
-            {selectedCategory?.id === cat.id && cat.minutas.map(m => (
-              <div
-                key={m.id}
-                onClick={() => handleSelectMinuta(m)}
-                style={{
-                  cursor: 'pointer',
-                  padding: '6px 12px 6px 24px',
-                  background: selectedMinuta?.id === m.id ? '#4a7ab5' : 'transparent',
-                  borderRadius: '4px',
-                  fontSize: '12px',
-                  marginBottom: '2px'
-                }}
-              >
-                {m.title}
+            {categories.length === 0 && <p style={{ fontSize: '13px', color: '#6b8caa' }}>No hay minutas cargadas aún.</p>}
+            {categories.map(cat => (
+              <div key={cat.id} style={{ marginBottom: '8px' }}>
+                <div onClick={() => setSelectedCategory(selectedCategory?.id === cat.id ? null : cat)}
+                  style={{ cursor: 'pointer', padding: '10px 14px', background: selectedCategory?.id === cat.id ? '#2c5282' : '#162d4a', border: `1px solid ${selectedCategory?.id === cat.id ? '#e2b94a' : '#2c5282'}`, borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', color: selectedCategory?.id === cat.id ? '#e2b94a' : '#90b4d0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                  <span>📂 {cat.name}</span>
+                  <span style={{ fontSize: '11px', background: '#e2b94a22', color: '#e2b94a', padding: '2px 8px', borderRadius: '10px' }}>{cat.minutas.length}</span>
+                </div>
+                {selectedCategory?.id === cat.id && (
+                  <div style={{ marginLeft: '8px', borderLeft: '2px solid #e2b94a55', paddingLeft: '8px', marginTop: '4px' }}>
+                    {cat.minutas.map(m => (
+                      <div key={m.id} onClick={() => handleSelectMinuta(m)}
+                        style={{ cursor: 'pointer', padding: '8px 10px', background: selectedMinuta?.id === m.id ? '#2c5282' : 'transparent', borderRadius: '4px', fontSize: '12px', color: selectedMinuta?.id === m.id ? '#e2b94a' : '#90b4d0', marginBottom: '2px', lineHeight: '1.4', borderLeft: selectedMinuta?.id === m.id ? '2px solid #e2b94a' : '2px solid transparent' }}>
+                        {m.title}
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
-        ))}
-      </div>
+        </aside>
 
-      {/* CONTENIDO PRINCIPAL */}
-      <div style={{ flex: 1, padding: '32px', overflowY: 'auto' }}>
-        {!minutaDetail && (
-          <div style={{ textAlign: 'center', marginTop: '80px', color: '#666' }}>
-            <h1 style={{ fontSize: '28px', color: '#1e3a5f' }}>Generador de Minutas Legales</h1>
-            <p>Selecciona una categoría y una minuta del panel izquierdo para comenzar.</p>
-          </div>
-        )}
-
-        {minutaDetail && (
-          <div>
-            <h1 style={{ fontSize: '20px', color: '#1e3a5f', marginBottom: '24px' }}>
-              {minutaDetail.title}
-            </h1>
-
-            {/* FORMULARIO */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '24px' }}>
-              {minutaDetail.fields.map(field => (
-                <div key={field.name}>
-                  <label style={{ fontSize: '13px', fontWeight: 'bold', color: '#333', display: 'block', marginBottom: '4px' }}>
-                    {field.label} *
-                  </label>
-                  <input
-                    type={field.type}
-                    placeholder={field.label}
-                    onChange={e => handleChange(field.name, e.target.value)}
-                    style={{
-                      width: '100%',
-                      padding: '8px 12px',
-                      border: '1px solid #ddd',
-                      borderRadius: '6px',
-                      fontSize: '14px',
-                      boxSizing: 'border-box'
-                    }}
-                  />
-                </div>
-              ))}
+        <main style={{ flex: 1, overflowY: 'auto', background: '#f0f4f8' }}>
+          {!minutaDetail && (
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', padding: '40px' }}>
+              <div style={{ fontSize: '64px', marginBottom: '24px' }}>⚖️</div>
+              <h1 style={{ color: '#1a3a5c', fontSize: '32px', fontWeight: 'bold', letterSpacing: '2px', marginBottom: '12px', textAlign: 'center' }}>LEXDOC</h1>
+              <p style={{ color: '#5a7a9a', fontSize: '16px', marginBottom: '40px', textAlign: 'center' }}>Generador Profesional de Minutas Legales para Colombia</p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', maxWidth: '640px', width: '100%' }}>
+                {[
+                  { icon: '📋', text: 'Selecciona una categoría del panel izquierdo' },
+                  { icon: '✍️', text: 'Completa el formulario con los datos requeridos' },
+                  { icon: '📄', text: 'Descarga tu documento en Word o imprime en PDF' }
+                ].map((item, i) => (
+                  <div key={i} style={{ background: '#fff', border: '1px solid #c8d8e8', borderTop: '3px solid #b8962e', borderRadius: '8px', padding: '24px 16px', textAlign: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                    <div style={{ fontSize: '28px', marginBottom: '10px' }}>{item.icon}</div>
+                    <div style={{ color: '#4a6a8a', fontSize: '13px', lineHeight: '1.5' }}>{item.text}</div>
+                  </div>
+                ))}
+              </div>
             </div>
+          )}
 
-            {/* BOTONES */}
-            <div style={{ display: 'flex', gap: '12px', marginBottom: '32px', flexWrap: 'wrap' }}>
-              <button
-                onClick={handlePreview}
-                disabled={loading}
-                style={{ padding: '10px 24px', background: '#1e3a5f', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '14px' }}
-              >
-                {loading ? 'Generando...' : '👁️ Previsualizar'}
-              </button>
+          {minutaDetail && (
+            <div style={{ padding: '28px 36px' }}>
+              <div style={{ background: '#fff', border: '1px solid #c8d8e8', borderLeft: '5px solid #b8962e', borderRadius: '8px', padding: '18px 24px', marginBottom: '24px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                <div style={{ color: '#b8962e', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '6px' }}>Documento Legal</div>
+                <h1 style={{ color: '#1a3a5c', fontSize: '20px', fontWeight: 'bold', margin: 0 }}>{minutaDetail.title}</h1>
+                <div style={{ color: '#7a9ab5', fontSize: '12px', marginTop: '6px' }}>
+                  {minutaDetail.fields.length} campos requeridos · Pasa el mouse sobre el ícono <span style={{ background: '#b8962e', color: '#fff', borderRadius: '50%', padding: '0 4px', fontSize: '10px', fontWeight: 'bold' }}>?</span> para ver instrucciones
+                </div>
+              </div>
+
+              <div style={{ background: '#fff', border: '1px solid #c8d8e8', borderRadius: '8px', padding: '24px', marginBottom: '20px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                <div style={{ color: '#1a3a5c', fontSize: '13px', fontWeight: 'bold', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '20px', borderBottom: '2px solid #e2b94a', paddingBottom: '10px' }}>
+                  Datos del Documento
+                </div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                  {minutaDetail.fields.map(field => (
+                    <TooltipField key={field.name} field={field} onChange={handleChange} />
+                  ))}
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', gap: '12px', marginBottom: '24px', flexWrap: 'wrap' }}>
+                <button onClick={handlePreview} disabled={loading} style={{ padding: '12px 28px', background: loading ? '#a0b4c8' : '#1a3a5c', color: '#fff', border: 'none', borderRadius: '6px', cursor: loading ? 'not-allowed' : 'pointer', fontSize: '13px', fontWeight: 'bold', letterSpacing: '1px', boxShadow: '0 2px 6px rgba(0,0,0,0.15)' }}>
+                  {loading ? 'GENERANDO...' : '👁️ PREVISUALIZAR'}
+                </button>
+                {previewHTML && (
+                  <>
+                    <button onClick={handlePrint} style={{ padding: '12px 28px', background: '#2e7d32', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '13px', fontWeight: 'bold', letterSpacing: '1px', boxShadow: '0 2px 6px rgba(0,0,0,0.15)' }}>
+                      🖨️ IMPRIMIR / PDF
+                    </button>
+                    <button onClick={handleDownloadWord} disabled={loadingWord} style={{ padding: '12px 28px', background: '#1565c0', color: '#fff', border: 'none', borderRadius: '6px', cursor: loadingWord ? 'not-allowed' : 'pointer', fontSize: '13px', fontWeight: 'bold', letterSpacing: '1px', boxShadow: '0 2px 6px rgba(0,0,0,0.15)' }}>
+                      {loadingWord ? 'GENERANDO...' : '📄 DESCARGAR WORD'}
+                    </button>
+                  </>
+                )}
+              </div>
 
               {previewHTML && (
-                <>
-                  <button
-                    onClick={handlePrint}
-                    style={{ padding: '10px 24px', background: '#2e7d32', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '14px' }}
-                  >
-                    🖨️ Imprimir / Guardar PDF
-                  </button>
-                  <button
-                    onClick={handleDownloadWord}
-                    disabled={loadingWord}
-                    style={{ padding: '10px 24px', background: '#1565c0', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '14px' }}
-                  >
-                    {loadingWord ? 'Generando...' : '📄 Descargar Word'}
-                  </button>
-                </>
+                <div style={{ background: '#fff', border: '1px solid #c8d8e8', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                  <div style={{ padding: '12px 20px', borderBottom: '2px solid #e2b94a', background: '#1a3a5c', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#e2b94a' }}></div>
+                    <span style={{ color: '#a0bcd8', fontSize: '12px', letterSpacing: '1px' }}>VISTA PREVIA DEL DOCUMENTO</span>
+                  </div>
+                  <iframe id="preview-iframe" srcDoc={previewHTML} style={{ width: '100%', height: '850px', border: 'none' }} title="Vista previa del documento" />
+                </div>
               )}
             </div>
-
-            {/* VISTA PREVIA */}
-            {previewHTML && (
-              <div>
-                <h3 style={{ color: '#1e3a5f', marginBottom: '12px' }}>Vista previa:</h3>
-                <iframe
-                  id="preview-iframe"
-                  srcDoc={previewHTML}
-                  style={{ width: '100%', height: '800px', border: '1px solid #ddd', borderRadius: '8px', background: '#fff' }}
-                  title="Vista previa del documento"
-                />
-              </div>
-            )}
-          </div>
-        )}
+          )}
+        </main>
       </div>
     </div>
   )
