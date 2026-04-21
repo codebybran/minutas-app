@@ -79,7 +79,27 @@ const FIELD_HELP = {
   domicilio_empresa: 'Escribe la ciudad donde está registrada la empresa. Si no aplica escribe: no aplica.',
   descripcion_bien: 'Describe detalladamente el bien mueble que se vende. Ejemplo: vehículo marca Toyota, modelo Corolla 2020, color blanco, placa ABC123. O: televisor Samsung 55 pulgadas, serial 12345.',
   ciudad_pago: 'Escribe la ciudad donde el comprador realizará los pagos. Ejemplo: Cali, El Cerrito.',
-  forma_pago: 'Describe cómo se pagará el precio. Ejemplo: cuotas mensuales de $500.000 durante 20 meses, pagaderas los días 5 de cada mes.'
+  forma_pago: 'Describe cómo se pagará el precio. Ejemplo: cuotas mensuales de $500.000 durante 20 meses, pagaderas los días 5 de cada mes.',
+  cedula_vendedor: 'Escribe el número de cédula de ciudadanía del vendedor. Solo los números. Ejemplo: 1234567890.',
+  expedicion_cedula_vendedor: 'Escribe la ciudad donde fue expedida la cédula del vendedor. Ejemplo: Cali, El Cerrito, Bogotá.',
+  cedula_comprador: 'Escribe el número de cédula de ciudadanía del comprador. Solo los números. Ejemplo: 1234567890.',
+  expedicion_cedula_comprador: 'Escribe la ciudad donde fue expedida la cédula del comprador. Ejemplo: Cali, El Cerrito, Bogotá.',
+  clase_vehiculo: 'Escribe la clase del vehículo según la tarjeta de propiedad. Ejemplo: automóvil, camioneta, motocicleta, bus.',
+  marca_vehiculo: 'Escribe la marca del vehículo según la tarjeta de propiedad. Ejemplo: Toyota, Chevrolet, Renault, Yamaha.',
+  tipo_vehiculo: 'Escribe el tipo de vehículo según la tarjeta de propiedad. Ejemplo: sedan, campero, pick-up, furgón.',
+  color_vehiculo: 'Escribe el color del vehículo. Ejemplo: blanco, negro, rojo, plateado.',
+  modelo_vehiculo: 'Escribe el año modelo del vehículo según la tarjeta de propiedad. Ejemplo: 2020, 2018, 2015.',
+  numero_motor: 'Escribe el número de motor que aparece en la tarjeta de propiedad del vehículo.',
+  numero_serie: 'Escribe el número de serie o VIN del vehículo que aparece en la tarjeta de propiedad.',
+  placa_vehiculo: 'Escribe la placa del vehículo. Ejemplo: ABC123, XYZ456.',
+  linea_vehiculo: 'Escribe la línea o referencia del vehículo. Ejemplo: Corolla, Spark, Logan, FZ.',
+  cilindraje: 'Escribe el cilindraje del vehículo que aparece en la tarjeta de propiedad. Ejemplo: 1600 cc, 200 cc.',
+  servicio_vehiculo: 'Escribe el tipo de servicio del vehículo. Ejemplo: particular, público, oficial.',
+  carroceria: 'Escribe el tipo de carrocería según la tarjeta de propiedad. Ejemplo: sedan, furgón, campero, pick-up. Si es una moto escribe: no aplica.',
+  numero_puertas: 'Escribe el número de puertas del vehículo. Ejemplo: 2, 4. Si es una moto u otro vehículo que no tiene puertas, escribe: no aplica.',
+  capacidad: 'Escribe la capacidad del vehículo según la tarjeta de propiedad. Ejemplo: 5 pasajeros, 1000 kg de carga. Si no aparece en la tarjeta escribe: no aplica.',
+  documento_aduana: 'Si el vehículo fue importado escribe el número del acta o manifiesto de aduana. Si es un vehículo nacional escribe: no requiere documento de aduana.',
+  estado_vehiculo: 'Describe el estado en que se entrega el vehículo. Ejemplo: perfecto estado de funcionamiento, buen estado, regular estado.'
 }
 
 function TooltipField({ field, onChange }) {
