@@ -4,42 +4,222 @@
     "title": "Modelo de contrato de promesa de compraventa de inmueble",
     "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}, entre los suscritos {{nombre_vendedor}}, mayor de edad, vecino de esta ciudad, identificado como aparece al pie de su correspondiente firma, de estado civil {{estado_civil_vendedor}}, {{sociedad_conyugal_vendedor}}, quien para los efectos de este contrato se denominará el Prominente Vendedor, por una parte, y {{nombre_comprador}}, también mayor de edad y vecino de esta ciudad, de estado civil {{estado_civil_comprador}}, {{sociedad_conyugal_comprador}}, identificado como aparece al pie de su respectiva firma quien en adelante se denominará el Prominente Comprador, se ha celebrado un contrato de promesa de compraventa, que se condensa dentro de las siguientes cláusulas:\n\nPRIMERA: El prominente vendedor se obliga a transferir a favor del prominente comprador, a título de compraventa y éste se obliga a adquirir del primero, al mismo título, el derecho de dominio, propiedad y posesión que tiene y ejerce sobre el siguiente bien inmueble: {{tipo_inmueble}}, ubicado en el barrio {{barrio}}, con dirección {{direccion_inmueble}}, localizado en el Perímetro Urbano de la ciudad de {{ciudad}}, con superficie aproximada de {{metros}} metros cuadrados, Registro Catastral número {{registro_catastral}}, Folio de Matrícula Inmobiliaria número {{folio_matricula}}. No obstante la cabida y linderos, la venta se verificará como cuerpo cierto.\n\nSEGUNDA: El inmueble prometido en venta y de que da cuenta la cláusula anterior, fue adquirido por el prominente vendedor, en su estado civil actual, por compra que de él hizo a {{fecha_adquisicion}} como consta en la escritura pública número {{numero_escritura}} de fecha {{fecha_escritura}}, otorgada en la Notaria {{notaria}} del Círculo de {{circulo}}, registrada en la oficina de registro de Instrumentos Públicos de la misma ciudad, al folio de Matrícula Inmobiliaria número {{folio_matricula}}.\n\nTERCERA: El inmueble objeto de esta promesa, le será entregado al prominente comprador, libre de derecho de usufructo, censo, uso o habitación, servidumbres, gravámenes, limitaciones o condiciones de dominio, embargos, pleitos pendientes y en general, de todo factor que pudiera afectar el derecho del prominente comprador sobre el inmueble.\n\nCUARTA: El bien materia de este contrato, le será entregado por el prominente vendedor al prominente comprador, a paz y salvo por todo concepto, en especial, en impuestos de valorización, tasas, contribuciones, acueducto y alcantarillado, energía, etc. Por consiguiente, serán de cargo del prominente comprador, los que se causaren a partir de la fecha de la escritura que eleve a tal acto este contrato.\n\nQUINTA: La entrega del inmueble se verificará el día en que se otorgue la respectiva escritura de compraventa, para lo cual los contratantes han acordado la hora de las {{hora_escritura}} del día {{dia_escritura}} del mes de {{mes_escritura}} de {{anio_escritura}}, en la Notaría {{notaria_escritura}} del Círculo de {{circulo_escritura}}.\n\nSEXTA: El precio o valor del inmueble, objeto de este contrato, es la suma de {{valor_letras}} (${{valor_numeros}}), que el prominente comprador se obliga a pagar al prominente vendedor, en la siguiente forma: El día de hoy, al suscribirse este contrato, la cantidad de {{pago_inicial_letras}} (${{pago_inicial_numeros}}) y el saldo de {{saldo_letras}} (${{saldo_numeros}}) el día señalado para el otorgamiento de la escritura de compraventa del inmueble, sin perjuicio de que antes del plazo estipulado, se otorgue la escritura, de común acuerdo entre los contratantes. Es entendido que los gastos que demande la escrituración por razón de este contrato, serán sufragados por los prominentes vendedor y comprador, por partes iguales.\n\nSÉPTIMA: En este contrato queda incluido el derecho a la línea telefónica número {{telefono}} junto con su respectivo aparato.\n\nOCTAVA: El contratante que incumpliere alguna o varias de las cláusulas aquí consignadas, pagará al contratante cumplido, a título de multa la suma de {{multa_letras}} (${{multa_numeros}}), la cual podrá hacerse efectiva desde el día siguiente a su cumplimiento o infracción, por la vía ejecutiva, sin que haya lugar a requerimiento ni constitución en mora.\n\nEL PROMINENTE VENDEDOR\n_________________________\nCC Nº: ...........\nL.M. Nº: .........\n\nEL PROMINENTE COMPRADOR\n_________________________\nCC Nº: ...........\nL.M. Nº: .........\n\nTESTIGOS\n\n_________________________\nNombre: ..................\nCC Nº: ....................\n\n_________________________\nNombre: ..................\nCC Nº: ....................",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma el contrato", "type": "text", "required": true },
-      { "name": "dia", "label": "Día (número)", "type": "number", "required": true },
-      { "name": "mes", "label": "Mes (ej: abril)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año (ej: 2026)", "type": "number", "required": true },
-      { "name": "nombre_vendedor", "label": "Nombre completo del vendedor", "type": "text", "required": true },
-      { "name": "estado_civil_vendedor", "label": "Estado civil vendedor (ej: soltero / casado / divorciado / viudo)", "type": "text", "required": true },
-      { "name": "sociedad_conyugal_vendedor", "label": "Sociedad conyugal vendedor (ej: con sociedad conyugal vigente / sin sociedad conyugal)", "type": "text", "required": true },
-      { "name": "nombre_comprador", "label": "Nombre completo del comprador", "type": "text", "required": true },
-      { "name": "estado_civil_comprador", "label": "Estado civil comprador (ej: soltero / casado / divorciado / viudo)", "type": "text", "required": true },
-      { "name": "sociedad_conyugal_comprador", "label": "Sociedad conyugal comprador (ej: con sociedad conyugal vigente / sin sociedad conyugal)", "type": "text", "required": true },
-      { "name": "tipo_inmueble", "label": "Tipo de bien (ej: casa / apartamento / local / lote / finca)", "type": "text", "required": true },
-      { "name": "barrio", "label": "Barrio donde está ubicado el bien", "type": "text", "required": true },
-      { "name": "direccion_inmueble", "label": "Dirección exacta (ej: Calle 4 Sur # 2A-56)", "type": "text", "required": true },
-      { "name": "metros", "label": "Área total en metros cuadrados (solo el número)", "type": "number", "required": true },
-      { "name": "registro_catastral", "label": "Número de Registro Catastral", "type": "text", "required": true },
-      { "name": "folio_matricula", "label": "Número de Folio de Matrícula Inmobiliaria (ej: 370-123456)", "type": "text", "required": true },
-      { "name": "fecha_adquisicion", "label": "Fecha en que el vendedor compró el bien (ej: 15 de mayo de 2018)", "type": "text", "required": true },
-      { "name": "numero_escritura", "label": "Número de la escritura pública (solo el número, ej: 1245)", "type": "text", "required": true },
-      { "name": "fecha_escritura", "label": "Fecha de esa escritura pública (ej: 21 de abril de 2026)", "type": "text", "required": true },
-      { "name": "notaria", "label": "Nombre de la notaría — solo el nombre, sin escribir 'Notaría' (ej: Primera / Única / Segunda)", "type": "text", "required": true },
-      { "name": "circulo", "label": "Círculo notarial — solo la ciudad (ej: Cali / El Cerrito / Bogotá)", "type": "text", "required": true },
-      { "name": "hora_escritura", "label": "Hora acordada para firmar la escritura (ej: 10:00 AM)", "type": "text", "required": true },
-      { "name": "dia_escritura", "label": "Día acordado para firmar la escritura (número)", "type": "number", "required": true },
-      { "name": "mes_escritura", "label": "Mes acordado para firmar la escritura (ej: mayo)", "type": "text", "required": true },
-      { "name": "anio_escritura", "label": "Año acordado para firmar la escritura (ej: 2026)", "type": "number", "required": true },
-      { "name": "notaria_escritura", "label": "Nombre de la notaría para la nueva escritura — sin escribir 'Notaría' (ej: Primera / Única)", "type": "text", "required": true },
-      { "name": "circulo_escritura", "label": "Círculo de la nueva escritura — solo la ciudad (ej: Cali / El Cerrito)", "type": "text", "required": true },
-      { "name": "valor_letras", "label": "Precio total en letras (ej: cien millones de pesos m/cte)", "type": "text", "required": true },
-      { "name": "valor_numeros", "label": "Precio total en números (ej: 100.000.000)", "type": "text", "required": true },
-      { "name": "pago_inicial_letras", "label": "Pago inicial en letras (ej: veinte millones de pesos)", "type": "text", "required": true },
-      { "name": "pago_inicial_numeros", "label": "Pago inicial en números (ej: 20.000.000)", "type": "text", "required": true },
-      { "name": "saldo_letras", "label": "Saldo restante en letras (ej: ochenta millones de pesos)", "type": "text", "required": true },
-      { "name": "saldo_numeros", "label": "Saldo restante en números (ej: 80.000.000)", "type": "text", "required": true },
-      { "name": "telefono", "label": "Número de teléfono que se incluye en el contrato", "type": "text", "required": true },
-      { "name": "multa_letras", "label": "Valor de la multa por incumplimiento en letras (ej: diez millones de pesos)", "type": "text", "required": true },
-      { "name": "multa_numeros", "label": "Valor de la multa en números (ej: 10.000.000)", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad o Municipio donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (ej: abril)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "nombre_vendedor",
+        "label": "Nombre completo del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_vendedor",
+        "label": "Estado civil vendedor (ej: soltero / casado / divorciado / viudo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "sociedad_conyugal_vendedor",
+        "label": "Sociedad conyugal vendedor (ej: con sociedad conyugal vigente / sin sociedad conyugal)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_comprador",
+        "label": "Nombre completo del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_comprador",
+        "label": "Estado civil comprador (ej: soltero / casado / divorciado / viudo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "sociedad_conyugal_comprador",
+        "label": "Sociedad conyugal comprador (ej: con sociedad conyugal vigente / sin sociedad conyugal)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_inmueble",
+        "label": "Tipo de bien (ej: casa / apartamento / local / lote / finca)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "barrio",
+        "label": "Barrio donde está ubicado el bien",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_inmueble",
+        "label": "Dirección exacta (ej: Calle 4 Sur # 2A-56)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "metros",
+        "label": "Área total en metros cuadrados (solo el número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "registro_catastral",
+        "label": "Número de Registro Catastral",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_matricula",
+        "label": "Número de Folio de Matrícula Inmobiliaria (ej: 370-123456)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_adquisicion",
+        "label": "Fecha en que el vendedor compró el bien (ej: 15 de mayo de 2018)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura",
+        "label": "Número de la escritura pública (solo el número, ej: 1245)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_escritura",
+        "label": "Fecha de esa escritura pública (ej: 21 de abril de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria",
+        "label": "Nombre de la notaría — solo el nombre, sin escribir 'Notaría' (ej: Primera / Única / Segunda)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial — solo la ciudad (ej: Cali / El Cerrito / Bogotá)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hora_escritura",
+        "label": "Hora acordada para firmar la escritura (ej: 10:00 AM)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia_escritura",
+        "label": "Día acordado para firmar la escritura (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes_escritura",
+        "label": "Mes acordado para firmar la escritura (ej: mayo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio_escritura",
+        "label": "Año acordado para firmar la escritura (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "notaria_escritura",
+        "label": "Nombre de la notaría para la nueva escritura — sin escribir 'Notaría' (ej: Primera / Única)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_escritura",
+        "label": "Círculo de la nueva escritura — solo la ciudad (ej: Cali / El Cerrito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_letras",
+        "label": "Precio total en letras (ej: cien millones de pesos m/cte)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_numeros",
+        "label": "Precio total en números (ej: 100.000.000)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pago_inicial_letras",
+        "label": "Pago inicial en letras (ej: veinte millones de pesos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pago_inicial_numeros",
+        "label": "Pago inicial en números (ej: 20.000.000)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "saldo_letras",
+        "label": "Saldo restante en letras (ej: ochenta millones de pesos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "saldo_numeros",
+        "label": "Saldo restante en números (ej: 80.000.000)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "telefono",
+        "label": "Número de teléfono que se incluye en el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "multa_letras",
+        "label": "Valor de la multa por incumplimiento en letras (ej: diez millones de pesos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "multa_numeros",
+        "label": "Valor de la multa en números (ej: 10.000.000)",
+        "type": "text",
+        "required": true
+      }
     ]
   },
   {
@@ -47,93 +227,446 @@
     "title": "Modelo de promesa de donación (inmueble o mueble)",
     "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos {{nombre_donante}} y {{nombre_donatario}}, mayores de edad y vecinos de la ciudad de {{ciudad}}, identificados como aparece al pie de nuestras correspondientes firmas, denominados en adelante promitente donante y promitente donatario, respectivamente, hemos acordado celebrar el contrato de promesa de donación, regido por las siguientes cláusulas:\n\nPRIMERA. OBJETO. El donante, con plena capacidad para disponer, obrando en nombre propio, promete donar a favor del donatario, también plenamente capaz, y el último promete aceptar la donación objeto del presente contrato, consistente en {{descripcion_bien}}.\n\nSEGUNDA. El bien que por este contrato se promete donar lo adquirió el prometiente donante por {{forma_adquisicion}}, según consta en {{documento_adquisicion}}.\n\nTERCERA. INSINUACIÓN DONATARIA. Las partes contratantes convienen que el aquí prometiente donatario, en su propio nombre y también en el del donante, haga la solicitud en debida forma para la obtención de la insinuación ante el Notario que sea indispensable, sin perjuicio de la suscripción también por el donante y el donatario, de la escritura pública correspondiente.\n\nCUARTA. DONACIÓN PROMETIDA. La donación que aquí se promete y que será recogida en la escritura pública correspondiente contendrá además lo siguiente: Los bienes objeto de la presente promesa de donación, estarán destinados exclusivamente a {{destinacion_bien}}. El donatario adquiere la obligación de no vender los objetos donados durante los próximos {{plazo_no_venta}} años, y la de no arrendar o entregar en comodato a otras personas o entidades sin autorización expresa del donante.\n\nQUINTA. PLAZO. La Escritura Pública que recoja la insinuación notarial necesaria para la donación del bien, será extendida en la Notaría {{notaria}}, del círculo de {{circulo}}, el día {{dia_escritura}}, del mes {{mes_escritura}} del año {{anio_escritura}} a las {{hora_escritura}}.\n\nSEXTA. PRÓRROGA. Mediante acuerdo expreso por escrito, firmado por ambas partes, podrán convenir un término diferente para la firma de la referida escritura pública.\n\nSÉPTIMA. ENTREGA. En la fecha del otorgamiento de la escritura pública el prominente donante hará la entrega material del bien al promitente donatario, libre de limitaciones al dominio, gravámenes, condiciones resolutorias, pleito pendiente, embargo y paz y salvo de impuestos, tasas y contribuciones causadas hasta la fecha de la escritura pública.\n\nOCTAVA. GASTOS. Los gastos que ocasione este instrumento de promesa, así como los que demande la autorización y registro de la escritura pública de insinuación y donación, serán de cargo de {{responsable_gastos}}.\n\nEn señal de asentimiento firman las partes intervinientes.\n\nPROMITIENTE DONANTE\n_________________________\nCC Nº: ...........\n\nPROMITIENTE DONATARIO\n_________________________\nCC Nº: ...........",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma", "type": "text", "required": true },
-      { "name": "dia", "label": "Día (número)", "type": "number", "required": true },
-      { "name": "mes", "label": "Mes (ej: abril)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año (ej: 2026)", "type": "number", "required": true },
-      { "name": "nombre_donante", "label": "Nombre completo del donante", "type": "text", "required": true },
-      { "name": "nombre_donatario", "label": "Nombre completo del donatario (quien recibe)", "type": "text", "required": true },
-      { "name": "descripcion_bien", "label": "Descripción del bien a donar (ej: apartamento ubicado en...)", "type": "text", "required": true },
-      { "name": "forma_adquisicion", "label": "Cómo adquirió el bien el donante (ej: compra / herencia / donación)", "type": "text", "required": true },
-      { "name": "documento_adquisicion", "label": "Documento que prueba la adquisición (ej: escritura pública No. 123 / documento privado)", "type": "text", "required": true },
-      { "name": "destinacion_bien", "label": "Para qué se destinará el bien donado", "type": "text", "required": true },
-      { "name": "plazo_no_venta", "label": "Años durante los cuales no puede vender el bien (solo el número)", "type": "number", "required": true },
-      { "name": "notaria", "label": "Nombre de la notaría — sin escribir 'Notaría' (ej: Primera / Única / Segunda)", "type": "text", "required": true },
-      { "name": "circulo", "label": "Círculo notarial — solo la ciudad (ej: Cali / El Cerrito)", "type": "text", "required": true },
-      { "name": "dia_escritura", "label": "Día de la escritura (número)", "type": "number", "required": true },
-      { "name": "mes_escritura", "label": "Mes de la escritura (ej: mayo)", "type": "text", "required": true },
-      { "name": "anio_escritura", "label": "Año de la escritura (ej: 2026)", "type": "number", "required": true },
-      { "name": "hora_escritura", "label": "Hora de la escritura (ej: 10:00 AM)", "type": "text", "required": true },
-      { "name": "responsable_gastos", "label": "Quién paga los gastos (ej: el donante / el donatario / ambos por partes iguales)", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad o Municipio donde se firma",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (ej: abril)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "nombre_donante",
+        "label": "Nombre completo del donante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_donatario",
+        "label": "Nombre completo del donatario (quien recibe)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_bien",
+        "label": "Descripción del bien a donar (ej: apartamento ubicado en...)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "forma_adquisicion",
+        "label": "Cómo adquirió el bien el donante (ej: compra / herencia / donación)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "documento_adquisicion",
+        "label": "Documento que prueba la adquisición (ej: escritura pública No. 123 / documento privado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "destinacion_bien",
+        "label": "Para qué se destinará el bien donado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "plazo_no_venta",
+        "label": "Años durante los cuales no puede vender el bien (solo el número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "notaria",
+        "label": "Nombre de la notaría — sin escribir 'Notaría' (ej: Primera / Única / Segunda)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial — solo la ciudad (ej: Cali / El Cerrito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia_escritura",
+        "label": "Día de la escritura (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes_escritura",
+        "label": "Mes de la escritura (ej: mayo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio_escritura",
+        "label": "Año de la escritura (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "hora_escritura",
+        "label": "Hora de la escritura (ej: 10:00 AM)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "responsable_gastos",
+        "label": "Quién paga los gastos (ej: el donante / el donatario / ambos por partes iguales)",
+        "type": "text",
+        "required": true
+      }
     ]
   },
-
   {
     "id": 3,
     "title": "Modelo de contrato de compraventa de inmueble",
     "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos {{nombre_vendedor}} (vendedor) y {{nombre_comprador}} (comprador), ambos mayores de edad, vecinos de esta ciudad, de estado civil {{estado_civil_vendedor}} y {{estado_civil_comprador}} respectivamente, {{sociedad_conyugal}}, identificados como aparece al pie de nuestras respectivas firmas, manifestamos que mediante el presente escrito hemos decidido celebrar un contrato de compraventa que consignamos en las siguientes cláusulas:\n\nPRIMERA: {{nombre_vendedor}} transfiere a título de venta llana y simple a favor de {{nombre_comprador}} el derecho de dominio y posesión que tiene y ejerce sobre el siguiente bien inmueble: {{tipo_inmueble}}, ubicado en el barrio {{barrio}}, con dirección {{direccion_inmueble}}, con superficie aproximada de {{metros}} metros cuadrados, Registro Catastral número {{registro_catastral}}, localizada en el Perímetro Urbano de la ciudad de {{ciudad}}.\n\nSEGUNDA: El precio o valor del inmueble materia de este contrato, es la cantidad de {{valor_letras}} (${{valor_numeros}}), suma que el vendedor declara tener recibida del comprador, en este acto, a su entera satisfacción.\n\nTERCERA: Declara el vendedor que el inmueble que enajena mediante este instrumento, lo adquirió en su estado civil actual por compra que de él hizo a {{fecha_adquisicion}}, mediante escritura pública número {{numero_escritura}} de fecha {{fecha_escritura}}, otorgada en la Notaría {{notaria}} del Círculo de {{circulo}}, la cual fue registrada en la oficina de registro de Instrumentos Públicos del mismo Círculo al folio de Matrícula Inmobiliaria número {{folio_matricula}}.\n\nCUARTA: Declara igualmente el vendedor que el inmueble que transfiere por medio de esta escritura pública, se encuentra libre de censo, hipoteca, embargo, pleito pendiente, demanda civil registrada, arrendamiento, anticresis, y patrimonio de familia inembargable consignado por escritura pública, condiciones resolutorias de dominio, limitaciones del mismo y en general, libre de todo gravamen, pero que, en todo caso, se compromete a salir al saneamiento de lo vendido, conforme a la ley.\n\nQUINTA: Que desde esta misma fecha, el vendedor le hace entrega real y material del inmueble al comprador, junto con todos sus usos y costumbres que legalmente le corresponden, sin reserva ni limitación alguna y en el estado en que se encuentra, aclarando que en esta venta queda incluido el derecho a la línea telefónica número {{telefono}}, junto con su respectivo aparato.\n\nEL VENDEDOR\n_________________________\nCC Nº: ...........\n\nEL COMPRADOR\n_________________________\nCC Nº: ...........",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma el contrato", "type": "text", "required": true },
-      { "name": "dia", "label": "Día (número)", "type": "number", "required": true },
-      { "name": "mes", "label": "Mes (ej: abril)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año (ej: 2026)", "type": "number", "required": true },
-      { "name": "nombre_vendedor", "label": "Nombre completo del vendedor", "type": "text", "required": true },
-      { "name": "nombre_comprador", "label": "Nombre completo del comprador", "type": "text", "required": true },
-      { "name": "estado_civil_vendedor", "label": "Estado civil del vendedor (ej: soltero / casado / divorciado / viudo)", "type": "text", "required": true },
-      { "name": "estado_civil_comprador", "label": "Estado civil del comprador (ej: soltero / casado / divorciado / viudo)", "type": "text", "required": true },
-      { "name": "sociedad_conyugal", "label": "Sociedad conyugal (ej: con sociedad conyugal vigente / sin sociedad conyugal)", "type": "text", "required": true },
-      { "name": "tipo_inmueble", "label": "Tipo de bien (ej: casa / apartamento / local / lote / finca)", "type": "text", "required": true },
-      { "name": "barrio", "label": "Barrio donde está ubicado el bien", "type": "text", "required": true },
-      { "name": "direccion_inmueble", "label": "Dirección exacta del inmueble (ej: Calle 4 Sur # 2A-56)", "type": "text", "required": true },
-      { "name": "metros", "label": "Área total en metros cuadrados (solo el número)", "type": "number", "required": true },
-      { "name": "registro_catastral", "label": "Número de Registro Catastral", "type": "text", "required": true },
-      { "name": "valor_letras", "label": "Precio total en letras (ej: cien millones de pesos m/cte)", "type": "text", "required": true },
-      { "name": "valor_numeros", "label": "Precio total en números (ej: 100.000.000)", "type": "text", "required": true },
-      { "name": "fecha_adquisicion", "label": "Fecha en que el vendedor compró el bien (ej: 15 de mayo de 2018)", "type": "text", "required": true },
-      { "name": "numero_escritura", "label": "Número de la escritura pública (solo el número, ej: 1245)", "type": "text", "required": true },
-      { "name": "fecha_escritura", "label": "Fecha de esa escritura pública (ej: 21 de abril de 2018)", "type": "text", "required": true },
-      { "name": "notaria", "label": "Nombre de la notaría — sin escribir 'Notaría' (ej: Única / Primera / Segunda)", "type": "text", "required": true },
-      { "name": "circulo", "label": "Círculo notarial — solo la ciudad (ej: Cali / El Cerrito / Bogotá)", "type": "text", "required": true },
-      { "name": "folio_matricula", "label": "Número de Folio de Matrícula Inmobiliaria (ej: 370-123456)", "type": "text", "required": true },
-      { "name": "telefono", "label": "Número de teléfono incluido en el contrato", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad o Municipio donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (ej: abril)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "nombre_vendedor",
+        "label": "Nombre completo del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_comprador",
+        "label": "Nombre completo del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_vendedor",
+        "label": "Estado civil del vendedor (ej: soltero / casado / divorciado / viudo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_comprador",
+        "label": "Estado civil del comprador (ej: soltero / casado / divorciado / viudo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "sociedad_conyugal",
+        "label": "Sociedad conyugal (ej: con sociedad conyugal vigente / sin sociedad conyugal)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_inmueble",
+        "label": "Tipo de bien (ej: casa / apartamento / local / lote / finca)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "barrio",
+        "label": "Barrio donde está ubicado el bien",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_inmueble",
+        "label": "Dirección exacta del inmueble (ej: Calle 4 Sur # 2A-56)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "metros",
+        "label": "Área total en metros cuadrados (solo el número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "registro_catastral",
+        "label": "Número de Registro Catastral",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_letras",
+        "label": "Precio total en letras (ej: cien millones de pesos m/cte)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_numeros",
+        "label": "Precio total en números (ej: 100.000.000)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_adquisicion",
+        "label": "Fecha en que el vendedor compró el bien (ej: 15 de mayo de 2018)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura",
+        "label": "Número de la escritura pública (solo el número, ej: 1245)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_escritura",
+        "label": "Fecha de esa escritura pública (ej: 21 de abril de 2018)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria",
+        "label": "Nombre de la notaría — sin escribir 'Notaría' (ej: Única / Primera / Segunda)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial — solo la ciudad (ej: Cali / El Cerrito / Bogotá)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_matricula",
+        "label": "Número de Folio de Matrícula Inmobiliaria (ej: 370-123456)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "telefono",
+        "label": "Número de teléfono incluido en el contrato",
+        "type": "text",
+        "required": true
+      }
     ]
   },
-
   {
     "id": 4,
     "title": "Modelo de contrato de permuta",
     "template": "En la ciudad de {{ciudad}}, entre los suscritos {{nombre_parte1}} y {{nombre_parte2}}, mayores de edad, vecinos de esta ciudad, de estado civil {{estado_civil_parte1}} y {{estado_civil_parte2}} respectivamente, {{sociedad_conyugal}}, identificados como aparece al pie de nuestras respectivas firmas, mediante el presente documento manifestamos que hemos celebrado un Contrato de Permuta que consignamos en las siguientes cláusulas:\n\nPRIMERA: {{nombre_parte1}} transfiere a título de permuta, a favor de {{nombre_parte2}}, el siguiente bien inmueble: {{tipo_inmueble1}}, ubicado en el barrio {{barrio1}}, con dirección {{direccion1}}, con superficie aproximada de {{metros1}} metros cuadrados, Registro Catastral número {{registro_catastral1}}, localizada en el Perímetro Urbano de la ciudad de {{ciudad}}, adquirido mediante escritura pública número {{numero_escritura1}} de fecha {{fecha_escritura1}}, otorgada en la Notaría {{notaria1}} del Círculo de {{circulo1}}, debidamente registrada en la Oficina de Registro de Instrumentos Públicos al Folio de Matrícula Inmobiliaria número {{folio_matricula1}}, por compra que de él hizo a {{vendedor_original1}}, adquisición que se operó en su estado civil actual.\n\nSEGUNDA: A su turno, {{nombre_parte2}} transfiere al mismo título de permuta a favor de {{nombre_parte1}}, el siguiente bien inmueble: {{tipo_inmueble2}}, ubicado en el barrio {{barrio2}}, con dirección {{direccion2}}, con superficie aproximada de {{metros2}} metros cuadrados, Registro Catastral número {{registro_catastral2}}, localizada en el Perímetro Urbano de la ciudad de {{ciudad}}, el cual adquirió en su estado civil actual por compra que de él hizo a {{vendedor_original2}}, mediante escritura pública número {{numero_escritura2}} de fecha {{fecha_escritura2}}, otorgada en la Notaría {{notaria2}} del Círculo de {{circulo2}}, registrada en la Oficina de Registro de Instrumentos Públicos al Folio de Matrícula Inmobiliaria número {{folio_matricula2}}.\n\nTERCERA: Para todos los efectos legales, acordamos dar a los inmuebles materia de este contrato un valor comercial de {{valor_letras}} (${{valor_numeros}}) a cada uno.\n\nCUARTA: Expresamos y así lo declaramos que los bienes que son objeto de esta permuta los garantizamos libres de censo, hipoteca, embargo, pleito pendiente, demanda civil registrada, arrendamiento y patrimonio de familia inembargable consignado por escritura pública, condiciones resolutorias de dominio, limitaciones del mismo y en general, libres de todo gravamen, pero en todo caso nos comprometemos a salir a su saneamiento conforme a la ley.\n\nQUINTA: Manifestamos que desde esta misma fecha, hacemos entrega real y material de los inmuebles, junto con todos sus usos, costumbres y servidumbres que legalmente les corresponde, sin reserva ni limitación alguna y en el estado en que se encuentran.\n\nLAS COMPARECIENTES\n\n_________________________\nCC Nº: ...........\n\n_________________________\nCC Nº: ...........",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma el contrato", "type": "text", "required": true },
-      { "name": "nombre_parte1", "label": "Nombre completo de la primera parte", "type": "text", "required": true },
-      { "name": "nombre_parte2", "label": "Nombre completo de la segunda parte", "type": "text", "required": true },
-      { "name": "estado_civil_parte1", "label": "Estado civil de la primera parte (ej: soltero / casado / divorciado / viudo)", "type": "text", "required": true },
-      { "name": "estado_civil_parte2", "label": "Estado civil de la segunda parte (ej: soltero / casado / divorciado / viudo)", "type": "text", "required": true },
-      { "name": "sociedad_conyugal", "label": "Sociedad conyugal (ej: con sociedad conyugal vigente / sin sociedad conyugal)", "type": "text", "required": true },
-      { "name": "tipo_inmueble1", "label": "Tipo de bien de la primera parte (ej: casa / apartamento / local / lote)", "type": "text", "required": true },
-      { "name": "barrio1", "label": "Barrio del bien de la primera parte", "type": "text", "required": true },
-      { "name": "direccion1", "label": "Dirección del bien de la primera parte (ej: Calle 4 Sur # 2A-56)", "type": "text", "required": true },
-      { "name": "metros1", "label": "Área del bien de la primera parte en metros cuadrados", "type": "number", "required": true },
-      { "name": "registro_catastral1", "label": "Registro Catastral del bien de la primera parte", "type": "text", "required": true },
-      { "name": "numero_escritura1", "label": "Número de escritura del bien de la primera parte (solo el número)", "type": "text", "required": true },
-      { "name": "fecha_escritura1", "label": "Fecha de esa escritura (ej: 15 de mayo de 2018)", "type": "text", "required": true },
-      { "name": "notaria1", "label": "Notaría del bien de la primera parte — sin escribir 'Notaría' (ej: Única / Primera)", "type": "text", "required": true },
-      { "name": "circulo1", "label": "Círculo notarial del bien de la primera parte — solo la ciudad", "type": "text", "required": true },
-      { "name": "folio_matricula1", "label": "Folio de Matrícula Inmobiliaria del bien de la primera parte (ej: 370-123456)", "type": "text", "required": true },
-      { "name": "vendedor_original1", "label": "Nombre de quien le vendió el bien a la primera parte", "type": "text", "required": true },
-      { "name": "tipo_inmueble2", "label": "Tipo de bien de la segunda parte (ej: casa / apartamento / local / lote)", "type": "text", "required": true },
-      { "name": "barrio2", "label": "Barrio del bien de la segunda parte", "type": "text", "required": true },
-      { "name": "direccion2", "label": "Dirección del bien de la segunda parte (ej: Calle 4 Sur # 2A-56)", "type": "text", "required": true },
-      { "name": "metros2", "label": "Área del bien de la segunda parte en metros cuadrados", "type": "number", "required": true },
-      { "name": "registro_catastral2", "label": "Registro Catastral del bien de la segunda parte", "type": "text", "required": true },
-      { "name": "vendedor_original2", "label": "Nombre de quien le vendió el bien a la segunda parte", "type": "text", "required": true },
-      { "name": "numero_escritura2", "label": "Número de escritura del bien de la segunda parte (solo el número)", "type": "text", "required": true },
-      { "name": "fecha_escritura2", "label": "Fecha de esa escritura (ej: 15 de mayo de 2018)", "type": "text", "required": true },
-      { "name": "notaria2", "label": "Notaría del bien de la segunda parte — sin escribir 'Notaría' (ej: Única / Primera)", "type": "text", "required": true },
-      { "name": "circulo2", "label": "Círculo notarial del bien de la segunda parte — solo la ciudad", "type": "text", "required": true },
-      { "name": "folio_matricula2", "label": "Folio de Matrícula Inmobiliaria del bien de la segunda parte (ej: 370-123456)", "type": "text", "required": true },
-      { "name": "valor_letras", "label": "Valor comercial de cada inmueble en letras (ej: cien millones de pesos m/cte)", "type": "text", "required": true },
-      { "name": "valor_numeros", "label": "Valor comercial en números (ej: 100.000.000)", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad o Municipio donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_parte1",
+        "label": "Nombre completo de la primera parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_parte2",
+        "label": "Nombre completo de la segunda parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_parte1",
+        "label": "Estado civil de la primera parte (ej: soltero / casado / divorciado / viudo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_parte2",
+        "label": "Estado civil de la segunda parte (ej: soltero / casado / divorciado / viudo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "sociedad_conyugal",
+        "label": "Sociedad conyugal (ej: con sociedad conyugal vigente / sin sociedad conyugal)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_inmueble1",
+        "label": "Tipo de bien de la primera parte (ej: casa / apartamento / local / lote)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "barrio1",
+        "label": "Barrio del bien de la primera parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion1",
+        "label": "Dirección del bien de la primera parte (ej: Calle 4 Sur # 2A-56)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "metros1",
+        "label": "Área del bien de la primera parte en metros cuadrados",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "registro_catastral1",
+        "label": "Registro Catastral del bien de la primera parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura1",
+        "label": "Número de escritura del bien de la primera parte (solo el número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_escritura1",
+        "label": "Fecha de esa escritura (ej: 15 de mayo de 2018)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria1",
+        "label": "Notaría del bien de la primera parte — sin escribir 'Notaría' (ej: Única / Primera)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo1",
+        "label": "Círculo notarial del bien de la primera parte — solo la ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_matricula1",
+        "label": "Folio de Matrícula Inmobiliaria del bien de la primera parte (ej: 370-123456)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "vendedor_original1",
+        "label": "Nombre de quien le vendió el bien a la primera parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_inmueble2",
+        "label": "Tipo de bien de la segunda parte (ej: casa / apartamento / local / lote)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "barrio2",
+        "label": "Barrio del bien de la segunda parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion2",
+        "label": "Dirección del bien de la segunda parte (ej: Calle 4 Sur # 2A-56)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "metros2",
+        "label": "Área del bien de la segunda parte en metros cuadrados",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "registro_catastral2",
+        "label": "Registro Catastral del bien de la segunda parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "vendedor_original2",
+        "label": "Nombre de quien le vendió el bien a la segunda parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura2",
+        "label": "Número de escritura del bien de la segunda parte (solo el número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_escritura2",
+        "label": "Fecha de esa escritura (ej: 15 de mayo de 2018)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria2",
+        "label": "Notaría del bien de la segunda parte — sin escribir 'Notaría' (ej: Única / Primera)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo2",
+        "label": "Círculo notarial del bien de la segunda parte — solo la ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_matricula2",
+        "label": "Folio de Matrícula Inmobiliaria del bien de la segunda parte (ej: 370-123456)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_letras",
+        "label": "Valor comercial de cada inmueble en letras (ej: cien millones de pesos m/cte)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_numeros",
+        "label": "Valor comercial en números (ej: 100.000.000)",
+        "type": "text",
+        "required": true
+      }
     ]
   },
   {
@@ -141,21 +674,96 @@
     "title": "Modelo de contrato de compraventa de bien mueble con pacto de reserva de dominio",
     "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}, entre los suscritos {{nombre_comprador}}, mayor y vecino de {{ciudad_comprador}}, quien en adelante se denominará El Comprador, y {{nombre_vendedor}}, mayor y vecino de {{ciudad_vendedor}}, en su condición de representante legal de la empresa {{nombre_empresa}}, domiciliada en {{domicilio_empresa}}, han celebrado un contrato de compraventa con pacto de reserva de dominio, que se regirá por las siguientes cláusulas:\n\nPRIMERA: El vendedor ha entregado desde hoy a El Comprador, en perfecto buen estado, y el último confiesa haber recibido el bien mueble que a continuación se describe: {{descripcion_bien}}.\n\nSEGUNDA: El Comprador se obliga a conservar en debida forma el bien antes citado, pero tendrá facultad para hacer uso de dicho bien destinándolo en su provecho al objeto u objetos para los cuales fueron construidos.\n\nTERCERA: El Vendedor, no obstante, seguirá ejerciendo la posesión del bien de que se trata, dado que El Comprador solamente tendrá la tenencia del bien indicado, en lugar y a nombre de El Vendedor, de acuerdo con lo previsto en el artículo 762 del Código Civil.\n\nCUARTA: El precio de este contrato es la suma de {{valor_letras}} (${{valor_numeros}}) que El Comprador se obliga a pagar a El Vendedor, en la ciudad de {{ciudad_pago}}, en la siguiente forma: {{forma_pago}}.\n\nQUINTA: El dominio del bien objeto de este contrato no se transferirá a El Comprador sino en virtud del pago total del precio, pues el vendedor se reserva expresamente el dominio de lo vendido.\n\nSEXTA: La mora en el pago de una cualquiera de las cuotas, causará de inmediato el vencimiento de todas las demás cuotas pendientes aún cuando no estuvieren vencidas. Desde el momento de la mora El Vendedor podrá exigir ejecutivamente el pago de las cuotas pendientes o la entrega inmediata del bien mueble de su propiedad. Si El Vendedor opta por lo último no tendrá que devolver, por ningún motivo, a El Comprador, las cuotas que éste le hubiere abonado, las cuales retendrá como indemnización por el uso, deterioro y demérito del objeto u objetos a que se refiere este contrato, como indemnización por el incumplimiento de esta convención.\n\nSÉPTIMA: Es entendido que si El Comprador vende, grava o dispone en cualquier forma del bien o bienes sobre que versa este contrato, incurre en el delito de abuso de confianza, de conformidad con el Código Penal.\n\nOCTAVA: En el caso de embargo o secuestro del bien o bienes en referencia, el comprador queda obligado a lo siguiente: a) A dar aviso inmediatamente a El Vendedor; b) A oponerse al embargo o secuestro manifestando que es mero tenedor; y c) A hacer todas las diligencias a su alcance a fin de evitar el embargo o secuestro.\n\nPara constancia, se firma en dos ejemplares de un mismo tenor, por las partes que intervienen en la negociación y ante dos testigos.\n\nEL VENDEDOR\n_________________________\nCC Nº: ...........\n\nEL COMPRADOR\n_________________________\nCC Nº: ...........",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma el contrato", "type": "text", "required": true },
-      { "name": "dia", "label": "Día (número)", "type": "number", "required": true },
-      { "name": "mes", "label": "Mes (ej: abril)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año (ej: 2026)", "type": "number", "required": true },
-      { "name": "nombre_comprador", "label": "Nombre completo del comprador", "type": "text", "required": true },
-      { "name": "ciudad_comprador", "label": "Ciudad o municipio donde vive el comprador", "type": "text", "required": true },
-      { "name": "nombre_vendedor", "label": "Nombre completo del vendedor o representante legal", "type": "text", "required": true },
-      { "name": "ciudad_vendedor", "label": "Ciudad o municipio donde vive el vendedor", "type": "text", "required": true },
-      { "name": "nombre_empresa", "label": "Nombre de la empresa vendedora (si aplica, si no escriba: no aplica)", "type": "text", "required": true },
-      { "name": "domicilio_empresa", "label": "Ciudad donde está domiciliada la empresa (si no aplica escriba: no aplica)", "type": "text", "required": true },
-      { "name": "descripcion_bien", "label": "Descripción detallada del bien mueble (ej: vehículo marca Toyota, modelo 2020, placa ABC123)", "type": "text", "required": true },
-      { "name": "valor_letras", "label": "Precio total en letras (ej: diez millones de pesos m/cte)", "type": "text", "required": true },
-      { "name": "valor_numeros", "label": "Precio total en números (ej: 10.000.000)", "type": "text", "required": true },
-      { "name": "ciudad_pago", "label": "Ciudad donde se realizará el pago", "type": "text", "required": true },
-      { "name": "forma_pago", "label": "Forma de pago (ej: cuotas mensuales de $500.000 durante 20 meses)", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad o Municipio donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (ej: abril)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "nombre_comprador",
+        "label": "Nombre completo del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_comprador",
+        "label": "Ciudad o municipio donde vive el comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_vendedor",
+        "label": "Nombre completo del vendedor o representante legal",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_vendedor",
+        "label": "Ciudad o municipio donde vive el vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_empresa",
+        "label": "Nombre de la empresa vendedora (si aplica, si no escriba: no aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_empresa",
+        "label": "Ciudad donde está domiciliada la empresa (si no aplica escriba: no aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_bien",
+        "label": "Descripción detallada del bien mueble (ej: vehículo marca Toyota, modelo 2020, placa ABC123)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_letras",
+        "label": "Precio total en letras (ej: diez millones de pesos m/cte)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_numeros",
+        "label": "Precio total en números (ej: 10.000.000)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_pago",
+        "label": "Ciudad donde se realizará el pago",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "forma_pago",
+        "label": "Forma de pago (ej: cuotas mensuales de $500.000 durante 20 meses)",
+        "type": "text",
+        "required": true
+      }
     ]
   },
   {
@@ -163,112 +771,560 @@
     "title": "Modelo de contrato de compraventa de vehículo automotor",
     "template": "Entre los suscritos: {{nombre_vendedor}}, mayor de edad, vecino de {{ciudad_vendedor}}, identificado con la cédula de ciudadanía número {{cedula_vendedor}} expedida en {{expedicion_cedula_vendedor}}, quien en adelante se denominará EL VENDEDOR, de una parte, y {{nombre_comprador}}, también mayor de edad, vecino de {{ciudad_comprador}}, identificado con la cédula de ciudadanía número {{cedula_comprador}} expedida en {{expedicion_cedula_comprador}}, quien para efectos del presente instrumento se designará como EL COMPRADOR, de otra parte, manifestamos que hemos acordado celebrar un contrato de compraventa que se regirá por las siguientes cláusulas:\n\nPRIMERA: EL VENDEDOR transfiere a título de venta a favor del COMPRADOR, y éste recibe en los términos y condiciones que aquí se determinan el siguiente VEHÍCULO AUTOMOTOR:\nClase: {{clase_vehiculo}}\nMarca: {{marca_vehiculo}}\nTipo: {{tipo_vehiculo}}\nColor: {{color_vehiculo}}\nModelo: {{modelo_vehiculo}}\nNo. Motor: {{numero_motor}}\nNo. Serie: {{numero_serie}}\nPlaca: {{placa_vehiculo}}\nLínea: {{linea_vehiculo}}\nCilindraje: {{cilindraje}}\nServicio: {{servicio_vehiculo}}\nCarrocería: {{carroceria}}\nNo. Puertas: {{numero_puertas}}\nCapacidad: {{capacidad}}\n\nSEGUNDA: El vehículo automotor anteriormente descrito presenta {{documento_aduana}}, posee sus accesorios correspondientes y se encuentra y entrega en {{estado_vehiculo}}, a entera satisfacción del comprador, circunstancia que éste declara expresamente, para lo cual es plena prueba de recibo el presente documento.\n\nTERCERA: Las partes acuerdan como precio de venta del vehículo objeto del presente contrato, la suma de {{valor_letras}} (${{valor_numeros}}), cantidad que el comprador entrega y el vendedor recibe a la firma de este instrumento.\n\nCUARTA: Manifiesta EL VENDEDOR que responde al comprador por su calidad de propietario del vehículo vendido y declara no haberlo dejado enajenado antes, encontrarse libre de gravámenes, limitaciones o condiciones, comprometiéndose, en todo caso, a salir al saneamiento de lo vendido en los eventos previstos por la ley.\n\nQUINTA: Los gastos que se deriven del traspaso del vehículo serán cubiertos por {{responsable_gastos}}.\n\nEn fe de lo anterior, se firma por las partes contratantes a los {{dia}} días del mes de {{mes}} del año {{anio}}, en dos ejemplares, uno para cada parte, en la ciudad de {{ciudad}}.\n\nEL COMPRADOR\n_________________________\nCC Nº: ...........\n\nEL VENDEDOR\n_________________________\nCC Nº: ...........",
     "fields": [
-      { "name": "nombre_vendedor", "label": "Nombre completo del vendedor", "type": "text", "required": true },
-      { "name": "ciudad_vendedor", "label": "Ciudad o municipio donde vive el vendedor", "type": "text", "required": true },
-      { "name": "cedula_vendedor", "label": "Número de cédula del vendedor", "type": "text", "required": true },
-      { "name": "expedicion_cedula_vendedor", "label": "Ciudad donde fue expedida la cédula del vendedor", "type": "text", "required": true },
-      { "name": "nombre_comprador", "label": "Nombre completo del comprador", "type": "text", "required": true },
-      { "name": "ciudad_comprador", "label": "Ciudad o municipio donde vive el comprador", "type": "text", "required": true },
-      { "name": "cedula_comprador", "label": "Número de cédula del comprador", "type": "text", "required": true },
-      { "name": "expedicion_cedula_comprador", "label": "Ciudad donde fue expedida la cédula del comprador", "type": "text", "required": true },
-      { "name": "clase_vehiculo", "label": "Clase del vehículo (ej: automóvil, camioneta, motocicleta)", "type": "text", "required": true },
-      { "name": "marca_vehiculo", "label": "Marca del vehículo (ej: Toyota, Chevrolet, Renault)", "type": "text", "required": true },
-      { "name": "tipo_vehiculo", "label": "Tipo de vehículo (ej: sedan, campero, pick-up)", "type": "text", "required": true },
-      { "name": "color_vehiculo", "label": "Color del vehículo", "type": "text", "required": true },
-      { "name": "modelo_vehiculo", "label": "Año modelo del vehículo (ej: 2020)", "type": "text", "required": true },
-      { "name": "numero_motor", "label": "Número de motor del vehículo", "type": "text", "required": true },
-      { "name": "numero_serie", "label": "Número de serie del vehículo", "type": "text", "required": true },
-      { "name": "placa_vehiculo", "label": "Placa del vehículo (ej: ABC123)", "type": "text", "required": true },
-      { "name": "linea_vehiculo", "label": "Línea del vehículo (ej: Corolla, Spark, Logan)", "type": "text", "required": true },
-      { "name": "cilindraje", "label": "Cilindraje del vehículo (ej: 1600 cc)", "type": "text", "required": true },
-      { "name": "servicio_vehiculo", "label": "Tipo de servicio (ej: particular, público, oficial)", "type": "text", "required": true },
-      { "name": "carroceria", "label": "Tipo de carrocería (ej: sedan, furgón, campero)", "type": "text", "required": true },
-      { "name": "numero_puertas", "label": "Número de puertas del vehículo (ej: 4)", "type": "text", "required": true },
-      { "name": "capacidad", "label": "Capacidad del vehículo (ej: 5 pasajeros, 1000 kg carga)", "type": "text", "required": true },
-      { "name": "documento_aduana", "label": "Documento de aduana si aplica (ej: acta de aduana No. 123. Si no aplica escriba: no requiere documento de aduana)", "type": "text", "required": true },
-      { "name": "estado_vehiculo", "label": "Estado en que se entrega el vehículo (ej: perfecto estado de funcionamiento / buen estado / regular estado)", "type": "text", "required": true },
-      { "name": "valor_letras", "label": "Precio de venta en letras (ej: veinte millones de pesos m/cte)", "type": "text", "required": true },
-      { "name": "valor_numeros", "label": "Precio de venta en números (ej: 20.000.000)", "type": "text", "required": true },
-      { "name": "responsable_gastos", "label": "Quién paga los gastos del traspaso (ej: partes iguales / solo el comprador / a cargo del vendedor)", "type": "text", "required": true },
-      { "name": "dia", "label": "Día en que se firma el contrato (número)", "type": "number", "required": true },
-      { "name": "mes", "label": "Mes en que se firma el contrato (ej: abril)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año en que se firma el contrato (ej: 2026)", "type": "number", "required": true },
-      { "name": "ciudad", "label": "Ciudad donde se firma el contrato", "type": "text", "required": true }
+      {
+        "name": "nombre_vendedor",
+        "label": "Nombre completo del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_vendedor",
+        "label": "Ciudad o municipio donde vive el vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_vendedor",
+        "label": "Número de cédula del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_cedula_vendedor",
+        "label": "Ciudad donde fue expedida la cédula del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_comprador",
+        "label": "Nombre completo del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_comprador",
+        "label": "Ciudad o municipio donde vive el comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_comprador",
+        "label": "Número de cédula del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_cedula_comprador",
+        "label": "Ciudad donde fue expedida la cédula del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "clase_vehiculo",
+        "label": "Clase del vehículo (ej: automóvil, camioneta, motocicleta)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "marca_vehiculo",
+        "label": "Marca del vehículo (ej: Toyota, Chevrolet, Renault)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_vehiculo",
+        "label": "Tipo de vehículo (ej: sedan, campero, pick-up)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "color_vehiculo",
+        "label": "Color del vehículo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "modelo_vehiculo",
+        "label": "Año modelo del vehículo (ej: 2020)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_motor",
+        "label": "Número de motor del vehículo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_serie",
+        "label": "Número de serie del vehículo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "placa_vehiculo",
+        "label": "Placa del vehículo (ej: ABC123)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "linea_vehiculo",
+        "label": "Línea del vehículo (ej: Corolla, Spark, Logan)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cilindraje",
+        "label": "Cilindraje del vehículo (ej: 1600 cc)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "servicio_vehiculo",
+        "label": "Tipo de servicio (ej: particular, público, oficial)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "carroceria",
+        "label": "Tipo de carrocería (ej: sedan, furgón, campero)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_puertas",
+        "label": "Número de puertas del vehículo (ej: 4)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "capacidad",
+        "label": "Capacidad del vehículo (ej: 5 pasajeros, 1000 kg carga)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "documento_aduana",
+        "label": "Documento de aduana si aplica (ej: acta de aduana No. 123. Si no aplica escriba: no requiere documento de aduana)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_vehiculo",
+        "label": "Estado en que se entrega el vehículo (ej: perfecto estado de funcionamiento / buen estado / regular estado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_letras",
+        "label": "Precio de venta en letras (ej: veinte millones de pesos m/cte)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_numeros",
+        "label": "Precio de venta en números (ej: 20.000.000)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "responsable_gastos",
+        "label": "Quién paga los gastos del traspaso (ej: partes iguales / solo el comprador / a cargo del vendedor)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día en que se firma el contrato (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes en que se firma el contrato (ej: abril)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año en que se firma el contrato (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma el contrato",
+        "type": "text",
+        "required": true
+      }
     ]
   },
-
   {
     "id": 7,
     "title": "Modelo de contrato de compraventa de vehículo automotor con reserva de dominio",
     "template": "Entre los suscritos: {{nombre_vendedor}}, mayor de edad, vecino de {{ciudad_vendedor}}, identificado con la cédula de ciudadanía número {{cedula_vendedor}} expedida en {{expedicion_cedula_vendedor}}, quien en adelante se denominará EL VENDEDOR, de una parte, y {{nombre_comprador}}, también mayor de edad, vecino de {{ciudad_comprador}}, identificado con la cédula de ciudadanía número {{cedula_comprador}} expedida en {{expedicion_cedula_comprador}}, quien para efectos del presente instrumento se designará como EL COMPRADOR, de otra parte, manifestamos que hemos acordado celebrar un contrato de compraventa que se regirá por las disposiciones legales correspondientes y en especial por las siguientes cláusulas:\n\nPRIMERA: EL VENDEDOR transfiere a título de venta a favor del COMPRADOR y éste recibe en los términos y condiciones que aquí se determinan el siguiente VEHÍCULO AUTOMOTOR:\nClase: {{clase_vehiculo}}\nMarca: {{marca_vehiculo}}\nTipo: {{tipo_vehiculo}}\nColor: {{color_vehiculo}}\nModelo: {{modelo_vehiculo}}\nNo. Motor: {{numero_motor}}\nNo. Serie: {{numero_serie}}\nPlaca: {{placa_vehiculo}}\nLínea: {{linea_vehiculo}}\nCilindraje: {{cilindraje}}\nServicio: {{servicio_vehiculo}}\nCarrocería: {{carroceria}}\nNo. Puertas: {{numero_puertas}}\nCapacidad: {{capacidad}}\n\nSEGUNDA: El vehículo automotor relacionado anteriormente presenta {{documento_aduana}}, posee sus accesorios correspondientes y se encuentra y entrega en {{estado_vehiculo}}, a entera satisfacción del comprador, circunstancia que éste declara expresamente, para lo cual es plena prueba de recibo el presente documento.\n\nTERCERA: Las partes acuerdan como precio de venta del vehículo objeto del presente contrato, la suma de {{valor_letras}} (${{valor_numeros}}), cantidad que el comprador se obliga a pagar al vendedor a su orden en la ciudad de {{ciudad_pago}}, en la siguiente forma: A la firma del presente contrato la suma de {{pago_inicial_letras}} (${{pago_inicial_numeros}}) y el saldo así: {{forma_pago_saldo}}.\n\nCUARTA: Los gastos que se deriven del traspaso del vehículo serán cubiertos por {{responsable_gastos}}. Los gastos inherentes al funcionamiento y movilización del vehículo serán de cargo del comprador.\n\nQUINTA: Acuerdan las partes que el vehículo objeto del presente contrato es vendido y adquirido bajo reserva de dominio hasta tanto no sea pagada por el comprador la totalidad del precio pactado. Así mismo, la tradición del vehículo queda subordinada a la condición suspensiva del pago total del precio pactado y, entre tanto, el comprador no será poseedor sino mero tenedor del mismo, a la orden del vendedor y a título de depositario gratuito. En consecuencia, el incumplimiento en el pago de una o varias de las cuotas mensuales estipuladas, o de cualquiera de las obligaciones que por este documento adquiere el comprador, dará derecho opcional al vendedor o a quien legalmente sus derechos represente, a dar por resuelto el presente contrato, o demandar judicialmente su resolución, o demandar las obligaciones del comprador por la vía ejecutiva, en cuyo caso será título de recaudo suficiente el presente contrato.\n\nSEXTA: El comprador, en su condición de depositario gratuito del vehículo objeto del presente contrato, se obliga a hacerle por su cuenta las reparaciones necesarias, sin derecho a reembolso; a continuar pagando las cuotas hasta cubrir el precio total aún si ocurriere hurto, incendio, accidente o cualquier otra causa que disminuyere o hiciere perder el valor comercial del vehículo, pues todos los riesgos son de su cargo, debiendo responder de toda clase de culpa y caso fortuito. Se obliga igualmente a comunicar al vendedor cualquier persecución del vehículo por terceros, antes de pagarse totalmente el precio, así como a no transferir el vehículo, ni venderlo, gravarlo o ejecutar cualquier otro acto de disposición distinto al uso ordinario mientras no haya pagado todo el precio, so pena de hacerse responsable de las acciones civiles y penales a que haya lugar. Queda también obligado el comprador a asegurar el vehículo vendido por el precio total estipulado en el presente contrato y la póliza respectiva deberá endosarse a favor del vendedor, quien se obliga a reendosar al comprador una vez que éste hubiera pagado la totalidad del precio.\n\nEn fe de lo anterior, se firma por las partes contratantes a los {{dia}} días del mes de {{mes}} del año {{anio}}, en dos ejemplares, uno para cada parte, en la ciudad de {{ciudad}}.\n\nEL COMPRADOR\n_________________________\nCC Nº: ...........\n\nEL VENDEDOR\n_________________________\nCC Nº: ...........",
     "fields": [
-      { "name": "nombre_vendedor", "label": "Nombre completo del vendedor", "type": "text", "required": true },
-      { "name": "ciudad_vendedor", "label": "Ciudad o municipio donde vive el vendedor", "type": "text", "required": true },
-      { "name": "cedula_vendedor", "label": "Número de cédula del vendedor", "type": "text", "required": true },
-      { "name": "expedicion_cedula_vendedor", "label": "Ciudad donde fue expedida la cédula del vendedor", "type": "text", "required": true },
-      { "name": "nombre_comprador", "label": "Nombre completo del comprador", "type": "text", "required": true },
-      { "name": "ciudad_comprador", "label": "Ciudad o municipio donde vive el comprador", "type": "text", "required": true },
-      { "name": "cedula_comprador", "label": "Número de cédula del comprador", "type": "text", "required": true },
-      { "name": "expedicion_cedula_comprador", "label": "Ciudad donde fue expedida la cédula del comprador", "type": "text", "required": true },
-      { "name": "clase_vehiculo", "label": "Clase del vehículo (ej: automóvil, camioneta, motocicleta)", "type": "text", "required": true },
-      { "name": "marca_vehiculo", "label": "Marca del vehículo (ej: Toyota, Chevrolet, Renault)", "type": "text", "required": true },
-      { "name": "tipo_vehiculo", "label": "Tipo de vehículo (ej: sedan, campero, pick-up)", "type": "text", "required": true },
-      { "name": "color_vehiculo", "label": "Color del vehículo", "type": "text", "required": true },
-      { "name": "modelo_vehiculo", "label": "Año modelo del vehículo (ej: 2020)", "type": "text", "required": true },
-      { "name": "numero_motor", "label": "Número de motor del vehículo", "type": "text", "required": true },
-      { "name": "numero_serie", "label": "Número de serie del vehículo", "type": "text", "required": true },
-      { "name": "placa_vehiculo", "label": "Placa del vehículo (ej: ABC123)", "type": "text", "required": true },
-      { "name": "linea_vehiculo", "label": "Línea del vehículo (ej: Corolla, Spark, Logan)", "type": "text", "required": true },
-      { "name": "cilindraje", "label": "Cilindraje del vehículo (ej: 1600 cc)", "type": "text", "required": true },
-      { "name": "servicio_vehiculo", "label": "Tipo de servicio (ej: particular, público, oficial)", "type": "text", "required": true },
-      { "name": "carroceria", "label": "Tipo de carrocería (ej: sedan, furgón, campero). Si no aplica escriba: no aplica", "type": "text", "required": true },
-      { "name": "numero_puertas", "label": "Número de puertas (ej: 4). Si es moto escriba: no aplica", "type": "text", "required": true },
-      { "name": "capacidad", "label": "Capacidad del vehículo (ej: 5 pasajeros). Si no aplica escriba: no aplica", "type": "text", "required": true },
-      { "name": "documento_aduana", "label": "Documento de aduana si aplica. Si no aplica escriba: no requiere documento de aduana", "type": "text", "required": true },
-      { "name": "estado_vehiculo", "label": "Estado en que se entrega el vehículo (ej: perfecto estado / buen estado / regular estado)", "type": "text", "required": true },
-      { "name": "valor_letras", "label": "Precio total en letras (ej: veinte millones de pesos m/cte)", "type": "text", "required": true },
-      { "name": "valor_numeros", "label": "Precio total en números (ej: 20.000.000)", "type": "text", "required": true },
-      { "name": "ciudad_pago", "label": "Ciudad donde se realizarán los pagos", "type": "text", "required": true },
-      { "name": "pago_inicial_letras", "label": "Pago inicial en letras (ej: cinco millones de pesos)", "type": "text", "required": true },
-      { "name": "pago_inicial_numeros", "label": "Pago inicial en números (ej: 5.000.000)", "type": "text", "required": true },
-      { "name": "forma_pago_saldo", "label": "Forma de pago del saldo restante (ej: 15 cuotas mensuales de $1.000.000 pagaderas los días 5 de cada mes)", "type": "text", "required": true },
-      { "name": "responsable_gastos", "label": "Quién paga los gastos del traspaso (ej: partes iguales / solo el comprador / a cargo del vendedor)", "type": "text", "required": true },
-      { "name": "dia", "label": "Día en que se firma el contrato (número)", "type": "number", "required": true },
-      { "name": "mes", "label": "Mes en que se firma el contrato (ej: abril)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año en que se firma el contrato (ej: 2026)", "type": "number", "required": true },
-      { "name": "ciudad", "label": "Ciudad donde se firma el contrato", "type": "text", "required": true }
+      {
+        "name": "nombre_vendedor",
+        "label": "Nombre completo del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_vendedor",
+        "label": "Ciudad o municipio donde vive el vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_vendedor",
+        "label": "Número de cédula del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_cedula_vendedor",
+        "label": "Ciudad donde fue expedida la cédula del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_comprador",
+        "label": "Nombre completo del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_comprador",
+        "label": "Ciudad o municipio donde vive el comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_comprador",
+        "label": "Número de cédula del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_cedula_comprador",
+        "label": "Ciudad donde fue expedida la cédula del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "clase_vehiculo",
+        "label": "Clase del vehículo (ej: automóvil, camioneta, motocicleta)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "marca_vehiculo",
+        "label": "Marca del vehículo (ej: Toyota, Chevrolet, Renault)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_vehiculo",
+        "label": "Tipo de vehículo (ej: sedan, campero, pick-up)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "color_vehiculo",
+        "label": "Color del vehículo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "modelo_vehiculo",
+        "label": "Año modelo del vehículo (ej: 2020)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_motor",
+        "label": "Número de motor del vehículo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_serie",
+        "label": "Número de serie del vehículo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "placa_vehiculo",
+        "label": "Placa del vehículo (ej: ABC123)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "linea_vehiculo",
+        "label": "Línea del vehículo (ej: Corolla, Spark, Logan)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cilindraje",
+        "label": "Cilindraje del vehículo (ej: 1600 cc)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "servicio_vehiculo",
+        "label": "Tipo de servicio (ej: particular, público, oficial)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "carroceria",
+        "label": "Tipo de carrocería (ej: sedan, furgón, campero). Si no aplica escriba: no aplica",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_puertas",
+        "label": "Número de puertas (ej: 4). Si es moto escriba: no aplica",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "capacidad",
+        "label": "Capacidad del vehículo (ej: 5 pasajeros). Si no aplica escriba: no aplica",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "documento_aduana",
+        "label": "Documento de aduana si aplica. Si no aplica escriba: no requiere documento de aduana",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_vehiculo",
+        "label": "Estado en que se entrega el vehículo (ej: perfecto estado / buen estado / regular estado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_letras",
+        "label": "Precio total en letras (ej: veinte millones de pesos m/cte)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_numeros",
+        "label": "Precio total en números (ej: 20.000.000)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_pago",
+        "label": "Ciudad donde se realizarán los pagos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pago_inicial_letras",
+        "label": "Pago inicial en letras (ej: cinco millones de pesos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pago_inicial_numeros",
+        "label": "Pago inicial en números (ej: 5.000.000)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "forma_pago_saldo",
+        "label": "Forma de pago del saldo restante (ej: 15 cuotas mensuales de $1.000.000 pagaderas los días 5 de cada mes)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "responsable_gastos",
+        "label": "Quién paga los gastos del traspaso (ej: partes iguales / solo el comprador / a cargo del vendedor)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día en que se firma el contrato (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes en que se firma el contrato (ej: abril)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año en que se firma el contrato (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma el contrato",
+        "type": "text",
+        "required": true
+      }
     ]
   },
-
-   {
+  {
     "id": 8,
     "title": "Modelo de contrato de anticresis",
     "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los firmantes {{nombre_deudor}} y {{nombre_acreedor}}, personas mayores y vecinos de {{ciudad}}, identificados con las cédulas de ciudadanía números {{cedula_deudor}} y {{cedula_acreedor}} expedidas en {{expedicion_cedula_deudor}} y {{expedicion_cedula_acreedor}} respectivamente, acordamos celebrar un contrato de anticresis sometido a las siguientes cláusulas:\n\nPRIMERA: {{nombre_deudor}} da en anticresis a {{nombre_acreedor}} el siguiente bien: {{descripcion_bien}}, que éste recibe en el acto.\n\nSEGUNDA: {{nombre_acreedor}} se obliga a restituir el bien descrito a {{nombre_deudor}} en el plazo de {{plazo_anos}} años contado desde el {{dia_inicio}} de {{mes_inicio}} de {{anio_inicio}}.\n\nTERCERA: La entrega del bien mencionado se hace para cubrir y garantizar la deuda que entre {{nombre_deudor}} y {{nombre_acreedor}} se contrajo el día {{dia_deuda}} del mes de {{mes_deuda}} del año {{anio_deuda}}, por la suma de {{valor_deuda_letras}} (${{valor_deuda_numeros}}), más los intereses del {{interes_mensual}} por ciento mensual, a partir de la fecha, según se hace constar en el documento suscrito por las partes aquí contratantes.\n\nCUARTA: {{nombre_deudor}} autoriza expresamente a {{nombre_acreedor}} a: a) Retener el bien afectado hasta el pago íntegro del crédito e intereses causados. b) Percibir los frutos del bien bajo condición de imputar su valor sobre los intereses del crédito y en lo que excediera sobre el capital. c) Descontar del valor de los frutos los gastos que hiciere para la conservación del bien. d) Pedir la venta judicial en caso de que el deudor no pagase el crédito en el plazo convenido o dejare transcurrir {{periodos_mora}} períodos sin abonar los intereses devengados. e) Hacer valer sus derechos constituidos por la anticresis contra terceros adquirientes del bien y contra acreedores del mismo que adquieran derechos posteriores a este acto. f) Restituir el bien en cualquier tiempo aunque no hubiera cobrado su crédito y perseguir el pago del mismo por los medios legales.\n\nQUINTA: El acreedor a su vez se obliga a: a) Cuidar el bien y proveer a su conservación sin introducirle cambio alguno, ni alterar el género de explotación, que solo podrá ser de carácter {{tipo_explotacion}}. b) Reparar los perjuicios que sufriera el bien por su culpa o negligencia y restituirlo aún antes de ser pagado el crédito, si abusare de sus facultades. c) Pagar los impuestos y contribuciones que graven la propiedad, descontando de los frutos el desembolso que hiciere. d) Responder de los perjuicios que ocasione al deudor, si no conservara los derechos que tiene la propiedad. e) Restituir el bien al deudor una vez que esté íntegramente pagado su crédito e intereses devengados.\n\nLeída y aprobada, es firmada por los contratantes.\n\nEL DEUDOR\n_________________________\nCC Nº: ...........\n\nEL ACREEDOR\n_________________________\nCC Nº: ...........",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma el contrato", "type": "text", "required": true },
-      { "name": "departamento", "label": "Departamento donde se firma el contrato (ej: Valle del Cauca, Antioquia)", "type": "text", "required": true },
-      { "name": "dia", "label": "Día en que se firma el contrato (número)", "type": "number", "required": true },
-      { "name": "mes", "label": "Mes en que se firma el contrato (ej: abril)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año en que se firma el contrato (ej: 2026)", "type": "number", "required": true },
-      { "name": "nombre_deudor", "label": "Nombre completo del deudor (quien entrega el bien)", "type": "text", "required": true },
-      { "name": "nombre_acreedor", "label": "Nombre completo del acreedor (quien recibe el bien)", "type": "text", "required": true },
-      { "name": "cedula_deudor", "label": "Número de cédula del deudor", "type": "text", "required": true },
-      { "name": "cedula_acreedor", "label": "Número de cédula del acreedor", "type": "text", "required": true },
-      { "name": "expedicion_cedula_deudor", "label": "Ciudad donde fue expedida la cédula del deudor", "type": "text", "required": true },
-      { "name": "expedicion_cedula_acreedor", "label": "Ciudad donde fue expedida la cédula del acreedor", "type": "text", "required": true },
-      { "name": "descripcion_bien", "label": "Descripción del bien inmueble (dirección, linderos, área, matrícula inmobiliaria)", "type": "text", "required": true },
-      { "name": "plazo_anos", "label": "Plazo en años para restituir el bien (ej: 2)", "type": "number", "required": true },
-      { "name": "dia_inicio", "label": "Día de inicio del plazo (número)", "type": "number", "required": true },
-      { "name": "mes_inicio", "label": "Mes de inicio del plazo (ej: abril)", "type": "text", "required": true },
-      { "name": "anio_inicio", "label": "Año de inicio del plazo (ej: 2026)", "type": "number", "required": true },
-      { "name": "dia_deuda", "label": "Día en que se contrajo la deuda (número)", "type": "number", "required": true },
-      { "name": "mes_deuda", "label": "Mes en que se contrajo la deuda (ej: enero)", "type": "text", "required": true },
-      { "name": "anio_deuda", "label": "Año en que se contrajo la deuda (ej: 2025)", "type": "number", "required": true },
-      { "name": "valor_deuda_letras", "label": "Valor de la deuda en letras (ej: diez millones de pesos m/cte)", "type": "text", "required": true },
-      { "name": "valor_deuda_numeros", "label": "Valor de la deuda en números (ej: 10.000.000)", "type": "text", "required": true },
-      { "name": "interes_mensual", "label": "Tasa de interés mensual en porcentaje (ej: 2)", "type": "text", "required": true },
-      { "name": "periodos_mora", "label": "Número de períodos en mora para pedir venta judicial (ej: 3)", "type": "number", "required": true },
-      { "name": "tipo_explotacion", "label": "Tipo de explotación permitida del bien (ej: arrendamiento, agrícola, comercial)", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad o Municipio donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento donde se firma el contrato (ej: Valle del Cauca, Antioquia)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día en que se firma el contrato (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes en que se firma el contrato (ej: abril)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año en que se firma el contrato (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "nombre_deudor",
+        "label": "Nombre completo del deudor (quien entrega el bien)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_acreedor",
+        "label": "Nombre completo del acreedor (quien recibe el bien)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_deudor",
+        "label": "Número de cédula del deudor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_acreedor",
+        "label": "Número de cédula del acreedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_cedula_deudor",
+        "label": "Ciudad donde fue expedida la cédula del deudor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_cedula_acreedor",
+        "label": "Ciudad donde fue expedida la cédula del acreedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_bien",
+        "label": "Descripción del bien inmueble (dirección, linderos, área, matrícula inmobiliaria)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "plazo_anos",
+        "label": "Plazo en años para restituir el bien (ej: 2)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "dia_inicio",
+        "label": "Día de inicio del plazo (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes_inicio",
+        "label": "Mes de inicio del plazo (ej: abril)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio_inicio",
+        "label": "Año de inicio del plazo (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "dia_deuda",
+        "label": "Día en que se contrajo la deuda (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes_deuda",
+        "label": "Mes en que se contrajo la deuda (ej: enero)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio_deuda",
+        "label": "Año en que se contrajo la deuda (ej: 2025)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "valor_deuda_letras",
+        "label": "Valor de la deuda en letras (ej: diez millones de pesos m/cte)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_deuda_numeros",
+        "label": "Valor de la deuda en números (ej: 10.000.000)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "interes_mensual",
+        "label": "Tasa de interés mensual en porcentaje (ej: 2)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodos_mora",
+        "label": "Número de períodos en mora para pedir venta judicial (ej: 3)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "tipo_explotacion",
+        "label": "Tipo de explotación permitida del bien (ej: arrendamiento, agrícola, comercial)",
+        "type": "text",
+        "required": true
+      }
     ]
   },
   {
@@ -276,92 +1332,434 @@
     "title": "Modelo de contrato de usufructo",
     "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos {{nombre_propietario}}, persona mayor y vecino de {{ciudad_propietario}}, identificado con la cédula de ciudadanía número {{cedula_propietario}} expedida en {{expedicion_cedula_propietario}}, quien para efectos del presente contrato se denominará el propietario, y {{nombre_usufructuario}}, de iguales condiciones, domiciliado en {{ciudad_usufructuario}}, identificado con la cédula de ciudadanía número {{cedula_usufructuario}} expedida en {{expedicion_cedula_usufructuario}}, quien en adelante se llamará el usufructuario, hemos acordado celebrar el presente contrato de constitución de derecho real de usufructo bajo las cláusulas y condiciones siguientes:\n\nPRIMERA: El propietario concede al usufructuario a título de usufructo el uso y el goce de un bien inmueble ubicado en {{direccion_inmueble}}, con la siguiente descripción: {{descripcion_inmueble}}, usado para {{uso_inmueble}}.\n\nSEGUNDA: El plazo por el que se constituye el presente usufructo es de {{plazo_anos}} años contados a partir del {{dia_inicio}} de {{mes_inicio}} de {{anio_inicio}}, no pudiendo exceder dicho plazo de {{plazo_maximo}} años.\n\nTERCERA: El usufructuario puede usar y explotar el inmueble objeto de este contrato conforme a derecho, además podrá {{facultades_adicionales}}.\n\nCUARTA: El precio del presente usufructo se establece en la suma de {{valor_letras}} (${{valor_numeros}}) que el usufructuario paga en este acto al propietario, quien acepta de conformidad, sirviendo el presente de suficiente recibo.\n\nQUINTA: El propietario entrega el inmueble libre de toda posesión y con todos los derechos correspondientes al usufructo conforme a derecho, lo cual es aceptado de conformidad por el usufructuario.\n\nSEXTA: Las partes realizaron un inventario por separado de todos los accesorios, muebles y útiles, dejando constancia del estado en que se encuentran, al igual que del inmueble, ejemplar que debidamente firmado por ambos se agrega al presente contrato.\n\nSÉPTIMA: El propietario manifiesta que el inmueble objeto de este contrato no tiene deudas de ninguna especie respecto de tasas, impuestos y demás contribuciones, ni está afectado por gravámenes de ninguna naturaleza; asimismo él no está inhibido para disponer de sus bienes.\n\nLeída por propietario y usufructuario, se firma, comprometiéndose las partes a elevar a escritura pública el presente contrato.\n\nEL PROPIETARIO\n_________________________\nCC Nº: ...........\n\nEL USUFRUCTUARIO\n_________________________\nCC Nº: ...........",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma el contrato", "type": "text", "required": true },
-      { "name": "dia", "label": "Día en que se firma el contrato (número)", "type": "number", "required": true },
-      { "name": "mes", "label": "Mes en que se firma el contrato (ej: abril)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año en que se firma el contrato (ej: 2026)", "type": "number", "required": true },
-      { "name": "nombre_propietario", "label": "Nombre completo del propietario", "type": "text", "required": true },
-      { "name": "ciudad_propietario", "label": "Ciudad donde vive el propietario", "type": "text", "required": true },
-      { "name": "cedula_propietario", "label": "Número de cédula del propietario", "type": "text", "required": true },
-      { "name": "expedicion_cedula_propietario", "label": "Ciudad donde fue expedida la cédula del propietario", "type": "text", "required": true },
-      { "name": "nombre_usufructuario", "label": "Nombre completo del usufructuario (quien usará el bien)", "type": "text", "required": true },
-      { "name": "ciudad_usufructuario", "label": "Ciudad donde vive el usufructuario", "type": "text", "required": true },
-      { "name": "cedula_usufructuario", "label": "Número de cédula del usufructuario", "type": "text", "required": true },
-      { "name": "expedicion_cedula_usufructuario", "label": "Ciudad donde fue expedida la cédula del usufructuario", "type": "text", "required": true },
-      { "name": "direccion_inmueble", "label": "Dirección completa del inmueble (calle, número, barrio, ciudad, matrícula inmobiliaria)", "type": "text", "required": true },
-      { "name": "descripcion_inmueble", "label": "Descripción del inmueble (tipo, área, linderos, registro catastral)", "type": "text", "required": true },
-      { "name": "uso_inmueble", "label": "Para qué se usará el inmueble (ej: vivienda, comercio, agricultura)", "type": "text", "required": true },
-      { "name": "plazo_anos", "label": "Plazo del usufructo en años (ej: 5)", "type": "number", "required": true },
-      { "name": "dia_inicio", "label": "Día de inicio del usufructo (número)", "type": "number", "required": true },
-      { "name": "mes_inicio", "label": "Mes de inicio del usufructo (ej: mayo)", "type": "text", "required": true },
-      { "name": "anio_inicio", "label": "Año de inicio del usufructo (ej: 2026)", "type": "number", "required": true },
-      { "name": "plazo_maximo", "label": "Plazo máximo permitido del usufructo en años (ej: 10)", "type": "number", "required": true },
-      { "name": "facultades_adicionales", "label": "Facultades adicionales del usufructuario (ej: arrendar el inmueble con autorización del propietario)", "type": "text", "required": true },
-      { "name": "valor_letras", "label": "Precio del usufructo en letras (ej: cinco millones de pesos m/cte)", "type": "text", "required": true },
-      { "name": "valor_numeros", "label": "Precio del usufructo en números (ej: 5.000.000)", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad o Municipio donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día en que se firma el contrato (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes en que se firma el contrato (ej: abril)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año en que se firma el contrato (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "nombre_propietario",
+        "label": "Nombre completo del propietario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_propietario",
+        "label": "Ciudad donde vive el propietario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_propietario",
+        "label": "Número de cédula del propietario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_cedula_propietario",
+        "label": "Ciudad donde fue expedida la cédula del propietario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_usufructuario",
+        "label": "Nombre completo del usufructuario (quien usará el bien)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_usufructuario",
+        "label": "Ciudad donde vive el usufructuario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_usufructuario",
+        "label": "Número de cédula del usufructuario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_cedula_usufructuario",
+        "label": "Ciudad donde fue expedida la cédula del usufructuario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_inmueble",
+        "label": "Dirección completa del inmueble (calle, número, barrio, ciudad, matrícula inmobiliaria)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_inmueble",
+        "label": "Descripción del inmueble (tipo, área, linderos, registro catastral)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "uso_inmueble",
+        "label": "Para qué se usará el inmueble (ej: vivienda, comercio, agricultura)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "plazo_anos",
+        "label": "Plazo del usufructo en años (ej: 5)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "dia_inicio",
+        "label": "Día de inicio del usufructo (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes_inicio",
+        "label": "Mes de inicio del usufructo (ej: mayo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio_inicio",
+        "label": "Año de inicio del usufructo (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "plazo_maximo",
+        "label": "Plazo máximo permitido del usufructo en años (ej: 10)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "facultades_adicionales",
+        "label": "Facultades adicionales del usufructuario (ej: arrendar el inmueble con autorización del propietario)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_letras",
+        "label": "Precio del usufructo en letras (ej: cinco millones de pesos m/cte)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_numeros",
+        "label": "Precio del usufructo en números (ej: 5.000.000)",
+        "type": "text",
+        "required": true
+      }
     ]
   },
-
   {
     "id": 10,
     "title": "Modelo de contrato de comodato",
     "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos a saber: {{nombre_comodante}} y {{nombre_comodatario}}, quienes para los efectos del presente contrato se denominarán EL COMODANTE y EL COMODATARIO, respectivamente, ambos mayores de edad y vecinos de la ciudad de {{ciudad}}, identificados como aparece al pie de nuestras respectivas firmas, hemos convenido celebrar el presente CONTRATO DE COMODATO que se regirá por las cláusulas que a continuación se señalan y en su defecto por la normatividad correspondiente del Código Civil.\n\nPRIMERA: EL COMODANTE entrega a EL COMODATARIO y éste recibe, a título de comodato o préstamo de uso, los bienes que se relacionan a continuación: {{descripcion_bienes}}, los cuales pertenecen al COMODANTE.\n\nSEGUNDA: Los bienes anteriormente descritos deberán permanecer durante la vigencia del presente contrato en la siguiente dirección: {{direccion_bienes}}, de la ciudad de {{ciudad_bienes}}. En consecuencia, EL COMODATARIO no podrá cambiar el sitio de ubicación de los bienes entregados en comodato sin la previa y escrita autorización de EL COMODANTE.\n\nTERCERA: EL COMODATARIO podrá utilizar los bienes objeto de este contrato única y exclusivamente para los siguientes fines: {{fines_uso}}.\n\nCUARTA: EL COMODATARIO se obliga a: {{obligaciones_comodatario}}.\n\nQUINTA: Declara EL COMODATARIO haber recibido los bienes objeto del presente contrato a su entera satisfacción.\n\nSEXTA: El presente contrato tiene una duración de {{duracion}}, contados a partir de su firma, fecha desde la cual se perfecciona.\n\nSÉPTIMA: A la terminación del presente contrato surge la obligación para EL COMODATARIO de restituir los bienes en perfecto estado de funcionamiento.\n\nOCTAVA: Acuerdan las partes estimar el valor de los bienes dados en comodato en {{valor_letras}} (${{valor_numeros}}), suma que deberá pagar EL COMODATARIO a EL COMODANTE si éste ejerce la facultad que en su favor consagra el artículo 2203 del Código Civil.\n\nNOVENA: Manifiestan las partes que al momento de firmarse el presente contrato los bienes entregados en comodato se encuentran en perfecto estado.\n\nEn señal de conformidad se suscribe por las partes intervinientes en dos ejemplares del mismo tenor, una para cada una.\n\nEL COMODANTE\n_________________________\nCC Nº: ...........\n\nEL COMODATARIO\n_________________________\nCC Nº: ...........",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma el contrato", "type": "text", "required": true },
-      { "name": "dia", "label": "Día en que se firma el contrato (número)", "type": "number", "required": true },
-      { "name": "mes", "label": "Mes en que se firma el contrato (ej: abril)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año en que se firma el contrato (ej: 2026)", "type": "number", "required": true },
-      { "name": "nombre_comodante", "label": "Nombre completo del comodante (quien presta los bienes)", "type": "text", "required": true },
-      { "name": "nombre_comodatario", "label": "Nombre completo del comodatario (quien recibe los bienes)", "type": "text", "required": true },
-      { "name": "descripcion_bienes", "label": "Descripción detallada de los bienes prestados (ej: un computador portátil marca Dell, serial 12345)", "type": "text", "required": true },
-      { "name": "direccion_bienes", "label": "Dirección donde deben permanecer los bienes durante el contrato", "type": "text", "required": true },
-      { "name": "ciudad_bienes", "label": "Ciudad donde deben permanecer los bienes", "type": "text", "required": true },
-      { "name": "fines_uso", "label": "Para qué fines puede usar los bienes el comodatario (ej: uso exclusivo en actividades académicas)", "type": "text", "required": true },
-      { "name": "obligaciones_comodatario", "label": "Obligaciones del comodatario (ej: cuidar y mantener los bienes, responder por daños, asegurar los bienes, restituirlos al terminar el contrato)", "type": "text", "required": true },
-      { "name": "duracion", "label": "Duración del contrato (ej: 6 meses / 1 año / 30 días)", "type": "text", "required": true },
-      { "name": "valor_letras", "label": "Valor estimado de los bienes en letras (ej: dos millones de pesos m/cte)", "type": "text", "required": true },
-      { "name": "valor_numeros", "label": "Valor estimado de los bienes en números (ej: 2.000.000)", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad o Municipio donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día en que se firma el contrato (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes en que se firma el contrato (ej: abril)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año en que se firma el contrato (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "nombre_comodante",
+        "label": "Nombre completo del comodante (quien presta los bienes)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_comodatario",
+        "label": "Nombre completo del comodatario (quien recibe los bienes)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_bienes",
+        "label": "Descripción detallada de los bienes prestados (ej: un computador portátil marca Dell, serial 12345)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_bienes",
+        "label": "Dirección donde deben permanecer los bienes durante el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_bienes",
+        "label": "Ciudad donde deben permanecer los bienes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fines_uso",
+        "label": "Para qué fines puede usar los bienes el comodatario (ej: uso exclusivo en actividades académicas)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "obligaciones_comodatario",
+        "label": "Obligaciones del comodatario (ej: cuidar y mantener los bienes, responder por daños, asegurar los bienes, restituirlos al terminar el contrato)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion",
+        "label": "Duración del contrato (ej: 6 meses / 1 año / 30 días)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_letras",
+        "label": "Valor estimado de los bienes en letras (ej: dos millones de pesos m/cte)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_numeros",
+        "label": "Valor estimado de los bienes en números (ej: 2.000.000)",
+        "type": "text",
+        "required": true
+      }
     ]
   },
-
   {
-  "id": "compraventa-retroventa",
-  "title": "Modelo de contrato de compraventa con pacto de retroventa",
-  "template": "Entre los suscritos: {{nombre_vendedor}}, mayor de edad, vecino de {{vecino_vendedor}}, identificado con la cédula de ciudadanía número {{cedula_vendedor}} expedida en {{expedida_vendedor}}, quien en adelante se denominará EL VENDEDOR, de una parte, y {{nombre_comprador}}, también mayor de edad, vecino de {{vecino_comprador}}, identificado con la cédula de ciudadanía número {{cedula_comprador}} expedida en {{expedida_comprador}}, quien para efectos del presente documento se designará como EL COMPRADOR, de otra parte, manifestamos que hemos acordado celebrar un contrato de compraventa que se regirá por las disposiciones legales correspondientes y en especial por las siguientes cláusulas:\n\nPRIMERA: EL VENDEDOR transfiere al COMPRADOR a título de compraventa el bien inmueble ubicado en {{ubicacion_inmueble}} de la ciudad de {{ciudad_inmueble}}, el cual corresponde con los siguientes linderos: {{linderos}}.\n\nSEGUNDA: EL VENDEDOR es propietario del bien inmueble reseñado en la cláusula anterior, por haberlo adquirido mediante contrato de compraventa celebrado con {{vendedor_anterior}}, según consta en la escritura pública número {{numero_escritura_anterior}}, otorgada ante la Notaría {{notaria_anterior}}, del Círculo de {{circulo_anterior}}, el día {{dia_escritura_anterior}} de {{mes_escritura_anterior}} del año {{año_escritura_anterior}}, e inscrita en la oficina de registro de instrumentos públicos de {{ciudad_registro}} el día {{dia_registro}} de {{mes_registro}} del año {{año_registro}}, bajo el folio de matrícula inmobiliaria número {{folio_matricula}}.\n\nTERCERA: Manifiesta EL VENDEDOR que el inmueble objeto del presente contrato se encuentra libre de embargo, pleito pendiente, condición resolutoria, patrimonio de familia, censo, anticresis o limitación alguna de dominio. Sin embargo, en todo caso saldrá al saneamiento en los casos de ley.\n\nCUARTA: Acuerdan las partes como precio de la compraventa la suma de {{precio_compraventa}}, que el COMPRADOR se compromete a pagar de la siguiente forma: {{forma_pago}}.\n\nQUINTA: Las partes acuerdan que el VENDEDOR se reserva la facultad de recobrar el bien inmueble que transmite por el presente contrato, ejercitando el pacto de retroventa que aquí se estipula, en las condiciones, plazo y precio que a continuación se señalan.\n\nSEXTA: La facultad que se reserva el VENDEDOR podrá ser ejercida dentro de un plazo máximo de {{plazo_retroventa}}, contados desde la fecha de otorgamiento de la escritura pública correspondiente.\n\nSÉPTIMA: Las partes contratantes fijan como precio para la retroventa la suma de {{precio_retroventa}}, cantidad que deberá pagar el VENDEDOR al COMPRADOR en el momento mismo de la entrega material del inmueble.\n\nOCTAVA: EL VENDEDOR está en la obligación de dar aviso al COMPRADOR, por lo menos con {{plazo_aviso}} de anterioridad a la fecha en que se ha decidido ejercer el derecho que la retroventa le confiere.\n\nNOVENA: EL COMPRADOR se obliga a no enajenar el bien inmueble objeto del presente contrato, salvo que el VENDEDOR lo admita de manera expresa y escrita y se inserte en el texto del respectivo documento público de enajenación la situación de estar afectado por el pacto de retroventa que mediante este contrato se celebra.\n\nEn fe de lo anterior, se firma por las partes contratantes a los {{dia_firma}} días del mes de {{mes_firma}} del año {{año_firma}}, en dos ejemplares, uno para cada parte.\n\nEL VENDEDOR: {{nombre_vendedor}}\n\nEL COMPRADOR: {{nombre_comprador}}",
-  "fields": [
-    {"name": "ciudad_firma", "label": "Ciudad o municipio donde se firma el contrato", "placeholder": "Ej: Cali"},
-    {"name": "dia_firma", "label": "Día (número)", "placeholder": "Ej: 22"},
-    {"name": "mes_firma", "label": "Mes (ej: abril)", "placeholder": "Ej: abril"},
-    {"name": "año_firma", "label": "Año (ej: 2026)", "placeholder": "Ej: 2026"},
-    {"name": "nombre_vendedor", "label": "Nombre completo del vendedor", "placeholder": "Ej: Carlos Andrés Pérez Gómez"},
-    {"name": "vecino_vendedor", "label": "Ciudad donde reside el vendedor", "placeholder": "Ej: Cali"},
-    {"name": "cedula_vendedor", "label": "Cédula de ciudadanía del vendedor", "placeholder": "Ej: 14.523.678"},
-    {"name": "expedida_vendedor", "label": "Ciudad donde fue expedida la cédula del vendedor", "placeholder": "Ej: Cali"},
-    {"name": "nombre_comprador", "label": "Nombre completo del comprador", "placeholder": "Ej: Luis Fernando Ramírez Torres"},
-    {"name": "vecino_comprador", "label": "Ciudad donde reside el comprador", "placeholder": "Ej: Bogotá"},
-    {"name": "cedula_comprador", "label": "Cédula de ciudadanía del comprador", "placeholder": "Ej: 79.345.210"},
-    {"name": "expedida_comprador", "label": "Ciudad donde fue expedida la cédula del comprador", "placeholder": "Ej: Bogotá"},
-    {"name": "ubicacion_inmueble", "label": "Dirección o ubicación del inmueble", "placeholder": "Ej: Calle 15 # 8-42, barrio El Peñón"},
-    {"name": "ciudad_inmueble", "label": "Ciudad donde está ubicado el inmueble", "placeholder": "Ej: Cali"},
-    {"name": "linderos", "label": "Linderos del inmueble", "placeholder": "Ej: Norte: con la calle 15; Sur: con el predio de..."},
-    {"name": "vendedor_anterior", "label": "Nombre de quien le vendió el inmueble al vendedor", "placeholder": "Ej: María Cecilia Torres Vargas"},
-    {"name": "numero_escritura_anterior", "label": "Número de la escritura pública anterior", "placeholder": "Ej: 1245"},
-    {"name": "notaria_anterior", "label": "Nombre de la notaría anterior (sin escribir 'notaría')", "placeholder": "Ej: Primera / Única / Segunda"},
-    {"name": "circulo_anterior", "label": "Círculo notarial anterior — solo la ciudad", "placeholder": "Ej: Cali"},
-    {"name": "dia_escritura_anterior", "label": "Día de la escritura anterior (número)", "placeholder": "Ej: 10"},
-    {"name": "mes_escritura_anterior", "label": "Mes de la escritura anterior", "placeholder": "Ej: marzo"},
-    {"name": "año_escritura_anterior", "label": "Año de la escritura anterior", "placeholder": "Ej: 2018"},
-    {"name": "ciudad_registro", "label": "Ciudad de la oficina de registro de instrumentos públicos", "placeholder": "Ej: Cali"},
-    {"name": "dia_registro", "label": "Día de inscripción en registro (número)", "placeholder": "Ej: 15"},
-    {"name": "mes_registro", "label": "Mes de inscripción en registro", "placeholder": "Ej: abril"},
-    {"name": "año_registro", "label": "Año de inscripción en registro", "placeholder": "Ej: 2018"},
-    {"name": "folio_matricula", "label": "Número del folio de matrícula inmobiliaria", "placeholder": "Ej: 370-12345"},
-    {"name": "precio_compraventa", "label": "Precio total de la compraventa en letras y números", "placeholder": "Ej: ciento veinte millones de pesos ($120.000.000)"},
-    {"name": "forma_pago", "label": "Forma de pago acordada", "placeholder": "Ej: cincuenta millones al firmar y el saldo en 6 meses"},
-    {"name": "plazo_retroventa", "label": "Plazo máximo para ejercer la retroventa", "placeholder": "Ej: dos (2) años"},
-    {"name": "precio_retroventa", "label": "Precio fijado para la retroventa en letras y números", "placeholder": "Ej: ciento veinte millones de pesos ($120.000.000)"},
-    {"name": "plazo_aviso", "label": "Plazo de aviso previo antes de ejercer la retroventa", "placeholder": "Ej: treinta (30) días"}
-  ]
-}
-
+    "id": "compraventa-retroventa",
+    "title": "Modelo de contrato de compraventa con pacto de retroventa",
+    "template": "Entre los suscritos: {{nombre_vendedor}}, mayor de edad, vecino de {{vecino_vendedor}}, identificado con la cédula de ciudadanía número {{cedula_vendedor}} expedida en {{expedida_vendedor}}, quien en adelante se denominará EL VENDEDOR, de una parte, y {{nombre_comprador}}, también mayor de edad, vecino de {{vecino_comprador}}, identificado con la cédula de ciudadanía número {{cedula_comprador}} expedida en {{expedida_comprador}}, quien para efectos del presente documento se designará como EL COMPRADOR, de otra parte, manifestamos que hemos acordado celebrar un contrato de compraventa que se regirá por las disposiciones legales correspondientes y en especial por las siguientes cláusulas:\n\nPRIMERA: EL VENDEDOR transfiere al COMPRADOR a título de compraventa el bien inmueble ubicado en {{ubicacion_inmueble}} de la ciudad de {{ciudad_inmueble}}, el cual corresponde con los siguientes linderos: {{linderos}}.\n\nSEGUNDA: EL VENDEDOR es propietario del bien inmueble reseñado en la cláusula anterior, por haberlo adquirido mediante contrato de compraventa celebrado con {{vendedor_anterior}}, según consta en la escritura pública número {{numero_escritura_anterior}}, otorgada ante la Notaría {{notaria_anterior}}, del Círculo de {{circulo_anterior}}, el día {{dia_escritura_anterior}} de {{mes_escritura_anterior}} del año {{año_escritura_anterior}}, e inscrita en la oficina de registro de instrumentos públicos de {{ciudad_registro}} el día {{dia_registro}} de {{mes_registro}} del año {{año_registro}}, bajo el folio de matrícula inmobiliaria número {{folio_matricula}}.\n\nTERCERA: Manifiesta EL VENDEDOR que el inmueble objeto del presente contrato se encuentra libre de embargo, pleito pendiente, condición resolutoria, patrimonio de familia, censo, anticresis o limitación alguna de dominio. Sin embargo, en todo caso saldrá al saneamiento en los casos de ley.\n\nCUARTA: Acuerdan las partes como precio de la compraventa la suma de {{precio_compraventa}}, que el COMPRADOR se compromete a pagar de la siguiente forma: {{forma_pago}}.\n\nQUINTA: Las partes acuerdan que el VENDEDOR se reserva la facultad de recobrar el bien inmueble que transmite por el presente contrato, ejercitando el pacto de retroventa que aquí se estipula, en las condiciones, plazo y precio que a continuación se señalan.\n\nSEXTA: La facultad que se reserva el VENDEDOR podrá ser ejercida dentro de un plazo máximo de {{plazo_retroventa}}, contados desde la fecha de otorgamiento de la escritura pública correspondiente.\n\nSÉPTIMA: Las partes contratantes fijan como precio para la retroventa la suma de {{precio_retroventa}}, cantidad que deberá pagar el VENDEDOR al COMPRADOR en el momento mismo de la entrega material del inmueble.\n\nOCTAVA: EL VENDEDOR está en la obligación de dar aviso al COMPRADOR, por lo menos con {{plazo_aviso}} de anterioridad a la fecha en que se ha decidido ejercer el derecho que la retroventa le confiere.\n\nNOVENA: EL COMPRADOR se obliga a no enajenar el bien inmueble objeto del presente contrato, salvo que el VENDEDOR lo admita de manera expresa y escrita y se inserte en el texto del respectivo documento público de enajenación la situación de estar afectado por el pacto de retroventa que mediante este contrato se celebra.\n\nEn fe de lo anterior, se firma por las partes contratantes a los {{dia_firma}} días del mes de {{mes_firma}} del año {{año_firma}}, en dos ejemplares, uno para cada parte.\n\nEL VENDEDOR\n_________________________\n{{nombre_vendedor}}\nCC Nº: {{cedula_vendedor}}\n\nEL COMPRADOR\n_________________________\n{{nombre_comprador}}\nCC Nº: {{cedula_comprador}}",
+    "fields": [
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad o municipio donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia_firma",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes_firma",
+        "label": "Mes (ej: abril)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "año_firma",
+        "label": "Año (ej: 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_vendedor",
+        "label": "Nombre completo del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "vecino_vendedor",
+        "label": "Ciudad donde reside el vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_vendedor",
+        "label": "Cédula de ciudadanía del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedida_vendedor",
+        "label": "Ciudad donde fue expedida la cédula del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_comprador",
+        "label": "Nombre completo del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "vecino_comprador",
+        "label": "Ciudad donde reside el comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_comprador",
+        "label": "Cédula de ciudadanía del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedida_comprador",
+        "label": "Ciudad donde fue expedida la cédula del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ubicacion_inmueble",
+        "label": "Dirección o ubicación del inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_inmueble",
+        "label": "Ciudad donde está ubicado el inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "linderos",
+        "label": "Linderos del inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "vendedor_anterior",
+        "label": "Nombre de quien le vendió el inmueble al vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura_anterior",
+        "label": "Número de la escritura pública anterior",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_anterior",
+        "label": "Nombre de la notaría anterior (sin escribir notaría)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_anterior",
+        "label": "Círculo notarial anterior — solo la ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia_escritura_anterior",
+        "label": "Día de la escritura anterior (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes_escritura_anterior",
+        "label": "Mes de la escritura anterior",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "año_escritura_anterior",
+        "label": "Año de la escritura anterior",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_registro",
+        "label": "Ciudad de la oficina de registro de instrumentos públicos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia_registro",
+        "label": "Día de inscripción en registro (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes_registro",
+        "label": "Mes de inscripción en registro",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "año_registro",
+        "label": "Año de inscripción en registro",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_matricula",
+        "label": "Número del folio de matrícula inmobiliaria",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "precio_compraventa",
+        "label": "Precio total de la compraventa en letras y números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "forma_pago",
+        "label": "Forma de pago acordada",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "plazo_retroventa",
+        "label": "Plazo máximo para ejercer la retroventa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "precio_retroventa",
+        "label": "Precio fijado para la retroventa en letras y números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "plazo_aviso",
+        "label": "Plazo de aviso previo antes de ejercer la retroventa",
+        "type": "text",
+        "required": true
+      }
+    ]
+  }
 ]
