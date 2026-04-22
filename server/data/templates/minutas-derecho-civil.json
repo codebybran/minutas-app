@@ -270,5 +270,98 @@
       { "name": "periodos_mora", "label": "Número de períodos en mora para pedir venta judicial (ej: 3)", "type": "number", "required": true },
       { "name": "tipo_explotacion", "label": "Tipo de explotación permitida del bien (ej: arrendamiento, agrícola, comercial)", "type": "text", "required": true }
     ]
-  }
+  },
+  {
+    "id": 9,
+    "title": "Modelo de contrato de usufructo",
+    "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos {{nombre_propietario}}, persona mayor y vecino de {{ciudad_propietario}}, identificado con la cédula de ciudadanía número {{cedula_propietario}} expedida en {{expedicion_cedula_propietario}}, quien para efectos del presente contrato se denominará el propietario, y {{nombre_usufructuario}}, de iguales condiciones, domiciliado en {{ciudad_usufructuario}}, identificado con la cédula de ciudadanía número {{cedula_usufructuario}} expedida en {{expedicion_cedula_usufructuario}}, quien en adelante se llamará el usufructuario, hemos acordado celebrar el presente contrato de constitución de derecho real de usufructo bajo las cláusulas y condiciones siguientes:\n\nPRIMERA: El propietario concede al usufructuario a título de usufructo el uso y el goce de un bien inmueble ubicado en {{direccion_inmueble}}, con la siguiente descripción: {{descripcion_inmueble}}, usado para {{uso_inmueble}}.\n\nSEGUNDA: El plazo por el que se constituye el presente usufructo es de {{plazo_anos}} años contados a partir del {{dia_inicio}} de {{mes_inicio}} de {{anio_inicio}}, no pudiendo exceder dicho plazo de {{plazo_maximo}} años.\n\nTERCERA: El usufructuario puede usar y explotar el inmueble objeto de este contrato conforme a derecho, además podrá {{facultades_adicionales}}.\n\nCUARTA: El precio del presente usufructo se establece en la suma de {{valor_letras}} (${{valor_numeros}}) que el usufructuario paga en este acto al propietario, quien acepta de conformidad, sirviendo el presente de suficiente recibo.\n\nQUINTA: El propietario entrega el inmueble libre de toda posesión y con todos los derechos correspondientes al usufructo conforme a derecho, lo cual es aceptado de conformidad por el usufructuario.\n\nSEXTA: Las partes realizaron un inventario por separado de todos los accesorios, muebles y útiles, dejando constancia del estado en que se encuentran, al igual que del inmueble, ejemplar que debidamente firmado por ambos se agrega al presente contrato.\n\nSÉPTIMA: El propietario manifiesta que el inmueble objeto de este contrato no tiene deudas de ninguna especie respecto de tasas, impuestos y demás contribuciones, ni está afectado por gravámenes de ninguna naturaleza; asimismo él no está inhibido para disponer de sus bienes.\n\nLeída por propietario y usufructuario, se firma, comprometiéndose las partes a elevar a escritura pública el presente contrato.\n\nEL PROPIETARIO\n_________________________\nCC Nº: ...........\n\nEL USUFRUCTUARIO\n_________________________\nCC Nº: ...........",
+    "fields": [
+      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma el contrato", "type": "text", "required": true },
+      { "name": "dia", "label": "Día en que se firma el contrato (número)", "type": "number", "required": true },
+      { "name": "mes", "label": "Mes en que se firma el contrato (ej: abril)", "type": "text", "required": true },
+      { "name": "anio", "label": "Año en que se firma el contrato (ej: 2026)", "type": "number", "required": true },
+      { "name": "nombre_propietario", "label": "Nombre completo del propietario", "type": "text", "required": true },
+      { "name": "ciudad_propietario", "label": "Ciudad donde vive el propietario", "type": "text", "required": true },
+      { "name": "cedula_propietario", "label": "Número de cédula del propietario", "type": "text", "required": true },
+      { "name": "expedicion_cedula_propietario", "label": "Ciudad donde fue expedida la cédula del propietario", "type": "text", "required": true },
+      { "name": "nombre_usufructuario", "label": "Nombre completo del usufructuario (quien usará el bien)", "type": "text", "required": true },
+      { "name": "ciudad_usufructuario", "label": "Ciudad donde vive el usufructuario", "type": "text", "required": true },
+      { "name": "cedula_usufructuario", "label": "Número de cédula del usufructuario", "type": "text", "required": true },
+      { "name": "expedicion_cedula_usufructuario", "label": "Ciudad donde fue expedida la cédula del usufructuario", "type": "text", "required": true },
+      { "name": "direccion_inmueble", "label": "Dirección completa del inmueble (calle, número, barrio, ciudad, matrícula inmobiliaria)", "type": "text", "required": true },
+      { "name": "descripcion_inmueble", "label": "Descripción del inmueble (tipo, área, linderos, registro catastral)", "type": "text", "required": true },
+      { "name": "uso_inmueble", "label": "Para qué se usará el inmueble (ej: vivienda, comercio, agricultura)", "type": "text", "required": true },
+      { "name": "plazo_anos", "label": "Plazo del usufructo en años (ej: 5)", "type": "number", "required": true },
+      { "name": "dia_inicio", "label": "Día de inicio del usufructo (número)", "type": "number", "required": true },
+      { "name": "mes_inicio", "label": "Mes de inicio del usufructo (ej: mayo)", "type": "text", "required": true },
+      { "name": "anio_inicio", "label": "Año de inicio del usufructo (ej: 2026)", "type": "number", "required": true },
+      { "name": "plazo_maximo", "label": "Plazo máximo permitido del usufructo en años (ej: 10)", "type": "number", "required": true },
+      { "name": "facultades_adicionales", "label": "Facultades adicionales del usufructuario (ej: arrendar el inmueble con autorización del propietario)", "type": "text", "required": true },
+      { "name": "valor_letras", "label": "Precio del usufructo en letras (ej: cinco millones de pesos m/cte)", "type": "text", "required": true },
+      { "name": "valor_numeros", "label": "Precio del usufructo en números (ej: 5.000.000)", "type": "text", "required": true }
+    ]
+  },
+
+  {
+    "id": 10,
+    "title": "Modelo de contrato de comodato",
+    "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos a saber: {{nombre_comodante}} y {{nombre_comodatario}}, quienes para los efectos del presente contrato se denominarán EL COMODANTE y EL COMODATARIO, respectivamente, ambos mayores de edad y vecinos de la ciudad de {{ciudad}}, identificados como aparece al pie de nuestras respectivas firmas, hemos convenido celebrar el presente CONTRATO DE COMODATO que se regirá por las cláusulas que a continuación se señalan y en su defecto por la normatividad correspondiente del Código Civil.\n\nPRIMERA: EL COMODANTE entrega a EL COMODATARIO y éste recibe, a título de comodato o préstamo de uso, los bienes que se relacionan a continuación: {{descripcion_bienes}}, los cuales pertenecen al COMODANTE.\n\nSEGUNDA: Los bienes anteriormente descritos deberán permanecer durante la vigencia del presente contrato en la siguiente dirección: {{direccion_bienes}}, de la ciudad de {{ciudad_bienes}}. En consecuencia, EL COMODATARIO no podrá cambiar el sitio de ubicación de los bienes entregados en comodato sin la previa y escrita autorización de EL COMODANTE.\n\nTERCERA: EL COMODATARIO podrá utilizar los bienes objeto de este contrato única y exclusivamente para los siguientes fines: {{fines_uso}}.\n\nCUARTA: EL COMODATARIO se obliga a: {{obligaciones_comodatario}}.\n\nQUINTA: Declara EL COMODATARIO haber recibido los bienes objeto del presente contrato a su entera satisfacción.\n\nSEXTA: El presente contrato tiene una duración de {{duracion}}, contados a partir de su firma, fecha desde la cual se perfecciona.\n\nSÉPTIMA: A la terminación del presente contrato surge la obligación para EL COMODATARIO de restituir los bienes en perfecto estado de funcionamiento.\n\nOCTAVA: Acuerdan las partes estimar el valor de los bienes dados en comodato en {{valor_letras}} (${{valor_numeros}}), suma que deberá pagar EL COMODATARIO a EL COMODANTE si éste ejerce la facultad que en su favor consagra el artículo 2203 del Código Civil.\n\nNOVENA: Manifiestan las partes que al momento de firmarse el presente contrato los bienes entregados en comodato se encuentran en perfecto estado.\n\nEn señal de conformidad se suscribe por las partes intervinientes en dos ejemplares del mismo tenor, una para cada una.\n\nEL COMODANTE\n_________________________\nCC Nº: ...........\n\nEL COMODATARIO\n_________________________\nCC Nº: ...........",
+    "fields": [
+      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma el contrato", "type": "text", "required": true },
+      { "name": "dia", "label": "Día en que se firma el contrato (número)", "type": "number", "required": true },
+      { "name": "mes", "label": "Mes en que se firma el contrato (ej: abril)", "type": "text", "required": true },
+      { "name": "anio", "label": "Año en que se firma el contrato (ej: 2026)", "type": "number", "required": true },
+      { "name": "nombre_comodante", "label": "Nombre completo del comodante (quien presta los bienes)", "type": "text", "required": true },
+      { "name": "nombre_comodatario", "label": "Nombre completo del comodatario (quien recibe los bienes)", "type": "text", "required": true },
+      { "name": "descripcion_bienes", "label": "Descripción detallada de los bienes prestados (ej: un computador portátil marca Dell, serial 12345)", "type": "text", "required": true },
+      { "name": "direccion_bienes", "label": "Dirección donde deben permanecer los bienes durante el contrato", "type": "text", "required": true },
+      { "name": "ciudad_bienes", "label": "Ciudad donde deben permanecer los bienes", "type": "text", "required": true },
+      { "name": "fines_uso", "label": "Para qué fines puede usar los bienes el comodatario (ej: uso exclusivo en actividades académicas)", "type": "text", "required": true },
+      { "name": "obligaciones_comodatario", "label": "Obligaciones del comodatario (ej: cuidar y mantener los bienes, responder por daños, asegurar los bienes, restituirlos al terminar el contrato)", "type": "text", "required": true },
+      { "name": "duracion", "label": "Duración del contrato (ej: 6 meses / 1 año / 30 días)", "type": "text", "required": true },
+      { "name": "valor_letras", "label": "Valor estimado de los bienes en letras (ej: dos millones de pesos m/cte)", "type": "text", "required": true },
+      { "name": "valor_numeros", "label": "Valor estimado de los bienes en números (ej: 2.000.000)", "type": "text", "required": true }
+    ]
+  },
+
+  {
+  "id": "compraventa-retroventa",
+  "title": "Modelo de contrato de compraventa con pacto de retroventa",
+  "template": "Entre los suscritos: {{nombre_vendedor}}, mayor de edad, vecino de {{vecino_vendedor}}, identificado con la cédula de ciudadanía número {{cedula_vendedor}} expedida en {{expedida_vendedor}}, quien en adelante se denominará EL VENDEDOR, de una parte, y {{nombre_comprador}}, también mayor de edad, vecino de {{vecino_comprador}}, identificado con la cédula de ciudadanía número {{cedula_comprador}} expedida en {{expedida_comprador}}, quien para efectos del presente documento se designará como EL COMPRADOR, de otra parte, manifestamos que hemos acordado celebrar un contrato de compraventa que se regirá por las disposiciones legales correspondientes y en especial por las siguientes cláusulas:\n\nPRIMERA: EL VENDEDOR transfiere al COMPRADOR a título de compraventa el bien inmueble ubicado en {{ubicacion_inmueble}} de la ciudad de {{ciudad_inmueble}}, el cual corresponde con los siguientes linderos: {{linderos}}.\n\nSEGUNDA: EL VENDEDOR es propietario del bien inmueble reseñado en la cláusula anterior, por haberlo adquirido mediante contrato de compraventa celebrado con {{vendedor_anterior}}, según consta en la escritura pública número {{numero_escritura_anterior}}, otorgada ante la Notaría {{notaria_anterior}}, del Círculo de {{circulo_anterior}}, el día {{dia_escritura_anterior}} de {{mes_escritura_anterior}} del año {{año_escritura_anterior}}, e inscrita en la oficina de registro de instrumentos públicos de {{ciudad_registro}} el día {{dia_registro}} de {{mes_registro}} del año {{año_registro}}, bajo el folio de matrícula inmobiliaria número {{folio_matricula}}.\n\nTERCERA: Manifiesta EL VENDEDOR que el inmueble objeto del presente contrato se encuentra libre de embargo, pleito pendiente, condición resolutoria, patrimonio de familia, censo, anticresis o limitación alguna de dominio. Sin embargo, en todo caso saldrá al saneamiento en los casos de ley.\n\nCUARTA: Acuerdan las partes como precio de la compraventa la suma de {{precio_compraventa}}, que el COMPRADOR se compromete a pagar de la siguiente forma: {{forma_pago}}.\n\nQUINTA: Las partes acuerdan que el VENDEDOR se reserva la facultad de recobrar el bien inmueble que transmite por el presente contrato, ejercitando el pacto de retroventa que aquí se estipula, en las condiciones, plazo y precio que a continuación se señalan.\n\nSEXTA: La facultad que se reserva el VENDEDOR podrá ser ejercida dentro de un plazo máximo de {{plazo_retroventa}}, contados desde la fecha de otorgamiento de la escritura pública correspondiente.\n\nSÉPTIMA: Las partes contratantes fijan como precio para la retroventa la suma de {{precio_retroventa}}, cantidad que deberá pagar el VENDEDOR al COMPRADOR en el momento mismo de la entrega material del inmueble.\n\nOCTAVA: EL VENDEDOR está en la obligación de dar aviso al COMPRADOR, por lo menos con {{plazo_aviso}} de anterioridad a la fecha en que se ha decidido ejercer el derecho que la retroventa le confiere.\n\nNOVENA: EL COMPRADOR se obliga a no enajenar el bien inmueble objeto del presente contrato, salvo que el VENDEDOR lo admita de manera expresa y escrita y se inserte en el texto del respectivo documento público de enajenación la situación de estar afectado por el pacto de retroventa que mediante este contrato se celebra.\n\nEn fe de lo anterior, se firma por las partes contratantes a los {{dia_firma}} días del mes de {{mes_firma}} del año {{año_firma}}, en dos ejemplares, uno para cada parte.\n\nEL VENDEDOR: {{nombre_vendedor}}\n\nEL COMPRADOR: {{nombre_comprador}}",
+  "fields": [
+    {"name": "ciudad_firma", "label": "Ciudad o municipio donde se firma el contrato", "placeholder": "Ej: Cali"},
+    {"name": "dia_firma", "label": "Día (número)", "placeholder": "Ej: 22"},
+    {"name": "mes_firma", "label": "Mes (ej: abril)", "placeholder": "Ej: abril"},
+    {"name": "año_firma", "label": "Año (ej: 2026)", "placeholder": "Ej: 2026"},
+    {"name": "nombre_vendedor", "label": "Nombre completo del vendedor", "placeholder": "Ej: Carlos Andrés Pérez Gómez"},
+    {"name": "vecino_vendedor", "label": "Ciudad donde reside el vendedor", "placeholder": "Ej: Cali"},
+    {"name": "cedula_vendedor", "label": "Cédula de ciudadanía del vendedor", "placeholder": "Ej: 14.523.678"},
+    {"name": "expedida_vendedor", "label": "Ciudad donde fue expedida la cédula del vendedor", "placeholder": "Ej: Cali"},
+    {"name": "nombre_comprador", "label": "Nombre completo del comprador", "placeholder": "Ej: Luis Fernando Ramírez Torres"},
+    {"name": "vecino_comprador", "label": "Ciudad donde reside el comprador", "placeholder": "Ej: Bogotá"},
+    {"name": "cedula_comprador", "label": "Cédula de ciudadanía del comprador", "placeholder": "Ej: 79.345.210"},
+    {"name": "expedida_comprador", "label": "Ciudad donde fue expedida la cédula del comprador", "placeholder": "Ej: Bogotá"},
+    {"name": "ubicacion_inmueble", "label": "Dirección o ubicación del inmueble", "placeholder": "Ej: Calle 15 # 8-42, barrio El Peñón"},
+    {"name": "ciudad_inmueble", "label": "Ciudad donde está ubicado el inmueble", "placeholder": "Ej: Cali"},
+    {"name": "linderos", "label": "Linderos del inmueble", "placeholder": "Ej: Norte: con la calle 15; Sur: con el predio de..."},
+    {"name": "vendedor_anterior", "label": "Nombre de quien le vendió el inmueble al vendedor", "placeholder": "Ej: María Cecilia Torres Vargas"},
+    {"name": "numero_escritura_anterior", "label": "Número de la escritura pública anterior", "placeholder": "Ej: 1245"},
+    {"name": "notaria_anterior", "label": "Nombre de la notaría anterior (sin escribir 'notaría')", "placeholder": "Ej: Primera / Única / Segunda"},
+    {"name": "circulo_anterior", "label": "Círculo notarial anterior — solo la ciudad", "placeholder": "Ej: Cali"},
+    {"name": "dia_escritura_anterior", "label": "Día de la escritura anterior (número)", "placeholder": "Ej: 10"},
+    {"name": "mes_escritura_anterior", "label": "Mes de la escritura anterior", "placeholder": "Ej: marzo"},
+    {"name": "año_escritura_anterior", "label": "Año de la escritura anterior", "placeholder": "Ej: 2018"},
+    {"name": "ciudad_registro", "label": "Ciudad de la oficina de registro de instrumentos públicos", "placeholder": "Ej: Cali"},
+    {"name": "dia_registro", "label": "Día de inscripción en registro (número)", "placeholder": "Ej: 15"},
+    {"name": "mes_registro", "label": "Mes de inscripción en registro", "placeholder": "Ej: abril"},
+    {"name": "año_registro", "label": "Año de inscripción en registro", "placeholder": "Ej: 2018"},
+    {"name": "folio_matricula", "label": "Número del folio de matrícula inmobiliaria", "placeholder": "Ej: 370-12345"},
+    {"name": "precio_compraventa", "label": "Precio total de la compraventa en letras y números", "placeholder": "Ej: ciento veinte millones de pesos ($120.000.000)"},
+    {"name": "forma_pago", "label": "Forma de pago acordada", "placeholder": "Ej: cincuenta millones al firmar y el saldo en 6 meses"},
+    {"name": "plazo_retroventa", "label": "Plazo máximo para ejercer la retroventa", "placeholder": "Ej: dos (2) años"},
+    {"name": "precio_retroventa", "label": "Precio fijado para la retroventa en letras y números", "placeholder": "Ej: ciento veinte millones de pesos ($120.000.000)"},
+    {"name": "plazo_aviso", "label": "Plazo de aviso previo antes de ejercer la retroventa", "placeholder": "Ej: treinta (30) días"}
+  ]
+}
+
 ]

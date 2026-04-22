@@ -11,7 +11,7 @@ html, body, #root {
 }
 
 body {
-  background: #f0f4f8;
+  background: linear-gradient(135deg, #d8e4f0 0%, #e8f0f8 50%, #d0dcea 100%);
 }
 
 ::-webkit-scrollbar {
@@ -20,19 +20,427 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #e2e8f0;
+  background: #c8d8e8;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #a0b4c8;
+  background: linear-gradient(180deg, #b8962e, #8a6e1e);
   border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
-button:hover {
-  opacity: 0.88;
+/* ── BOTONES 3D GLOBALES ── */
+button {
+  transition: all 0.15s ease;
+  position: relative;
+}
+
+button:not(:disabled):hover {
+  opacity: 1 !important;
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+button:not(:disabled):active {
+  transform: translateY(1px) !important;
 }
 
 input:focus {
   outline: 2px solid #b8962e !important;
   border-color: #b8962e !important;
+  box-shadow: 0 0 0 3px rgba(184,150,46,0.15), 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+
+/* ── ANIMACIONES ── */
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) perspective(1000px) rotateX(-15deg) scale(0.93);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) perspective(1000px) rotateX(0deg) scale(1);
+  }
+}
+
+@keyframes pulseGold {
+  0%   { box-shadow: 0 0 0 0 rgba(184,150,46,0.9), inset 0 1px 0 rgba(255,255,255,0.4), 0 6px 20px rgba(0,0,0,0.2); }
+  50%  { box-shadow: 0 0 0 8px rgba(184,150,46,0), inset 0 1px 0 rgba(255,255,255,0.4), 0 6px 20px rgba(0,0,0,0.2); }
+  100% { box-shadow: 0 0 0 0 rgba(184,150,46,0),   inset 0 1px 0 rgba(255,255,255,0.4), 0 6px 20px rgba(0,0,0,0.2); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -300% center; }
+  100% { background-position: 300% center; }
+}
+
+@keyframes glowBorder {
+  0%   { opacity: 0.4; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+@keyframes floatIn {
+  0%   { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes headerShimmer {
+  0%   { background-position: -400% center; }
+  100% { background-position: 400% center; }
+}
+
+/* ── HEADER 3D ── */
+.header-3d {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.08) inset,
+    0 4px 0 #0a1e35,
+    0 6px 0 #061528,
+    0 8px 20px rgba(0,0,0,0.5),
+    0 16px 40px rgba(0,0,0,0.3) !important;
+  border-bottom: 3px solid #b8962e !important;
+  position: relative;
+}
+
+.header-3d::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #8a6418, #b8962e, #e2b94a, #f5d170, #e2b94a, #b8962e, #8a6418);
+  background-size: 300%;
+  animation: headerShimmer 4s linear infinite;
+}
+
+/* ── SIDEBAR 3D ── */
+.sidebar-3d {
+  box-shadow:
+    2px 0 0 rgba(255,255,255,0.04) inset,
+    4px 0 20px rgba(0,0,0,0.4),
+    8px 0 40px rgba(0,0,0,0.2) !important;
+  border-right: 1px solid #1e3a5c !important;
+}
+
+/* ── CARDS PRINCIPALES 3D ── */
+.card-3d {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.8) inset,
+    0 -1px 0 rgba(0,0,0,0.08) inset,
+    0 2px 0 #c8d8e8,
+    0 4px 0 #b8c8d8,
+    0 6px 0 #a8b8c8,
+    0 8px 20px rgba(0,0,0,0.12),
+    0 16px 40px rgba(0,0,0,0.08) !important;
+  border: 1px solid #c8d8e8 !important;
+  background: linear-gradient(160deg, #ffffff 0%, #f8fbff 60%, #f0f6ff 100%) !important;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card-3d:hover {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.9) inset,
+    0 -1px 0 rgba(0,0,0,0.08) inset,
+    0 2px 0 #c8d8e8,
+    0 6px 0 #b0c0d0,
+    0 8px 0 #a0b0c0,
+    0 12px 30px rgba(0,0,0,0.15),
+    0 20px 50px rgba(0,0,0,0.1) !important;
+  transform: translateY(-2px);
+}
+
+/* ── PANEL DE BIENVENIDA CARDS ── */
+.welcome-card-3d {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.9) inset,
+    0 2px 0 #d0e0f0,
+    0 4px 0 #c0d0e0,
+    0 6px 12px rgba(0,0,0,0.1),
+    0 12px 24px rgba(0,0,0,0.07) !important;
+  border: 1px solid #c8d8e8 !important;
+  border-top: 3px solid #b8962e !important;
+  background: linear-gradient(160deg, #fff 0%, #f8fbff 100%) !important;
+  transition: all 0.25s ease;
+}
+
+.welcome-card-3d:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.9) inset,
+    0 4px 0 #c8d8e8,
+    0 6px 0 #b8c8d8,
+    0 10px 20px rgba(0,0,0,0.15),
+    0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+/* ── BOTONES PRINCIPALES 3D ── */
+.btn-primary-3d {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.12) inset,
+    0 2px 0 #0d2240,
+    0 4px 0 #091830,
+    0 6px 12px rgba(0,0,0,0.35),
+    0 10px 24px rgba(0,0,0,0.2) !important;
+  border-bottom: 1px solid #061020 !important;
+  transition: all 0.15s ease !important;
+}
+
+.btn-primary-3d:hover:not(:disabled) {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.12) inset,
+    0 4px 0 #0d2240,
+    0 6px 0 #091830,
+    0 10px 20px rgba(0,0,0,0.4),
+    0 16px 32px rgba(0,0,0,0.25) !important;
+  transform: translateY(-3px) !important;
+}
+
+.btn-primary-3d:active:not(:disabled) {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.08) inset,
+    0 1px 0 #0d2240,
+    0 3px 8px rgba(0,0,0,0.3) !important;
+  transform: translateY(1px) !important;
+}
+
+.btn-green-3d {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.12) inset,
+    0 2px 0 #1b5e20,
+    0 4px 0 #145218,
+    0 6px 12px rgba(0,0,0,0.3),
+    0 10px 24px rgba(0,0,0,0.18) !important;
+}
+
+.btn-green-3d:hover {
+  transform: translateY(-3px) !important;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.12) inset,
+    0 4px 0 #1b5e20,
+    0 6px 0 #145218,
+    0 10px 20px rgba(0,0,0,0.35) !important;
+}
+
+.btn-blue-3d {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.12) inset,
+    0 2px 0 #0d47a1,
+    0 4px 0 #0a3d8f,
+    0 6px 12px rgba(0,0,0,0.3),
+    0 10px 24px rgba(0,0,0,0.18) !important;
+}
+
+.btn-blue-3d:hover {
+  transform: translateY(-3px) !important;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.12) inset,
+    0 4px 0 #0d47a1,
+    0 6px 0 #0a3d8f,
+    0 10px 20px rgba(0,0,0,0.35) !important;
+}
+
+.btn-gold-3d {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.2) inset,
+    0 2px 0 #7a6010,
+    0 4px 0 #5c4808,
+    0 6px 12px rgba(0,0,0,0.3),
+    0 10px 24px rgba(0,0,0,0.18) !important;
+}
+
+.btn-gold-3d:hover {
+  transform: translateY(-3px) !important;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.2) inset,
+    0 4px 0 #7a6010,
+    0 6px 0 #5c4808,
+    0 10px 20px rgba(184,150,46,0.4),
+    0 16px 32px rgba(0,0,0,0.25) !important;
+}
+
+/* ── CATEGORIAS SIDEBAR 3D ── */
+.cat-btn-3d {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.06) inset,
+    0 2px 0 #0a1e35,
+    0 4px 8px rgba(0,0,0,0.25) !important;
+  transition: all 0.15s ease !important;
+}
+
+.cat-btn-3d:hover {
+  transform: translateX(3px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.06) inset,
+    0 3px 0 #0a1e35,
+    0 6px 14px rgba(0,0,0,0.35) !important;
+}
+
+.cat-btn-active-3d {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.1) inset,
+    0 2px 0 #1a2e50,
+    0 4px 10px rgba(0,0,0,0.3),
+    0 0 0 1px #e2b94a44 !important;
+}
+
+/* ── HISTORIAL ITEMS 3D ── */
+.historial-item-3d {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.06) inset,
+    0 2px 0 #0d2240,
+    0 4px 10px rgba(0,0,0,0.3) !important;
+  transition: all 0.15s ease !important;
+}
+
+.historial-item-3d:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.06) inset,
+    0 4px 0 #0d2240,
+    0 8px 16px rgba(0,0,0,0.4) !important;
+}
+
+/* ── PREVIEW IFRAME CONTAINER 3D ── */
+.preview-3d {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.8) inset,
+    0 2px 0 #c0d0e0,
+    0 4px 0 #b0c0d0,
+    0 6px 0 #a0b0c0,
+    0 10px 30px rgba(0,0,0,0.15),
+    0 20px 50px rgba(0,0,0,0.1) !important;
+}
+
+/* ── BUSCADOR 3D ── */
+.buscar-3d {
+  box-shadow:
+    0 2px 0 #040e1a inset,
+    0 1px 0 rgba(255,255,255,0.04) inset,
+    0 4px 10px rgba(0,0,0,0.2) !important;
+}
+
+/* ── INPUT NORMAL 3D ── */
+.input-3d {
+  box-shadow:
+    0 2px 4px rgba(0,0,0,0.06) inset,
+    0 1px 0 rgba(255,255,255,0.8),
+    0 3px 8px rgba(0,0,0,0.06) !important;
+  transition: all 0.2s ease !important;
+}
+
+/* ── CAMPO CON ERROR - SELLO JURÍDICO 3D ── */
+.campo-error {
+  border: 2px solid #b8962e !important;
+  background: linear-gradient(160deg, #fffef5 0%, #fff8dc 50%, #fef3c0 100%) !important;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.95) inset,
+    0 -2px 0 rgba(184,150,46,0.4) inset,
+    2px 0 0 rgba(184,150,46,0.2) inset,
+    -2px 0 0 rgba(184,150,46,0.2) inset,
+    0 5px 15px rgba(184,150,46,0.3),
+    0 10px 30px rgba(0,0,0,0.12) !important;
+  animation: pulseGold 2s ease-in-out infinite;
+  transform: translateZ(0);
+}
+
+/* ── PANEL ALERTA 3D JURÍDICO PREMIUM ── */
+.alerta-campos {
+  animation: slideDown 0.6s cubic-bezier(0.34, 1.4, 0.64, 1);
+  position: relative;
+  border-radius: 14px !important;
+  box-shadow:
+    0 1px 0 #f0cc6a,
+    0 2px 0 #e2b94a,
+    0 3px 0 #c9a030,
+    0 4px 0 #b8962e,
+    0 5px 0 #a07820,
+    0 6px 0 #8a6418,
+    0 8px 0 #6e5010,
+    0 12px 20px rgba(0,0,0,0.5),
+    0 20px 50px rgba(0,0,0,0.35),
+    0 30px 70px rgba(0,0,0,0.2),
+    inset 0 1px 0 rgba(255,255,255,0.1),
+    inset 0 -1px 0 rgba(0,0,0,0.4) !important;
+}
+
+.alerta-campos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 14px 14px 0 0;
+  background: linear-gradient(90deg, #5c3d08 0%, #8a6418 10%, #b8962e 25%, #e2b94a 40%, #f5d170 50%, #e2b94a 60%, #b8962e 75%, #8a6418 90%, #5c3d08 100%);
+  background-size: 250%;
+  animation: shimmer 3s linear infinite;
+  z-index: 1;
+}
+
+.alerta-campos::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 1px solid rgba(184,150,46,0.2);
+  border-radius: 8px;
+  pointer-events: none;
+  animation: glowBorder 3s ease-in-out infinite;
+}
+
+/* ── TAGS DE CAMPOS FALTANTES ── */
+.campo-faltante-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(184,150,46,0.2) 0%, rgba(226,185,74,0.12) 100%);
+  border: 1px solid rgba(184,150,46,0.55);
+  border-bottom: 2px solid rgba(140,110,30,0.7);
+  border-right: 1px solid rgba(140,110,30,0.4);
+  border-radius: 20px;
+  padding: 5px 14px;
+  color: #f0cc6a;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  box-shadow:
+    0 2px 0 rgba(100,75,15,0.5),
+    0 4px 8px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+  animation: floatIn 0.35s ease forwards;
+  cursor: default;
+  transition: all 0.2s ease;
+  font-family: Georgia, serif;
+}
+
+.campo-faltante-tag:hover {
+  background: linear-gradient(135deg, rgba(184,150,46,0.35) 0%, rgba(226,185,74,0.22) 100%);
+  transform: translateY(-2px);
+  box-shadow:
+    0 4px 0 rgba(100,75,15,0.4),
+    0 6px 14px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+/* ── PANEL PASOS MODAL 3D ── */
+.modal-3d {
+  box-shadow:
+    0 2px 0 #c8d0d8,
+    0 4px 0 #b8c0c8,
+    0 6px 0 #a8b0b8,
+    0 10px 0 #8090a0,
+    0 20px 40px rgba(0,0,0,0.5),
+    0 40px 80px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.9) !important;
+}
+
+/* ── NÚMERO DE PASO 3D ── */
+.paso-num-3d {
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.1) inset,
+    0 2px 0 #0a1e35,
+    0 4px 8px rgba(0,0,0,0.3) !important;
 }
