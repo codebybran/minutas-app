@@ -241,18 +241,13 @@ const DATOS_PRUEBA = {
   fines_uso: 'uso exclusivo en actividades académicas y de investigación',
   obligaciones_comodatario: 'cuidar y mantener los bienes en perfecto estado, responder por cualquier daño, deterioro o pérdida, asegurar los bienes por su valor total y restituirlos al terminar el contrato',
   duracion: '6 meses',
-  "compraventa-retroventa": {
   ciudad_firma: "Cali",
   dia_firma: "22",
   mes_firma: "abril",
   año_firma: "2026",
-  nombre_vendedor: "Carlos Andrés Pérez Gómez",
   vecino_vendedor: "Cali",
-  cedula_vendedor: "14.523.678",
   expedida_vendedor: "Cali",
-  nombre_comprador: "Luis Fernando Ramírez Torres",
   vecino_comprador: "Bogotá",
-  cedula_comprador: "79.345.210",
   expedida_comprador: "Bogotá",
   ubicacion_inmueble: "Calle 15 # 8-42, barrio El Peñón",
   ciudad_inmueble: "Cali",
@@ -268,13 +263,10 @@ const DATOS_PRUEBA = {
   dia_registro: "15",
   mes_registro: "abril",
   año_registro: "2018",
-  folio_matricula: "370-12345",
   precio_compraventa: "ciento veinte millones de pesos ($120.000.000)",
-  forma_pago: "cincuenta millones de pesos al momento de la firma y el saldo de setenta millones en un plazo de seis meses",
   plazo_retroventa: "dos (2) años",
   precio_retroventa: "ciento veinte millones de pesos ($120.000.000)",
   plazo_aviso: "treinta (30) días",
-},
 }
 
 const PASOS_SIGUIENTE = {
