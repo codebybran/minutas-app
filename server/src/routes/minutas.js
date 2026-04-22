@@ -35,7 +35,7 @@ router.get('/:category/:id', (req, res) => {
   }
   
   const templates = JSON.parse(fs.readFileSync(filePath));
-  const minuta = templates.find(m => m.id === parseInt(id));
+  const minuta = templates.find(m => String(m.id) === String(id));
   
   if (!minuta) return res.status(404).json({ error: 'Minuta no encontrada' });
   res.json(minuta);
