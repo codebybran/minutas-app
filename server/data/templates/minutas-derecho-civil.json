@@ -238,5 +238,37 @@
       { "name": "anio", "label": "Año en que se firma el contrato (ej: 2026)", "type": "number", "required": true },
       { "name": "ciudad", "label": "Ciudad donde se firma el contrato", "type": "text", "required": true }
     ]
+  },
+
+   {
+    "id": 8,
+    "title": "Modelo de contrato de anticresis",
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los firmantes {{nombre_deudor}} y {{nombre_acreedor}}, personas mayores y vecinos de {{ciudad}}, identificados con las cédulas de ciudadanía números {{cedula_deudor}} y {{cedula_acreedor}} expedidas en {{expedicion_cedula_deudor}} y {{expedicion_cedula_acreedor}} respectivamente, acordamos celebrar un contrato de anticresis sometido a las siguientes cláusulas:\n\nPRIMERA: {{nombre_deudor}} da en anticresis a {{nombre_acreedor}} el siguiente bien: {{descripcion_bien}}, que éste recibe en el acto.\n\nSEGUNDA: {{nombre_acreedor}} se obliga a restituir el bien descrito a {{nombre_deudor}} en el plazo de {{plazo_anos}} años contado desde el {{dia_inicio}} de {{mes_inicio}} de {{anio_inicio}}.\n\nTERCERA: La entrega del bien mencionado se hace para cubrir y garantizar la deuda que entre {{nombre_deudor}} y {{nombre_acreedor}} se contrajo el día {{dia_deuda}} del mes de {{mes_deuda}} del año {{anio_deuda}}, por la suma de {{valor_deuda_letras}} (${{valor_deuda_numeros}}), más los intereses del {{interes_mensual}} por ciento mensual, a partir de la fecha, según se hace constar en el documento suscrito por las partes aquí contratantes.\n\nCUARTA: {{nombre_deudor}} autoriza expresamente a {{nombre_acreedor}} a: a) Retener el bien afectado hasta el pago íntegro del crédito e intereses causados. b) Percibir los frutos del bien bajo condición de imputar su valor sobre los intereses del crédito y en lo que excediera sobre el capital. c) Descontar del valor de los frutos los gastos que hiciere para la conservación del bien. d) Pedir la venta judicial en caso de que el deudor no pagase el crédito en el plazo convenido o dejare transcurrir {{periodos_mora}} períodos sin abonar los intereses devengados. e) Hacer valer sus derechos constituidos por la anticresis contra terceros adquirientes del bien y contra acreedores del mismo que adquieran derechos posteriores a este acto. f) Restituir el bien en cualquier tiempo aunque no hubiera cobrado su crédito y perseguir el pago del mismo por los medios legales.\n\nQUINTA: El acreedor a su vez se obliga a: a) Cuidar el bien y proveer a su conservación sin introducirle cambio alguno, ni alterar el género de explotación, que solo podrá ser de carácter {{tipo_explotacion}}. b) Reparar los perjuicios que sufriera el bien por su culpa o negligencia y restituirlo aún antes de ser pagado el crédito, si abusare de sus facultades. c) Pagar los impuestos y contribuciones que graven la propiedad, descontando de los frutos el desembolso que hiciere. d) Responder de los perjuicios que ocasione al deudor, si no conservara los derechos que tiene la propiedad. e) Restituir el bien al deudor una vez que esté íntegramente pagado su crédito e intereses devengados.\n\nLeída y aprobada, es firmada por los contratantes.\n\nEL DEUDOR\n_________________________\nCC Nº: ...........\n\nEL ACREEDOR\n_________________________\nCC Nº: ...........",
+    "fields": [
+      { "name": "ciudad", "label": "Ciudad o Municipio donde se firma el contrato", "type": "text", "required": true },
+      { "name": "departamento", "label": "Departamento donde se firma el contrato (ej: Valle del Cauca, Antioquia)", "type": "text", "required": true },
+      { "name": "dia", "label": "Día en que se firma el contrato (número)", "type": "number", "required": true },
+      { "name": "mes", "label": "Mes en que se firma el contrato (ej: abril)", "type": "text", "required": true },
+      { "name": "anio", "label": "Año en que se firma el contrato (ej: 2026)", "type": "number", "required": true },
+      { "name": "nombre_deudor", "label": "Nombre completo del deudor (quien entrega el bien)", "type": "text", "required": true },
+      { "name": "nombre_acreedor", "label": "Nombre completo del acreedor (quien recibe el bien)", "type": "text", "required": true },
+      { "name": "cedula_deudor", "label": "Número de cédula del deudor", "type": "text", "required": true },
+      { "name": "cedula_acreedor", "label": "Número de cédula del acreedor", "type": "text", "required": true },
+      { "name": "expedicion_cedula_deudor", "label": "Ciudad donde fue expedida la cédula del deudor", "type": "text", "required": true },
+      { "name": "expedicion_cedula_acreedor", "label": "Ciudad donde fue expedida la cédula del acreedor", "type": "text", "required": true },
+      { "name": "descripcion_bien", "label": "Descripción del bien inmueble (dirección, linderos, área, matrícula inmobiliaria)", "type": "text", "required": true },
+      { "name": "plazo_anos", "label": "Plazo en años para restituir el bien (ej: 2)", "type": "number", "required": true },
+      { "name": "dia_inicio", "label": "Día de inicio del plazo (número)", "type": "number", "required": true },
+      { "name": "mes_inicio", "label": "Mes de inicio del plazo (ej: abril)", "type": "text", "required": true },
+      { "name": "anio_inicio", "label": "Año de inicio del plazo (ej: 2026)", "type": "number", "required": true },
+      { "name": "dia_deuda", "label": "Día en que se contrajo la deuda (número)", "type": "number", "required": true },
+      { "name": "mes_deuda", "label": "Mes en que se contrajo la deuda (ej: enero)", "type": "text", "required": true },
+      { "name": "anio_deuda", "label": "Año en que se contrajo la deuda (ej: 2025)", "type": "number", "required": true },
+      { "name": "valor_deuda_letras", "label": "Valor de la deuda en letras (ej: diez millones de pesos m/cte)", "type": "text", "required": true },
+      { "name": "valor_deuda_numeros", "label": "Valor de la deuda en números (ej: 10.000.000)", "type": "text", "required": true },
+      { "name": "interes_mensual", "label": "Tasa de interés mensual en porcentaje (ej: 2)", "type": "text", "required": true },
+      { "name": "periodos_mora", "label": "Número de períodos en mora para pedir venta judicial (ej: 3)", "type": "number", "required": true },
+      { "name": "tipo_explotacion", "label": "Tipo de explotación permitida del bien (ej: arrendamiento, agrícola, comercial)", "type": "text", "required": true }
+    ]
   }
 ]

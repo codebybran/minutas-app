@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Document, Packer, Paragraph, TextRun, AlignmentType } = require('docx');
+const { Document, Packer, Paragraph, TextRun, AlignmentType, Table, TableRow, TableCell, WidthType, BorderStyle } = require('docx');
 
 function generateFromTemplate(template, data) {
   let filled = template;
@@ -19,7 +19,7 @@ function cleanTitle(title) {
 
 function toHTML(filledText, title) {
   const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:', 'PRIMERA.', 'SEGUNDA.', 'TERCERA.', 'CUARTA.', 'QUINTA.', 'SEXTA.', 'SÉPTIMA.', 'OCTAVA.'];
-  const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE'];
+  const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE', 'EL VENDEDOR', 'EL COMPRADOR', 'LAS COMPARECIENTES'];
 
   const parrafos = filledText
     .split('\n')
@@ -79,7 +79,7 @@ function toHTML(filledText, title) {
 
 async function toDocx(filledText, title) {
   const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:', 'PRIMERA.', 'SEGUNDA.', 'TERCERA.', 'CUARTA.', 'QUINTA.', 'SEXTA.', 'SÉPTIMA.', 'OCTAVA.'];
-  const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE'];
+  const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE', 'EL VENDEDOR', 'EL COMPRADOR', 'LAS COMPARECIENTES'];
 
   const lines = filledText
     .split('\n')
@@ -126,12 +126,7 @@ async function toDocx(filledText, title) {
     sections: [{
       properties: {
         page: {
-          margin: {
-            top: 1418,
-            right: 1701,
-            bottom: 1418,
-            left: 1701
-          }
+          margin: { top: 1418, right: 1701, bottom: 1418, left: 1701 }
         }
       },
       children: paragraphs
