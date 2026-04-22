@@ -99,7 +99,8 @@ const FIELD_HELP = {
   numero_puertas: 'Escribe el número de puertas del vehículo. Ejemplo: 2, 4. Si es una moto u otro vehículo que no tiene puertas, escribe: no aplica.',
   capacidad: 'Escribe la capacidad del vehículo según la tarjeta de propiedad. Ejemplo: 5 pasajeros, 1000 kg de carga. Si no aparece en la tarjeta escribe: no aplica.',
   documento_aduana: 'Si el vehículo fue importado escribe el número del acta o manifiesto de aduana. Si es un vehículo nacional escribe: no requiere documento de aduana.',
-  estado_vehiculo: 'Describe el estado en que se entrega el vehículo. Ejemplo: perfecto estado de funcionamiento, buen estado, regular estado.'
+  estado_vehiculo: 'Describe el estado en que se entrega el vehículo. Ejemplo: perfecto estado de funcionamiento, buen estado, regular estado.',
+  forma_pago_saldo: 'Describe cómo se pagará el saldo restante. Ejemplo: 15 cuotas mensuales de $1.000.000 pagaderas los días 5 de cada mes.'
 }
 
 function TooltipField({ field, onChange }) {

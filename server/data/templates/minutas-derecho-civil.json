@@ -195,5 +195,48 @@
       { "name": "anio", "label": "Año en que se firma el contrato (ej: 2026)", "type": "number", "required": true },
       { "name": "ciudad", "label": "Ciudad donde se firma el contrato", "type": "text", "required": true }
     ]
+  },
+
+  {
+    "id": 7,
+    "title": "Modelo de contrato de compraventa de vehículo automotor con reserva de dominio",
+    "template": "Entre los suscritos: {{nombre_vendedor}}, mayor de edad, vecino de {{ciudad_vendedor}}, identificado con la cédula de ciudadanía número {{cedula_vendedor}} expedida en {{expedicion_cedula_vendedor}}, quien en adelante se denominará EL VENDEDOR, de una parte, y {{nombre_comprador}}, también mayor de edad, vecino de {{ciudad_comprador}}, identificado con la cédula de ciudadanía número {{cedula_comprador}} expedida en {{expedicion_cedula_comprador}}, quien para efectos del presente instrumento se designará como EL COMPRADOR, de otra parte, manifestamos que hemos acordado celebrar un contrato de compraventa que se regirá por las disposiciones legales correspondientes y en especial por las siguientes cláusulas:\n\nPRIMERA: EL VENDEDOR transfiere a título de venta a favor del COMPRADOR y éste recibe en los términos y condiciones que aquí se determinan el siguiente VEHÍCULO AUTOMOTOR:\nClase: {{clase_vehiculo}}\nMarca: {{marca_vehiculo}}\nTipo: {{tipo_vehiculo}}\nColor: {{color_vehiculo}}\nModelo: {{modelo_vehiculo}}\nNo. Motor: {{numero_motor}}\nNo. Serie: {{numero_serie}}\nPlaca: {{placa_vehiculo}}\nLínea: {{linea_vehiculo}}\nCilindraje: {{cilindraje}}\nServicio: {{servicio_vehiculo}}\nCarrocería: {{carroceria}}\nNo. Puertas: {{numero_puertas}}\nCapacidad: {{capacidad}}\n\nSEGUNDA: El vehículo automotor relacionado anteriormente presenta {{documento_aduana}}, posee sus accesorios correspondientes y se encuentra y entrega en {{estado_vehiculo}}, a entera satisfacción del comprador, circunstancia que éste declara expresamente, para lo cual es plena prueba de recibo el presente documento.\n\nTERCERA: Las partes acuerdan como precio de venta del vehículo objeto del presente contrato, la suma de {{valor_letras}} (${{valor_numeros}}), cantidad que el comprador se obliga a pagar al vendedor a su orden en la ciudad de {{ciudad_pago}}, en la siguiente forma: A la firma del presente contrato la suma de {{pago_inicial_letras}} (${{pago_inicial_numeros}}) y el saldo así: {{forma_pago_saldo}}.\n\nCUARTA: Los gastos que se deriven del traspaso del vehículo serán cubiertos por {{responsable_gastos}}. Los gastos inherentes al funcionamiento y movilización del vehículo serán de cargo del comprador.\n\nQUINTA: Acuerdan las partes que el vehículo objeto del presente contrato es vendido y adquirido bajo reserva de dominio hasta tanto no sea pagada por el comprador la totalidad del precio pactado. Así mismo, la tradición del vehículo queda subordinada a la condición suspensiva del pago total del precio pactado y, entre tanto, el comprador no será poseedor sino mero tenedor del mismo, a la orden del vendedor y a título de depositario gratuito. En consecuencia, el incumplimiento en el pago de una o varias de las cuotas mensuales estipuladas, o de cualquiera de las obligaciones que por este documento adquiere el comprador, dará derecho opcional al vendedor o a quien legalmente sus derechos represente, a dar por resuelto el presente contrato, o demandar judicialmente su resolución, o demandar las obligaciones del comprador por la vía ejecutiva, en cuyo caso será título de recaudo suficiente el presente contrato.\n\nSEXTA: El comprador, en su condición de depositario gratuito del vehículo objeto del presente contrato, se obliga a hacerle por su cuenta las reparaciones necesarias, sin derecho a reembolso; a continuar pagando las cuotas hasta cubrir el precio total aún si ocurriere hurto, incendio, accidente o cualquier otra causa que disminuyere o hiciere perder el valor comercial del vehículo, pues todos los riesgos son de su cargo, debiendo responder de toda clase de culpa y caso fortuito. Se obliga igualmente a comunicar al vendedor cualquier persecución del vehículo por terceros, antes de pagarse totalmente el precio, así como a no transferir el vehículo, ni venderlo, gravarlo o ejecutar cualquier otro acto de disposición distinto al uso ordinario mientras no haya pagado todo el precio, so pena de hacerse responsable de las acciones civiles y penales a que haya lugar. Queda también obligado el comprador a asegurar el vehículo vendido por el precio total estipulado en el presente contrato y la póliza respectiva deberá endosarse a favor del vendedor, quien se obliga a reendosar al comprador una vez que éste hubiera pagado la totalidad del precio.\n\nEn fe de lo anterior, se firma por las partes contratantes a los {{dia}} días del mes de {{mes}} del año {{anio}}, en dos ejemplares, uno para cada parte, en la ciudad de {{ciudad}}.\n\nEL COMPRADOR\n_________________________\nCC Nº: ...........\n\nEL VENDEDOR\n_________________________\nCC Nº: ...........",
+    "fields": [
+      { "name": "nombre_vendedor", "label": "Nombre completo del vendedor", "type": "text", "required": true },
+      { "name": "ciudad_vendedor", "label": "Ciudad o municipio donde vive el vendedor", "type": "text", "required": true },
+      { "name": "cedula_vendedor", "label": "Número de cédula del vendedor", "type": "text", "required": true },
+      { "name": "expedicion_cedula_vendedor", "label": "Ciudad donde fue expedida la cédula del vendedor", "type": "text", "required": true },
+      { "name": "nombre_comprador", "label": "Nombre completo del comprador", "type": "text", "required": true },
+      { "name": "ciudad_comprador", "label": "Ciudad o municipio donde vive el comprador", "type": "text", "required": true },
+      { "name": "cedula_comprador", "label": "Número de cédula del comprador", "type": "text", "required": true },
+      { "name": "expedicion_cedula_comprador", "label": "Ciudad donde fue expedida la cédula del comprador", "type": "text", "required": true },
+      { "name": "clase_vehiculo", "label": "Clase del vehículo (ej: automóvil, camioneta, motocicleta)", "type": "text", "required": true },
+      { "name": "marca_vehiculo", "label": "Marca del vehículo (ej: Toyota, Chevrolet, Renault)", "type": "text", "required": true },
+      { "name": "tipo_vehiculo", "label": "Tipo de vehículo (ej: sedan, campero, pick-up)", "type": "text", "required": true },
+      { "name": "color_vehiculo", "label": "Color del vehículo", "type": "text", "required": true },
+      { "name": "modelo_vehiculo", "label": "Año modelo del vehículo (ej: 2020)", "type": "text", "required": true },
+      { "name": "numero_motor", "label": "Número de motor del vehículo", "type": "text", "required": true },
+      { "name": "numero_serie", "label": "Número de serie del vehículo", "type": "text", "required": true },
+      { "name": "placa_vehiculo", "label": "Placa del vehículo (ej: ABC123)", "type": "text", "required": true },
+      { "name": "linea_vehiculo", "label": "Línea del vehículo (ej: Corolla, Spark, Logan)", "type": "text", "required": true },
+      { "name": "cilindraje", "label": "Cilindraje del vehículo (ej: 1600 cc)", "type": "text", "required": true },
+      { "name": "servicio_vehiculo", "label": "Tipo de servicio (ej: particular, público, oficial)", "type": "text", "required": true },
+      { "name": "carroceria", "label": "Tipo de carrocería (ej: sedan, furgón, campero). Si no aplica escriba: no aplica", "type": "text", "required": true },
+      { "name": "numero_puertas", "label": "Número de puertas (ej: 4). Si es moto escriba: no aplica", "type": "text", "required": true },
+      { "name": "capacidad", "label": "Capacidad del vehículo (ej: 5 pasajeros). Si no aplica escriba: no aplica", "type": "text", "required": true },
+      { "name": "documento_aduana", "label": "Documento de aduana si aplica. Si no aplica escriba: no requiere documento de aduana", "type": "text", "required": true },
+      { "name": "estado_vehiculo", "label": "Estado en que se entrega el vehículo (ej: perfecto estado / buen estado / regular estado)", "type": "text", "required": true },
+      { "name": "valor_letras", "label": "Precio total en letras (ej: veinte millones de pesos m/cte)", "type": "text", "required": true },
+      { "name": "valor_numeros", "label": "Precio total en números (ej: 20.000.000)", "type": "text", "required": true },
+      { "name": "ciudad_pago", "label": "Ciudad donde se realizarán los pagos", "type": "text", "required": true },
+      { "name": "pago_inicial_letras", "label": "Pago inicial en letras (ej: cinco millones de pesos)", "type": "text", "required": true },
+      { "name": "pago_inicial_numeros", "label": "Pago inicial en números (ej: 5.000.000)", "type": "text", "required": true },
+      { "name": "forma_pago_saldo", "label": "Forma de pago del saldo restante (ej: 15 cuotas mensuales de $1.000.000 pagaderas los días 5 de cada mes)", "type": "text", "required": true },
+      { "name": "responsable_gastos", "label": "Quién paga los gastos del traspaso (ej: partes iguales / solo el comprador / a cargo del vendedor)", "type": "text", "required": true },
+      { "name": "dia", "label": "Día en que se firma el contrato (número)", "type": "number", "required": true },
+      { "name": "mes", "label": "Mes en que se firma el contrato (ej: abril)", "type": "text", "required": true },
+      { "name": "anio", "label": "Año en que se firma el contrato (ej: 2026)", "type": "number", "required": true },
+      { "name": "ciudad", "label": "Ciudad donde se firma el contrato", "type": "text", "required": true }
+    ]
   }
 ]
