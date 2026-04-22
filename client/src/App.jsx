@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import './App.css'
-
+ 
 const FIELD_HELP = {
   ciudad: 'Escribe el nombre de la ciudad o municipio donde se está firmando el contrato. Ejemplo: Cali, El Cerrito, Bogotá.',
   dia: 'Escribe el número del día en que se firma el contrato. Ejemplo: 21',
@@ -141,40 +141,34 @@ const FIELD_HELP = {
   obligaciones_comodatario: 'Describe las obligaciones del comodatario. Ejemplo: cuidar y mantener los bienes en buen estado, responder por daños o pérdidas, asegurar los bienes y restituirlos al terminar el contrato.',
   duracion: 'Escribe cuánto tiempo dura el contrato. Ejemplo: 6 meses, 1 año, 30 días.',
   // Minuta 11 — Compraventa con pacto de retroventa
-ciudad_firma: "Escriba el nombre de la ciudad o municipio donde se va a firmar el contrato. Ej: Cali, Bogotá, Medellín.",
-dia_firma: "Escriba el día en número en que se firma el contrato. Ej: 22.",
-mes_firma: "Escriba el mes en letras en que se firma el contrato. Ej: abril.",
-año_firma: "Escriba el año en que se firma el contrato. Ej: 2026.",
-nombre_vendedor: "Escriba el nombre completo del vendedor tal como aparece en su cédula.",
-vecino_vendedor: "Escriba la ciudad donde reside el vendedor actualmente.",
-cedula_vendedor: "Escriba el número de cédula de ciudadanía del vendedor con puntos. Ej: 14.523.678.",
-expedida_vendedor: "Escriba la ciudad donde fue expedida la cédula del vendedor.",
-nombre_comprador: "Escriba el nombre completo del comprador tal como aparece en su cédula.",
-vecino_comprador: "Escriba la ciudad donde reside el comprador actualmente.",
-cedula_comprador: "Escriba el número de cédula de ciudadanía del comprador con puntos. Ej: 79.345.210.",
-expedida_comprador: "Escriba la ciudad donde fue expedida la cédula del comprador.",
-ubicacion_inmueble: "Escriba la dirección completa del inmueble. Ej: Calle 15 # 8-42, barrio El Peñón.",
-ciudad_inmueble: "Escriba la ciudad donde está ubicado el inmueble.",
-linderos: "Describa los límites del inmueble por los cuatro puntos cardinales. Ej: Norte: con la calle 15; Sur: con el predio de Juan García.",
-vendedor_anterior: "Escriba el nombre completo de la persona que le vendió el inmueble al vendedor actual.",
-numero_escritura_anterior: "Escriba solo el número de la escritura pública con la que el vendedor adquirió el inmueble. Ej: 1245.",
-notaria_anterior: "Escriba el nombre de la notaría sin escribir la palabra 'notaría'. Ej: Primera, Única, Segunda.",
-circulo_anterior: "Escriba solo la ciudad del círculo notarial donde se otorgó la escritura anterior. Ej: Cali.",
-dia_escritura_anterior: "Escriba el día en número en que fue otorgada la escritura anterior. Ej: 10.",
-mes_escritura_anterior: "Escriba el mes en letras de la escritura anterior. Ej: marzo.",
-año_escritura_anterior: "Escriba el año de la escritura anterior. Ej: 2018.",
-ciudad_registro: "Escriba la ciudad de la oficina de registro de instrumentos públicos donde está inscrito el inmueble.",
-dia_registro: "Escriba el día en número en que fue inscrito el inmueble en registro. Ej: 15.",
-mes_registro: "Escriba el mes en letras en que fue inscrito el inmueble. Ej: abril.",
-año_registro: "Escriba el año en que fue inscrito el inmueble. Ej: 2018.",
-folio_matricula: "Escriba el número del folio de matrícula inmobiliaria. Se encuentra en el certificado de libertad. Ej: 370-12345.",
-precio_compraventa: "Escriba el precio total en letras y en números. Ej: ciento veinte millones de pesos ($120.000.000).",
-forma_pago: "Describa cómo se va a pagar. Ej: cincuenta millones al momento de firmar y el saldo restante en seis meses.",
-plazo_retroventa: "Escriba el plazo máximo en que el vendedor puede ejercer la retroventa. Ej: dos (2) años, seis (6) meses.",
-precio_retroventa: "Escriba el precio que deberá pagar el vendedor para recuperar el inmueble. Ej: ciento veinte millones de pesos ($120.000.000).",
-plazo_aviso: "Escriba el tiempo mínimo de aviso previo que debe dar el vendedor antes de ejercer la retroventa. Ej: treinta (30) días.",
+  ciudad_firma: 'Escriba el nombre de la ciudad o municipio donde se va a firmar el contrato. Ej: Cali, Bogotá, Medellín.',
+  dia_firma: 'Escriba el día en número en que se firma el contrato. Ej: 22.',
+  mes_firma: 'Escriba el mes en letras en que se firma el contrato. Ej: abril.',
+  año_firma: 'Escriba el año en que se firma el contrato. Ej: 2026.',
+  vecino_vendedor: 'Escriba la ciudad donde reside el vendedor actualmente.',
+  expedida_vendedor: 'Escriba la ciudad donde fue expedida la cédula del vendedor.',
+  vecino_comprador: 'Escriba la ciudad donde reside el comprador actualmente.',
+  expedida_comprador: 'Escriba la ciudad donde fue expedida la cédula del comprador.',
+  ubicacion_inmueble: 'Escriba la dirección completa del inmueble. Ej: Calle 15 # 8-42, barrio El Peñón.',
+  ciudad_inmueble: 'Escriba la ciudad donde está ubicado el inmueble.',
+  linderos: 'Describa los límites del inmueble por los cuatro puntos cardinales. Ej: Norte: con la calle 15; Sur: con el predio de Juan García.',
+  vendedor_anterior: 'Escriba el nombre completo de la persona que le vendió el inmueble al vendedor actual.',
+  numero_escritura_anterior: 'Escriba solo el número de la escritura pública con la que el vendedor adquirió el inmueble. Ej: 1245.',
+  notaria_anterior: 'Escriba el nombre de la notaría sin escribir la palabra notaría. Ej: Primera, Única, Segunda.',
+  circulo_anterior: 'Escriba solo la ciudad del círculo notarial donde se otorgó la escritura anterior. Ej: Cali.',
+  dia_escritura_anterior: 'Escriba el día en número en que fue otorgada la escritura anterior. Ej: 10.',
+  mes_escritura_anterior: 'Escriba el mes en letras de la escritura anterior. Ej: marzo.',
+  año_escritura_anterior: 'Escriba el año de la escritura anterior. Ej: 2018.',
+  ciudad_registro: 'Escriba la ciudad de la oficina de registro de instrumentos públicos donde está inscrito el inmueble.',
+  dia_registro: 'Escriba el día en número en que fue inscrito el inmueble en registro. Ej: 15.',
+  mes_registro: 'Escriba el mes en letras en que fue inscrito el inmueble. Ej: abril.',
+  año_registro: 'Escriba el año en que fue inscrito el inmueble. Ej: 2018.',
+  precio_compraventa: 'Escriba el precio total en letras y en números. Ej: ciento veinte millones de pesos ($120.000.000).',
+  plazo_retroventa: 'Escriba el plazo máximo en que el vendedor puede ejercer la retroventa. Ej: dos (2) años, seis (6) meses.',
+  precio_retroventa: 'Escriba el precio que deberá pagar el vendedor para recuperar el inmueble. Ej: ciento veinte millones de pesos ($120.000.000).',
+  plazo_aviso: 'Escriba el tiempo mínimo de aviso previo que debe dar el vendedor antes de ejercer la retroventa. Ej: treinta (30) días.',
 }
-
+ 
 const DATOS_PRUEBA = {
   ciudad: 'El Cerrito', dia: 21, mes: 'abril', anio: 2026,
   nombre_vendedor: 'Jhon Brandon Martínez Vélez', nombre_comprador: 'Alexander García López',
@@ -241,34 +235,35 @@ const DATOS_PRUEBA = {
   fines_uso: 'uso exclusivo en actividades académicas y de investigación',
   obligaciones_comodatario: 'cuidar y mantener los bienes en perfecto estado, responder por cualquier daño, deterioro o pérdida, asegurar los bienes por su valor total y restituirlos al terminar el contrato',
   duracion: '6 meses',
-  ciudad_firma: "Cali",
-  dia_firma: "22",
-  mes_firma: "abril",
-  año_firma: "2026",
-  vecino_vendedor: "Cali",
-  expedida_vendedor: "Cali",
-  vecino_comprador: "Bogotá",
-  expedida_comprador: "Bogotá",
-  ubicacion_inmueble: "Calle 15 # 8-42, barrio El Peñón",
-  ciudad_inmueble: "Cali",
-  linderos: "Norte: con la calle 15; Sur: con el predio de María García; Oriente: con la carrera 8; Occidente: con el predio de Juan Torres",
-  vendedor_anterior: "María Cecilia Torres Vargas",
-  numero_escritura_anterior: "1245",
-  notaria_anterior: "Primera",
-  circulo_anterior: "Cali",
-  dia_escritura_anterior: "10",
-  mes_escritura_anterior: "marzo",
-  año_escritura_anterior: "2018",
-  ciudad_registro: "Cali",
-  dia_registro: "15",
-  mes_registro: "abril",
-  año_registro: "2018",
-  precio_compraventa: "ciento veinte millones de pesos ($120.000.000)",
-  plazo_retroventa: "dos (2) años",
-  precio_retroventa: "ciento veinte millones de pesos ($120.000.000)",
-  plazo_aviso: "treinta (30) días",
+  // Minuta 11 — datos planos
+  ciudad_firma: 'Cali',
+  dia_firma: '22',
+  mes_firma: 'abril',
+  año_firma: '2026',
+  vecino_vendedor: 'Cali',
+  expedida_vendedor: 'Cali',
+  vecino_comprador: 'Bogotá',
+  expedida_comprador: 'Bogotá',
+  ubicacion_inmueble: 'Calle 15 # 8-42, barrio El Peñón',
+  ciudad_inmueble: 'Cali',
+  linderos: 'Norte: con la calle 15; Sur: con el predio de María García; Oriente: con la carrera 8; Occidente: con el predio de Juan Torres',
+  vendedor_anterior: 'María Cecilia Torres Vargas',
+  numero_escritura_anterior: '1245',
+  notaria_anterior: 'Primera',
+  circulo_anterior: 'Cali',
+  dia_escritura_anterior: '10',
+  mes_escritura_anterior: 'marzo',
+  año_escritura_anterior: '2018',
+  ciudad_registro: 'Cali',
+  dia_registro: '15',
+  mes_registro: 'abril',
+  año_registro: '2018',
+  precio_compraventa: 'ciento veinte millones de pesos ($120.000.000)',
+  plazo_retroventa: 'dos (2) años',
+  precio_retroventa: 'ciento veinte millones de pesos ($120.000.000)',
+  plazo_aviso: 'treinta (30) días',
 }
-
+ 
 const PASOS_SIGUIENTE = {
   1: { titulo: 'Promesa de Compraventa de Inmueble', pasos: [{ num: 1, titulo: 'Firmar el documento', descripcion: 'Reúnase con la otra parte y firmen el contrato ante dos testigos mayores de edad. Cada parte se queda con una copia original firmada.' }, { num: 2, titulo: 'Autenticar las firmas (opcional pero recomendado)', descripcion: 'Lleven el documento a cualquier Notaría con sus cédulas de ciudadanía. El notario verificará su identidad y autenticará las firmas. Costo aproximado: entre $15.000 y $30.000 por firma.' }, { num: 3, titulo: 'Guardar el documento en lugar seguro', descripcion: 'Conserve su copia en un lugar seguro. Este documento es prueba legal del acuerdo entre las partes.' }, { num: 4, titulo: 'En la fecha acordada: ir a la Notaría', descripcion: 'El día pactado en el contrato, ambas partes deben ir a la Notaría acordada con: cédulas de ciudadanía, certificado de tradición y libertad del inmueble (vigente, máximo 30 días), paz y salvo de impuesto predial, paz y salvo de valorización, paz y salvo de servicios públicos.' }, { num: 5, titulo: 'Firma de la Escritura Pública', descripcion: 'El Notario redactará y leerá la escritura de compraventa. Ambas partes la firman. El vendedor recibe el pago acordado.' }, { num: 6, titulo: 'Pagar los impuestos de la transacción', descripcion: 'Deben pagarse: el impuesto de registro (aproximadamente 1% del valor del inmueble) y los derechos notariales. Estos gastos se pagan en la Notaría o en el banco autorizado.' }, { num: 7, titulo: 'Registrar la Escritura', descripcion: 'Lleven la escritura a la Oficina de Registro de Instrumentos Públicos de su ciudad. Allí registran el cambio de propietario. A partir de ese momento el comprador es el nuevo dueño legal del inmueble.' }] },
   2: { titulo: 'Promesa de Donación', pasos: [{ num: 1, titulo: 'Firmar el documento', descripcion: 'Reúnanse donante y donatario y firmen el contrato ante dos testigos. Cada parte conserva una copia.' }, { num: 2, titulo: 'Solicitar la Insinuación Notarial', descripcion: 'Deben ir a una Notaría a solicitar la insinuación. Lleven: cédulas de ciudadanía, el contrato de promesa de donación firmado, documentos del bien a donar (escritura, certificado de tradición). El Notario autorizará la donación mediante acto notarial.' }, { num: 3, titulo: 'Firma de la Escritura Pública de Donación', descripcion: 'Una vez aprobada la insinuación, el Notario elabora la escritura de donación. Ambas partes la firman en la Notaría.' }, { num: 4, titulo: 'Pagar los impuestos', descripcion: 'Se deben pagar los derechos notariales y el impuesto de registro. El responsable es quien acordaron en el contrato.' }, { num: 5, titulo: 'Registrar la Escritura', descripcion: 'Lleven la escritura a la Oficina de Registro de Instrumentos Públicos. Allí quedará registrado el nuevo propietario del bien donado.' }] },
@@ -280,22 +275,26 @@ const PASOS_SIGUIENTE = {
   8: { titulo: 'Contrato de Anticresis', pasos: [{ num: 1, titulo: 'Firmar el documento', descripcion: 'Deudor y acreedor firman el contrato ante dos testigos. Cada parte conserva una copia.' }, { num: 2, titulo: 'Autenticar las firmas en Notaría', descripcion: 'Lleven el contrato a una Notaría con sus cédulas para autenticar las firmas. Esto le da mayor validez legal al documento.' }, { num: 3, titulo: 'Entregar el bien al acreedor', descripcion: 'El deudor entrega físicamente el bien inmueble al acreedor. El acreedor podrá usarlo o arrendarlo para cobrar los intereses de la deuda.' }, { num: 4, titulo: 'El acreedor administra el bien', descripcion: 'El acreedor recibe los frutos del bien (arriendos, cosechas, etc.) y los imputa primero a los intereses y luego al capital de la deuda.' }, { num: 5, titulo: 'Al pagar la deuda total', descripcion: 'Una vez pagada la totalidad de la deuda e intereses, el acreedor debe devolver el bien al deudor en el mismo estado en que lo recibió.' }, { num: 6, titulo: 'Si el deudor no paga', descripcion: 'Si el deudor incumple, el acreedor puede acudir a un juez para solicitar la venta judicial del bien y cobrar su deuda con el producido de esa venta.' }] },
   9: { titulo: 'Contrato de Usufructo', pasos: [{ num: 1, titulo: 'Firmar el documento', descripcion: 'Propietario y usufructuario firman el contrato ante dos testigos. Cada parte conserva una copia.' }, { num: 2, titulo: 'Elevar a Escritura Pública', descripcion: 'Como el contrato lo indica, ambas partes deben ir a una Notaría a elevar el contrato a escritura pública. Lleven: cédulas de ciudadanía, el contrato firmado y los documentos del inmueble (certificado de tradición y libertad vigente).' }, { num: 3, titulo: 'Registrar la Escritura', descripcion: 'Lleven la escritura pública a la Oficina de Registro de Instrumentos Públicos para registrar el usufructo. A partir de ese momento el usufructuario tiene derecho real sobre el bien.' }, { num: 4, titulo: 'Pagar los impuestos', descripcion: 'Se deben pagar los derechos notariales y el impuesto de registro correspondiente al valor del usufructo.' }, { num: 5, titulo: 'Elaborar el inventario', descripcion: 'Como lo indica el contrato, ambas partes deben hacer un inventario detallado de todos los muebles, accesorios y estado del inmueble, firmarlo y adjuntarlo al contrato.' }, { num: 6, titulo: 'Al terminar el plazo', descripcion: 'Cuando venza el plazo del usufructo, el usufructuario debe devolver el inmueble al propietario en el mismo estado en que lo recibió, según el inventario firmado.' }] },
   10: { titulo: 'Contrato de Comodato', pasos: [{ num: 1, titulo: 'Firmar el documento', descripcion: 'Comodante y comodatario firman el contrato en dos ejemplares. Cada parte conserva uno. Este contrato se perfecciona con la entrega física de los bienes.' }, { num: 2, titulo: 'Entregar los bienes', descripcion: 'El comodante entrega físicamente los bienes al comodatario en el momento de firmar. El comodatario debe revisar que los bienes estén en perfecto estado antes de recibirlos.' }, { num: 3, titulo: 'Autenticar las firmas (recomendado)', descripcion: 'Aunque no es obligatorio, se recomienda llevar el contrato a una Notaría para autenticar las firmas. Esto da mayor validez legal al documento en caso de un incumplimiento.' }, { num: 4, titulo: 'Asegurar los bienes', descripcion: 'Si el valor de los bienes es significativo, el comodatario debe asegurarlos tal como lo indica el contrato. Guarde la póliza de seguro y endósela a favor del comodante.' }, { num: 5, titulo: 'Al terminar el plazo', descripcion: 'Cuando venza el plazo del contrato, el comodatario debe devolver los bienes en perfecto estado de funcionamiento al comodante. Se recomienda hacer una revisión conjunta de los bienes al momento de la devolución.' }, { num: 6, titulo: 'Si el comodatario no devuelve los bienes', descripcion: 'Si el comodatario no restituye los bienes al terminar el contrato, el comodante puede exigir judicialmente la devolución o el pago del valor estimado establecido en la cláusula octava del contrato.' }] },
-  "compraventa-retroventa": [
-  "Lleve el contrato firmado a una Notaría para elevar a escritura pública — ambas partes deben estar presentes o con poder notarial.",
-  "Pague el impuesto de registro ante la Gobernación o la ventanilla de rentas del departamento — equivale al 1% del valor del inmueble.",
-  "Registre la escritura en la Oficina de Registro de Instrumentos Públicos de la ciudad donde está el inmueble.",
-  "Solicite un nuevo certificado de tradición y libertad para verificar que el comprador quedó registrado como nuevo propietario.",
-  "El pacto de retroventa debe quedar expresamente consignado en la escritura pública — verifique que el notario lo incluya en el texto.",
-  "Si el vendedor decide ejercer la retroventa, debe dar el aviso con el plazo acordado y pagar el precio estipulado al momento de recibir el inmueble.",
-  "Guarde una copia de la escritura y del certificado de tradición — son los documentos más importantes de esta operación.",
-],
+  // CORRECCIÓN: minuta 11 usa el mismo formato { titulo, pasos } que las demás
+  'compraventa-retroventa': {
+    titulo: 'Compraventa con Pacto de Retroventa',
+    pasos: [
+      { num: 1, titulo: 'Elevar a Escritura Pública', descripcion: 'Lleve el contrato firmado a una Notaría para elevarlo a escritura pública. Ambas partes deben estar presentes o representadas con poder notarial.' },
+      { num: 2, titulo: 'Pagar el impuesto de registro', descripcion: 'Pague el impuesto de registro ante la Gobernación o la ventanilla de rentas del departamento. Equivale aproximadamente al 1% del valor del inmueble.' },
+      { num: 3, titulo: 'Registrar la escritura', descripcion: 'Registre la escritura en la Oficina de Registro de Instrumentos Públicos de la ciudad donde está el inmueble.' },
+      { num: 4, titulo: 'Solicitar certificado de tradición', descripcion: 'Solicite un nuevo certificado de tradición y libertad para verificar que el comprador quedó registrado como nuevo propietario.' },
+      { num: 5, titulo: 'Verificar el pacto de retroventa en la escritura', descripcion: 'El pacto de retroventa debe quedar expresamente consignado en la escritura pública. Verifique que el notario lo incluya claramente en el texto.' },
+      { num: 6, titulo: 'Si el vendedor ejerce la retroventa', descripcion: 'El vendedor debe dar el aviso con el plazo acordado y pagar el precio estipulado al momento de recibir el inmueble de vuelta.' },
+      { num: 7, titulo: 'Guardar los documentos', descripcion: 'Guarde una copia de la escritura y del certificado de tradición. Son los documentos más importantes de esta operación.' },
+    ]
+  },
 }
-
+ 
 function TooltipField({ field, onChange, value, error }) {
   const [tooltipData, setTooltipData] = useState(null)
   const btnRef = useRef(null)
   const help = FIELD_HELP[field.name]
-
+ 
   const handleMouseEnter = () => {
     if (!btnRef.current || !help) return
     const rect = btnRef.current.getBoundingClientRect()
@@ -303,17 +302,17 @@ function TooltipField({ field, onChange, value, error }) {
     const H = 150
     let left = rect.right + 10
     let top = rect.top - 10
-
+ 
     if (left + W > window.innerWidth - 10) left = rect.left - W - 10
     if (left < 10) left = 10
     if (top + H > window.innerHeight - 10) top = window.innerHeight - H - 10
     if (top < 10) top = 10
-
+ 
     setTooltipData({ top, left })
   }
-
+ 
   const handleMouseLeave = () => setTooltipData(null)
-
+ 
   return (
     <div style={{ position: 'relative' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
@@ -369,11 +368,11 @@ function TooltipField({ field, onChange, value, error }) {
     </div>
   )
 }
-
+ 
 function PanelPasos({ minutaId, onClose }) {
   const pasos = PASOS_SIGUIENTE[minutaId]
   if (!pasos) return null
-
+ 
   const handlePrint = () => {
     const contenido = document.getElementById('pasos-imprimir').innerHTML
     const ventana = window.open('', '_blank')
@@ -381,7 +380,7 @@ function PanelPasos({ minutaId, onClose }) {
     ventana.document.close()
     ventana.print()
   }
-
+ 
   return (
     <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', background: 'rgba(0,0,0,0.65)', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center', backdropFilter: 'blur(4px)' }}>
       <div className="modal-3d" style={{ background: 'linear-gradient(160deg, #ffffff 0%, #f8fbff 100%)', borderRadius: '14px', width: '680px', maxHeight: '85vh', overflow: 'hidden', display: 'flex', flexDirection: 'column', border: '1px solid #c8d8e8' }}>
@@ -416,7 +415,7 @@ function PanelPasos({ minutaId, onClose }) {
     </div>
   )
 }
-
+ 
 function App() {
   const [categories, setCategories] = useState([])
   const [selectedCategory, setSelectedCategory] = useState(null)
@@ -431,14 +430,14 @@ function App() {
   const [showHistorial, setShowHistorial] = useState(false)
   const [busqueda, setBusqueda] = useState('')
   const [errores, setErrores] = useState({})
-
+ 
   useEffect(() => {
     fetch('http://localhost:3001/api/minutas')
       .then(r => r.json())
       .then(setCategories)
       .catch(() => setCategories([]))
   }, [])
-
+ 
   const handleSelectMinuta = async (minuta) => {
     setSelectedMinuta(minuta)
     setPreviewHTML('')
@@ -449,12 +448,12 @@ function App() {
     const data = await res.json()
     setMinutaDetail(data)
   }
-
+ 
   const handleChange = (name, value) => {
     setFormData(prev => ({ ...prev, [name]: value }))
     if (errores[name]) setErrores(prev => ({ ...prev, [name]: false }))
   }
-
+ 
   const handleLlenarPrueba = () => {
     if (!minutaDetail) return
     const datosFiltrados = {}
@@ -464,7 +463,7 @@ function App() {
     setFormData(datosFiltrados)
     setErrores({})
   }
-
+ 
   const validarCampos = () => {
     const nuevosErrores = {}
     minutaDetail.fields.forEach(field => {
@@ -473,7 +472,7 @@ function App() {
     setErrores(nuevosErrores)
     return Object.keys(nuevosErrores).length === 0
   }
-
+ 
   const handlePreview = async () => {
     if (!validarCampos()) {
       setTimeout(() => { document.getElementById('alerta-campos')?.scrollIntoView({ behavior: 'smooth', block: 'center' }) }, 100)
@@ -489,9 +488,9 @@ function App() {
     setLoading(false)
     setHistorial(prev => [{ id: Date.now(), titulo: minutaDetail.title, hora: new Date().toLocaleTimeString('es-CO', { hour: '2-digit', minute: '2-digit' }), html: data.html }, ...prev.slice(0, 9)])
   }
-
+ 
   const handlePrint = () => { document.getElementById('preview-iframe').contentWindow.print() }
-
+ 
   const handleDownloadWord = async () => {
     setLoadingWord(true)
     try {
@@ -507,16 +506,16 @@ function App() {
     } catch { alert('Error al generar el documento Word.') }
     setLoadingWord(false)
   }
-
+ 
   const camposConError = Object.keys(errores).filter(k => errores[k]).length
   const todasLasMinutas = categories.flatMap(cat => cat.minutas.map(m => ({ ...m, catId: cat.id, catName: cat.name })))
   const minutasFiltradas = busqueda.trim() ? todasLasMinutas.filter(m => m.title.toLowerCase().includes(busqueda.toLowerCase())) : []
-
+ 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', width: '100vw', background: 'linear-gradient(135deg, #d8e4f0 0%, #e8f0f8 50%, #d0dcea 100%)', fontFamily: 'Georgia, serif' }}>
-
+ 
       {showPasos && <PanelPasos minutaId={minutaDetail?.id} onClose={() => setShowPasos(false)} />}
-
+ 
       <header className="header-3d" style={{ background: 'linear-gradient(135deg, #1a3a5c 0%, #2c5282 100%)', padding: '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '68px', flexShrink: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{ fontSize: '28px', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.4))' }}>⚖️</div>
@@ -536,7 +535,7 @@ function App() {
           )}
         </div>
       </header>
-
+ 
       {showHistorial && historial.length > 0 && (
         <div style={{ background: 'linear-gradient(135deg, #0a1628, #0d1e30)', borderBottom: '1px solid #1e3a5f', padding: '12px 32px', display: 'flex', gap: '10px', overflowX: 'auto', boxShadow: '0 4px 12px rgba(0,0,0,0.3) inset' }}>
           {historial.map(item => (
@@ -548,7 +547,7 @@ function App() {
           ))}
         </div>
       )}
-
+ 
       <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
         <aside className="sidebar-3d" style={{ width: '300px', background: 'linear-gradient(180deg, #1e3a5c 0%, #162d4a 100%)', overflowY: 'auto', overflowX: 'hidden', flexShrink: 0 }}>
           <div style={{ padding: '20px' }}>
@@ -599,7 +598,7 @@ function App() {
             ))}
           </div>
         </aside>
-
+ 
         <main style={{ flex: 1, overflowY: 'auto', background: 'transparent' }}>
           {!minutaDetail && (
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', padding: '40px' }}>
@@ -616,7 +615,7 @@ function App() {
               </div>
             </div>
           )}
-
+ 
           {minutaDetail && (
             <div style={{ padding: '28px 36px' }}>
               <div className="card-3d" style={{ borderLeft: '5px solid #b8962e !important', borderRadius: '8px', padding: '18px 24px', marginBottom: '24px' }}>
@@ -626,7 +625,7 @@ function App() {
                   {minutaDetail.fields.length} campos requeridos · Pasa el mouse sobre <span style={{ background: 'linear-gradient(135deg, #c9a030, #b8962e)', color: '#fff', borderRadius: '50%', padding: '0 4px', fontSize: '10px', fontWeight: 'bold', boxShadow: '0 1px 3px rgba(0,0,0,0.3)' }}>?</span> para instrucciones
                 </div>
               </div>
-
+ 
               {camposConError > 0 && (
                 <div id="alerta-campos" className="alerta-campos" style={{ background: 'linear-gradient(160deg, #0f2540 0%, #162d4a 40%, #0a1e35 100%)', border: '1px solid #b8962e', borderTop: '3px solid #e2b94a', borderRadius: '14px', padding: '22px 26px 22px 22px', marginBottom: '20px', position: 'relative', overflow: 'hidden' }}>
                   <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
@@ -645,7 +644,7 @@ function App() {
                   </div>
                 </div>
               )}
-
+ 
               <div className="card-3d" style={{ borderRadius: '8px', padding: '24px', marginBottom: '20px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', borderBottom: '2px solid #e2b94a', paddingBottom: '10px' }}>
                   <div style={{ color: '#1a3a5c', fontSize: '13px', fontWeight: 'bold', letterSpacing: '1px', textTransform: 'uppercase' }}>Datos del Documento</div>
@@ -659,7 +658,7 @@ function App() {
                   ))}
                 </div>
               </div>
-
+ 
               <div style={{ display: 'flex', gap: '12px', marginBottom: '24px', flexWrap: 'wrap' }}>
                 <button onClick={handlePreview} disabled={loading} className="btn-primary-3d"
                   style={{ padding: '12px 28px', background: loading ? '#a0b4c8' : 'linear-gradient(135deg, #1a3a5c, #0d2240)', color: '#fff', border: 'none', borderRadius: '6px', cursor: loading ? 'not-allowed' : 'pointer', fontSize: '13px', fontWeight: 'bold', letterSpacing: '1px' }}>
@@ -679,7 +678,7 @@ function App() {
                   </>
                 )}
               </div>
-
+ 
               {previewHTML && (
                 <div className="preview-3d" style={{ background: '#fff', borderRadius: '8px', overflow: 'hidden', border: '1px solid #c8d8e8' }}>
                   <div style={{ padding: '12px 20px', borderBottom: '2px solid #e2b94a', background: 'linear-gradient(135deg, #1a3a5c, #0d2240)', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.2) inset' }}>
@@ -696,5 +695,5 @@ function App() {
     </div>
   )
 }
-
+ 
 export default App
