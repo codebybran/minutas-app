@@ -140,7 +140,6 @@ const FIELD_HELP = {
   fines_uso: 'Escribe para qué puede usar los bienes el comodatario. Ejemplo: uso exclusivo en actividades académicas y de investigación.',
   obligaciones_comodatario: 'Describe las obligaciones del comodatario. Ejemplo: cuidar y mantener los bienes en buen estado, responder por daños o pérdidas, asegurar los bienes y restituirlos al terminar el contrato.',
   duracion: 'Escribe cuánto tiempo dura el contrato. Ejemplo: 6 meses, 1 año, 30 días.',
-  // Minuta 11 — Compraventa con pacto de retroventa
   ciudad_firma: 'Escriba el nombre de la ciudad o municipio donde se va a firmar el contrato. Ej: Cali, Bogotá, Medellín.',
   dia_firma: 'Escriba el día en número en que se firma el contrato. Ej: 22.',
   mes_firma: 'Escriba el mes en letras en que se firma el contrato. Ej: abril.',
@@ -167,7 +166,6 @@ const FIELD_HELP = {
   plazo_retroventa: 'Escriba el plazo máximo en que el vendedor puede ejercer la retroventa. Ej: dos (2) años, seis (6) meses.',
   precio_retroventa: 'Escriba el precio que deberá pagar el vendedor para recuperar el inmueble. Ej: ciento veinte millones de pesos ($120.000.000).',
   plazo_aviso: 'Escriba el tiempo mínimo de aviso previo que debe dar el vendedor antes de ejercer la retroventa. Ej: treinta (30) días.',
-  // Minuta 12 — Cesión o venta de derechos hereditarios
   nombre_fallecido: 'Escriba el nombre completo de la persona fallecida cuya herencia se está cediendo.',
   dia_fallecido: 'Escriba el día en número en que falleció el causante. Ej: 15.',
   mes_fallecido: 'Escriba el mes en letras en que falleció el causante. Ej: enero.',
@@ -177,6 +175,27 @@ const FIELD_HELP = {
   condicion_vendedor: 'Escriba la relación del vendedor con el fallecido. Ej: hijo, hija, cónyuge, hermano, sobrino.',
   descripcion_bienes: 'Describa cada inmueble de la sucesión con su ubicación, linderos y número de matrícula inmobiliaria.',
   precio_cesion: 'Escriba el precio acordado por la cesión en letras y números. Ej: cincuenta millones de pesos ($50.000.000).',
+  // Minuta 13 — Estatutos de fundación
+  nombre_fundacion: 'Escriba el nombre completo de la fundación tal como quedará registrado legalmente. Ej: Fundación Semillas de Esperanza.',
+  municipio_domicilio: 'Escriba el municipio donde tendrá su sede principal la fundación. Ej: El Cerrito, Cali, Bogotá.',
+  departamento_domicilio: 'Escriba el departamento donde está ubicado el municipio sede. Ej: Valle del Cauca, Antioquia.',
+  objeto_fundacion: 'Describa detalladamente las actividades que realizará la fundación. Ej: promover la educación de niños en situación de vulnerabilidad mediante programas de becas y talleres formativos.',
+  bienes_iniciales: 'Describa cada bien o suma que conforman el patrimonio inicial y quién lo aporta. Ej: A. La suma de cinco millones de pesos ($5.000.000) aportada por Carlos Pérez. B. Un computador portátil marca Dell aportado por María García.',
+  ciudad_asamblea: 'Escriba la ciudad donde se realizarán las asambleas ordinarias de la fundación.',
+  dias_reunion_ordinaria: 'Escriba los primeros días del mes en que se realizará la reunión ordinaria. Ej: diez (10).',
+  mes_reunion_ordinaria: 'Escriba el mes del año en que se realizará la reunión ordinaria anual. Ej: marzo, febrero.',
+  num_miembros_consejo: 'Escriba el número de miembros del consejo de administración. Ej: cinco (5), tres (3).',
+  periodo_consejo: 'Escriba el período de duración del consejo de administración. Ej: dos (2) años, un (1) año.',
+  cuantia_contratos: 'Escriba el valor máximo de contratos que el director puede celebrar sin autorización del consejo. Ej: cinco millones de pesos ($5.000.000).',
+  porcentaje_disolucion: 'Escriba el porcentaje de votos requerido para disolver la fundación. Ej: setenta (70), cien (100).',
+  revisor_fiscal: 'Escriba el nombre completo del revisor fiscal principal.',
+  suplente_revisor: 'Escriba el nombre completo del suplente del revisor fiscal.',
+  secretario: 'Escriba el nombre completo de la persona designada como secretario.',
+  nominador_secretario: 'Escriba quién nombra al secretario. Ej: la asamblea de fundadores, el consejo de administración.',
+  director_principal: 'Escriba el nombre completo de la persona designada como director principal.',
+  director_suplente: 'Escriba el nombre completo del suplente del director.',
+  miembros_consejo_principales: 'Escriba los nombres completos de los miembros principales del consejo, separados por punto y coma. Ej: Carlos Pérez Ríos; María García López; Luis Torres Mora.',
+  miembros_consejo_suplentes: 'Escriba los nombres completos de los miembros suplentes del consejo, separados por punto y coma. Ej: Ana Gómez Ruiz; Pedro Salcedo Vera; Rosa Martínez Gil.',
 }
  
 const DATOS_PRUEBA = {
@@ -245,43 +264,44 @@ const DATOS_PRUEBA = {
   fines_uso: 'uso exclusivo en actividades académicas y de investigación',
   obligaciones_comodatario: 'cuidar y mantener los bienes en perfecto estado, responder por cualquier daño, deterioro o pérdida, asegurar los bienes por su valor total y restituirlos al terminar el contrato',
   duracion: '6 meses',
-  // Minuta 11 — datos planos
-  ciudad_firma: 'Cali',
-  dia_firma: '22',
-  mes_firma: 'abril',
-  año_firma: '2026',
-  vecino_vendedor: 'Cali',
-  expedida_vendedor: 'Cali',
-  vecino_comprador: 'Bogotá',
-  expedida_comprador: 'Bogotá',
-  ubicacion_inmueble: 'Calle 15 # 8-42, barrio El Peñón',
-  ciudad_inmueble: 'Cali',
+  ciudad_firma: 'Cali', dia_firma: '22', mes_firma: 'abril', año_firma: '2026',
+  vecino_vendedor: 'Cali', expedida_vendedor: 'Cali',
+  vecino_comprador: 'Bogotá', expedida_comprador: 'Bogotá',
+  ubicacion_inmueble: 'Calle 15 # 8-42, barrio El Peñón', ciudad_inmueble: 'Cali',
   linderos: 'Norte: con la calle 15; Sur: con el predio de María García; Oriente: con la carrera 8; Occidente: con el predio de Juan Torres',
-  vendedor_anterior: 'María Cecilia Torres Vargas',
-  numero_escritura_anterior: '1245',
-  notaria_anterior: 'Primera',
-  circulo_anterior: 'Cali',
-  dia_escritura_anterior: '10',
-  mes_escritura_anterior: 'marzo',
-  año_escritura_anterior: '2018',
-  ciudad_registro: 'Cali',
-  dia_registro: '15',
-  mes_registro: 'abril',
-  año_registro: '2018',
+  vendedor_anterior: 'María Cecilia Torres Vargas', numero_escritura_anterior: '1245',
+  notaria_anterior: 'Primera', circulo_anterior: 'Cali',
+  dia_escritura_anterior: '10', mes_escritura_anterior: 'marzo', año_escritura_anterior: '2018',
+  ciudad_registro: 'Cali', dia_registro: '15', mes_registro: 'abril', año_registro: '2018',
   precio_compraventa: 'ciento veinte millones de pesos ($120.000.000)',
-  plazo_retroventa: 'dos (2) años',
-  precio_retroventa: 'ciento veinte millones de pesos ($120.000.000)',
+  plazo_retroventa: 'dos (2) años', precio_retroventa: 'ciento veinte millones de pesos ($120.000.000)',
   plazo_aviso: 'treinta (30) días',
-  // Minuta 12 — datos planos
-  nombre_fallecido: 'José Arturo Martínez Ríos',
-  dia_fallecido: '10',
-  mes_fallecido: 'enero',
-  año_fallecido: '2024',
-  juzgado: 'Primero Civil del Circuito',
-  ciudad_juzgado: 'Cali',
-  condicion_vendedor: 'hijo',
+  nombre_fallecido: 'José Arturo Martínez Ríos', dia_fallecido: '10',
+  mes_fallecido: 'enero', año_fallecido: '2024',
+  juzgado: 'Primero Civil del Circuito', ciudad_juzgado: 'Cali', condicion_vendedor: 'hijo',
   descripcion_bienes: 'A. Casa ubicada en la Calle 5 # 3-20, barrio El Prado, ciudad de Cali, con matrícula inmobiliaria número 370-12345. B. Lote ubicado en la Carrera 8 # 10-15, barrio Los Pinos, ciudad de Cali, con matrícula inmobiliaria número 370-67890.',
   precio_cesion: 'cincuenta millones de pesos ($50.000.000)',
+  // Minuta 13 — Estatutos de fundación
+  nombre_fundacion: 'Fundación Semillas de Esperanza',
+  municipio_domicilio: 'El Cerrito',
+  departamento_domicilio: 'Valle del Cauca',
+  objeto_fundacion: 'promover la educación de niños y jóvenes en situación de vulnerabilidad mediante programas de becas, talleres formativos y actividades culturales y deportivas',
+  bienes_iniciales: 'A. La suma de cinco millones de pesos ($5.000.000) aportada por Carlos Eduardo Pérez Ríos. B. La suma de cinco millones de pesos ($5.000.000) aportada por María Fernanda García López.',
+  ciudad_asamblea: 'El Cerrito',
+  dias_reunion_ordinaria: 'diez (10)',
+  mes_reunion_ordinaria: 'marzo',
+  num_miembros_consejo: 'cinco (5)',
+  periodo_consejo: 'dos (2) años',
+  cuantia_contratos: 'cinco millones de pesos ($5.000.000)',
+  porcentaje_disolucion: 'setenta (70)',
+  revisor_fiscal: 'Luis Fernando Gómez Torres',
+  suplente_revisor: 'Diana Patricia Ruiz Morales',
+  secretario: 'Ana María Salcedo Vera',
+  nominador_secretario: 'la asamblea de fundadores',
+  director_principal: 'Jhon Brandon Martínez Vélez',
+  director_suplente: 'Alexander García López',
+  miembros_consejo_principales: 'Carlos Eduardo Pérez Ríos; María Fernanda García López; Luis Fernando Gómez Torres; Diana Patricia Ruiz Morales; Andrés Felipe Castillo Mora',
+  miembros_consejo_suplentes: 'Isabel Cristina Vargas Pinto; Roberto Salcedo Muñoz; Patricia Londoño Vera; Ana María Salcedo Vera; Jorge Enrique Morales Gil',
 }
  
 const PASOS_SIGUIENTE = {
@@ -318,6 +338,18 @@ const PASOS_SIGUIENTE = {
       { num: 6, titulo: 'Guardar todos los documentos', descripcion: 'Conserve la escritura de cesión, el certificado de registro y las actuaciones del juzgado.' },
     ]
   },
+  'estatutos-fundacion': {
+    titulo: 'Estatutos de Constitución de Fundación',
+    pasos: [
+      { num: 1, titulo: 'Reunir a los fundadores y firmar el acta de constitución', descripcion: 'Los fundadores deben reunirse, aprobar los estatutos y firmar el acta de constitución de la fundación. Esta acta debe incluir los nombramientos iniciales de director, consejo de administración, revisor fiscal y secretario.' },
+      { num: 2, titulo: 'Autenticar las firmas ante Notario', descripcion: 'Lleven el acta de constitución y los estatutos a una Notaría para autenticar las firmas de todos los fundadores. Cada fundador debe presentar su cédula de ciudadanía.' },
+      { num: 3, titulo: 'Determinar la entidad competente para reconocer la personería', descripcion: 'Según el objeto de la fundación, la entidad que otorga la personería jurídica puede ser: el Ministerio del Interior (para fundaciones de interés general), la Alcaldía o Gobernación (para fundaciones de ámbito local o departamental), u otro ministerio según la actividad (educación, salud, deporte, etc.).' },
+      { num: 4, titulo: 'Radicar la solicitud de personería jurídica', descripcion: 'Presente ante la entidad competente: solicitud escrita firmada por el representante legal, acta de constitución autenticada, estatutos de la fundación, relación del patrimonio inicial con sus soportes, cédulas de los fundadores y nombramientos.' },
+      { num: 5, titulo: 'Esperar el reconocimiento de personería jurídica', descripcion: 'La entidad estudia la solicitud y si cumple los requisitos expide el acto administrativo de reconocimiento de personería jurídica. Sin este reconocimiento la fundación no existe legalmente como persona jurídica.' },
+      { num: 6, titulo: 'Inscribir en Cámara de Comercio', descripcion: 'Con la personería jurídica otorgada, registre la fundación en la Cámara de Comercio del municipio donde tiene su domicilio. Esto le permite operar formalmente, abrir cuentas bancarias y celebrar contratos.' },
+      { num: 7, titulo: 'Obtener el NIT', descripcion: 'Solicite el NIT de la fundación ante la DIAN. Con el NIT podrá abrir cuentas bancarias, facturar y cumplir las obligaciones tributarias como entidad sin ánimo de lucro.' },
+    ]
+  },
 }
  
 function TooltipField({ field, onChange, value, error }) {
@@ -332,12 +364,10 @@ function TooltipField({ field, onChange, value, error }) {
     const H = 150
     let left = rect.right + 10
     let top = rect.top - 10
- 
     if (left + W > window.innerWidth - 10) left = rect.left - W - 10
     if (left < 10) left = 10
     if (top + H > window.innerHeight - 10) top = window.innerHeight - H - 10
     if (top < 10) top = 10
- 
     setTooltipData({ top, left })
   }
  
@@ -380,9 +410,7 @@ function TooltipField({ field, onChange, value, error }) {
       />
       {tooltipData && help && createPortal(
         <div style={{
-          position: 'fixed',
-          top: tooltipData.top,
-          left: tooltipData.left,
+          position: 'fixed', top: tooltipData.top, left: tooltipData.left,
           background: 'linear-gradient(135deg, #1a3a5c, #0d2240)',
           color: '#e0eaf5', fontSize: '12px', lineHeight: '1.6',
           padding: '10px 14px', borderRadius: '8px', width: '260px',
@@ -727,3 +755,4 @@ function App() {
 }
  
 export default App
+ 
