@@ -1895,5 +1895,133 @@
         "required": true
       }
     ]
-  }
+  },
+
+  {
+  "id": "estatutos-fundacion",
+  "title": "Modelo de estatutos para constitución de fundación",
+  "template": "ESTATUTOS DE LA FUNDACIÓN {{nombre_fundacion}}\n\nCapítulo I\nDENOMINACIÓN, DOMICILIO, OBJETO Y DURACIÓN\n\nARTÍCULO 1º.- {{nombre_fundacion}} es una fundación de nacionalidad colombiana.\n\nARTÍCULO 2º.- La fundación {{nombre_fundacion}} tiene su domicilio en el municipio de {{municipio_domicilio}}, departamento de {{departamento_domicilio}}.\n\nARTÍCULO 3º.- Como entidad sin ánimo de lucro la fundación tendrá como finalidad {{objeto_fundacion}}.\n\nARTÍCULO 4º.- La fundación {{nombre_fundacion}} durará hasta la extinción total de su patrimonio.\n\nCapítulo II\nCONFORMACIÓN Y DESTINACIÓN DEL PATRIMONIO\n\nARTÍCULO 5º.- El patrimonio de la fundación {{nombre_fundacion}} se conformará por las cuotas que aporten los fundadores y terceras personas y con los demás bienes que a cualquier título adquiera en el futuro.\n\nEl fondo inicial está conformado por los siguientes bienes y sumas:\n\n{{bienes_iniciales}}\n\nARTÍCULO 6º.- El patrimonio de la fundación {{nombre_fundacion}} no podrá destinarse a otro fin distinto del indicado en su objeto.\n\nCapítulo III\nDIRECCIÓN Y ADMINISTRACIÓN\n\nARTÍCULO 7º.- La fundación {{nombre_fundacion}} será administrada y dirigida por la asamblea general de fundadores, por el consejo de administración, por el director y tendrá un revisor fiscal.\n\nARTÍCULO 8º.- La asamblea general de la fundación {{nombre_fundacion}} estará integrada por la reunión de todos los miembros fundadores con sus respectivos suplentes personales.\n\nARTÍCULO 9º.- La asamblea de fundadores será presidida por el miembro que ella misma designe.\n\nARTÍCULO 10º.- El quórum para las reuniones ordinarias o extraordinarias de la asamblea de fundadores lo conformará la reunión de número de personas que represente, por lo menos, la mayoría de sus integrantes.\n\nARTÍCULO 11º.- La asamblea de fundadores se reunirá, de manera ordinaria, por lo menos, una vez al año, en la ciudad de {{ciudad_asamblea}}, en el domicilio de la fundación, durante los {{dias_reunion_ordinaria}} primeros días del mes de {{mes_reunion_ordinaria}}, previa convocatoria que haga el director. Las reuniones extraordinarias se realizarán cada vez que se requiera y convoque por la mayoría absoluta de los miembros fundadores.\n\nARTÍCULO 12º.- De las reuniones y decisiones se dejará constancia escrita en un libro de actas firmada por el presidente y el secretario de la asamblea.\n\nARTÍCULO 13º.- Son funciones de la asamblea general de fundadores:\na) Nombrar los miembros, con sus respectivos suplentes personales, integrantes del consejo de administración de la fundación y removerlos;\nb) Nombrar al revisor fiscal y su suplente para periodos de un año y fijarle su asignación;\nc) Aprobar, improbar y fenecer las cuentas de la fundación;\nd) Reformar los estatutos de la fundación;\ne) Disolver extraordinariamente la fundación por extinción de sus fondos;\nf) Las demás que le correspondan como suprema autoridad de la fundación.\n\nARTÍCULO 14º.- Las determinaciones de la asamblea de fundadores se tomarán por mayoría de votos presentes.\n\nARTÍCULO 15º.- Las reformas de los estatutos requieren del voto unánime de los asistentes y deberán ser sometidas a la aprobación de la entidad pública correspondiente.\n\nARTÍCULO 16º.- El consejo de administración estará integrado por {{num_miembros_consejo}} miembros, con sus correspondientes suplentes personales, los cuales son nombrados por la asamblea general de fundadores para periodos de {{periodo_consejo}}.\n\nARTÍCULO 17º.- El consejo de administración se reunirá mínimamente una vez al mes o cada vez que sea convocado por el director o por derecho propio por decisión de la mayoría de sus miembros principales.\n\nARTÍCULO 18º.- Son funciones del consejo de administración:\na) Ejercer la dirección administrativa de la fundación;\nb) Establecer los empleos que considere necesario para el normal funcionamiento de la fundación y señalar sus asignaciones;\nc) Nombrar y remover el personal de la fundación;\nd) Nombrar y remover al director de la fundación {{nombre_fundacion}};\ne) Establecer el reglamento de servicios de la fundación;\nf) Presentar a la asamblea general de fundadores los informes, cuentas, inventarios y balances que le sea solicitado;\ng) Autorizar al director la celebración de contratos cuya cuantía exceda la suma de {{cuantia_contratos}}.\n\nARTÍCULO 19º.- De todas las sesiones del consejo se conformará un acta firmada por el presidente y secretario de la reunión.\n\nARTÍCULO 20º.- El quórum para las reuniones del consejo se formará con la concurrencia de la mayoría de sus miembros y las decisiones se adoptarán igualmente por la mayoría de los presentes.\n\nARTÍCULO 21º.- La fundación tendrá un director, quien es su representante legal, de libre nombramiento y remoción del consejo de administración, sobre el cual recae, en asocio de la asamblea y del consejo, la dirección y la administración de la institución.\n\nARTÍCULO 22º.- Son funciones del director:\na) Velar por el cumplimiento de los estatutos y reglamentos de la fundación y la ejecución de las decisiones e instrucciones de la asamblea y el consejo;\nb) Realizar los contratos que fuesen necesarios para el normal y buen desarrollo del objeto de la fundación;\nc) Representar a la fundación con las facultades para transigir, desistir, delegar y sustituir;\nd) Constituir apoderados judiciales, de ser necesario;\ne) Presentar los informes que le solicite el consejo o la asamblea;\nf) Someter a consideración del consejo los planes y programas que requieran de su aprobación;\ng) Las demás funciones que corresponden a la naturaleza de su cargo y las que sean asignadas por la asamblea de fundadores.\n\nCapítulo IV\nDISOLUCIÓN Y LIQUIDACIÓN\n\nARTÍCULO 23º.- La fundación {{nombre_fundacion}} se disolverá por las causales que la ley establece de manera general para esta clase de instituciones y en particular, cuando la asamblea de fundadores lo decida con el voto favorable del {{porcentaje_disolucion}} por ciento de sus miembros. Igualmente podrá disolverse extraordinariamente en el evento de extinción de los fondos patrimoniales y cuando su personería jurídica sea cancelada por la autoridad competente.\n\nARTÍCULO 24º.- Decretada su disolución, en el mismo acto la asamblea de fundadores, con el quórum previsto en estos estatutos, procederá a nombrar liquidador. En el evento de no llegarse a acuerdo sobre el nombre del liquidador, ejercerá como tal el director de la fundación en su calidad de representante legal de la misma.\n\nCapítulo V\nNOMBRAMIENTOS PROVISIONALES\n\nARTÍCULO 25º.- La fundación tendrá un revisor fiscal, con su respectivo suplente, cuyas funciones serán las mismas que la ley señala a los revisores fiscales de las sociedades comerciales. Para tal efecto se deciden los siguientes nombramientos:\n\nRevisor Fiscal Principal: {{revisor_fiscal}}\nSuplente: {{suplente_revisor}}\n\nARTÍCULO 26º.- La fundación tendrá un secretario nombrado por el voto mayoritario de {{nominador_secretario}}, quien será a la vez secretario de la asamblea de fundadores, del consejo de administración y del director. Para el efecto, se efectúa el siguiente nombramiento de secretario: {{secretario}}\n\nARTÍCULO 27º.- En tanto la asamblea de fundadores y el consejo de administración efectúen nuevos nombramientos, se procede a designar director y consejo de administración de la siguiente forma:\n\nDirector: {{director_principal}}\nSuplente: {{director_suplente}}\n\nConsejo de Administración:\nMiembros Principales: {{miembros_consejo_principales}}\nMiembros Suplentes: {{miembros_consejo_suplentes}}",
+  "fields": [
+    {
+      "name": "nombre_fundacion",
+      "label": "Nombre completo de la fundación",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "municipio_domicilio",
+      "label": "Municipio donde tiene su domicilio la fundación",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "departamento_domicilio",
+      "label": "Departamento donde tiene su domicilio la fundación",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "objeto_fundacion",
+      "label": "Objeto o finalidad de la fundación (actividades que realizará)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "bienes_iniciales",
+      "label": "Bienes y sumas del fondo inicial (describa cada bien y quién lo aporta)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "ciudad_asamblea",
+      "label": "Ciudad donde se realizarán las asambleas ordinarias",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "dias_reunion_ordinaria",
+      "label": "Primeros días del mes para la reunión ordinaria (ej: diez (10))",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "mes_reunion_ordinaria",
+      "label": "Mes de la reunión ordinaria anual (ej: marzo)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "num_miembros_consejo",
+      "label": "Número de miembros del consejo de administración (ej: cinco (5))",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "periodo_consejo",
+      "label": "Período del consejo de administración (ej: dos (2) años)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "cuantia_contratos",
+      "label": "Cuantía máxima para contratos sin autorización del consejo (ej: cinco millones de pesos ($5.000.000))",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "porcentaje_disolucion",
+      "label": "Porcentaje de votos requerido para disolver la fundación (ej: setenta (70))",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "revisor_fiscal",
+      "label": "Nombre completo del revisor fiscal principal",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "suplente_revisor",
+      "label": "Nombre completo del suplente del revisor fiscal",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "secretario",
+      "label": "Nombre completo del secretario",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "nominador_secretario",
+      "label": "Quién nombra al secretario (ej: la asamblea de fundadores / el consejo de administración)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "director_principal",
+      "label": "Nombre completo del director principal",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "director_suplente",
+      "label": "Nombre completo del suplente del director",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "miembros_consejo_principales",
+      "label": "Nombres de los miembros principales del consejo de administración",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "miembros_consejo_suplentes",
+      "label": "Nombres de los miembros suplentes del consejo de administración",
+      "type": "text",
+      "required": true
+    }
+  ]
+}
 ]
