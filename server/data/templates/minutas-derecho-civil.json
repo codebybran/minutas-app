@@ -959,6 +959,7 @@
       }
     ]
   },
+
   {
     "id": 7,
     "title": "Modelo de contrato de compraventa de vehículo automotor con reserva de dominio",
@@ -1757,6 +1758,139 @@
       {
         "name": "plazo_aviso",
         "label": "Plazo de aviso previo antes de ejercer la retroventa",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "cesion-derechos-hereditarios",
+    "title": "Modelo de contrato de cesión o venta de derechos hereditarios",
+    "template": "Entre los suscritos: {{nombre_vendedor}}, mayor de edad, vecino de {{vecino_vendedor}}, identificado con la cédula de ciudadanía número {{cedula_vendedor}} expedida en {{expedida_vendedor}}, quien en adelante se denominará EL VENDEDOR, de una parte, y {{nombre_comprador}}, también mayor de edad, vecino de {{vecino_comprador}}, identificado con la cédula de ciudadanía número {{cedula_comprador}} expedida en {{expedida_comprador}}, quien para efectos del presente instrumento se designará como EL COMPRADOR, de otra parte, manifestamos que hemos acordado celebrar un contrato de compraventa que se regirá por las disposiciones legales correspondientes y en especial por las siguientes cláusulas:\n\nPRIMERA: EL VENDEDOR transfiere a título de venta a favor del COMPRADOR el derecho de herencia y asignaciones a título singular que le correspondan o puedan corresponderle en la sucesión de {{nombre_fallecido}}, fallecido en esta ciudad el día {{dia_fallecido}} del mes de {{mes_fallecido}} del año {{año_fallecido}}, y cuyo proceso se encuentra cursando en el juzgado {{juzgado}} de la ciudad de {{ciudad_juzgado}}.\n\nSEGUNDA: Manifiesta EL VENDEDOR que el derecho herencial objeto del presente contrato fue adquirido a título gratuito en la mencionada sucesión en su condición de {{condicion_vendedor}} del difunto.\n\nTERCERA: Asevera EL VENDEDOR que el derecho de que dispone recae sobre todos los bienes que conforman la sucesión ilíquida mencionada y entre los cuales y para efecto de su inscripción en el registro de instrumentos públicos se encuentran relacionados los siguientes inmuebles: {{descripcion_bienes}}.\n\nCUARTA: Manifiesta EL VENDEDOR que responde al comprador de su calidad de heredero del señor {{nombre_fallecido}} y declara no haber enajenado antes el derecho objeto del presente contrato, el cual, expresa, se encuentra libre de gravámenes, derechos de usufructo, uso o habitación, limitaciones o condiciones, embargos o litigios pendientes y de cualquier situación que afecte el derecho enajenado, y se obliga a salir al saneamiento de lo vendido en los casos previstos por la ley.\n\nQUINTA: Queda, en consecuencia, el comprador cesionario autorizado para solicitar la formación a su nombre, de la hijuela correspondiente al derecho adquirido, pero si por cualquier motivo se hiciere la hijuela a nombre del vendedor cedente, éste manifiesta entender esta adjudicación como hecha al comprador-cesionario quien con el registro de dicha hijuela será retroactivamente propietario de los inmuebles adjudicados.\n\nSEXTA: Acuerdan las partes como precio de esta venta la suma de {{precio_cesion}}, cantidad que el vendedor manifiesta haber recibido a satisfacción del comprador.\n\nSÉPTIMA: EL VENDEDOR transfiere al COMPRADOR, a partir de la fecha, la posesión legal de la herencia con las facultades inherentes a ella y las de comenzar la posesión material de los bienes herenciales y administrarlos.\n\nEn fe de lo anterior, se firma por las partes contratantes a los {{dia_firma}} días del mes de {{mes_firma}} del año {{año_firma}}, en dos ejemplares, uno para cada parte, en la ciudad de {{ciudad_firma}}.\n\nEL COMPRADOR\n_________________________\n{{nombre_comprador}}\nCC Nº: {{cedula_comprador}}\n\nEL VENDEDOR\n_________________________\n{{nombre_vendedor}}\nCC Nº: {{cedula_vendedor}}",
+    "fields": [
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia_firma",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes_firma",
+        "label": "Mes (ej: abril)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "año_firma",
+        "label": "Año (ej: 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_vendedor",
+        "label": "Nombre completo del vendedor (quien cede la herencia)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "vecino_vendedor",
+        "label": "Ciudad donde reside el vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_vendedor",
+        "label": "Cédula de ciudadanía del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedida_vendedor",
+        "label": "Ciudad donde fue expedida la cédula del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_comprador",
+        "label": "Nombre completo del comprador (quien adquiere la herencia)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "vecino_comprador",
+        "label": "Ciudad donde reside el comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_comprador",
+        "label": "Cédula de ciudadanía del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedida_comprador",
+        "label": "Ciudad donde fue expedida la cédula del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_fallecido",
+        "label": "Nombre completo del fallecido (causante de la herencia)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia_fallecido",
+        "label": "Día del fallecimiento (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes_fallecido",
+        "label": "Mes del fallecimiento (ej: enero)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "año_fallecido",
+        "label": "Año del fallecimiento (ej: 2024)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "juzgado",
+        "label": "Juzgado donde cursa el proceso (ej: Primero Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_juzgado",
+        "label": "Ciudad del juzgado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "condicion_vendedor",
+        "label": "Condición del vendedor frente al fallecido (ej: hijo, cónyuge, hermano)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_bienes",
+        "label": "Descripción de los inmuebles de la sucesión (ubicación, linderos, matrícula de cada uno)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "precio_cesion",
+        "label": "Precio de la cesión en letras y números (ej: cincuenta millones de pesos ($50.000.000))",
         "type": "text",
         "required": true
       }

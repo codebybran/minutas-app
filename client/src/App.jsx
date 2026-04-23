@@ -167,6 +167,16 @@ const FIELD_HELP = {
   plazo_retroventa: 'Escriba el plazo máximo en que el vendedor puede ejercer la retroventa. Ej: dos (2) años, seis (6) meses.',
   precio_retroventa: 'Escriba el precio que deberá pagar el vendedor para recuperar el inmueble. Ej: ciento veinte millones de pesos ($120.000.000).',
   plazo_aviso: 'Escriba el tiempo mínimo de aviso previo que debe dar el vendedor antes de ejercer la retroventa. Ej: treinta (30) días.',
+  // Minuta 12 — Cesión o venta de derechos hereditarios
+  nombre_fallecido: 'Escriba el nombre completo de la persona fallecida cuya herencia se está cediendo.',
+  dia_fallecido: 'Escriba el día en número en que falleció el causante. Ej: 15.',
+  mes_fallecido: 'Escriba el mes en letras en que falleció el causante. Ej: enero.',
+  año_fallecido: 'Escriba el año en que falleció el causante. Ej: 2024.',
+  juzgado: 'Escriba el nombre del juzgado donde está en trámite el proceso de sucesión. Ej: Primero Civil del Circuito.',
+  ciudad_juzgado: 'Escriba la ciudad donde está ubicado el juzgado.',
+  condicion_vendedor: 'Escriba la relación del vendedor con el fallecido. Ej: hijo, hija, cónyuge, hermano, sobrino.',
+  descripcion_bienes: 'Describa cada inmueble de la sucesión con su ubicación, linderos y número de matrícula inmobiliaria.',
+  precio_cesion: 'Escriba el precio acordado por la cesión en letras y números. Ej: cincuenta millones de pesos ($50.000.000).',
 }
  
 const DATOS_PRUEBA = {
@@ -262,6 +272,16 @@ const DATOS_PRUEBA = {
   plazo_retroventa: 'dos (2) años',
   precio_retroventa: 'ciento veinte millones de pesos ($120.000.000)',
   plazo_aviso: 'treinta (30) días',
+  // Minuta 12 — datos planos
+  nombre_fallecido: 'José Arturo Martínez Ríos',
+  dia_fallecido: '10',
+  mes_fallecido: 'enero',
+  año_fallecido: '2024',
+  juzgado: 'Primero Civil del Circuito',
+  ciudad_juzgado: 'Cali',
+  condicion_vendedor: 'hijo',
+  descripcion_bienes: 'A. Casa ubicada en la Calle 5 # 3-20, barrio El Prado, ciudad de Cali, con matrícula inmobiliaria número 370-12345. B. Lote ubicado en la Carrera 8 # 10-15, barrio Los Pinos, ciudad de Cali, con matrícula inmobiliaria número 370-67890.',
+  precio_cesion: 'cincuenta millones de pesos ($50.000.000)',
 }
  
 const PASOS_SIGUIENTE = {
@@ -275,7 +295,6 @@ const PASOS_SIGUIENTE = {
   8: { titulo: 'Contrato de Anticresis', pasos: [{ num: 1, titulo: 'Firmar el documento', descripcion: 'Deudor y acreedor firman el contrato ante dos testigos. Cada parte conserva una copia.' }, { num: 2, titulo: 'Autenticar las firmas en Notaría', descripcion: 'Lleven el contrato a una Notaría con sus cédulas para autenticar las firmas. Esto le da mayor validez legal al documento.' }, { num: 3, titulo: 'Entregar el bien al acreedor', descripcion: 'El deudor entrega físicamente el bien inmueble al acreedor. El acreedor podrá usarlo o arrendarlo para cobrar los intereses de la deuda.' }, { num: 4, titulo: 'El acreedor administra el bien', descripcion: 'El acreedor recibe los frutos del bien (arriendos, cosechas, etc.) y los imputa primero a los intereses y luego al capital de la deuda.' }, { num: 5, titulo: 'Al pagar la deuda total', descripcion: 'Una vez pagada la totalidad de la deuda e intereses, el acreedor debe devolver el bien al deudor en el mismo estado en que lo recibió.' }, { num: 6, titulo: 'Si el deudor no paga', descripcion: 'Si el deudor incumple, el acreedor puede acudir a un juez para solicitar la venta judicial del bien y cobrar su deuda con el producido de esa venta.' }] },
   9: { titulo: 'Contrato de Usufructo', pasos: [{ num: 1, titulo: 'Firmar el documento', descripcion: 'Propietario y usufructuario firman el contrato ante dos testigos. Cada parte conserva una copia.' }, { num: 2, titulo: 'Elevar a Escritura Pública', descripcion: 'Como el contrato lo indica, ambas partes deben ir a una Notaría a elevar el contrato a escritura pública. Lleven: cédulas de ciudadanía, el contrato firmado y los documentos del inmueble (certificado de tradición y libertad vigente).' }, { num: 3, titulo: 'Registrar la Escritura', descripcion: 'Lleven la escritura pública a la Oficina de Registro de Instrumentos Públicos para registrar el usufructo. A partir de ese momento el usufructuario tiene derecho real sobre el bien.' }, { num: 4, titulo: 'Pagar los impuestos', descripcion: 'Se deben pagar los derechos notariales y el impuesto de registro correspondiente al valor del usufructo.' }, { num: 5, titulo: 'Elaborar el inventario', descripcion: 'Como lo indica el contrato, ambas partes deben hacer un inventario detallado de todos los muebles, accesorios y estado del inmueble, firmarlo y adjuntarlo al contrato.' }, { num: 6, titulo: 'Al terminar el plazo', descripcion: 'Cuando venza el plazo del usufructo, el usufructuario debe devolver el inmueble al propietario en el mismo estado en que lo recibió, según el inventario firmado.' }] },
   10: { titulo: 'Contrato de Comodato', pasos: [{ num: 1, titulo: 'Firmar el documento', descripcion: 'Comodante y comodatario firman el contrato en dos ejemplares. Cada parte conserva uno. Este contrato se perfecciona con la entrega física de los bienes.' }, { num: 2, titulo: 'Entregar los bienes', descripcion: 'El comodante entrega físicamente los bienes al comodatario en el momento de firmar. El comodatario debe revisar que los bienes estén en perfecto estado antes de recibirlos.' }, { num: 3, titulo: 'Autenticar las firmas (recomendado)', descripcion: 'Aunque no es obligatorio, se recomienda llevar el contrato a una Notaría para autenticar las firmas. Esto da mayor validez legal al documento en caso de un incumplimiento.' }, { num: 4, titulo: 'Asegurar los bienes', descripcion: 'Si el valor de los bienes es significativo, el comodatario debe asegurarlos tal como lo indica el contrato. Guarde la póliza de seguro y endósela a favor del comodante.' }, { num: 5, titulo: 'Al terminar el plazo', descripcion: 'Cuando venza el plazo del contrato, el comodatario debe devolver los bienes en perfecto estado de funcionamiento al comodante. Se recomienda hacer una revisión conjunta de los bienes al momento de la devolución.' }, { num: 6, titulo: 'Si el comodatario no devuelve los bienes', descripcion: 'Si el comodatario no restituye los bienes al terminar el contrato, el comodante puede exigir judicialmente la devolución o el pago del valor estimado establecido en la cláusula octava del contrato.' }] },
-  // CORRECCIÓN: minuta 11 usa el mismo formato { titulo, pasos } que las demás
   'compraventa-retroventa': {
     titulo: 'Compraventa con Pacto de Retroventa',
     pasos: [
@@ -286,6 +305,17 @@ const PASOS_SIGUIENTE = {
       { num: 5, titulo: 'Verificar el pacto de retroventa en la escritura', descripcion: 'El pacto de retroventa debe quedar expresamente consignado en la escritura pública. Verifique que el notario lo incluya claramente en el texto.' },
       { num: 6, titulo: 'Si el vendedor ejerce la retroventa', descripcion: 'El vendedor debe dar el aviso con el plazo acordado y pagar el precio estipulado al momento de recibir el inmueble de vuelta.' },
       { num: 7, titulo: 'Guardar los documentos', descripcion: 'Guarde una copia de la escritura y del certificado de tradición. Son los documentos más importantes de esta operación.' },
+    ]
+  },
+  'cesion-derechos-hereditarios': {
+    titulo: 'Cesión o Venta de Derechos Hereditarios',
+    pasos: [
+      { num: 1, titulo: 'Elevar a Escritura Pública', descripcion: 'La cesión de derechos hereditarios debe hacerse mediante Escritura Pública ante Notario. Ambas partes deben ir a la Notaría con sus cédulas y el contrato firmado.' },
+      { num: 2, titulo: 'Registrar la escritura', descripcion: 'Lleve la escritura a la Oficina de Registro de Instrumentos Públicos de la ciudad donde están ubicados los inmuebles de la sucesión.' },
+      { num: 3, titulo: 'Notificar al juzgado', descripcion: 'Presente una copia de la escritura de cesión ante el juzgado donde cursa el proceso de sucesión para que el comprador-cesionario quede reconocido.' },
+      { num: 4, titulo: 'Solicitar formación de hijuela', descripcion: 'El comprador-cesionario puede solicitar al juzgado que se forme la hijuela correspondiente a su nombre con los bienes adquiridos.' },
+      { num: 5, titulo: 'Pagar los impuestos', descripcion: 'Se deben pagar los derechos notariales y el impuesto de registro. Consulte en la Notaría el valor exacto.' },
+      { num: 6, titulo: 'Guardar todos los documentos', descripcion: 'Conserve la escritura de cesión, el certificado de registro y las actuaciones del juzgado.' },
     ]
   },
 }
