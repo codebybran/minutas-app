@@ -3342,282 +3342,514 @@
   },
 
   {
-    "id": "prestacion-servicios-profesionales",
-    "title": "Modelo de contrato de prestación de servicios profesionales",
-    "template": "CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES\n\nEn {{ciudad}}, a {{dia}} de {{mes}} de {{anio}}, entre {{nombre_contratista}}, de profesión {{profesion_contratista}}, de estado civil {{estado_civil_contratista}}, identificado con {{identificacion_contratista}}, con domicilio en {{domicilio_contratista}}, quien en adelante se denominará EL CONTRATISTA; y {{nombre_contratante}}, de estado civil {{estado_civil_contratante}}, identificado con {{identificacion_contratante}}, con domicilio en {{domicilio_contratante}}, quien en adelante se denominará EL CONTRATANTE, acuerdan celebrar el presente contrato de prestación de servicios profesionales, regido por las siguientes cláusulas:\n\nPRIMERA. OBJETO: El contratante contrata los servicios profesionales del contratista a fin de {{objeto_contrato}}. El contratista se compromete a la realización específica de las siguientes tareas: {{tareas_especificas}}.\n\nSEGUNDA. PRECIO Y FORMA DE PAGO: La retribución acordada por los servicios contratados es la suma de {{honorarios_letras}} ({{honorarios_numeros}}), que el contratante se obliga a pagar puntualmente en la ciudad de {{ciudad_pago}}, dentro del horario de {{horario_pago}}, en las siguientes fechas y condiciones, sin necesidad de requerimiento ni intimación judicial alguna: {{forma_pago}}.\n\nTERCERA. GARANTÍA DE PAGO: El pago del precio convenido se asegura e instrumenta de la siguiente forma: {{garantia_pago}}.\n\nCUARTA. CONDICIONES DE PRESTACIÓN DEL SERVICIO: Los servicios se prestarán a ciencia y conciencia del contratista, quien deberá actuar dentro de las prescripciones éticas y legales propias de su disciplina profesional, teniendo siempre como finalidad el objeto del presente contrato. Si en el curso de su labor surgieran imposibilidades o incompatibilidades legales respecto del ejercicio profesional contratado, el contratista las hará saber al contratante a fin de buscar los medios idóneos para resolverlas, caso en el cual el precio convenido pasará a ser proporcional a los servicios efectivamente cumplidos. Para caso de dudas o controversias al respecto, las partes se sujetarán a {{mecanismo_controversias}}. Las partes constituyen sus respectivos domicilios legales en {{domicilio_contratante}} y {{domicilio_contratista}}, para todos los fines judiciales y extrajudiciales.\n\nSe firman dos ejemplares iguales, y cada parte recibe en este acto su respectivo ejemplar de conformidad.\n\nEL CONTRATANTE\n_________________________\n{{nombre_contratante}}\n{{identificacion_contratante}}\n\nEL CONTRATISTA\n_________________________\n{{nombre_contratista}}\n{{identificacion_contratista}}",
-    "fields": [
-      {
-        "name": "ciudad",
-        "label": "Ciudad donde se firma el contrato",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "dia",
-        "label": "Día de firma (número)",
-        "type": "number",
-        "required": true
-      },
-      {
-        "name": "mes",
-        "label": "Mes de firma (ej: abril, mayo)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "anio",
-        "label": "Año de firma (ej: 2026)",
-        "type": "number",
-        "required": true
-      },
-      {
-        "name": "nombre_contratista",
-        "label": "Nombre completo del contratista (quien presta el servicio profesional)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "profesion_contratista",
-        "label": "Profesión u oficio del contratista (ej: abogado, contador público, ingeniero civil, médico)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "estado_civil_contratista",
-        "label": "Estado civil del contratista (ej: soltero, casado, divorciado, viudo)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "identificacion_contratista",
-        "label": "Identificación del contratista (ej: cédula de ciudadanía No. 1234567890 expedida en Cali)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "domicilio_contratista",
-        "label": "Dirección completa del contratista (ej: Carrera 8 # 12-34, Barrio Los Pinos, El Cerrito)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "nombre_contratante",
-        "label": "Nombre completo del contratante (quien contrata el servicio)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "estado_civil_contratante",
-        "label": "Estado civil del contratante (ej: soltero, casado, divorciado, viudo)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "identificacion_contratante",
-        "label": "Identificación del contratante (ej: cédula de ciudadanía No. 0987654321 expedida en El Cerrito)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "domicilio_contratante",
-        "label": "Dirección completa del contratante (ej: Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "objeto_contrato",
-        "label": "Objeto del contrato — para qué se contratan los servicios (ej: asesorar jurídicamente en el proceso de sucesión / elaborar la contabilidad mensual de la empresa / diseñar el plano arquitectónico de la vivienda)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "tareas_especificas",
-        "label": "Tareas específicas que realizará el contratista (ej: 1. Revisar documentos. 2. Elaborar demanda. 3. Representar al cliente en audiencias)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "honorarios_letras",
-        "label": "Valor de los honorarios en letras (ej: tres millones de pesos)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "honorarios_numeros",
-        "label": "Valor de los honorarios en números (ej: $3.000.000)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "ciudad_pago",
-        "label": "Ciudad donde se realizará el pago (ej: El Cerrito, Cali)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "horario_pago",
-        "label": "Horario en que se realizará el pago (ej: horario bancario / horario de oficina / cualquier hora del día hábil)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "forma_pago",
-        "label": "Forma y fechas de pago (ej: 50% al firmar el contrato y 50% al entregar el trabajo / pagos mensuales de $500.000 los días 5 de cada mes / pago único al finalizar el servicio)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "garantia_pago",
-        "label": "Garantía o instrumento de pago (ej: cheque posfechado a nombre del contratista / transferencia bancaria a la cuenta de ahorros Bancolombia No. 123456789 / pagaré firmado por el contratante)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "mecanismo_controversias",
-        "label": "Mecanismo para resolver controversias (ej: mediación ante la Cámara de Comercio de la ciudad / decisión del juez civil competente / amigable composición entre las partes)",
-        "type": "text",
-        "required": true
-      }
+  "id": "prestacion-servicios-profesionales",
+  "title": "Modelo de contrato de prestación de servicios profesionales",
+  "template": "En {{ciudad}}, a {{dia}} de {{mes}} de {{anio}}, entre {{nombre_contratista}}, de profesión {{profesion_contratista}}, de estado civil {{estado_civil_contratista}}, identificado con {{identificacion_contratista}}, con domicilio en {{domicilio_contratista}}, quien en adelante se denominará EL CONTRATISTA; y {{nombre_contratante}}, de estado civil {{estado_civil_contratante}}, identificado con {{identificacion_contratante}}, con domicilio en {{domicilio_contratante}}, quien en adelante se denominará EL CONTRATANTE, acuerdan celebrar el presente contrato de prestación de servicios profesionales, regido por las siguientes cláusulas:\n\nPRIMERA. OBJETO: El contratante contrata los servicios profesionales del contratista a fin de {{objeto_contrato}}. El contratista se compromete a la realización específica de las siguientes tareas: {{tareas_especificas}}.\n\nSEGUNDA. PRECIO Y FORMA DE PAGO: La retribución acordada por los servicios contratados es la suma de {{honorarios_letras}} ({{honorarios_numeros}}), que el contratante se obliga a pagar puntualmente en la ciudad de {{ciudad_pago}}, dentro del horario de {{horario_pago}}, en las siguientes fechas y condiciones, sin necesidad de requerimiento ni intimación judicial alguna: {{forma_pago}}.\n\nTERCERA. GARANTÍA DE PAGO: El pago del precio convenido se asegura e instrumenta de la siguiente forma: {{garantia_pago}}.\n\nCUARTA. CONDICIONES DE PRESTACIÓN DEL SERVICIO: Los servicios se prestarán a ciencia y conciencia del contratista, quien deberá actuar dentro de las prescripciones éticas y legales propias de su disciplina profesional, teniendo siempre como finalidad el objeto del presente contrato. Si en el curso de su labor surgieran imposibilidades o incompatibilidades legales respecto del ejercicio profesional contratado, el contratista las hará saber al contratante a fin de buscar los medios idóneos para resolverlas, caso en el cual el precio convenido pasará a ser proporcional a los servicios efectivamente cumplidos. Para caso de dudas o controversias al respecto, las partes se sujetarán a {{mecanismo_controversias}}. Las partes constituyen sus respectivos domicilios legales en {{domicilio_contratante}} y {{domicilio_contratista}}, para todos los fines judiciales y extrajudiciales.\n\nSe firman dos ejemplares iguales, y cada parte recibe en este acto su respectivo ejemplar de conformidad.\n\nEL CONTRATANTE\n_________________________\n{{nombre_contratante}}\n{{identificacion_contratante}}\n\nEL CONTRATISTA\n_________________________\n{{nombre_contratista}}\n{{identificacion_contratista}}",
+  "fields": [
+    {
+      "name": "ciudad",
+      "label": "Ciudad donde se firma el contrato",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "dia",
+      "label": "Día de firma (número)",
+      "type": "number",
+      "required": true
+    },
+    {
+      "name": "mes",
+      "label": "Mes de firma (ej: abril, mayo)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "anio",
+      "label": "Año de firma (ej: 2026)",
+      "type": "number",
+      "required": true
+    },
+    {
+      "name": "nombre_contratista",
+      "label": "Nombre completo del contratista (quien presta el servicio profesional)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "profesion_contratista",
+      "label": "Profesión u oficio del contratista (ej: abogado, contador público, ingeniero civil, médico)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "estado_civil_contratista",
+      "label": "Estado civil del contratista (ej: soltero, casado, divorciado, viudo)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "identificacion_contratista",
+      "label": "Identificación del contratista (ej: cédula de ciudadanía No. 1234567890 expedida en Cali)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "domicilio_contratista",
+      "label": "Dirección completa del contratista (ej: Carrera 8 # 12-34, Barrio Los Pinos, El Cerrito)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "nombre_contratante",
+      "label": "Nombre completo del contratante (quien contrata el servicio)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "estado_civil_contratante",
+      "label": "Estado civil del contratante (ej: soltero, casado, divorciado, viudo)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "identificacion_contratante",
+      "label": "Identificación del contratante (ej: cédula de ciudadanía No. 0987654321 expedida en El Cerrito)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "domicilio_contratante",
+      "label": "Dirección completa del contratante (ej: Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "objeto_contrato",
+      "label": "Objeto del contrato — para qué se contratan los servicios (ej: asesorar jurídicamente en el proceso de sucesión / elaborar la contabilidad mensual de la empresa / diseñar el plano arquitectónico de la vivienda)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "tareas_especificas",
+      "label": "Tareas específicas que realizará el contratista (ej: 1. Revisar documentos. 2. Elaborar demanda. 3. Representar al cliente en audiencias)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "honorarios_letras",
+      "label": "Valor de los honorarios en letras (ej: tres millones de pesos)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "honorarios_numeros",
+      "label": "Valor de los honorarios en números (ej: $3.000.000)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "ciudad_pago",
+      "label": "Ciudad donde se realizará el pago (ej: El Cerrito, Cali)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "horario_pago",
+      "label": "Horario en que se realizará el pago (ej: horario bancario / horario de oficina / cualquier hora del día hábil)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "forma_pago",
+      "label": "Forma y fechas de pago (ej: 50% al firmar el contrato y 50% al entregar el trabajo / pagos mensuales de $500.000 los días 5 de cada mes / pago único al finalizar el servicio)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "garantia_pago",
+      "label": "Garantía o instrumento de pago (ej: cheque posfechado a nombre del contratista / transferencia bancaria a la cuenta de ahorros Bancolombia No. 123456789 / pagaré firmado por el contratante)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "mecanismo_controversias",
+      "label": "Mecanismo para resolver controversias (ej: mediación ante la Cámara de Comercio de la ciudad / decisión del juez civil competente / amigable composición entre las partes)",
+      "type": "text",
+      "required": true
+    }
     ]
   },
 
   {
-    "id": "servicios-abogado",
-    "title": "Modelo de contrato de prestación de servicios profesionales de abogado",
-    "template": "CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES DE ABOGADO\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos, a saber: {{nombre_mandante}}, {{descripcion_mandante}}, con domicilio principal en la ciudad de {{ciudad_mandante}}, que para efectos del presente documento se denominará EL MANDANTE, representada por {{nombre_representante}}, persona mayor de edad y vecino de {{ciudad_representante}}, quien obra en su condición de {{cargo_representante}} y se identifica como aparece al pie de su correspondiente firma, de una parte; y {{nombre_mandatario}}, igualmente mayor y vecino de {{ciudad_mandatario}}, abogado en ejercicio, portador de la Tarjeta Profesional No. {{tarjeta_profesional}} e identificado con la cédula de ciudadanía No. {{cedula_mandatario}} expedida en {{expedicion_mandatario}}, quien para efectos del presente contrato se denominará EL MANDATARIO, de otra parte, hemos convenido celebrar el presente CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES, el cual se regula por las cláusulas que a continuación se indican y por las disposiciones del Código Civil aplicables a la materia:\n\nPRIMERA. OBJETO: EL MANDATARIO se obliga de manera independiente a prestar asesoría al MANDANTE en los siguientes asuntos: {{asuntos_encargados}}.\n\nSEGUNDA. HONORARIOS: EL MANDANTE cancelará, como contraprestación por concepto de honorarios, la suma de {{honorarios_letras}} ({{honorarios_numeros}}), pagaderos así: {{forma_pago_honorarios}}.\n\nTERCERA. OBLIGACIONES DEL MANDATARIO: EL MANDATARIO se obliga a: {{obligaciones_mandatario}}.\n\nCUARTA. OBLIGACIONES DEL MANDANTE: EL MANDANTE se obliga a: {{obligaciones_mandante}}.\n\nQUINTA. DURACIÓN: El presente contrato se celebra por el tiempo necesario para llevar hasta su culminación la labor encomendada. Sin embargo, cualquiera de las partes podrá darlo por terminado dando aviso escrito a la otra con un término de {{plazo_aviso}} de anticipación.\n\nEn señal de conformidad se suscribe el presente documento en dos ejemplares del mismo tenor, por las partes intervinientes.\n\nEL MANDANTE\n_________________________\n{{nombre_representante}}\n{{cargo_representante}}\n{{nombre_mandante}}\n\nEL MANDATARIO\n_________________________\n{{nombre_mandatario}}\nT.P. No. {{tarjeta_profesional}}\nCC Nº: {{cedula_mandatario}} de {{expedicion_mandatario}}",
-    "fields": [
-      {
-        "name": "ciudad",
-        "label": "Ciudad donde se firma el contrato",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "dia",
-        "label": "Día de firma (número)",
-        "type": "number",
-        "required": true
-      },
-      {
-        "name": "mes",
-        "label": "Mes de firma (ej: abril, mayo)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "anio",
-        "label": "Año de firma (ej: 2026)",
-        "type": "number",
-        "required": true
-      },
-      {
-        "name": "nombre_mandante",
-        "label": "Nombre o razón social del mandante (quien contrata al abogado — puede ser persona natural o empresa)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "descripcion_mandante",
-        "label": "Descripción del mandante (ej: sociedad legalmente constituida / persona natural mayor de edad / entidad sin ánimo de lucro)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "ciudad_mandante",
-        "label": "Ciudad donde tiene domicilio el mandante",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "nombre_representante",
-        "label": "Nombre completo del representante legal o de quien firma por el mandante",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "ciudad_representante",
-        "label": "Ciudad donde vive el representante del mandante",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "cargo_representante",
-        "label": "Cargo del representante que firma por el mandante (ej: Gerente General, Presidente, Representante Legal, propietario)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "nombre_mandatario",
-        "label": "Nombre completo del abogado (el mandatario que prestará los servicios)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "ciudad_mandatario",
-        "label": "Ciudad donde vive el abogado",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "tarjeta_profesional",
-        "label": "Número de tarjeta profesional del abogado (ej: 123456-A)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "cedula_mandatario",
-        "label": "Número de cédula del abogado",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "expedicion_mandatario",
-        "label": "Ciudad donde fue expedida la cédula del abogado",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "asuntos_encargados",
-        "label": "Asuntos jurídicos encomendados al abogado (ej: representar al mandante en el proceso ejecutivo No. 2024-0123 ante el Juzgado Civil del Circuito / asesorar en la constitución de la sociedad / elaborar y revisar contratos comerciales)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "honorarios_letras",
-        "label": "Valor de los honorarios en letras (ej: dos millones de pesos mensuales / cinco millones de pesos por la gestión total)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "honorarios_numeros",
-        "label": "Valor de los honorarios en números (ej: $2.000.000 mensuales / $5.000.000)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "forma_pago_honorarios",
-        "label": "Forma y fechas de pago de los honorarios (ej: mensualmente dentro de los primeros cinco días de cada mes / el 50% al firmar y el 50% al concluir / en tres cuotas iguales mensuales)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "obligaciones_mandatario",
-        "label": "Obligaciones del abogado (ej: obrar con diligencia en los asuntos encomendados, absolver las consultas del mandante, rendir informes periódicos del estado de los negocios a su cargo, guardar la reserva profesional sobre la información recibida, actuar conforme al Código Disciplinario del Abogado)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "obligaciones_mandante",
-        "label": "Obligaciones del mandante (ej: cancelar los honorarios en la forma pactada, suministrar al abogado toda la información y documentos que requiera, cubrir los gastos que la gestión conlleve distintos de los honorarios, como notificaciones, copias y viáticos)",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "plazo_aviso",
-        "label": "Plazo de aviso para terminar el contrato anticipadamente (ej: quince (15) días / treinta (30) días / un (1) mes)",
-        "type": "text",
-        "required": true
-      }
+  "id": "servicios-abogado",
+  "title": "Modelo de contrato de prestación de servicios profesionales de abogado",
+  "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos, a saber: {{nombre_mandante}}, {{descripcion_mandante}}, con domicilio principal en la ciudad de {{ciudad_mandante}}, que para efectos del presente documento se denominará EL MANDANTE, representada por {{nombre_representante}}, persona mayor de edad y vecino de {{ciudad_representante}}, quien obra en su condición de {{cargo_representante}} y se identifica como aparece al pie de su correspondiente firma, de una parte; y {{nombre_mandatario}}, igualmente mayor y vecino de {{ciudad_mandatario}}, abogado en ejercicio, portador de la Tarjeta Profesional No. {{tarjeta_profesional}} e identificado con la cédula de ciudadanía No. {{cedula_mandatario}} expedida en {{expedicion_mandatario}}, quien para efectos del presente contrato se denominará EL MANDATARIO, de otra parte, hemos convenido celebrar el presente CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES, el cual se regula por las cláusulas que a continuación se indican y por las disposiciones del Código Civil aplicables a la materia:\n\nPRIMERA. OBJETO: EL MANDATARIO se obliga de manera independiente a prestar asesoría al MANDANTE en los siguientes asuntos: {{asuntos_encargados}}.\n\nSEGUNDA. HONORARIOS: EL MANDANTE cancelará, como contraprestación por concepto de honorarios, la suma de {{honorarios_letras}} ({{honorarios_numeros}}), pagaderos así: {{forma_pago_honorarios}}.\n\nTERCERA. OBLIGACIONES DEL MANDATARIO: EL MANDATARIO se obliga a: {{obligaciones_mandatario}}.\n\nCUARTA. OBLIGACIONES DEL MANDANTE: EL MANDANTE se obliga a: {{obligaciones_mandante}}.\n\nQUINTA. DURACIÓN: El presente contrato se celebra por el tiempo necesario para llevar hasta su culminación la labor encomendada. Sin embargo, cualquiera de las partes podrá darlo por terminado dando aviso escrito a la otra con un término de {{plazo_aviso}} de anticipación.\n\nEn señal de conformidad se suscribe el presente documento en dos ejemplares del mismo tenor, por las partes intervinientes.\n\nEL MANDANTE\n_________________________\n{{nombre_representante}}\n{{cargo_representante}}\n{{nombre_mandante}}\n\nEL MANDATARIO\n_________________________\n{{nombre_mandatario}}\nT.P. No. {{tarjeta_profesional}}\nCC Nº: {{cedula_mandatario}} de {{expedicion_mandatario}}",
+  "fields": [
+    {
+      "name": "ciudad",
+      "label": "Ciudad donde se firma el contrato",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "dia",
+      "label": "Día de firma (número)",
+      "type": "number",
+      "required": true
+    },
+    {
+      "name": "mes",
+      "label": "Mes de firma (ej: abril, mayo)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "anio",
+      "label": "Año de firma (ej: 2026)",
+      "type": "number",
+      "required": true
+    },
+    {
+      "name": "nombre_mandante",
+      "label": "Nombre o razón social del mandante (quien contrata al abogado — puede ser persona natural o empresa)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "descripcion_mandante",
+      "label": "Descripción del mandante (ej: sociedad legalmente constituida / persona natural mayor de edad / entidad sin ánimo de lucro)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "ciudad_mandante",
+      "label": "Ciudad donde tiene domicilio el mandante",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "nombre_representante",
+      "label": "Nombre completo del representante legal o de quien firma por el mandante",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "ciudad_representante",
+      "label": "Ciudad donde vive el representante del mandante",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "cargo_representante",
+      "label": "Cargo del representante que firma por el mandante (ej: Gerente General, Presidente, Representante Legal, propietario)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "nombre_mandatario",
+      "label": "Nombre completo del abogado (el mandatario que prestará los servicios)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "ciudad_mandatario",
+      "label": "Ciudad donde vive el abogado",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "tarjeta_profesional",
+      "label": "Número de tarjeta profesional del abogado (ej: 123456-A)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "cedula_mandatario",
+      "label": "Número de cédula del abogado",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "expedicion_mandatario",
+      "label": "Ciudad donde fue expedida la cédula del abogado",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "asuntos_encargados",
+      "label": "Asuntos jurídicos encomendados al abogado (ej: representar al mandante en el proceso ejecutivo No. 2024-0123 ante el Juzgado Civil del Circuito / asesorar en la constitución de la sociedad / elaborar y revisar contratos comerciales)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "honorarios_letras",
+      "label": "Valor de los honorarios en letras (ej: dos millones de pesos mensuales / cinco millones de pesos por la gestión total)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "honorarios_numeros",
+      "label": "Valor de los honorarios en números (ej: $2.000.000 mensuales / $5.000.000)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "forma_pago_honorarios",
+      "label": "Forma y fechas de pago de los honorarios (ej: mensualmente dentro de los primeros cinco días de cada mes / el 50% al firmar y el 50% al concluir / en tres cuotas iguales mensuales)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "obligaciones_mandatario",
+      "label": "Obligaciones del abogado (ej: obrar con diligencia en los asuntos encomendados, absolver las consultas del mandante, rendir informes periódicos del estado de los negocios a su cargo, guardar la reserva profesional sobre la información recibida, actuar conforme al Código Disciplinario del Abogado)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "obligaciones_mandante",
+      "label": "Obligaciones del mandante (ej: cancelar los honorarios en la forma pactada, suministrar al abogado toda la información y documentos que requiera, cubrir los gastos que la gestión conlleve distintos de los honorarios, como notificaciones, copias y viáticos)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "plazo_aviso",
+      "label": "Plazo de aviso para terminar el contrato anticipadamente (ej: quince (15) días / treinta (30) días / un (1) mes)",
+      "type": "text",
+      "required": true
+    }
     ]
-  }
+  },
+
+  {
+  "id": "poder-general",
+  "title": "Poder General",
+  "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} del mes de {{mes}} del año {{anio}}, ante mí Notario {{notario}}, del Círculo de {{circulo}}, compareció el señor {{nombre_poderdante}}, colombiano, mayor de edad, domiciliado y residente en {{domicilio_poderdante}}, de estado civil {{estado_civil_poderdante}}, identificado con la cédula de ciudadanía No. {{cedula_poderdante}} de {{expedicion_poderdante}}, quien manifestó lo siguiente:\n\nPRIMERO. Que por medio de la presente escritura confiere poder general, amplio y suficiente, al señor {{nombre_apoderado}}, también colombiano, mayor de edad y domiciliado y residente en {{domicilio_apoderado}}, identificado con la cédula de ciudadanía No. {{cedula_apoderado}} de {{expedicion_apoderado}}, para que en su nombre y representación ejecute los actos y contratos relacionados con sus bienes, obligaciones y derechos que a continuación se especifican:\n\n{{facultades}}\n\nSEGUNDO. Que con relación a los honorarios que recibirá el mandatario, por causa del ejercicio de este mandato, siempre que su actuación sea acorde con las estipulaciones aquí convenidas, se pacta lo siguiente: {{honorarios}}.\n\nTERCERO. Presente el señor {{nombre_apoderado}}, identificado con la cédula de ciudadanía No. {{cedula_apoderado}} de {{expedicion_apoderado}}, declaró: Que acepta el poder general que por medio de este instrumento le confiere el señor {{nombre_poderdante}} y que lo ejercerá oportunamente.\n\nPoderdante:\n_________________________\n{{nombre_poderdante}}\nC.C. No. {{cedula_poderdante}} de {{expedicion_poderdante}}\n\nApoderado:\n_________________________\n{{nombre_apoderado}}\nC.C. No. {{cedula_apoderado}} de {{expedicion_apoderado}}\n\nNotario:\n_________________________\nNotaría {{notario}} del Círculo de {{circulo}}",
+  "fields": [
+    {
+      "name": "ciudad",
+      "label": "Ciudad donde se otorga la escritura",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "departamento",
+      "label": "Departamento",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "dia",
+      "label": "Día de otorgamiento (en letras y número, ej: veintiuno (21))",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "mes",
+      "label": "Mes de otorgamiento",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "anio",
+      "label": "Año de otorgamiento",
+      "type": "number",
+      "required": true
+    },
+    {
+      "name": "notario",
+      "label": "Nombre o número de la Notaría (ej: Única, Primera, Segunda)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "circulo",
+      "label": "Ciudad del Círculo Notarial",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "nombre_poderdante",
+      "label": "Nombre completo del poderdante (quien otorga el poder)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "domicilio_poderdante",
+      "label": "Ciudad donde vive y reside el poderdante",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "estado_civil_poderdante",
+      "label": "Estado civil del poderdante (soltero, casado, divorciado, viudo)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "cedula_poderdante",
+      "label": "Número de cédula del poderdante",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "expedicion_poderdante",
+      "label": "Ciudad donde fue expedida la cédula del poderdante",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "nombre_apoderado",
+      "label": "Nombre completo del apoderado (quien recibe el poder)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "domicilio_apoderado",
+      "label": "Ciudad donde vive y reside el apoderado",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "cedula_apoderado",
+      "label": "Número de cédula del apoderado",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "expedicion_apoderado",
+      "label": "Ciudad donde fue expedida la cédula del apoderado",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "facultades",
+      "label": "Facultades otorgadas al apoderado (describa todas las que aplican: administrar bienes, vender inmuebles, cobrar, pagar, representar judicialmente, etc.)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "honorarios",
+      "label": "Honorarios del apoderado (ej: el equivalente al 10% del valor de cada negocio gestionado / sin remuneración, el mandato es gratuito / la suma de $500.000 mensuales)",
+      "type": "text",
+      "required": true
+    }
+  ]
+},
+
+{
+  "id": "poder-especial-venta-inmueble",
+  "title": "Poder Especial para Venta de Inmueble",
+  "template": "Señor\nNotario {{notario}} del Círculo de {{circulo}}\n\n{{nombre_poderdante}}, mayor de edad, domiciliado(a) y residente en la ciudad de {{ciudad_poderdante}}, identificado(a) con la cédula de ciudadanía No. {{cedula_poderdante}} de {{expedicion_poderdante}}, actuando en nombre y representación propia, por medio de este documento confiero poder especial, amplio y suficiente, a {{nombre_apoderado}}, también mayor de edad, domiciliado(a) y residente en la ciudad de {{ciudad_apoderado}}, identificado(a) con la cédula de ciudadanía No. {{cedula_apoderado}} de {{expedicion_apoderado}}, para vender por la suma de {{precio_letras}} pesos ($ {{precio_numeros}}) moneda legal y para suscribir en mi nombre la escritura pública de venta sobre el inmueble de mi propiedad que a continuación se describe: {{descripcion_inmueble}}, junto con el lote de terreno en que se halla edificada, con todas sus dependencias y anexidades, alinderada de manera general así: por el norte, en extensión de {{lindero_norte}}; por el sur, en extensión de {{lindero_sur}}; por el oriente, en extensión de {{lindero_oriente}}; y por el occidente, en extensión de {{lindero_occidente}}. El inmueble descrito se encuentra identificado con el No. de matrícula inmobiliaria {{matricula_inmobiliaria}}.\n\nConforme a lo dispuesto por la Ley 258 de 1996, igualmente manifiesto bajo la gravedad del juramento, que el inmueble arriba descrito no se encuentra afectado a vivienda familiar.\n\nMi apoderado está facultado para realizar todos los actos, gestiones y diligencias que sean necesarios para el perfeccionamiento del contrato de compraventa.\n\nPor lo anterior solicito se sirva tener a la persona anteriormente mencionada como mi apoderado para los efectos descritos en este memorial.\n\nSeñor notario, atentamente,\n\nPoderdante:\n_________________________\n{{nombre_poderdante}}\nC.C. No. {{cedula_poderdante}} de {{expedicion_poderdante}}\n\nApoderado:\n_________________________\n{{nombre_apoderado}}\nC.C. No. {{cedula_apoderado}} de {{expedicion_apoderado}}",
+  "fields": [
+    {
+      "name": "notario",
+      "label": "Nombre o número de la Notaría (ej: Única, Primera, Segunda)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "circulo",
+      "label": "Ciudad del Círculo Notarial",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "nombre_poderdante",
+      "label": "Nombre completo del poderdante (quien da el poder para vender)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "ciudad_poderdante",
+      "label": "Ciudad donde vive el poderdante",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "cedula_poderdante",
+      "label": "Número de cédula del poderdante",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "expedicion_poderdante",
+      "label": "Ciudad donde fue expedida la cédula del poderdante",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "nombre_apoderado",
+      "label": "Nombre completo del apoderado (quien realizará la venta en nombre del poderdante)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "ciudad_apoderado",
+      "label": "Ciudad donde vive el apoderado",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "cedula_apoderado",
+      "label": "Número de cédula del apoderado",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "expedicion_apoderado",
+      "label": "Ciudad donde fue expedida la cédula del apoderado",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "precio_letras",
+      "label": "Precio de venta del inmueble en letras (ej: ciento veinte millones de pesos)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "precio_numeros",
+      "label": "Precio de venta en números (ej: 120.000.000)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "descripcion_inmueble",
+      "label": "Descripción del inmueble (tipo y dirección, ej: una casa de habitación distinguida con el No. 2A-56 de la Calle 4 Sur, Barrio Villa del Carmen, ciudad de El Cerrito)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "lindero_norte",
+      "label": "Lindero norte (ej: diez (10) metros con la Calle 4 Sur)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "lindero_sur",
+      "label": "Lindero sur (ej: diez (10) metros con el predio de Roberto Salcedo)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "lindero_oriente",
+      "label": "Lindero oriente (ej: doce (12) metros con la Carrera 2A)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "lindero_occidente",
+      "label": "Lindero occidente (ej: doce (12) metros con el predio de Patricia Londoño)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "matricula_inmobiliaria",
+      "label": "Número de matrícula inmobiliaria del inmueble (lo encuentra en el certificado de tradición y libertad, ej: 370-123456)",
+      "type": "text",
+      "required": true
+    }
+  ]
+}
 ]
