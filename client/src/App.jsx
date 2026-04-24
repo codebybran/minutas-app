@@ -175,7 +175,6 @@ const FIELD_HELP = {
   condicion_vendedor: 'Escriba la relación del vendedor con el fallecido. Ej: hijo, hija, cónyuge, hermano, sobrino.',
   descripcion_bienes: 'Describa cada inmueble de la sucesión con su ubicación, linderos y número de matrícula inmobiliaria.',
   precio_cesion: 'Escriba el precio acordado por la cesión en letras y números. Ej: cincuenta millones de pesos ($50.000.000).',
-  // Minuta 13 — Estatutos de fundación
   nombre_fundacion: 'Escriba el nombre completo de la fundación tal como quedará registrado legalmente. Ej: Fundación Semillas de Esperanza.',
   municipio_domicilio: 'Escriba el municipio donde tendrá su sede principal la fundación. Ej: El Cerrito, Cali, Bogotá.',
   departamento_domicilio: 'Escriba el departamento donde está ubicado el municipio sede. Ej: Valle del Cauca, Antioquia.',
@@ -196,8 +195,139 @@ const FIELD_HELP = {
   director_suplente: 'Escriba el nombre completo del suplente del director.',
   miembros_consejo_principales: 'Escriba los nombres completos de los miembros principales del consejo, separados por punto y coma. Ej: Carlos Pérez Ríos; María García López; Luis Torres Mora.',
   miembros_consejo_suplentes: 'Escriba los nombres completos de los miembros suplentes del consejo, separados por punto y coma. Ej: Ana Gómez Ruiz; Pedro Salcedo Vera; Rosa Martínez Gil.',
+  // Minuta 14 — Contrato de construcción sin suministro de materiales
+  nombre_contratante: 'Escriba el nombre completo de la persona que encarga y paga la obra (el dueño del proyecto).',
+  nombre_contratista: 'Escriba el nombre completo de la persona que dirigirá y ejecutará la construcción.',
+  ciudad_domicilio: 'Escriba la ciudad donde viven ambas partes. Si viven en ciudades diferentes escriba las dos. Ej: Cali y El Cerrito.',
+  cedula_contratante: 'Escriba el número de cédula del contratante. Solo los números.',
+  cedula_contratista: 'Escriba el número de cédula del contratista. Solo los números.',
+  expedicion_contratante: 'Escriba la ciudad donde fue expedida la cédula del contratante. Ej: Cali, El Cerrito.',
+  expedicion_contratista: 'Escriba la ciudad donde fue expedida la cédula del contratista. Ej: Cali, El Cerrito.',
+  descripcion_obra: 'Describa qué se va a construir. Ej: una casa de dos pisos con tres habitaciones, dos baños, sala, comedor y cocina.',
+  descripcion_lote: 'Describa el lote donde se construirá. Incluya área y matrícula inmobiliaria si la tiene. Ej: lote de 200 metros cuadrados, matrícula inmobiliaria 370-123456.',
+  ubicacion_lote: 'Escriba la dirección o ubicación exacta del lote. Ej: Calle 4 Sur # 2A-56, Barrio Villa del Carmen.',
+  ciudad_obra: 'Escriba la ciudad donde está ubicado el lote de construcción.',
+  nombre_arquitecto: 'Escriba el nombre completo del arquitecto que elaboró el plano de la obra.',
+  plazo_obra: 'Escriba el tiempo acordado para terminar la obra. Ej: seis (6) meses, doce (12) semanas, noventa (90) días.',
+  porcentaje_honorarios: 'Escriba el porcentaje de honorarios del contratista sobre el costo total de la obra. Solo el número. Ej: quince (15).',
+  costo_obra_letras: 'Escriba el costo total estimado de la obra en letras. Ej: cincuenta millones de pesos.',
+  costo_obra_numeros: 'Escriba el costo total estimado de la obra en números. Ej: $50.000.000.',
+  honorarios_letras: 'Escriba el total de honorarios del contratista en letras. Es el porcentaje aplicado al costo total. Ej: siete millones quinientos mil pesos.',
+  honorarios_numeros: 'Escriba el total de honorarios en números. Ej: $7.500.000.',
+  anticipo_letras: 'Escriba el valor del anticipo que se entrega al firmar el contrato, en letras. Ej: un millón quinientos mil pesos.',
+  anticipo_numeros: 'Escriba el valor del anticipo en números. Ej: $1.500.000.',
+  porcentaje_anticipo: 'Escriba el porcentaje del anticipo sobre el total de honorarios. Solo el número. Ej: veinte (20).',
+  forma_pago_saldo: 'Describa cómo se pagará el saldo después del anticipo. Ej: pagos semanales de $500.000 / pagos quincenales de $1.000.000 / pagos mensuales de $2.000.000 / pagos por etapas según avance de obra.',
+  dia_pago: 'Escriba el día exacto en que se realizarán los pagos. Ej: todos los viernes / los días 15 y 30 de cada mes / el último día hábil de cada mes.',
+  condicion_pago: 'Escriba si hay alguna condición para hacer el pago. Ej: sin condición adicional / previa presentación de informe de avance semanal / previa firma de acta de recibo parcial de obra.',
+  porcentaje_retencion: 'Escriba el porcentaje que se retendrá del último pago como garantía de buena ejecución. Solo el número. Ej: diez (10).',
+  plazo_retencion: 'Escriba cuántos días después de entregar la obra se libera la retención de garantía. Ej: treinta (30), sesenta (60).',
+  sucesor_contratista: 'Escriba quién continuará la obra si el contratista fallece o queda incapacitado. Ej: la persona que el contratista designe mediante escrito / el profesional que acuerden las partes de común acuerdo.',
+  penalizacion_letras: 'Escriba el valor de la multa por incumplimiento de plazos, en letras. Ej: doscientos mil pesos, quinientos mil pesos.',
+  penalizacion_numeros: 'Escriba el valor de la multa en números. Ej: $200.000, $500.000.',
+  unidad_penalizacion: 'Escriba cada cuánto tiempo o por qué hecho se cobra la penalización. Ej: día de retraso / semana de retraso / incumplimiento injustificado.',
+  mecanismo_divergencias: 'Escriba cómo se resolverán las diferencias entre las partes. Ej: mediación ante la Cámara de Comercio de la ciudad / amigable composición / decisión de un árbitro designado por las partes / juez ordinario competente.',
+  ciudad_jurisdiccion: 'Escriba la ciudad cuyos jueces serán competentes para resolver conflictos. Ej: Cali, El Cerrito, Bogotá.',
+  num_ejemplares: 'Escriba en cuántos ejemplares se firma el contrato. Ej: dos (2), tres (3).',
+  // Minuta 15 — Contrato de construcción con suministro de materiales
+  ubicacion_terreno: 'Escriba la dirección completa del terreno donde se construirá. Ej: Carrera 8 # 12-34, Barrio Los Pinos, El Cerrito.',
+  suministrador_materiales: 'Escriba quién suministra los materiales. Ej: el contratista / el contratante / ambas partes según pliego de condiciones.',
+  precio_total_letras: 'Escriba el precio total de la obra en letras. Ej: ochenta millones de pesos.',
+  precio_total_numeros: 'Escriba el precio total de la obra en números. Ej: $80.000.000.',
+  porcentaje_anticipo: 'Escriba el porcentaje del anticipo inicial para acopio de materiales. Solo el número en letras. Ej: treinta (30).',
+  porcentaje_pago_b: 'Escriba el porcentaje del segundo pago. Solo el número en letras. Ej: veinte (20).',
+  condicion_pago_b: 'Escriba cuándo se hace el segundo pago. Ej: al terminar la cimentación / a los treinta días de iniciada la obra / al completar la estructura.',
+  porcentaje_pago_c: 'Escriba el porcentaje del tercer pago. Solo el número en letras. Ej: veinte (20).',
+  condicion_pago_c: 'Escriba cuándo se hace el tercer pago. Ej: al terminar muros y cubierta / a los sesenta días de iniciada la obra / al completar acabados.',
+  porcentaje_saldo: 'Escriba el porcentaje del pago final al recibir la obra terminada. Solo el número en letras. Ej: treinta (30).',
+  porcentaje_retencion: 'Escriba el porcentaje de retención de garantía sobre cada pago. Solo el número en letras. Ej: diez (10).',
+  meses_retencion: 'Escriba cuántos meses después de entregar la obra se devuelve la retención. Ej: seis (6), doce (12).',
+  plazo_inicio: 'Escriba el plazo para iniciar la obra desde la firma. Ej: diez (10) días, quince (15) días hábiles.',
+  plazo_entrega: 'Escriba el plazo total para entregar la obra terminada. Ej: seis (6) meses, ciento ochenta (180) días.',
+  multa_letras: 'Escriba el valor de la multa por retraso en letras. Ej: doscientos mil pesos, quinientos mil pesos.',
+  multa_numeros: 'Escriba el valor de la multa por retraso en números. Ej: $200.000, $500.000.',
+  unidad_multa: 'Escriba la unidad de tiempo de la multa. Ej: día / semana.',
+  dias_rescision: 'Escriba los días adicionales de retraso que permiten rescindir el contrato. Ej: treinta (30) días, quince (15) días.',
+  domicilio_contratante: 'Escriba la dirección completa del contratante para notificaciones legales. Ej: Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito.',
+  domicilio_contratista: 'Escriba la dirección completa del contratista para notificaciones legales. Ej: Carrera 8 # 12-34, Barrio Los Pinos, El Cerrito.',
+  ciudad_jurisdiccion: 'Escriba la ciudad cuyos jueces serán competentes para resolver conflictos. Ej: Cali, El Cerrito, Bogotá.',
+  // Minuta 16 — Contrato de depósito
+  nombre_depositante: 'Escriba el nombre completo de la persona que entrega los bienes para su custodia, tal como aparece en su cédula.',
+  nombre_depositario: 'Escriba el nombre completo de la persona que recibirá y guardará los bienes, tal como aparece en su cédula.',
+  descripcion_bienes: 'Describa detalladamente cada bien entregado en depósito. Incluya marca, modelo, serial y color si aplica. Ej: un televisor Samsung 55 pulgadas serial ABC123, color negro; una nevera LG 350 litros serial XYZ456, color gris.',
+  direccion_custodia: 'Escriba la dirección exacta donde permanecerán los bienes durante el depósito. Ej: Calle 4 Sur # 2A-56, Barrio Villa del Carmen.',
+  ciudad_custodia: 'Escriba la ciudad donde permanecerán los bienes. Ej: El Cerrito, Cali, Bogotá.',
+  remuneracion_letras: 'Escriba el valor que recibirá el depositario por sus servicios de custodia, en letras. Ej: cincuenta mil pesos, doscientos mil pesos.',
+  remuneracion_numeros: 'Escriba ese valor en números. Ej: $50.000, $200.000.',
+  periodicidad_pago: 'Escriba cada cuánto se pagará esa remuneración. Ej: mensuales / anuales / diarios / por el término total del contrato.',
+  // Minuta 17 — Cesión o venta de derechos litigiosos
+  nombre_cedente: 'Escriba el nombre completo de la persona que vende o cede el derecho litigioso, tal como aparece en su cédula.',
+  nombre_cesionario: 'Escriba el nombre completo de la persona que compra el derecho litigioso, tal como aparece en su cédula.',
+  tipo_proceso: 'Escriba el tipo de proceso judicial. Ej: ordinario civil / de sucesión / ejecutivo / laboral.',
+  demandante: 'Escriba el nombre completo de quien demanda en el proceso judicial.',
+  demandado: 'Escriba el nombre completo de quien es demandado en el proceso judicial.',
+  juzgado: 'Escriba el nombre del juzgado donde se tramita el proceso. Ej: Primero Civil del Circuito / Segundo Civil Municipal / Primero Laboral.',
+  dia_notificacion: 'Escriba el día en número en que fue notificada la demanda. Ej: 15.',
+  mes_notificacion: 'Escriba el mes en letras en que fue notificada la demanda. Ej: enero, marzo.',
+  anio_notificacion: 'Escriba el año en que fue notificada la demanda. Ej: 2023.',
+  precio_letras: 'Escriba el precio de la cesión en letras. Ej: cinco millones de pesos.',
+  precio_numeros: 'Escriba el precio de la cesión en números. Ej: $5.000.000.',
+  forma_pago: 'Describa cómo pagará el cesionario. Ej: de contado al momento de firmar / el 50% hoy y el 50% en treinta días / en tres cuotas mensuales iguales.',
+  // Minuta 18 — Arrendamiento de vivienda urbana
+  nombre_arrendatario1: 'Escriba el nombre completo del arrendatario principal, tal como aparece en su cédula.',
+  nombre_arrendatario2_texto: 'Si hay un segundo arrendatario escriba su nombre precedido de " y". Ej: " y María García López". Si no hay segundo arrendatario escriba: no aplica.',
+  ciudad_arrendatarios: 'Escriba la ciudad donde viven los arrendatarios. Ej: El Cerrito, Cali.',
+  cedula_arrendatario1: 'Escriba el número de cédula del arrendatario principal. Solo los números.',
+  cedula_arrendatario2_texto: 'Si hay segundo arrendatario escriba su cédula precedida de " y". Ej: " y 1098765432". Si no aplica escriba: no aplica.',
+  nombre_arrendador: 'Escriba el nombre completo del arrendador (dueño del inmueble), tal como aparece en su cédula.',
+  cedula_arrendador: 'Escriba el número de cédula del arrendador. Solo los números.',
+  expedicion_arrendador: 'Escriba la ciudad donde fue expedida la cédula del arrendador. Ej: Cali, El Cerrito.',
+  numero_inmueble: 'Escriba el número de nomenclatura del inmueble. Ej: 2A-56 / apartamento 301 / casa 12.',
+  ciudad_inmueble: 'Escriba la ciudad donde está ubicado el inmueble arrendado.',
+  linderos_inmueble: 'Describa los linderos del inmueble por los cuatro puntos cardinales. Ej: Norte: con la calle 4; Sur: con el predio de Juan García; Oriente: con la carrera 8; Occidente: con el predio de María Torres.',
+  duracion_meses: 'Escriba la duración del contrato en meses en letras y números. Ej: doce (12), seis (6).',
+  mes_inicio: 'Escriba el mes de inicio del contrato. Ej: mayo, enero.',
+  anio_inicio: 'Escriba el año de inicio del contrato. Ej: 2026.',
+  periodo_prorroga: 'Escriba el período de prórroga automática si ninguna parte avisa. Ej: un (1) año / seis (6) meses / el mismo término inicial.',
+  canon_letras: 'Escriba el valor del canon mensual en letras. Ej: un millón doscientos mil pesos.',
+  canon_numeros: 'Escriba el valor del canon mensual en números. Ej: $1.200.000.',
+  lugar_pago: 'Escriba dónde o cómo se paga el canon. Ej: la oficina del arrendador ubicada en Calle 4 # 2-50 / cuenta Bancolombia No. 123456789 / a orden del arrendador.',
+  pago_energia: 'Escriba quién paga la energía eléctrica. Ej: el arrendatario / el arrendador.',
+  pago_gas: 'Escriba quién paga el gas. Ej: el arrendatario / el arrendador / no aplica si no hay gas.',
+  pago_agua: 'Escriba quién paga agua y aseo. Ej: el arrendatario / el arrendador.',
+  pago_telefono: 'Escriba quién paga teléfono e internet. Ej: el arrendatario / el arrendador / no aplica.',
+  porcentaje_reajuste: 'Escriba el porcentaje de reajuste anual del canon. El máximo legal es el 100% del IPC del año anterior. Escriba: cien (100). Si acuerdan menos escriba el porcentaje acordado.',
+  direccion_notificacion_arrendador: 'Escriba la dirección completa del arrendador para recibir notificaciones judiciales. Ej: Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito.',
+  direccion_notificacion_arrendatario: 'Escriba la dirección del arrendatario para notificaciones. Normalmente es la misma del inmueble arrendado.',
+  // Minuta 19 — Arrendamiento de inmueble con muebles
+  nombre_arrendador: 'Escriba el nombre completo del arrendador (dueño del inmueble y los muebles), tal como aparece en su cédula.',
+  cedula_arrendador: 'Escriba el número de cédula del arrendador. Solo los números.',
+  expedicion_arrendador: 'Escriba la ciudad donde fue expedida la cédula del arrendador. Ej: Cali, El Cerrito.',
+  nombre_arrendatario: 'Escriba el nombre completo del arrendatario, tal como aparece en su cédula.',
+  cedula_arrendatario: 'Escriba el número de cédula del arrendatario. Solo los números.',
+  expedicion_arrendatario: 'Escriba la ciudad donde fue expedida la cédula del arrendatario. Ej: Cali, El Cerrito.',
+  ubicacion_inmueble: 'Escriba la dirección completa del inmueble con muebles. Ej: Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito.',
+  comodidades_inmueble: 'Describa las comodidades del inmueble. Ej: sala, comedor, tres habitaciones, dos baños, cocina integral, garaje y patio.',
+  destinacion_inmueble: 'Escriba el uso permitido del inmueble. Ej: vivienda familiar / uso turístico y de hospedaje / uso comercial.',
+  canon_letras: 'Escriba el valor del canon mensual en letras. Ej: un millón quinientos mil pesos.',
+  canon_numeros: 'Escriba el valor del canon mensual en números. Ej: $1.500.000.',
+  dia_pago_inicio: 'Escriba el día inicial del período de pago. Ej: 1.',
+  dia_pago_fin: 'Escriba el día final del período de pago. Ej: 5.',
+  lugar_pago: 'Escriba dónde o cómo se paga el canon. Ej: la oficina del arrendador / cuenta Bancolombia No. 123456789 / a orden del arrendador.',
+  duracion: 'Escriba la duración del contrato. Ej: seis (6) meses / doce (12) meses / noventa (90) días.',
+  fecha_inicio: 'Escriba la fecha de inicio del contrato. Ej: el 1 de mayo de 2026.',
+  multa_diaria_letras: 'Escriba la multa diaria por no restituir el inmueble al vencer, en letras. Ej: cien mil pesos, doscientos mil pesos.',
+  multa_diaria_numeros: 'Escriba la multa diaria en números. Ej: $100.000, $200.000.',
+  clausula_penal_letras: 'Escriba el valor de la cláusula penal por incumplimiento general, en letras. Ej: dos millones de pesos.',
+  clausula_penal_numeros: 'Escriba el valor de la cláusula penal en números. Ej: $2.000.000.',
+  plazo_nueva_garantia: 'Escriba los días que tiene el arrendatario para presentar nuevo fiador si el actual falla. Ej: diez (10), quince (15).',
+  forma_reajuste: 'Escriba cómo se reajusta el canon anualmente. Ej: anualmente conforme al IPC certificado por el DANE / en el porcentaje que acuerden las partes al inicio de cada período.',
+  domicilio_arrendador: 'Escriba la dirección completa del arrendador para notificaciones judiciales. Ej: Carrera 8 # 12-34, Barrio Los Pinos, El Cerrito.',
+  nombre_fiador: 'Escriba el nombre completo del fiador, quien garantiza el cumplimiento del arrendatario.',
+  cedula_fiador: 'Escriba el número de cédula del fiador. Solo los números.',
+  expedicion_fiador: 'Escriba la ciudad donde fue expedida la cédula del fiador. Ej: Cali, El Cerrito.',
 }
- 
+
 const DATOS_PRUEBA = {
   ciudad: 'El Cerrito', dia: 21, mes: 'abril', anio: 2026,
   nombre_vendedor: 'Jhon Brandon Martínez Vélez', nombre_comprador: 'Alexander García López',
@@ -281,7 +411,6 @@ const DATOS_PRUEBA = {
   juzgado: 'Primero Civil del Circuito', ciudad_juzgado: 'Cali', condicion_vendedor: 'hijo',
   descripcion_bienes: 'A. Casa ubicada en la Calle 5 # 3-20, barrio El Prado, ciudad de Cali, con matrícula inmobiliaria número 370-12345. B. Lote ubicado en la Carrera 8 # 10-15, barrio Los Pinos, ciudad de Cali, con matrícula inmobiliaria número 370-67890.',
   precio_cesion: 'cincuenta millones de pesos ($50.000.000)',
-  // Minuta 13 — Estatutos de fundación
   nombre_fundacion: 'Fundación Semillas de Esperanza',
   municipio_domicilio: 'El Cerrito',
   departamento_domicilio: 'Valle del Cauca',
@@ -302,8 +431,152 @@ const DATOS_PRUEBA = {
   director_suplente: 'Alexander García López',
   miembros_consejo_principales: 'Carlos Eduardo Pérez Ríos; María Fernanda García López; Luis Fernando Gómez Torres; Diana Patricia Ruiz Morales; Andrés Felipe Castillo Mora',
   miembros_consejo_suplentes: 'Isabel Cristina Vargas Pinto; Roberto Salcedo Muñoz; Patricia Londoño Vera; Ana María Salcedo Vera; Jorge Enrique Morales Gil',
+  // Minuta 14 — Contrato de construcción sin suministro de materiales
+  nombre_contratante: 'Carlos Eduardo Pérez Ríos',
+  nombre_contratista: 'Roberto Salcedo Muñoz',
+  ciudad_domicilio: 'El Cerrito',
+  cedula_contratante: '1234567890',
+  cedula_contratista: '0987654321',
+  expedicion_contratante: 'El Cerrito',
+  expedicion_contratista: 'Cali',
+  descripcion_obra: 'una casa de dos pisos con tres habitaciones, dos baños, sala, comedor, cocina y garaje',
+  descripcion_lote: 'lote de doscientos (200) metros cuadrados, matrícula inmobiliaria 370-654321',
+  ubicacion_lote: 'Carrera 8 # 12-34, Barrio Los Pinos',
+  ciudad_obra: 'El Cerrito',
+  nombre_arquitecto: 'Luis Fernando Gómez Torres',
+  plazo_obra: 'seis (6) meses',
+  porcentaje_honorarios: 'quince (15)',
+  costo_obra_letras: 'cincuenta millones de pesos',
+  costo_obra_numeros: '$50.000.000',
+  honorarios_letras: 'siete millones quinientos mil pesos',
+  honorarios_numeros: '$7.500.000',
+  anticipo_letras: 'un millón quinientos mil pesos',
+  anticipo_numeros: '$1.500.000',
+  porcentaje_anticipo: 'veinte (20)',
+  forma_pago_saldo: 'pagos semanales de quinientos mil pesos ($500.000)',
+  dia_pago: 'todos los viernes',
+  condicion_pago: 'sin condición adicional',
+  porcentaje_retencion: 'diez (10)',
+  plazo_retencion: 'treinta (30)',
+  sucesor_contratista: 'la persona que el contratista designe mediante escrito o, en su defecto, el profesional que acuerden las partes de común acuerdo',
+  penalizacion_letras: 'doscientos mil pesos',
+  penalizacion_numeros: '$200.000',
+  unidad_penalizacion: 'día de retraso injustificado',
+  mecanismo_divergencias: 'mediación ante la Cámara de Comercio de la ciudad, y de no llegarse a acuerdo, por el juez ordinario competente',
+  ciudad_jurisdiccion: 'El Cerrito',
+  num_ejemplares: 'dos (2)',
+  // Minuta 15 — Contrato de construcción con suministro de materiales
+  ubicacion_terreno: 'Carrera 8 # 12-34, Barrio Los Pinos, ciudad de El Cerrito, Valle del Cauca',
+  suministrador_materiales: 'el contratista',
+  precio_total_letras: 'ochenta millones de pesos',
+  precio_total_numeros: '$80.000.000',
+  porcentaje_anticipo: 'treinta (30)',
+  porcentaje_pago_b: 'veinte (20)',
+  condicion_pago_b: 'al terminar la cimentación y la estructura',
+  porcentaje_pago_c: 'veinte (20)',
+  condicion_pago_c: 'al terminar muros, cubierta e instalaciones',
+  porcentaje_saldo: 'treinta (30)',
+  porcentaje_retencion: 'diez (10)',
+  meses_retencion: 'seis (6)',
+  plazo_inicio: 'diez (10) días',
+  plazo_entrega: 'seis (6) meses',
+  multa_letras: 'doscientos mil pesos',
+  multa_numeros: '$200.000',
+  unidad_multa: 'día',
+  dias_rescision: 'treinta (30) días',
+  responsable_gastos: 'en partes iguales por ambas partes',
+  domicilio_contratante: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito',
+  domicilio_contratista: 'Carrera 8 # 12-34, Barrio Los Pinos, El Cerrito',
+  ciudad_jurisdiccion: 'El Cerrito',
+  // Minuta 16 — Contrato de depósito
+  nombre_depositante: 'Carlos Eduardo Pérez Ríos',
+  nombre_depositario: 'Jhon Brandon Martínez Vélez',
+  descripcion_bienes: 'A. Un televisor Samsung 55 pulgadas, serial TV-ABC123, color negro. B. Una nevera LG 350 litros, serial NV-XYZ456, color gris. C. Un equipo de sonido Sony de cinco piezas, serial SO-789012, color negro.',
+  direccion_custodia: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen',
+  ciudad_custodia: 'El Cerrito',
+  duracion: 'seis (6) meses',
+  remuneracion_letras: 'cincuenta mil pesos',
+  remuneracion_numeros: '$50.000',
+  periodicidad_pago: 'mensuales',
+  ciudad_firma: 'El Cerrito',
+  dia: 21,
+  mes: 'abril',
+  anio: 2026,
+  // Minuta 17 — Cesión o venta de derechos litigiosos
+  nombre_cedente: 'Carlos Eduardo Pérez Ríos',
+  nombre_cesionario: 'Jhon Brandon Martínez Vélez',
+  ciudad_domicilio: 'El Cerrito',
+  tipo_proceso: 'ordinario civil',
+  demandante: 'Carlos Eduardo Pérez Ríos',
+  demandado: 'Roberto Salcedo Muñoz',
+  juzgado: 'Primero Civil del Circuito',
+  ciudad_juzgado: 'Cali',
+  dia_notificacion: '10',
+  mes_notificacion: 'enero',
+  anio_notificacion: '2023',
+  precio_letras: 'cinco millones de pesos',
+  precio_numeros: '$5.000.000',
+  forma_pago: 'de contado al momento de la firma del presente contrato',
+  ciudad_firma: 'El Cerrito',
+  dia: 21,
+  mes: 'abril',
+  // Minuta 18 — Arrendamiento de vivienda urbana
+  nombre_arrendatario1: 'Alexander García López',
+  nombre_arrendatario2_texto: 'no aplica',
+  ciudad_arrendatarios: 'El Cerrito',
+  cedula_arrendatario1: '0987654321',
+  cedula_arrendatario2_texto: 'no aplica',
+  nombre_arrendador: 'Jhon Brandon Martínez Vélez',
+  cedula_arrendador: '1234567890',
+  expedicion_arrendador: 'El Cerrito',
+  direccion_inmueble: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen',
+  numero_inmueble: '2A-56',
+  ciudad_inmueble: 'El Cerrito',
+  linderos_inmueble: 'Norte: con la calle 4 Sur; Sur: con el predio de Roberto Salcedo; Oriente: con la carrera 2A; Occidente: con el predio de Patricia Londoño',
+  duracion_meses: 'doce (12)',
+  dia_inicio: '1',
+  mes_inicio: 'mayo',
+  anio_inicio: '2026',
+  periodo_prorroga: 'un (1) año',
+  canon_letras: 'un millón doscientos mil pesos',
+  canon_numeros: '$1.200.000',
+  lugar_pago: 'la cuenta de ahorros Bancolombia número 123-456789-00 a nombre del arrendador',
+  pago_energia: 'el arrendatario',
+  pago_gas: 'el arrendatario',
+  pago_agua: 'el arrendatario',
+  pago_telefono: 'el arrendatario',
+  porcentaje_reajuste: 'cien (100)',
+  direccion_notificacion_arrendador: 'Carrera 8 # 12-34, Barrio Los Pinos, El Cerrito',
+  direccion_notificacion_arrendatario: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito',
+  // Minuta 19 — Arrendamiento de inmueble con muebles
+  nombre_arrendador: 'Jhon Brandon Martínez Vélez',
+  cedula_arrendador: '1234567890',
+  expedicion_arrendador: 'El Cerrito',
+  nombre_arrendatario: 'Alexander García López',
+  cedula_arrendatario: '0987654321',
+  expedicion_arrendatario: 'Cali',
+  ubicacion_inmueble: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito',
+  comodidades_inmueble: 'sala, comedor, tres habitaciones, dos baños completos, cocina integral, garaje y patio interior',
+  destinacion_inmueble: 'vivienda familiar',
+  canon_letras: 'un millón quinientos mil pesos',
+  canon_numeros: '$1.500.000',
+  dia_pago_inicio: '1',
+  dia_pago_fin: '5',
+  lugar_pago: 'la cuenta de ahorros Bancolombia número 123-456789-00 a nombre del arrendador',
+  duracion: 'doce (12) meses',
+  fecha_inicio: 'el 1 de mayo de 2026',
+  multa_diaria_letras: 'cien mil pesos',
+  multa_diaria_numeros: '$100.000',
+  clausula_penal_letras: 'dos millones de pesos',
+  clausula_penal_numeros: '$2.000.000',
+  plazo_nueva_garantia: 'diez (10)',
+  forma_reajuste: 'anualmente conforme al índice de precios al consumidor (IPC) certificado por el DANE para el año calendario inmediatamente anterior',
+  domicilio_arrendador: 'Carrera 8 # 12-34, Barrio Los Pinos, El Cerrito',
+  nombre_fiador: 'Carlos Eduardo Pérez Ríos',
+  cedula_fiador: '1122334455',
+  expedicion_fiador: 'El Cerrito',
 }
- 
+
 const PASOS_SIGUIENTE = {
   1: { titulo: 'Promesa de Compraventa de Inmueble', pasos: [{ num: 1, titulo: 'Firmar el documento', descripcion: 'Reúnase con la otra parte y firmen el contrato ante dos testigos mayores de edad. Cada parte se queda con una copia original firmada.' }, { num: 2, titulo: 'Autenticar las firmas (opcional pero recomendado)', descripcion: 'Lleven el documento a cualquier Notaría con sus cédulas de ciudadanía. El notario verificará su identidad y autenticará las firmas. Costo aproximado: entre $15.000 y $30.000 por firma.' }, { num: 3, titulo: 'Guardar el documento en lugar seguro', descripcion: 'Conserve su copia en un lugar seguro. Este documento es prueba legal del acuerdo entre las partes.' }, { num: 4, titulo: 'En la fecha acordada: ir a la Notaría', descripcion: 'El día pactado en el contrato, ambas partes deben ir a la Notaría acordada con: cédulas de ciudadanía, certificado de tradición y libertad del inmueble (vigente, máximo 30 días), paz y salvo de impuesto predial, paz y salvo de valorización, paz y salvo de servicios públicos.' }, { num: 5, titulo: 'Firma de la Escritura Pública', descripcion: 'El Notario redactará y leerá la escritura de compraventa. Ambas partes la firman. El vendedor recibe el pago acordado.' }, { num: 6, titulo: 'Pagar los impuestos de la transacción', descripcion: 'Deben pagarse: el impuesto de registro (aproximadamente 1% del valor del inmueble) y los derechos notariales. Estos gastos se pagan en la Notaría o en el banco autorizado.' }, { num: 7, titulo: 'Registrar la Escritura', descripcion: 'Lleven la escritura a la Oficina de Registro de Instrumentos Públicos de su ciudad. Allí registran el cambio de propietario. A partir de ese momento el comprador es el nuevo dueño legal del inmueble.' }] },
   2: { titulo: 'Promesa de Donación', pasos: [{ num: 1, titulo: 'Firmar el documento', descripcion: 'Reúnanse donante y donatario y firmen el contrato ante dos testigos. Cada parte conserva una copia.' }, { num: 2, titulo: 'Solicitar la Insinuación Notarial', descripcion: 'Deben ir a una Notaría a solicitar la insinuación. Lleven: cédulas de ciudadanía, el contrato de promesa de donación firmado, documentos del bien a donar (escritura, certificado de tradición). El Notario autorizará la donación mediante acto notarial.' }, { num: 3, titulo: 'Firma de la Escritura Pública de Donación', descripcion: 'Una vez aprobada la insinuación, el Notario elabora la escritura de donación. Ambas partes la firman en la Notaría.' }, { num: 4, titulo: 'Pagar los impuestos', descripcion: 'Se deben pagar los derechos notariales y el impuesto de registro. El responsable es quien acordaron en el contrato.' }, { num: 5, titulo: 'Registrar la Escritura', descripcion: 'Lleven la escritura a la Oficina de Registro de Instrumentos Públicos. Allí quedará registrado el nuevo propietario del bien donado.' }] },
@@ -343,20 +616,102 @@ const PASOS_SIGUIENTE = {
     pasos: [
       { num: 1, titulo: 'Reunir a los fundadores y firmar el acta de constitución', descripcion: 'Los fundadores deben reunirse, aprobar los estatutos y firmar el acta de constitución de la fundación. Esta acta debe incluir los nombramientos iniciales de director, consejo de administración, revisor fiscal y secretario.' },
       { num: 2, titulo: 'Autenticar las firmas ante Notario', descripcion: 'Lleven el acta de constitución y los estatutos a una Notaría para autenticar las firmas de todos los fundadores. Cada fundador debe presentar su cédula de ciudadanía.' },
-      { num: 3, titulo: 'Determinar la entidad competente para reconocer la personería', descripcion: 'Según el objeto de la fundación, la entidad que otorga la personería jurídica puede ser: el Ministerio del Interior (para fundaciones de interés general), la Alcaldía o Gobernación (para fundaciones de ámbito local o departamental), u otro ministerio según la actividad (educación, salud, deporte, etc.).' },
-      { num: 4, titulo: 'Radicar la solicitud de personería jurídica', descripcion: 'Presente ante la entidad competente: solicitud escrita firmada por el representante legal, acta de constitución autenticada, estatutos de la fundación, relación del patrimonio inicial con sus soportes, cédulas de los fundadores y nombramientos.' },
-      { num: 5, titulo: 'Esperar el reconocimiento de personería jurídica', descripcion: 'La entidad estudia la solicitud y si cumple los requisitos expide el acto administrativo de reconocimiento de personería jurídica. Sin este reconocimiento la fundación no existe legalmente como persona jurídica.' },
-      { num: 6, titulo: 'Inscribir en Cámara de Comercio', descripcion: 'Con la personería jurídica otorgada, registre la fundación en la Cámara de Comercio del municipio donde tiene su domicilio. Esto le permite operar formalmente, abrir cuentas bancarias y celebrar contratos.' },
-      { num: 7, titulo: 'Obtener el NIT', descripcion: 'Solicite el NIT de la fundación ante la DIAN. Con el NIT podrá abrir cuentas bancarias, facturar y cumplir las obligaciones tributarias como entidad sin ánimo de lucro.' },
+      { num: 3, titulo: 'Determinar la entidad competente para reconocer la personería', descripcion: 'Según el objeto de la fundación, la entidad que otorga la personería jurídica puede ser: el Ministerio del Interior, la Alcaldía o Gobernación, u otro ministerio según la actividad.' },
+      { num: 4, titulo: 'Radicar la solicitud de personería jurídica', descripcion: 'Presente ante la entidad competente: solicitud escrita, acta de constitución autenticada, estatutos, relación del patrimonio inicial con soportes, cédulas de los fundadores y nombramientos.' },
+      { num: 5, titulo: 'Esperar el reconocimiento de personería jurídica', descripcion: 'La entidad estudia la solicitud y si cumple los requisitos expide el acto administrativo de reconocimiento. Sin este la fundación no existe legalmente.' },
+      { num: 6, titulo: 'Inscribir en Cámara de Comercio', descripcion: 'Con la personería jurídica otorgada, registre la fundación en la Cámara de Comercio del municipio donde tiene su domicilio.' },
+      { num: 7, titulo: 'Obtener el NIT', descripcion: 'Solicite el NIT de la fundación ante la DIAN para poder abrir cuentas bancarias y cumplir las obligaciones tributarias como entidad sin ánimo de lucro.' },
+    ]
+  },
+  'contrato-construccion': {
+    titulo: 'Contrato de Construcción sin Suministro de Materiales',
+    pasos: [
+      { num: 1, titulo: 'Firmar el contrato ante testigos', descripcion: 'Contratante y contratista firman el contrato en dos ejemplares ante dos testigos mayores de edad. Cada parte conserva un ejemplar original.' },
+      { num: 2, titulo: 'Autenticar las firmas en Notaría (recomendado)', descripcion: 'Lleven el contrato firmado a una Notaría con sus cédulas para autenticar las firmas. Esto da mayor seguridad jurídica a ambas partes en caso de incumplimiento.' },
+      { num: 3, titulo: 'Entregar el anticipo al contratista', descripcion: 'El contratante entrega el anticipo acordado en el contrato. Guarde el comprobante de pago. El contratista puede comenzar a coordinar el personal y el inicio de obra.' },
+      { num: 4, titulo: 'Verificar licencia de construcción', descripcion: 'Antes de iniciar la obra, verifique que tiene la licencia de construcción vigente expedida por la Curaduría Urbana o la Oficina de Planeación del municipio. Sin licencia la obra puede ser demolida.' },
+      { num: 5, titulo: 'Elaborar el acta de inicio de obra', descripcion: 'Al iniciar la construcción firmen un acta de inicio de obra con la fecha exacta de comienzo. Esto es el punto de partida para contar el plazo acordado.' },
+      { num: 6, titulo: 'Realizar los pagos según lo acordado', descripcion: 'El contratante debe pagar en las fechas y condiciones acordadas en el contrato. Guarde todos los comprobantes de pago. Si se acordó informe de avance, exíjalo antes de cada pago.' },
+      { num: 7, titulo: 'Hacer seguimiento semanal a la obra', descripcion: 'Visite la obra regularmente para verificar el avance y que se está construyendo conforme al plano y pliego de condiciones del arquitecto. Cualquier cambio debe acordarse por escrito.' },
+      { num: 8, titulo: 'Acta de entrega y recibo de la obra', descripcion: 'Al terminar la obra, el contratista hace entrega formal al contratante mediante un acta de entrega firmada por ambos. En esa acta se registran los detalles de la entrega y cualquier observación.' },
+      { num: 9, titulo: 'Liberar la retención de garantía', descripcion: 'Transcurrido el plazo acordado después de la entrega sin defectos imputables al contratista, el contratante debe liberar y pagar la retención de garantía retenida.' },
+    ]
+  },
+  'contrato-construccion-materiales': {
+    titulo: 'Contrato de Construcción con Suministro de Materiales (Todo Costo)',
+    pasos: [
+      { num: 1, titulo: 'Firmar el contrato ante testigos', descripcion: 'Contratante y contratista firman el contrato en los ejemplares acordados ante dos testigos mayores de edad. Cada parte conserva un ejemplar original firmado.' },
+      { num: 2, titulo: 'Autenticar las firmas en Notaría (recomendado)', descripcion: 'Lleven el contrato firmado a una Notaría con sus cédulas para autenticar las firmas. Esto da mayor seguridad jurídica y facilita el cobro ejecutivo en caso de incumplimiento.' },
+      { num: 3, titulo: 'Entregar el anticipo al contratista', descripcion: 'El contratante entrega el porcentaje de anticipo acordado para el acopio de materiales. Guarde el comprobante de pago con fecha y descripción del concepto.' },
+      { num: 4, titulo: 'Verificar la licencia de construcción', descripcion: 'Antes de iniciar la obra verifique que tiene la licencia de construcción vigente expedida por la Curaduría Urbana o la Oficina de Planeación del municipio. Sin licencia la obra puede ser ordenada demoler.' },
+      { num: 5, titulo: 'Firmar el acta de inicio de obra', descripcion: 'Al iniciar la construcción firmen un acta de inicio con la fecha exacta de comienzo. Esta fecha es el punto de partida para contar el plazo de entrega acordado en el contrato.' },
+      { num: 6, titulo: 'Realizar los pagos según las etapas acordadas', descripcion: 'El contratante debe pagar cada porcentaje en la etapa o fecha acordada, descontando siempre el porcentaje de retención de garantía. Guarde todos los comprobantes de pago.' },
+      { num: 7, titulo: 'Verificar calidad de materiales y avance de obra', descripcion: 'El contratante tiene derecho a inspeccionar la obra en cualquier momento. Verifique que los materiales utilizados corresponden a las especificaciones del pliego de condiciones. Cualquier cambio debe autorizarse por escrito.' },
+      { num: 8, titulo: 'Liquidar trabajos extras por escrito', descripcion: 'Si se requiere algún trabajo adicional no contemplado en el contrato, autoricelo por escrito antes de ejecutarlo y acuerden el valor adicional. Sin autorización escrita el contratante no está obligado a pagar extras.' },
+      { num: 9, titulo: 'Acta de entrega y recibo final de la obra', descripcion: 'Al terminar la obra el contratista hace entrega formal mediante un acta firmada por ambas partes. Inspeccione detalladamente la obra antes de firmar. Si hay defectos, déjelos consignados en el acta.' },
+      { num: 10, titulo: 'Liberar la retención de garantía', descripcion: 'Transcurridos los meses acordados desde la entrega final sin que aparezcan defectos o vicios imputables al contratista, el contratante debe devolver el fondo de garantía retenido.' },
+    ]
+  },
+  'contrato-deposito': {
+    titulo: 'Contrato de Depósito',
+    pasos: [
+      { num: 1, titulo: 'Firmar el contrato y entregar los bienes', descripcion: 'Depositante y depositario firman el contrato en dos ejemplares. En ese mismo momento el depositante entrega físicamente los bienes al depositario. El contrato de depósito se perfecciona con la entrega real de los bienes.' },
+      { num: 2, titulo: 'Verificar el estado de los bienes al recibirlos', descripcion: 'El depositario debe revisar detalladamente cada bien antes de recibirlo, verificando que corresponda a la descripción del contrato y que esté en buen estado. Si hay algún daño previo, déjelo anotado por escrito antes de firmar.' },
+      { num: 3, titulo: 'Autenticar las firmas en Notaría (recomendado)', descripcion: 'Lleven el contrato firmado a una Notaría con sus cédulas para autenticar las firmas. Esto facilita el cobro ejecutivo y la reclamación judicial en caso de que el depositario no devuelva los bienes.' },
+      { num: 4, titulo: 'Guardar los bienes en la dirección acordada', descripcion: 'El depositario debe mantener los bienes en la dirección indicada en el contrato. No puede cambiarlos de lugar sin autorización escrita del depositante. Cualquier cambio de ubicación sin autorización es incumplimiento del contrato.' },
+      { num: 5, titulo: 'Pagar la remuneración puntualmente', descripcion: 'El depositante debe pagar la remuneración acordada en las fechas pactadas. Guarde todos los comprobantes de pago. El depositario tiene derecho a retener los bienes hasta que se le pague lo adeudado.' },
+      { num: 6, titulo: 'No usar los bienes depositados', descripcion: 'El depositario está expresamente prohibido de usar los bienes. Si los usa sin autorización comete una infracción contractual y puede ser demandado por daños y perjuicios.' },
+      { num: 7, titulo: 'Al vencer el plazo: devolver los bienes', descripcion: 'Al terminar el contrato el depositario debe devolver todos los bienes en el mismo estado en que los recibió. Hagan una revisión conjunta al momento de la devolución y firmen un acta de recibo conforme.' },
+      { num: 8, titulo: 'Si el depositario no devuelve los bienes', descripcion: 'Si al vencerse el contrato el depositario se niega a devolver los bienes, el depositante puede acudir a un juez para exigir la restitución mediante acción judicial. El contrato autenticado es su principal prueba.' },
+    ]
+  },
+  'cesion-derechos-litigiosos': {
+    titulo: 'Cesión o Venta de Derechos Litigiosos',
+    pasos: [
+      { num: 1, titulo: 'Firmar el contrato ante testigos', descripcion: 'Cedente y cesionario firman el contrato en dos ejemplares ante dos testigos mayores de edad. Cada parte conserva una copia original firmada.' },
+      { num: 2, titulo: 'Autenticar las firmas en Notaría', descripcion: 'Lleven el contrato a una Notaría con sus cédulas para autenticar las firmas. Este paso es muy importante porque da mayor validez probatoria al acuerdo frente al juzgado.' },
+      { num: 3, titulo: 'Notificar la cesión al juzgado', descripcion: 'Presente una copia auténtica del contrato ante el juzgado donde cursa el proceso. Solicite que se notifique al demandado de la cesión conforme al artículo 1969 del Código Civil. Sin esta notificación la cesión no produce efectos frente al demandado ni al juzgado.' },
+      { num: 4, titulo: 'Solicitar el reconocimiento del cesionario como parte', descripcion: 'El cesionario debe presentar memorial ante el juzgado solicitando ser reconocido como parte del proceso en lugar del cedente. Adjunte el contrato de cesión debidamente autenticado.' },
+      { num: 5, titulo: 'Pagar el precio acordado', descripcion: 'El cesionario debe pagar el precio en la forma acordada en el contrato. Guarde todos los comprobantes de pago. Recuerde que este es un contrato aleatorio — el cedente no responde por el resultado del proceso.' },
+      { num: 6, titulo: 'Atender el proceso como nueva parte', descripcion: 'Una vez reconocido por el juzgado, el cesionario debe contratar un abogado para continuar el proceso judicial a su nombre. Todas las decisiones judiciales futuras recaerán sobre el cesionario.' },
+      { num: 7, titulo: 'Guardar todos los documentos', descripcion: 'Conserve el contrato de cesión autenticado, los comprobantes de pago y las actuaciones judiciales. Son sus principales pruebas en caso de cualquier controversia.' },
+    ]
+  },
+  'arrendamiento-vivienda-urbana': {
+    titulo: 'Contrato de Arrendamiento de Vivienda Urbana',
+    pasos: [
+      { num: 1, titulo: 'Firmar el contrato en dos ejemplares', descripcion: 'Arrendador y arrendatario firman el contrato en dos ejemplares originales. Cada parte conserva uno. El arrendador tiene la obligación legal de entregar copia al arrendatario dentro de los diez (10) días siguientes a la firma.' },
+      { num: 2, titulo: 'Elaborar el inventario del inmueble', descripcion: 'Al momento de la entrega firmen un inventario detallado del estado del inmueble: paredes, pisos, puertas, ventanas, enchapes, sanitarios, lavamanos, y todos los elementos que entrega el arrendador. Este inventario es parte del contrato y sirve para determinar responsabilidades al terminar.' },
+      { num: 3, titulo: 'Entregar las llaves y el inmueble', descripcion: 'El arrendador hace entrega formal del inmueble en buen estado de servicio y sanidad. El arrendatario debe verificar que todos los servicios funcionen antes de recibir. Si hay defectos, déjelos anotados en el inventario.' },
+      { num: 4, titulo: 'Registrar el contrato ante la empresa de servicios públicos', descripcion: 'Para proteger al arrendador, el arrendatario debe presentar garantías ante las empresas de servicios públicos o el arrendador puede denunciar el contrato ante dichas empresas. Así el inmueble no queda afecto al pago de deudas del arrendatario en servicios.' },
+      { num: 5, titulo: 'Pagar el canon puntualmente', descripcion: 'El arrendatario debe pagar el canon dentro de los primeros cinco (5) días de cada mes. Si el arrendador se niega a recibir el pago, el arrendatario puede consignarlo en la entidad bancaria autorizada del municipio a favor del arrendador.' },
+      { num: 6, titulo: 'Reajuste anual del canon', descripcion: 'Cada doce (12) meses el arrendador puede reajustar el canon según el porcentaje acordado, que no puede exceder el 100% del IPC del año anterior. El arrendador debe notificar el reajuste por escrito con anticipación suficiente.' },
+      { num: 7, titulo: 'Para terminar el contrato: dar preaviso por escrito', descripcion: 'Cualquiera de las partes que quiera terminar el contrato debe dar aviso escrito con al menos tres (3) meses de anticipación, enviado por correo certificado. Sin este preaviso el contrato se prorroga automáticamente.' },
+      { num: 8, titulo: 'Entrega del inmueble al terminar', descripcion: 'Al vencer el contrato el arrendatario debe devolver el inmueble en el mismo estado que lo recibió según el inventario, salvo el deterioro normal por el uso. Hagan una revisión conjunta y firmen un acta de entrega.' },
+      { num: 9, titulo: 'Si el arrendatario no paga o no entrega', descripcion: 'Si el arrendatario incumple con el pago del canon o no entrega el inmueble al vencer el contrato, el arrendador puede iniciar proceso de restitución de inmueble arrendado ante el juez civil competente. El contrato es título ejecutivo.' },
+    ]
+  },
+  'arrendamiento-inmueble-muebles': {
+    titulo: 'Contrato de Arrendamiento de Inmueble con Muebles',
+    pasos: [
+      { num: 1, titulo: 'Elaborar el inventario detallado de muebles', descripcion: 'Antes de firmar elaboren un inventario completo de todos los muebles, accesorios e instalaciones que se entregan junto con el inmueble. Descríbalo con detalle: marca, modelo, color, estado. Este inventario debe firmarse junto con el contrato y es parte integrante del mismo.' },
+      { num: 2, titulo: 'Firmar el contrato en tres ejemplares', descripcion: 'Arrendador, arrendatario y fiador firman el contrato en tres ejemplares. Cada uno conserva el suyo. Verifique que el fiador firme personalmente y presente su cédula.' },
+      { num: 3, titulo: 'Autenticar las firmas en Notaría (recomendado)', descripcion: 'Lleven el contrato a una Notaría con las cédulas de las tres partes para autenticar las firmas. Esto facilita el cobro ejecutivo en caso de incumplimiento, tanto del arrendatario como del fiador.' },
+      { num: 4, titulo: 'Revisar el estado de los muebles al entregar', descripcion: 'Al momento de la entrega hagan una revisión conjunta de cada mueble del inventario. Si alguno tiene defecto, anótelo. El arrendatario es responsable de devolver todo en el mismo estado que lo recibió.' },
+      { num: 5, titulo: 'Pagar el canon dentro del plazo acordado', descripcion: 'El arrendatario debe pagar el canon dentro de los días acordados en la cláusula cuarta. El incumplimiento del plazo activa automáticamente la cláusula penal y puede dar lugar a la terminación del contrato.' },
+      { num: 6, titulo: 'No modificar el inmueble ni los muebles', descripcion: 'El arrendatario no puede hacer modificaciones al inmueble ni a los muebles sin autorización escrita del arrendador. Si lo hace sin permiso, el arrendador puede exigir la restitución al estado original o dar por terminado el contrato.' },
+      { num: 7, titulo: 'Al vencer el contrato: restituir inmueble y muebles', descripcion: 'Al vencer el plazo el arrendatario debe devolver el inmueble y todos los muebles del inventario en el mismo estado que los recibió. Si no lo hace queda obligado a pagar la multa diaria acordada en la cláusula sexta.' },
+      { num: 8, titulo: 'Si el fiador falla: presentar nuevo fiador', descripcion: 'Si el fiador fallece, quiebra o se vuelve insolvente, el arrendatario tiene el plazo acordado en la cláusula décima primera para presentar un nuevo fiador. Si no lo hace en ese plazo, el arrendador puede dar por terminado el contrato.' },
+      { num: 9, titulo: 'Cobro de multas por vía ejecutiva', descripcion: 'Las multas pactadas en las cláusulas sexta y novena son exigibles por vía ejecutiva. El arrendador puede demandar ejecutivamente presentando el contrato y la prueba del incumplimiento, sin necesidad de proceso ordinario.' },
     ]
   },
 }
- 
+
 function TooltipField({ field, onChange, value, error }) {
   const [tooltipData, setTooltipData] = useState(null)
   const btnRef = useRef(null)
   const help = FIELD_HELP[field.name]
- 
+
   const handleMouseEnter = () => {
     if (!btnRef.current || !help) return
     const rect = btnRef.current.getBoundingClientRect()
@@ -370,9 +725,9 @@ function TooltipField({ field, onChange, value, error }) {
     if (top < 10) top = 10
     setTooltipData({ top, left })
   }
- 
+
   const handleMouseLeave = () => setTooltipData(null)
- 
+
   return (
     <div style={{ position: 'relative' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
@@ -426,11 +781,11 @@ function TooltipField({ field, onChange, value, error }) {
     </div>
   )
 }
- 
+
 function PanelPasos({ minutaId, onClose }) {
   const pasos = PASOS_SIGUIENTE[minutaId]
   if (!pasos) return null
- 
+
   const handlePrint = () => {
     const contenido = document.getElementById('pasos-imprimir').innerHTML
     const ventana = window.open('', '_blank')
@@ -438,7 +793,7 @@ function PanelPasos({ minutaId, onClose }) {
     ventana.document.close()
     ventana.print()
   }
- 
+
   return (
     <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', background: 'rgba(0,0,0,0.65)', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center', backdropFilter: 'blur(4px)' }}>
       <div className="modal-3d" style={{ background: 'linear-gradient(160deg, #ffffff 0%, #f8fbff 100%)', borderRadius: '14px', width: '680px', maxHeight: '85vh', overflow: 'hidden', display: 'flex', flexDirection: 'column', border: '1px solid #c8d8e8' }}>
@@ -473,7 +828,7 @@ function PanelPasos({ minutaId, onClose }) {
     </div>
   )
 }
- 
+
 function App() {
   const [categories, setCategories] = useState([])
   const [selectedCategory, setSelectedCategory] = useState(null)
@@ -488,14 +843,14 @@ function App() {
   const [showHistorial, setShowHistorial] = useState(false)
   const [busqueda, setBusqueda] = useState('')
   const [errores, setErrores] = useState({})
- 
+
   useEffect(() => {
     fetch('http://localhost:3001/api/minutas')
       .then(r => r.json())
       .then(setCategories)
       .catch(() => setCategories([]))
   }, [])
- 
+
   const handleSelectMinuta = async (minuta) => {
     setSelectedMinuta(minuta)
     setPreviewHTML('')
@@ -506,12 +861,12 @@ function App() {
     const data = await res.json()
     setMinutaDetail(data)
   }
- 
+
   const handleChange = (name, value) => {
     setFormData(prev => ({ ...prev, [name]: value }))
     if (errores[name]) setErrores(prev => ({ ...prev, [name]: false }))
   }
- 
+
   const handleLlenarPrueba = () => {
     if (!minutaDetail) return
     const datosFiltrados = {}
@@ -521,7 +876,7 @@ function App() {
     setFormData(datosFiltrados)
     setErrores({})
   }
- 
+
   const validarCampos = () => {
     const nuevosErrores = {}
     minutaDetail.fields.forEach(field => {
@@ -530,7 +885,7 @@ function App() {
     setErrores(nuevosErrores)
     return Object.keys(nuevosErrores).length === 0
   }
- 
+
   const handlePreview = async () => {
     if (!validarCampos()) {
       setTimeout(() => { document.getElementById('alerta-campos')?.scrollIntoView({ behavior: 'smooth', block: 'center' }) }, 100)
@@ -546,9 +901,9 @@ function App() {
     setLoading(false)
     setHistorial(prev => [{ id: Date.now(), titulo: minutaDetail.title, hora: new Date().toLocaleTimeString('es-CO', { hour: '2-digit', minute: '2-digit' }), html: data.html }, ...prev.slice(0, 9)])
   }
- 
+
   const handlePrint = () => { document.getElementById('preview-iframe').contentWindow.print() }
- 
+
   const handleDownloadWord = async () => {
     setLoadingWord(true)
     try {
@@ -564,16 +919,16 @@ function App() {
     } catch { alert('Error al generar el documento Word.') }
     setLoadingWord(false)
   }
- 
+
   const camposConError = Object.keys(errores).filter(k => errores[k]).length
   const todasLasMinutas = categories.flatMap(cat => cat.minutas.map(m => ({ ...m, catId: cat.id, catName: cat.name })))
   const minutasFiltradas = busqueda.trim() ? todasLasMinutas.filter(m => m.title.toLowerCase().includes(busqueda.toLowerCase())) : []
- 
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', width: '100vw', background: 'linear-gradient(135deg, #d8e4f0 0%, #e8f0f8 50%, #d0dcea 100%)', fontFamily: 'Georgia, serif' }}>
- 
+
       {showPasos && <PanelPasos minutaId={minutaDetail?.id} onClose={() => setShowPasos(false)} />}
- 
+
       <header className="header-3d" style={{ background: 'linear-gradient(135deg, #1a3a5c 0%, #2c5282 100%)', padding: '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '68px', flexShrink: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{ fontSize: '28px', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.4))' }}>⚖️</div>
@@ -593,7 +948,7 @@ function App() {
           )}
         </div>
       </header>
- 
+
       {showHistorial && historial.length > 0 && (
         <div style={{ background: 'linear-gradient(135deg, #0a1628, #0d1e30)', borderBottom: '1px solid #1e3a5f', padding: '12px 32px', display: 'flex', gap: '10px', overflowX: 'auto', boxShadow: '0 4px 12px rgba(0,0,0,0.3) inset' }}>
           {historial.map(item => (
@@ -605,7 +960,7 @@ function App() {
           ))}
         </div>
       )}
- 
+
       <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
         <aside className="sidebar-3d" style={{ width: '300px', background: 'linear-gradient(180deg, #1e3a5c 0%, #162d4a 100%)', overflowY: 'auto', overflowX: 'hidden', flexShrink: 0 }}>
           <div style={{ padding: '20px' }}>
@@ -656,7 +1011,7 @@ function App() {
             ))}
           </div>
         </aside>
- 
+
         <main style={{ flex: 1, overflowY: 'auto', background: 'transparent' }}>
           {!minutaDetail && (
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', padding: '40px' }}>
@@ -673,7 +1028,7 @@ function App() {
               </div>
             </div>
           )}
- 
+
           {minutaDetail && (
             <div style={{ padding: '28px 36px' }}>
               <div className="card-3d" style={{ borderLeft: '5px solid #b8962e !important', borderRadius: '8px', padding: '18px 24px', marginBottom: '24px' }}>
@@ -683,7 +1038,7 @@ function App() {
                   {minutaDetail.fields.length} campos requeridos · Pasa el mouse sobre <span style={{ background: 'linear-gradient(135deg, #c9a030, #b8962e)', color: '#fff', borderRadius: '50%', padding: '0 4px', fontSize: '10px', fontWeight: 'bold', boxShadow: '0 1px 3px rgba(0,0,0,0.3)' }}>?</span> para instrucciones
                 </div>
               </div>
- 
+
               {camposConError > 0 && (
                 <div id="alerta-campos" className="alerta-campos" style={{ background: 'linear-gradient(160deg, #0f2540 0%, #162d4a 40%, #0a1e35 100%)', border: '1px solid #b8962e', borderTop: '3px solid #e2b94a', borderRadius: '14px', padding: '22px 26px 22px 22px', marginBottom: '20px', position: 'relative', overflow: 'hidden' }}>
                   <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
@@ -702,7 +1057,7 @@ function App() {
                   </div>
                 </div>
               )}
- 
+
               <div className="card-3d" style={{ borderRadius: '8px', padding: '24px', marginBottom: '20px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', borderBottom: '2px solid #e2b94a', paddingBottom: '10px' }}>
                   <div style={{ color: '#1a3a5c', fontSize: '13px', fontWeight: 'bold', letterSpacing: '1px', textTransform: 'uppercase' }}>Datos del Documento</div>
@@ -716,7 +1071,7 @@ function App() {
                   ))}
                 </div>
               </div>
- 
+
               <div style={{ display: 'flex', gap: '12px', marginBottom: '24px', flexWrap: 'wrap' }}>
                 <button onClick={handlePreview} disabled={loading} className="btn-primary-3d"
                   style={{ padding: '12px 28px', background: loading ? '#a0b4c8' : 'linear-gradient(135deg, #1a3a5c, #0d2240)', color: '#fff', border: 'none', borderRadius: '6px', cursor: loading ? 'not-allowed' : 'pointer', fontSize: '13px', fontWeight: 'bold', letterSpacing: '1px' }}>
@@ -736,7 +1091,7 @@ function App() {
                   </>
                 )}
               </div>
- 
+
               {previewHTML && (
                 <div className="preview-3d" style={{ background: '#fff', borderRadius: '8px', overflow: 'hidden', border: '1px solid #c8d8e8' }}>
                   <div style={{ padding: '12px 20px', borderBottom: '2px solid #e2b94a', background: 'linear-gradient(135deg, #1a3a5c, #0d2240)', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.2) inset' }}>
@@ -753,6 +1108,5 @@ function App() {
     </div>
   )
 }
- 
+
 export default App
- 
