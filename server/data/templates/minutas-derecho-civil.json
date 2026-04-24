@@ -3066,5 +3066,558 @@
         "required": true
       }
     ]
+  },
+  {
+    "id": "cesion-contrato-arrendamiento",
+    "title": "Modelo de cesión de contrato de arrendamiento",
+    "template": "CESIÓN DE CONTRATO DE ARRENDAMIENTO\n\nYo, {{nombre_cedente}}, mayor y vecino de {{ciudad_cedente}}, identificado como aparece al pie de mi correspondiente firma, por medio del presente documento manifiesto que cedo y traspaso a favor del señor {{nombre_cesionario}}, persona mayor y vecino de {{ciudad_cesionario}}, identificado con la cédula de ciudadanía número {{cedula_cesionario}} expedida en {{expedicion_cesionario}}, todos los derechos que como arrendador me corresponden en el contrato de arrendamiento celebrado el día {{dia_contrato}} del mes de {{mes_contrato}} del año {{anio_contrato}}, con el señor {{nombre_arrendatario}}, respecto del inmueble ubicado en {{ubicacion_inmueble}}, destinado a {{destinacion_inmueble}}.\n\nLa presente cesión se realiza en virtud de que el señor {{nombre_cesionario}} adquirió el mencionado inmueble conforme a la escritura pública número {{numero_escritura}} de fecha {{fecha_escritura}}, de la Notaría {{notaria}} de {{circulo_notarial}}, inscrita en la Oficina de Registro de Instrumentos Públicos de {{ciudad_registro}}, con fecha {{fecha_registro}}, en el folio de matrícula inmobiliaria número {{folio_matricula}}.\n\nEl cesionario asume igualmente todas las obligaciones que como arrendador corresponden al cedente. Por lo anterior, el cesionario asume las responsabilidades a su cargo y se obliga para con el cedente a notificarle al arrendatario la cesión correspondiente.\n\nEn señal de conformidad con los términos de la presente cesión, firmamos cedente y cesionario en la ciudad de {{ciudad_firma}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nEL CEDENTE\n_________________________\n{{nombre_cedente}}\nCC Nº: {{cedula_cedente}} de {{expedicion_cedente}}\n\nEL CESIONARIO\n_________________________\n{{nombre_cesionario}}\nCC Nº: {{cedula_cesionario}} de {{expedicion_cesionario}}",
+    "fields": [
+      {
+        "name": "nombre_cedente",
+        "label": "Nombre completo del cedente (quien cede el contrato — el vendedor del inmueble)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedente",
+        "label": "Ciudad donde vive el cedente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_cedente",
+        "label": "Número de cédula del cedente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_cedente",
+        "label": "Ciudad donde fue expedida la cédula del cedente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_cesionario",
+        "label": "Nombre completo del cesionario (quien compró el inmueble y recibe el contrato)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cesionario",
+        "label": "Ciudad donde vive el cesionario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_cesionario",
+        "label": "Número de cédula del cesionario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_cesionario",
+        "label": "Ciudad donde fue expedida la cédula del cesionario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia_contrato",
+        "label": "Día en que se celebró el contrato de arrendamiento original (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes_contrato",
+        "label": "Mes en que se celebró el contrato de arrendamiento original (ej: enero, marzo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio_contrato",
+        "label": "Año en que se celebró el contrato de arrendamiento original (ej: 2024)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_arrendatario",
+        "label": "Nombre completo del arrendatario (quien ocupa el inmueble)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ubicacion_inmueble",
+        "label": "Ubicación completa del inmueble arrendado (dirección, barrio, ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "destinacion_inmueble",
+        "label": "Uso al que está destinado el inmueble (ej: vivienda familiar / uso comercial)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura",
+        "label": "Número de la escritura pública con la que el cesionario compró el inmueble (ej: 1245)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_escritura",
+        "label": "Fecha de la escritura de compraventa (ej: 15 de marzo de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria",
+        "label": "Nombre de la notaría donde se otorgó la escritura (sin escribir la palabra Notaría. Ej: Única, Primera)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_notarial",
+        "label": "Ciudad del círculo notarial (ej: El Cerrito, Cali, Bogotá)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_registro",
+        "label": "Ciudad de la Oficina de Registro de Instrumentos Públicos donde está inscrito el inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_registro",
+        "label": "Fecha en que fue inscrita la escritura en el registro (ej: 20 de marzo de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_matricula",
+        "label": "Número del folio de matrícula inmobiliaria del inmueble (ej: 370-123456)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad donde se firma la cesión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día de firma de la cesión (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes de firma de la cesión (ej: abril)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año de firma de la cesión (ej: 2026)",
+        "type": "number",
+        "required": true
+      }
+    ]
+  },
+
+  {
+    "id": "notificacion-cesion-arrendamiento",
+    "title": "Modelo de notificación privada de cesión del contrato de arrendamiento",
+    "template": "{{ciudad_fecha}}\n\nSeñores:\n{{nombre_arrendatario}}\n{{direccion_arrendatario}}\nCiudad\n\nYo, {{nombre_cesionario}}, mayor y vecino de {{ciudad_cesionario}}, identificado como aparece al pie de mi correspondiente firma, me dirijo a usted de la manera más atenta para hacerle notificación de cesión del contrato de arrendamiento, en los términos que a continuación me permito explicar.\n\nPRIMERO: Mediante escritura No. {{numero_escritura}}, emanada de la Notaría {{notaria}} del Círculo de {{circulo_notarial}}, de fecha {{fecha_escritura}}, {{nombre_vendedor}} celebró contrato de compraventa a favor del suscrito, respecto del inmueble que se encuentra localizado en {{ubicacion_inmueble}}.\n\nSEGUNDO: {{nombre_vendedor}} había celebrado con usted, con anterioridad a la fecha indicada, un contrato {{tipo_contrato}} de arrendamiento destinado a {{destinacion_inmueble}}, que corresponde al mismo inmueble mencionado.\n\nTERCERO: {{nombre_vendedor}} hizo cesión a favor mío de todos los derechos que como arrendador le correspondían en el contrato celebrado con usted, como consta en documento de fecha {{fecha_cesion}}.\n\nCUARTO: En virtud de la anterior cesión, el suscrito se obligó para con el anterior arrendador a notificarle al arrendatario la correspondiente cesión.\n\nQUINTO: Por medio del presente escrito, el suscrito en su condición de nuevo propietario del inmueble y de cesionario de los derechos derivados del contrato de arrendamiento, procede a hacerle notificación de la mencionada cesión, conforme lo ordena la ley.\n\nSEXTO: Como esta notificación implica para usted el reconocimiento de los derechos de una nueva persona en su calidad de arrendador, en adelante el pago de los cánones de arrendamiento debe hacerse a mi favor, a la dirección o cuenta {{datos_pago}}, al igual que las diferentes reclamaciones y notificaciones relacionadas con el contrato.\n\nSÉPTIMO: De no ser aceptadas por su parte las estipulaciones emanadas de la ley y que se concretan en los documentos adjuntos, procederé judicialmente conforme a los derechos que me corresponden como nuevo propietario y cesionario.\n\nOCTAVO: Anexo a este escrito los siguientes documentos: original del escrito de cesión del contrato de arrendamiento, copia de la escritura pública No. {{numero_escritura}} de la Notaría {{notaria}} del Círculo de {{circulo_notarial}}, y copia del folio de matrícula inmobiliaria número {{folio_matricula}}.\n\nNOVENO: Quedaría agradecido si, para el bien de ambas partes, acordáramos suscribir un contrato escrito de arrendamiento que regulara los derechos y deberes de cada uno. Para cualquier comunicación puede dirigirse directamente a mí o a través de su abogado, a la dirección indicada en el punto sexto.\n\nSin ser otro el objeto de la presente, se suscribe.\n\nCordialmente,\n\n_________________________\n{{nombre_cesionario}}\nCC Nº: {{cedula_cesionario}} de {{expedicion_cesionario}}",
+    "fields": [
+      {
+        "name": "ciudad_fecha",
+        "label": "Ciudad y fecha de la carta (ej: El Cerrito, 21 de abril de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_arrendatario",
+        "label": "Nombre completo del arrendatario destinatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_arrendatario",
+        "label": "Dirección del arrendatario donde se envía la carta",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_cesionario",
+        "label": "Nombre completo del cesionario (nuevo propietario que firma la carta)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cesionario",
+        "label": "Ciudad donde vive el cesionario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_cesionario",
+        "label": "Número de cédula del cesionario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_cesionario",
+        "label": "Ciudad donde fue expedida la cédula del cesionario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura",
+        "label": "Número de la escritura pública de compraventa (ej: 1245)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria",
+        "label": "Nombre de la notaría sin escribir la palabra Notaría (ej: Única, Primera)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_notarial",
+        "label": "Ciudad del círculo notarial (ej: El Cerrito, Cali)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_escritura",
+        "label": "Fecha de la escritura de compraventa (ej: 15 de marzo de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_vendedor",
+        "label": "Nombre completo del vendedor (antiguo arrendador que vendió el inmueble)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ubicacion_inmueble",
+        "label": "Dirección completa del inmueble arrendado (ej: Calle 4 Sur # 2A-56, Barrio Villa del Carmen)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_contrato",
+        "label": "Tipo de contrato de arrendamiento (ej: verbal / escrito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "destinacion_inmueble",
+        "label": "Destinación del inmueble (ej: vivienda urbana / uso comercial)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_cesion",
+        "label": "Fecha del documento de cesión del contrato de arrendamiento (ej: 20 de marzo de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "datos_pago",
+        "label": "Dirección o cuenta bancaria donde el arrendatario debe pagar el canon (ej: Carrera 8 # 12-34, El Cerrito / cuenta Bancolombia No. 123456789)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_matricula",
+        "label": "Número del folio de matrícula inmobiliaria (ej: 370-123456)",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+
+  {
+    "id": "prestacion-servicios-profesionales",
+    "title": "Modelo de contrato de prestación de servicios profesionales",
+    "template": "CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES\n\nEn {{ciudad}}, a {{dia}} de {{mes}} de {{anio}}, entre {{nombre_contratista}}, de profesión {{profesion_contratista}}, de estado civil {{estado_civil_contratista}}, identificado con {{identificacion_contratista}}, con domicilio en {{domicilio_contratista}}, quien en adelante se denominará EL CONTRATISTA; y {{nombre_contratante}}, de estado civil {{estado_civil_contratante}}, identificado con {{identificacion_contratante}}, con domicilio en {{domicilio_contratante}}, quien en adelante se denominará EL CONTRATANTE, acuerdan celebrar el presente contrato de prestación de servicios profesionales, regido por las siguientes cláusulas:\n\nPRIMERA. OBJETO: El contratante contrata los servicios profesionales del contratista a fin de {{objeto_contrato}}. El contratista se compromete a la realización específica de las siguientes tareas: {{tareas_especificas}}.\n\nSEGUNDA. PRECIO Y FORMA DE PAGO: La retribución acordada por los servicios contratados es la suma de {{honorarios_letras}} ({{honorarios_numeros}}), que el contratante se obliga a pagar puntualmente en la ciudad de {{ciudad_pago}}, dentro del horario de {{horario_pago}}, en las siguientes fechas y condiciones, sin necesidad de requerimiento ni intimación judicial alguna: {{forma_pago}}.\n\nTERCERA. GARANTÍA DE PAGO: El pago del precio convenido se asegura e instrumenta de la siguiente forma: {{garantia_pago}}.\n\nCUARTA. CONDICIONES DE PRESTACIÓN DEL SERVICIO: Los servicios se prestarán a ciencia y conciencia del contratista, quien deberá actuar dentro de las prescripciones éticas y legales propias de su disciplina profesional, teniendo siempre como finalidad el objeto del presente contrato. Si en el curso de su labor surgieran imposibilidades o incompatibilidades legales respecto del ejercicio profesional contratado, el contratista las hará saber al contratante a fin de buscar los medios idóneos para resolverlas, caso en el cual el precio convenido pasará a ser proporcional a los servicios efectivamente cumplidos. Para caso de dudas o controversias al respecto, las partes se sujetarán a {{mecanismo_controversias}}. Las partes constituyen sus respectivos domicilios legales en {{domicilio_contratante}} y {{domicilio_contratista}}, para todos los fines judiciales y extrajudiciales.\n\nSe firman dos ejemplares iguales, y cada parte recibe en este acto su respectivo ejemplar de conformidad.\n\nEL CONTRATANTE\n_________________________\n{{nombre_contratante}}\n{{identificacion_contratante}}\n\nEL CONTRATISTA\n_________________________\n{{nombre_contratista}}\n{{identificacion_contratista}}",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día de firma (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes de firma (ej: abril, mayo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año de firma (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "nombre_contratista",
+        "label": "Nombre completo del contratista (quien presta el servicio profesional)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "profesion_contratista",
+        "label": "Profesión u oficio del contratista (ej: abogado, contador público, ingeniero civil, médico)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_contratista",
+        "label": "Estado civil del contratista (ej: soltero, casado, divorciado, viudo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "identificacion_contratista",
+        "label": "Identificación del contratista (ej: cédula de ciudadanía No. 1234567890 expedida en Cali)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_contratista",
+        "label": "Dirección completa del contratista (ej: Carrera 8 # 12-34, Barrio Los Pinos, El Cerrito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_contratante",
+        "label": "Nombre completo del contratante (quien contrata el servicio)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_contratante",
+        "label": "Estado civil del contratante (ej: soltero, casado, divorciado, viudo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "identificacion_contratante",
+        "label": "Identificación del contratante (ej: cédula de ciudadanía No. 0987654321 expedida en El Cerrito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_contratante",
+        "label": "Dirección completa del contratante (ej: Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "objeto_contrato",
+        "label": "Objeto del contrato — para qué se contratan los servicios (ej: asesorar jurídicamente en el proceso de sucesión / elaborar la contabilidad mensual de la empresa / diseñar el plano arquitectónico de la vivienda)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tareas_especificas",
+        "label": "Tareas específicas que realizará el contratista (ej: 1. Revisar documentos. 2. Elaborar demanda. 3. Representar al cliente en audiencias)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "honorarios_letras",
+        "label": "Valor de los honorarios en letras (ej: tres millones de pesos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "honorarios_numeros",
+        "label": "Valor de los honorarios en números (ej: $3.000.000)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_pago",
+        "label": "Ciudad donde se realizará el pago (ej: El Cerrito, Cali)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "horario_pago",
+        "label": "Horario en que se realizará el pago (ej: horario bancario / horario de oficina / cualquier hora del día hábil)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "forma_pago",
+        "label": "Forma y fechas de pago (ej: 50% al firmar el contrato y 50% al entregar el trabajo / pagos mensuales de $500.000 los días 5 de cada mes / pago único al finalizar el servicio)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "garantia_pago",
+        "label": "Garantía o instrumento de pago (ej: cheque posfechado a nombre del contratista / transferencia bancaria a la cuenta de ahorros Bancolombia No. 123456789 / pagaré firmado por el contratante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mecanismo_controversias",
+        "label": "Mecanismo para resolver controversias (ej: mediación ante la Cámara de Comercio de la ciudad / decisión del juez civil competente / amigable composición entre las partes)",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+
+  {
+    "id": "servicios-abogado",
+    "title": "Modelo de contrato de prestación de servicios profesionales de abogado",
+    "template": "CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES DE ABOGADO\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos, a saber: {{nombre_mandante}}, {{descripcion_mandante}}, con domicilio principal en la ciudad de {{ciudad_mandante}}, que para efectos del presente documento se denominará EL MANDANTE, representada por {{nombre_representante}}, persona mayor de edad y vecino de {{ciudad_representante}}, quien obra en su condición de {{cargo_representante}} y se identifica como aparece al pie de su correspondiente firma, de una parte; y {{nombre_mandatario}}, igualmente mayor y vecino de {{ciudad_mandatario}}, abogado en ejercicio, portador de la Tarjeta Profesional No. {{tarjeta_profesional}} e identificado con la cédula de ciudadanía No. {{cedula_mandatario}} expedida en {{expedicion_mandatario}}, quien para efectos del presente contrato se denominará EL MANDATARIO, de otra parte, hemos convenido celebrar el presente CONTRATO DE PRESTACIÓN DE SERVICIOS PROFESIONALES, el cual se regula por las cláusulas que a continuación se indican y por las disposiciones del Código Civil aplicables a la materia:\n\nPRIMERA. OBJETO: EL MANDATARIO se obliga de manera independiente a prestar asesoría al MANDANTE en los siguientes asuntos: {{asuntos_encargados}}.\n\nSEGUNDA. HONORARIOS: EL MANDANTE cancelará, como contraprestación por concepto de honorarios, la suma de {{honorarios_letras}} ({{honorarios_numeros}}), pagaderos así: {{forma_pago_honorarios}}.\n\nTERCERA. OBLIGACIONES DEL MANDATARIO: EL MANDATARIO se obliga a: {{obligaciones_mandatario}}.\n\nCUARTA. OBLIGACIONES DEL MANDANTE: EL MANDANTE se obliga a: {{obligaciones_mandante}}.\n\nQUINTA. DURACIÓN: El presente contrato se celebra por el tiempo necesario para llevar hasta su culminación la labor encomendada. Sin embargo, cualquiera de las partes podrá darlo por terminado dando aviso escrito a la otra con un término de {{plazo_aviso}} de anticipación.\n\nEn señal de conformidad se suscribe el presente documento en dos ejemplares del mismo tenor, por las partes intervinientes.\n\nEL MANDANTE\n_________________________\n{{nombre_representante}}\n{{cargo_representante}}\n{{nombre_mandante}}\n\nEL MANDATARIO\n_________________________\n{{nombre_mandatario}}\nT.P. No. {{tarjeta_profesional}}\nCC Nº: {{cedula_mandatario}} de {{expedicion_mandatario}}",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día de firma (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes de firma (ej: abril, mayo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año de firma (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "nombre_mandante",
+        "label": "Nombre o razón social del mandante (quien contrata al abogado — puede ser persona natural o empresa)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_mandante",
+        "label": "Descripción del mandante (ej: sociedad legalmente constituida / persona natural mayor de edad / entidad sin ánimo de lucro)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_mandante",
+        "label": "Ciudad donde tiene domicilio el mandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_representante",
+        "label": "Nombre completo del representante legal o de quien firma por el mandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_representante",
+        "label": "Ciudad donde vive el representante del mandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cargo_representante",
+        "label": "Cargo del representante que firma por el mandante (ej: Gerente General, Presidente, Representante Legal, propietario)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_mandatario",
+        "label": "Nombre completo del abogado (el mandatario que prestará los servicios)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_mandatario",
+        "label": "Ciudad donde vive el abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de tarjeta profesional del abogado (ej: 123456-A)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_mandatario",
+        "label": "Número de cédula del abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_mandatario",
+        "label": "Ciudad donde fue expedida la cédula del abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "asuntos_encargados",
+        "label": "Asuntos jurídicos encomendados al abogado (ej: representar al mandante en el proceso ejecutivo No. 2024-0123 ante el Juzgado Civil del Circuito / asesorar en la constitución de la sociedad / elaborar y revisar contratos comerciales)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "honorarios_letras",
+        "label": "Valor de los honorarios en letras (ej: dos millones de pesos mensuales / cinco millones de pesos por la gestión total)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "honorarios_numeros",
+        "label": "Valor de los honorarios en números (ej: $2.000.000 mensuales / $5.000.000)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "forma_pago_honorarios",
+        "label": "Forma y fechas de pago de los honorarios (ej: mensualmente dentro de los primeros cinco días de cada mes / el 50% al firmar y el 50% al concluir / en tres cuotas iguales mensuales)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "obligaciones_mandatario",
+        "label": "Obligaciones del abogado (ej: obrar con diligencia en los asuntos encomendados, absolver las consultas del mandante, rendir informes periódicos del estado de los negocios a su cargo, guardar la reserva profesional sobre la información recibida, actuar conforme al Código Disciplinario del Abogado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "obligaciones_mandante",
+        "label": "Obligaciones del mandante (ej: cancelar los honorarios en la forma pactada, suministrar al abogado toda la información y documentos que requiera, cubrir los gastos que la gestión conlleve distintos de los honorarios, como notificaciones, copias y viáticos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "plazo_aviso",
+        "label": "Plazo de aviso para terminar el contrato anticipadamente (ej: quince (15) días / treinta (30) días / un (1) mes)",
+        "type": "text",
+        "required": true
+      }
+    ]
   }
 ]
