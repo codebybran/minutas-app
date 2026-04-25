@@ -3851,5 +3851,184 @@
       "required": true
     }
   ]
-}
+},
+  {
+    "id": "revocatoria-poder-general",
+    "title": "Revocatoria de Poder General (Escritura Pública)",
+    "template": "En la ciudad de {{ciudad_otorgamiento}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí, Notario {{numero_notario}} del Círculo de {{circulo_notarial_actual}}, compareció el señor {{nombre_poderdante}}, varón, mayor de edad, domiciliado y residente en {{domicilio_poderdante}}, identificado con la cédula de ciudadanía Nº. {{cc_poderdante}} de {{ciudad_expedicion_cc_poderdante}}, quien manifestó lo siguiente:\n\nPRIMERO. Que por medio de la presente escritura revoca en todos sus efectos el poder general, amplio y suficiente, conferido al señor {{nombre_apoderado}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cc_apoderado}} de {{ciudad_expedicion_cc_apoderado}}, para que en su nombre y representación ejecutara los actos y contratos relacionados con sus bienes, obligaciones y derechos discriminados en las cláusulas números {{clausulas_poder}}, poder que consta en la escritura pública Nº. {{numero_escritura_poder}} de {{fecha_escritura_poder}} de la Notaría {{numero_notaria_poder}} del Círculo de {{circulo_notaria_poder}}.\n\nSEGUNDO. Que con relación a los honorarios que se pactaron por la gestión encomendada a mi apoderado, por causa del ejercicio de este mandato, fueron cancelados en su totalidad de la siguiente manera: {{forma_pago_honorarios}}, para ello se aportan a la presente escritura los recibos {{documentos_paz_salvo}}, quedando a paz y salvo por todo concepto.\n\nLeído el presente instrumento se aprueba por el compareciente y para constancia se firma conmigo, de todo lo cual doy fe.\n\nPoderdante: _______________________\n\nApoderado: _______________________\n\nNotario: __________________________",
+    "fields": [
+      {
+        "name": "ciudad_otorgamiento",
+        "label": "Ciudad donde se otorga la escritura",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (ej: enero, febrero...)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "numero_notario",
+        "label": "Número o nombre del Notario (ej: Única, Primera, Segunda)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_notarial_actual",
+        "label": "Círculo notarial actual (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre completo del poderdante (quien revoca)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_poderdante",
+        "label": "Domicilio y residencia del poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cc_poderdante",
+        "label": "Cédula de ciudadanía del poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_expedicion_cc_poderdante",
+        "label": "Ciudad de expedición de la cédula del poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado",
+        "label": "Nombre completo del apoderado (a quien se revoca el poder)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cc_apoderado",
+        "label": "Cédula de ciudadanía del apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_expedicion_cc_apoderado",
+        "label": "Ciudad de expedición de la cédula del apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "clausulas_poder",
+        "label": "Cláusulas del poder original que se revocan (ej: 1, 2 y 3)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura_poder",
+        "label": "Número de la escritura pública del poder original (ej: 1245)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_escritura_poder",
+        "label": "Fecha de la escritura del poder original (ej: 5 de enero de 2023)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_notaria_poder",
+        "label": "Notaría donde se otorgó el poder original (ej: Única, Primera)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_notaria_poder",
+        "label": "Ciudad de la Notaría donde se otorgó el poder original",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "forma_pago_honorarios",
+        "label": "Forma en que se cancelaron los honorarios (opcional)",
+        "type": "text",
+        "required": false
+      },
+      {
+        "name": "documentos_paz_salvo",
+        "label": "Documentos que prueban el paz y salvo (opcional, ej: recibo de transferencia Nº. 00456)",
+        "type": "text",
+        "required": false
+      }
+    ]
+  },
+
+  {
+    "id": "contrato-civil-obra",
+    "title": "Contrato Civil de Obra",
+    "template": "Contrato Nº {{numero_contrato}} — Obra Nº {{numero_obra}}\nFecha de iniciación: {{fecha_iniciacion}} — Fecha de terminación: {{fecha_terminacion}}\n\nEntre los suscritos a saber: {{nombre_contratante}}, sociedad comercial legalmente constituida, representada por {{nombre_representante}}, identificado con la cédula de ciudadanía Nº {{cedula_representante}} de {{expedicion_representante}}, en su calidad de {{cargo_representante}}, como consta en el certificado de existencia y representación expedido por la Cámara de Comercio de {{camara_comercio}}, y quien para efectos del presente contrato se denominará EL CONTRATANTE; y {{nombre_contratista}}, mayor de edad, identificado con la cédula de ciudadanía Nº {{cedula_contratista}} de {{expedicion_contratista}}, domiciliado y residente en {{domicilio_contratista}}, y quien para los efectos del presente documento se denominará EL CONTRATISTA, acuerdan celebrar el presente contrato civil de obra, el cual se regirá por las disposiciones civiles pertinentes y en especial por las siguientes cláusulas:\n\nPRIMERA. OBJETO: EL CONTRATISTA se obliga para con EL CONTRATANTE a ejecutar los trabajos y demás actividades propias de la obra contratada que consisten en: {{descripcion_obra}}. Esta obra debe realizarse de conformidad con las condiciones y cláusulas pactadas en este documento, los planos entregados al contratista y el cuadro de descripción de obra, cantidades y valores debidamente aprobados y anexos al presente contrato.\n\nSEGUNDA. PLAZO, SANCIONES Y BONIFICACIONES: El plazo para la ejecución del presente contrato será de {{plazo_ejecucion}}, contado desde la firma del presente documento. EL CONTRATISTA entregará la obra a EL CONTRATANTE el día {{fecha_entrega}}. En caso de no poder dar cumplimiento a la entrega en la fecha señalada, EL CONTRATISTA pagará a EL CONTRATANTE, por cada día de mora injustificada y sin perjuicio de la obligación principal y sin requerimiento previo, la suma equivalente a {{multa_mora_letras}} ({{multa_mora_numeros}}) salarios mínimos diarios por cada día de atraso. Si EL CONTRATISTA entrega la obra anticipadamente, tendrá derecho a que EL CONTRATANTE le pague, junto con el valor de liquidación final, una bonificación de {{bonificacion_letras}} ({{bonificacion_numeros}}) salarios mínimos diarios por cada día de anticipación.\n\nTERCERA. LABOR DE VIGILANCIA: EL CONTRATISTA deberá verificar todas las especificaciones y medidas de las obras y será responsable de cualquier error en la ejecución del contrato.\n\nCUARTA. VALOR Y FORMA DE PAGO: El valor de este contrato es la suma de {{valor_letras}} ({{valor_numeros}}) moneda corriente, el cual será cancelado así: {{forma_pago}}. Sin la garantía de manejo y cumplimiento de la obra, EL CONTRATANTE solo entregará anticipos a EL CONTRATISTA en proporción al avance de los trabajos y a juicio de aquel.\n\nQUINTA. GARANTÍAS: Las garantías exigidas al contratista son las siguientes:\n- Garantía de manejo de anticipo: {{garantia_anticipo}}\n- Garantía de cumplimiento: {{garantia_cumplimiento}}\n- Responsabilidad civil: {{garantia_responsabilidad}}\n- Garantía de estabilidad: {{garantia_estabilidad}}\n- Seguro colectivo de vida: {{seguro_vida}}\n- Pago de salarios y prestaciones sociales: {{garantia_salarios}}\n\nCon relación a las garantías: la garantía de manejo de anticipo y cumplimiento podrá hacerse efectiva por EL CONTRATANTE tan pronto verifique que ha habido incumplimiento de EL CONTRATISTA, sin necesidad de proceso civil o reclamación previa. La garantía de estabilidad garantizará la buena calidad de la construcción y de los materiales durante el plazo pactado.\n\nSEXTA. PAGO DE PERSONAL QUE REALIZA LA OBRA: El pago de los salarios, prestaciones sociales e indemnizaciones del personal que EL CONTRATISTA ocupe en la obra serán de cargo exclusivo de éste. EL CONTRATISTA exhibirá, a solicitud de EL CONTRATANTE, las planillas y demás documentos que acrediten el cumplimiento de las obligaciones laborales.\n\nSÉPTIMA. AFILIACIONES A TRABAJADORES QUE REALIZAN LA OBRA: Antes de iniciar la obra EL CONTRATISTA se obliga a obtener una póliza de seguro colectivo de vida para su personal y a afiliar al personal a la entidad promotora de salud que escojan y a las demás entidades que por ley deba hacerlo.\n\nOCTAVA. INDEPENDENCIA DEL CONTRATISTA: EL CONTRATISTA actuará por su propia cuenta, con absoluta autonomía y no estará sometido a subordinación laboral con EL CONTRATANTE, comprometiéndose a realizar con sus propios medios y bajo su responsabilidad esta obra. Por tanto, este contrato no es de carácter laboral y no genera prestaciones laborales a su favor.\n\nNOVENA. DAÑOS A TERCEROS: EL CONTRATISTA se obliga a responder de los daños que él o sus dependientes ocasionen a terceros.\n\nDÉCIMA. SUMINISTRO DE MATERIALES: Los materiales necesarios para la ejecución de la obra serán suministrados por {{suministrador_materiales}}.\n\nDÉCIMA PRIMERA. TERMINACIÓN DEL CONTRATO POR EL CONTRATANTE: EL CONTRATANTE podrá dar por terminado este contrato por las siguientes causas: a) Muerte o liquidación obligatoria del contratista, o disolución si se trata de sociedad; b) Incumplimiento de EL CONTRATISTA de cualquiera de sus obligaciones; c) Que se ejecuten los trabajos en forma tal que no garantice razonablemente su terminación oportuna.\n\nDÉCIMA SEGUNDA. DOMICILIO CONTRACTUAL: Para todos los efectos legales, el domicilio contractual será la ciudad de {{ciudad_domicilio}}. Las notificaciones serán recibidas por las partes en las siguientes direcciones: Por EL CONTRATANTE en: {{notificacion_contratante}}. Por EL CONTRATISTA en: {{notificacion_contratista}}.\n\nEn señal de asentimiento las partes suscriben el presente documento en dos ejemplares del mismo tenor, en {{ciudad_firma}} el {{dia}} de {{mes}} de {{anio}}.\n\nEL CONTRATANTE\n_________________________\n{{nombre_representante}}\n{{cargo_representante}}\n{{nombre_contratante}}\n\nEL CONTRATISTA\n_________________________\n{{nombre_contratista}}\nCC Nº: {{cedula_contratista}} de {{expedicion_contratista}}\n\nTESTIGOS\n_________________________\n_________________________",
+    "fields": [
+      { "name": "numero_contrato", "label": "Número del contrato (ej: 001-2026)", "type": "text", "required": true },
+      { "name": "numero_obra", "label": "Número de la obra (ej: 001)", "type": "text", "required": true },
+      { "name": "fecha_iniciacion", "label": "Fecha de iniciación de la obra (ej: 1 de mayo de 2026)", "type": "text", "required": true },
+      { "name": "fecha_terminacion", "label": "Fecha estimada de terminación (ej: 31 de octubre de 2026)", "type": "text", "required": true },
+      { "name": "nombre_contratante", "label": "Nombre o razón social del contratante (empresa o persona que encarga la obra)", "type": "text", "required": true },
+      { "name": "nombre_representante", "label": "Nombre completo del representante legal del contratante", "type": "text", "required": true },
+      { "name": "cedula_representante", "label": "Número de cédula del representante legal", "type": "text", "required": true },
+      { "name": "expedicion_representante", "label": "Ciudad donde fue expedida la cédula del representante", "type": "text", "required": true },
+      { "name": "cargo_representante", "label": "Cargo del representante (ej: Gerente General, Representante Legal)", "type": "text", "required": true },
+      { "name": "camara_comercio", "label": "Ciudad de la Cámara de Comercio que expidió el certificado de existencia", "type": "text", "required": true },
+      { "name": "nombre_contratista", "label": "Nombre completo del contratista (quien ejecuta la obra)", "type": "text", "required": true },
+      { "name": "cedula_contratista", "label": "Número de cédula del contratista", "type": "text", "required": true },
+      { "name": "expedicion_contratista", "label": "Ciudad donde fue expedida la cédula del contratista", "type": "text", "required": true },
+      { "name": "domicilio_contratista", "label": "Ciudad donde vive o tiene domicilio el contratista", "type": "text", "required": true },
+      { "name": "descripcion_obra", "label": "Descripción detallada de la obra a ejecutar (qué se va a construir o hacer)", "type": "text", "required": true },
+      { "name": "plazo_ejecucion", "label": "Plazo para ejecutar la obra (ej: seis (6) meses, ciento ochenta (180) días calendario)", "type": "text", "required": true },
+      { "name": "fecha_entrega", "label": "Fecha exacta acordada para entregar la obra terminada (ej: 31 de octubre de 2026)", "type": "text", "required": true },
+      { "name": "multa_mora_letras", "label": "Multa por mora: número de salarios mínimos diarios en letras (ej: dos (2))", "type": "text", "required": true },
+      { "name": "multa_mora_numeros", "label": "Multa por mora en números (ej: 2)", "type": "text", "required": true },
+      { "name": "bonificacion_letras", "label": "Bonificación por entrega anticipada en letras (ej: uno (1))", "type": "text", "required": true },
+      { "name": "bonificacion_numeros", "label": "Bonificación por anticipación en números (ej: 1)", "type": "text", "required": true },
+      { "name": "valor_letras", "label": "Valor total del contrato en letras (ej: ochenta millones de pesos)", "type": "text", "required": true },
+      { "name": "valor_numeros", "label": "Valor total del contrato en números (ej: $80.000.000)", "type": "text", "required": true },
+      { "name": "forma_pago", "label": "Forma de pago detallada (ej: 30% anticipo al firmar, 40% al completar la mitad de la obra, 30% a la entrega final)", "type": "text", "required": true },
+      { "name": "garantia_anticipo", "label": "Garantía de manejo de anticipo (ej: póliza de seguros por el valor del anticipo con vigencia igual al plazo del contrato más seis meses)", "type": "text", "required": true },
+      { "name": "garantia_cumplimiento", "label": "Garantía de cumplimiento (ej: póliza de seguros por el 20% del valor del contrato)", "type": "text", "required": true },
+      { "name": "garantia_responsabilidad", "label": "Garantía de responsabilidad civil (ej: póliza de responsabilidad civil extracontractual por valor de $50.000.000)", "type": "text", "required": true },
+      { "name": "garantia_estabilidad", "label": "Garantía de estabilidad de la obra (ej: póliza de estabilidad por cinco (5) años contados desde la entrega)", "type": "text", "required": true },
+      { "name": "seguro_vida", "label": "Seguro colectivo de vida para el personal (ej: póliza colectiva por valor de $20.000.000 por trabajador)", "type": "text", "required": true },
+      { "name": "garantia_salarios", "label": "Garantía de pago de salarios y prestaciones (ej: póliza por el equivalente a tres (3) meses de nómina total)", "type": "text", "required": true },
+      { "name": "suministrador_materiales", "label": "Quién suministra los materiales (ej: el contratista / el contratante / ambas partes según listado anexo)", "type": "text", "required": true },
+      { "name": "ciudad_domicilio", "label": "Ciudad del domicilio contractual para efectos legales", "type": "text", "required": true },
+      { "name": "notificacion_contratante", "label": "Dirección completa del contratante para recibir notificaciones", "type": "text", "required": true },
+      { "name": "notificacion_contratista", "label": "Dirección completa del contratista para recibir notificaciones", "type": "text", "required": true },
+      { "name": "ciudad_firma", "label": "Ciudad donde se firma el contrato", "type": "text", "required": true },
+      { "name": "dia", "label": "Día de firma (número)", "type": "number", "required": true },
+      { "name": "mes", "label": "Mes de firma (ej: abril)", "type": "text", "required": true },
+      { "name": "anio", "label": "Año de firma (ej: 2026)", "type": "number", "required": true }
+    ]
+  }
 ]
