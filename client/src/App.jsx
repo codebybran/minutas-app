@@ -1924,12 +1924,26 @@ function App() {
                 </div>
                 {selectedCategory?.id === cat.id && (
                   <div style={{ marginLeft: '8px', borderLeft: '2px solid #e2b94a55', paddingLeft: '8px', marginTop: '4px' }}>
-                    {cat.minutas.map(m => (
-                      <div key={m.id} onClick={() => handleSelectMinuta(m)}
-                        style={{ cursor: 'pointer', padding: '8px 10px', background: selectedMinuta?.id === m.id ? 'linear-gradient(135deg, #2c5282, #1e3a5c)' : 'transparent', borderRadius: '4px', fontSize: '12px', color: selectedMinuta?.id === m.id ? '#e2b94a' : '#90b4d0', marginBottom: '2px', lineHeight: '1.4', borderLeft: selectedMinuta?.id === m.id ? '2px solid #e2b94a' : '2px solid transparent', boxShadow: selectedMinuta?.id === m.id ? '0 2px 6px rgba(0,0,0,0.2)' : 'none', transition: 'all 0.15s ease' }}>
-                        {m.title}
-                      </div>
-                    ))}
+                    {(() => {
+                      let lastSubtitle = null
+                      return cat.minutas.map(m => {
+                        const showSubtitle = m.subtitle && m.subtitle !== lastSubtitle
+                        if (showSubtitle) lastSubtitle = m.subtitle
+                        return (
+                          <div key={m.id}>
+                            {showSubtitle && (
+                              <div style={{ color: '#e2b94a88', fontSize: '9px', fontWeight: 'bold', letterSpacing: '1.5px', textTransform: 'uppercase', padding: '10px 10px 4px 10px', borderTop: lastSubtitle !== m.subtitle ? '1px solid #ffffff11' : 'none', marginTop: '4px' }}>
+                                — {m.subtitle}
+                              </div>
+                            )}
+                            <div onClick={() => handleSelectMinuta(m)}
+                              style={{ cursor: 'pointer', padding: '8px 10px', background: selectedMinuta?.id === m.id ? 'linear-gradient(135deg, #2c5282, #1e3a5c)' : 'transparent', borderRadius: '4px', fontSize: '12px', color: selectedMinuta?.id === m.id ? '#e2b94a' : '#90b4d0', marginBottom: '2px', lineHeight: '1.4', borderLeft: selectedMinuta?.id === m.id ? '2px solid #e2b94a' : '2px solid transparent', boxShadow: selectedMinuta?.id === m.id ? '0 2px 6px rgba(0,0,0,0.2)' : 'none', transition: 'all 0.15s ease' }}>
+                              {m.title}
+                            </div>
+                          </div>
+                        )
+                      })
+                    })()}
                   </div>
                 )}
               </div>
