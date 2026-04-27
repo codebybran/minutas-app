@@ -6198,5 +6198,418 @@
       }
     ],
     "subtitle": "Transferencia de Dominio"
-  }
+  },
+  {
+    "id": "reglamento-propiedad-horizontal",
+    "subtitle": "Propiedad Horizontal",
+    "title": "Reglamento de Propiedad Horizontal (Escritura Pública)",
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} de {{anio}}, ante mí Notario {{notario}}, del Círculo de {{circulo}}, compareció el señor {{nombre_apoderado}}, mayor de edad, identificado con la cédula de ciudadanía Nº {{cedula_apoderado}} de {{expedicion_apoderado}}, quien actúa en calidad de apoderado de los propietarios del edificio {{nombre_edificio}}, ubicado en {{direccion_edificio}} de la ciudad de {{ciudad_edificio}}, según consta en el poder que se anexa y que hará parte de este documento público, domiciliado y residente en {{domicilio_apoderado}}, y quien manifiesta que de acuerdo con el artículo 4º de la Ley 675 de agosto 3 de 2001, desea constituir reglamento de propiedad horizontal, de acuerdo con las siguientes cláusulas:\n\nPRIMERA. NATURALEZA Y CARACTERÍSTICAS. La persona jurídica indicada anteriormente, originada en la constitución de la propiedad horizontal es de naturaleza civil, sin ánimo de lucro. Su denominación es {{nombre_edificio}}, propiedad horizontal y de conformidad con lo establecido en la Ley 675 de 2001, tiene la calidad de no contribuyente de impuestos nacionales, así como del impuesto de industria y comercio, en relación con las actividades propias de su objeto social, de conformidad con lo establecido en el artículo 195 del Decreto 1333 de 1986. La destinación de algunos bienes que produzcan renta para sufragar expensas comunes, no desvirtúa su calidad de persona jurídica sin ánimo de lucro, tal como lo establece el parágrafo del artículo 33 de la Ley 675 de 2001.\n\nSEGUNDA. PRINCIPIOS. Este reglamento de propiedad horizontal estará regido por los principios de función social y ecológica de la propiedad, convivencia pacífica y solidaridad social, respeto a la dignidad humana, libre iniciativa empresarial y derecho al debido proceso, conforme a la Ley 675 de 2001.\n\nTERCERA. OBJETIVOS. Los objetivos del presente reglamento son: establecer los derechos y obligaciones de los copropietarios del edificio {{nombre_edificio}}, sometido al régimen de propiedad horizontal; identificar los bienes privados o de dominio particular, los bienes comunes y los bienes comunes esenciales; determinar la proporción con que cada copropietario deberá contribuir a las expensas comunes; constituir los órganos de administración y señalar las funciones respectivas; y en general someter al régimen particular del edificio a las normas que regulan la propiedad horizontal de que trata la Ley 675 de 2001.\n\nCUARTA. OBLIGATORIEDAD. Este reglamento es de observancia obligatoria para los copropietarios actuales y futuros del edificio {{nombre_edificio}} y, en lo pertinente, para las personas que a cualquier título usen, gocen o disfruten alguno o algunos de los bienes de dominio particular. Las disposiciones de este reglamento se entenderán incorporadas en todo acto que implique transferencia del derecho de dominio y de cualquier otro derecho real sobre los inmuebles que conforman el edificio.\n\nQUINTA. DESCRIPCIÓN E INDIVIDUALIZACIÓN DEL INMUEBLE. El inmueble a que se refiere este reglamento se encuentra situado en la ciudad de {{ciudad_edificio}}, y está formado por el lote de terreno Nº {{numero_lote}} de la manzana {{manzana}}, del plano de loteo de la urbanización {{nombre_urbanizacion}}, con una cabida de {{area_lote}} metros cuadrados y el edificio en él construido, distinguido con la nomenclatura urbana Nº {{direccion_edificio}}, denominado {{nombre_edificio}}.\n\nEl bien inmueble sometido a propiedad horizontal se encuentra comprendido en los siguientes linderos generales: Por el norte {{lindero_norte}}; por el sur {{lindero_sur}}; por el oriente {{lindero_oriente}}; por el occidente {{lindero_occidente}}.\n\nEl edificio consta de {{num_pisos}} pisos y de {{num_unidades}} unidades privadas entre apartamentos y garajes.\n\nSEXTA. TÍTULO ANTECEDENTE. El derecho de dominio pleno y exclusivo sobre el inmueble cuyo régimen de propiedad horizontal aquí se determina perteneció al señor {{propietario_anterior}}, mayor de edad, identificado con la cédula de ciudadanía Nº {{cedula_propietario_anterior}} de {{expedicion_propietario_anterior}}, según consta en escritura pública Nº {{escritura_anterior}} de {{fecha_escritura_anterior}}, expedida por la Notaría {{notaria_anterior}} del Círculo de {{circulo_anterior}}, registrada en la Oficina de Registro de Instrumentos Públicos del Círculo de {{ciudad_registro}} el {{fecha_registro}}, en el folio de matrícula inmobiliaria Nº {{folio_matricula}}.\n\nSÉPTIMA. CLASIFICACIÓN DEL INMUEBLE. El inmueble se divide en bienes privados o de dominio particular y bienes comunes. Los bienes privados corresponden a los apartamentos o unidades privadas debidamente delimitadas, funcionalmente independientes, de propiedad y aprovechamiento exclusivo. Los bienes comunes esenciales son: el terreno, los cimientos, la estructura, los muros de carga, las circulaciones, las instalaciones generales de servicios públicos, las fachadas y los techos o losas que sirven de cubiertas.\n\nOCTAVA. BIENES DE DOMINIO PARTICULAR. Son bienes de propiedad privativa o exclusiva los espacios completamente delimitados y susceptibles de aprovechamiento independiente. Cada uno de los apartamentos consta de {{descripcion_unidades}}. La propiedad sobre los bienes privados implica un derecho de copropiedad sobre los bienes comunes del edificio, en proporción con los coeficientes de copropiedad.\n\nNOVENA. DESTINACIÓN DE LOS INMUEBLES. La destinación de los apartamentos es exclusivamente {{destinacion_inmueble}}. Sus propietarios y causahabientes tienen la obligación de usarlos de acuerdo con su naturaleza y destinación, absteniéndose de ejecutar acto alguno que comprometa la seguridad, solidez o estética del edificio, o que produzca ruidos, molestias y actos que perturben la tranquilidad de los demás propietarios u ocupantes.\n\nDÉCIMA. COEFICIENTES DE COPROPIEDAD. Los coeficientes de copropiedad del edificio {{nombre_edificio}} se calculan con base en el área privada construida de cada bien de dominio particular con respecto al área total privada del edificio, al cual se le ha asignado un valor convencional de cien (100). Dichos coeficientes determinan: la proporción de los derechos de cada propietario sobre los bienes comunes; el porcentaje de participación en la asamblea general; y el índice de participación con que cada propietario contribuirá a las expensas comunes.\n\nDÉCIMO PRIMERA. SEGUROS. El edificio deberá asegurarse permanentemente en forma total contra los riesgos de incendio y terremoto en cuantía suficiente para que a cargo de los propietarios no haya ninguna cuota de coaseguro. Las primas anuales serán cubiertas por todos los propietarios en la misma proporción de sus índices de copropiedad.\n\nDÉCIMO SEGUNDA. EXPENSAS COMUNES. Los propietarios de los bienes privados están obligados a contribuir al pago de las expensas necesarias causadas por la administración y la prestación de servicios comunes esenciales, de acuerdo con el presente reglamento. Las expensas comunes deberán pagarse por mensualidades anticipadas en los {{dias_pago}} primeros días de cada mes. El retardo causará intereses de mora equivalentes a una y media veces el interés bancario corriente.\n\nDÉCIMO TERCERA. DIRECCIÓN Y ADMINISTRACIÓN. La dirección y administración de la persona jurídica que con la presente escritura se crea, se hará a través de los siguientes órganos: 1. Asamblea general de propietarios. 2. Consejo de administración. 3. Administrador del edificio.\n\nDÉCIMO CUARTA. ASAMBLEA GENERAL DE PROPIETARIOS. La asamblea de propietarios está formada por todos los propietarios de bienes privados o sus representantes, reunidos con el quórum y las condiciones previstas en este reglamento. La asamblea se reunirá ordinariamente por lo menos una vez al año, dentro de los tres primeros meses siguientes al vencimiento de cada período presupuestal. La convocatoria se efectuará con una anticipación no inferior a quince (15) días, mediante carta a cada copropietario o aviso en el acceso principal del edificio. La asamblea deliberará con un número plural de propietarios que representen por lo menos el cincuenta y uno por ciento (51%) del total de los coeficientes de copropiedad.\n\nDÉCIMO QUINTA. CONSEJO DE ADMINISTRACIÓN. El edificio {{nombre_edificio}} tendrá un consejo de administración compuesto por {{num_miembros_consejo}} miembros propietarios de unidades privadas con sus respectivos suplentes, elegidos por la asamblea general. El período del consejo de administración será de un (1) año. El consejo sesionará ordinariamente por lo menos una (1) vez al mes.\n\nDÉCIMO SEXTA. ADMINISTRADOR. El administrador es el representante legal de la persona jurídica y tiene a su cargo la administración del edificio. Será nombrado por {{quien_nombra_administrador}} para períodos de {{periodo_administrador}}. Entre sus funciones principales están: convocar a la asamblea, llevar los libros de actas, cobrar y recaudar las cuotas ordinarias y extraordinarias, cuidar y vigilar los bienes comunes, y representar judicial y extrajudicialmente a la persona jurídica.\n\nDÉCIMO SÉPTIMA. FONDO DE RESERVA E IMPREVISTOS. Créase un fondo de reserva e imprevistos constituido por el {{porcentaje_fondo}}% de la cuota mensual de administración con que deben contribuir los copropietarios, por el término de un año o hasta que la asamblea disponga otra cosa.\n\nDÉCIMO OCTAVA. PERÍODO PRESUPUESTAL. El período presupuestal comprenderá entre el 1º de enero y el 31 de diciembre de cada año. El administrador elaborará el inventario y los estados financieros correspondientes que muestren el estado económico de la propiedad horizontal, junto con el proyecto de presupuesto para el siguiente período.\n\nDÉCIMO NOVENA. SOLUCIÓN DE CONFLICTOS. Para la solución de los conflictos que se presenten entre los propietarios o tenedores, o entre ellos y el administrador, se podrá acudir al Comité de Convivencia, integrado por {{num_miembros_comite}} miembros elegidos por la asamblea general para períodos de un (1) año, o a los mecanismos alternos de solución de conflictos previstos en la ley.\n\nVIGÉSIMA. DISPOSICIONES VARIAS. En el evento de que la autoridad competente exija alguna modificación al presente reglamento, producto de una visita técnica, se entiende que los futuros copropietarios autorizan al constructor para la modificación del mismo, previa obtención de la licencia de construcción que apruebe las modificaciones.\n\nLeída esta escritura por el compareciente y habiéndosele hecho las advertencias sobre las formalidades legales, la aprueba y en constancia la firma ante mí, el Notario que la autorizó.\n\nNOTARIO\n_________________________\nNotaría {{notario}} del Círculo de {{circulo}}\n\nAPODERADO\n_________________________\n{{nombre_apoderado}}\nCC Nº: {{cedula_apoderado}} de {{expedicion_apoderado}}",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se otorga la escritura",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento donde se otorga la escritura",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día de otorgamiento en letras y número (ej: veintiuno (21))",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes de otorgamiento (ej: abril, mayo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año de otorgamiento (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número de la Notaría (sin escribir la palabra Notaría. Ej: Única, Primera)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Ciudad del Círculo Notarial",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado",
+        "label": "Nombre completo del apoderado que comparece ante el notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_apoderado",
+        "label": "Número de cédula del apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_apoderado",
+        "label": "Ciudad donde fue expedida la cédula del apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_apoderado",
+        "label": "Ciudad donde vive el apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_edificio",
+        "label": "Nombre del edificio o conjunto residencial (ej: Edificio Los Pinos, Conjunto Residencial El Nogal)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_edificio",
+        "label": "Dirección completa del edificio (ej: Carrera 10 # 25-40)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_edificio",
+        "label": "Ciudad donde está ubicado el edificio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_lote",
+        "label": "Número del lote de terreno (ej: 15, 8-A)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "manzana",
+        "label": "Número o letra de la manzana donde está el lote",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_urbanizacion",
+        "label": "Nombre de la urbanización o barrio donde está el edificio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "area_lote",
+        "label": "Área total del lote en metros cuadrados (ej: 800, 1200)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lindero_norte",
+        "label": "Lindero norte del edificio (ej: con la Calle 4 Sur en extensión de 20 metros)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lindero_sur",
+        "label": "Lindero sur del edificio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lindero_oriente",
+        "label": "Lindero oriente del edificio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lindero_occidente",
+        "label": "Lindero occidente del edificio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "num_pisos",
+        "label": "Número de pisos del edificio (ej: cinco (5))",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "num_unidades",
+        "label": "Número total de unidades privadas (apartamentos y garajes. Ej: veinte (20))",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "propietario_anterior",
+        "label": "Nombre completo del propietario anterior del lote o inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_propietario_anterior",
+        "label": "Número de cédula del propietario anterior",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_propietario_anterior",
+        "label": "Ciudad donde fue expedida la cédula del propietario anterior",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "escritura_anterior",
+        "label": "Número de la escritura pública del título antecedente (solo el número. Ej: 1245)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_escritura_anterior",
+        "label": "Fecha de esa escritura (ej: 15 de mayo de 2018)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_anterior",
+        "label": "Notaría de la escritura anterior (sin escribir Notaría. Ej: Única, Primera)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_anterior",
+        "label": "Ciudad del círculo notarial de la escritura anterior",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_registro",
+        "label": "Ciudad de la Oficina de Registro de Instrumentos Públicos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_registro",
+        "label": "Fecha de registro de la escritura anterior (ej: 20 de mayo de 2018)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_matricula",
+        "label": "Número del Folio de Matrícula Inmobiliaria del lote (ej: 370-123456)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_unidades",
+        "label": "Descripción general de las unidades privadas (ej: sala-comedor, tres alcobas, dos baños, cocina, balcón y garaje)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "destinacion_inmueble",
+        "label": "Destinación de los inmuebles (ej: habitacional / comercial / mixta)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dias_pago",
+        "label": "Primeros días del mes para pagar expensas (ej: cinco (5), diez (10))",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "num_miembros_consejo",
+        "label": "Número de miembros del consejo de administración (ej: tres (3), cinco (5))",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "quien_nombra_administrador",
+        "label": "Quién nombra al administrador (ej: la asamblea general de propietarios / el consejo de administración)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_administrador",
+        "label": "Período del administrador (ej: un (1) año / dos (2) años)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "porcentaje_fondo",
+        "label": "Porcentaje del fondo de reserva e imprevistos sobre la cuota mensual (ej: diez (10))",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "num_miembros_comite",
+        "label": "Número de miembros del comité de convivencia (ej: tres (3), cinco (5))",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+
+  {
+  "id": "acta-asamblea-propietarios",
+  "subtitle": "Propiedad Horizontal",
+  "title": "Acta de Asamblea General de Propietarios",
+  "template": "ACTA Nº {{numero_acta}} DE ASAMBLEA GENERAL {{tipo_asamblea}}\n{{nombre_conjunto}} PROPIEDAD HORIZONTAL\n\nEn la ciudad de {{ciudad}}, siendo las {{hora}} del día {{dia}} de {{mes}} de {{anio}}, según convocatoria realizada por parte de {{convocante}}, a través de comunicación escrita de fecha {{fecha_convocatoria}}, en {{lugar_reunion}}, se reunieron los propietarios del {{nombre_conjunto}} propiedad horizontal, a fin de deliberar y tomar decisiones de acuerdo al orden del día propuesto en la respectiva convocatoria.\n\nUna vez verificado el quórum se procedió a leer el orden del día por parte del secretario señor {{secretario_lectura}}, el que contempló lo siguiente:\n\n{{orden_del_dia}}\n\nDESARROLLO DEL ORDEN DEL DÍA\n\n1. VERIFICACIÓN DEL QUÓRUM. Para la realización de la presente asamblea se contó con el quórum deliberatorio establecido por el reglamento de propiedad horizontal, siendo los siguientes los asistentes:\n\n{{lista_asistentes}}\n\n2. NOMBRAMIENTO DEL PRESIDENTE Y SECRETARIO. Para presidir la asamblea se eligió por mayoría al señor {{nombre_presidente}}, propietario del inmueble {{inmueble_presidente}} que hace parte de la copropiedad. Para dicha designación fueron postuladas las siguientes personas: {{postulados_presidente}}.\n\nPara hacer las labores de secretaría se eligió por mayoría al señor {{nombre_secretario}}, propietario del inmueble {{inmueble_secretario}} que hace parte de la copropiedad. Para dicha designación fueron postuladas las siguientes personas: {{postulados_secretario}}.\n\n3. INFORME DEL ADMINISTRADOR. El presidente solicita al administrador {{nombre_administrador}} presentar el informe del período. {{resumen_informe_administrador}}.\n\n4. INFORME DEL REVISOR FISCAL. {{informe_revisor_fiscal}}.\n\n5. PRESENTACIÓN Y APROBACIÓN DEL BALANCE. El presidente solicita al administrador presentar el balance de la vigencia del {{fecha_inicio_balance}} al {{fecha_fin_balance}}. {{resultado_balance}}.\n\n6. PRESENTACIÓN Y APROBACIÓN DEL PRESUPUESTO. El administrador presentó el proyecto de presupuesto de la presente vigencia por valor de {{valor_presupuesto}}. {{resultado_presupuesto}}.\n\n7. NOMBRAMIENTOS. {{nombramientos}}.\n\n8. PROPUESTAS, OBSERVACIONES Y COMENTARIOS. {{propuestas_observaciones}}.\n\nAgotado el orden del día, siendo las {{hora_cierre}} del día {{dia}} de {{mes}} de {{anio}}, se da por terminada la asamblea.\n\nPara constancia se firma la presente acta.\n\nPRESIDENTE DE LA ASAMBLEA\n_________________________\n{{nombre_presidente}}\nCC Nº: {{cedula_presidente}}\n\nSECRETARIO DE LA ASAMBLEA\n_________________________\n{{nombre_secretario}}\nCC Nº: {{cedula_secretario}}",
+  "fields": [
+    { "name": "numero_acta", "label": "Número del acta (ej: 001, 015)", "type": "text", "required": true },
+    { "name": "tipo_asamblea", "label": "Tipo de asamblea (escriba: ORDINARIA o EXTRAORDINARIA)", "type": "text", "required": true },
+    { "name": "nombre_conjunto", "label": "Nombre del edificio o conjunto residencial (ej: Conjunto Residencial Los Nogales)", "type": "text", "required": true },
+    { "name": "ciudad", "label": "Ciudad donde se realiza la asamblea", "type": "text", "required": true },
+    { "name": "hora", "label": "Hora de inicio de la asamblea (ej: 7:00 p.m., 9:00 a.m.)", "type": "text", "required": true },
+    { "name": "dia", "label": "Día de la asamblea (número)", "type": "number", "required": true },
+    { "name": "mes", "label": "Mes de la asamblea (ej: abril, marzo)", "type": "text", "required": true },
+    { "name": "anio", "label": "Año de la asamblea (ej: 2026)", "type": "number", "required": true },
+    { "name": "convocante", "label": "Quién convocó la asamblea (ej: el administrador / el revisor fiscal / un grupo de propietarios que representan el 20% de los coeficientes)", "type": "text", "required": true },
+    { "name": "fecha_convocatoria", "label": "Fecha en que se envió la convocatoria (ej: 5 de abril de 2026)", "type": "text", "required": true },
+    { "name": "lugar_reunion", "label": "Lugar donde se realizó la asamblea (ej: salón comunal del conjunto / oficinas de la administración)", "type": "text", "required": true },
+    { "name": "secretario_lectura", "label": "Nombre de quien leyó el orden del día al inicio", "type": "text", "required": true },
+    { "name": "orden_del_dia", "label": "Puntos del orden del día (ej: 1. Verificación del quórum. 2. Nombramiento del presidente y secretario. 3. Informe del administrador. 4. Aprobación del presupuesto. 5. Propuestas y comentarios.)", "type": "text", "required": true },
+    { "name": "lista_asistentes", "label": "Lista de propietarios asistentes con su coeficiente (ej: 1. Jhon Brandon Martínez Vélez - Apto 101 - Coeficiente 5.2%. 2. Alexander García López - Apto 202 - Coeficiente 4.8%.)", "type": "text", "required": true },
+    { "name": "nombre_presidente", "label": "Nombre completo del presidente elegido para la asamblea", "type": "text", "required": true },
+    { "name": "cedula_presidente", "label": "Número de cédula del presidente de la asamblea", "type": "text", "required": true },
+    { "name": "inmueble_presidente", "label": "Número del apartamento o unidad del presidente (ej: apartamento 301)", "type": "text", "required": true },
+    { "name": "postulados_presidente", "label": "Nombres de quienes fueron postulados para presidente (ej: Jhon Brandon Martínez Vélez y Alexander García López)", "type": "text", "required": true },
+    { "name": "nombre_secretario", "label": "Nombre completo del secretario elegido para la asamblea", "type": "text", "required": true },
+    { "name": "cedula_secretario", "label": "Número de cédula del secretario de la asamblea", "type": "text", "required": true },
+    { "name": "inmueble_secretario", "label": "Número del apartamento o unidad del secretario (ej: apartamento 202)", "type": "text", "required": true },
+    { "name": "postulados_secretario", "label": "Nombres de quienes fueron postulados para secretario", "type": "text", "required": true },
+    { "name": "nombre_administrador", "label": "Nombre completo del administrador del conjunto", "type": "text", "required": true },
+    { "name": "resumen_informe_administrador", "label": "Resumen del informe presentado por el administrador (actividades realizadas, estado de cartera, novedades del período)", "type": "text", "required": true },
+    { "name": "informe_revisor_fiscal", "label": "Informe del revisor fiscal. Si no hay revisor fiscal escriba: El conjunto no cuenta con revisor fiscal para el presente período.", "type": "text", "required": true },
+    { "name": "fecha_inicio_balance", "label": "Fecha de inicio del período del balance (ej: 1 de enero de 2025)", "type": "text", "required": true },
+    { "name": "fecha_fin_balance", "label": "Fecha de cierre del período del balance (ej: 31 de diciembre de 2025)", "type": "text", "required": true },
+    { "name": "resultado_balance", "label": "Resultado de la votación sobre el balance (ej: El balance fue aprobado por unanimidad / El balance fue aprobado con 8 votos a favor y 2 en contra)", "type": "text", "required": true },
+    { "name": "valor_presupuesto", "label": "Valor total del presupuesto aprobado (ej: cuarenta y ocho millones de pesos ($48.000.000) para la vigencia 2026)", "type": "text", "required": true },
+    { "name": "resultado_presupuesto", "label": "Resultado de la votación sobre el presupuesto (ej: El presupuesto fue aprobado por unanimidad con una cuota mensual de administración de $200.000 por unidad)", "type": "text", "required": true },
+    { "name": "nombramientos", "label": "Resultado de los nombramientos realizados (administrador, consejo de administración, revisor fiscal). Ej: Se nombró como administrador a Jhon Brandon Martínez Vélez por el período 2026-2027. Se eligió consejo de administración integrado por: Alexander García López, Carlos Eduardo Pérez Ríos y Diana Patricia Ruiz Morales.", "type": "text", "required": true },
+    { "name": "propuestas_observaciones", "label": "Propuestas, observaciones y comentarios de los asistentes. Si no hubo escriba: Los asistentes no presentaron propuestas adicionales.", "type": "text", "required": true },
+    { "name": "hora_cierre", "label": "Hora de cierre de la asamblea (ej: 9:30 p.m., 11:00 a.m.)", "type": "text", "required": true }
+  ]
+},
+
+{
+  "id": "carta-primera-convocatoria",
+  "subtitle": "Propiedad Horizontal",
+  "title": "Carta de Primera Convocatoria a Asamblea General de Propietarios",
+  "template": "{{ciudad_fecha}}\n\nSeñores\nCopropietarios del {{nombre_conjunto}}\nInterior {{unidad_privada}}\nLa Ciudad\n\nRef.: Convocatoria a Asamblea General {{tipo_asamblea}} año {{anio}}\n\nEn mi calidad de administrador(a) del conjunto residencial denominado {{nombre_conjunto}}, por medio del presente documento se cita en primera convocatoria a la asamblea general {{tipo_asamblea_lower}}, que se llevará a cabo el {{fecha_asamblea}} a partir de las {{hora_asamblea}} en {{lugar_asamblea}}, conforme a lo establecido en el artículo {{articulo_reglamento}} del reglamento de propiedad horizontal de este conjunto residencial.\n\nEl orden del día será el siguiente:\n\n{{orden_del_dia}}\n\nLa presente convocatoria se hace de acuerdo con el artículo 39 de la Ley 675 de 2001, régimen al que está sometido el conjunto residencial denominado {{nombre_conjunto}}. En esta asamblea se sesionará y decidirá si se encuentra reunido o representado el {{porcentaje_quorum}} por ciento ({{porcentaje_quorum}}%) de los propietarios de acuerdo con sus porcentajes de participación. En caso contrario será necesaria la realización de una segunda convocatoria, en la cual se entrará a deliberar válidamente con cualquier número de participantes. Las decisiones tomadas obligarán a los ausentes, disidentes y a los órganos de administración del conjunto.\n\nEn caso de que usted no pueda asistir, se puede hacer representar a través de un poder debidamente constituido, el cual deberá ser presentado al momento de iniciar la asamblea.\n\nAtentamente,\n\n_________________________\n{{nombre_administrador}}\nAdministrador(a)\n{{nombre_conjunto}}\nTeléfono: {{telefono_administrador}}",
+  "fields": [
+    { "name": "ciudad_fecha", "label": "Ciudad y fecha de la carta (ej: El Cerrito, 5 de abril de 2026)", "type": "text", "required": true },
+    { "name": "nombre_conjunto", "label": "Nombre del conjunto o edificio (ej: Conjunto Residencial Los Nogales)", "type": "text", "required": true },
+    { "name": "unidad_privada", "label": "Interior o apartamento del destinatario (ej: apartamento 101 / interior 5)", "type": "text", "required": true },
+    { "name": "tipo_asamblea", "label": "Tipo de asamblea en mayúsculas (escriba: ORDINARIA o EXTRAORDINARIA)", "type": "text", "required": true },
+    { "name": "tipo_asamblea_lower", "label": "Tipo de asamblea en minúsculas (escriba: ordinaria o extraordinaria)", "type": "text", "required": true },
+    { "name": "anio", "label": "Año de la asamblea (ej: 2026)", "type": "number", "required": true },
+    { "name": "fecha_asamblea", "label": "Fecha completa de la asamblea (ej: viernes 25 de abril de 2026)", "type": "text", "required": true },
+    { "name": "hora_asamblea", "label": "Hora de inicio de la asamblea (ej: 7:00 p.m.)", "type": "text", "required": true },
+    { "name": "lugar_asamblea", "label": "Lugar donde se realizará la asamblea (ej: salón comunal del conjunto, ubicado en el primer piso del edificio)", "type": "text", "required": true },
+    { "name": "articulo_reglamento", "label": "Número del artículo del reglamento que regula las convocatorias (ej: 27, 28, 39)", "type": "text", "required": true },
+    { "name": "orden_del_dia", "label": "Puntos del orden del día numerados (ej: 1. Verificación del quórum. 2. Lectura del acta anterior. 3. Elección del presidente y secretario. 4. Informe del administrador. 5. Aprobación del balance. 6. Aprobación del presupuesto. 7. Nombramiento del administrador. 8. Otros asuntos.)", "type": "text", "required": true },
+    { "name": "porcentaje_quorum", "label": "Porcentaje de coeficientes requerido para el quórum (normalmente escriba: 51)", "type": "text", "required": true },
+    { "name": "nombre_administrador", "label": "Nombre completo del administrador que firma la convocatoria", "type": "text", "required": true },
+    { "name": "telefono_administrador", "label": "Teléfono de contacto de la administración (ej: 315 123 4567)", "type": "text", "required": true }
+  ]
+},
+
+{
+  "id": "carta-segunda-convocatoria",
+  "subtitle": "Propiedad Horizontal",
+  "title": "Carta de Segunda Convocatoria a Asamblea General de Propietarios",
+  "template": "{{ciudad_fecha}}\n\nSeñores\nCopropietarios del {{nombre_conjunto}}\nInterior {{unidad_privada}}\nLa Ciudad\n\nRef.: Segunda Convocatoria a Asamblea General {{tipo_asamblea}} año {{anio}}\n\nEn mi calidad de administrador(a) del conjunto residencial denominado {{nombre_conjunto}}, por medio del presente escrito se cita en segunda convocatoria a la asamblea general {{tipo_asamblea_lower}}, que se llevará a cabo el {{fecha_asamblea}} a partir de las {{hora_asamblea}} en {{lugar_asamblea}}, debido a que en la primera reunión convocada para el {{fecha_primera_convocatoria}} no se cumplió con el quórum establecido para sesionar, de acuerdo con lo señalado en el artículo {{articulo_reglamento}} del reglamento de propiedad horizontal.\n\nEl orden del día será el mismo propuesto en la primera convocatoria:\n\n{{orden_del_dia}}\n\nRecordamos que por tratarse de la segunda convocatoria, de conformidad con el artículo 41 de la Ley 675 de 2001, la asamblea sesionará y decidirá válidamente con cualquier número plural de propietarios, cualquiera que sea el porcentaje de coeficientes representados. Las decisiones tomadas obligarán a los ausentes, disidentes y a los órganos de administración del conjunto.\n\nEn caso de que usted no pueda asistir, se puede hacer representar a través de un poder debidamente constituido, el cual deberá ser presentado al momento de constituirse la asamblea.\n\nAtentamente,\n\n_________________________\n{{nombre_administrador}}\nAdministrador(a)\n{{nombre_conjunto}}\nTeléfono: {{telefono_administrador}}",
+  "fields": [
+    { "name": "ciudad_fecha", "label": "Ciudad y fecha de la carta (ej: El Cerrito, 10 de abril de 2026)", "type": "text", "required": true },
+    { "name": "nombre_conjunto", "label": "Nombre del conjunto o edificio (ej: Conjunto Residencial Los Nogales)", "type": "text", "required": true },
+    { "name": "unidad_privada", "label": "Interior o apartamento del destinatario (ej: apartamento 101 / interior 5)", "type": "text", "required": true },
+    { "name": "tipo_asamblea", "label": "Tipo de asamblea en mayúsculas (escriba: ORDINARIA o EXTRAORDINARIA)", "type": "text", "required": true },
+    { "name": "tipo_asamblea_lower", "label": "Tipo de asamblea en minúsculas (escriba: ordinaria o extraordinaria)", "type": "text", "required": true },
+    { "name": "anio", "label": "Año de la asamblea (ej: 2026)", "type": "number", "required": true },
+    { "name": "fecha_asamblea", "label": "Fecha de la segunda reunión (ej: martes 14 de abril de 2026)", "type": "text", "required": true },
+    { "name": "hora_asamblea", "label": "Hora de inicio (ej: 8:00 p.m.)", "type": "text", "required": true },
+    { "name": "lugar_asamblea", "label": "Lugar donde se realizará la asamblea (ej: salón comunal del conjunto, primer piso)", "type": "text", "required": true },
+    { "name": "fecha_primera_convocatoria", "label": "Fecha en que se realizó la primera convocatoria fallida (ej: el 8 de abril de 2026)", "type": "text", "required": true },
+    { "name": "articulo_reglamento", "label": "Número del artículo del reglamento que regula las convocatorias (ej: 27, 28, 39)", "type": "text", "required": true },
+    { "name": "orden_del_dia", "label": "Puntos del orden del día — los mismos de la primera convocatoria", "type": "text", "required": true },
+    { "name": "nombre_administrador", "label": "Nombre completo del administrador que firma la convocatoria", "type": "text", "required": true },
+    { "name": "telefono_administrador", "label": "Teléfono de contacto de la administración (ej: 315 123 4567)", "type": "text", "required": true }
+  ]
+},
+
+{
+  "id": "poder-asistir-asamblea",
+  "subtitle": "Propiedad Horizontal",
+  "title": "Poder Especial para Asistir y Representar al Propietario en Asamblea",
+  "template": "Señor\nAdministrador\n{{nombre_conjunto}}\nCiudad\n\nRef.: Poder especial para asistencia y representación en la asamblea general {{tipo_asamblea_lower}}\n\n{{nombre_poderdante}}, mayor de edad, identificado(a) con la cédula de ciudadanía Nº {{cedula_poderdante}} de {{expedicion_poderdante}}, en mi calidad de propietario(a) del {{tipo_unidad}} {{numero_unidad}} del interior {{interior_unidad}} del conjunto residencial denominado {{nombre_conjunto}}, por medio del presente documento otorgo poder especial, amplio y suficiente al señor(a) {{nombre_apoderado}}, identificado(a) con la cédula de ciudadanía Nº {{cedula_apoderado}} de {{expedicion_apoderado}}, para que en mi nombre y representación realice con derecho a voz y voto las deliberaciones con motivo del orden del día propuesto en la {{numero_convocatoria}} convocatoria a asamblea general {{tipo_asamblea_lower}} a celebrarse el {{fecha_asamblea}}, según consta en la carta de citación de fecha {{fecha_carta_citacion}}.\n\nMi apoderado(a) queda además facultado(a) para representar mis intereses en todo lo relacionado con la asamblea general {{tipo_asamblea_lower}}.\n\nEn constancia firmo a los {{dia_firma}} días del mes de {{mes_firma}} de {{anio_firma}}.\n\nPROPIETARIO(A)\n_________________________\n{{nombre_poderdante}}\nCC Nº: {{cedula_poderdante}} de {{expedicion_poderdante}}\n\nACEPTO\n\nAPODERADO(A)\n_________________________\n{{nombre_apoderado}}\nCC Nº: {{cedula_apoderado}} de {{expedicion_apoderado}}",
+  "fields": [
+    { "name": "nombre_conjunto", "label": "Nombre del conjunto o edificio (ej: Conjunto Residencial Los Nogales)", "type": "text", "required": true },
+    { "name": "tipo_asamblea_lower", "label": "Tipo de asamblea en minúsculas (escriba: ordinaria o extraordinaria)", "type": "text", "required": true },
+    { "name": "nombre_poderdante", "label": "Nombre completo del propietario que otorga el poder", "type": "text", "required": true },
+    { "name": "cedula_poderdante", "label": "Número de cédula del propietario que otorga el poder", "type": "text", "required": true },
+    { "name": "expedicion_poderdante", "label": "Ciudad donde fue expedida la cédula del propietario", "type": "text", "required": true },
+    { "name": "tipo_unidad", "label": "Tipo de unidad privada del propietario (ej: apartamento / local / oficina)", "type": "text", "required": true },
+    { "name": "numero_unidad", "label": "Número del apartamento o unidad (ej: 101, 302-A)", "type": "text", "required": true },
+    { "name": "interior_unidad", "label": "Número del interior si aplica (si no aplica escriba: no aplica)", "type": "text", "required": true },
+    { "name": "nombre_apoderado", "label": "Nombre completo de la persona que recibirá el poder y asistirá a la asamblea", "type": "text", "required": true },
+    { "name": "cedula_apoderado", "label": "Número de cédula del apoderado", "type": "text", "required": true },
+    { "name": "expedicion_apoderado", "label": "Ciudad donde fue expedida la cédula del apoderado", "type": "text", "required": true },
+    { "name": "numero_convocatoria", "label": "Número de convocatoria (escriba: primera o segunda)", "type": "text", "required": true },
+    { "name": "fecha_asamblea", "label": "Fecha de la asamblea (ej: 25 de abril de 2026)", "type": "text", "required": true },
+    { "name": "fecha_carta_citacion", "label": "Fecha de la carta de citación que recibió (ej: 5 de abril de 2026)", "type": "text", "required": true },
+    { "name": "dia_firma", "label": "Día en que firma el poder (número)", "type": "number", "required": true },
+    { "name": "mes_firma", "label": "Mes en que firma el poder (ej: abril, mayo)", "type": "text", "required": true },
+    { "name": "anio_firma", "label": "Año en que firma el poder (ej: 2026)", "type": "number", "required": true }
+  ]
+},
+
+{
+  "id": "estatutos-fundacion-gobernacion",
+  "subtitle": "Personas Jurídicas",
+  "title": "Estatutos de Fundación o Institución de Utilidad Común (Competencia Gobernación)",
+  "template": "ESTATUTOS DE LA {{nombre_entidad}}\n\nCAPÍTULO I\nNOMBRE, DOMICILIO, OBJETO Y DURACIÓN\n\nARTÍCULO 1°. NOMBRE. {{nombre_entidad}} es una fundación de nacionalidad colombiana.\n\nARTÍCULO 2°. DOMICILIO. La fundación {{nombre_entidad}} tiene su domicilio en el municipio de {{municipio_domicilio}}, departamento de {{departamento_domicilio}}.\n\nARTÍCULO 3°. OBJETO. Como entidad sin ánimo de lucro, la fundación tendrá como finalidad en el desarrollo de sus actividades la realización de: {{objeto_fundacion}}.\n\nARTÍCULO 4°. DURACIÓN. La fundación que se constituye tendrá una duración de {{duracion_fundacion}}.\n\nCAPÍTULO II\nPATRIMONIO\n\nARTÍCULO 5°. PATRIMONIO. La fundación {{nombre_entidad}} obtendrá sus fondos de las cuotas que aporten los fundadores y otras personas, y con los demás bienes que a cualquier título adquiera. Sin embargo, el fondo inicial está conformado por {{descripcion_patrimonio_inicial}}.\n\nARTÍCULO 6°. DESTINO DEL PATRIMONIO. El patrimonio de la fundación {{nombre_entidad}} no podrá destinarse a fin distinto del expresado en su objeto.\n\nCAPÍTULO III\nDIRECCIÓN Y ADMINISTRACIÓN\n\nARTÍCULO 7°. DIRECCIÓN. La fundación {{nombre_entidad}} será administrada y dirigida por la asamblea de delegatarios de los fundadores, y estará integrada por un consejo de administración, por un director y tendrá un revisor fiscal.\n\nARTÍCULO 8°. ASAMBLEA DE DELEGATARIOS. La asamblea de delegatarios de la fundación {{nombre_entidad}} estará integrada por {{num_miembros_asamblea}} miembros con sus respectivos suplentes personales.\n\nARTÍCULO 9°. DESIGNACIÓN DE LOS MIEMBROS. Cada uno de los miembros de la asamblea de delegatarios será designado por {{quien_designa_miembros}}.\n\nARTÍCULO 10°. PRESIDENTE DE LA ASAMBLEA. La asamblea de delegatarios será presidida por el miembro que ella misma designe.\n\nARTÍCULO 11°. QUÓRUM. El quórum para las reuniones ordinarias o extraordinarias de la asamblea de delegatarios lo hará la concurrencia de un número de personas que represente, por lo menos, la mayoría absoluta de sus integrantes.\n\nARTÍCULO 12°. REUNIONES. La asamblea de delegatarios se reunirá por lo menos una vez al año en {{ciudad_reuniones}}, durante los {{dias_reunion}} primeros días del mes de {{mes_reunion}} de cada año, previa convocatoria de quien haga las veces de presidente. Las reuniones extraordinarias se realizarán cada vez que lo quiera la mayoría absoluta de los miembros de la asamblea.\n\nARTÍCULO 13°. LIBRO DE ACTAS. De las reuniones, resoluciones, acuerdos, deliberaciones y en general los actos de la asamblea de delegatarios se dejará constancia escrita en un libro de actas de vigencia anual, y cada una de tales actas será firmada por el Presidente y el Secretario.\n\nARTÍCULO 14°. FUNCIONES DE LA ASAMBLEA DE DELEGATARIOS. Son funciones de la asamblea de delegatarios: a) Nombrar {{num_miembros_consejo}} miembros y sus respectivos suplentes personales para integrar el consejo de administración de la fundación y removerlos; b) Nombrar al revisor fiscal y su suplente para períodos de {{periodo_revisor}} y fijarle su asignación; c) Aprobar, improbar y fenecer las cuentas de la fundación; d) Reformar los estatutos de la fundación; e) Disolver extraordinariamente la fundación por extinción de sus fondos; f) Las demás que le correspondan como suprema autoridad de la fundación, siempre que no estén atribuidas a otro órgano.\n\nARTÍCULO 15°. DECISIONES. Las determinaciones de la asamblea de delegatarios se tomarán por la mayoría absoluta de votos presentes, siempre y cuando exista quórum.\n\nARTÍCULO 16°. REFORMA DE ESTATUTOS. Las reformas de estatutos deberán ser sometidas a la aprobación de la entidad pública correspondiente.\n\nARTÍCULO 17°. CONSEJO DE ADMINISTRACIÓN. El consejo de administración estará conformado por {{num_miembros_consejo}} miembros con sus suplentes personales respectivos, designados por la asamblea de delegatarios para períodos de {{periodo_consejo}}.\n\nARTÍCULO 18°. REUNIONES DEL CONSEJO. El consejo de administración se reunirá cada vez que sea convocado por el director o por la mayoría de sus integrantes.\n\nARTÍCULO 19°. FUNCIONES DEL CONSEJO DE ADMINISTRACIÓN. Son funciones del consejo de administración: a) Ejercer la dirección administrativa de la fundación; b) Establecer los empleos necesarios y señalarles sus asignaciones, con excepción de aquellas que correspondan a la asamblea de delegatarios; c) Nombrar y remover a las personas que deban desempeñar los empleos; d) Nombrar y remover al director de la fundación; e) Establecer el reglamento de servicios de la fundación; f) Presentar a la asamblea de delegatarios los informes, cuentas, inventarios y balances que esta le solicite; g) Autorizar al director la celebración de contratos cuya cuantía exceda de {{cuantia_contratos}}, autorización que será previa y por escrito.\n\nARTÍCULO 20°. ACTAS DEL CONSEJO. De las reuniones del consejo se elaborará un acta firmada por el presidente y el secretario del mismo.\n\nARTÍCULO 21°. VACANTES EN EL CONSEJO. Las vacantes definitivas de alguno de los integrantes del consejo serán provistas por el mismo organismo hasta tanto la asamblea de delegatarios designe para tal cargo.\n\nARTÍCULO 22°. QUÓRUM DEL CONSEJO. El quórum para las reuniones del consejo se formará con la concurrencia de {{quorum_consejo}} de sus miembros, y las decisiones las adoptará por la mayoría de los miembros presentes.\n\nARTÍCULO 23°. DIRECTOR. El representante legal de la fundación será el director, quien es de libre nombramiento y remoción del consejo de administración. Él ejercerá en asocio de la asamblea y del consejo la dirección y administración de la institución.\n\nARTÍCULO 24°. FUNCIONES DEL DIRECTOR. Son funciones del director: a) Velar por el cumplimiento de los estatutos, reglamentos, determinaciones e instrucciones de la asamblea y el consejo; b) Realizar los contratos que fuesen necesarios para el desarrollo del objeto de la fundación, conforme lo dispuesto por estos estatutos; c) Representar a la fundación con facultades para transigir, desistir, delegar y sustituir; d) Constituir apoderados judiciales para la defensa de los intereses de la fundación; e) Presentar los informes que le solicite el consejo o la asamblea; f) Las demás que correspondan a la naturaleza de su cargo y las que le sean asignadas por la asamblea de delegatarios.\n\nCAPÍTULO IV\nDISOLUCIÓN Y LIQUIDACIÓN\n\nARTÍCULO 25°. DISOLUCIÓN. La fundación se disolverá por las causales que la ley establece de manera general para esta clase de instituciones y en particular, cuando la asamblea de delegatarios decida con el voto favorable de {{votos_disolucion}} de sus miembros disolverla extraordinariamente en el evento de la extinción de los fondos de su patrimonio. Igualmente, la fundación se disolverá cuando su personería jurídica sea cancelada por autoridad competente.\n\nARTÍCULO 26°. LIQUIDADOR. Cuando la fundación decrete su disolución, en el mismo acto la asamblea de delegatarios procederá a nombrar liquidador. En caso de no llegarse a acuerdo, ejercerá como tal el director de la fundación en su calidad de representante legal. Si no existe representante legal inscrito, designará al liquidador el gobernador del departamento de {{departamento_domicilio}}.\n\nARTÍCULO 27°. PUBLICIDAD. Con cargo al patrimonio de la fundación, el liquidador designado publicará tres (3) avisos en un periódico de amplia circulación nacional, dejando entre uno y otro un plazo de quince (15) días, en los cuales informará a la ciudadanía sobre el proceso de liquidación, instando a los acreedores a hacer valer sus derechos.\n\nARTÍCULO 28°. PROCEDIMIENTO DE LIQUIDACIÓN. Quince (15) días después de la publicación del último aviso se liquidará la fundación, pagando las obligaciones contraídas con terceros y observando las disposiciones legales sobre prelación de créditos. Si cumplido lo anterior queda un remanente de activo patrimonial, este pasará a {{entidad_remanente}}.\n\nCAPÍTULO V\nDISPOSICIONES VARIAS\n\nARTÍCULO 29°. REVISOR FISCAL. Las funciones del revisor fiscal de la fundación serán las mismas que la ley señala a los revisores fiscales de las sociedades. El revisor fiscal deberá ser contador público titulado con su respectivo número de matrícula.\n\nARTÍCULO 30°. SECRETARIO. La fundación tendrá un secretario nombrado por {{quien_nombra_secretario}}, quien será a la vez secretario de la asamblea de delegatarios, del consejo de administración y del director.\n\nARTÍCULO 31°. NOMBRAMIENTOS PROVISIONALES. En tanto la asamblea de delegatarios y el consejo de administración efectúen nuevos nombramientos, se hacen los siguientes nombramientos provisionales:\n\nDirector Principal: {{director_principal}}\nDirector Suplente: {{director_suplente}}\n\nConsejo de Administración — Miembros Principales: {{miembros_consejo_principales}}\nConsejo de Administración — Miembros Suplentes: {{miembros_consejo_suplentes}}\n\nRevisor Fiscal Principal: {{revisor_fiscal}}\nRevisor Fiscal Suplente: {{suplente_revisor}}\n\nSecretario: {{secretario}}\n\nDado en {{ciudad_firma}}, a los {{dia_firma}} días del mes de {{mes_firma}} de {{anio_firma}}.",
+  "fields": [
+    { "name": "nombre_entidad", "label": "Nombre completo de la fundación (ej: Fundación Semillas de Esperanza)", "type": "text", "required": true },
+    { "name": "municipio_domicilio", "label": "Municipio donde tendrá su sede principal (ej: El Cerrito)", "type": "text", "required": true },
+    { "name": "departamento_domicilio", "label": "Departamento donde está ubicado el municipio (ej: Valle del Cauca)", "type": "text", "required": true },
+    { "name": "objeto_fundacion", "label": "Objeto o finalidad de la fundación — describir las actividades sin ánimo de lucro (ej: promover la educación de niños en situación de vulnerabilidad mediante programas de becas y talleres formativos)", "type": "text", "required": true },
+    { "name": "duracion_fundacion", "label": "Duración de la fundación (ej: diez (10) años / indefinida / hasta la extinción total de su patrimonio)", "type": "text", "required": true },
+    { "name": "descripcion_patrimonio_inicial", "label": "Descripción del patrimonio inicial — quién aporta y cuánto (ej: la suma de cinco millones de pesos ($5.000.000) aportada por Carlos Eduardo Pérez Ríos, y la suma de cinco millones de pesos ($5.000.000) aportada por María García López)", "type": "text", "required": true },
+    { "name": "num_miembros_asamblea", "label": "Número de miembros de la asamblea de delegatarios en letras y número (ej: cinco (5), tres (3))", "type": "text", "required": true },
+    { "name": "quien_designa_miembros", "label": "Quién designa a los miembros de la asamblea (ej: los fundadores en reunión conjunta / el consejo de administración / cada fundador designa un delegado)", "type": "text", "required": true },
+    { "name": "ciudad_reuniones", "label": "Ciudad donde se realizarán las reuniones ordinarias (ej: El Cerrito, Cali)", "type": "text", "required": true },
+    { "name": "dias_reunion", "label": "Primeros días del mes para la reunión ordinaria en letras y número (ej: diez (10))", "type": "text", "required": true },
+    { "name": "mes_reunion", "label": "Mes del año en que se realizará la reunión ordinaria (ej: marzo, febrero)", "type": "text", "required": true },
+    { "name": "num_miembros_consejo", "label": "Número de miembros del consejo de administración en letras y número (ej: tres (3), cinco (5))", "type": "text", "required": true },
+    { "name": "periodo_revisor", "label": "Período del revisor fiscal en letras y número (ej: dos (2) años, un (1) año)", "type": "text", "required": true },
+    { "name": "periodo_consejo", "label": "Período del consejo de administración en letras y número (ej: dos (2) años, un (1) año)", "type": "text", "required": true },
+    { "name": "cuantia_contratos", "label": "Valor máximo de contratos que el director puede celebrar sin autorización del consejo (ej: cinco millones de pesos ($5.000.000))", "type": "text", "required": true },
+    { "name": "quorum_consejo", "label": "Quórum del consejo de administración (ej: la mayoría absoluta / tres (3) / dos (2))", "type": "text", "required": true },
+    { "name": "votos_disolucion", "label": "Votos requeridos para disolver la fundación (ej: las dos terceras partes / la mayoría absoluta / la totalidad)", "type": "text", "required": true },
+    { "name": "entidad_remanente", "label": "Entidad que recibirá los bienes remanentes al liquidarse (ej: la entidad de beneficencia que determine la asamblea de delegatarios / una institución sin ánimo de lucro de fines similares con domicilio en el municipio)", "type": "text", "required": true },
+    { "name": "quien_nombra_secretario", "label": "Quién nombra al secretario (ej: el consejo de administración / la asamblea de delegatarios / el director)", "type": "text", "required": true },
+    { "name": "director_principal", "label": "Nombre completo del director principal provisional", "type": "text", "required": true },
+    { "name": "director_suplente", "label": "Nombre completo del director suplente provisional", "type": "text", "required": true },
+    { "name": "miembros_consejo_principales", "label": "Nombres de los miembros principales del consejo separados por punto y coma (ej: Carlos Pérez Ríos; María García López; Luis Torres Mora)", "type": "text", "required": true },
+    { "name": "miembros_consejo_suplentes", "label": "Nombres de los miembros suplentes del consejo separados por punto y coma (ej: Ana Gómez Ruiz; Pedro Salcedo Vera; Rosa Martínez Gil)", "type": "text", "required": true },
+    { "name": "revisor_fiscal", "label": "Nombre completo del revisor fiscal principal (debe ser contador público titulado)", "type": "text", "required": true },
+    { "name": "suplente_revisor", "label": "Nombre completo del revisor fiscal suplente", "type": "text", "required": true },
+    { "name": "secretario", "label": "Nombre completo del secretario provisional", "type": "text", "required": true },
+    { "name": "ciudad_firma", "label": "Ciudad donde se firman los estatutos (ej: El Cerrito, Cali)", "type": "text", "required": true },
+    { "name": "dia_firma", "label": "Día en que se firman los estatutos (solo el número, ej: 21)", "type": "number", "required": true },
+    { "name": "mes_firma", "label": "Mes en que se firman los estatutos (ej: abril, mayo)", "type": "text", "required": true },
+    { "name": "anio_firma", "label": "Año en que se firman los estatutos (ej: 2026)", "type": "number", "required": true }
+  ]
+}
 ]

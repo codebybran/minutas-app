@@ -2,6 +2,32 @@ import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import './App.css'
  
+// BADGE TIPO TRÁMITE -
+function getBadgeTramite(tipo) {
+  if (tipo === 'Notarial') return {
+    label: '🏛️ TRÁMITE NOTARIAL',
+    bg: 'linear-gradient(135deg, #1a3a5c, #0d2240)',
+    border: '#e2b94a', color: '#e2b94a', dot: '#e2b94a',
+    shadow: '0 2px 0 #061528, 0 4px 10px rgba(0,0,0,0.3)',
+    tooltip: 'Este documento debe otorgarse ante Notario mediante Escritura Pública o autenticación de firmas.'
+  }
+  if (tipo === 'Privado') return {
+    label: '📄 DOCUMENTO PRIVADO',
+    bg: 'linear-gradient(135deg, #0d3018, #0a2010)',
+    border: '#4caf50', color: '#6fcf7a', dot: '#4caf50',
+    shadow: '0 2px 0 #061508, 0 4px 10px rgba(0,0,0,0.3)',
+    tooltip: 'Este documento se firma entre las partes. Se recomienda autenticar firmas ante Notario.'
+  }
+  return {
+    label: '⚖️ DOCUMENTO LEGAL',
+    bg: 'linear-gradient(135deg, #2a1a4a, #1a0d30)',
+    border: '#9c6fe0', color: '#c4a0f0', dot: '#9c6fe0',
+    shadow: '0 2px 0 #100820, 0 4px 10px rgba(0,0,0,0.3)',
+    tooltip: 'Documento legal.'
+  }
+}
+// 
+
 const FIELD_HELP = {
   ciudad: 'Escribe el nombre de la ciudad o municipio donde se está firmando el contrato. Ejemplo: Cali, El Cerrito, Bogotá.',
   dia: 'Escribe el número del día en que se firma el contrato. Ejemplo: 21',
@@ -499,161 +525,272 @@ const FIELD_HELP = {
   garantia_salarios: 'Describe la garantía de pago de salarios y prestaciones del personal. Ej: póliza por el equivalente a tres (3) meses de nómina total.',
   notificacion_contratante: 'Escribe la dirección completa del contratante donde recibirá notificaciones legales. Ej: Carrera 8 # 12-34, Piso 3, El Cerrito.',
   notificacion_contratista: 'Escribe la dirección completa del contratista donde recibirá notificaciones legales. Ej: Calle 10 # 5-20, Barrio El Prado, Cali.',
-  // Minuta 29 — Fianza Abierta
-  nombre_representante_fiador: 'Escriba el nombre completo de quien firma como representante legal de la empresa fiadora. Ej: Carlos Eduardo Pérez Ríos.',
-  cedula_representante_fiador: 'Escriba el número de cédula del representante legal de la empresa fiadora. Solo los números.',
-  expedicion_representante_fiador: 'Escriba la ciudad donde fue expedida la cédula del representante. Ej: Cali, El Cerrito.',
-  nombre_fiador: 'Escriba el nombre completo o razón social de la empresa que garantiza las deudas del deudor. Ej: Comercializadora El Cerrito S.A.S., Inversiones García Ltda.',
-  camara_comercio_fiador: 'Escriba la ciudad de la Cámara de Comercio donde está registrada la empresa fiadora. Ej: Cali, El Cerrito.',
-  nit_fiador: 'Escriba el NIT de la empresa fiadora tal como aparece en el RUT. Ej: 900.123.456-7.',
-  nombre_acreedor: 'Escriba el nombre completo del acreedor — la persona o entidad a cuyo favor se constituye la garantía.',
-  cedula_acreedor: 'Escriba el número de cédula del acreedor. Solo los números.',
-  expedicion_acreedor: 'Escriba la ciudad donde fue expedida la cédula del acreedor.',
-  nombre_deudor: 'Escriba el nombre completo o razón social del deudor cuyas obligaciones están siendo garantizadas por el fiador. Ej: Alexander García López, Construcciones García S.A.S.',
-  cuantia_letras: 'Escriba en letras el valor máximo hasta el cual responde el fiador. Ej: cincuenta millones de pesos, cien millones de pesos.',
-  cuantia_numeros: 'Escriba ese valor en números. Ej: 50.000.000, 100.000.000.',
-  plazo_letras: 'Escriba en letras la duración del contrato de fianza. Ej: dos, tres, cinco.',
-  plazo_numeros: 'Escriba esa duración en números. Ej: 2, 3, 5.',
-  num_ejemplares: 'Escriba en letras cuántos ejemplares del contrato se firman. Ej: dos, tres.',
-  num_ejemplares_numeros: 'Escriba ese número en cifras. Ej: 2, 3.',
-  // Minuta 30 — Prenda Abierta Sin Tenencia del Acreedor
-  nombre_representante_acreedor: 'Escriba el nombre completo de quien firma como representante legal de la entidad acreedora.',
-  cedula_representante_acreedor: 'Escriba el número de cédula del representante legal del acreedor. Solo los números.',
-  expedicion_representante_acreedor: 'Escriba la ciudad donde fue expedida la cédula del representante del acreedor.',
-  domicilio_representante_acreedor: 'Escriba la ciudad donde vive el representante del acreedor.',
-  nombre_acreedor: 'Escriba el nombre o razón social de la entidad que otorgó el préstamo. Ej: Cooperativa de Ahorro El Cerrito, Inversiones García Ltda.',
-  domicilio_acreedor: 'Escriba la ciudad donde tiene domicilio la entidad acreedora.',
-  escritura_acreedor: 'Escriba el número de la escritura pública con que fue constituida la entidad acreedora. Solo el número. Ej: 1245.',
-  notaria_acreedor: 'Escriba el nombre de la notaría donde fue constituida la entidad acreedora, sin escribir la palabra Notaría. Ej: Primera, Única.',
-  circulo_acreedor: 'Escriba la ciudad del círculo notarial donde fue constituida la entidad acreedora. Ej: Cali, El Cerrito.',
-  fecha_escritura_acreedor: 'Escriba la fecha de la escritura de constitución de la entidad acreedora. Ej: 15 de marzo de 2015.',
-  nombre_deudor: 'Escriba el nombre completo del deudor prendario — quien da el bien mueble como garantía de la deuda.',
-  cedula_deudor: 'Escriba el número de cédula del deudor prendario. Solo los números.',
-  expedicion_deudor: 'Escriba la ciudad donde fue expedida la cédula del deudor.',
-  domicilio_deudor: 'Escriba la ciudad donde vive el deudor prendario.',
-  valor_prestamo_letras: 'Escriba en letras el valor del préstamo que se está garantizando. Ej: veinte millones de pesos.',
-  valor_prestamo_numeros: 'Escriba ese valor en números. Ej: 20.000.000.',
-  fecha_contrato_prestamo: 'Escriba la fecha en que se celebró el contrato de préstamo. Ej: 15 de marzo de 2026.',
-  numero_pagare: 'Escriba el número del pagaré que contiene la obligación de pago. Ej: 001-2026.',
-  fecha_pagare: 'Escriba la fecha en que fue otorgado el pagaré. Ej: 15 de marzo de 2026.',
-  vencimiento_pagare: 'Escriba la fecha de vencimiento final del pagaré — cuando debe pagarse la deuda. Ej: 15 de marzo de 2028.',
-  descripcion_bien_prendado: 'Describa detalladamente el bien mueble dado en prenda con todas sus características. Ej: vehículo Chevrolet Spark 2022, color blanco, placa ABC123, motor No. ABC456, serial VIN789012. Entre más detallada la descripción, más segura la garantía.',
-  direccion_bienes: 'Escriba la dirección donde permanecerá el bien mientras dure la prenda. Ej: Calle 4 Sur # 2A-56.',
-  barrio_bienes: 'Escriba el nombre del barrio donde está esa dirección.',
-  ciudad_bienes: 'Escriba la ciudad donde permanecerá el bien dado en prenda.',
-  dias_aviso_inspeccion: 'Escriba con cuántos días de anticipación debe avisar el acreedor antes de ir a inspeccionar el bien. Ej: tres (3), cinco (5).',
-  clausula_penal_letras: 'Escriba en letras el valor de la multa que pagará el deudor si incumple. Ej: dos millones de pesos, cinco millones de pesos.',
-  clausula_penal_numeros: 'Escriba ese valor en números. Ej: 2.000.000, 5.000.000.',
-  duracion: 'Escriba la duración del contrato de prenda. Ej: veinticuatro (24) meses / tres (3) años / dos (2) años.',
-  dias_aviso_perdida: 'Escriba cuántos días tiene el deudor para avisar al acreedor si el bien se pierde, daña o es objeto de acciones judiciales. Ej: tres (3), cinco (5).',
-  // Minuta 31 — Contrato de Pignoración de Rentas
-  descripcion_credito_pignorado: 'Describa detalladamente qué rentas o cánones se están dando como garantía, quién los debe pagar y en qué contrato constan. Ej: los cánones de arrendamiento del inmueble ubicado en Calle 4 Sur # 2A-56 de El Cerrito, que el arrendatario Alexander García López se obligó a pagar según contrato de arrendamiento del 1 de mayo de 2025, por valor de $1.200.000 mensuales.',
-  fecha_contrato: 'Escriba la fecha en que se celebró el contrato de préstamo. Ej: 21 de abril de 2026.',
-  numero_pagare: 'Escriba el número del pagaré que contiene la obligación de pago. Ej: 001-2026.',
-  fecha_pagare: 'Escriba la fecha en que fue otorgado el pagaré. Ej: 21 de abril de 2026.',
-  vencimiento_pagare: 'Escriba la fecha en que vence el pagaré — cuando debe pagarse la deuda. Ej: 21 de abril de 2028.',
-  fecha_limite_notificacion: 'Escriba la fecha límite en que el deudor debe notificar al arrendatario o pagador de las rentas que a partir de ahora debe pagarle al acreedor. Ej: el 30 de abril de 2026.',
-  descripcion_titulo: 'Describa el documento que acredita el derecho de crédito pignorado. Ej: contrato de arrendamiento No. 001 de fecha 1 de mayo de 2025, suscrito entre Jhon Brandon Martínez Vélez como arrendador y Alexander García López como arrendatario.',
-  // Minuta 32 — Hipoteca Abierta
-  nombre_hipotecante: 'Escriba el nombre completo del dueño del inmueble que lo hipoteca como garantía, tal como aparece en su cédula.',
-  domicilio_hipotecante: 'Escriba la ciudad donde vive la parte hipotecante. Ej: El Cerrito, Cali.',
-  cedula_hipotecante: 'Escriba el número de cédula de la parte hipotecante. Solo los números.',
-  expedicion_hipotecante: 'Escriba la ciudad donde fue expedida la cédula de la parte hipotecante. Ej: El Cerrito, Cali.',
-  estado_civil_hipotecante: 'Escriba el estado civil de la parte hipotecante. Ej: soltero, casado, divorciado, viudo.',
-  grado_hipoteca: 'Escriba el grado de la hipoteca. Ej: primer, segundo, tercer. El primer grado tiene prioridad sobre los demás en caso de ejecución.',
-  cuantia_hipoteca_letras: 'Escriba en letras el valor máximo que garantiza la hipoteca. Ej: cien millones de pesos, doscientos millones de pesos.',
-  cuantia_hipoteca_numeros: 'Escriba ese valor en números. Ej: 100.000.000, 200.000.000.',
-  descripcion_inmueble: 'Describa completamente el inmueble hipotecado: tipo, dirección, área y linderos por los cuatro puntos cardinales. Ej: casa de habitación ubicada en la Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito, con área de 120 metros cuadrados, cuyos linderos son: Norte con la Calle 4 Sur en extensión de 10 metros; Sur con el predio de Roberto Salcedo en 10 metros; Oriente con la Carrera 2A en 12 metros; Occidente con el predio de Patricia Londoño en 12 metros.',
-  fecha_certificado: 'Escriba la fecha en que fue expedido el certificado de tradición y libertad del inmueble. Ej: 15 de abril de 2026.',
-  ciudad_registro: 'Escriba la ciudad de la Oficina de Registro de Instrumentos Públicos donde está inscrito el inmueble. Ej: El Cerrito, Cali.',
-  nombre_vendedor_anterior: 'Escriba el nombre completo de quien le vendió el inmueble a la parte hipotecante.',
-  numero_escritura_anterior: 'Escriba el número de la escritura pública con que la parte hipotecante adquirió el inmueble. Solo el número. Ej: 1245.',
-  fecha_escritura_anterior: 'Escriba la fecha de esa escritura de adquisición. Ej: 15 de mayo de 2018.',
-  notaria_anterior: 'Escriba el nombre de la notaría donde se otorgó la escritura de adquisición, sin escribir la palabra Notaría. Ej: Única, Primera.',
-  circulo_anterior: 'Escriba la ciudad del círculo notarial de la escritura de adquisición. Ej: El Cerrito, Cali.',
-  fecha_registro: 'Escriba la fecha en que fue registrada la escritura de adquisición en el registro de instrumentos públicos. Ej: 20 de mayo de 2018.',
-  hipotecas_anteriores: 'Indique si el inmueble ya tiene hipotecas. Si no tiene ninguna escriba: el inmueble no soporta hipotecas anteriores y se encuentra libre de todo gravamen. Si tiene escriba: soporta hipoteca en primer grado a favor de [nombre] según escritura No. [número] de la Notaría [nombre] de [ciudad].',
-  ciudad_cumplimiento: 'Escriba la ciudad donde se cumplirán las obligaciones del contrato. Ej: El Cerrito, Cali.',
-  // Minuta 33 — Contrato de Mutuo Civil Garantizado con Hipoteca
-  nombre_mutuante: 'Escriba el nombre completo del mutuante — la persona que presta el dinero, tal como aparece en su cédula.',
-  cedula_mutuante: 'Escriba el número de cédula del mutuante. Solo los números.',
-  expedicion_mutuante: 'Escriba la ciudad donde fue expedida la cédula del mutuante.',
-  domicilio_mutuante: 'Escriba la ciudad donde vive el mutuante.',
-  nombre_mutuario: 'Escriba el nombre completo del mutuario — la persona que recibe el préstamo e hipoteca su inmueble como garantía.',
-  cedula_mutuario: 'Escriba el número de cédula del mutuario. Solo los números.',
-  expedicion_mutuario: 'Escriba la ciudad donde fue expedida la cédula del mutuario.',
-  domicilio_mutuario: 'Escriba la ciudad donde vive el mutuario.',
-  valor_prestamo_letras: 'Escriba en letras el valor total del préstamo. Ej: veinte millones de pesos.',
-  valor_prestamo_numeros: 'Escriba ese valor en números. Ej: 20.000.000.',
-  forma_entrega_dinero: 'Escriba cómo se entregó el dinero. Ej: dinero efectivo / cheque de gerencia No. 123 del Banco de Bogotá / transferencia bancaria a la cuenta de ahorros No. 123456.',
-  fecha_vencimiento: 'Escriba la fecha exacta en que debe devolverse el préstamo. Ej: el 21 de abril de 2028.',
-  forma_pago_cuotas: 'Escriba cómo se devolverá el dinero. Ej: un solo pago al vencimiento / veinticuatro (24) cuotas mensuales iguales de $900.000 / cuotas trimestrales de $2.000.000.',
-  interes_corriente: 'Escriba solo el número de la tasa de interés corriente. Ej: 1.5 (significa 1.5% mensual). Importante: no puede exceder el interés bancario corriente certificado por la Superintendencia Financiera.',
-  periodicidad_interes: 'Escriba la periodicidad del interés corriente. Ej: mensual / anual.',
-  interes_mora: 'Escriba solo el número de la tasa de interés de mora. Ej: 2 (significa 2% mensual). No puede exceder 1.5 veces el interés bancario corriente.',
-  periodicidad_mora: 'Escriba la periodicidad del interés de mora. Ej: mensual / anual.',
-  plazo_pago_anticipado: 'Escriba el plazo mínimo que debe pasar para que el mutuario pueda pagar anticipadamente. Ej: la mitad del plazo / seis (6) meses / un (1) año.',
-  descripcion_inmueble_hipotecado: 'Describa el inmueble que se hipoteca como garantía: tipo, dirección y área. Ej: casa de habitación ubicada en la Calle 4 Sur # 2A-56, Barrio Villa del Carmen, ciudad de El Cerrito, con área aproximada de ciento veinte (120) metros cuadrados.',
-  linderos_inmueble: 'Escriba los linderos del inmueble hipotecado por los cuatro puntos cardinales. Ej: Norte: con la Calle 4 Sur, en extensión de diez (10) metros; Sur: con el predio de Roberto Salcedo, en diez (10) metros; Oriente: con la Carrera 2A, en doce (12) metros; Occidente: con el predio de Patricia Londoño, en doce (12) metros.',
-  situacion_gravamenes: 'Indique si el inmueble tiene gravámenes. Si está libre escriba: no soporta ningún gravamen, embargo ni limitación del dominio. Si tiene hipoteca escriba: soporta hipoteca en primer grado a favor de [nombre] según escritura No. [número].',
-  responsable_gastos: 'Escriba quién paga los gastos notariales y de registro. Ej: ambas partes por partes iguales / el mutuario / el mutuante.',
-  // Minuta 34 — Constitución de Hipoteca para Garantizar Saldo
-  plazo_garantia: 'Escriba el plazo durante el cual la hipoteca garantiza las obligaciones. Ej: un (1) año / dos (2) años / cinco (5) años.',
-  cuantia_letras: 'Escriba en letras la cuantía máxima que garantiza la hipoteca — normalmente el saldo pendiente de pago. Ej: cincuenta millones de pesos.',
-  cuantia_numeros: 'Escriba esa cuantía en números. Ej: 50.000.000.',
-  interes_corriente: 'Escriba solo el número de la tasa de interés corriente mensual. Ej: 1.5 (significa 1.5% mensual). No puede exceder el interés bancario corriente certificado por la Superintendencia Financiera.',
-  interes_mora: 'Escriba solo el número de la tasa de interés de mora mensual. Ej: 2 (significa 2% mensual). No puede exceder 1.5 veces el interés bancario corriente.',
-  // Minuta 35 — Ampliación de Hipoteca
-  numero_escritura_hipoteca: 'Escriba el número de la escritura pública con que se constituyó la hipoteca original. Solo el número. Ej: 1245.',
-  fecha_escritura_hipoteca: 'Escriba la fecha de la escritura original de hipoteca. Ej: 15 de mayo de 2024.',
-  notaria_hipoteca: 'Escriba la Notaría donde se otorgó la hipoteca original, sin escribir la palabra Notaría. Ej: Única, Primera.',
-  circulo_hipoteca: 'Escriba la ciudad del círculo notarial donde se otorgó la hipoteca original.',
-  fecha_inscripcion: 'Escriba la fecha en que se inscribió la hipoteca original en el Registro de Instrumentos Públicos. Ej: 20 de mayo de 2024.',
-  grado_hipoteca: 'Escriba el grado de la hipoteca original. Ej: primer, segundo.',
-  cuantia_original_letras: 'Escriba en letras la cuantía original de la hipoteca — el monto por el que fue constituida inicialmente. Ej: cincuenta millones de pesos.',
-  cuantia_original_numeros: 'Escriba esa cuantía original en números. Ej: 50.000.000.',
-  direccion_inmueble: 'Escriba la dirección completa del inmueble hipotecado. Ej: Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito.',
-  linderos_inmueble: 'Escriba los linderos del inmueble por los cuatro puntos cardinales.',
-  fecha_registro_anterior: 'Escriba la fecha de registro de la escritura con que el deudor adquirió el inmueble. Ej: 20 de mayo de 2018.',
-  descripcion_obligacion_original: 'Describa la obligación que garantizaba la hipoteca original. Ej: el saldo del precio de compraventa del inmueble por valor de $50.000.000 / el préstamo otorgado mediante pagaré No. 001-2024.',
-  cuantia_ampliada_letras: 'Escriba en letras la nueva cuantía total de la hipoteca después de la ampliación — no el aumento sino el total nuevo. Ej: cien millones de pesos.',
-  cuantia_ampliada_numeros: 'Escriba esa nueva cuantía total en números. Ej: 100.000.000.',
-  nuevo_plazo_letras: 'Escriba en letras el nuevo plazo de duración de la hipoteca. Ej: dos, tres, cinco.',
-  nuevo_plazo_numeros: 'Escriba ese plazo en números. Ej: 2, 3, 5.',
-  clausula_modificada: 'Escriba el número o nombre de la cláusula de la escritura original que se modifica con esta ampliación. Ej: primera, segunda, tercera.',
-  nueva_redaccion_clausula: 'Escriba el texto completo de la nueva redacción de la cláusula que se modifica. Este texto reemplazará completamente la redacción original de esa cláusula.',
-  // Minuta 36 — Cancelación de Hipoteca
-  clausulas_hipoteca: 'Escriba las cláusulas de la escritura original donde constan la obligación y la hipoteca. Ej: primera y segunda / primera y séptima / segunda y tercera.',
-  // Minuta 37 — Compraventa bajo Propiedad Horizontal
-  numero_apartamento: 'Escriba el número o identificación del apartamento tal como figura en el reglamento de propiedad horizontal. Ej: 301, 502-A, Penthouse 2.',
-  nombre_edificio: 'Escriba el nombre oficial del edificio o conjunto tal como aparece en el reglamento de propiedad horizontal. Ej: Edificio Los Pinos, Conjunto Residencial El Nogal.',
-  ciudad_inmueble: 'Escriba la ciudad donde está ubicado el edificio.',
-  direccion_edificio: 'Escriba la dirección del edificio. Ej: Carrera 10 # 25-40.',
-  cedula_catastral_edificio: 'Escriba la cédula catastral del edificio completo. La encuentra en el impuesto predial o en la escritura del reglamento de propiedad horizontal.',
-  numero_lote: 'Escriba el número del lote de terreno sobre el que se construyó el edificio. Ej: Lote 5, Lote 12-B.',
+  // Carta de Primera y Segunda Convocatoria
+  ciudad_fecha: 'Escriba la ciudad y la fecha completa de la carta. Ej: El Cerrito, 5 de abril de 2026.',
+  interior_apartamento: 'Escriba el número del interior o apartamento del destinatario. Si es una carta circular para todos los propietarios escriba: Circular.',
+  tipo_asamblea: 'Escriba en MAYÚSCULA el tipo de asamblea. Escriba: ORDINARIA si es la reunión anual. Escriba: EXTRAORDINARIA si es por necesidad urgente.',
+  tipo_asamblea_lower: 'Escriba en minúscula el tipo de asamblea. Escriba: ordinaria o extraordinaria.',
+  fecha_asamblea: 'Escriba la fecha completa en que se realizará la asamblea. Ej: el día martes 21 de abril de 2026.',
+  hora_asamblea: 'Escriba la hora de inicio de la asamblea. Ej: 7:00 p.m., 8:00 p.m.',
+  lugar_asamblea: 'Escriba el lugar exacto donde se realizará la asamblea. Ej: el salón comunal del conjunto, ubicado en el primer piso del edificio.',
+  articulo_reglamento: 'Escriba el número del artículo del reglamento de propiedad horizontal del conjunto que regula las convocatorias a asamblea. Lo encuentra en el reglamento. Ej: 27, 35.',
+  orden_del_dia: 'Escriba los puntos del orden del día numerados. Ej: 1. Verificación del quórum. 2. Lectura del acta anterior. 3. Aprobación del orden del día. 4. Elección del presidente y secretario. 5. Informes del administrador y revisor fiscal. 6. Aprobación del balance. 7. Aprobación del presupuesto. 8. Nombramientos. 9. Otros asuntos.',
+  porcentaje_quorum: 'Escriba el porcentaje mínimo de coeficientes de copropiedad que deben estar presentes para que la asamblea pueda sesionar en primera convocatoria. Según la Ley 675 de 2001 es el 51%. Ej: 51, 70.',
+  nombre_administrador: 'Escriba el nombre completo del administrador o administradora que firma la convocatoria.',
+  fecha_primera_convocatoria: 'Escriba la fecha en que se realizó la primera asamblea que fracasó por falta de quórum. Ej: el 21 de abril de 2026.',
+  // Estatutos Fundación Gobernación
+  nombre_entidad: 'Fundación Semillas de Esperanza',
+  duracion_fundacion: 'indefinida',
+  descripcion_patrimonio_inicial: 'la suma de cinco millones de pesos ($5.000.000) aportada por Carlos Eduardo Pérez Ríos, y la suma de cinco millones de pesos ($5.000.000) aportada por María Fernanda García López',
+  num_miembros_asamblea: 'cinco (5)',
+  quien_designa_miembros: 'los fundadores en reunión conjunta, designando cada uno a su delegado personal',
+  ciudad_reuniones: 'El Cerrito',
+  dias_reunion: 'diez (10)',
+  mes_reunion: 'marzo',
+  periodo_revisor: 'dos (2) años',
+  quorum_consejo: 'la mayoría absoluta de sus miembros',
+  votos_disolucion: 'las dos terceras partes',
+  entidad_remanente: 'la entidad de beneficencia sin ánimo de lucro de fines similares que determine la asamblea de delegatarios con domicilio en el municipio de El Cerrito',
+  quien_nombra_secretario: 'el consejo de administración',
+  // Carta de Primera Convocatoria
+  unidad_privada: 'apartamento 101',
+  tipo_asamblea_lower: 'ordinaria',
+  articulo_reglamento: '27',
+  fecha_asamblea: 'viernes 25 de abril de 2026',
+  hora_asamblea: '7:00 p.m.',
+  lugar_asamblea: 'salón comunal del conjunto, ubicado en el primer piso del edificio',
+  porcentaje_quorum: '51',
+  telefono_administrador: '315 123 4567',
+  // Carta de Segunda Convocatoria
+  fecha_primera_convocatoria: 'el 8 de abril de 2026',
+  // Poder especial asamblea
+  tipo_unidad: 'apartamento',
+  numero_unidad: '101',
+  interior_unidad: 'no aplica',
+  numero_convocatoria: 'primera',
+  fecha_carta_citacion: '5 de abril de 2026',
+  dia_firma: 20,
+  mes_firma: 'abril',
+  anio_firma: 2026,
+  // Acta de Asamblea General de Propietarios
+  numero_acta: 'Escriba el número consecutivo del acta. Ej: 001, 015. Las actas deben numerarse en orden cronológico en el libro de actas registrado en la Alcaldía.',
+  tipo_asamblea: 'Escriba ORDINARIA si es la asamblea anual de los primeros tres meses del año. Escriba EXTRAORDINARIA si fue convocada por necesidad urgente o imprevista.',
+  nombre_conjunto: 'Escriba el nombre completo del edificio o conjunto tal como figura en el reglamento de propiedad horizontal. Ej: Conjunto Residencial Los Nogales.',
+  hora: 'Escriba la hora de inicio de la asamblea. Ej: 7:00 p.m., 9:00 a.m.',
+  convocante: 'Escriba quién convocó la asamblea. Puede ser el administrador, el revisor fiscal, el consejo de administración, o un grupo de propietarios que representen al menos el 20% de los coeficientes de copropiedad.',
+  fecha_convocatoria: 'Escriba la fecha en que se envió la convocatoria. La ley exige que sea con mínimo 15 días de anticipación para asambleas ordinarias.',
+  lugar_reunion: 'Escriba el lugar exacto donde se realizó la asamblea. Ej: salón comunal del conjunto, ubicado en el primer piso del edificio.',
+  secretario_lectura: 'Escriba el nombre de quien leyó el orden del día al inicio de la reunión.',
+  orden_del_dia: 'Escriba todos los puntos del orden del día tal como fueron enviados en la convocatoria. Numérelos del 1 en adelante.',
+  lista_asistentes: 'Escriba el nombre de cada propietario asistente, su unidad privada y su coeficiente de copropiedad. Ej: 1. Jhon Brandon Martínez Vélez - Apto 101 - Coeficiente 5.2%.',
+  nombre_presidente: 'Escriba el nombre completo del propietario elegido como presidente de la asamblea.',
+  cedula_presidente: 'Escriba el número de cédula del presidente de la asamblea.',
+  inmueble_presidente: 'Escriba el número del apartamento o unidad del presidente. Ej: apartamento 301.',
+  postulados_presidente: 'Escriba los nombres de todos los propietarios que fueron postulados para la presidencia, incluyendo al elegido.',
+  nombre_secretario: 'Escriba el nombre completo del propietario elegido como secretario de la asamblea.',
+  cedula_secretario: 'Escriba el número de cédula del secretario de la asamblea.',
+  inmueble_secretario: 'Escriba el número del apartamento o unidad del secretario. Ej: apartamento 202.',
+  postulados_secretario: 'Escriba los nombres de todos los propietarios postulados para secretario.',
+  nombre_administrador: 'Escriba el nombre completo del administrador del conjunto que presentó el informe.',
+  resumen_informe_administrador: 'Resuma el informe del administrador: actividades realizadas, estado de la cartera de morosos, mantenimientos efectuados, novedades del período.',
+  informe_revisor_fiscal: 'Resuma el informe del revisor fiscal. Si el conjunto no tiene revisor fiscal escriba: El conjunto no cuenta con revisor fiscal para el presente período.',
+  fecha_inicio_balance: 'Escriba la fecha de inicio del período del balance. Ej: 1 de enero de 2025.',
+  fecha_fin_balance: 'Escriba la fecha de cierre del período del balance. Ej: 31 de diciembre de 2025.',
+  resultado_balance: 'Escriba el resultado de la votación sobre el balance. Ej: El balance fue aprobado por unanimidad / aprobado con 8 votos a favor y 2 en contra.',
+  valor_presupuesto: 'Escriba el valor total del presupuesto aprobado en letras y números. Ej: cuarenta y ocho millones de pesos ($48.000.000) para la vigencia 2026.',
+  resultado_presupuesto: 'Escriba el resultado de la votación del presupuesto y la cuota mensual aprobada. Ej: aprobado por unanimidad con cuota mensual de $200.000 por unidad.',
+  nombramientos: 'Describa todos los nombramientos realizados: administrador, consejo de administración, revisor fiscal si aplica.',
+  propuestas_observaciones: 'Describa las propuestas y comentarios de los asistentes. Si no hubo escriba: Los asistentes no presentaron propuestas adicionales.',
+  hora_cierre: 'Escriba la hora de cierre de la asamblea. Ej: 9:30 p.m.',
+
+  // Reglamento de Propiedad Horizontal
+  nombre_apoderado: 'Escriba el nombre completo de la persona que comparece ante el Notario como apoderado de los propietarios del edificio.',
+  cedula_apoderado: 'Escriba el número de cédula del apoderado.',
+  expedicion_apoderado: 'Escriba la ciudad donde fue expedida la cédula del apoderado.',
+  domicilio_apoderado: 'Escriba la ciudad donde vive el apoderado.',
+  nombre_edificio: 'Escriba el nombre completo del edificio o conjunto. Ej: Edificio Los Nogales, Conjunto Residencial El Refugio.',
+  direccion_edificio: 'Escriba la dirección completa del edificio. Ej: Carrera 10 # 25-40.',
+  ciudad_edificio: 'Escriba la ciudad donde está ubicado el edificio.',
+  numero_lote: 'Escriba el número del lote de terreno sobre el que se construyó el edificio. Lo encuentra en los planos urbanísticos o en la escritura del lote.',
+  manzana: 'Escriba el número o letra de la manzana donde está el lote. Ej: A, 5, 12-B.',
   nombre_urbanizacion: 'Escriba el nombre de la urbanización o barrio donde está el edificio.',
-  area_lote: 'Escriba el área total del lote del edificio en metros cuadrados. Ej: 800, 1200.',
-  linderos_generales_edificio: 'Escriba los linderos generales del edificio completo por los cuatro puntos cardinales, tal como figuran en el reglamento de propiedad horizontal.',
-  ubicacion_apartamento: 'Escriba dónde está ubicado el apartamento dentro del edificio. Ej: tercer piso, ala norte / quinto piso, costado oriental.',
-  acceso_apartamento: 'Escriba cómo se accede al apartamento. Ej: el corredor del tercer piso / la escalera norte del edificio.',
-  area_privada: 'Escriba el área privada del apartamento en metros cuadrados, tal como figura en el reglamento. Ej: 68, 85, 120.',
-  linderos_especiales_apartamento: 'Escriba los linderos especiales del apartamento por los cuatro puntos cardinales, tal como figuran en el reglamento de propiedad horizontal.',
-  dependencias_apartamento: 'Escriba todas las dependencias que incluye el apartamento. Ej: sala-comedor, dos alcobas, un baño, cocina integral, balcón, garaje No. 15, depósito No. 8.',
-  licencia_construccion: 'Escriba el número de la licencia de construcción del edificio.',
-  entidad_licencia: 'Escriba la entidad que expidió la licencia de construcción. Ej: Curaduría Urbana No. 1 de Cali.',
-  escritura_reglamento: 'Escriba el número de la escritura pública del reglamento de propiedad horizontal. Solo el número. Ej: 2341.',
-  fecha_escritura_reglamento: 'Escriba la fecha de esa escritura. Ej: 15 de enero de 2015.',
-  notaria_reglamento: 'Escriba la Notaría donde se protocolizó el reglamento, sin escribir Notaría. Ej: Segunda, Tercera.',
-  folio_edificio: 'Escriba el Folio de Matrícula Inmobiliaria del edificio completo. Ej: 370-100000.',
-  folio_apartamento: 'Escriba el Folio de Matrícula Inmobiliaria del apartamento específico. Ej: 370-123456.',
-  cedula_catastral_apartamento: 'Escriba la cédula catastral del apartamento. La encuentra en el recibo del impuesto predial.',
-  precio_letras: 'Escriba en letras el precio total de venta del apartamento. Ej: ciento cincuenta millones de pesos.',
-  precio_numeros: 'Escriba ese precio en números. Ej: 150.000.000.',
-  forma_pago: 'Escriba cómo se paga el precio. Ej: de contado en este acto / $50.000.000 en este acto y el saldo de $100.000.000 mediante crédito hipotecario desembolsado por el Banco de Bogotá.',
-  mes_paz_salvo_administracion: 'Escriba el mes hasta el cual el vendedor está a paz y salvo con la administración del edificio. Ej: abril de 2026.',
+  area_lote: 'Escriba el área total del lote en metros cuadrados. Solo el número. Ej: 800, 1200.',
+  num_pisos: 'Escriba el número de pisos del edificio en letras y número. Ej: cinco (5), ocho (8).',
+  num_unidades: 'Escriba el número total de unidades privadas del edificio — apartamentos más garajes — en letras y número. Ej: veinte (20).',
+  propietario_anterior: 'Escriba el nombre completo de la persona o empresa que era dueña del lote antes de construir el edificio.',
+  cedula_propietario_anterior: 'Escriba el número de cédula del propietario anterior del lote.',
+  expedicion_propietario_anterior: 'Escriba la ciudad donde fue expedida la cédula del propietario anterior.',
+  escritura_anterior: 'Escriba solo el número de la escritura pública con que se adquirió el lote. Ej: 1245.',
+  descripcion_unidades: 'Describa en general cómo está compuesta cada unidad privada. Ej: sala-comedor, tres alcobas, dos baños, cocina, balcón y garaje.',
+  destinacion_inmueble: 'Escriba para qué están destinados los inmuebles. Ej: habitacional, comercial, mixta.',
+  dias_pago: 'Escriba los primeros días de cada mes para pagar las expensas comunes. Ej: cinco (5), diez (10).',
+  quien_nombra_administrador: 'Escriba quién nombra al administrador. Ej: la asamblea general de propietarios / el consejo de administración.',
+  periodo_administrador: 'Escriba el período del administrador. Ej: un (1) año / dos (2) años.',
+  porcentaje_fondo: 'Escriba el porcentaje de la cuota mensual que irá al fondo de reserva e imprevistos. Ej: diez (10).',
+  num_miembros_comite: 'Escriba el número de miembros del comité de convivencia. Debe ser un número impar. Ej: tres (3), cinco (5).',
+  // DERECHO DE FAMILIA
+  // Disolución y Liquidación de Sociedad Conyugal -
+  nombre_conyuge1: 'Escriba el nombre completo del esposo tal como aparece en su cédula.',
+  cedula_conyuge1: 'Escriba el número de cédula del esposo. Solo los números.',
+  expedicion_conyuge1: 'Escriba la ciudad donde fue expedida la cédula del esposo.',
+  domicilio_conyuge1: 'Escriba la ciudad donde vive actualmente el esposo.',
+  nombre_conyuge2: 'Escriba el nombre completo de la esposa tal como aparece en su cédula.',
+  cedula_conyuge2: 'Escriba el número de cédula de la esposa. Solo los números.',
+  expedicion_conyuge2: 'Escriba la ciudad donde fue expedida la cédula de la esposa.',
+  domicilio_conyuge2: 'Escriba la ciudad donde vive actualmente la esposa.',
+  tipo_matrimonio: 'Escriba: civil / católico según cómo se casaron.',
+  fecha_matrimonio: 'Escriba la fecha completa del matrimonio. Ej: el 15 de junio de 2010.',
+  lugar_matrimonio: 'Escriba el nombre de la parroquia, notaría o juzgado donde se casaron. Ej: Notaría Segunda de Cali / Parroquia San Pedro.',
+  ciudad_matrimonio: 'Escriba la ciudad donde se celebró el matrimonio.',
+  apellidos_sociedad: 'Escriba los apellidos de ambos cónyuges unidos con guion. Ej: Martínez-García.',
+  activo_bruto: 'Describa cada bien numerado con su valor. Ej: 1. Casa ubicada en Calle 4 Sur # 2A-56, El Cerrito, matrícula 370-123456, avaluada en cien millones de pesos ($100.000.000). 2. Vehículo Chevrolet Spark, placa ABC123, avaluado en treinta millones de pesos ($30.000.000).',
+  total_activo_bruto_letras: 'Escriba la suma total de todos los bienes en letras. Ej: ciento treinta millones de pesos.',
+  total_activo_bruto_numeros: 'Escriba esa suma en números. Ej: 130.000.000.',
+  pasivo_externo: 'Describa cada deuda con su acreedor y valor. Ej: 1. Obligación a favor del Banco Bancolombia por diez millones de pesos ($10.000.000). Si no hay deudas escriba: No existen pasivos externos.',
+  total_pasivo_externo_letras: 'Escriba la suma total de todas las deudas en letras. Si no hay deudas escriba: cero pesos.',
+  total_pasivo_externo_numeros: 'Escriba esa suma en números. Si no hay deudas escriba: 0.',
+  total_liquidacion_letras: 'Escriba el resultado de restar el pasivo al activo, en letras. Ej: ciento veinte millones de pesos.',
+  total_liquidacion_numeros: 'Escriba ese resultado en números. Ej: 120.000.000.',
+  gananciales_letras: 'Escriba la mitad del total liquidado en letras. Es el total dividido en dos. Ej: sesenta millones de pesos.',
+  gananciales_numeros: 'Escriba esa mitad en números. Ej: 60.000.000.',
+  igualaciones: 'Explique si un cónyuge le pagará algo al otro para igualar lo que reciben. Si no hay igualaciones escriba: No se requieren igualaciones entre los cónyuges.',
+  hijuela1_conyuge: 'Escriba el nombre completo del cónyuge que recibe la primera parte de los bienes.',
+  hijuela1_descripcion: 'Describa cada bien que recibe este cónyuge con su valor. Ej: A. Casa ubicada en Calle 4 Sur # 2A-56, adjudicada en cien millones de pesos ($100.000.000).',
+  hijuela1_total_letras: 'Escriba el valor total de todos los bienes de esta hijuela en letras.',
+  hijuela1_total_numeros: 'Escriba ese valor total en números.',
+  hijuela2_conyuge: 'Escriba el nombre completo del cónyuge que recibe la segunda parte de los bienes.',
+  hijuela2_descripcion: 'Describa cada bien que recibe este cónyuge con su valor.',
+  hijuela2_total_letras: 'Escriba el valor total de todos los bienes de esta hijuela en letras.',
+  hijuela2_total_numeros: 'Escriba ese valor total en números.',
+  conyuge_asume_pasivo: 'Escriba el nombre completo del cónyuge que se compromete a pagar todas las deudas de la sociedad.',
+  // Disolución Sin Bienes Comunes -
+  lugar_registro_matrimonio: 'Escriba el nombre de la notaría o alcaldía donde quedó inscrito el matrimonio. Ej: Notaría Única de El Cerrito / Alcaldía Municipal de Palmira.',
+  hijos: 'Escriba los nombres y fechas de nacimiento de los hijos comunes. Ej: De dicha unión matrimonial nacieron: Juan Pablo Martínez García el 10 de marzo de 2012 en Cali, y Valentina Martínez García el 5 de agosto de 2015 en El Cerrito. Si no tuvieron hijos escriba: No tuvieron hijos comunes de esta unión.',
+  // Sociedad Patrimonial Unión Marital -
+  nombre_companero1: 'Escriba el nombre completo del compañero permanente, tal como aparece en su cédula.',
+  cedula_companero1: 'Escriba el número de cédula del compañero permanente. Solo los números.',
+  expedicion_companero1: 'Escriba la ciudad donde fue expedida su cédula.',
+  domicilio_companero1: 'Escriba la ciudad donde vive actualmente el compañero permanente.',
+  nombre_companero2: 'Escriba el nombre completo de la compañera permanente, tal como aparece en su cédula.',
+  cedula_companero2: 'Escriba el número de cédula de la compañera permanente. Solo los números.',
+  expedicion_companero2: 'Escriba la ciudad donde fue expedida su cédula.',
+  domicilio_companero2: 'Escriba la ciudad donde vive actualmente la compañera permanente.',
+  fecha_sentencia: 'Escriba la fecha completa de la sentencia judicial que declaró la unión marital. Ej: el 15 de enero de 2024.',
+  juzgado_sentencia: 'Escriba el nombre completo del juzgado que declaró la unión marital. Ej: Juzgado Primero de Familia de Cali.',
+  activo_social: 'Describa cada bien numerado con su valor. Ej: 1. Apartamento ubicado en Calle 10 # 5-20, matrícula 370-654321, avaluado en ochenta millones de pesos ($80.000.000). 2. Vehículo Renault Logan, placa XYZ789, avaluado en veinte millones de pesos ($20.000.000).',
+  pasivo_social: 'Describa cada deuda de la sociedad patrimonial numerada con su acreedor y valor. Ej: 1. Obligación a favor del Banco Bancolombia por diez millones de pesos ($10.000.000) a cargo del señor Carlos Torres. Si no hay deudas escriba exactamente: No existen pasivos sociales.',
+  total_pasivo_letras: 'Escriba la suma total de todas las deudas en letras. Si no hay escriba: cero pesos.',
+  total_pasivo_numeros: 'Escriba esa suma en números. Si no hay escriba: 0.',
+  total_activo_liquido_letras: 'Escriba el activo bruto menos el pasivo, en letras.',
+  total_activo_liquido_numeros: 'Escriba ese resultado en números.',
+  hijuela1_companero: 'Escriba el nombre completo del compañero que recibe la primera parte de los bienes.',
+  hijuela1_descripcion: 'Describa cada bien que recibe con su valor.',
+  hijuela2_companero: 'Escriba el nombre completo del compañero que recibe la segunda parte de los bienes.',
+  hijuela2_descripcion: 'Describa cada bien que recibe con su valor.',
+
+  // Capitulaciones Matrimoniales
+  nombre_contrayente1: 'Escriba el nombre completo del primer contrayente tal como aparece en su cédula.',
+  cedula_contrayente1: 'Escriba el número de cédula del primer contrayente. Solo los números.',
+  expedicion_contrayente1: 'Escriba la ciudad donde fue expedida la cédula del primer contrayente.',
+  estado_civil_contrayente1: 'Escriba el estado civil del primer contrayente. Ej: soltero, divorciado, viudo.',
+  domicilio_contrayente1: 'Escriba la ciudad donde vive el primer contrayente.',
+  nombre_contrayente2: 'Escriba el nombre completo del segundo contrayente tal como aparece en su cédula.',
+  cedula_contrayente2: 'Escriba el número de cédula del segundo contrayente. Solo los números.',
+  expedicion_contrayente2: 'Escriba la ciudad donde fue expedida la cédula del segundo contrayente.',
+  estado_civil_contrayente2: 'Escriba el estado civil del segundo contrayente. Ej: soltera, divorciada, viuda.',
+  domicilio_contrayente2: 'Escriba la ciudad donde vive el segundo contrayente.',
+  tipo_matrimonio: 'Escriba el tipo de matrimonio que van a celebrar. Ej: matrimonio civil / matrimonio católico.',
+  fecha_matrimonio: 'Escriba la fecha completa del matrimonio. Ej: el 15 de mayo de 2026.',
+  ciudad_matrimonio: 'Escriba la ciudad donde se celebrará el matrimonio. Ej: El Cerrito, Cali.',
+  bienes_propios_contrayente1: 'Describa los bienes del primer contrayente que quedan FUERA de la sociedad conyugal. Si tiene inmuebles inclúyalos con su matrícula y escritura. Si no tiene escriba: Ninguno.',
+  bienes_propios_contrayente2: 'Describa los bienes del segundo contrayente que quedan FUERA de la sociedad conyugal. Si no tiene escriba: Ninguno.',
+  pasivos_contrayente1: 'Describa las deudas actuales del primer contrayente. Incluya acreedor, monto y vencimiento. Si no tiene escriba: Ninguno.',
+  pasivos_contrayente2: 'Describa las deudas actuales del segundo contrayente. Si no tiene escriba: Ninguno.',
+  bienes_aporte_contrayente1: 'Describa los bienes del primer contrayente que SÍ entran a la sociedad conyugal con su valor estimado. Si no tiene escriba: Ninguno.',
+  bienes_aporte_contrayente2: 'Describa los bienes del segundo contrayente que SÍ entran a la sociedad conyugal con su valor estimado. Si no tiene escriba: Ninguno.',
+  // Poder para Contraer Matrimonio
+  nombre_poderdante: 'Escriba el nombre completo de quien otorga el poder para que otro lo represente en el matrimonio.',
+  cedula_poderdante: 'Escriba el número de cédula de quien otorga el poder.',
+  expedicion_poderdante: 'Escriba la ciudad donde fue expedida la cédula de quien otorga el poder.',
+  domicilio_poderdante: 'Escriba la ciudad donde vive quien otorga el poder.',
+  estado_civil_poderdante: 'Escriba el estado civil de quien otorga el poder. Ej: soltero, divorciado, viudo.',
+  nombre_contrayente: 'Escriba el nombre completo de la persona con quien se va a casar.',
+  cedula_contrayente: 'Escriba la cédula de la persona con quien se va a casar.',
+  expedicion_contrayente: 'Escriba la ciudad de expedición de la cédula de esa persona.',
+  honorarios_apoderado: 'Escriba si el apoderado recibirá honorarios o no. Ej: el presente mandato es gratuito / se pagarán honorarios de quinientos mil pesos ($500.000).',
+  // Solicitud Matrimonio Notario
+  ciudad_nacimiento1: 'Escriba la ciudad de nacimiento del primer contrayente.',
+  profesion1: 'Escriba la profesión u ocupación del primer contrayente. Ej: abogado, comerciante, agricultor, ingeniero.',
+  padre1: 'Escriba el nombre completo del padre del primer contrayente.',
+  madre1: 'Escriba el nombre completo de la madre del primer contrayente.',
+  estado_civil1: 'Escriba el estado civil del primer contrayente. Ej: soltero, divorciado, viudo.',
+  ciudad_nacimiento2: 'Escriba la ciudad de nacimiento del segundo contrayente.',
+  profesion2: 'Escriba la profesión u ocupación del segundo contrayente.',
+  padre2: 'Escriba el nombre completo del padre del segundo contrayente.',
+  madre2: 'Escriba el nombre completo de la madre del segundo contrayente.',
+  estado_civil2: 'Escriba el estado civil del segundo contrayente. Ej: soltera, divorciada, viuda.',
+  parrafo_hijos: 'Si van a legitimar hijos comunes no reconocidos escriba: Así mismo, manifestamos que es nuestra voluntad legitimar a nuestros hijos (nombres y edades de los hijos). Si no aplica escriba: no aplica.',
+  anexos_adicionales: 'Escriba los documentos adicionales que se acompañan. Ej: 3. Copia del registro civil de divorcio. Si no hay adicionales escriba: no aplica.',
+  dia_firma: 'Escriba el día en que se presenta la solicitud. Solo el número. Ej: 21.',
+  mes_firma: 'Escriba el mes en que se presenta. Ej: abril, mayo.',
+  anio_firma: 'Escriba el año. Ej: 2026.',
+  // Solicitud Matrimonio - anexos condicionales
+  anexo_estado_civil1: 'Según el estado civil del PRIMER contrayente: Si es SOLTERO escriba exactamente: nada — Si es DIVORCIADO escriba: 3. Copia del registro civil de matrimonio anterior y de la sentencia de divorcio de [nombre completo]. — Si es VIUDO escriba: 3. Copia del registro civil de defunción del cónyuge anterior de [nombre completo].',
+  anexo_estado_civil2: 'Según el estado civil del SEGUNDO contrayente: Si es SOLTERA escriba exactamente: nada — Si es DIVORCIADA escriba: 4. Copia del registro civil de matrimonio anterior y de la sentencia de divorcio de [nombre completo]. — Si es VIUDA escriba: 4. Copia del registro civil de defunción del cónyuge anterior de [nombre completo].',
+  // Matrimonio Civil ante Notario
+  fecha_nacimiento1: 'Escriba la fecha de nacimiento del primer contrayente. Ej: 15 de marzo de 1990.',
+  fecha_nacimiento2: 'Escriba la fecha de nacimiento del segundo contrayente. Ej: 10 de junio de 1992.',
+  fecha_solicitud: 'Escriba la fecha en que se presentó la solicitud de matrimonio ante la Notaría. Ej: el 5 de abril de 2026.',
+
 }
 
 const DATOS_PRUEBA = {
+  // DERECHO DE FAMILIA — datos de prueba -
+  nombre_notario: 'Carlos Alberto Gómez Herrera',
+  numero_notaria: 'Única',
+  circulo_notarial: 'El Cerrito',
+  nombre_contrayente1: 'Jhon Brandon Martínez Vélez',
+  cedula_contrayente1: '1234567890',
+  expedicion_contrayente1: 'El Cerrito',
+  estado_civil_contrayente1: 'soltero',
+  domicilio_contrayente1: 'El Cerrito',
+  nombre_contrayente2: 'Diana Patricia Ruiz Morales',
+  cedula_contrayente2: '0987654322',
+  expedicion_contrayente2: 'El Cerrito',
+  estado_civil_contrayente2: 'soltera',
+  domicilio_contrayente2: 'El Cerrito',
+  tipo_matrimonio: 'matrimonio civil',
+  fecha_matrimonio: 'el 15 de mayo de 2026',
+  ciudad_matrimonio: 'El Cerrito',
+  bienes_propios_contrayente1: '1. Casa de habitación ubicada en la Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito, con matrícula inmobiliaria 370-123456, adquirida por escritura pública No. 1245 de la Notaría Única de El Cerrito del 15 de mayo de 2018, valorada en cien millones de pesos ($100.000.000). 2. Vehículo Chevrolet Spark, modelo 2022, placa ABC123, valorado en treinta millones de pesos ($30.000.000).',
+  bienes_propios_contrayente2: 'Ninguno.',
+  pasivos_contrayente1: 'Ninguno.',
+  pasivos_contrayente2: 'Ninguno.',
+  bienes_aporte_contrayente1: 'Ninguno.',
+  bienes_aporte_contrayente2: 'Ninguno.',
+  honorarios_apoderado: 'el presente mandato es gratuito',
+  nombre_contrayente: 'Diana Patricia Ruiz Morales',
+  cedula_contrayente: '0987654322',
+  expedicion_contrayente: 'El Cerrito',
+  ciudad_nacimiento1: 'El Cerrito',
+  profesion1: 'abogado',
+  domicilio1: 'El Cerrito',
+  padre1: 'Roberto Martínez Gómez',
+  madre1: 'Ana Lucia Vélez de Martínez',
+  estado_civil1: 'soltero',
+  ciudad_nacimiento2: 'El Cerrito',
+  profesion2: 'contadora pública',
+  domicilio2: 'El Cerrito',
+  padre2: 'Carlos Ruiz Torres',
+  madre2: 'Patricia Morales de Ruiz',
+  estado_civil2: 'soltera',
+  anexo_estado_civil1: 'nada',
+  anexo_estado_civil2: 'nada',
+
+  ciudad_firma: 'El Cerrito',
+  fecha_nacimiento1: '15 de marzo de 1990',
+  fecha_nacimiento2: '10 de junio de 1992',
+  fecha_solicitud: 'el 5 de abril de 2026',
   ciudad: 'El Cerrito', dia: 21, mes: 'abril', anio: 2026,
   nombre_vendedor: 'Jhon Brandon Martínez Vélez', nombre_comprador: 'Alexander García López',
   estado_civil_vendedor: 'soltero', estado_civil_comprador: 'casado',
@@ -1079,6 +1216,167 @@ const DATOS_PRUEBA = {
   garantia_salarios: 'póliza por valor equivalente a tres (3) meses de la nómina total del personal vinculado a la obra',
   notificacion_contratante: 'Carrera 8 # 12-34, Barrio Los Pinos, El Cerrito, Valle del Cauca',
   notificacion_contratista: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito, Valle del Cauca',
+
+  // Carta de Primera y Segunda Convocatoria
+  ciudad_fecha: 'Escriba la ciudad y la fecha completa de la carta. Ej: El Cerrito, 5 de abril de 2026.',
+  interior_apartamento: 'Escriba el número del interior o apartamento del destinatario. Si es una carta circular para todos los propietarios escriba: Circular.',
+  tipo_asamblea: 'Escriba en MAYÚSCULA el tipo de asamblea. Escriba: ORDINARIA si es la reunión anual. Escriba: EXTRAORDINARIA si es por necesidad urgente.',
+  tipo_asamblea_lower: 'Escriba en minúscula el tipo de asamblea. Escriba: ordinaria o extraordinaria.',
+  fecha_asamblea: 'Escriba la fecha completa en que se realizará la asamblea. Ej: el día martes 21 de abril de 2026.',
+  hora_asamblea: 'Escriba la hora de inicio de la asamblea. Ej: 7:00 p.m., 8:00 p.m.',
+  lugar_asamblea: 'Escriba el lugar exacto donde se realizará la asamblea. Ej: el salón comunal del conjunto, ubicado en el primer piso del edificio.',
+  articulo_reglamento: 'Escriba el número del artículo del reglamento de propiedad horizontal del conjunto que regula las convocatorias a asamblea. Lo encuentra en el reglamento. Ej: 27, 35.',
+  orden_del_dia: 'Escriba los puntos del orden del día numerados. Ej: 1. Verificación del quórum. 2. Lectura del acta anterior. 3. Aprobación del orden del día. 4. Elección del presidente y secretario. 5. Informes del administrador y revisor fiscal. 6. Aprobación del balance. 7. Aprobación del presupuesto. 8. Nombramientos. 9. Otros asuntos.',
+  porcentaje_quorum: 'Escriba el porcentaje mínimo de coeficientes de copropiedad que deben estar presentes para que la asamblea pueda sesionar en primera convocatoria. Según la Ley 675 de 2001 es el 51%. Ej: 51, 70.',
+  nombre_administrador: 'Escriba el nombre completo del administrador o administradora que firma la convocatoria.',
+  fecha_primera_convocatoria: 'Escriba la fecha en que se realizó la primera asamblea que fracasó por falta de quórum. Ej: el 21 de abril de 2026.',
+  // Estatutos Fundación Gobernación
+  nombre_entidad: 'Fundación Semillas de Esperanza',
+  duracion_fundacion: 'Escriba la duración de la fundación. Ej: diez (10) años / indefinida / hasta la extinción total de su patrimonio.',
+  descripcion_patrimonio_inicial: 'Describa el patrimonio inicial: quién aporta y cuánto. Ej: la suma de cinco millones de pesos ($5.000.000) aportada por Carlos Pérez Ríos, y la suma de cinco millones de pesos ($5.000.000) aportada por María García López.',
+  num_miembros_asamblea: 'Escriba el número de miembros de la asamblea de delegatarios en letras y número. Ej: cinco (5), tres (3).',
+  quien_designa_miembros: 'Escriba quién designa a los miembros de la asamblea de delegatarios. Ej: los fundadores en reunión conjunta / cada fundador designa un delegado.',
+  ciudad_reuniones: 'Escriba la ciudad donde se realizarán las reuniones ordinarias de la asamblea. Ej: El Cerrito, Cali.',
+  dias_reunion: 'Escriba los primeros días del mes para la reunión ordinaria, en letras y número. Ej: diez (10), quince (15).',
+  mes_reunion: 'Escriba el mes del año en que se realizará la reunión ordinaria anual. Ej: marzo, febrero.',
+  periodo_revisor: 'Escriba el período del revisor fiscal en letras y número. Ej: dos (2) años, un (1) año.',
+  quorum_consejo: 'Escriba el quórum requerido para las reuniones del consejo. Ej: la mayoría absoluta / tres (3) de sus miembros.',
+  votos_disolucion: 'Escriba los votos requeridos para disolver la fundación. Ej: las dos terceras partes / la mayoría absoluta / la totalidad de sus miembros.',
+  entidad_remanente: 'Escriba a qué entidad pasarán los bienes sobrantes al liquidarse. Ej: la entidad de beneficencia que determine la asamblea de delegatarios con domicilio en el municipio.',
+  quien_nombra_secretario: 'Escriba quién nombra al secretario. Ej: el consejo de administración / la asamblea de delegatarios / el director.',
+  // Carta de Primera Convocatoria
+  tipo_asamblea_lower: 'Escriba el tipo de asamblea en minúsculas. Ej: ordinaria o extraordinaria.',
+  articulo_reglamento: 'Escriba el número del artículo del reglamento de propiedad horizontal que regula las convocatorias. Generalmente está entre el artículo 25 y 40. Consúltelo en su reglamento específico.',
+  fecha_asamblea: 'Escriba la fecha completa de la asamblea incluyendo el día de la semana. Ej: viernes 25 de abril de 2026.',
+  hora_asamblea: 'Escriba la hora de inicio. Ej: 7:00 p.m., 8:00 p.m., 9:00 a.m.',
+  lugar_asamblea: 'Escriba el lugar exacto donde se realizará la asamblea. Ej: salón comunal del conjunto, ubicado en el primer piso del edificio.',
+  porcentaje_quorum: 'Escriba el porcentaje de coeficientes requerido para el quórum. Normalmente es 51. Verifique en su reglamento.',
+  telefono_administrador: 'Escriba el teléfono de contacto de la administración. Ej: 315 123 4567.',
+  // Carta de Segunda Convocatoria
+  fecha_primera_convocatoria: 'Escriba la fecha en que se realizó la primera reunión que no pudo sesionar por falta de quórum. Ej: el 8 de abril de 2026.',
+  // Poder especial asamblea
+  tipo_unidad: 'Escriba el tipo de unidad privada del propietario que da el poder. Ej: apartamento / local / oficina / garaje.',
+  numero_unidad: 'Escriba el número del apartamento o unidad. Ej: 101, 302-A, 5.',
+  interior_unidad: 'Escriba el número del interior si aplica. Si no aplica escriba: no aplica.',
+  numero_convocatoria: 'Escriba si es la primera o la segunda convocatoria. Escriba: primera o segunda.',
+  fecha_carta_citacion: 'Escriba la fecha de la carta de convocatoria que recibió el propietario. Ej: 5 de abril de 2026.',
+  dia_firma: 'Escriba el día en que el propietario firma el poder. Solo el número. Ej: 20.',
+  mes_firma: 'Escriba el mes en que firma el poder. Ej: abril, mayo.',
+  anio_firma: 'Escriba el año en que firma el poder. Ej: 2026.',
+  // Carta de Primera Convocatoria
+  ciudad_fecha: 'El Cerrito, 5 de abril de 2026',
+  interior_apartamento: 'Circular',
+  tipo_asamblea: 'ORDINARIA',
+  tipo_asamblea_lower: 'ordinaria',
+  fecha_asamblea: 'el día martes 21 de abril de 2026',
+  hora_asamblea: '7:00 p.m.',
+  lugar_asamblea: 'el salón comunal del conjunto, ubicado en el primer piso del edificio',
+  articulo_reglamento: '27',
+  orden_del_dia: '1. Verificación del quórum. 2. Lectura del acta anterior de la asamblea celebrada el pasado 15 de marzo de 2025. 3. Lectura y aprobación del orden del día. 4. Elección del presidente y secretario de la asamblea. 5. Presentación de informes por parte del administrador y el revisor fiscal. 6. Presentación y aprobación del balance de la vigencia 2025. 7. Presentación y aprobación del proyecto de presupuesto para la vigencia 2026. 8. Nombramiento del administrador y revisor fiscal. 9. Otros asuntos.',
+  porcentaje_quorum: '51',
+  nombre_administrador: 'Patricia Londoño Vera',
+  // Carta de Segunda Convocatoria
+  fecha_primera_convocatoria: 'el 21 de abril de 2026',
+  // Estatutos Fundación Gobernación
+  nombre_entidad: 'Fundación Semillas de Esperanza',
+  duracion_fundacion: 'indefinida',
+  descripcion_patrimonio_inicial: 'la suma de cinco millones de pesos ($5.000.000) aportada por Carlos Eduardo Pérez Ríos, y la suma de cinco millones de pesos ($5.000.000) aportada por María Fernanda García López',
+  num_miembros_asamblea: 'cinco (5)',
+  quien_designa_miembros: 'los fundadores en reunión conjunta, designando cada uno a su delegado personal',
+  ciudad_reuniones: 'El Cerrito',
+  dias_reunion: 'diez (10)',
+  mes_reunion: 'marzo',
+  periodo_revisor: 'dos (2) años',
+  quorum_consejo: 'la mayoría absoluta de sus miembros',
+  votos_disolucion: 'las dos terceras partes',
+  entidad_remanente: 'la entidad de beneficencia sin ánimo de lucro de fines similares que determine la asamblea de delegatarios con domicilio en el municipio de El Cerrito',
+  quien_nombra_secretario: 'el consejo de administración',
+  // Carta de Primera Convocatoria
+  unidad_privada: 'apartamento 101',
+  tipo_asamblea_lower: 'ordinaria',
+  articulo_reglamento: '27',
+  fecha_asamblea: 'viernes 25 de abril de 2026',
+  hora_asamblea: '7:00 p.m.',
+  lugar_asamblea: 'salón comunal del conjunto, ubicado en el primer piso del edificio',
+  porcentaje_quorum: '51',
+  telefono_administrador: '315 123 4567',
+  // Carta de Segunda Convocatoria
+  fecha_primera_convocatoria: 'el 8 de abril de 2026',
+  // Poder especial asamblea
+  tipo_unidad: 'apartamento',
+  numero_unidad: '101',
+  interior_unidad: 'no aplica',
+  numero_convocatoria: 'primera',
+  fecha_carta_citacion: '5 de abril de 2026',
+  dia_firma: 20,
+  mes_firma: 'abril',
+  anio_firma: 2026,
+  // Acta de Asamblea General de Propietarios
+  numero_acta: '001',
+  tipo_asamblea: 'ORDINARIA',
+  nombre_conjunto: 'Conjunto Residencial Los Nogales',
+  hora: '7:00 p.m.',
+  convocante: 'el administrador',
+  fecha_convocatoria: '5 de abril de 2026',
+  lugar_reunion: 'salón comunal del conjunto, ubicado en el primer piso del edificio',
+  secretario_lectura: 'Alexander García López',
+  orden_del_dia: '1. Verificación del quórum. 2. Nombramiento del presidente y secretario. 3. Informe del administrador. 4. Informe del revisor fiscal. 5. Presentación y aprobación del balance vigencia 2025. 6. Presentación y aprobación del presupuesto vigencia 2026. 7. Nombramiento del administrador y consejo de administración. 8. Propuestas, observaciones y comentarios de los asistentes.',
+  lista_asistentes: '1. Jhon Brandon Martínez Vélez - Apto 101 - Coeficiente 5.2%. 2. Alexander García López - Apto 202 - Coeficiente 4.8%. 3. Carlos Eduardo Pérez Ríos - Apto 303 - Coeficiente 5.5%. 4. Diana Patricia Ruiz Morales - Apto 404 - Coeficiente 4.9%. 5. Roberto Salcedo Muñoz - Apto 505 - Coeficiente 5.1%.',
+  nombre_presidente: 'Jhon Brandon Martínez Vélez',
+  cedula_presidente: '1234567890',
+  inmueble_presidente: 'apartamento 101',
+  postulados_presidente: 'Jhon Brandon Martínez Vélez y Carlos Eduardo Pérez Ríos',
+  nombre_secretario: 'Alexander García López',
+  cedula_secretario: '0987654321',
+  inmueble_secretario: 'apartamento 202',
+  postulados_secretario: 'Alexander García López y Diana Patricia Ruiz Morales',
+  nombre_administrador: 'Patricia Londoño Vera',
+  resumen_informe_administrador: 'La administradora informó sobre el mantenimiento realizado a la planta eléctrica, la reparación de la cubierta del quinto piso, el estado de la cartera con tres unidades en mora por valor de $1.800.000, y la renovación del contrato de vigilancia con la empresa Seguridad Total Ltda.',
+  informe_revisor_fiscal: 'El revisor fiscal Andrés Felipe Castillo Mora presentó informe favorable sobre el manejo de los recursos de la copropiedad durante la vigencia 2025, con observación sobre la necesidad de actualizar el libro de contabilidad antes del 30 de mayo de 2026.',
+  fecha_inicio_balance: '1 de enero de 2025',
+  fecha_fin_balance: '31 de diciembre de 2025',
+  resultado_balance: 'El balance fue aprobado por unanimidad con nueve (9) votos a favor y ninguno en contra.',
+  valor_presupuesto: 'cuarenta y ocho millones de pesos ($48.000.000) para la vigencia 2026',
+  resultado_presupuesto: 'El presupuesto fue aprobado por mayoría con ocho (8) votos a favor y uno (1) en contra, quedando establecida una cuota mensual de administración de doscientos mil pesos ($200.000) por unidad.',
+  nombramientos: 'Se ratificó como administradora a Patricia Londoño Vera por el período 2026-2027. Se eligió el nuevo consejo de administración integrado por: Principal 1: Jhon Brandon Martínez Vélez. Principal 2: Carlos Eduardo Pérez Ríos. Principal 3: Diana Patricia Ruiz Morales. Suplente 1: Roberto Salcedo Muñoz. Suplente 2: Ana María Salcedo Vera.',
+  propuestas_observaciones: 'El propietario Carlos Eduardo Pérez Ríos propuso instalar cámaras de seguridad adicionales en el parqueadero, propuesta que fue aprobada por mayoría y quedará incluida en el presupuesto del segundo semestre de 2026.',
+  hora_cierre: '9:30 p.m.',
+  // Reglamento de Propiedad Horizontal
+  nombre_apoderado: 'Luis Fernando Gómez Torres',
+  cedula_apoderado: '0987654321',
+  expedicion_apoderado: 'Cali',
+  domicilio_apoderado: 'El Cerrito',
+  nombre_edificio: 'Edificio Los Nogales',
+  direccion_edificio: 'Carrera 10 # 25-40',
+  ciudad_edificio: 'El Cerrito',
+  numero_lote: '5',
+  manzana: 'A',
+  nombre_urbanizacion: 'Urbanización El Refugio',
+  area_lote: '800',
+  lindero_norte: 'diez (10) metros con la Calle 4 Sur',
+  lindero_sur: 'diez (10) metros con el predio de Roberto Salcedo Muñoz',
+  lindero_oriente: 'doce (12) metros con la Carrera 2A',
+  lindero_occidente: 'doce (12) metros con el predio de Patricia Londoño Vera',
+  num_pisos: 'cinco (5)',
+  num_unidades: 'veinte (20)',
+  propietario_anterior: 'Carlos Eduardo Pérez Ríos',
+  cedula_propietario_anterior: '1122334455',
+  expedicion_propietario_anterior: 'El Cerrito',
+  escritura_anterior: '1245',
+  fecha_escritura_anterior: '10 de marzo de 2019',
+  notaria_anterior: 'Segunda',
+  circulo_anterior: 'El Cerrito',
+  ciudad_registro: 'Cali',
+  fecha_registro: '20 de mayo de 2018',
+  folio_matricula: '370-123456',
+  descripcion_unidades: 'sala-comedor, tres alcobas, dos baños, cocina integral, balcón y garaje',
+  destinacion_inmueble: 'habitacional',
+  dias_pago: 'cinco (5)',
+  num_miembros_consejo: 'tres (3)',
+  quien_nombra_administrador: 'la asamblea general de propietarios',
+  periodo_administrador: 'un (1) año',
+  porcentaje_fondo: 'diez (10)',
+  num_miembros_comite: 'tres (3)',
   // Minuta 29 — Fianza Abierta
   nombre_representante_fiador: 'Carlos Eduardo Pérez Ríos',
   cedula_representante_fiador: '1122334455',
@@ -1280,9 +1578,108 @@ const DATOS_PRUEBA = {
   precio_numeros: '150.000.000',
   forma_pago: 'de contado, en este acto, mediante cheque de gerencia No. 00456 del Banco de Bogotá, sucursal Cali',
   mes_paz_salvo_administracion: 'abril de 2026',
+  // Disolución y Liquidación de Sociedad Conyugal -
+  nombre_conyuge1: 'Jhon Brandon Martínez Vélez',
+  cedula_conyuge1: '1234567890',
+  expedicion_conyuge1: 'El Cerrito',
+  domicilio_conyuge1: 'El Cerrito',
+  nombre_conyuge2: 'Diana Patricia García López',
+  cedula_conyuge2: '0987654321',
+  expedicion_conyuge2: 'Cali',
+  domicilio_conyuge2: 'Cali',
+  tipo_matrimonio: 'civil',
+  fecha_matrimonio: 'el 15 de junio de 2010',
+  lugar_matrimonio: 'Notaría Única de El Cerrito',
+  ciudad_matrimonio: 'El Cerrito',
+  apellidos_sociedad: 'Martínez-García',
+  activo_bruto: '1. Casa de habitación ubicada en la Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito, con matrícula inmobiliaria 370-123456, avaluada en cien millones de pesos ($100.000.000). 2. Vehículo automotor Chevrolet Spark, modelo 2020, placas ABC123, avaluado en treinta millones de pesos ($30.000.000). 3. Saldo en cuenta de ahorros Bancolombia número 123-456789-00, por valor de cinco millones de pesos ($5.000.000).',
+  total_activo_bruto_letras: 'ciento treinta y cinco millones de pesos',
+  total_activo_bruto_numeros: '135.000.000',
+  pasivo_externo: '1. Obligación a favor del Banco Bancolombia, por quince millones de pesos ($15.000.000) moneda legal colombiana, a cargo del señor Jhon Brandon Martínez Vélez.',
+  total_pasivo_externo_letras: 'quince millones de pesos',
+  total_pasivo_externo_numeros: '15.000.000',
+  total_liquidacion_letras: 'ciento veinte millones de pesos',
+  total_liquidacion_numeros: '120.000.000',
+  gananciales_letras: 'sesenta millones de pesos',
+  gananciales_numeros: '60.000.000',
+  igualaciones: 'La cónyuge Diana Patricia García López se obliga a pagar a su cónyuge Jhon Brandon Martínez Vélez la suma de cinco millones de pesos ($5.000.000) a título de igualación, en compensación por el mayor valor de los bienes que recibe.',
+  hijuela1_conyuge: 'Diana Patricia García López',
+  hijuela1_descripcion: 'A. Casa de habitación ubicada en la Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito, con matrícula inmobiliaria 370-123456, adjudicada en la suma de cien millones de pesos ($100.000.000). B. Saldo en cuenta de ahorros Bancolombia número 123-456789-00, adjudicado en la suma de cinco millones de pesos ($5.000.000).',
+  hijuela1_total_letras: 'ciento cinco millones de pesos',
+  hijuela1_total_numeros: '105.000.000',
+  hijuela2_conyuge: 'Jhon Brandon Martínez Vélez',
+  hijuela2_descripcion: 'A. Vehículo automotor Chevrolet Spark, modelo 2020, placas ABC123, motor ABC123456, adjudicado en la suma de treinta millones de pesos ($30.000.000).',
+  hijuela2_total_letras: 'treinta millones de pesos',
+  hijuela2_total_numeros: '30.000.000',
+  conyuge_asume_pasivo: 'Jhon Brandon Martínez Vélez',
+  // Disolución Sin Bienes Comunes -
+  lugar_registro_matrimonio: 'Notaría Única de El Cerrito',
+  hijos: 'De dicha unión matrimonial nació: Santiago Martínez García el 10 de marzo de 2015 en El Cerrito, Valle del Cauca, siendo su nacimiento inscrito en el registro civil de nacimientos de la Notaría Única del Círculo de El Cerrito.',
+  // Sociedad Patrimonial Unión Marital -
+  nombre_companero1: 'Carlos Andrés Torres Salcedo',
+  cedula_companero1: '1122334455',
+  expedicion_companero1: 'Palmira',
+  domicilio_companero1: 'Cali',
+  nombre_companero2: 'Marcela Ruiz Ospina',
+  cedula_companero2: '5544332211',
+  expedicion_companero2: 'Cali',
+  domicilio_companero2: 'Cali',
+  fecha_sentencia: 'el 20 de febrero de 2024',
+  juzgado_sentencia: 'Juzgado Primero de Familia de Cali',
+  activo_social: '1. Apartamento ubicado en la Carrera 8 # 12-34, Barrio Los Pinos, Cali, con matrícula inmobiliaria 370-654321, avaluado en ochenta millones de pesos ($80.000.000). 2. Vehículo automotor Renault Logan, modelo 2019, placas XYZ789, motor XYZ789012, avaluado en veinte millones de pesos ($20.000.000). 3. Saldo en cuenta de ahorros Davivienda número 456-789012-11 a nombre del señor Carlos Andrés Torres Salcedo, por valor de diez millones de pesos ($10.000.000).',
+  pasivo_social: 'No existen pasivos sociales.',
+  total_pasivo_letras: 'cero pesos',
+  total_pasivo_numeros: '0',
+  total_activo_liquido_letras: 'ciento diez millones de pesos',
+  total_activo_liquido_numeros: '110.000.000',
+  hijuela1_companero: 'Marcela Ruiz Ospina',
+  hijuela1_descripcion: 'A. Apartamento ubicado en la Carrera 8 # 12-34, Barrio Los Pinos, Cali, con matrícula inmobiliaria 370-654321, adjudicado en la suma de ochenta millones de pesos ($80.000.000).',
+  hijuela2_companero: 'Carlos Andrés Torres Salcedo',
+  hijuela2_descripcion: 'A. Vehículo automotor Renault Logan, modelo 2019, placas XYZ789, adjudicado en la suma de veinte millones de pesos ($20.000.000). B. Saldo en cuenta de ahorros Davivienda número 456-789012-11, adjudicado en la suma de diez millones de pesos ($10.000.000).',
+
 }
 
 const PASOS_SIGUIENTE = {
+  'capitulaciones-matrimoniales': {
+    titulo: 'Capitulaciones Matrimoniales',
+    pasos: [
+      { num: 1, titulo: 'Deben otorgarse ANTES del matrimonio', descripcion: 'Las capitulaciones matrimoniales son irrevocables desde el día de la celebración del matrimonio. Una vez casados no pueden alterarse, ni siquiera con el consentimiento de ambos cónyuges. Por eso deben firmarse antes de la boda.' },
+      { num: 2, titulo: 'Escritura pública si hay inmuebles — documento privado si no', descripcion: 'Si alguno de los bienes que se incluyen es inmueble, la escritura pública ante Notario es obligatoria. Si solo hay bienes muebles y el valor total no supera los límites legales, puede hacerse por documento privado firmado ante tres testigos.' },
+      { num: 3, titulo: 'El Notario inscribe en el Registro de Varios', descripcion: 'El Notario debe inscribir las capitulaciones en el "registro de varios" que lleva como encargado del registro del estado civil. También hará anotaciones en los registros civiles de nacimiento de los contrayentes.' },
+      { num: 4, titulo: 'Si hay inmuebles: también registrar en Instrumentos Públicos', descripcion: 'Si las capitulaciones afectan bienes inmuebles, deben inscribirse adicionalmente en la Oficina de Registro de Instrumentos Públicos de la ciudad donde están ubicados esos inmuebles.' },
+      { num: 5, titulo: 'Guardar copia de la escritura', descripcion: 'Cada contrayente debe conservar una copia auténtica de la escritura de capitulaciones. Este documento es la prueba legal del régimen de bienes acordado y puede necesitarse años después en caso de separación o divorcio.' },
+    ]
+  },
+  'poder-contraer-matrimonio': {
+    titulo: 'Poder para Contraer Matrimonio',
+    pasos: [
+      { num: 1, titulo: 'El poder debe ser escritura pública obligatoriamente', descripcion: 'A diferencia de otros poderes, el poder para contraer matrimonio debe extenderse por escritura pública ante Notario según el artículo 11 de la Ley 57 de 1887. No es válido como documento privado.' },
+      { num: 2, titulo: 'El poder puede revocarse — pero con límite', descripcion: 'El poder es revocable, pero la revocación NO surte efectos si es notificada al otro contrayente después de celebrado el matrimonio. Para revocar eficazmente debe notificarse antes de la ceremonia.' },
+      { num: 3, titulo: 'El apoderado debe mencionar expresamente con quién se casa', descripcion: 'En el poder debe figurar el nombre completo de la persona con quien se va a contraer matrimonio. Un poder en blanco sin nombre del otro contrayente no es válido para este efecto.' },
+      { num: 4, titulo: 'Presentar el poder original ante el Notario del matrimonio', descripcion: 'El apoderado debe presentar el poder original o copia auténtica ante el Notario que va a celebrar el matrimonio, antes del inicio de la diligencia.' },
+    ]
+  },
+  'solicitud-matrimonio-notario': {
+    titulo: 'Solicitud de Celebración de Matrimonio ante Notario',
+    pasos: [
+      { num: 1, titulo: 'Presentarla ante el Notario del domicilio de cualquiera de los contrayentes', descripcion: 'La solicitud puede presentarse ante el Notario del círculo del domicilio de cualquiera de los dos contrayentes, a elección de ellos.' },
+      { num: 2, titulo: 'El Notario fija un edicto por 5 días hábiles', descripcion: 'Recibida la solicitud con sus anexos, el Notario fija un edicto por cinco días hábiles en la secretaría de su despacho. Durante ese tiempo cualquier persona puede presentar oposición al matrimonio por impedimento legal.' },
+      { num: 3, titulo: 'Documentos que deben acompañar la solicitud', descripcion: 'Siempre: registros civiles de nacimiento de ambos contrayentes (expedidos máximo un mes antes) y fotocopias de cédulas autenticadas. Además: si alguno es DIVORCIADO debe llevar copia del registro civil del matrimonio anterior y de la sentencia de divorcio. Si alguno es VIUDO debe llevar copia del registro civil de defunción del cónyuge anterior. Si hay hijos de matrimonio anterior, también se requiere inventario solemne de bienes.' },
+      { num: 4, titulo: 'Si algún contrayente es de otro municipio', descripcion: 'Si el primer contrayente es vecino de otro municipio o lleva menos de seis meses en el municipio donde se casará, el Notario debe oficiar a su similar del domicilio del contrayente para que fije edicto adicional por quince días.' },
+      { num: 5, titulo: 'Después del edicto viene la escritura pública', descripcion: 'Desfijado el edicto sin oposición y agregado a la solicitud, se procede al otorgamiento de la escritura pública de matrimonio con la cual queda perfeccionado el vínculo.' },
+    ]
+  },
+  'matrimonio-civil-notario': {
+    titulo: 'Matrimonio Civil ante Notario',
+    pasos: [
+      { num: 1, titulo: 'El matrimonio se solemniza mediante escritura pública', descripcion: 'El matrimonio civil ante Notario se perfecciona con el otorgamiento de la escritura pública. No es válido sin este requisito. La escritura se inscribe en el registro civil de matrimonios que lleva la Notaría.' },
+      { num: 2, titulo: 'El Notario comunica el matrimonio al día siguiente', descripcion: 'El Notario debe comunicar a los funcionarios del registro civil la celebración del matrimonio, a más tardar al día siguiente, para que hagan las respectivas notas marginales en los registros civiles de nacimiento de los contrayentes.' },
+      { num: 3, titulo: 'La escritura protocoliza todos los documentos', descripcion: 'Con la escritura se protocolizan la solicitud, los registros civiles de nacimiento, las fotocopias de cédulas autenticadas y el edicto. Todos quedan incorporados al instrumento notarial.' },
+      { num: 4, titulo: 'El matrimonio forma la sociedad conyugal desde ese momento', descripcion: 'Salvo que haya capitulaciones matrimoniales previas, desde el momento de celebrar el matrimonio se forma automáticamente la sociedad conyugal de bienes entre los cónyuges.' },
+      { num: 5, titulo: 'Solicitar copia auténtica del registro civil de matrimonio', descripcion: 'Después del matrimonio, solicite a la Notaría una copia auténtica del registro civil de matrimonio. Este documento es el que acredita legalmente el vínculo matrimonial y lo necesitará para trámites futuros.' },
+    ]
+  },
+
   1: { titulo: 'Promesa de Compraventa de Inmueble', pasos: [{ num: 1, titulo: 'Firmar el documento', descripcion: 'Reúnase con la otra parte y firmen el contrato ante dos testigos mayores de edad. Cada parte se queda con una copia original firmada.' }, { num: 2, titulo: 'Autenticar las firmas (opcional pero recomendado)', descripcion: 'Lleven el documento a cualquier Notaría con sus cédulas de ciudadanía. El notario verificará su identidad y autenticará las firmas. Costo aproximado: entre $15.000 y $30.000 por firma.' }, { num: 3, titulo: 'Guardar el documento en lugar seguro', descripcion: 'Conserve su copia en un lugar seguro. Este documento es prueba legal del acuerdo entre las partes.' }, { num: 4, titulo: 'En la fecha acordada: ir a la Notaría', descripcion: 'El día pactado en el contrato, ambas partes deben ir a la Notaría acordada con: cédulas de ciudadanía, certificado de tradición y libertad del inmueble (vigente, máximo 30 días), paz y salvo de impuesto predial, paz y salvo de valorización, paz y salvo de servicios públicos.' }, { num: 5, titulo: 'Firma de la Escritura Pública', descripcion: 'El Notario redactará y leerá la escritura de compraventa. Ambas partes la firman. El vendedor recibe el pago acordado.' }, { num: 6, titulo: 'Pagar los impuestos de la transacción', descripcion: 'Deben pagarse: el impuesto de registro (aproximadamente 1% del valor del inmueble) y los derechos notariales. Estos gastos se pagan en la Notaría o en el banco autorizado.' }, { num: 7, titulo: 'Registrar la Escritura', descripcion: 'Lleven la escritura a la Oficina de Registro de Instrumentos Públicos de su ciudad. Allí registran el cambio de propietario. A partir de ese momento el comprador es el nuevo dueño legal del inmueble.' }] },
   2: { titulo: 'Promesa de Donación', pasos: [{ num: 1, titulo: 'Firmar el documento', descripcion: 'Reúnanse donante y donatario y firmen el contrato ante dos testigos. Cada parte conserva una copia.' }, { num: 2, titulo: 'Solicitar la Insinuación Notarial', descripcion: 'Deben ir a una Notaría a solicitar la insinuación. Lleven: cédulas de ciudadanía, el contrato de promesa de donación firmado, documentos del bien a donar (escritura, certificado de tradición). El Notario autorizará la donación mediante acto notarial.' }, { num: 3, titulo: 'Firma de la Escritura Pública de Donación', descripcion: 'Una vez aprobada la insinuación, el Notario elabora la escritura de donación. Ambas partes la firman en la Notaría.' }, { num: 4, titulo: 'Pagar los impuestos', descripcion: 'Se deben pagar los derechos notariales y el impuesto de registro. El responsable es quien acordaron en el contrato.' }, { num: 5, titulo: 'Registrar la Escritura', descripcion: 'Lleven la escritura a la Oficina de Registro de Instrumentos Públicos. Allí quedará registrado el nuevo propietario del bien donado.' }] },
   3: { titulo: 'Compraventa de Inmueble', pasos: [{ num: 1, titulo: 'Este contrato debe elevarse a Escritura Pública', descripcion: 'En Colombia, la compraventa de inmuebles SIEMPRE debe hacerse mediante Escritura Pública ante Notario. Este documento es el borrador del acuerdo.' }, { num: 2, titulo: 'Ir a la Notaría', descripcion: 'Ambas partes deben ir a la Notaría acordada con: cédulas de ciudadanía, certificado de tradición y libertad del inmueble (vigente), paz y salvo de impuesto predial, paz y salvo de valorización, paz y salvo de servicios públicos.' }, { num: 3, titulo: 'Firma de la Escritura Pública', descripcion: 'El Notario redacta y lee la escritura. Ambas partes la firman. El vendedor recibe el pago. El comprador recibe la copia de la escritura.' }, { num: 4, titulo: 'Pagar los impuestos', descripcion: 'Se pagan: impuesto de registro (1% del valor), derechos notariales y retención en la fuente si aplica.' }, { num: 5, titulo: 'Registrar la Escritura', descripcion: 'Lleven la escritura a la Oficina de Registro de Instrumentos Públicos. Una vez registrada, el comprador es el propietario legal.' }] },
@@ -1314,6 +1711,18 @@ const PASOS_SIGUIENTE = {
       { num: 4, titulo: 'Solicitar formación de hijuela', descripcion: 'El comprador-cesionario puede solicitar al juzgado que se forme la hijuela correspondiente a su nombre con los bienes adquiridos.' },
       { num: 5, titulo: 'Pagar los impuestos', descripcion: 'Se deben pagar los derechos notariales y el impuesto de registro. Consulte en la Notaría el valor exacto.' },
       { num: 6, titulo: 'Guardar todos los documentos', descripcion: 'Conserve la escritura de cesión, el certificado de registro y las actuaciones del juzgado.' },
+    ]
+  },
+  'estatutos-fundacion-gobernacion': {
+    titulo: 'Estatutos de Fundación o Institución de Utilidad Común',
+    pasos: [
+      { num: 1, titulo: 'Reunir a los fundadores y firmar el acta de constitución', descripcion: 'Los fundadores deben reunirse, aprobar los estatutos y firmar el acta de constitución. Esta acta es previa a los estatutos e incluye los nombramientos iniciales del director, consejo de administración, revisor fiscal y secretario.' },
+      { num: 2, titulo: 'El documento puede ser privado — no necesita escritura pública', descripcion: 'A partir del Decreto 2150 de 1995, la constitución de fundaciones no requiere escritura pública obligatoriamente. Puede hacerse mediante documento privado debidamente reconocido ante notario.' },
+      { num: 3, titulo: 'Registrar en la Cámara de Comercio del domicilio', descripcion: 'La fundación adquiere personería jurídica a partir de su registro en la Cámara de Comercio del lugar de su domicilio principal. Sin este registro no existe legalmente.' },
+      { num: 4, titulo: 'Obtener el NIT ante la DIAN', descripcion: 'Con el certificado de existencia de la Cámara de Comercio, solicite el NIT de la fundación ante la DIAN para cumplir sus obligaciones tributarias como entidad sin ánimo de lucro.' },
+      { num: 5, titulo: 'Inscribir los dignatarios', descripcion: 'El nombramiento del director y demás administradores debe inscribirse en la Cámara de Comercio. Sin esta inscripción el director no puede actuar como representante legal.' },
+      { num: 6, titulo: 'Abrir cuenta bancaria a nombre de la fundación', descripcion: 'Abra una cuenta bancaria exclusivamente a nombre de la fundación para manejar el patrimonio. Los fondos de la fundación no pueden mezclarse con recursos personales de los fundadores.' },
+      { num: 7, titulo: 'Reformas estatutarias', descripcion: 'Cualquier reforma a estos estatutos debe adoptarse conforme lo disponen los mismos estatutos y luego inscribirse en la Cámara de Comercio. También debe informarse a la Gobernación del departamento.' },
     ]
   },
   'estatutos-fundacion': {
@@ -1618,6 +2027,118 @@ const PASOS_SIGUIENTE = {
       { num: 6, titulo: 'El Notario anotará la cancelación en la escritura original', descripcion: 'El Notario que conserva el original de la escritura de hipoteca debe poner una nota diagonal en ese documento, en tinta de color diferente, indicando el número y fecha del instrumento de cancelación. Esto garantiza la consistencia de los registros notariales.' },
     ]
   },
+  'carta-primera-convocatoria': {
+    titulo: 'Carta de Primera Convocatoria a Asamblea',
+    pasos: [
+      { num: 1, titulo: 'Enviar con mínimo 15 días de anticipación', descripcion: 'La Ley 675 de 2001 en su artículo 39 exige que la convocatoria a asamblea ordinaria se haga con no menos de quince (15) días calendario de anticipación. Si la convoca con menos tiempo, la asamblea y sus decisiones pueden ser impugnadas.' },
+      { num: 2, titulo: 'Enviar a TODOS los propietarios sin excepción', descripcion: 'La convocatoria debe enviarse a cada uno de los propietarios de bienes de dominio particular, a la última dirección registrada ante la administración. Si algún propietario no recibe la convocatoria puede impugnar las decisiones tomadas.' },
+      { num: 3, titulo: 'Guardar prueba del envío', descripcion: 'Guarde el comprobante de envío de cada carta — correo certificado, constancia de entrega personal, o acuse de recibo firmado. En caso de impugnación, esa prueba demuestra que la convocatoria fue debidamente realizada.' },
+      { num: 4, titulo: 'Incluir la relación de propietarios morosos', descripcion: 'La ley exige que la convocatoria incluya una relación de los propietarios que adeuden contribuciones a las expensas comunes. Adjunte ese listado a cada carta enviada.' },
+      { num: 5, titulo: 'Si no hay quórum: convocar segunda asamblea', descripcion: 'Si el día de la asamblea no se reúne el porcentaje de coeficientes requerido, la asamblea no puede sesionar en primera convocatoria. Debe convocarse de inmediato a segunda convocatoria, que sesionará el tercer día hábil siguiente con cualquier número de participantes.' },
+      { num: 6, titulo: 'Las decisiones obligan a todos', descripcion: 'Las decisiones adoptadas válidamente en la asamblea obligan a TODOS los propietarios, incluidos quienes no asistieron o votaron en contra. Nadie puede desconocer lo decidido en asamblea debidamente convocada.' },
+    ]
+  },
+  'carta-segunda-convocatoria': {
+    titulo: 'Carta de Segunda Convocatoria a Asamblea',
+    pasos: [
+      { num: 1, titulo: 'La segunda convocatoria debe hacerse el tercer día hábil siguiente', descripcion: 'Según el artículo 41 de la Ley 675 de 2001, si la primera asamblea no pudo sesionar por falta de quórum, la segunda convocatoria debe realizarse el tercer día hábil siguiente. El reglamento de propiedad horizontal puede establecer un plazo diferente.' },
+      { num: 2, titulo: 'En segunda convocatoria no hay quórum mínimo', descripcion: 'La asamblea en segunda convocatoria sesiona y decide válidamente con CUALQUIER número plural de propietarios, sin importar el porcentaje de coeficientes representados. Incluso si solo asisten dos propietarios, la asamblea es válida.' },
+      { num: 3, titulo: 'El orden del día debe ser el mismo de la primera convocatoria', descripcion: 'No se pueden agregar nuevos temas al orden del día en la segunda convocatoria. Solo se tratan los asuntos que estaban en la convocatoria original.' },
+      { num: 4, titulo: 'Guardar prueba del envío', descripcion: 'Al igual que con la primera convocatoria, guarde el comprobante de envío de cada carta. Esto es fundamental para demostrar que la segunda convocatoria fue debidamente notificada a todos los propietarios.' },
+      { num: 5, titulo: 'Las decisiones siguen siendo obligatorias para todos', descripcion: 'Las decisiones tomadas en segunda convocatoria tienen exactamente la misma validez que las de primera convocatoria. Obligan a todos los propietarios incluyendo a los ausentes y a los disidentes.' },
+    ]
+  },
+  'carta-primera-convocatoria': {
+    titulo: 'Carta de Primera Convocatoria a Asamblea',
+    pasos: [
+      { num: 1, titulo: 'Enviar con mínimo 15 días de anticipación', descripcion: 'La Ley 675 de 2001 exige que la convocatoria se envíe con una anticipación no inferior a quince (15) días calendario antes de la reunión. Si no se cumple este plazo, las decisiones de la asamblea pueden ser impugnadas.' },
+      { num: 2, titulo: 'Enviarla a cada propietario en su última dirección registrada', descripcion: 'Debe enviarse una carta individual a cada propietario a la última dirección que cada uno haya registrado ante la administración. No es suficiente pegar un aviso en la cartelera — aunque eso también puede hacerse adicionalmente.' },
+      { num: 3, titulo: 'Guardar constancia del envío', descripcion: 'Guarde el soporte de que cada carta fue enviada o entregada — ya sea la firma de recibido del propietario, el registro de envío por correo certificado o la constancia del mensajero. Esto es fundamental si algún propietario impugna la convocatoria.' },
+      { num: 4, titulo: 'Incluir siempre el orden del día completo', descripcion: 'La ley exige que el orden del día figure en la convocatoria. La asamblea no puede tomar decisiones sobre temas que no estén en el orden del día enviado — excepto la elección de presidente y secretario de la reunión.' },
+      { num: 5, titulo: 'Indicar la relación de propietarios morosos', descripcion: 'El artículo 39 de la Ley 675 de 2001 exige que la convocatoria contenga una relación de los propietarios que adeuden contribuciones a las expensas comunes. Esta lista se puede adjuntar a la carta.' },
+      { num: 6, titulo: 'Si no hay quórum: convocar segunda reunión', descripcion: 'Si transcurrida la hora de inicio no se reúne el quórum requerido, el administrador debe convocar inmediatamente a una segunda reunión que se realizará el tercer día hábil siguiente, a las 8:00 p.m. En esa segunda reunión se decide con cualquier número de propietarios.' },
+    ]
+  },
+  'carta-segunda-convocatoria': {
+    titulo: 'Carta de Segunda Convocatoria a Asamblea',
+    pasos: [
+      { num: 1, titulo: 'La segunda reunión es el tercer día hábil siguiente', descripcion: 'Según el artículo 41 de la Ley 675 de 2001, la segunda reunión debe realizarse el tercer día hábil siguiente al de la primera convocatoria fallida, a las 8:00 p.m. — salvo que el reglamento establezca algo diferente.' },
+      { num: 2, titulo: 'En segunda convocatoria se decide con cualquier número de propietarios', descripcion: 'La gran diferencia con la primera convocatoria es que en la segunda NO se requiere quórum mínimo. La asamblea sesiona y decide válidamente con cualquier número plural de propietarios que asistan, independientemente del porcentaje de coeficientes que representen.' },
+      { num: 3, titulo: 'El orden del día debe ser el mismo', descripcion: 'No se pueden agregar nuevos puntos al orden del día en la segunda convocatoria. Debe ser exactamente el mismo que se envió en la primera.' },
+      { num: 4, titulo: 'Las decisiones también obligan a los ausentes', descripcion: 'Las decisiones que tome la asamblea en segunda convocatoria tienen exactamente la misma validez que las de primera convocatoria — obligan a todos los propietarios, incluso a quienes no asistieron.' },
+      { num: 5, titulo: 'Guardar constancia del envío igual que en la primera', descripcion: 'Aunque sea la segunda convocatoria, debe guardarse la misma constancia de envío a cada propietario. Un propietario no puede impugnar una decisión argumentando que no fue convocado si el administrador tiene la prueba de que sí lo fue.' },
+    ]
+  },
+  'poder-asistir-asamblea': {
+    titulo: 'Poder Especial para Asistir a Asamblea',
+    pasos: [
+      { num: 1, titulo: 'El poder debe presentarse al inicio de la asamblea', descripcion: 'El apoderado debe entregar el poder original al administrador o al presidente de la asamblea antes de que esta comience. Sin presentar el poder, el apoderado no puede votar ni participar en nombre del propietario.' },
+      { num: 2, titulo: 'Verificar los requisitos del reglamento', descripcion: 'Cada reglamento de propiedad horizontal puede exigir requisitos especiales para el poder — como autenticación de firmas, formato específico, o que el apoderado también sea propietario del conjunto. Lea el reglamento antes de firmar.' },
+      { num: 3, titulo: 'El poder es solo para esa asamblea', descripcion: 'Este poder especial es válido únicamente para la reunión indicada. Si el propietario no puede asistir a una asamblea futura, deberá otorgar un nuevo poder específico para esa ocasión.' },
+      { num: 4, titulo: 'Los miembros de órganos de administración no pueden ser apoderados', descripcion: 'La Ley 675 de 2001 establece que los miembros del consejo de administración, el administrador y los empleados de la copropiedad NO pueden representar a propietarios en las asambleas mientras ejerzan sus cargos, salvo sus propios derechos.' },
+      { num: 5, titulo: 'El apoderado tiene los mismos derechos que el propietario', descripcion: 'El apoderado puede participar en todas las deliberaciones, hacer uso de la palabra y votar en todos los puntos del orden del día, exactamente igual que si fuera el propietario en persona.' },
+    ]
+  },
+  'acta-asamblea-propietarios': {
+    titulo: 'Acta de Asamblea General de Propietarios',
+    pasos: [
+      { num: 1, titulo: 'El acta debe firmarse por el presidente y el secretario', descripcion: 'Una vez terminada la asamblea, el presidente y el secretario deben firmar el acta. Es suficiente con estas dos firmas para acreditar la autenticidad del documento según la Ley 675 de 2001.' },
+      { num: 2, titulo: 'Asentar el acta en el libro oficial dentro de 20 días', descripcion: 'El administrador debe asentar el acta en el libro de actas registrado en la Alcaldía municipal dentro de los veinte (20) días hábiles siguientes a la reunión. Pasado este plazo hay incumplimiento legal.' },
+      { num: 3, titulo: 'Poner el acta a disposición de los propietarios', descripcion: 'Dentro de los veinte (20) días hábiles siguientes a la reunión, el administrador debe poner a disposición de todos los propietarios copia completa del texto del acta en la sede de la administración, e informar por escrito de esta situación a cada propietario.' },
+      { num: 4, titulo: 'Las decisiones son obligatorias para todos', descripcion: 'Las decisiones adoptadas válidamente en la asamblea son de obligatorio cumplimiento para TODOS los propietarios, incluso para los ausentes o disidentes. Quien no asistió no puede desconocer las decisiones tomadas.' },
+      { num: 5, titulo: 'Las actas hacen plena prueba y prestan mérito ejecutivo', descripcion: 'Las actas debidamente autenticadas hacen plena prueba de los hechos y actos en ellas contenidos. Sus copias autenticadas prestan mérito ejecutivo para el cobro de cuotas de administración aprobadas.' },
+      { num: 6, titulo: 'Impugnar decisiones dentro del mes siguiente', descripcion: 'Si un propietario considera que alguna decisión viola la ley o el reglamento, puede impugnarla ante la jurisdicción civil dentro del mes siguiente a la fecha de comunicación del acta. Pasado ese plazo la decisión queda en firme.' },
+    ]
+  },
+  'reglamento-propiedad-horizontal': {
+    titulo: 'Reglamento de Propiedad Horizontal',
+    pasos: [
+      { num: 1, titulo: 'Contratar un abogado especialista en propiedad horizontal', descripcion: 'Aunque este modelo es una guía completa, el reglamento de propiedad horizontal es un documento muy técnico que creará la persona jurídica de la copropiedad. Se recomienda asesorarse de un abogado especialista para adaptar el reglamento a las características específicas del edificio.' },
+      { num: 2, titulo: 'Obtener la licencia de construcción antes de otorgar el reglamento', descripcion: 'El artículo 6° de la Ley 675 de 2001 exige que con la escritura se protocolice la licencia de construcción y los planos aprobados por la autoridad competente. Sin estos documentos el Notario no puede otorgar la escritura.' },
+      { num: 3, titulo: 'Calcular los coeficientes de copropiedad', descripcion: 'Antes de ir a la Notaría se deben calcular los coeficientes de copropiedad de cada unidad privada con base en el área privada construida de cada apartamento frente al área total privada del edificio. Estos coeficientes determinan el porcentaje de participación en gastos y votaciones.' },
+      { num: 4, titulo: 'Otorgar la escritura pública ante Notario', descripcion: 'El apoderado de los propietarios comparece ante el Notario con el poder, la licencia de construcción, los planos aprobados, el paz y salvo del lote y los demás documentos del edificio. El Notario redacta y autoriza la escritura.' },
+      { num: 5, titulo: 'CRÍTICO: Registrar la escritura en Instrumentos Públicos', descripcion: 'La escritura de reglamento de propiedad horizontal debe registrarse en la Oficina de Registro de Instrumentos Públicos. Solo a partir de ese registro surge la persona jurídica de la copropiedad y el edificio queda sometido al régimen de propiedad horizontal. Sin el registro no existe legalmente.' },
+      { num: 6, titulo: 'Convocar la primera asamblea de propietarios', descripcion: 'Una vez registrada la escritura, se debe convocar la primera asamblea general de propietarios para elegir el consejo de administración, nombrar al administrador y al revisor fiscal si lo hubiere, y aprobar el presupuesto inicial de administración.' },
+      { num: 7, titulo: 'Abrir cuenta bancaria de la copropiedad', descripcion: 'El administrador debe abrir una cuenta bancaria a nombre de la propiedad horizontal para el manejo de los dineros provenientes de expensas comunes, fondo de imprevistos y demás ingresos de la copropiedad.' },
+    ]
+  },
+
+  'disolucion-liquidacion-sociedad-conyugal': {
+    titulo: 'Disolución y Liquidación de Sociedad Conyugal',
+    pasos: [
+      { num: 1, titulo: 'Ir a la Notaría con todos los documentos', descripcion: 'Ambos cónyuges deben ir personalmente a la Notaría con: cédulas originales, registro civil de matrimonio (expedido máximo un mes antes), documentos de todos los bienes (escrituras, tarjetas de propiedad de vehículos, certificados bancarios) y certificados de las deudas.' },
+      { num: 2, titulo: 'El Notario redacta y lee la escritura', descripcion: 'El Notario redacta la escritura con todos los datos, la lee a ambos cónyuges y verifica que el inventario de bienes y deudas sea correcto. Revise especialmente los avalúos y los nombres antes de firmar.' },
+      { num: 3, titulo: 'Ambos cónyuges firman la escritura', descripcion: 'Los dos cónyuges deben firmar la escritura en presencia del Notario. No puede firmarla solo uno de ellos.' },
+      { num: 4, titulo: 'Pagar los derechos notariales', descripcion: 'Los derechos notariales se calculan sobre el valor total del activo bruto de la sociedad. Consulte la tarifa vigente en la Notaría antes de ir.' },
+      { num: 5, titulo: 'CRÍTICO: Registrar la escritura en Instrumentos Públicos', descripcion: 'Si entre los bienes hay inmuebles, la escritura DEBE registrarse en la Oficina de Registro de Instrumentos Públicos de la ciudad donde están ubicados. Sin este registro la disolución no es oponible a terceros.' },
+      { num: 6, titulo: 'Inscribir en el Registro de Varios', descripcion: 'El Notario debe inscribir la escritura en el registro de varios a su cargo. Esto hace la disolución oponible frente a terceros.' },
+      { num: 7, titulo: 'Si algún cónyuge es comerciante: inscribir en Cámara de Comercio', descripcion: 'Si uno o ambos cónyuges son comerciantes, la liquidación debe inscribirse también en el Registro Mercantil de la Cámara de Comercio correspondiente.' },
+      { num: 8, titulo: 'Actualizar los registros de los bienes adjudicados', descripcion: 'Después del registro, tramite el cambio de propietario de cada bien: inmuebles en Instrumentos Públicos, vehículos en tránsito, actualización de cuentas bancarias.' },
+    ]
+  },
+  'disolucion-sociedad-conyugal-sin-bienes': {
+    titulo: 'Disolución de Sociedad Conyugal Sin Bienes Comunes',
+    pasos: [
+      { num: 1, titulo: 'Ir a la Notaría con los documentos', descripcion: 'Ambos cónyuges deben ir personalmente a la Notaría con sus cédulas originales y el registro civil de matrimonio expedido máximo un mes antes.' },
+      { num: 2, titulo: 'Llevar los registros civiles de nacimiento de los hijos', descripcion: 'Si tienen hijos comunes, deben llevar las copias de los registros civiles de nacimiento para protocolizarlas con la escritura.' },
+      { num: 3, titulo: 'El Notario autoriza la escritura', descripcion: 'Al ser una escritura sin inventario de bienes, es más sencilla y rápida. Aun así, ambos cónyuges deben firmarla en presencia del Notario.' },
+      { num: 4, titulo: 'CRÍTICO: Registrar la escritura', descripcion: 'La escritura debe registrarse en el registro de varios del Notario encargado del registro civil. Sin este registro la separación de bienes no es oponible a terceros.' },
+      { num: 5, titulo: 'Si hay inmuebles individuales a nombre de cada uno', descripcion: 'Aunque no haya bienes comunes, si uno de los cónyuges tiene inmuebles propios, es recomendable verificar que figuren correctamente a su nombre en el certificado de tradición para evitar confusiones futuras.' },
+    ]
+  },
+  'disolucion-liquidacion-sociedad-patrimonial': {
+    titulo: 'Disolución y Liquidación de Sociedad Patrimonial de Unión Marital de Hecho',
+    pasos: [
+      { num: 1, titulo: 'Requisito previo: sentencia judicial que declare la unión marital', descripcion: 'Antes de hacer esta escritura, los compañeros permanentes deben tener una sentencia judicial ejecutoriada del Juzgado de Familia que haya declarado la existencia de la unión marital de hecho. Sin esa sentencia no es posible otorgar la escritura.' },
+      { num: 2, titulo: 'Ir a la Notaría con todos los documentos', descripcion: 'Ambos compañeros deben ir personalmente a la Notaría con: cédulas originales, copia de la sentencia judicial, documentos de todos los bienes (escrituras, tarjetas de propiedad de vehículos, certificados bancarios) y certificados de las deudas.' },
+      { num: 3, titulo: 'El Notario redacta y lee la escritura', descripcion: 'El Notario redacta la escritura incluyendo el inventario de bienes, el pasivo y las adjudicaciones. Ambos compañeros deben verificar que todo esté correcto antes de firmar.' },
+      { num: 4, titulo: 'Ambos compañeros firman la escritura', descripcion: 'Los dos compañeros permanentes deben firmar en presencia del Notario.' },
+      { num: 5, titulo: 'CRÍTICO: Registrar si hay inmuebles', descripcion: 'Si entre los bienes hay inmuebles, la escritura DEBE registrarse en la Oficina de Registro de Instrumentos Públicos de la ciudad donde están ubicados.' },
+      { num: 6, titulo: 'Atención al plazo de prescripción', descripcion: 'Las acciones para disolver y liquidar la sociedad patrimonial prescriben en un año contado desde la separación física, el matrimonio con terceros o la muerte de uno de los compañeros. No deje pasar ese plazo.' },
+      { num: 7, titulo: 'Actualizar los registros de los bienes adjudicados', descripcion: 'Tramite el cambio de propietario de cada bien adjudicado: inmuebles en Instrumentos Públicos, vehículos en tránsito, actualización de cuentas bancarias.' },
+    ]
+  },
+
   'compraventa-propiedad-horizontal': {
     titulo: 'Compraventa de Inmueble bajo Propiedad Horizontal',
     pasos: [
@@ -1768,6 +2289,7 @@ function App() {
   const [showHistorial, setShowHistorial] = useState(false)
   const [busqueda, setBusqueda] = useState('')
   const [errores, setErrores] = useState({})
+  const [expandedSubtitles, setExpandedSubtitles] = useState({})
 
   useEffect(() => {
     fetch('http://localhost:3001/api/minutas')
@@ -1858,12 +2380,12 @@ function App() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{ fontSize: '28px', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.4))' }}>⚖️</div>
           <div>
-            <div style={{ color: '#e2b94a', fontSize: '22px', fontWeight: 'bold', letterSpacing: '2px', textShadow: '0 1px 0 rgba(255,255,255,0.1), 0 2px 4px rgba(0,0,0,0.4)' }}>LEXDOC</div>
-            <div style={{ color: '#a0bcd8', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase' }}>Generador de Minutas Legales · Colombia</div>
+            <div style={{ color: '#e2b94a', fontSize: '30px', fontWeight: 'bold', letterSpacing: '3px', textShadow: '0 1px 0 rgba(255,255,255,0.1), 0 2px 4px rgba(0,0,0,0.4)' }}>LEXDOC</div>
+            <div style={{ color: '#a0bcd8', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>Generador de Minutas Legales · Colombia</div>
           </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-          <div style={{ color: '#a0bcd8', fontSize: '13px', letterSpacing: '1px' }}>
+          <div style={{ color: '#e2b94a', fontSize: '16px', letterSpacing: '1px', fontWeight: 'bold', textShadow: '0 1px 4px rgba(0,0,0,0.5)' }}>
             {categories.reduce((acc, cat) => acc + cat.minutas.length, 0)} minutas disponibles
           </div>
           {historial.length > 0 && (
@@ -1912,34 +2434,60 @@ function App() {
                 </div>
               )}
             </div>
-            <div style={{ color: '#e2b94a', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '14px', borderBottom: '1px solid #2c5282', paddingBottom: '8px', textShadow: '0 1px 3px rgba(0,0,0,0.4)' }}>Categorías de Minutas</div>
+            <div style={{ color: '#e2b94a', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '14px', borderBottom: '1px solid #2c5282', paddingBottom: '8px', textShadow: '0 1px 3px rgba(0,0,0,0.4)' }}>Categorías de Minutas</div>
             {categories.length === 0 && <p style={{ fontSize: '13px', color: '#6b8caa' }}>No hay minutas cargadas aún.</p>}
             {categories.map(cat => (
               <div key={cat.id} style={{ marginBottom: '8px' }}>
                 <div onClick={() => setSelectedCategory(selectedCategory?.id === cat.id ? null : cat)}
                   className={selectedCategory?.id === cat.id ? 'cat-btn-active-3d' : 'cat-btn-3d'}
-                  style={{ cursor: 'pointer', padding: '10px 14px', background: selectedCategory?.id === cat.id ? 'linear-gradient(135deg, #2c5282, #1e3a5c)' : 'linear-gradient(135deg, #162d4a, #0f2238)', border: `1px solid ${selectedCategory?.id === cat.id ? '#e2b94a' : '#2c5282'}`, borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', color: selectedCategory?.id === cat.id ? '#e2b94a' : '#90b4d0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                  style={{ cursor: 'pointer', padding: '10px 14px', background: selectedCategory?.id === cat.id ? 'linear-gradient(135deg, #2c5282, #1e3a5c)' : 'linear-gradient(135deg, #162d4a, #0f2238)', border: `1px solid ${selectedCategory?.id === cat.id ? '#e2b94a' : '#2c5282'}`, borderRadius: '6px', fontSize: '14px', fontWeight: 'bold', color: selectedCategory?.id === cat.id ? '#e2b94a' : '#90b4d0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
                   <span>📂 {cat.name}</span>
                   <span style={{ fontSize: '11px', background: '#e2b94a22', color: '#e2b94a', padding: '2px 8px', borderRadius: '10px', boxShadow: '0 1px 3px rgba(0,0,0,0.2)' }}>{cat.minutas.length}</span>
                 </div>
                 {selectedCategory?.id === cat.id && (
-                  <div style={{ marginLeft: '8px', borderLeft: '2px solid #e2b94a55', paddingLeft: '8px', marginTop: '4px' }}>
+                  <div style={{ marginTop: '6px' }}>
                     {(() => {
-                      let lastSubtitle = null
-                      return cat.minutas.map(m => {
-                        const showSubtitle = m.subtitle && m.subtitle !== lastSubtitle
-                        if (showSubtitle) lastSubtitle = m.subtitle
+                      const subtitleGroups = {}
+                      const subtitleOrder = []
+                      cat.minutas.forEach(m => {
+                        const sub = m.subtitle || 'General'
+                        if (!subtitleGroups[sub]) { subtitleGroups[sub] = []; subtitleOrder.push(sub) }
+                        subtitleGroups[sub].push(m)
+                      })
+                      return subtitleOrder.map((sub, idx) => {
+                        const key = cat.id + '::' + sub
+                        const isExpanded = expandedSubtitles[key] === true
                         return (
-                          <div key={m.id}>
-                            {showSubtitle && (
-                              <div style={{ color: '#e2b94a88', fontSize: '9px', fontWeight: 'bold', letterSpacing: '1.5px', textTransform: 'uppercase', padding: '10px 10px 4px 10px', borderTop: lastSubtitle !== m.subtitle ? '1px solid #ffffff11' : 'none', marginTop: '4px' }}>
-                                — {m.subtitle}
+                          <div key={sub} style={{ marginBottom: '4px' }}>
+                            <div onClick={() => setExpandedSubtitles(prev => ({ ...prev, [key]: !isExpanded }))}
+                              style={{ cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', padding: '10px 12px', background: 'linear-gradient(135deg, #162d4a, #0f2238)', border: '1px solid #2c5282', borderRadius: '5px', marginBottom: '2px', transition: 'all 0.15s ease', textAlign: 'center' }}>
+                              <span style={{ fontSize: '13px', fontWeight: 'bold', color: '#e2b94a', letterSpacing: '0.8px', textTransform: 'uppercase' }}>📁 {sub} {isExpanded ? '▲' : '▼'}</span>
+                            </div>
+                            {isExpanded && (
+                              <div style={{ marginLeft: '8px', borderLeft: '2px solid #e2b94a44', paddingLeft: '8px' }}>
+                                {subtitleGroups[sub].map(m => (
+                                  <div key={m.id} onClick={() => handleSelectMinuta(m)}
+                                    style={{ cursor: 'pointer', padding: '7px 10px', background: selectedMinuta?.id === m.id ? 'linear-gradient(135deg, #2c5282, #1e3a5c)' : 'transparent', borderRadius: '4px', fontSize: '13px', color: selectedMinuta?.id === m.id ? '#e2b94a' : '#90b4d0', marginBottom: '2px', lineHeight: '1.4', borderLeft: selectedMinuta?.id === m.id ? '2px solid #e2b94a' : '2px solid transparent', transition: 'all 0.15s ease' }}>
+                                    <div style={{ marginBottom: m.tipo_tramite ? '4px' : '0' }}>{m.title}</div>
+                                    {m.tipo_tramite && (() => {
+                                      const b = getBadgeTramite(m.tipo_tramite)
+                                      return (
+                                        <span style={{
+                                          display: 'inline-flex', alignItems: 'center', gap: '4px',
+                                          background: b.bg, border: `1px solid ${b.border}`,
+                                          borderRadius: '4px', padding: '2px 7px',
+                                          fontSize: '9px', fontWeight: 'bold', color: b.color,
+                                          letterSpacing: '0.5px', boxShadow: b.shadow
+                                        }}>
+                                          <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: b.dot, boxShadow: `0 0 4px ${b.dot}`, flexShrink: 0 }} />
+                                          {b.label}
+                                        </span>
+                                      )
+                                    })()}
+                                  </div>
+                                ))}
                               </div>
                             )}
-                            <div onClick={() => handleSelectMinuta(m)}
-                              style={{ cursor: 'pointer', padding: '8px 10px', background: selectedMinuta?.id === m.id ? 'linear-gradient(135deg, #2c5282, #1e3a5c)' : 'transparent', borderRadius: '4px', fontSize: '12px', color: selectedMinuta?.id === m.id ? '#e2b94a' : '#90b4d0', marginBottom: '2px', lineHeight: '1.4', borderLeft: selectedMinuta?.id === m.id ? '2px solid #e2b94a' : '2px solid transparent', boxShadow: selectedMinuta?.id === m.id ? '0 2px 6px rgba(0,0,0,0.2)' : 'none', transition: 'all 0.15s ease' }}>
-                              {m.title}
-                            </div>
                           </div>
                         )
                       })
@@ -1976,6 +2524,25 @@ function App() {
                 <div style={{ color: '#7a9ab5', fontSize: '12px', marginTop: '6px' }}>
                   {minutaDetail.fields.length} campos requeridos · Pasa el mouse sobre <span style={{ background: 'linear-gradient(135deg, #c9a030, #b8962e)', color: '#fff', borderRadius: '50%', padding: '0 4px', fontSize: '10px', fontWeight: 'bold', boxShadow: '0 1px 3px rgba(0,0,0,0.3)' }}>?</span> para instrucciones
                 </div>
+                {minutaDetail.tipo_tramite && (() => {
+                  const b = getBadgeTramite(minutaDetail.tipo_tramite)
+                  return (
+                    <div style={{ marginTop: '10px' }}>
+                      <span title={b.tooltip} style={{
+                        display: 'inline-flex', alignItems: 'center', gap: '7px',
+                        background: b.bg, border: `1px solid ${b.border}`,
+                        borderBottom: `2px solid ${b.border}`,
+                        borderRadius: '6px', padding: '6px 14px',
+                        fontSize: '11px', fontWeight: 'bold', color: b.color,
+                        letterSpacing: '1px', cursor: 'help', boxShadow: b.shadow
+                      }}>
+                        <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: b.dot, boxShadow: `0 0 6px ${b.dot}`, flexShrink: 0 }} />
+                        {b.label}
+                        <span style={{ marginLeft: '4px', fontSize: '10px', opacity: 0.7, fontWeight: 'normal' }}>ⓘ</span>
+                      </span>
+                    </div>
+                  )
+                })()}
               </div>
 
               {camposConError > 0 && (

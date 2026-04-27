@@ -1,13 +1,17 @@
 const express = require('express');
 const router = express.Router();
-const { Document, Packer, Paragraph, TextRun, AlignmentType, Table, TableRow, TableCell, WidthType, BorderStyle } = require('docx');
+const { Document, Packer, Paragraph, TextRun, AlignmentType } = require('docx');
 
 function generateFromTemplate(template, data) {
   let filled = template;
   Object.entries(data).forEach(([key, value]) => {
     const regex = new RegExp(`{{${key}}}`, 'g');
-    filled = filled.replace(regex, value || '___________');
+    // Si el valor es 'nada' o está vacío, reemplazar por cadena vacía
+    const val = (!value || value.toString().trim().toLowerCase() === 'nada') ? '' : value;
+    filled = filled.replace(regex, val || '___________');
   });
+  // Limpiar líneas vacías dobles que queden después de eliminar campos
+  filled = filled.replace(/\n{3,}/g, '\n\n');
   return filled;
 }
 
@@ -18,8 +22,8 @@ function cleanTitle(title) {
 }
 
 function toHTML(filledText, title) {
-  const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:', 'PRIMERA.', 'SEGUNDA.', 'TERCERA.', 'CUARTA.', 'QUINTA.', 'SEXTA.', 'SÉPTIMA.', 'OCTAVA.'];
-  const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE', 'EL VENDEDOR', 'EL COMPRADOR', 'LAS COMPARECIENTES'];
+  const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:', 'PRIMERA.', 'SEGUNDA.', 'TERCERA.', 'CUARTA.', 'QUINTA.', 'SEXTA.', 'SÉPTIMA.', 'OCTAVA.', 'PRIMERO.', 'SEGUNDO.', 'TERCERO.', 'CUARTO.', 'QUINTO.', 'SEXTO.', 'SÉPTIMO.', 'OCTAVO.', 'NOVENO.'];
+  const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE', 'EL VENDEDOR', 'EL COMPRADOR', 'LAS COMPARECIENTES', 'COMPARECIENTES:', 'PODERDANTE:', 'CONTRAYENTES:'];
 
   const parrafos = filledText
     .split('\n')
@@ -78,8 +82,8 @@ function toHTML(filledText, title) {
 }
 
 async function toDocx(filledText, title) {
-  const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:', 'PRIMERA.', 'SEGUNDA.', 'TERCERA.', 'CUARTA.', 'QUINTA.', 'SEXTA.', 'SÉPTIMA.', 'OCTAVA.'];
-  const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE', 'EL VENDEDOR', 'EL COMPRADOR', 'LAS COMPARECIENTES'];
+  const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:', 'PRIMERA.', 'SEGUNDA.', 'TERCERA.', 'CUARTA.', 'QUINTA.', 'SEXTA.', 'SÉPTIMA.', 'OCTAVA.', 'PRIMERO.', 'SEGUNDO.', 'TERCERO.', 'CUARTO.', 'QUINTO.'];
+  const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE', 'EL VENDEDOR', 'EL COMPRADOR', 'LAS COMPARECIENTES', 'COMPARECIENTES:', 'PODERDANTE:', 'CONTRAYENTES:'];
 
   const lines = filledText
     .split('\n')
