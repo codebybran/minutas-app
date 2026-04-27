@@ -5,32 +5,162 @@
     "subtitle": "Matrimonio",
     "tipo_tramite": "Notarial",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad", "type": "text", "required": true },
-      { "name": "departamento", "label": "Departamento", "type": "text", "required": true },
-      { "name": "dia", "label": "Día (número)", "type": "text", "required": true },
-      { "name": "mes", "label": "Mes (letras)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año", "type": "text", "required": true },
-      { "name": "notario", "label": "Nombre o número del Notario", "type": "text", "required": true },
-      { "name": "circulo", "label": "Círculo notarial (ciudad)", "type": "text", "required": true },
-      { "name": "nombre_contrayente1", "label": "Nombre completo del primer contrayente", "type": "text", "required": true },
-      { "name": "cedula_contrayente1", "label": "Cédula del primer contrayente", "type": "text", "required": true },
-      { "name": "expedicion_contrayente1", "label": "Ciudad expedición cédula primer contrayente", "type": "text", "required": true },
-      { "name": "estado_civil_contrayente1", "label": "Estado civil del primer contrayente", "type": "text", "required": true },
-      { "name": "domicilio_contrayente1", "label": "Ciudad de domicilio del primer contrayente", "type": "text", "required": true },
-      { "name": "nombre_contrayente2", "label": "Nombre completo del segundo contrayente", "type": "text", "required": true },
-      { "name": "cedula_contrayente2", "label": "Cédula del segundo contrayente", "type": "text", "required": true },
-      { "name": "expedicion_contrayente2", "label": "Ciudad expedición cédula segundo contrayente", "type": "text", "required": true },
-      { "name": "estado_civil_contrayente2", "label": "Estado civil del segundo contrayente", "type": "text", "required": true },
-      { "name": "domicilio_contrayente2", "label": "Ciudad de domicilio del segundo contrayente", "type": "text", "required": true },
-      { "name": "tipo_matrimonio", "label": "Tipo de matrimonio (civil o católico)", "type": "text", "required": true },
-      { "name": "fecha_matrimonio", "label": "Fecha del matrimonio", "type": "text", "required": true },
-      { "name": "ciudad_matrimonio", "label": "Ciudad donde se celebrará el matrimonio", "type": "text", "required": true },
-      { "name": "bienes_propios_contrayente1", "label": "Bienes propios del primer contrayente (fuera de la sociedad)", "type": "text", "required": true },
-      { "name": "bienes_propios_contrayente2", "label": "Bienes propios del segundo contrayente (fuera de la sociedad)", "type": "text", "required": true },
-      { "name": "pasivos_contrayente1", "label": "Deudas actuales del primer contrayente", "type": "text", "required": true },
-      { "name": "pasivos_contrayente2", "label": "Deudas actuales del segundo contrayente", "type": "text", "required": true },
-      { "name": "bienes_aporte_contrayente1", "label": "Bienes del primer contrayente que SÍ entran a la sociedad", "type": "text", "required": true },
-      { "name": "bienes_aporte_contrayente2", "label": "Bienes del segundo contrayente que SÍ entran a la sociedad", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_contrayente1",
+        "label": "Nombre completo del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_contrayente1",
+        "label": "Cédula del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_contrayente1",
+        "label": "Ciudad expedición cédula primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_contrayente1",
+        "label": "Estado civil del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_contrayente1",
+        "label": "Ciudad de domicilio del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_contrayente2",
+        "label": "Nombre completo del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_contrayente2",
+        "label": "Cédula del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_contrayente2",
+        "label": "Ciudad expedición cédula segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_contrayente2",
+        "label": "Estado civil del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_contrayente2",
+        "label": "Ciudad de domicilio del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_matrimonio",
+        "label": "Tipo de matrimonio (civil o católico)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_matrimonio",
+        "label": "Fecha del matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_matrimonio",
+        "label": "Ciudad donde se celebrará el matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "bienes_propios_contrayente1",
+        "label": "Bienes propios del primer contrayente (fuera de la sociedad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "bienes_propios_contrayente2",
+        "label": "Bienes propios del segundo contrayente (fuera de la sociedad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pasivos_contrayente1",
+        "label": "Deudas actuales del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pasivos_contrayente2",
+        "label": "Deudas actuales del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "bienes_aporte_contrayente1",
+        "label": "Bienes del primer contrayente que SÍ entran a la sociedad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "bienes_aporte_contrayente2",
+        "label": "Bienes del segundo contrayente que SÍ entran a la sociedad",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, comparecieron: {{nombre_contrayente1}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_contrayente1}} de {{expedicion_contrayente1}}, de estado civil {{estado_civil_contrayente1}}, domiciliado en {{domicilio_contrayente1}}, y {{nombre_contrayente2}}, mayor de edad, identificada con la cédula de ciudadanía Nº. {{cedula_contrayente2}} de {{expedicion_contrayente2}}, de estado civil {{estado_civil_contrayente2}}, domiciliada en {{domicilio_contrayente2}}, quienes manifestaron lo siguiente:\n\nPRIMERA. Objeto.— Que próximos a contraer {{tipo_matrimonio}} el {{fecha_matrimonio}} en la ciudad de {{ciudad_matrimonio}}, acuerdan celebrar capitulaciones matrimoniales de conformidad con los artículos 1771 y siguientes del Código Civil colombiano, con el fin de establecer el régimen de bienes que regirá su sociedad conyugal.\n\nSEGUNDA. Bienes propios del primer contrayente.— El contrayente {{nombre_contrayente1}} declara como bienes de su exclusiva propiedad, que no entrarán a formar parte de la sociedad conyugal, los siguientes:\n\n{{bienes_propios_contrayente1}}\n\nTERCERA. Bienes propios del segundo contrayente.— La contrayente {{nombre_contrayente2}} declara como bienes de su exclusiva propiedad, que no entrarán a formar parte de la sociedad conyugal, los siguientes:\n\n{{bienes_propios_contrayente2}}\n\nCUARTA. Pasivos del primer contrayente.— El contrayente {{nombre_contrayente1}} declara las siguientes deudas actualmente a su cargo:\n\n{{pasivos_contrayente1}}\n\nQUINTA. Pasivos del segundo contrayente.— La contrayente {{nombre_contrayente2}} declara las siguientes deudas actualmente a su cargo:\n\n{{pasivos_contrayente2}}\n\nSEXTA. Bienes que aporta el primer contrayente a la sociedad conyugal.— El contrayente {{nombre_contrayente1}} aporta a la sociedad conyugal los siguientes bienes:\n\n{{bienes_aporte_contrayente1}}\n\nSÉPTIMA. Bienes que aporta el segundo contrayente a la sociedad conyugal.— La contrayente {{nombre_contrayente2}} aporta a la sociedad conyugal los siguientes bienes:\n\n{{bienes_aporte_contrayente2}}\n\nOCTAVA. Irrevocabilidad.— Las presentes capitulaciones matrimoniales son irrevocables desde el día de la celebración del matrimonio y no podrán ser alteradas durante el mismo, ni aun con el consentimiento de ambos contrayentes, de conformidad con el artículo 1774 del Código Civil.\n\nNOVENA. Registro.— Los otorgantes autorizan al Notario para que inscriba las presentes capitulaciones en el registro de varios a su cargo, así como en los registros civiles de nacimiento de los contrayentes.\n\nUna vez leído el presente instrumento, en señal de asentimiento lo firman junto con el Notario.\n\nPrimer contrayente: _______________________\n\nSegundo contrayente: _______________________\n\nNotario: _______________________"
   },
@@ -40,25 +170,120 @@
     "subtitle": "Matrimonio",
     "tipo_tramite": "Notarial",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad", "type": "text", "required": true },
-      { "name": "departamento", "label": "Departamento", "type": "text", "required": true },
-      { "name": "dia", "label": "Día (número)", "type": "text", "required": true },
-      { "name": "mes", "label": "Mes (letras)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año", "type": "text", "required": true },
-      { "name": "notario", "label": "Nombre o número del Notario", "type": "text", "required": true },
-      { "name": "circulo", "label": "Círculo notarial (ciudad)", "type": "text", "required": true },
-      { "name": "nombre_poderdante", "label": "Nombre completo del poderdante", "type": "text", "required": true },
-      { "name": "cedula_poderdante", "label": "Cédula del poderdante", "type": "text", "required": true },
-      { "name": "expedicion_poderdante", "label": "Ciudad expedición cédula del poderdante", "type": "text", "required": true },
-      { "name": "domicilio_poderdante", "label": "Ciudad de domicilio del poderdante", "type": "text", "required": true },
-      { "name": "estado_civil_poderdante", "label": "Estado civil del poderdante", "type": "text", "required": true },
-      { "name": "nombre_apoderado", "label": "Nombre completo del apoderado", "type": "text", "required": true },
-      { "name": "cedula_apoderado", "label": "Cédula del apoderado", "type": "text", "required": true },
-      { "name": "expedicion_apoderado", "label": "Ciudad expedición cédula del apoderado", "type": "text", "required": true },
-      { "name": "nombre_contrayente", "label": "Nombre completo de la persona con quien se va a casar", "type": "text", "required": true },
-      { "name": "cedula_contrayente", "label": "Cédula de esa persona", "type": "text", "required": true },
-      { "name": "expedicion_contrayente", "label": "Ciudad expedición cédula de esa persona", "type": "text", "required": true },
-      { "name": "honorarios_apoderado", "label": "Honorarios del apoderado", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre completo del poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Cédula del poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_poderdante",
+        "label": "Ciudad expedición cédula del poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_poderdante",
+        "label": "Ciudad de domicilio del poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_poderdante",
+        "label": "Estado civil del poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado",
+        "label": "Nombre completo del apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_apoderado",
+        "label": "Cédula del apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_apoderado",
+        "label": "Ciudad expedición cédula del apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_contrayente",
+        "label": "Nombre completo de la persona con quien se va a casar",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_contrayente",
+        "label": "Cédula de esa persona",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_contrayente",
+        "label": "Ciudad expedición cédula de esa persona",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "honorarios_apoderado",
+        "label": "Honorarios del apoderado",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, compareció: {{nombre_poderdante}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_poderdante}} de {{expedicion_poderdante}}, de estado civil {{estado_civil_poderdante}}, domiciliado en {{domicilio_poderdante}}, quien manifestó lo siguiente:\n\nPRIMERA. Poder.— Que por medio de la presente escritura pública confiere poder especial, amplio y suficiente a {{nombre_apoderado}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_apoderado}} de {{expedicion_apoderado}}, para que en su nombre y representación contraiga matrimonio (civil o católico) con {{nombre_contrayente}}, identificado(a) con la cédula de ciudadanía Nº. {{cedula_contrayente}} de {{expedicion_contrayente}}.\n\nSEGUNDA. Facultades.— El apoderado queda plenamente facultado para suscribir el acta o escritura de matrimonio, hacer las declaraciones que sean necesarias ante el Notario o funcionario competente, y en general realizar todos los actos propios de la celebración del matrimonio.\n\nTERCERA. Honorarios.— {{honorarios_apoderado}}\n\nCUARTA. Revocatoria.— El poderdante se reserva el derecho de revocar el presente poder en cualquier momento antes de la celebración del matrimonio, mediante notificación escrita al apoderado.\n\nUna vez leído el presente instrumento, en señal de asentimiento lo firma junto con el Notario.\n\nPoderdante: _______________________\n\nNotario: _______________________"
   },
@@ -68,31 +293,156 @@
     "subtitle": "Matrimonio",
     "tipo_tramite": "Notarial",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad", "type": "text", "required": true },
-      { "name": "dia", "label": "Día", "type": "text", "required": true },
-      { "name": "mes", "label": "Mes", "type": "text", "required": true },
-      { "name": "anio", "label": "Año", "type": "text", "required": true },
-      { "name": "notario", "label": "Nombre o número del Notario", "type": "text", "required": true },
-      { "name": "circulo", "label": "Círculo notarial (ciudad)", "type": "text", "required": true },
-      { "name": "nombre_contrayente1", "label": "Nombre completo del primer contrayente", "type": "text", "required": true },
-      { "name": "cedula_contrayente1", "label": "Cédula del primer contrayente", "type": "text", "required": true },
-      { "name": "ciudad_nacimiento1", "label": "Ciudad de nacimiento del primer contrayente", "type": "text", "required": true },
-      { "name": "profesion1", "label": "Profesión u ocupación del primer contrayente", "type": "text", "required": true },
-      { "name": "domicilio1", "label": "Ciudad de domicilio del primer contrayente", "type": "text", "required": true },
-      { "name": "padre1", "label": "Nombre completo del padre del primer contrayente", "type": "text", "required": true },
-      { "name": "madre1", "label": "Nombre completo de la madre del primer contrayente", "type": "text", "required": true },
-      { "name": "estado_civil1", "label": "Estado civil del primer contrayente", "type": "text", "required": true },
-      { "name": "nombre_contrayente2", "label": "Nombre completo del segundo contrayente", "type": "text", "required": true },
-      { "name": "cedula_contrayente2", "label": "Cédula del segundo contrayente", "type": "text", "required": true },
-      { "name": "ciudad_nacimiento2", "label": "Ciudad de nacimiento del segundo contrayente", "type": "text", "required": true },
-      { "name": "profesion2", "label": "Profesión u ocupación del segundo contrayente", "type": "text", "required": true },
-      { "name": "domicilio2", "label": "Ciudad de domicilio del segundo contrayente", "type": "text", "required": true },
-      { "name": "padre2", "label": "Nombre completo del padre del segundo contrayente", "type": "text", "required": true },
-      { "name": "madre2", "label": "Nombre completo de la madre del segundo contrayente", "type": "text", "required": true },
-      { "name": "estado_civil2", "label": "Estado civil del segundo contrayente", "type": "text", "required": true },
-      { "name": "parrafo_hijos", "label": "Legitimación de hijos (si no aplica escriba: no aplica)", "type": "text", "required": true },
-      { "name": "anexo_estado_civil1", "label": "Anexo estado civil primer contrayente (ver instrucción ?)", "type": "text", "required": true },
-      { "name": "anexo_estado_civil2", "label": "Anexo estado civil segundo contrayente (ver instrucción ?)", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_contrayente1",
+        "label": "Nombre completo del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_contrayente1",
+        "label": "Cédula del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_nacimiento1",
+        "label": "Ciudad de nacimiento del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "profesion1",
+        "label": "Profesión u ocupación del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio1",
+        "label": "Ciudad de domicilio del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "padre1",
+        "label": "Nombre completo del padre del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "madre1",
+        "label": "Nombre completo de la madre del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil1",
+        "label": "Estado civil del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_contrayente2",
+        "label": "Nombre completo del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_contrayente2",
+        "label": "Cédula del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_nacimiento2",
+        "label": "Ciudad de nacimiento del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "profesion2",
+        "label": "Profesión u ocupación del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio2",
+        "label": "Ciudad de domicilio del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "padre2",
+        "label": "Nombre completo del padre del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "madre2",
+        "label": "Nombre completo de la madre del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil2",
+        "label": "Estado civil del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "parrafo_hijos",
+        "label": "Legitimación de hijos (si no aplica escriba: no aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anexo_estado_civil1",
+        "label": "Anexo estado civil primer contrayente (ver instrucción ?)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anexo_estado_civil2",
+        "label": "Anexo estado civil segundo contrayente (ver instrucción ?)",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "Señor Notario {{notario}} del Círculo de {{circulo}}:\n\nLos suscritos {{nombre_contrayente1}}, mayor de edad, con cédula de ciudadanía Nº. {{cedula_contrayente1}}, nacido en {{ciudad_nacimiento1}}, de profesión {{profesion1}}, domiciliado en {{domicilio1}}, hijo de {{padre1}} y de {{madre1}}, de estado civil {{estado_civil1}}, y {{nombre_contrayente2}}, mayor de edad, con cédula de ciudadanía Nº. {{cedula_contrayente2}}, nacida en {{ciudad_nacimiento2}}, de profesión {{profesion2}}, domiciliada en {{domicilio2}}, hija de {{padre2}} y de {{madre2}}, de estado civil {{estado_civil2}}, respetuosamente solicitamos la celebración de nuestro matrimonio civil ante su despacho, para lo cual manifestamos:\n\nPRIMERO.— Que es nuestra libre y espontánea voluntad contraer matrimonio civil entre nosotros.\n\nSEGUNDO.— Que no existe entre nosotros ninguno de los impedimentos establecidos por la ley para contraer matrimonio.\n\nTERCERO.— {{parrafo_hijos}}\n\nCUARTO.— Que para los efectos legales, acompañamos a esta solicitud los siguientes documentos:\n1. Copia del registro civil de nacimiento del señor {{nombre_contrayente1}}.\n2. Copia del registro civil de nacimiento de la señora {{nombre_contrayente2}}.\n{{anexo_estado_civil1}}\n{{anexo_estado_civil2}}\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nAtentamente,\n\nPrimer contrayente: _______________________\n{{nombre_contrayente1}}\nC.C. Nº. {{cedula_contrayente1}}\n\nSegundo contrayente: _______________________\n{{nombre_contrayente2}}\nC.C. Nº. {{cedula_contrayente2}}"
   },
@@ -102,32 +452,162 @@
     "subtitle": "Matrimonio",
     "tipo_tramite": "Notarial",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad", "type": "text", "required": true },
-      { "name": "departamento", "label": "Departamento", "type": "text", "required": true },
-      { "name": "dia", "label": "Día (número)", "type": "text", "required": true },
-      { "name": "mes", "label": "Mes (letras)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año", "type": "text", "required": true },
-      { "name": "notario", "label": "Nombre o número del Notario", "type": "text", "required": true },
-      { "name": "circulo", "label": "Círculo notarial (ciudad)", "type": "text", "required": true },
-      { "name": "nombre_contrayente1", "label": "Nombre completo del primer contrayente", "type": "text", "required": true },
-      { "name": "cedula_contrayente1", "label": "Cédula del primer contrayente", "type": "text", "required": true },
-      { "name": "expedicion_contrayente1", "label": "Ciudad expedición cédula primer contrayente", "type": "text", "required": true },
-      { "name": "fecha_nacimiento1", "label": "Fecha de nacimiento del primer contrayente", "type": "text", "required": true },
-      { "name": "ciudad_nacimiento1", "label": "Ciudad de nacimiento del primer contrayente", "type": "text", "required": true },
-      { "name": "estado_civil1", "label": "Estado civil del primer contrayente", "type": "text", "required": true },
-      { "name": "domicilio1", "label": "Ciudad de domicilio del primer contrayente", "type": "text", "required": true },
-      { "name": "padre1", "label": "Nombre del padre del primer contrayente", "type": "text", "required": true },
-      { "name": "madre1", "label": "Nombre de la madre del primer contrayente", "type": "text", "required": true },
-      { "name": "nombre_contrayente2", "label": "Nombre completo del segundo contrayente", "type": "text", "required": true },
-      { "name": "cedula_contrayente2", "label": "Cédula del segundo contrayente", "type": "text", "required": true },
-      { "name": "expedicion_contrayente2", "label": "Ciudad expedición cédula segundo contrayente", "type": "text", "required": true },
-      { "name": "fecha_nacimiento2", "label": "Fecha de nacimiento del segundo contrayente", "type": "text", "required": true },
-      { "name": "ciudad_nacimiento2", "label": "Ciudad de nacimiento del segundo contrayente", "type": "text", "required": true },
-      { "name": "estado_civil2", "label": "Estado civil del segundo contrayente", "type": "text", "required": true },
-      { "name": "domicilio2", "label": "Ciudad de domicilio del segundo contrayente", "type": "text", "required": true },
-      { "name": "padre2", "label": "Nombre del padre del segundo contrayente", "type": "text", "required": true },
-      { "name": "madre2", "label": "Nombre de la madre del segundo contrayente", "type": "text", "required": true },
-      { "name": "fecha_solicitud", "label": "Fecha en que se presentó la solicitud", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_contrayente1",
+        "label": "Nombre completo del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_contrayente1",
+        "label": "Cédula del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_contrayente1",
+        "label": "Ciudad expedición cédula primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_nacimiento1",
+        "label": "Fecha de nacimiento del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_nacimiento1",
+        "label": "Ciudad de nacimiento del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil1",
+        "label": "Estado civil del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio1",
+        "label": "Ciudad de domicilio del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "padre1",
+        "label": "Nombre del padre del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "madre1",
+        "label": "Nombre de la madre del primer contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_contrayente2",
+        "label": "Nombre completo del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_contrayente2",
+        "label": "Cédula del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_contrayente2",
+        "label": "Ciudad expedición cédula segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_nacimiento2",
+        "label": "Fecha de nacimiento del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_nacimiento2",
+        "label": "Ciudad de nacimiento del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil2",
+        "label": "Estado civil del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio2",
+        "label": "Ciudad de domicilio del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "padre2",
+        "label": "Nombre del padre del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "madre2",
+        "label": "Nombre de la madre del segundo contrayente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_solicitud",
+        "label": "Fecha en que se presentó la solicitud",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, comparecieron: {{nombre_contrayente1}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_contrayente1}} expedida en {{expedicion_contrayente1}}, nacido el {{fecha_nacimiento1}} en {{ciudad_nacimiento1}}, de estado civil {{estado_civil1}}, domiciliado en {{domicilio1}}, hijo de {{padre1}} y de {{madre1}}, y {{nombre_contrayente2}}, mayor de edad, identificada con la cédula de ciudadanía Nº. {{cedula_contrayente2}} expedida en {{expedicion_contrayente2}}, nacida el {{fecha_nacimiento2}} en {{ciudad_nacimiento2}}, de estado civil {{estado_civil2}}, domiciliada en {{domicilio2}}, hija de {{padre2}} y de {{madre2}}.\n\nPRIMERO.— Que mediante solicitud presentada {{fecha_solicitud}} ante este despacho notarial, los comparecientes solicitaron la celebración de su matrimonio civil, solicitud que fue admitida y se fijó el edicto de ley durante cinco (5) días hábiles sin que se presentara oposición alguna.\n\nSEGUNDO.— Que interrogados por mí, el Notario, sobre si es su libre y espontánea voluntad unirse en matrimonio civil, respondieron afirmativamente.\n\nTERCERO.— Que no existe entre los contrayentes ninguno de los impedimentos legales establecidos por la ley para contraer matrimonio.\n\nCUARTO.— En virtud de lo anterior, en nombre de la República de Colombia y por ministerio de la ley, declaro unidos en matrimonio civil a {{nombre_contrayente1}} y {{nombre_contrayente2}}, con todos los derechos y obligaciones que la ley establece.\n\nQUINTO.— A partir de este momento queda formada entre los cónyuges la sociedad conyugal de bienes, salvo que con anterioridad hayan celebrado capitulaciones matrimoniales.\n\nSEXTO.— El presente instrumento se inscribirá en el registro civil de matrimonios de esta Notaría y se comunicará a los funcionarios del registro civil para las correspondientes notas marginales en los registros civiles de nacimiento de los contrayentes.\n\nEn señal de asentimiento firman los contrayentes junto con el Notario.\n\nPrimer contrayente: _______________________\n\nSegundo contrayente: _______________________\n\nNotario: _______________________"
   },
@@ -137,46 +617,246 @@
     "subtitle": "Sociedad Conyugal y Patrimonial",
     "tipo_tramite": "Notarial",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad o municipio", "type": "text", "required": true },
-      { "name": "departamento", "label": "Departamento", "type": "text", "required": true },
-      { "name": "dia", "label": "Día (número)", "type": "text", "required": true },
-      { "name": "mes", "label": "Mes (letras)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año", "type": "text", "required": true },
-      { "name": "notario", "label": "Nombre o número del Notario", "type": "text", "required": true },
-      { "name": "circulo", "label": "Círculo notarial (ciudad)", "type": "text", "required": true },
-      { "name": "nombre_conyuge1", "label": "Nombre completo del cónyuge 1 (esposo)", "type": "text", "required": true },
-      { "name": "cedula_conyuge1", "label": "Cédula del cónyuge 1", "type": "text", "required": true },
-      { "name": "expedicion_conyuge1", "label": "Ciudad expedición cédula cónyuge 1", "type": "text", "required": true },
-      { "name": "domicilio_conyuge1", "label": "Ciudad de domicilio del cónyuge 1", "type": "text", "required": true },
-      { "name": "nombre_conyuge2", "label": "Nombre completo del cónyuge 2 (esposa)", "type": "text", "required": true },
-      { "name": "cedula_conyuge2", "label": "Cédula del cónyuge 2", "type": "text", "required": true },
-      { "name": "expedicion_conyuge2", "label": "Ciudad expedición cédula cónyuge 2", "type": "text", "required": true },
-      { "name": "domicilio_conyuge2", "label": "Ciudad de domicilio del cónyuge 2", "type": "text", "required": true },
-      { "name": "tipo_matrimonio", "label": "Tipo de matrimonio (civil o católico)", "type": "text", "required": true },
-      { "name": "fecha_matrimonio", "label": "Fecha del matrimonio", "type": "text", "required": true },
-      { "name": "lugar_matrimonio", "label": "Lugar donde se celebró el matrimonio", "type": "text", "required": true },
-      { "name": "ciudad_matrimonio", "label": "Ciudad donde se celebró el matrimonio", "type": "text", "required": true },
-      { "name": "apellidos_sociedad", "label": "Apellidos de la sociedad conyugal (ej: Martínez-García)", "type": "text", "required": true },
-      { "name": "activo_bruto", "label": "Bienes del activo bruto (describa cada bien numerado con su valor)", "type": "text", "required": true },
-      { "name": "total_activo_bruto_letras", "label": "Total activo bruto en letras", "type": "text", "required": true },
-      { "name": "total_activo_bruto_numeros", "label": "Total activo bruto en números", "type": "text", "required": true },
-      { "name": "pasivo_externo", "label": "Deudas del pasivo externo (describa cada deuda con acreedor y valor)", "type": "text", "required": true },
-      { "name": "total_pasivo_externo_letras", "label": "Total pasivo externo en letras", "type": "text", "required": true },
-      { "name": "total_pasivo_externo_numeros", "label": "Total pasivo externo en números", "type": "text", "required": true },
-      { "name": "total_liquidacion_letras", "label": "Total liquidación (activo menos pasivo) en letras", "type": "text", "required": true },
-      { "name": "total_liquidacion_numeros", "label": "Total liquidación en números", "type": "text", "required": true },
-      { "name": "gananciales_letras", "label": "Gananciales por cónyuge en letras", "type": "text", "required": true },
-      { "name": "gananciales_numeros", "label": "Gananciales por cónyuge en números", "type": "text", "required": true },
-      { "name": "igualaciones", "label": "Igualaciones acordadas entre los cónyuges", "type": "text", "required": true },
-      { "name": "hijuela1_conyuge", "label": "Nombre del cónyuge que recibe la Hijuela 1", "type": "text", "required": true },
-      { "name": "hijuela1_descripcion", "label": "Bienes de la Hijuela 1 con sus valores", "type": "text", "required": true },
-      { "name": "hijuela1_total_letras", "label": "Valor total Hijuela 1 en letras", "type": "text", "required": true },
-      { "name": "hijuela1_total_numeros", "label": "Valor total Hijuela 1 en números", "type": "text", "required": true },
-      { "name": "hijuela2_conyuge", "label": "Nombre del cónyuge que recibe la Hijuela 2", "type": "text", "required": true },
-      { "name": "hijuela2_descripcion", "label": "Bienes de la Hijuela 2 con sus valores", "type": "text", "required": true },
-      { "name": "hijuela2_total_letras", "label": "Valor total Hijuela 2 en letras", "type": "text", "required": true },
-      { "name": "hijuela2_total_numeros", "label": "Valor total Hijuela 2 en números", "type": "text", "required": true },
-      { "name": "conyuge_asume_pasivo", "label": "Nombre del cónyuge que asume el pago del pasivo externo", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge1",
+        "label": "Nombre completo del cónyuge 1 (esposo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_conyuge1",
+        "label": "Cédula del cónyuge 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_conyuge1",
+        "label": "Ciudad expedición cédula cónyuge 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_conyuge1",
+        "label": "Ciudad de domicilio del cónyuge 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge2",
+        "label": "Nombre completo del cónyuge 2 (esposa)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_conyuge2",
+        "label": "Cédula del cónyuge 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_conyuge2",
+        "label": "Ciudad expedición cédula cónyuge 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_conyuge2",
+        "label": "Ciudad de domicilio del cónyuge 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_matrimonio",
+        "label": "Tipo de matrimonio (civil o católico)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_matrimonio",
+        "label": "Fecha del matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_matrimonio",
+        "label": "Lugar donde se celebró el matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_matrimonio",
+        "label": "Ciudad donde se celebró el matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "apellidos_sociedad",
+        "label": "Apellidos de la sociedad conyugal (ej: Martínez-García)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "activo_bruto",
+        "label": "Bienes del activo bruto (describa cada bien numerado con su valor)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_activo_bruto_letras",
+        "label": "Total activo bruto en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_activo_bruto_numeros",
+        "label": "Total activo bruto en números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pasivo_externo",
+        "label": "Deudas del pasivo externo (describa cada deuda con acreedor y valor)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_pasivo_externo_letras",
+        "label": "Total pasivo externo en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_pasivo_externo_numeros",
+        "label": "Total pasivo externo en números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_liquidacion_letras",
+        "label": "Total liquidación (activo menos pasivo) en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_liquidacion_numeros",
+        "label": "Total liquidación en números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "gananciales_letras",
+        "label": "Gananciales por cónyuge en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "gananciales_numeros",
+        "label": "Gananciales por cónyuge en números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "igualaciones",
+        "label": "Igualaciones acordadas entre los cónyuges",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela1_conyuge",
+        "label": "Nombre del cónyuge que recibe la Hijuela 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela1_descripcion",
+        "label": "Bienes de la Hijuela 1 con sus valores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela1_total_letras",
+        "label": "Valor total Hijuela 1 en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela1_total_numeros",
+        "label": "Valor total Hijuela 1 en números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela2_conyuge",
+        "label": "Nombre del cónyuge que recibe la Hijuela 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela2_descripcion",
+        "label": "Bienes de la Hijuela 2 con sus valores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela2_total_letras",
+        "label": "Valor total Hijuela 2 en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela2_total_numeros",
+        "label": "Valor total Hijuela 2 en números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "conyuge_asume_pasivo",
+        "label": "Nombre del cónyuge que asume el pago del pasivo externo",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, comparecieron: {{nombre_conyuge1}}, colombiano, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_conyuge1}} de {{expedicion_conyuge1}}, domiciliado y residente en {{domicilio_conyuge1}}, y {{nombre_conyuge2}}, colombiana, mayor de edad, identificada con la cédula de ciudadanía Nº. {{cedula_conyuge2}} de {{expedicion_conyuge2}}, domiciliada y residente en {{domicilio_conyuge2}}, quienes manifestaron lo siguiente:\n\nPRIMERA. Matrimonio.— Que contrajeron matrimonio {{tipo_matrimonio}} el {{fecha_matrimonio}} en {{lugar_matrimonio}} en la ciudad de {{ciudad_matrimonio}}, según consta en la copia del registro civil de matrimonio que con el presente instrumento se protocoliza.\n\nSEGUNDA. Objeto.— Que por mutuo consentimiento han decidido declarar disuelta la sociedad conyugal {{apellidos_sociedad}}, de acuerdo con lo establecido en el artículo 25 de la Ley 1ª de 1976.\n\nTERCERA. Responsabilidad.— Que responden solidariamente ante presuntos acreedores y terceros, con título anterior al registro de esta escritura de disolución y liquidación de la sociedad conyugal habida entre ellos.\n\nCUARTA. Distribución.— Que efectúan la liquidación voluntaria de la sociedad conyugal ya disuelta por mutuo acuerdo y garantizando personalmente que no causarán perjuicio a terceros, de acuerdo con la distribución de los bienes sociales que se indica en las cláusulas que siguen.\n\nQUINTA. Activo Bruto.— El activo bruto de la sociedad conyugal objeto de esta escritura está integrado por los siguientes bienes:\n\n{{activo_bruto}}\n\nTotal activo bruto: {{total_activo_bruto_letras}} ($ {{total_activo_bruto_numeros}}) moneda legal colombiana.\n\nSEXTA. Pasivo Externo.— Como pasivo externo de la sociedad conyugal objeto de este instrumento, se encuentran las siguientes obligaciones:\n\n{{pasivo_externo}}\n\nTotal pasivo externo: {{total_pasivo_externo_letras}} ($ {{total_pasivo_externo_numeros}}) moneda legal colombiana.\n\nSÉPTIMA. Pasivo Interno.— No existe pasivo interno.\n\nOCTAVA. Liquidación.— La liquidación definitiva de la sociedad conyugal objeto de esta escritura se efectúa así:\n\nActivo bruto: {{total_activo_bruto_letras}} ($ {{total_activo_bruto_numeros}}) moneda legal colombiana.\nPasivo externo: {{total_pasivo_externo_letras}} ($ {{total_pasivo_externo_numeros}}) moneda legal colombiana.\nTotal liquidación: {{total_liquidacion_letras}} ($ {{total_liquidacion_numeros}}) moneda legal colombiana.\n\nNOVENA. Gananciales.— A cada uno de los cónyuges corresponde la suma de {{gananciales_letras}} ($ {{gananciales_numeros}}) moneda legal colombiana.\n\nDÉCIMA. Igualaciones.— {{igualaciones}}\n\nDÉCIMA PRIMERA. Adjudicaciones.— De acuerdo con lo anterior, se realiza la distribución de bienes entre los cónyuges de la siguiente manera:\n\nHijuela número uno, para {{hijuela1_conyuge}}:\n\n{{hijuela1_descripcion}}\n\nValor total de esta hijuela: {{hijuela1_total_letras}} ($ {{hijuela1_total_numeros}}) moneda legal colombiana.\n\nHijuela número dos, para {{hijuela2_conyuge}}:\n\n{{hijuela2_descripcion}}\n\nEl cónyuge {{conyuge_asume_pasivo}} asume personalmente el pago del ciento por ciento (100%) del pasivo externo de la sociedad conyugal por valor de {{total_pasivo_externo_letras}} ($ {{total_pasivo_externo_numeros}}) moneda legal colombiana.\n\nValor total de esta hijuela: {{hijuela2_total_letras}} ($ {{hijuela2_total_numeros}}) moneda legal colombiana.\n\nDÉCIMA SEGUNDA. Aceptación y Renuncia.— Conforme con las cláusulas anteriores, los cónyuges declaran liquidada la sociedad conyugal y a paz y salvo por todo concepto proveniente de gananciales, igualaciones, compensaciones y restituciones, y renuncian expresamente a cualquier reclamación que por estos conceptos pudiera ocurrir. El presente instrumento deberá registrarse conforme la ley.\n\nUna vez leído el presente instrumento, en señal de asentimiento lo firman junto con el Notario.\n\nCónyuge 1: _______________________\n\nCónyuge 2: _______________________\n\nNotario: _______________________"
   },
@@ -186,25 +866,120 @@
     "subtitle": "Sociedad Conyugal y Patrimonial",
     "tipo_tramite": "Notarial",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad o municipio", "type": "text", "required": true },
-      { "name": "departamento", "label": "Departamento", "type": "text", "required": true },
-      { "name": "dia", "label": "Día (número)", "type": "text", "required": true },
-      { "name": "mes", "label": "Mes (letras)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año", "type": "text", "required": true },
-      { "name": "notario", "label": "Nombre o número del Notario", "type": "text", "required": true },
-      { "name": "circulo", "label": "Círculo notarial (ciudad)", "type": "text", "required": true },
-      { "name": "nombre_conyuge1", "label": "Nombre completo del cónyuge 1", "type": "text", "required": true },
-      { "name": "cedula_conyuge1", "label": "Cédula del cónyuge 1", "type": "text", "required": true },
-      { "name": "expedicion_conyuge1", "label": "Ciudad expedición cédula cónyuge 1", "type": "text", "required": true },
-      { "name": "domicilio_conyuge1", "label": "Ciudad de domicilio del cónyuge 1", "type": "text", "required": true },
-      { "name": "nombre_conyuge2", "label": "Nombre completo del cónyuge 2", "type": "text", "required": true },
-      { "name": "cedula_conyuge2", "label": "Cédula del cónyuge 2", "type": "text", "required": true },
-      { "name": "expedicion_conyuge2", "label": "Ciudad expedición cédula cónyuge 2", "type": "text", "required": true },
-      { "name": "domicilio_conyuge2", "label": "Ciudad de domicilio del cónyuge 2", "type": "text", "required": true },
-      { "name": "tipo_matrimonio", "label": "Tipo de matrimonio (civil o católico)", "type": "text", "required": true },
-      { "name": "fecha_matrimonio", "label": "Fecha del matrimonio", "type": "text", "required": true },
-      { "name": "lugar_registro_matrimonio", "label": "Notaría o alcaldía donde se inscribió el matrimonio", "type": "text", "required": true },
-      { "name": "hijos", "label": "Nombres y fechas de nacimiento de los hijos (si no hay escriba: No tuvieron hijos comunes)", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge1",
+        "label": "Nombre completo del cónyuge 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_conyuge1",
+        "label": "Cédula del cónyuge 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_conyuge1",
+        "label": "Ciudad expedición cédula cónyuge 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_conyuge1",
+        "label": "Ciudad de domicilio del cónyuge 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge2",
+        "label": "Nombre completo del cónyuge 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_conyuge2",
+        "label": "Cédula del cónyuge 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_conyuge2",
+        "label": "Ciudad expedición cédula cónyuge 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_conyuge2",
+        "label": "Ciudad de domicilio del cónyuge 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_matrimonio",
+        "label": "Tipo de matrimonio (civil o católico)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_matrimonio",
+        "label": "Fecha del matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_registro_matrimonio",
+        "label": "Notaría o alcaldía donde se inscribió el matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijos",
+        "label": "Nombres y fechas de nacimiento de los hijos (si no hay escriba: No tuvieron hijos comunes)",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, comparecieron: {{nombre_conyuge1}}, colombiano, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_conyuge1}} de {{expedicion_conyuge1}}, domiciliado y residente en {{domicilio_conyuge1}}, y {{nombre_conyuge2}}, colombiana, mayor de edad, identificada con la cédula de ciudadanía Nº. {{cedula_conyuge2}} de {{expedicion_conyuge2}}, domiciliada y residente en {{domicilio_conyuge2}}, quienes manifestaron lo siguiente:\n\nPRIMERA. Matrimonio.— Los comparecientes contrajeron matrimonio {{tipo_matrimonio}} el {{fecha_matrimonio}}, cuya acta fue inscrita en {{lugar_registro_matrimonio}}, y se protocoliza con esta escritura.\n\nSEGUNDA. Hijos.— {{hijos}}\n\nTERCERA. Objeto.— Por mutuo acuerdo los exponentes cónyuges declaran disuelta la sociedad conyugal que entre ellos ha existido, quedando por tanto separados de bienes para todos los efectos legales.\n\nCUARTA. Bienes y deudas.— Los cónyuges no tienen en la actualidad ninguna clase de bienes comunes que distribuir ni deudas sociales que asumir.\n\nQUINTA. Efectos.— A partir del registro de la presente escritura, los cónyuges quedan separados de bienes para todos los efectos legales, sin perjuicio de los derechos de terceros acreedores con título anterior al registro de este instrumento, ante quienes responden solidariamente.\n\nEn señal de asentimiento lo firman los cónyuges junto con el Notario.\n\nCónyuge 1: _______________________\n\nCónyuge 2: _______________________\n\nNotario: _______________________"
   },
@@ -214,40 +989,2221 @@
     "subtitle": "Sociedad Conyugal y Patrimonial",
     "tipo_tramite": "Notarial",
     "fields": [
-      { "name": "ciudad", "label": "Ciudad o municipio", "type": "text", "required": true },
-      { "name": "departamento", "label": "Departamento", "type": "text", "required": true },
-      { "name": "dia", "label": "Día (número)", "type": "text", "required": true },
-      { "name": "mes", "label": "Mes (letras)", "type": "text", "required": true },
-      { "name": "anio", "label": "Año", "type": "text", "required": true },
-      { "name": "notario", "label": "Nombre o número del Notario", "type": "text", "required": true },
-      { "name": "circulo", "label": "Círculo notarial (ciudad)", "type": "text", "required": true },
-      { "name": "nombre_companero1", "label": "Nombre completo del compañero permanente 1", "type": "text", "required": true },
-      { "name": "cedula_companero1", "label": "Cédula del compañero 1", "type": "text", "required": true },
-      { "name": "expedicion_companero1", "label": "Ciudad expedición cédula compañero 1", "type": "text", "required": true },
-      { "name": "domicilio_companero1", "label": "Ciudad de domicilio del compañero 1", "type": "text", "required": true },
-      { "name": "nombre_companero2", "label": "Nombre completo del compañero permanente 2", "type": "text", "required": true },
-      { "name": "cedula_companero2", "label": "Cédula del compañero 2", "type": "text", "required": true },
-      { "name": "expedicion_companero2", "label": "Ciudad expedición cédula compañero 2", "type": "text", "required": true },
-      { "name": "domicilio_companero2", "label": "Ciudad de domicilio del compañero 2", "type": "text", "required": true },
-      { "name": "fecha_sentencia", "label": "Fecha de la sentencia que declaró la unión marital", "type": "text", "required": true },
-      { "name": "juzgado_sentencia", "label": "Juzgado que declaró la unión marital", "type": "text", "required": true },
-      { "name": "activo_social", "label": "Bienes del activo social (describa cada bien numerado con su valor)", "type": "text", "required": true },
-      { "name": "total_activo_bruto_letras", "label": "Total activo social bruto en letras", "type": "text", "required": true },
-      { "name": "total_activo_bruto_numeros", "label": "Total activo social bruto en números", "type": "text", "required": true },
-      { "name": "pasivo_social", "label": "Deudas del pasivo social (describa cada deuda o escriba: No existen pasivos sociales)", "type": "text", "required": true },
-      { "name": "total_pasivo_letras", "label": "Total pasivo social en letras", "type": "text", "required": true },
-      { "name": "total_pasivo_numeros", "label": "Total pasivo social en números", "type": "text", "required": true },
-      { "name": "total_activo_liquido_letras", "label": "Total activo líquido (activo menos pasivo) en letras", "type": "text", "required": true },
-      { "name": "total_activo_liquido_numeros", "label": "Total activo líquido en números", "type": "text", "required": true },
-      { "name": "hijuela1_companero", "label": "Nombre del compañero que recibe la Hijuela 1", "type": "text", "required": true },
-      { "name": "hijuela1_descripcion", "label": "Bienes adjudicados en la Hijuela 1 con sus valores", "type": "text", "required": true },
-      { "name": "hijuela1_total_letras", "label": "Valor total Hijuela 1 en letras", "type": "text", "required": true },
-      { "name": "hijuela1_total_numeros", "label": "Valor total Hijuela 1 en números", "type": "text", "required": true },
-      { "name": "hijuela2_companero", "label": "Nombre del compañero que recibe la Hijuela 2", "type": "text", "required": true },
-      { "name": "hijuela2_descripcion", "label": "Bienes adjudicados en la Hijuela 2 con sus valores", "type": "text", "required": true },
-      { "name": "hijuela2_total_letras", "label": "Valor total Hijuela 2 en letras", "type": "text", "required": true },
-      { "name": "hijuela2_total_numeros", "label": "Valor total Hijuela 2 en números", "type": "text", "required": true }
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_companero1",
+        "label": "Nombre completo del compañero permanente 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_companero1",
+        "label": "Cédula del compañero 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_companero1",
+        "label": "Ciudad expedición cédula compañero 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_companero1",
+        "label": "Ciudad de domicilio del compañero 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_companero2",
+        "label": "Nombre completo del compañero permanente 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_companero2",
+        "label": "Cédula del compañero 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_companero2",
+        "label": "Ciudad expedición cédula compañero 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_companero2",
+        "label": "Ciudad de domicilio del compañero 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_sentencia",
+        "label": "Fecha de la sentencia que declaró la unión marital",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "juzgado_sentencia",
+        "label": "Juzgado que declaró la unión marital",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "activo_social",
+        "label": "Bienes del activo social (describa cada bien numerado con su valor)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_activo_bruto_letras",
+        "label": "Total activo social bruto en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_activo_bruto_numeros",
+        "label": "Total activo social bruto en números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pasivo_social",
+        "label": "Deudas del pasivo social (describa cada deuda o escriba: No existen pasivos sociales)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_pasivo_letras",
+        "label": "Total pasivo social en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_pasivo_numeros",
+        "label": "Total pasivo social en números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_activo_liquido_letras",
+        "label": "Total activo líquido (activo menos pasivo) en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_activo_liquido_numeros",
+        "label": "Total activo líquido en números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela1_companero",
+        "label": "Nombre del compañero que recibe la Hijuela 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela1_descripcion",
+        "label": "Bienes adjudicados en la Hijuela 1 con sus valores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela1_total_letras",
+        "label": "Valor total Hijuela 1 en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela1_total_numeros",
+        "label": "Valor total Hijuela 1 en números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela2_companero",
+        "label": "Nombre del compañero que recibe la Hijuela 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela2_descripcion",
+        "label": "Bienes adjudicados en la Hijuela 2 con sus valores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela2_total_letras",
+        "label": "Valor total Hijuela 2 en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela2_total_numeros",
+        "label": "Valor total Hijuela 2 en números",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, comparecieron: {{nombre_companero1}}, colombiano, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_companero1}} de {{expedicion_companero1}}, domiciliado y residente en {{domicilio_companero1}}, y {{nombre_companero2}}, colombiana, mayor de edad, identificada con la cédula de ciudadanía Nº. {{cedula_companero2}} de {{expedicion_companero2}}, domiciliada y residente en {{domicilio_companero2}}, quienes manifestaron lo siguiente:\n\nPRIMERA. Declaración de unión marital.— Que en virtud de sentencia judicial de fecha {{fecha_sentencia}}, el {{juzgado_sentencia}}, declaró la existencia de la unión marital de hecho entre {{nombre_companero1}} y {{nombre_companero2}}.\n\nSEGUNDA. Disolución.— Que de acuerdo con el artículo 5 de la Ley 54 de 1990, los comparecientes deciden de mutuo acuerdo disolver la sociedad patrimonial como compañeros permanentes existente entre ellos según la declaración judicial mencionada en la cláusula primera.\n\nTERCERA. Liquidación.— Que como consecuencia de la disolución de mutuo consentimiento, proceden a liquidar, partir y adjudicar los bienes sociales, de acuerdo con lo establecido en los artículos 2, 3 y 7 de la Ley 54 de 1990.\n\nCUARTA. Inventario y avalúo de bienes.\n\nACTIVO SOCIAL:\n\n{{activo_social}}\n\nTotal activo social bruto: {{total_activo_bruto_letras}} ($ {{total_activo_bruto_numeros}}) moneda legal colombiana.\n\nPASIVO SOCIAL:\n\n{{pasivo_social}}\n\nTotal pasivo social: {{total_pasivo_letras}} ($ {{total_pasivo_numeros}}) moneda legal colombiana.\n\nTotal activo social líquido: {{total_activo_liquido_letras}} ($ {{total_activo_liquido_numeros}}) moneda legal colombiana.\n\nQUINTA. Liquidación, partición y adjudicación.— La suma total a liquidar es {{total_activo_liquido_letras}} ($ {{total_activo_liquido_numeros}}), que corresponde al activo social bruto menos el pasivo social.\n\nADJUDICACIONES:\n\nHijuela número uno, para {{hijuela1_companero}}:\n\n{{hijuela1_descripcion}}\n\nValor total de esta hijuela: {{hijuela1_total_letras}} ($ {{hijuela1_total_numeros}}) moneda legal colombiana.\n\nHijuela número dos, para {{hijuela2_companero}}:\n\n{{hijuela2_descripcion}}\n\nValor total de esta hijuela: {{hijuela2_total_letras}} ($ {{hijuela2_total_numeros}}) moneda legal colombiana.\n\nSEXTA. Paz y salvo.— Los comparecientes se declaran mutuamente a paz y salvo por cualquier crédito, compensación, incremento o concepto que hubiere podido pertenecerles con ocasión de la sociedad patrimonial que aquí se liquida, y desde ahora renuncian a cualquier pretensión judicial o extrajudicial encaminada a modificar o desconocer total o parcialmente la liquidación realizada.\n\nEn señal de asentimiento lo firman los comparecientes junto con el Notario.\n\nCompañero permanente 1: _______________________\n\nCompañero permanente 2: _______________________\n\nNotario: _______________________"
+  },
+  {
+    "id": "legitimacion-hijo-extramatrimonial",
+    "title": "Legitimación de Hijo Extramatrimonial",
+    "subtitle": "Estado Civil",
+    "tipo_tramite": "Notarial",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_padre",
+        "label": "Nombre completo del padre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_padre",
+        "label": "Cédula del padre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_padre",
+        "label": "Ciudad expedición cédula del padre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_padre",
+        "label": "Ciudad de domicilio del padre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_madre",
+        "label": "Nombre completo de la madre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_madre",
+        "label": "Cédula de la madre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_madre",
+        "label": "Ciudad expedición cédula de la madre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_madre",
+        "label": "Ciudad de domicilio de la madre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_matrimonio",
+        "label": "Tipo de matrimonio (civil o católico)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_matrimonio",
+        "label": "Fecha del matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_matrimonio",
+        "label": "Iglesia, notaría o juzgado donde se celebró el matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_matrimonio",
+        "label": "Ciudad donde se celebró el matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_registro_matrimonio",
+        "label": "Notaría donde quedó registrado el matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_registro_matrimonio",
+        "label": "Ciudad del círculo donde quedó registrado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tomo_matrimonio",
+        "label": "Tomo del registro del matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_matrimonio",
+        "label": "Folio del registro del matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_registro_matrimonio",
+        "label": "Fecha en que se registró el matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_hijo",
+        "label": "Nombre completo del hijo que se legitima",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_nacimiento_hijo",
+        "label": "Fecha de nacimiento del hijo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_nacimiento_hijo",
+        "label": "Ciudad de nacimiento del hijo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_registro_hijo",
+        "label": "Notaría donde fue registrado el nacimiento del hijo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_registro_hijo",
+        "label": "Ciudad del círculo donde fue registrado el hijo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "serial_registro_hijo",
+        "label": "Número serial del registro civil de nacimiento del hijo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_registro_hijo",
+        "label": "Fecha en que fue registrado el nacimiento del hijo",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, comparecieron: {{nombre_padre}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_padre}} de {{expedicion_padre}}, domiciliado y residente en {{domicilio_padre}}, y {{nombre_madre}}, mayor de edad, identificada con la cédula de ciudadanía Nº. {{cedula_madre}} de {{expedicion_madre}}, domiciliada y residente en {{domicilio_madre}}, ambos casados entre sí, con sociedad conyugal vigente, quienes manifestaron lo siguiente:\n\nPRIMERO. Matrimonio.— Que el {{fecha_matrimonio}} contrajeron matrimonio {{tipo_matrimonio}} en {{lugar_matrimonio}} en la ciudad de {{ciudad_matrimonio}}. Dicho matrimonio fue registrado en debida forma en la Notaría {{notaria_registro_matrimonio}} del Círculo de {{circulo_registro_matrimonio}}, en el tomo {{tomo_matrimonio}}, folio {{folio_matrimonio}}, el {{fecha_registro_matrimonio}}.\n\nSEGUNDO. Hijo.— Los comparecientes manifiestan que extramatrimonialmente procrearon un hijo cuyo nacimiento se registró en la Notaría {{notaria_registro_hijo}} del Círculo de {{circulo_registro_hijo}}, el {{fecha_registro_hijo}}, bajo el número serial {{serial_registro_hijo}}, al que llamaron {{nombre_hijo}}, quien nació el {{fecha_nacimiento_hijo}} en la ciudad de {{ciudad_nacimiento_hijo}}.\n\nTERCERO. Legitimación.— Los comparecientes manifiestan que en la partida de matrimonio {{tipo_matrimonio}} no se anotó el nacimiento del menor antes citado. Por tanto, por medio de este instrumento público legitiman en virtud de su matrimonio a su menor hijo {{nombre_hijo}}, para todos los efectos legales.\n\nLeído el presente instrumento, y en señal de asentimiento, lo firman los comparecientes junto con el Notario.\n\nPadre: _______________________\n\nMadre: _______________________\n\nNotario: _______________________"
+  },
+  {
+    "id": "reconocimiento-hijo-extramatrimonial",
+    "title": "Reconocimiento de Hijo Extramatrimonial",
+    "subtitle": "Estado Civil",
+    "tipo_tramite": "Notarial",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_padre",
+        "label": "Nombre completo del padre que reconoce",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_padre",
+        "label": "Cédula del padre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_padre",
+        "label": "Ciudad expedición cédula del padre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_padre",
+        "label": "Estado civil del padre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_padre",
+        "label": "Ciudad de domicilio del padre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_nacimiento_hijo",
+        "label": "Fecha de nacimiento del hijo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_nacimiento_hijo",
+        "label": "Ciudad donde nació el hijo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_hijo",
+        "label": "Nombre completo del hijo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_madre",
+        "label": "Nombre completo de la madre del hijo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_madre_concepcion",
+        "label": "Estado civil de la madre al momento de la concepción",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_madre_actual",
+        "label": "Estado civil actual de la madre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_completo_hijo_nuevo",
+        "label": "Nombre completo del hijo a partir del reconocimiento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_registro_hijo",
+        "label": "Notaría donde fue registrado el nacimiento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_registro_hijo",
+        "label": "Ciudad del círculo donde fue registrado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "serial_registro_hijo",
+        "label": "Número serial del registro civil del hijo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_registro_hijo",
+        "label": "Fecha en que fue registrado el nacimiento",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, compareció el señor {{nombre_padre}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_padre}} de {{expedicion_padre}}, de estado civil {{estado_civil_padre}}, domiciliado y residente en {{domicilio_padre}}, quien manifestó lo siguiente:\n\nPRIMERO. Nacimiento del menor.— Que el {{fecha_nacimiento_hijo}} nació en la ciudad de {{ciudad_nacimiento_hijo}}, el niño llamado {{nombre_hijo}}, hijo extramatrimonial de la señora {{nombre_madre}}, quien tenía estado civil {{estado_civil_madre_concepcion}} para la época de la concepción y el nacimiento, y actualmente continúa con estado civil {{estado_civil_madre_actual}}.\n\nSEGUNDO. Reconocimiento.— Que el niño {{nombre_hijo}} es hijo extramatrimonial suyo, y por tanto, por medio de la presente escritura lo reconoce como a su verdadero hijo para todos los efectos legales, y que de hoy en adelante y para siempre se llamará {{nombre_completo_hijo_nuevo}}.\n\nTERCERO. Registro.— El menor objeto de este reconocimiento fue registrado en la Notaría {{notaria_registro_hijo}} del Círculo de {{circulo_registro_hijo}}, en el serial Nº. {{serial_registro_hijo}}, el {{fecha_registro_hijo}}.\n\nLeído el presente instrumento, en señal de conformidad con el texto, lo firma junto con el Notario.\n\nPadre: _______________________\n\nNotario: _______________________"
+  },
+  {
+    "id": "solicitud-correccion-registro-civil",
+    "title": "Solicitud de Corrección de Errores en el Registro del Estado Civil",
+    "subtitle": "Estado Civil",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_solicitante",
+        "label": "Nombre completo del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_solicitante",
+        "label": "Cédula del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_solicitante",
+        "label": "Ciudad expedición cédula del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_solicitante",
+        "label": "Ciudad de domicilio del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_registro",
+        "label": "Número del folio del registro civil",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "libro_registro",
+        "label": "Número del libro del registro civil",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inscripcion_nacimiento",
+        "label": "Fecha en que fue inscrito el nacimiento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_inscrito_nacimiento",
+        "label": "Nombre con que fue inscrito en el registro de nacimiento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_documento_matrimonio",
+        "label": "Tipo de documento donde está el error (registro de matrimonio, nacimiento, etc.)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_matrimonio",
+        "label": "Notaría donde se celebró o registró el acto con error",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_matrimonio",
+        "label": "Ciudad del círculo de esa notaría",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge",
+        "label": "Nombre de la otra parte del acto (cónyuge u otra persona)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura",
+        "label": "Número de la escritura o documento con el error",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_registro_matrimonio",
+        "label": "Folio del registro donde está el error",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "libro_registro_matrimonio",
+        "label": "Libro del registro donde está el error",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_registro_matrimonio",
+        "label": "Fecha del registro con el error",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_error",
+        "label": "Tipo de error (mecanográfico, ortográfico, etc.)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dato_errado",
+        "label": "Dato que aparece errado en el registro",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dato_correcto",
+        "label": "Dato correcto que debe quedar",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se presenta la solicitud",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "Señor\nNotario {{notario}} del Círculo de {{circulo}}\nE. S. D.\n\nRef.: Solicitud de corrección de errores en el registro del estado civil.\n\n{{nombre_solicitante}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_solicitante}} de {{expedicion_solicitante}}, domiciliado y residente en {{domicilio_solicitante}}, en mi condición de persona inscrita en el registro del estado civil de esta notaría, folio Nº. {{folio_registro}} del libro {{libro_registro}}, comparezco ante usted con el fin de solicitarle la corrección de mi {{tipo_documento_matrimonio}}, teniendo en cuenta los siguientes:\n\nHECHOS\n\n1. El {{fecha_inscripcion_nacimiento}} fue inscrito mi nacimiento con el nombre de {{nombre_inscrito_nacimiento}}, en la Notaría a su cargo, folio Nº. {{folio_registro}} del libro {{libro_registro}}.\n\n2. El {{fecha_registro_matrimonio}} se registró mi {{tipo_documento_matrimonio}} ante la Notaría {{notaria_matrimonio}} del Círculo de {{circulo_matrimonio}}, con el señor (a) {{nombre_conyuge}}, según consta en la escritura pública Nº. {{numero_escritura}}, posteriormente registrada en el folio {{folio_registro_matrimonio}} del libro {{libro_registro_matrimonio}} de la misma Notaría, según fotocopia auténtica de la misma que se anexa.\n\n3. Al efectuar mi {{tipo_documento_matrimonio}} se incurrió en un error {{tipo_error}} consistente en haberse anotado {{dato_errado}} en lugar de {{dato_correcto}}, que es el dato correcto.\n\n4. Dicho error se establece con la simple comparación de mi registro civil de nacimiento y de mi {{tipo_documento_matrimonio}}, los cuales se anexan.\n\nPRUEBAS\n\nDocumentales:\n- Copia auténtica del registro civil de nacimiento.\n- Copia auténtica del {{tipo_documento_matrimonio}}.\n\nDERECHO\n\nEs usted competente señor Notario, de acuerdo con lo establecido por el Decreto 999 de 1988.\n\nPETICIÓN\n\nLe solicito señor Notario, la apertura de un nuevo folio donde se consignen los datos correctos y las notas de recíproca referencia, para ajustar la inscripción de mi registro civil de nacimiento y del {{tipo_documento_matrimonio}} sin que se altere mi estado civil.\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nSeñor notario, atentamente,\n\nSolicitante: _______________________\n{{nombre_solicitante}}\nC.C. Nº. {{cedula_solicitante}} de {{expedicion_solicitante}}"
+  },
+  {
+    "id": "correccion-errores-registro-civil",
+    "title": "Corrección de Errores en el Registro del Estado Civil",
+    "subtitle": "Estado Civil",
+    "tipo_tramite": "Notarial",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_solicitante",
+        "label": "Nombre completo del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_solicitante",
+        "label": "Cédula del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_solicitante",
+        "label": "Ciudad expedición cédula del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_solicitante",
+        "label": "Estado civil del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_solicitante",
+        "label": "Ciudad de domicilio del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_registro_nacimiento",
+        "label": "Fecha en que fue registrado el nacimiento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_inscrito",
+        "label": "Nombre con que fue inscrito en el registro",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_nacimiento",
+        "label": "Número del folio del registro de nacimiento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "libro_nacimiento",
+        "label": "Número del libro del registro de nacimiento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dato_errado",
+        "label": "Dato que aparece errado en el registro",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dato_correcto",
+        "label": "Dato correcto que debe quedar",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "documento_prueba",
+        "label": "Documento que prueba el dato correcto (ej: certificado médico del parto expedido por la clínica X)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_madre",
+        "label": "Nombre completo de la madre del solicitante",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, compareció el señor {{nombre_solicitante}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_solicitante}} de {{expedicion_solicitante}}, de estado civil {{estado_civil_solicitante}}, domiciliado y residente en {{domicilio_solicitante}}, quien manifestó lo siguiente:\n\nPRIMERO. Registro de nacimiento.— Que el {{fecha_registro_nacimiento}} se registró ante esta Notaría su nacimiento con el nombre de {{nombre_inscrito}}, en el folio Nº. {{folio_nacimiento}} del libro {{libro_nacimiento}}, según consta en la fotocopia auténtica que será protocolizada con este instrumento.\n\nSEGUNDO. Error.— Que al efectuarse su registro civil de nacimiento se incurrió en un error consistente en haberse anotado {{dato_errado}}, en lugar de {{dato_correcto}}, que es el dato correcto.\n\nTERCERO. Corrección.— Que con el fin de ajustar su inscripción a la realidad, voluntariamente desea disponer por medio de este instrumento la rectificación de su registro para que aparezca {{dato_correcto}}.\n\nCUARTO. Prueba.— Que para efectos de acreditar el dato correcto, se anexa para que haga parte del protocolo, el {{documento_prueba}}, que asistió a la señora {{nombre_madre}}, madre del compareciente.\n\nQUINTO. Rectificación.— Que efectúa la rectificación de su registro en la forma expresada en la cláusula anterior, con fundamento en lo dispuesto por el artículo 4º, incisos 2º y 3º del Decreto 999 de 1988.\n\nLeído el presente instrumento, y advertido al compareciente de la formalidad de inscribir su copia en la oficina de registro civil de este despacho, lo firma en prueba de su asentimiento, junto con el Notario, quien así lo autoriza.\n\nCompareciente: _______________________\n\nNotario: _______________________"
+  },
+  {
+    "id": "cambio-correccion-adicion-nombre",
+    "title": "Cambio, Corrección o Adición de Nombre",
+    "subtitle": "Estado Civil",
+    "tipo_tramite": "Notarial",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_solicitante",
+        "label": "Nombre completo actual del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_solicitante",
+        "label": "Cédula del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_solicitante",
+        "label": "Ciudad expedición cédula del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_solicitante",
+        "label": "Estado civil del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_solicitante",
+        "label": "Ciudad de domicilio del solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_registro_nacimiento",
+        "label": "Fecha en que fue inscrito el nacimiento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_inscrito",
+        "label": "Nombre con que fue inscrito originalmente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_nacimiento",
+        "label": "Notaría donde fue inscrito el nacimiento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_nacimiento",
+        "label": "Ciudad del círculo de esa notaría",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_nacimiento",
+        "label": "Número del folio del registro de nacimiento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "libro_nacimiento",
+        "label": "Número del libro del registro de nacimiento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_modificacion",
+        "label": "Tipo de modificación (cambio, corrección o adición de nombre)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_anterior",
+        "label": "Nombre o parte del nombre que se va a cambiar o corregir",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_nuevo",
+        "label": "Nombre nuevo que reemplazará al anterior",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_completo_nuevo",
+        "label": "Nombre completo definitivo después del cambio",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, compareció el señor {{nombre_solicitante}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_solicitante}} de {{expedicion_solicitante}}, de estado civil {{estado_civil_solicitante}}, domiciliado y residente en {{domicilio_solicitante}}, quien manifestó lo siguiente:\n\nPRIMERO. Registro de nacimiento.— Que el {{fecha_registro_nacimiento}} fue inscrito su nacimiento con el nombre de {{nombre_inscrito}}, en la Notaría {{notaria_nacimiento}} del Círculo de {{circulo_nacimiento}}, bajo el folio número {{folio_nacimiento}} del libro {{libro_nacimiento}}, según consta en la fotocopia del mismo que se anexa para efectos de protocolizarse con este instrumento.\n\nSEGUNDO. {{tipo_modificacion}} de nombre.— Que con el fin de fijar su identidad personal, es su voluntad disponer por esta escritura pública la {{tipo_modificacion}} de su nombre, sustituyendo {{nombre_anterior}} por {{nombre_nuevo}}, con lo cual varía tal instrumento en el sentido expresado. Es decir, que a partir de la fecha de la firma de esta escritura, para todos los efectos legales su nombre será {{nombre_completo_nuevo}}.\n\nTERCERO. Fundamento legal.— Que efectúa la {{tipo_modificacion}} de su nombre en la forma establecida en la cláusula anterior, con base en lo dispuesto por el artículo 6º del Decreto 999 de 1988.\n\nLeído el presente instrumento, y advertido al compareciente que de acuerdo con el artículo 6º del Decreto 999 de 1988, la modificación del nombre tan solo se puede realizar por una vez, e igualmente prevenido de la formalidad de inscribir su copia en la oficina de registro civil de este despacho, lo firma en prueba de su asentimiento, junto con el Notario, quien así lo autoriza.\n\nCompareciente: _______________________\n\nNotario: _______________________"
+  },
+  {
+    "id": "testamento-abierto",
+    "title": "Testamento Abierto o Público",
+    "subtitle": "Sucesiones",
+    "tipo_tramite": "Notarial",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "testigo1",
+        "label": "Nombre completo del testigo 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "testigo2",
+        "label": "Nombre completo del testigo 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "testigo3",
+        "label": "Nombre completo del testigo 3",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_testigos",
+        "label": "Ciudad de domicilio de los testigos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_testador",
+        "label": "Nombre completo del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_testador",
+        "label": "Cédula del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_testador",
+        "label": "Ciudad expedición cédula del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_testador",
+        "label": "Ciudad de domicilio del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nacionalidad_testador",
+        "label": "Nacionalidad del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "edad_testador",
+        "label": "Edad del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_nacimiento_testador",
+        "label": "Fecha de nacimiento del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "padre_testador",
+        "label": "Nombre del padre del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "madre_testador",
+        "label": "Nombre de la madre del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_matrimonio_testador",
+        "label": "Tipo de matrimonio del testador (civil o católico)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_matrimonio_testador",
+        "label": "Fecha del matrimonio del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_matrimonio_testador",
+        "label": "Lugar donde se celebró el matrimonio (capilla, iglesia, notaría)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_matrimonio_testador",
+        "label": "Ciudad donde se celebró el matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge",
+        "label": "Nombre completo del cónyuge heredero",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "declaracion_descendencia",
+        "label": "Declaración sobre hijos y descendientes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "heredero_universal",
+        "label": "Nombre completo del heredero o herederos universales",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_herencia",
+        "label": "Descripción de la herencia que se deja al heredero universal",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_albacea",
+        "label": "Nombre completo del albacea principal",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_albacea_suplente",
+        "label": "Nombre completo del albacea suplente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_albacea_suplente",
+        "label": "Cédula del albacea suplente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_albacea_suplente",
+        "label": "Ciudad expedición cédula del albacea suplente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "remuneracion_albacea",
+        "label": "Remuneración del albacea suplente",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, y ante los testigos testamentarios {{testigo1}}, {{testigo2}} y {{testigo3}}, todos mayores de edad, domiciliados y residentes en {{domicilio_testigos}}, de buen crédito y en quienes no concurre causal alguna de impedimento legal, compareció el señor {{nombre_testador}}, varón mayor de edad, domiciliado en {{domicilio_testador}}, identificado con la cédula de ciudadanía Nº. {{cedula_testador}} de {{expedicion_testador}}, quien se halla en su cabal juicio, de lo cual doy fe, y manifestó que procede a otorgar testamento abierto de la siguiente manera:\n\nA. DECLARACIONES TESTAMENTARIAS\n\nPRIMERA. Personales.— Mi nombre es como queda dicho {{nombre_testador}}, mi domicilio es {{domicilio_testador}}, de nacionalidad {{nacionalidad_testador}} y con {{edad_testador}} años cumplidos, pues nací el {{fecha_nacimiento_testador}}.\n\nSEGUNDA. Familiares.— Soy hijo legítimo de {{padre_testador}} y de {{madre_testador}}. Contraje matrimonio {{tipo_matrimonio_testador}} con la señora {{nombre_conyuge}} el {{fecha_matrimonio_testador}} en {{lugar_matrimonio_testador}} de la ciudad de {{ciudad_matrimonio_testador}}. {{declaracion_descendencia}}\n\nB. DISPOSICIONES TESTAMENTARIAS\n\nTERCERA. Heredero.— Designo como heredero(a) de todos mis bienes a título universal a {{heredero_universal}}. {{descripcion_herencia}}\n\nCUARTA. Albacea.— Nombro como albacea con tenencia y administración de mis bienes a {{nombre_albacea}}, a quien le prorrogo todo el tiempo que sea necesario para la liquidación de mi sucesión. En caso de que {{nombre_albacea}} no quiera o no pudiera ejercer el cargo para el que lo he señalado, nombro para tal menester al señor {{nombre_albacea_suplente}}, quien se identifica con la cédula de ciudadanía Nº. {{cedula_albacea_suplente}} de {{expedicion_albacea_suplente}}, quien por su ejercicio tendrá {{remuneracion_albacea}}, de acuerdo con lo establecido en el título XXXIV del Libro 1º del Código Civil.\n\nC. LECTURA Y APROBACIÓN\n\nUna vez leído el presente instrumento al testador por el suscrito notario, quien lo tiene a la vista, en voz alta y en un solo acto, en presencia de los testigos testamentarios mencionados, le da su aprobación y para constancia lo firma junto con los testigos y el notario.\n\nTestador: _______________________\n\nTestigo 1: _______________________\n\nTestigo 2: _______________________\n\nTestigo 3: _______________________\n\nNotario: _______________________"
+  },
+  {
+    "id": "testamento-cerrado-presentacion",
+    "title": "Testamento Cerrado (Diligencia de Presentación)",
+    "subtitle": "Sucesiones",
+    "tipo_tramite": "Notarial",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "testigo1",
+        "label": "Nombre completo del testigo 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "testigo2",
+        "label": "Nombre completo del testigo 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "testigo3",
+        "label": "Nombre completo del testigo 3",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "testigo4",
+        "label": "Nombre completo del testigo 4",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "testigo5",
+        "label": "Nombre completo del testigo 5",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_testigos",
+        "label": "Ciudad de domicilio de los testigos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_testador",
+        "label": "Nombre completo del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_testador",
+        "label": "Cédula del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_testador",
+        "label": "Ciudad expedición cédula del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_testador",
+        "label": "Ciudad de domicilio del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_cubierta",
+        "label": "Descripción de la cubierta o sobre donde está el testamento",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, y ante los testigos testamentarios {{testigo1}}, {{testigo2}}, {{testigo3}}, {{testigo4}} y {{testigo5}}, todos mayores de edad, domiciliados y residentes en {{domicilio_testigos}}, de buen crédito y en quienes no concurre causal alguna de impedimento legal, compareció el señor {{nombre_testador}}, varón mayor de edad, domiciliado en {{domicilio_testador}}, identificado con la cédula de ciudadanía Nº. {{cedula_testador}} de {{expedicion_testador}}, quien se halla en su cabal juicio, de lo cual doy fe.\n\nEl testador me presentó una cubierta {{descripcion_cubierta}}, en buen estado, lo que hago constar con arreglo a la ley, sobre la cual se extendió en esta fecha la diligencia de presentación, con los requisitos de ley, firmado por el testador, los cinco testigos y el suscrito notario, y encabezada con la palabra TESTAMENTO, escrita por mí.\n\nEl testador declaró de viva voz, de manera clara e inequívoca, de suerte que todos lo vimos, oímos y entendimos, que dentro del sobre o cubierta se encuentra su testamento, el cual deja, en el mismo estado, en poder de esta Notaría para su guarda y custodia.\n\nUna vez leído el presente instrumento al testador, por el suscrito notario en voz alta y en un solo acto, en presencia de los testigos testamentarios nombrados, asintió expresamente a él y en constancia firma junto con ellos y ante mí.\n\nTestador: _______________________\n\nTestigo 1: _______________________\n\nTestigo 2: _______________________\n\nTestigo 3: _______________________\n\nTestigo 4: _______________________\n\nTestigo 5: _______________________\n\nNotario: _______________________"
+  },
+  {
+    "id": "constitucion-testamento-cerrado",
+    "title": "Constitución de Testamento Cerrado",
+    "subtitle": "Sucesiones",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_testador",
+        "label": "Nombre completo del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_testador",
+        "label": "Cédula del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_testador",
+        "label": "Ciudad expedición cédula del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_testador",
+        "label": "Ciudad de domicilio del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_nacimiento_testador",
+        "label": "Ciudad de nacimiento del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento_nacimiento",
+        "label": "Departamento de nacimiento del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nacionalidad_testador",
+        "label": "Nacionalidad del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_nacimiento_testador",
+        "label": "Fecha de nacimiento del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "padre_testador",
+        "label": "Nombre del padre del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "madre_testador",
+        "label": "Nombre de la madre del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_matrimonio_testador",
+        "label": "Tipo de matrimonio (civil o católico)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge",
+        "label": "Nombre completo del cónyuge",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_matrimonio_testador",
+        "label": "Fecha del matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_matrimonio_testador",
+        "label": "Lugar donde se celebró el matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_matrimonio_testador",
+        "label": "Ciudad donde se celebró el matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_registro_matrimonio",
+        "label": "Notaría donde fue inscrito el matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_registro_matrimonio",
+        "label": "Ciudad del círculo de esa notaría",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "declaracion_descendencia",
+        "label": "Declaración sobre hijos y descendientes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "heredero_universal",
+        "label": "Nombre completo del heredero universal",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_albacea",
+        "label": "Nombre completo del albacea",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_albacea",
+        "label": "Cédula del albacea",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_albacea",
+        "label": "Ciudad expedición cédula del albacea",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "remuneracion_albacea",
+        "label": "Remuneración del albacea",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "revocacion_testamento_anterior",
+        "label": "Datos del testamento anterior que se revoca (si no hay escriba: No existen testamentos anteriores que revocar)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_hojas",
+        "label": "Número de hojas del testamento",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, yo, {{nombre_testador}}, mayor de edad, domiciliado y residente en {{domicilio_testador}}, identificado con la cédula de ciudadanía Nº. {{cedula_testador}} de {{expedicion_testador}}, actuando en mi cabal juicio, procedo a extender secretamente en el presente escrito mi última voluntad o testamento cerrado, para constitución legal posterior, en los siguientes términos:\n\nI. DECLARACIONES TESTAMENTARIAS\n\nPRIMERO. Identificación.— Mi nombre es el que mencioné en la parte introductoria de este escrito. Soy natural de {{ciudad_nacimiento_testador}}, departamento de {{departamento_nacimiento}}, con domicilio en {{domicilio_testador}}, de nacionalidad {{nacionalidad_testador}}, nací el {{fecha_nacimiento_testador}}.\n\nSEGUNDO. Filiación.— Soy hijo legítimo de {{padre_testador}} y de {{madre_testador}}.\n\nTERCERO. Matrimonio y descendencia.— Contraje matrimonio {{tipo_matrimonio_testador}} con la señora {{nombre_conyuge}} el {{fecha_matrimonio_testador}} en {{lugar_matrimonio_testador}} de la ciudad de {{ciudad_matrimonio_testador}}, cuya acta fue inscrita en la Notaría {{notaria_registro_matrimonio}} del Círculo de {{circulo_registro_matrimonio}}. {{declaracion_descendencia}}\n\nII. DISPOSICIONES TESTAMENTARIAS\n\nCUARTO. Heredero.— Designo como heredero(a) de todos mis bienes a título universal a {{heredero_universal}}.\n\nQUINTO. Albacea.— Nombro como albacea con tenencia y administración de mis bienes al doctor {{nombre_albacea}}, portador de la cédula de ciudadanía Nº. {{cedula_albacea}} de {{expedicion_albacea}}, quien por su ejercicio tendrá {{remuneracion_albacea}}.\n\nSEXTO. Revocación.— {{revocacion_testamento_anterior}}\n\nPara constancia de este testamento, escribo en {{numero_hojas}} hojas de papel, procedo a firmarlo en la ciudad y fecha indicados y posteriormente lo incluiré en una cubierta que será cerrada y lacrada.\n\nTestador: _______________________"
+  },
+  {
+    "id": "solicitud-apertura-testamento-cerrado",
+    "title": "Solicitud de Apertura y Publicación de Testamento Cerrado",
+    "subtitle": "Sucesiones",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre completo del abogado que hace la solicitud",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Cédula del abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_abogado",
+        "label": "Ciudad expedición cédula del abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_abogado",
+        "label": "Ciudad de domicilio del abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional_abogado",
+        "label": "Número de tarjeta profesional del abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombres_representados",
+        "label": "Nombres de los herederos representados por el abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_representados",
+        "label": "Ciudad de domicilio de los herederos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "calidad_representados",
+        "label": "Calidad de los representados (ej: hijos legítimos del testador)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_testador",
+        "label": "Nombre completo del testador fallecido",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_fallecimiento",
+        "label": "Ciudad donde falleció el testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_fallecimiento",
+        "label": "Fecha de fallecimiento del testador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_registro_defuncion",
+        "label": "Fecha del registro civil de defunción",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura_testamento",
+        "label": "Número de la escritura pública del testamento cerrado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_escritura_testamento",
+        "label": "Fecha de la escritura pública del testamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direcciones_testigos",
+        "label": "Direcciones de los testigos testamentarios para citarlos",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "Ciudad y fecha: {{ciudad}}, {{dia}} de {{mes}} de {{anio}}\n\nSeñor\nNotario {{notario}} del Círculo de {{circulo}}\nE. S. D.\n\n{{nombre_abogado}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_abogado}} de {{expedicion_abogado}}, domiciliado y residenciado en la ciudad de {{domicilio_abogado}}, abogado en ejercicio con tarjeta profesional Nº. {{tarjeta_profesional_abogado}} del Consejo Superior de la Judicatura, actuando en nombre y representación de {{nombres_representados}}, según consta en el poder que se adjunta, domiciliados en la ciudad de {{domicilio_representados}}, {{calidad_representados}} del testador, quien falleció en la ciudad de {{ciudad_fallecimiento}} el {{fecha_fallecimiento}}, según consta en el registro de defunción de fecha {{fecha_registro_defuncion}}, que se anexa, por medio del presente escrito me permito solicitarle la apertura, publicación, protocolización y registro del testamento cerrado, otorgado por el mencionado testador y constituido por escritura pública Nº. {{numero_escritura_testamento}} de fecha {{fecha_escritura_testamento}} autorizado en esta Notaría.\n\nCon tal finalidad pido que previamente se disponga lo siguiente:\n\na) Poner a su disposición el testamento que se describió arriba y que se halla bajo su custodia.\n\nb) Constatar su estado.\n\nc) Citar a los testigos testamentarios que aparecen en la escritura de constitución del referido testamento para el reconocimiento de sus firmas y la del testador, ordenando el abono de dichas firmas y la del notario que autorizó la escritura en caso de que faltaran los testigos, que residen en las siguientes direcciones: {{direcciones_testigos}}\n\nDOCUMENTOS\n\nAcompaño la petición con:\n1. Copia del registro civil de defunción del testador.\n2. Copia de la escritura pública Nº. {{numero_escritura_testamento}} de {{fecha_escritura_testamento}} de esa Notaría.\n3. Copias de los correspondientes registros civiles de nacimiento, válidos para probar parentesco.\n4. Poder debidamente autenticado.\n\nCOMPETENCIA\n\nEs usted, señor Notario, competente por haber sido otorgado el testamento en cuestión ante este despacho.\n\nAtentamente,\n\nAbogado: _______________________\n{{nombre_abogado}}\nC.C. Nº. {{cedula_abogado}} de {{expedicion_abogado}}\nT.P. Nº. {{tarjeta_profesional_abogado}}"
+  },
+  {
+    "id": "cesion-derechos-hereditarios",
+    "title": "Cesión o Venta de Derechos Hereditarios",
+    "subtitle": "Sucesiones",
+    "tipo_tramite": "Notarial",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_vendedor",
+        "label": "Nombre completo del vendedor (heredero que vende)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_vendedor",
+        "label": "Estado civil del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_vendedor",
+        "label": "Cédula del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_vendedor",
+        "label": "Ciudad expedición cédula del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_vendedor",
+        "label": "Ciudad de domicilio del vendedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_comprador",
+        "label": "Nombre completo del comprador (cesionario)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_comprador",
+        "label": "Cédula del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_comprador",
+        "label": "Ciudad expedición cédula del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_causante",
+        "label": "Nombre completo del causante (fallecido cuya herencia se cede)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_fallecimiento_causante",
+        "label": "Fecha de fallecimiento del causante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_fallecimiento_causante",
+        "label": "Ciudad donde falleció el causante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "juzgado_o_notaria_sucesion",
+        "label": "Juzgado o notaría donde se tramita la sucesión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "condicion_vendedor_en_sucesion",
+        "label": "Condición del vendedor en la sucesión (ej: hijo legítimo, cónyuge)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_bienes",
+        "label": "Descripción de los bienes inmuebles de la sucesión (para inscripción en registro)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "escritura_adquisicion_causante",
+        "label": "Escritura con que el causante adquirió el inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "precio_letras",
+        "label": "Precio de la cesión en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "precio_numeros",
+        "label": "Precio de la cesión en números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_comprador",
+        "label": "Estado civil del comprador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_comprador",
+        "label": "Ciudad de domicilio del comprador",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, compareció el señor {{nombre_vendedor}}, {{estado_civil_vendedor}}, colombiano mayor de edad, domiciliado y residente en {{domicilio_vendedor}}, identificado con la cédula de ciudadanía Nº. {{cedula_vendedor}} de {{expedicion_vendedor}}, y manifestó lo siguiente:\n\nPRIMERO. Objeto.— Que por medio de este instrumento transfiere a título de venta al señor {{nombre_comprador}}, identificado con la cédula de ciudadanía Nº. {{cedula_comprador}} de {{expedicion_comprador}}, el derecho de herencia y asignaciones a título singular que le correspondan o puedan corresponderle en la sucesión del señor {{nombre_causante}}, quien falleció en la ciudad de {{ciudad_fallecimiento_causante}} el {{fecha_fallecimiento_causante}}, y cuyo proceso de sucesión se está tramitando ante {{juzgado_o_notaria_sucesion}}.\n\nSEGUNDO. Adquisición del derecho.— Que el derecho herencial objeto de esta venta corresponde en la sucesión del causante a su situación de {{condicion_vendedor_en_sucesion}} que tiene con relación al difunto y que le ha sido conferido por la ley.\n\nTERCERO. Vinculación.— Que los derechos que se transfieren en este contrato recaen sobre todos los bienes que conforman la sucesión ilíquida mencionada, y entre los cuales y para efecto de su inscripción en el registro de instrumentos públicos se encuentra el siguiente bien inmueble:\n\n{{descripcion_bienes}}\n\nEste inmueble lo adquirió el causante según consta en {{escritura_adquisicion_causante}}.\n\nCUARTO. Responsabilidad y obligaciones.— Que responde al comprador de su calidad de heredero del señor {{nombre_causante}} y declara no haber enajenado antes el derecho objeto de la venta, el cual se halla libre de gravámenes, derechos de usufructo, uso o habitación, limitaciones o condiciones, embargos o litigios pendientes y de cualquier situación que afecte el derecho enajenado, y se obliga a salir al saneamiento de lo vendido en los casos previstos por la ley.\n\nQUINTO. Autorización.— El comprador cesionario queda autorizado para solicitar la formación a su nombre de la hijuela correspondiente al derecho adquirido, pero si por cualquier motivo se hiciere la hijuela a nombre del vendedor cedente, éste manifiesta su orden de entender esta adjudicación como hecha al comprador-cesionario, quien con el registro de dicha hijuela será retroactivamente propietario de los inmuebles adjudicados.\n\nSEXTO. Precio.— Que esta venta se realiza por la suma de {{precio_letras}} ($ {{precio_numeros}}) que el vendedor manifiesta haber recibido a satisfacción del comprador con la firma de la presente escritura.\n\nSÉPTIMO. Posesión.— Que desde hoy transfiere la posesión legal de la herencia con las facultades inherentes a ella y las de comenzar la posesión material de los bienes herenciales y administrarlos.\n\nACEPTACIÓN.— Presente el comprador, señor {{nombre_comprador}}, colombiano {{estado_civil_comprador}}, mayor de edad, identificado como aparece al pie de su firma, domiciliado en {{domicilio_comprador}}, dijo: que acepta los términos del presente instrumento y la venta que en ella se hace, que se encuentra en posesión de la herencia y de los bienes arriba descritos y que no tiene ningún parentesco con el vendedor.\n\nVendedor: _______________________\n\nComprador: _______________________\n\nNotario: _______________________"
+  },
+  {
+    "id": "poder-liquidacion-sucesion",
+    "title": "Poder para Solicitar Liquidación de Sucesión ante Notario",
+    "subtitle": "Sucesiones",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "poderdantes",
+        "label": "Nombres, edades y cédulas de todos los herederos que otorgan el poder",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_poderdantes",
+        "label": "Ciudad de domicilio de los herederos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "calidad_poderdantes",
+        "label": "Calidad de los poderdantes (ej: herederos, cónyuge supérstite)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado",
+        "label": "Nombre completo del abogado apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional_apoderado",
+        "label": "Número de tarjeta profesional del abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_apoderado",
+        "label": "Cédula del abogado apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_apoderado",
+        "label": "Ciudad expedición cédula del abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_causante",
+        "label": "Nombre completo del causante (fallecido)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ultimo_domicilio_causante",
+        "label": "Último domicilio del causante",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "Señor Notario {{notario}} del Círculo de {{circulo}}\nE. S. D.\n\nRef.: Poder para solicitar liquidación de sucesión y de sociedad conyugal.\n\n{{poderdantes}}, todos plenamente capaces, domiciliados y residentes en {{domicilio_poderdantes}}, en nuestra calidad de {{calidad_poderdantes}}, manifestamos a usted que por medio del presente escrito conferimos de común acuerdo poder especial, amplio y suficiente al doctor {{nombre_apoderado}}, abogado en ejercicio, portador de la tarjeta profesional Nº. {{tarjeta_profesional_apoderado}} del Consejo Superior de la Judicatura, identificado con la cédula de ciudadanía Nº. {{cedula_apoderado}} de {{expedicion_apoderado}}, para que en nuestro nombre y representación presente solicitud de liquidación de la herencia del señor {{nombre_causante}}, cuyo último domicilio fue la ciudad de {{ultimo_domicilio_causante}}, e intervenga en las diligencias notariales subsiguientes hasta la culminación del trámite sucesoral, de acuerdo con lo dispuesto en el Decreto 902 de 1988.\n\nEl doctor {{nombre_apoderado}}, además de las facultades inherentes al presente mandato, tiene las de suscribir la escritura pública de partición, transigir, desistir, recibir, sustituir y reasumir el poder.\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nAtentamente,\n\nFirmas de los poderdantes:\n\n_______________________          _______________________\n\n_______________________          _______________________\n\n_______________________          _______________________\n\nAcepto el presente mandato:\n\n_______________________\n{{nombre_apoderado}}\nT.P. Nº. {{tarjeta_profesional_apoderado}}"
+  },
+  {
+    "id": "solicitud-liquidacion-sucesion",
+    "title": "Solicitud de Liquidación de Sucesión y Sociedad Conyugal",
+    "subtitle": "Sucesiones",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre completo del abogado apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Cédula del abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_abogado",
+        "label": "Ciudad expedición cédula del abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional_abogado",
+        "label": "Número de tarjeta profesional del abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombres_herederos",
+        "label": "Nombres de todos los herederos representados",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_herederos",
+        "label": "Ciudad de domicilio de los herederos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "calidad_herederos",
+        "label": "Calidad de los herederos (ej: hijos, cónyuge, legatarios)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_causante",
+        "label": "Nombre completo del causante (fallecido)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ultimo_domicilio_causante",
+        "label": "Último domicilio del causante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "forma_aceptacion_herencia",
+        "label": "Forma de aceptación de la herencia (ej: con beneficio de inventario / pura y simple)",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "Señor Notario {{notario}} del Círculo de {{circulo}}\nE. S. D.\n\n{{nombre_abogado}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_abogado}} de {{expedicion_abogado}}, abogado en ejercicio con tarjeta profesional Nº. {{tarjeta_profesional_abogado}} del Consejo Superior de la Judicatura, actuando como apoderado de los señores {{nombres_herederos}}, mayores de edad, domiciliados y residentes en {{domicilio_herederos}}, plenamente capaces, quienes en su calidad de {{calidad_herederos}} obran de común acuerdo, y cuya representación acredito con los poderes que se anexan a la presente, me permito presentar ante usted solicitud de liquidación de sucesión y de sociedad conyugal de la señora (o señor) {{nombre_causante}}.\n\nPara tal efecto me permito acompañar a esta solicitud los documentos indicados en el artículo 588 del Código de Procedimiento Civil: acta de defunción del causante; actas del estado civil de los herederos y cónyuge sobreviviente; el inventario y avalúo de los bienes; la relación del pasivo de la herencia; y el respectivo trabajo de partición y adjudicación.\n\nBajo la gravedad del juramento informo:\n\nPRIMERO.— Que el último domicilio del causante señor(a) {{nombre_causante}} o el asiento principal de sus negocios fue la ciudad de {{ultimo_domicilio_causante}}.\n\nSEGUNDO.— Que ni los herederos ni yo conocemos otros interesados con igual o mejor derecho que el que mis mandantes tienen, y que ni ellos ni yo sabemos de la existencia de otros legatarios o acreedores distintos a los que se enuncian en la relación de activos y pasivos que se acompaña a esta solicitud.\n\nMis representados aceptan la herencia {{forma_aceptacion_herencia}}.\n\nEn consecuencia, solicito a usted ordenar la publicación del edicto emplazatorio de que trata el numeral 2 del artículo 3 del Decreto 902 de 1988 y dar los avisos de que trata la misma disposición.\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nAtentamente,\n\nAbogado apoderado: _______________________\n{{nombre_abogado}}\nC.C. Nº. {{cedula_abogado}} de {{expedicion_abogado}}\nT.P. Nº. {{tarjeta_profesional_abogado}}\n\nNota: Esta solicitud debe presentarse personalmente ante el Notario."
+  },
+  {
+    "id": "inventarios-avaluos-sucesion",
+    "title": "Relación de Inventarios y Avalúos de Bienes",
+    "subtitle": "Sucesiones",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado",
+        "label": "Nombre del apoderado o interesado que presenta el inventario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_causante",
+        "label": "Nombre completo del causante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "activo_sucesion",
+        "label": "Descripción detallada de todos los bienes del activo (inmuebles, vehículos, dinero, acciones, etc.) con su avalúo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_activo_letras",
+        "label": "Total del activo en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_activo_numeros",
+        "label": "Total del activo en números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pasivo_sucesion",
+        "label": "Descripción detallada de todas las deudas del pasivo (créditos, gastos notariales, etc.) o escriba: No existe pasivo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_pasivo_letras",
+        "label": "Total del pasivo en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_pasivo_numeros",
+        "label": "Total del pasivo en números",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "Señor Notario {{notario}} del Círculo de {{circulo}}\n\nRef.: Relación de inventarios y avalúos — Sucesión de {{nombre_causante}}.\n\nEl suscrito {{nombre_apoderado}} se permite presentar la relación de bienes e inventarios del causante {{nombre_causante}}, como sigue:\n\nACTIVO\n\n{{activo_sucesion}}\n\nSuma el activo: {{total_activo_letras}} ($ {{total_activo_numeros}}) moneda legal colombiana.\n\nPASIVO\n\n{{pasivo_sucesion}}\n\nSuma el pasivo: {{total_pasivo_letras}} ($ {{total_pasivo_numeros}}) moneda legal colombiana.\n\nDeclaro que no existen otros activos o pasivos que inventariar ni relacionar.\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nAtentamente,\n\nApoderado o interesado: _______________________\n{{nombre_apoderado}}\n\nNota: Esta relación de inventarios debe presentarse ante el Notario que adelanta el trámite de sucesión."
+  },
+  {
+    "id": "trabajo-particion-adjudicacion",
+    "title": "Trabajo de Partición y Adjudicación",
+    "subtitle": "Sucesiones",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad o municipio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día (número)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes (letras)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado",
+        "label": "Nombre completo del apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_causante",
+        "label": "Nombre completo del causante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_fallecimiento",
+        "label": "Ciudad donde falleció el causante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_fallecimiento",
+        "label": "Fecha de fallecimiento del causante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge_superstite",
+        "label": "Nombre del cónyuge supérstite (si no hay escriba: no aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_matrimonio_causante",
+        "label": "Fecha del matrimonio del causante (si no hay escriba: no aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijos_causante",
+        "label": "Nombres de los hijos del causante (si no hay escriba: no aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_sucesion",
+        "label": "Tipo de sucesión (intestada o testada)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_activo_letras",
+        "label": "Total del activo en letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_activo_numeros",
+        "label": "Total del activo en números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_bienes",
+        "label": "Descripción detallada de los bienes a repartir",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_pasivo_letras",
+        "label": "Total del pasivo en letras (si no hay escriba: cero pesos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_pasivo_numeros",
+        "label": "Total del pasivo en números (si no hay escriba: 0)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "gananciales_conyuge_letras",
+        "label": "Gananciales del cónyuge supérstite en letras (si no aplica escriba: no aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "gananciales_conyuge_numeros",
+        "label": "Gananciales del cónyuge en números (si no aplica escriba: 0)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuelas",
+        "label": "Descripción detallada de cada hijuela: a quién le toca qué bien y por qué valor",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "Señor Notario {{notario}} del Círculo de {{circulo}}\n\nRef.: Sucesión de {{nombre_causante}} — Trabajo de partición.\n\n{{nombre_apoderado}}, como apoderado de los interesados y de conformidad con lo dispuesto por el Decreto 902 de 1988, atentamente solicito a usted se sirva elevar a escritura pública el trabajo de partición y adjudicación cuya descripción es como sigue:\n\n1. El señor (a) {{nombre_causante}} murió en la ciudad de {{ciudad_fallecimiento}} el {{fecha_fallecimiento}}, fecha en la cual por ministerio de la ley se defirió su herencia a quienes por normas de la misma ley están llamados a recogerla.\n\n2. El causante contrajo matrimonio el {{fecha_matrimonio_causante}} con {{nombre_conyuge_superstite}}. No existiendo capitulaciones matrimoniales, vino a formarse la sociedad conyugal legal de bienes, la cual no ha sido liquidada hasta ahora por ninguno de los medios legales.\n\n3. Los herederos del causante son: {{hijos_causante}} y el cónyuge supérstite {{nombre_conyuge_superstite}}.\n\n4. Se trata de una sucesión {{tipo_sucesion}}. Los bienes del causante, una vez liquidada la sociedad, se repartirán entre los legitimarios y el cónyuge sobreviviente en la proporción legal.\n\nACERVO HEREDITARIO\n\nSegún los inventarios y el avalúo, el monto del activo es de {{total_activo_letras}} ($ {{total_activo_numeros}}) moneda legal colombiana. Los bienes son los siguientes:\n\n{{descripcion_bienes}}\n\nPasivo total: {{total_pasivo_letras}} ($ {{total_pasivo_numeros}}) moneda legal colombiana.\n\nLIQUIDACION\n\nDel monto del acervo bruto inventariado se deducen los gananciales que corresponden al cónyuge supérstite {{nombre_conyuge_superstite}}, estimados en {{gananciales_conyuge_letras}} ($ {{gananciales_conyuge_numeros}}) moneda legal colombiana.\n\nDISTRIBUCION (HIJUELAS)\n\n{{hijuelas}}\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nAtentamente,\n\nApoderado: _______________________\n{{nombre_apoderado}}"
   }
 ]

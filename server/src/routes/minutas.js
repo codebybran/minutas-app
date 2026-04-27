@@ -16,18 +16,17 @@ const SUBTITLE_ORDER_CIVIL = [
 
 const SUBTITLE_ORDER_FAMILIA = [
   'Matrimonio',
-  'Sociedad Conyugal y Patrimonial'
+  'Sociedad Conyugal y Patrimonial',
+  'Estado Civil',
+  'Sucesiones'
 ]
 
 const TIPO_TRAMITE = {
-  // Civil - Transferencia de Dominio
   1: 'Notarial', 2: 'Notarial', 3: 'Notarial', 4: 'Notarial',
   5: 'Privado', 6: 'Privado', 7: 'Privado',
-  // Civil - Uso y Goce
   8: 'Privado', 9: 'Notarial', 10: 'Privado',
-  // Civil - slugs
   'compraventa-retroventa': 'Notarial',
-  'cesion-derechos-hereditarios': 'Notarial',
+  'cesion-derechos-hereditarios-civil': 'Notarial',
   'estatutos-fundacion': 'Privado',
   'estatutos-fundacion-gobernacion': 'Privado',
   'contrato-construccion': 'Privado',
@@ -64,10 +63,26 @@ const TIPO_TRAMITE = {
   'poder-contraer-matrimonio': 'Notarial',
   'solicitud-matrimonio-notario': 'Notarial',
   'matrimonio-civil-notario': 'Notarial',
-  // Familia - Sociedad Conyugal y Patrimonial
+  // Familia - Sociedad Conyugal
   'disolucion-liquidacion-sociedad-conyugal': 'Notarial',
   'disolucion-sociedad-conyugal-sin-bienes': 'Notarial',
   'disolucion-liquidacion-sociedad-patrimonial': 'Notarial',
+  // Familia - Estado Civil
+  'legitimacion-hijo-extramatrimonial': 'Notarial',
+  'reconocimiento-hijo-extramatrimonial': 'Notarial',
+  'solicitud-correccion-registro-civil': 'Privado',
+  'correccion-errores-registro-civil': 'Notarial',
+  'cambio-correccion-adicion-nombre': 'Notarial',
+  // Familia - Sucesiones
+  'testamento-abierto': 'Notarial',
+  'testamento-cerrado-presentacion': 'Notarial',
+  'constitucion-testamento-cerrado': 'Privado',
+  'solicitud-apertura-testamento-cerrado': 'Privado',
+  'cesion-derechos-hereditarios': 'Notarial',
+  'poder-liquidacion-sucesion': 'Privado',
+  'solicitud-liquidacion-sucesion': 'Privado',
+  'inventarios-avaluos-sucesion': 'Privado',
+  'trabajo-particion-adjudicacion': 'Privado',
 }
 
 function ordenarMinutas(minutas, order) {
@@ -91,18 +106,14 @@ router.get('/', (req, res) => {
   try {
     const civilPath = path.join(__dirname, '../../data/templates/minutas-derecho-civil.json')
     const familiaPath = path.join(__dirname, '../../data/templates/minutas-derecho-familia.json')
-
     const minutasCivil = JSON.parse(fs.readFileSync(civilPath, 'utf8'))
     const minutasFamilia = JSON.parse(fs.readFileSync(familiaPath, 'utf8'))
-
     const categories = [
       {
         id: 'derecho-civil',
         name: 'Minutas Derecho Civil',
         minutas: ordenarMinutas(minutasCivil, SUBTITLE_ORDER_CIVIL).map(m => ({
-          id: m.id,
-          title: m.title,
-          subtitle: m.subtitle,
+          id: m.id, title: m.title, subtitle: m.subtitle,
           tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
         }))
       },
@@ -110,14 +121,11 @@ router.get('/', (req, res) => {
         id: 'derecho-familia',
         name: 'Derecho de Familia',
         minutas: ordenarMinutas(minutasFamilia, SUBTITLE_ORDER_FAMILIA).map(m => ({
-          id: m.id,
-          title: m.title,
-          subtitle: m.subtitle,
+          id: m.id, title: m.title, subtitle: m.subtitle,
           tipo_tramite: TIPO_TRAMITE[m.id] || 'Notarial'
         }))
       }
     ]
-
     res.json(categories)
   } catch (err) {
     console.error(err)
@@ -128,25 +136,18 @@ router.get('/', (req, res) => {
 router.get('/:categoryId/:minutaId', (req, res) => {
   try {
     const { categoryId, minutaId } = req.params
-
     let filePath
     if (categoryId === 'derecho-familia') {
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-familia.json')
     } else {
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-civil.json')
     }
-
     const minutas = JSON.parse(fs.readFileSync(filePath, 'utf8'))
     const minuta = minutas.find(m => String(m.id) === String(minutaId))
-
     if (!minuta) return res.status(404).json({ error: 'Minuta no encontrada' })
-
     res.json({
-      id: minuta.id,
-      title: minuta.title,
-      template: minuta.template,
-      fields: minuta.fields,
-      tipo_tramite: TIPO_TRAMITE[minuta.id] || 'Notarial'
+      id: minuta.id, title: minuta.title, template: minuta.template,
+      fields: minuta.fields, tipo_tramite: TIPO_TRAMITE[minuta.id] || 'Notarial'
     })
   } catch (err) {
     console.error(err)

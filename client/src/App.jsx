@@ -680,6 +680,176 @@ const FIELD_HELP = {
   activo_social: 'Describa cada bien numerado con su valor. Ej: 1. Apartamento ubicado en Calle 10 # 5-20, matrícula 370-654321, avaluado en ochenta millones de pesos ($80.000.000). 2. Vehículo Renault Logan, placa XYZ789, avaluado en veinte millones de pesos ($20.000.000).',
   pasivo_social: 'Describa cada deuda de la sociedad patrimonial numerada con su acreedor y valor. Ej: 1. Obligación a favor del Banco Bancolombia por diez millones de pesos ($10.000.000) a cargo del señor Carlos Torres. Si no hay deudas escriba exactamente: No existen pasivos sociales.',
   total_pasivo_letras: 'Escriba la suma total de todas las deudas en letras. Si no hay escriba: cero pesos.',
+
+  // Sucesiones - campos comunes
+  testigo1: 'Escriba el nombre completo del primer testigo. Debe ser mayor de edad, de buen credito y no tener impedimento legal.',
+  testigo2: 'Escriba el nombre completo del segundo testigo.',
+  testigo3: 'Escriba el nombre completo del tercer testigo.',
+  testigo4: 'Escriba el nombre completo del cuarto testigo (solo para testamento cerrado).',
+  testigo5: 'Escriba el nombre completo del quinto testigo (solo para testamento cerrado).',
+  domicilio_testigos: 'Escriba la ciudad donde viven los testigos. Al menos dos deben ser domiciliados en el mismo lugar del otorgamiento.',
+  nombre_testador: 'Escriba el nombre completo del testador tal como aparece en su cedula.',
+  cedula_testador: 'Escriba el numero de cedula del testador. Solo los numeros.',
+  expedicion_testador: 'Escriba la ciudad donde fue expedida la cedula del testador.',
+  domicilio_testador: 'Escriba la ciudad donde vive el testador.',
+  nacionalidad_testador: 'Escriba la nacionalidad del testador. Ej: colombiano.',
+  edad_testador: 'Escriba la edad actual del testador en numeros. Ej: 65.',
+  fecha_nacimiento_testador: 'Escriba la fecha de nacimiento del testador. Ej: el 15 de marzo de 1959.',
+  padre_testador: 'Escriba el nombre completo del padre del testador.',
+  madre_testador: 'Escriba el nombre completo de la madre del testador.',
+  tipo_matrimonio_testador: 'Escriba el tipo de matrimonio del testador. Ej: civil / catolico.',
+  fecha_matrimonio_testador: 'Escriba la fecha del matrimonio del testador. Ej: el 20 de junio de 1990.',
+  lugar_matrimonio_testador: 'Escriba el nombre de la capilla, iglesia o notaria donde se celebro el matrimonio.',
+  ciudad_matrimonio_testador: 'Escriba la ciudad donde se celebro el matrimonio del testador.',
+  nombre_conyuge: 'Escriba el nombre completo del conyuge del testador.',
+  declaracion_descendencia: 'Describa si el testador tiene hijos, nietos u otros descendientes. Ej: De nuestro matrimonio no ha habido descendientes y tampoco tengo hijos extramatrimoniales ni adoptivos. O: Tenemos tres hijos mayores de edad: Pedro, Maria y Juan.',
+  heredero_universal: 'Escriba el nombre completo de la persona o personas que heredaran todos los bienes.',
+  descripcion_herencia: 'Describa brevemente que hereda el heredero universal. Ej: Todos mis bienes muebles e inmuebles presentes y futuros. O puede dejar bienes especificos a personas especificas.',
+  nombre_albacea: 'Escriba el nombre completo del albacea principal. El albacea es quien administra los bienes hasta que se liquide la sucesion.',
+  nombre_albacea_suplente: 'Escriba el nombre del albacea suplente, quien asumira si el principal no puede ejercer el cargo.',
+  cedula_albacea_suplente: 'Escriba el numero de cedula del albacea suplente.',
+  expedicion_albacea_suplente: 'Escriba la ciudad donde fue expedida la cedula del albacea suplente.',
+  remuneracion_albacea: 'Escriba la remuneracion del albacea suplente. Ej: una remuneracion equivalente a la decima parte de los frutos de los bienes que administra.',
+  descripcion_cubierta: 'Describa la cubierta o sobre donde esta el testamento. Ej: un sobre manila tamano oficio, cerrado con cinta adhesiva y lacrado en sus cuatro esquinas.',
+  // Testamento cerrado - campos adicionales
+  ciudad_nacimiento_testador: 'Escriba la ciudad de nacimiento del testador.',
+  departamento_nacimiento: 'Escriba el departamento de nacimiento del testador.',
+  notaria_registro_matrimonio: 'Escriba el nombre o numero de la notaria donde fue inscrito el matrimonio.',
+  circulo_registro_matrimonio: 'Escriba la ciudad del circulo notarial donde fue inscrito el matrimonio.',
+  nombre_albacea: 'Escriba el nombre completo del albacea.',
+  cedula_albacea: 'Escriba el numero de cedula del albacea.',
+  expedicion_albacea: 'Escriba la ciudad donde fue expedida la cedula del albacea.',
+  remuneracion_albacea: 'Escriba la remuneracion del albacea. Ej: una suma equivalente al diez por ciento de los frutos de los bienes que administre.',
+  revocacion_testamento_anterior: 'Si tiene un testamento anterior que quiere revocar, escriba: Este testamento revoca en todas sus partes el testamento cerrado constituido mediante escritura publica No. X de fecha X autorizada en la Notaria X del Circulo de X. Si no tiene testamento anterior escriba: No existen testamentos anteriores que revocar.',
+  numero_hojas: 'Escriba el numero de hojas en que esta escrito el testamento. Ej: dos (2), tres (3).',
+  // Solicitud apertura testamento cerrado
+  nombre_abogado: 'Escriba el nombre completo del abogado que hace la solicitud.',
+  cedula_abogado: 'Escriba el numero de cedula del abogado.',
+  expedicion_abogado: 'Escriba la ciudad donde fue expedida la cedula del abogado.',
+  domicilio_abogado: 'Escriba la ciudad donde vive el abogado.',
+  tarjeta_profesional_abogado: 'Escriba el numero de tarjeta profesional del abogado. Lo encuentra en el carne del Consejo Superior de la Judicatura.',
+  nombres_representados: 'Escriba los nombres completos de todos los herederos que representa el abogado.',
+  domicilio_representados: 'Escriba la ciudad donde viven los herederos representados.',
+  calidad_representados: 'Escriba la relacion de los representados con el testador. Ej: hijos legitimos del testador / conyuge sobreviviente.',
+  nombre_causante: 'Escriba el nombre completo de la persona fallecida cuya herencia o testamento se tramita.',
+  ciudad_fallecimiento: 'Escriba la ciudad donde fallecio el causante.',
+  fecha_fallecimiento: 'Escriba la fecha de fallecimiento. Ej: el 15 de enero de 2024.',
+  fecha_registro_defuncion: 'Escriba la fecha del registro civil de defuncion. Ej: el 17 de enero de 2024.',
+  numero_escritura_testamento: 'Escriba el numero de la escritura publica donde consta el testamento cerrado.',
+  fecha_escritura_testamento: 'Escriba la fecha de esa escritura publica.',
+  direcciones_testigos: 'Escriba la direccion completa de cada testigo testamentario para citarlos. Ej: Testigo 1: Carlos Perez, Calle 4 # 2-50, El Cerrito. Testigo 2: ...',
+  // Cesion derechos hereditarios
+  nombre_vendedor: 'Escriba el nombre completo del heredero que vende su parte de la herencia.',
+  estado_civil_vendedor: 'Escriba el estado civil del vendedor. Ej: casado con sociedad conyugal vigente / soltero.',
+  cedula_vendedor: 'Escriba el numero de cedula del vendedor.',
+  expedicion_vendedor: 'Escriba la ciudad donde fue expedida la cedula del vendedor.',
+  domicilio_vendedor: 'Escriba la ciudad donde vive el vendedor.',
+  nombre_comprador: 'Escriba el nombre completo de quien compra los derechos hereditarios.',
+  cedula_comprador: 'Escriba el numero de cedula del comprador.',
+  expedicion_comprador: 'Escriba la ciudad donde fue expedida la cedula del comprador.',
+  fecha_fallecimiento_causante: 'Escriba la fecha de fallecimiento del causante. Ej: el 15 de enero de 2024.',
+  ciudad_fallecimiento_causante: 'Escriba la ciudad donde fallecio el causante.',
+  juzgado_o_notaria_sucesion: 'Escriba el juzgado o notaria donde se esta tramitando la sucesion. Ej: Juzgado Segundo Civil del Circuito de Cali / Notaria Unica de El Cerrito.',
+  condicion_vendedor_en_sucesion: 'Escriba la relacion del vendedor con el causante. Ej: hijo legitimo / conyuge sobreviviente / hermano.',
+  descripcion_bienes: 'Describa el o los inmuebles de la sucesion con sus datos completos: ubicacion, cabida, linderos, cedula catastral y matricula inmobiliaria.',
+  escritura_adquisicion_causante: 'Describa como adquirio el causante el inmueble. Ej: escritura publica No. 1245 de fecha 15 de mayo de 2010 otorgada en la Notaria Unica de El Cerrito.',
+  precio_letras: 'Escriba el precio de la cesion en letras. Ej: veinte millones de pesos.',
+  precio_numeros: 'Escriba el precio en numeros. Ej: 20.000.000.',
+  estado_civil_comprador: 'Escriba el estado civil del comprador. Ej: casado / soltero.',
+  domicilio_comprador: 'Escriba la ciudad donde vive el comprador.',
+  // Poder liquidacion sucesion
+  poderdantes: 'Escriba el nombre completo, identificacion y calidad de cada heredero que otorga el poder. Ej: Jhon Martinez, CC 1234567890 de El Cerrito, mayor de edad; Diana Garcia, CC 0987654321 de Cali, mayor de edad.',
+  domicilio_poderdantes: 'Escriba la ciudad donde viven los herederos.',
+  calidad_poderdantes: 'Escriba la calidad de los herederos. Ej: herederos / conyuge superstite / legatarios.',
+  nombre_apoderado: 'Escriba el nombre completo del abogado apoderado.',
+  tarjeta_profesional_apoderado: 'Escriba el numero de tarjeta profesional del abogado.',
+  cedula_apoderado: 'Escriba el numero de cedula del abogado.',
+  expedicion_apoderado: 'Escriba la ciudad donde fue expedida la cedula del abogado.',
+  ultimo_domicilio_causante: 'Escriba la ciudad que era el ultimo domicilio del causante antes de morir.',
+  // Solicitud liquidacion sucesion
+  nombres_herederos: 'Escriba los nombres completos de todos los herederos que el abogado representa.',
+  domicilio_herederos: 'Escriba la ciudad de domicilio de los herederos.',
+  calidad_herederos: 'Escriba la calidad de los herederos. Ej: hijos legitimos y conyuge superstite del causante.',
+  forma_aceptacion_herencia: 'Escriba como aceptan la herencia. Escriba: con beneficio de inventario / de modo puro y simple.',
+  // Inventarios y avaluos
+  activo_sucesion: 'Describa cada bien del activo numerado con su valor. Ej: Partida primera. Una casa de habitacion ubicada en Calle 4 Sur No. 2A-56, El Cerrito, matrícula 370-123456, avaluada en cien millones de pesos ($100.000.000). Partida segunda. Vehiculo Chevrolet Spark, placa ABC123, avaluado en treinta millones de pesos ($30.000.000).',
+  total_activo_letras: 'Escriba la suma total de todos los bienes en letras.',
+  total_activo_numeros: 'Escriba esa suma en numeros.',
+  pasivo_sucesion: 'Describa cada deuda numerada con su acreedor y valor. Si no hay deudas escriba: No existe pasivo.',
+  total_pasivo_letras: 'Escriba la suma total de las deudas en letras. Si no hay escriba: cero pesos.',
+  total_pasivo_numeros: 'Escriba esa suma en numeros. Si no hay escriba: 0.',
+  // Trabajo de particion
+  nombre_conyuge_superstite: 'Escriba el nombre completo del conyuge sobreviviente. Si no hay conyuge escriba: no aplica.',
+  fecha_matrimonio_causante: 'Escriba la fecha del matrimonio del causante. Si no se caso escriba: no aplica.',
+  hijos_causante: 'Escriba los nombres completos de los hijos del causante. Si no hay hijos escriba: no aplica.',
+  tipo_sucesion: 'Escriba el tipo de sucesion. Ej: intestada (sin testamento) / testada (con testamento).',
+  gananciales_conyuge_letras: 'Escriba el valor de los gananciales del conyuge superstite en letras. Si no aplica escriba: no aplica.',
+  gananciales_conyuge_numeros: 'Escriba ese valor en numeros. Si no aplica escriba: 0.',
+  hijuelas: 'Describa la hijuela de cada heredero: que bienes le corresponden y por que valor. Ej: Hijuela de Diana Garcia (conyuge): por su mitad de gananciales le corresponde la suma de X pesos, que se le paga con la casa ubicada en...',
+  // Estado Civil - Legitimacion hijo extramatrimonial
+  nombre_padre: 'Escriba el nombre completo del padre tal como aparece en su cedula.',
+  cedula_padre: 'Escriba el numero de cedula del padre. Solo los numeros.',
+  expedicion_padre: 'Escriba la ciudad donde fue expedida la cedula del padre.',
+  domicilio_padre: 'Escriba la ciudad donde vive actualmente el padre.',
+  nombre_madre: 'Escriba el nombre completo de la madre tal como aparece en su cedula.',
+  cedula_madre: 'Escriba el numero de cedula de la madre. Solo los numeros.',
+  expedicion_madre: 'Escriba la ciudad donde fue expedida la cedula de la madre.',
+  domicilio_madre: 'Escriba la ciudad donde vive actualmente la madre.',
+  lugar_matrimonio: 'Escriba el nombre de la iglesia, notaria o juzgado donde se celebro el matrimonio. Ej: Iglesia San Pedro / Notaria Unica de El Cerrito.',
+  notaria_registro_matrimonio: 'Escriba el nombre o numero de la notaria donde quedo registrado el matrimonio. Ej: Unica, Primera.',
+  circulo_registro_matrimonio: 'Escriba la ciudad del circulo notarial donde quedo registrado el matrimonio.',
+  tomo_matrimonio: 'Escriba el numero del tomo donde esta registrado el matrimonio. Lo encuentra en el registro civil de matrimonio.',
+  folio_matrimonio: 'Escriba el numero del folio donde esta registrado el matrimonio.',
+  fecha_registro_matrimonio: 'Escriba la fecha en que fue registrado el matrimonio. Ej: el 20 de junio de 2010.',
+  nombre_hijo: 'Escriba el nombre completo del hijo que se va a legitimar.',
+  fecha_nacimiento_hijo: 'Escriba la fecha de nacimiento del hijo. Ej: el 5 de marzo de 2009.',
+  ciudad_nacimiento_hijo: 'Escriba la ciudad donde nacio el hijo.',
+  notaria_registro_hijo: 'Escriba el nombre o numero de la notaria donde fue registrado el nacimiento del hijo.',
+  circulo_registro_hijo: 'Escriba la ciudad del circulo notarial donde fue registrado el nacimiento.',
+  serial_registro_hijo: 'Escriba el numero serial del registro civil de nacimiento del hijo. Aparece en el documento de registro civil.',
+  fecha_registro_hijo: 'Escriba la fecha en que fue registrado el nacimiento del hijo. Ej: el 10 de marzo de 2009.',
+  // Estado Civil - Reconocimiento hijo extramatrimonial
+  estado_civil_padre: 'Escriba el estado civil del padre. Ej: soltero, casado, divorciado, viudo.',
+  estado_civil_madre_concepcion: 'Escriba el estado civil que tenia la madre cuando quedo embarazada. Ej: soltera, casada.',
+  estado_civil_madre_actual: 'Escriba el estado civil actual de la madre. Ej: soltera, casada.',
+  nombre_completo_hijo_nuevo: 'Escriba el nombre completo que tendra el hijo a partir del reconocimiento, incluyendo ambos apellidos. Ej: Juan Pablo Martinez Garcia.',
+  // Estado Civil - Solicitud correccion registro civil
+  nombre_solicitante: 'Escriba el nombre completo del solicitante tal como aparece en su cedula.',
+  cedula_solicitante: 'Escriba el numero de cedula del solicitante. Solo los numeros.',
+  expedicion_solicitante: 'Escriba la ciudad donde fue expedida la cedula del solicitante.',
+  domicilio_solicitante: 'Escriba la ciudad donde vive actualmente el solicitante.',
+  folio_registro: 'Escriba el numero del folio del registro civil donde esta el error. Lo encuentra en el documento de registro civil.',
+  libro_registro: 'Escriba el numero del libro del registro civil. Lo encuentra en el mismo documento.',
+  fecha_inscripcion_nacimiento: 'Escriba la fecha en que fue inscrito el nacimiento. Ej: el 15 de enero de 1990.',
+  nombre_inscrito_nacimiento: 'Escriba el nombre tal como aparece en el registro de nacimiento.',
+  tipo_documento_matrimonio: 'Escriba que tipo de documento tiene el error. Ej: registro civil de matrimonio / registro civil de nacimiento.',
+  notaria_matrimonio: 'Escriba el nombre o numero de la notaria donde se celebro o registro el acto con error.',
+  circulo_matrimonio: 'Escriba la ciudad del circulo notarial de esa notaria.',
+  nombre_conyuge: 'Escriba el nombre de la otra persona del acto. Si es matrimonio escriba el nombre del conyuge.',
+  numero_escritura: 'Escriba el numero de la escritura publica o documento donde esta el error. Solo el numero.',
+  folio_registro_matrimonio: 'Escriba el numero del folio donde esta el error.',
+  libro_registro_matrimonio: 'Escriba el numero del libro donde esta el error.',
+  tipo_error: 'Escriba que tipo de error es. Ej: mecanografico / ortografico / de comparacion con el documento antecedente.',
+  dato_errado: 'Escriba exactamente como aparece el dato errado en el registro. Ej: GARCIA cuando el apellido correcto es GARCES.',
+  dato_correcto: 'Escriba el dato correcto que debe quedar en el registro. Ej: GARCES.',
+  // Estado Civil - Correccion errores registro civil (escritura publica)
+  estado_civil_solicitante: 'Escriba el estado civil del solicitante. Ej: soltero, casado, divorciado, viudo.',
+  fecha_registro_nacimiento: 'Escriba la fecha en que fue registrado el nacimiento. Ej: el 15 de enero de 1990.',
+  nombre_inscrito: 'Escriba el nombre tal como aparece actualmente en el registro de nacimiento.',
+  folio_nacimiento: 'Escriba el numero del folio del registro de nacimiento.',
+  libro_nacimiento: 'Escriba el numero del libro del registro de nacimiento.',
+  documento_prueba: 'Escriba que documento prueba el dato correcto. Ej: certificado medico del parto expedido por la Clinica Valle de El Cerrito / partida de bautismo / certificado de la Registraduria.',
+  nombre_madre: 'Escriba el nombre completo de la madre del solicitante.',
+  // Estado Civil - Cambio correccion adicion nombre
+  nombre_inscrito: 'Escriba el nombre completo tal como aparece actualmente en el registro de nacimiento.',
+  notaria_nacimiento: 'Escriba el nombre o numero de la notaria donde fue inscrito el nacimiento.',
+  circulo_nacimiento: 'Escriba la ciudad del circulo notarial de esa notaria.',
+  tipo_modificacion: 'Escriba que tipo de cambio va a hacer. Escriba exactamente: cambio / correccion / adicion.',
+  nombre_anterior: 'Escriba el nombre o parte del nombre que desea cambiar o corregir. Ej: Juan Pablo (si va a cambiar solo el primer nombre escriba solo ese).',
+  nombre_nuevo: 'Escriba el nombre nuevo que reemplazara al anterior. Ej: Santiago.',
+  nombre_completo_nuevo: 'Escriba el nombre completo definitivo despues del cambio, incluyendo todos los nombres y apellidos. Ej: Santiago Martinez Garcia.',
+
+
   total_pasivo_numeros: 'Escriba esa suma en números. Si no hay escriba: 0.',
   total_activo_liquido_letras: 'Escriba el activo bruto menos el pasivo, en letras.',
   total_activo_liquido_numeros: 'Escriba ese resultado en números.',
@@ -1579,6 +1749,73 @@ const DATOS_PRUEBA = {
   forma_pago: 'de contado, en este acto, mediante cheque de gerencia No. 00456 del Banco de Bogotá, sucursal Cali',
   mes_paz_salvo_administracion: 'abril de 2026',
   // Disolución y Liquidación de Sociedad Conyugal -
+
+  // Estado Civil - Legitimacion hijo extramatrimonial
+  nombre_padre: 'Jhon Brandon Martinez Velez',
+  cedula_padre: '1234567890',
+  expedicion_padre: 'El Cerrito',
+  domicilio_padre: 'El Cerrito',
+  nombre_madre: 'Diana Patricia Garcia Lopez',
+  cedula_madre: '0987654321',
+  expedicion_madre: 'Cali',
+  domicilio_madre: 'Cali',
+  tipo_matrimonio: 'civil',
+  fecha_matrimonio: 'el 15 de junio de 2010',
+  lugar_matrimonio: 'Notaria Unica de El Cerrito',
+  ciudad_matrimonio: 'El Cerrito',
+  notaria_registro_matrimonio: 'Unica',
+  circulo_registro_matrimonio: 'El Cerrito',
+  tomo_matrimonio: '5',
+  folio_matrimonio: '120',
+  fecha_registro_matrimonio: 'el 20 de junio de 2010',
+  nombre_hijo: 'Samuel Martinez Garcia',
+  fecha_nacimiento_hijo: 'el 5 de marzo de 2009',
+  ciudad_nacimiento_hijo: 'El Cerrito',
+  notaria_registro_hijo: 'Unica',
+  circulo_registro_hijo: 'El Cerrito',
+  serial_registro_hijo: '1234567',
+  fecha_registro_hijo: 'el 10 de marzo de 2009',
+  // Estado Civil - Reconocimiento hijo extramatrimonial
+  estado_civil_padre: 'soltero',
+  estado_civil_madre_concepcion: 'soltera',
+  estado_civil_madre_actual: 'soltera',
+  nombre_completo_hijo_nuevo: 'Samuel Martinez Garcia',
+  // Estado Civil - Solicitud correccion registro civil
+  nombre_solicitante: 'Jhon Brandon Martinez Velez',
+  cedula_solicitante: '1234567890',
+  expedicion_solicitante: 'El Cerrito',
+  domicilio_solicitante: 'El Cerrito',
+  folio_registro: '045',
+  libro_registro: '003',
+  fecha_inscripcion_nacimiento: 'el 15 de enero de 1990',
+  nombre_inscrito_nacimiento: 'Jhon Brandon Martinez Velez',
+  tipo_documento_matrimonio: 'registro civil de matrimonio',
+  notaria_matrimonio: 'Unica',
+  circulo_matrimonio: 'El Cerrito',
+  nombre_conyuge: 'Diana Patricia Garcia Lopez',
+  numero_escritura: '1245',
+  folio_registro_matrimonio: '120',
+  libro_registro_matrimonio: '5',
+  fecha_registro_matrimonio: 'el 20 de junio de 2010',
+  tipo_error: 'mecanografico',
+  dato_errado: 'GARSIA',
+  dato_correcto: 'GARCIA',
+  // Estado Civil - Correccion errores registro civil
+  estado_civil_solicitante: 'soltero',
+  fecha_registro_nacimiento: 'el 15 de enero de 1990',
+  nombre_inscrito: 'Jhon Brandon Martinez Velez',
+  folio_nacimiento: '045',
+  libro_nacimiento: '003',
+  documento_prueba: 'certificado medico del parto expedido por la Clinica Valle de El Cerrito que asistio a la senora Ana Lucia Velez de Martinez',
+  nombre_madre: 'Ana Lucia Velez de Martinez',
+  // Estado Civil - Cambio correccion adicion nombre
+  notaria_nacimiento: 'Unica',
+  circulo_nacimiento: 'El Cerrito',
+  tipo_modificacion: 'cambio',
+  nombre_anterior: 'Jhon',
+  nombre_nuevo: 'Juan',
+  nombre_completo_nuevo: 'Juan Brandon Martinez Velez',
+
   nombre_conyuge1: 'Jhon Brandon Martínez Vélez',
   cedula_conyuge1: '1234567890',
   expedicion_conyuge1: 'El Cerrito',
@@ -1635,7 +1872,110 @@ const DATOS_PRUEBA = {
   hijuela1_companero: 'Marcela Ruiz Ospina',
   hijuela1_descripcion: 'A. Apartamento ubicado en la Carrera 8 # 12-34, Barrio Los Pinos, Cali, con matrícula inmobiliaria 370-654321, adjudicado en la suma de ochenta millones de pesos ($80.000.000).',
   hijuela2_companero: 'Carlos Andrés Torres Salcedo',
-  hijuela2_descripcion: 'A. Vehículo automotor Renault Logan, modelo 2019, placas XYZ789, adjudicado en la suma de veinte millones de pesos ($20.000.000). B. Saldo en cuenta de ahorros Davivienda número 456-789012-11, adjudicado en la suma de diez millones de pesos ($10.000.000).',
+  hijuela2_descripcion: 'A. Vehículo automotor Renault Logan, modelo 2019, placas XYZ789, adjudicado en la suma de veinte millones de pesos ($20.000.000). B. Saldo en cuenta de ahorros Davivienda número 456-789012-11, adjudicado en la suma de diez millones de pesos ($10.000.000).', 
+
+  // Sucesiones - Testamento Abierto
+  testigo1: 'Carlos Eduardo Perez Rios',
+  testigo2: 'Maria Fernanda Garcia Lopez',
+  testigo3: 'Luis Fernando Gomez Torres',
+  testigo4: 'Roberto Salcedo Munoz',
+  testigo5: 'Patricia Londono Vera',
+  domicilio_testigos: 'El Cerrito',
+  nombre_testador: 'Jhon Brandon Martinez Velez',
+  cedula_testador: '1234567890',
+  expedicion_testador: 'El Cerrito',
+  domicilio_testador: 'El Cerrito',
+  nacionalidad_testador: 'colombiano',
+  edad_testador: '55',
+  fecha_nacimiento_testador: 'el 21 de abril de 1971',
+  padre_testador: 'Roberto Martinez Gomez',
+  madre_testador: 'Ana Lucia Velez de Martinez',
+  tipo_matrimonio_testador: 'civil',
+  fecha_matrimonio_testador: 'el 15 de junio de 2000',
+  lugar_matrimonio_testador: 'Notaria Unica de El Cerrito',
+  ciudad_matrimonio_testador: 'El Cerrito',
+  nombre_conyuge: 'Diana Patricia Garcia Lopez',
+  declaracion_descendencia: 'De nuestro matrimonio no ha habido descendientes y tampoco tengo hijos extramatrimoniales ni adoptivos.',
+  heredero_universal: 'mi esposa legitima, señora Diana Patricia Garcia Lopez',
+  descripcion_herencia: 'Le corresponderan todos mis bienes muebles e inmuebles presentes y futuros.',
+  nombre_albacea: 'mi esposa Diana Patricia Garcia Lopez',
+  nombre_albacea_suplente: 'Carlos Eduardo Perez Rios',
+  cedula_albacea_suplente: '1122334455',
+  expedicion_albacea_suplente: 'El Cerrito',
+  remuneracion_albacea: 'una remuneracion equivalente a la decima parte de los frutos de los bienes que administra',
+  descripcion_cubierta: 'un sobre manila tamano oficio, cerrado con cinta adhesiva y lacrado en sus cuatro esquinas con sello personal del testador',
+  ciudad_nacimiento_testador: 'El Cerrito',
+  departamento_nacimiento: 'Valle del Cauca',
+  notaria_registro_matrimonio: 'Unica',
+  circulo_registro_matrimonio: 'El Cerrito',
+  cedula_albacea: '0987654321',
+  expedicion_albacea: 'Cali',
+  revocacion_testamento_anterior: 'No existen testamentos anteriores que revocar.',
+  numero_hojas: 'dos (2)',
+  // Solicitud apertura testamento cerrado
+  nombre_abogado: 'Luis Fernando Gomez Torres',
+  cedula_abogado: '0987654321',
+  expedicion_abogado: 'Cali',
+  domicilio_abogado: 'Cali',
+  tarjeta_profesional_abogado: '123456-A',
+  nombres_representados: 'Diana Patricia Garcia Lopez y Carlos Martinez Garcia',
+  domicilio_representados: 'El Cerrito',
+  calidad_representados: 'conyuge sobreviviente e hijo legitimo del testador',
+  nombre_causante: 'Jhon Brandon Martinez Velez',
+  ciudad_fallecimiento: 'El Cerrito',
+  fecha_fallecimiento: 'el 5 de enero de 2024',
+  fecha_registro_defuncion: 'el 6 de enero de 2024',
+  numero_escritura_testamento: '1245',
+  fecha_escritura_testamento: '21 de abril de 2020',
+  direcciones_testigos: 'Testigo 1: Carlos Eduardo Perez Rios, Calle 4 Sur No. 2A-56, El Cerrito. Testigo 2: Maria Fernanda Garcia Lopez, Carrera 8 No. 12-34, El Cerrito. Testigo 3: Luis Fernando Gomez Torres, Calle 10 No. 5-20, Cali.',
+  // Cesion derechos hereditarios
+  nombre_vendedor: 'Carlos Martinez Garcia',
+  estado_civil_vendedor: 'soltero',
+  cedula_vendedor: '1122334455',
+  expedicion_vendedor: 'El Cerrito',
+  domicilio_vendedor: 'El Cerrito',
+  nombre_comprador: 'Alexander Garcia Lopez',
+  cedula_comprador: '5544332211',
+  expedicion_comprador: 'Cali',
+  fecha_fallecimiento_causante: 'el 5 de enero de 2024',
+  ciudad_fallecimiento_causante: 'El Cerrito',
+  juzgado_o_notaria_sucesion: 'Notaria Unica del Circulo de El Cerrito',
+  condicion_vendedor_en_sucesion: 'hijo legitimo',
+  escritura_adquisicion_causante: 'escritura publica No. 890 de fecha 15 de mayo de 2010 otorgada en la Notaria Unica del Circulo de El Cerrito, registrada bajo el folio de matricula inmobiliaria No. 370-123456',
+  precio_letras: 'veinte millones de pesos',
+  precio_numeros: '20.000.000',
+  estado_civil_comprador: 'casado',
+  domicilio_comprador: 'Cali',
+  // Poder liquidacion sucesion
+  poderdantes: 'Diana Patricia Garcia Lopez, mayor de edad, cedula de ciudadania No. 0987654321 de Cali; y Carlos Martinez Garcia, mayor de edad, cedula de ciudadania No. 1122334455 de El Cerrito',
+  domicilio_poderdantes: 'El Cerrito',
+  calidad_poderdantes: 'conyuge superstite e hijo legitimo del causante',
+  nombre_apoderado: 'Luis Fernando Gomez Torres',
+  tarjeta_profesional_apoderado: '123456-A',
+  cedula_apoderado: '0987654321',
+  expedicion_apoderado: 'Cali',
+  ultimo_domicilio_causante: 'El Cerrito',
+  // Solicitud liquidacion sucesion
+  nombres_herederos: 'Diana Patricia Garcia Lopez y Carlos Martinez Garcia',
+  domicilio_herederos: 'El Cerrito',
+  calidad_herederos: 'conyuge superstite e hijo legitimo del causante',
+  forma_aceptacion_herencia: 'con beneficio de inventario',
+  // Inventarios y avaluos
+  activo_sucesion: 'Partida primera. Casa de habitacion ubicada en la Calle 4 Sur No. 2A-56, Barrio Villa del Carmen, El Cerrito, con todas sus anexidades y dependencias, comprendida dentro de los siguientes linderos: Norte: con la Calle 4 Sur en extension de diez (10) metros; Sur: con el predio de Roberto Salcedo Munoz en diez (10) metros; Oriente: con la Carrera 2A en doce (12) metros; Occidente: con el predio de Patricia Londono Vera en doce (12) metros. Identificado con cedula catastral No. 762480002000000020546 y matricula inmobiliaria No. 370-123456. Fue adquirida por el causante por compra a Carlos Eduardo Perez Rios segun escritura publica No. 890 de la Notaria Unica de El Cerrito, registrada el 20 de mayo de 2010. Avaluado en cien millones de pesos ($100.000.000). Partida segunda. Vehiculo automotor Chevrolet Spark, modelo 2020, placas ABC123, motor ABC123456, de servicio particular. Avaluado en treinta millones de pesos ($30.000.000).',
+  total_activo_letras: 'ciento treinta millones de pesos',
+  total_activo_numeros: '130.000.000',
+  pasivo_sucesion: 'No existe pasivo.',
+  total_pasivo_letras: 'cero pesos',
+  total_pasivo_numeros: '0',
+  // Trabajo particion
+  nombre_conyuge_superstite: 'Diana Patricia Garcia Lopez',
+  fecha_matrimonio_causante: 'el 15 de junio de 2000',
+  hijos_causante: 'Carlos Martinez Garcia, mayor de edad',
+  tipo_sucesion: 'intestada',
+  gananciales_conyuge_letras: 'sesenta y cinco millones de pesos',
+  gananciales_conyuge_numeros: '65.000.000',
+  hijuelas: 'Hijuela de Diana Patricia Garcia Lopez (conyuge superstite): Por su mitad de gananciales y su cuota hereditaria le corresponde la suma de ochenta y siete millones quinientos mil pesos ($87.500.000), que se le paga con la casa de habitacion ubicada en Calle 4 Sur No. 2A-56, El Cerrito, matricula 370-123456, adjudicada en cien millones de pesos ($100.000.000), menos la deduccion por valor de su hijuela. Hijuela de Carlos Martinez Garcia (hijo): Por su cuota hereditaria le corresponde la suma de cuarenta y dos millones quinientos mil pesos ($42.500.000), que se le paga con el vehiculo Chevrolet Spark placa ABC123 en treinta millones de pesos ($30.000.000) y el saldo en dinero.',
+
 
 }
 
@@ -2103,6 +2443,155 @@ const PASOS_SIGUIENTE = {
     ]
   },
 
+
+
+  'testamento-abierto': {
+    titulo: 'Testamento Abierto o Publico',
+    pasos: [
+      { num: 1, titulo: 'Ir a la Notaria con los documentos', descripcion: 'El testador debe ir personalmente a la Notaria con su cedula original. No puede hacerlo mediante apoderado — el testamento es un acto personal e indelegable. La Notaria se encargara de coordinar la presencia de los tres testigos.' },
+      { num: 2, titulo: 'Verificar que los testigos no tengan impedimento legal', descripcion: 'Los testigos no pueden ser: herederos ni legatarios del testamento, parientes del testador hasta el tercer grado de consanguinidad, dependientes o domesticos del testador, menores de edad, ni personas con antecedentes de deshonestidad. Si alguno tiene impedimento el testamento puede ser nulo.' },
+      { num: 3, titulo: 'El Notario redacta y lee el testamento', descripcion: 'El Notario redacta el testamento con las disposiciones del testador, lo lee en voz alta en un solo acto en presencia del testador y los tres testigos. Todos deben estar presentes desde el inicio hasta el final.' },
+      { num: 4, titulo: 'El testador y los testigos firman', descripcion: 'Firman el testador, los tres testigos y el Notario. Si el testador no puede firmar, uno de los testigos puede firmar a su ruego, dejando constancia de ello.' },
+      { num: 5, titulo: 'El testamento queda en la Notaria', descripcion: 'El testamento queda archivado en el protocolo de la Notaria. El testador puede solicitar copias pero el testamento solo produce efectos despues de su muerte.' },
+      { num: 6, titulo: 'El testador puede revocar el testamento en cualquier momento', descripcion: 'Mientras viva, el testador puede otorgar un nuevo testamento que revoque el anterior. La revocacion debe ser expresa o tacita mediante un testamento posterior.' },
+    ]
+  },
+  'testamento-cerrado-presentacion': {
+    titulo: 'Testamento Cerrado (Diligencia de Presentacion)',
+    pasos: [
+      { num: 1, titulo: 'Primero redactar el testamento secreto', descripcion: 'El testador debe redactar primero el contenido de su testamento (use la minuta de Constitucion de Testamento Cerrado). Ese documento lo firma personalmente y lo mete en un sobre cerrado.' },
+      { num: 2, titulo: 'Ir a la Notaria con el sobre y cinco testigos', descripcion: 'El testador lleva el sobre cerrado a la Notaria acompanado de cinco testigos habiles — no tres como en el testamento abierto. Dos de los cinco deben ser domiciliados en el lugar y dos deben saber leer y escribir.' },
+      { num: 3, titulo: 'El testador declara en voz alta que el sobre contiene su testamento', descripcion: 'Ante el Notario y los cinco testigos, el testador declara claramente que dentro del sobre esta su testamento. Esta declaracion es esencial — sin ella la diligencia es nula.' },
+      { num: 4, titulo: 'El Notario extiende la diligencia sobre la cubierta', descripcion: 'El Notario escribe sobre el sobre la palabra TESTAMENTO y deja constancia del estado del sobre, el nombre del testador, los testigos, y la fecha.' },
+      { num: 5, titulo: 'Todos firman sobre la cubierta', descripcion: 'El testador, los cinco testigos y el Notario firman directamente sobre el sobre o cubierta.' },
+      { num: 6, titulo: 'El sobre queda bajo custodia de la Notaria', descripcion: 'El testador deja el testamento cerrado en poder de la Notaria para su guarda y custodia. Solo se abrira despues de su muerte, cuando los herederos presenten la solicitud de apertura.' },
+    ]
+  },
+  'constitucion-testamento-cerrado': {
+    titulo: 'Constitucion de Testamento Cerrado',
+    pasos: [
+      { num: 1, titulo: 'Este es el documento secreto — nadie mas debe verlo', descripcion: 'El testamento cerrado se redacta en privado. Solo el testador lo escribe y lo lee. Nadie mas — ni el abogado, ni el Notario, ni los testigos — conoce su contenido.' },
+      { num: 2, titulo: 'Firmar personalmente cada hoja', descripcion: 'El testador debe firmar el testamento con su propia mano. Se recomienda numerar las hojas y firmar en cada una para evitar que alguien reemplace o agregue hojas.' },
+      { num: 3, titulo: 'Meter en sobre cerrado y lacrado', descripcion: 'Una vez firmado, el testador mete el documento en un sobre, lo cierra y lo lacra de manera que no pueda extraerse sin romper la cubierta. Tambien puede sellarlo con su sello personal.' },
+      { num: 4, titulo: 'Llevar el sobre cerrado a la Notaria para la diligencia de presentacion', descripcion: 'El siguiente paso es ir a la Notaria con el sobre cerrado y cinco testigos para realizar la diligencia de presentacion ante el Notario. Usar la minuta de Testamento Cerrado (Diligencia de Presentacion).' },
+      { num: 5, titulo: 'Guardar una copia de los datos esenciales', descripcion: 'Se recomienda guardar en un lugar seguro los datos esenciales del testamento: notaria donde queda custodiado, numero de escritura de la diligencia de presentacion y fecha. Asi los herederos podran encontrarlo cuando sea necesario.' },
+    ]
+  },
+  'solicitud-apertura-testamento-cerrado': {
+    titulo: 'Solicitud de Apertura y Publicacion de Testamento Cerrado',
+    pasos: [
+      { num: 1, titulo: 'Esta solicitud solo procede despues de la muerte del testador', descripcion: 'El testamento cerrado solo puede abrirse una vez fallecido el testador. Cualquier interesado en la sucesion puede solicitar la apertura.' },
+      { num: 2, titulo: 'Presentar la solicitud ante el Notario que custodia el testamento', descripcion: 'La solicitud debe presentarse ante el Notario que tiene el testamento bajo custodia. Es el mismo Notario ante quien se hizo la diligencia de presentacion.' },
+      { num: 3, titulo: 'El Notario constata el estado del sobre', descripcion: 'El Notario verifica que el sobre este en buen estado y sin signos de haber sido abierto o manipulado. Deja constancia de esto en el expediente.' },
+      { num: 4, titulo: 'Los testigos reconocen sus firmas', descripcion: 'El Notario cita a los testigos testamentarios para que reconozcan sus firmas y la del testador en la cubierta. Si algun testigo no puede comparecer, el Notario puede abonar la firma.' },
+      { num: 5, titulo: 'El Notario abre y publica el testamento', descripcion: 'Una vez cumplidos los requisitos, el Notario abre el sobre, lee el testamento en voz alta (publicacion) y lo protocoliza mediante escritura publica.' },
+      { num: 6, titulo: 'Registrar el testamento e iniciar la sucesion', descripcion: 'La escritura de protocolizacion del testamento debe registrarse en la Oficina de Registro de Instrumentos Publicos. Luego se puede iniciar el tramite de liquidacion de la sucesion.' },
+    ]
+  },
+  'cesion-derechos-hereditarios': {
+    titulo: 'Cesion o Venta de Derechos Hereditarios',
+    pasos: [
+      { num: 1, titulo: 'Elevar a Escritura Publica', descripcion: 'La cesion de derechos hereditarios debe hacerse mediante escritura publica ante Notario. Ambas partes deben ir a la Notaria con sus cedulas originales.' },
+      { num: 2, titulo: 'Registrar la escritura en Instrumentos Publicos', descripcion: 'Si entre los bienes de la sucesion hay inmuebles, la escritura de cesion debe registrarse en la Oficina de Registro de Instrumentos Publicos donde esten ubicados esos inmuebles.' },
+      { num: 3, titulo: 'Notificar al juzgado o notaria donde se tramita la sucesion', descripcion: 'El comprador-cesionario debe presentar copia de la escritura ante el juzgado o notaria donde esta la sucesion, para que lo reconozcan como parte del proceso en lugar del vendedor.' },
+      { num: 4, titulo: 'Este es un contrato aleatorio — riesgo para el comprador', descripcion: 'El vendedor no garantiza el resultado de la sucesion ni el valor exacto de lo que le toque. El comprador asume el riesgo de que la hijuela pueda ser menor de lo esperado.' },
+      { num: 5, titulo: 'Pagar los impuestos correspondientes', descripcion: 'Se deben pagar los derechos notariales y el impuesto de registro. Consulte en la Notaria el valor exacto segun el precio de la cesion.' },
+    ]
+  },
+  'poder-liquidacion-sucesion': {
+    titulo: 'Poder para Solicitar Liquidacion de Sucesion ante Notario',
+    pasos: [
+      { num: 1, titulo: 'Todos los herederos deben firmar el poder', descripcion: 'El poder debe ser firmado por TODOS los herederos, legatarios y el conyuge superstite que van a participar en la sucesion notarial. Si alguno no firma, el tramite no puede hacerse ante notario y debe ir a juzgado.' },
+      { num: 2, titulo: 'El poder debe ser autenticado ante Notario o Juez', descripcion: 'El poder se elabora en papel comun pero debe ser presentado personalmente por los herederos ante un Notario o Juez para autenticar las firmas.' },
+      { num: 3, titulo: 'El apoderado debe ser abogado titulado', descripcion: 'Para tramitar la sucesion ante Notario se requiere abogado con tarjeta profesional vigente, salvo que el valor de los bienes sea inferior al minimo legal establecido.' },
+      { num: 4, titulo: 'Dirigir el poder al Notario del ultimo domicilio del causante', descripcion: 'El poder debe dirigirse al Notario del circulo notarial que corresponda al ultimo domicilio del causante. Si hay varios notarios en ese circulo, los herederos eligen de comun acuerdo.' },
+    ]
+  },
+  'solicitud-liquidacion-sucesion': {
+    titulo: 'Solicitud de Liquidacion de Sucesion y Sociedad Conyugal',
+    pasos: [
+      { num: 1, titulo: 'Presentar todos los documentos completos', descripcion: 'Junto con esta solicitud deben presentarse: registro civil de defuncion del causante, registros civiles de nacimiento de los herederos, registro civil de matrimonio si hay conyuge, testamento si lo hay, inventario y avaluo de bienes, y el trabajo de particion.' },
+      { num: 2, titulo: 'El Notario acepta la solicitud y fija el edicto', descripcion: 'Si la solicitud cumple los requisitos, el Notario la acepta y fija un edicto emplazatorio por diez dias habiles en la Notaria y en un periodico de amplia circulacion.' },
+      { num: 3, titulo: 'Probar la publicacion del edicto', descripcion: 'El abogado debe probar la publicacion del edicto presentando el ejemplar del periodico y la certificacion de la emisora radial si aplica.' },
+      { num: 4, titulo: 'Despues de los diez dias se firma la escritura de particion', descripcion: 'Si no se presenta ninguna oposicion durante el edicto, el Notario procede a extender la escritura publica de particion o adjudicacion de la herencia.' },
+      { num: 5, titulo: 'Si hay controversias el tramite debe ir a juzgado', descripcion: 'Si algun interesado presenta oposicion o si los herederos no estan de comun acuerdo, el Notario da por terminado el tramite y las partes deben acudir al juzgado civil.' },
+    ]
+  },
+  'inventarios-avaluos-sucesion': {
+    titulo: 'Relacion de Inventarios y Avaluos de Bienes',
+    pasos: [
+      { num: 1, titulo: 'Este documento se presenta junto con la solicitud de liquidacion', descripcion: 'El inventario y avaluo de bienes es uno de los anexos obligatorios de la solicitud de liquidacion de sucesion. No se puede tramitar la sucesion sin este documento.' },
+      { num: 2, titulo: 'Describir cada bien con todos sus datos', descripcion: 'Para los inmuebles: direccion, linderos, cabida en metros cuadrados, cedula catastral y matricula inmobiliaria. Para vehiculos: marca, modelo, placa y numero de motor. Para dinero: banco y numero de cuenta.' },
+      { num: 3, titulo: 'Los bienes deben ser avaluados', descripcion: 'Cada bien debe tener un valor estimado. Para inmuebles se puede usar el valor catastral o el avaluo comercial. Para vehiculos el valor de mercado. Para dinero el saldo certificado por el banco.' },
+      { num: 4, titulo: 'Declarar que no existen otros bienes', descripcion: 'Al final del inventario el apoderado declara que no existen otros activos o pasivos que inventariar. Esta declaracion se hace bajo gravedad de juramento.' },
+      { num: 5, titulo: 'Si hay bienes que descubren despues', descripcion: 'Si despues de presentado el inventario aparecen otros bienes del causante, deben adicionarse al inventario antes de que el Notario autorice la escritura de particion.' },
+    ]
+  },
+  'trabajo-particion-adjudicacion': {
+    titulo: 'Trabajo de Particion y Adjudicacion',
+    pasos: [
+      { num: 1, titulo: 'Este documento define exactamente que le toca a cada heredero', descripcion: 'El trabajo de particion es el documento mas importante de la sucesion. En el se determina matematicamente cuanto le corresponde a cada heredero y que bienes especificos se le adjudican.' },
+      { num: 2, titulo: 'Primero liquidar la sociedad conyugal si habia matrimonio', descripcion: 'Si el causante estaba casado, primero se separa la mitad de los bienes que pertenece al conyuge superstite (gananciales). Solo la otra mitad forma el acervo hereditario que se reparte entre todos los herederos.' },
+      { num: 3, titulo: 'Respetar las asignaciones forzosas', descripcion: 'La ley protege a ciertos herederos con asignaciones forzosas que el testador no puede desconocer: las legitimas de los hijos (la mitad de la herencia para ellos en partes iguales), las mejoras y la porcion conyugal.' },
+      { num: 4, titulo: 'Este documento lo eleva el Notario a escritura publica', descripcion: 'Una vez revisado y aceptado por el Notario, el trabajo de particion se eleva a escritura publica. Esa escritura es el titulo legal con que cada heredero acredita su derecho sobre los bienes que le fueron adjudicados.' },
+      { num: 5, titulo: 'Registrar la escritura de particion', descripcion: 'Si entre los bienes hay inmuebles, la escritura de particion debe registrarse en la Oficina de Registro de Instrumentos Publicos. Solo con ese registro cada heredero se convierte en propietario legal del bien que le corresponde.' },
+      { num: 6, titulo: 'Informar a la DIAN si los bienes superan el minimo', descripcion: 'Si el valor total de los bienes sucesorales supera el minimo legal establecido, el Notario debe informar a la DIAN para que intervenga en el tramite y verifique el pago de impuestos.' },
+    ]
+  },
+
+  'legitimacion-hijo-extramatrimonial': {
+    titulo: 'Legitimacion de Hijo Extramatrimonial',
+    pasos: [
+      { num: 1, titulo: 'Ir a la Notaria con todos los documentos', descripcion: 'Ambos padres deben ir personalmente a la Notaria con: cedulas originales, registro civil de matrimonio, registro civil de nacimiento del hijo que se va a legitimar.' },
+      { num: 2, titulo: 'El Notario redacta y lee la escritura', descripcion: 'El Notario redacta la escritura de legitimacion y la lee a ambos padres. Verifiquen que el nombre del hijo y los datos del matrimonio sean correctos antes de firmar.' },
+      { num: 3, titulo: 'Ambos padres firman la escritura', descripcion: 'Los dos padres deben firmar la escritura en presencia del Notario. Si el hijo ya es mayor de edad, el tambien debe suscribir la escritura.' },
+      { num: 4, titulo: 'El Notario anota la legitimacion en el registro civil del hijo', descripcion: 'Una vez firmada la escritura, el Notario debe hacer la anotacion correspondiente en el registro civil de nacimiento del hijo para que quede constancia de la legitimacion.' },
+      { num: 5, titulo: 'Solicitar nuevo registro civil del hijo', descripcion: 'Solicite una copia actualizada del registro civil de nacimiento del hijo. Ya debe aparecer con los datos del padre y con la nota de legitimacion.' },
+    ]
+  },
+  'reconocimiento-hijo-extramatrimonial': {
+    titulo: 'Reconocimiento de Hijo Extramatrimonial',
+    pasos: [
+      { num: 1, titulo: 'Ir a la Notaria con los documentos', descripcion: 'El padre que reconoce debe ir personalmente a la Notaria con: cedula original y registro civil de nacimiento del hijo que va a reconocer.' },
+      { num: 2, titulo: 'El Notario redacta y lee la escritura', descripcion: 'El Notario redacta la escritura de reconocimiento y la lee al padre. Verifique que el nombre del hijo, la fecha de nacimiento y el nombre de la madre sean correctos.' },
+      { num: 3, titulo: 'El padre firma la escritura', descripcion: 'Solo el padre necesita firmar esta escritura en presencia del Notario. El reconocimiento es irrevocable — una vez firmado no puede deshacerse.' },
+      { num: 4, titulo: 'Inscribir el reconocimiento en el registro civil del hijo', descripcion: 'El Notario debe comunicar el reconocimiento al funcionario encargado del registro civil donde esta inscrito el nacimiento del hijo, para que se haga la nota correspondiente.' },
+      { num: 5, titulo: 'Solicitar nuevo registro civil del hijo', descripcion: 'Solicite una copia actualizada del registro civil de nacimiento del hijo. Ya debe aparecer con el nombre del padre reconociente y el nuevo nombre completo del hijo.' },
+    ]
+  },
+  'solicitud-correccion-registro-civil': {
+    titulo: 'Solicitud de Correccion de Errores en el Registro del Estado Civil',
+    pasos: [
+      { num: 1, titulo: 'Esta solicitud NO requiere escritura publica', descripcion: 'A diferencia de otras minutas, esta es una simple carta dirigida al Notario. Solo se necesita presentacion personal del solicitante ante el Notario o un juez para que quede constancia.' },
+      { num: 2, titulo: 'Ir a la Notaria con los documentos', descripcion: 'El solicitante debe ir personalmente a la Notaria con: cedula original, copia del registro civil de nacimiento y copia del documento que tiene el error (registro de matrimonio u otro).' },
+      { num: 3, titulo: 'Presentar la solicitud con autenticacion de firma', descripcion: 'Firme la solicitud en presencia del Notario para que autentique su firma. Esto le da validez legal al documento.' },
+      { num: 4, titulo: 'El Notario estudia la solicitud', descripcion: 'El Notario revisa si el error es de tipo mecanografico u ortografico y si se puede establecer con la simple comparacion de documentos. Si cumple esos requisitos, procede a la correccion sin necesidad de escritura publica.' },
+      { num: 5, titulo: 'Si el error es mas grave use la otra minuta', descripcion: 'Si el error no es mecanografico ni ortografico sino algo mas sustancial (como ciudad de nacimiento equivocada), debera usar la minuta de Correccion de Errores por Escritura Publica.' },
+    ]
+  },
+  'correccion-errores-registro-civil': {
+    titulo: 'Correccion de Errores en el Registro del Estado Civil',
+    pasos: [
+      { num: 1, titulo: 'Reunir todos los documentos que prueben el dato correcto', descripcion: 'Antes de ir a la Notaria, consiga el documento que prueba cual es el dato correcto: certificado medico del parto, partida de bautismo, certificado de la Registraduria, etc. Sin ese documento no se puede hacer la correccion.' },
+      { num: 2, titulo: 'Ir a la Notaria con todos los documentos', descripcion: 'El solicitante debe ir personalmente a la Notaria con: cedula original, copia del registro civil de nacimiento con el error, y el documento prueba del dato correcto.' },
+      { num: 3, titulo: 'El Notario redacta y lee la escritura', descripcion: 'El Notario redacta la escritura de correccion, protocoliza los documentos de prueba y la lee al solicitante. Verifique que el dato correcto quede bien consignado.' },
+      { num: 4, titulo: 'El solicitante firma la escritura', descripcion: 'Solo el solicitante firma la escritura en presencia del Notario.' },
+      { num: 5, titulo: 'El Notario sustituye el folio y coloca notas de referencia', descripcion: 'El Notario abre un nuevo folio con los datos correctos y en ambos folios (el anterior y el nuevo) coloca notas de referencia entre si para dejar trazabilidad del cambio.' },
+      { num: 6, titulo: 'Si la escritura se hizo en otra Notaria', descripcion: 'Si la correccion se hizo en una Notaria diferente a donde esta el registro original, esa Notaria debe enviar aviso a la Notaria donde esta el registro para que haga la anotacion correspondiente.' },
+    ]
+  },
+  'cambio-correccion-adicion-nombre': {
+    titulo: 'Cambio, Correccion o Adicion de Nombre',
+    pasos: [
+      { num: 1, titulo: 'IMPORTANTE: Solo se puede hacer una vez en la vida', descripcion: 'La ley colombiana permite cambiar el nombre por escritura publica una sola vez. Antes de proceder asegurese de que el nuevo nombre sea definitivamente el que quiere, porque no habra segunda oportunidad.' },
+      { num: 2, titulo: 'Ir a la Notaria de su domicilio con los documentos', descripcion: 'El solicitante debe ir personalmente a la Notaria de su municipio (preferiblemente donde fue inscrito su nacimiento) con: cedula original y copia del registro civil de nacimiento.' },
+      { num: 3, titulo: 'El Notario redacta y lee la escritura', descripcion: 'El Notario redacta la escritura con el cambio de nombre y la lee al solicitante. Verifique que el nombre nuevo quede exactamente como lo quiere, incluyendo la ortografia.' },
+      { num: 4, titulo: 'El solicitante firma la escritura', descripcion: 'Solo el solicitante firma la escritura. El Notario le advierte formalmente que este cambio solo puede hacerse una vez.' },
+      { num: 5, titulo: 'Inscribir la escritura en el registro civil de nacimiento', descripcion: 'La escritura debe inscribirse en la oficina de registro civil donde esta el folio de nacimiento. Si la escritura se hizo en una Notaria diferente, esa Notaria envia copia para sustituir el folio en la Notaria original.' },
+      { num: 6, titulo: 'Actualizar todos los documentos personales', descripcion: 'Despues de cambiar el nombre en el registro civil, debe actualizar: cedula de ciudadanía (en la Registraduria), pasaporte si tiene, cuentas bancarias, escrituras de bienes, contratos de trabajo y cualquier otro documento oficial que use su nombre anterior.' },
+    ]
+  },
+
   'disolucion-liquidacion-sociedad-conyugal': {
     titulo: 'Disolución y Liquidación de Sociedad Conyugal',
     pasos: [
@@ -2200,6 +2689,8 @@ function TooltipField({ field, onChange, value, error }) {
         value={value !== undefined ? value : ''}
         onChange={e => onChange(field.name, e.target.value)}
         className={error ? 'campo-error' : 'input-3d'}
+        spellCheck={true}
+        lang="es"
         style={{
           width: '100%', padding: '10px 14px',
           background: value ? 'linear-gradient(160deg, #f0faf0, #e8f5e8)' : 'linear-gradient(160deg, #f8fbff, #f0f6ff)',
@@ -2285,6 +2776,8 @@ function App() {
   const [loading, setLoading] = useState(false)
   const [loadingWord, setLoadingWord] = useState(false)
   const [showPasos, setShowPasos] = useState(false)
+  const [modoEdicion, setModoEdicion] = useState(false)
+  const editorRef = useRef(null)
   const [historial, setHistorial] = useState([])
   const [showHistorial, setShowHistorial] = useState(false)
   const [busqueda, setBusqueda] = useState('')
@@ -2349,14 +2842,28 @@ function App() {
     setHistorial(prev => [{ id: Date.now(), titulo: minutaDetail.title, hora: new Date().toLocaleTimeString('es-CO', { hour: '2-digit', minute: '2-digit' }), html: data.html }, ...prev.slice(0, 9)])
   }
 
-  const handlePrint = () => { document.getElementById('preview-iframe').contentWindow.print() }
+  const handlePrint = () => {
+    if (modoEdicion && editorRef.current) {
+      const ventana = window.open('', '_blank')
+      ventana.document.write(editorRef.current.innerHTML)
+      ventana.document.close()
+      ventana.print()
+    } else {
+      document.getElementById('preview-iframe').contentWindow.print()
+    }
+  }
 
   const handleDownloadWord = async () => {
     setLoadingWord(true)
     try {
       const res = await fetch('http://localhost:3001/api/generate/word', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ template: minutaDetail.template, title: minutaDetail.title, data: formData })
+        body: JSON.stringify({
+          template: minutaDetail.template,
+          title: minutaDetail.title,
+          data: formData,
+          htmlEditado: modoEdicion && editorRef.current ? editorRef.current.innerHTML : null
+        })
       })
       const blob = await res.blob()
       const url = URL.createObjectURL(blob)
@@ -2414,7 +2921,7 @@ function App() {
             <div style={{ marginBottom: '16px', position: 'relative' }}>
               <input type="text" placeholder="🔍 Buscar minuta..." value={busqueda} onChange={e => setBusqueda(e.target.value)}
                 className="buscar-3d"
-                style={{ width: '100%', padding: '8px 12px', background: 'linear-gradient(135deg, #0a1628, #0d1e30)', border: '1px solid #2c5282', borderRadius: '6px', fontSize: '12px', color: '#a0bcd8', boxSizing: 'border-box', outline: 'none' }} />
+                spellCheck={false} style={{ width: '100%', padding: '8px 12px', background: 'linear-gradient(135deg, #0a1628, #0d1e30)', border: '1px solid #2c5282', borderRadius: '6px', fontSize: '12px', color: '#a0bcd8', boxSizing: 'border-box', outline: 'none' }} />
               {busqueda && minutasFiltradas.length > 0 && (
                 <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, background: '#0a1628', border: '1px solid #2c5282', borderRadius: '6px', zIndex: 100, marginTop: '4px', boxShadow: '0 8px 24px rgba(0,0,0,0.5)' }}>
                   {minutasFiltradas.map(m => (
@@ -2600,11 +3107,182 @@ function App() {
 
               {previewHTML && (
                 <div className="preview-3d" style={{ background: '#fff', borderRadius: '8px', overflow: 'hidden', border: '1px solid #c8d8e8' }}>
-                  <div style={{ padding: '12px 20px', borderBottom: '2px solid #e2b94a', background: 'linear-gradient(135deg, #1a3a5c, #0d2240)', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.2) inset' }}>
-                    <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#e2b94a', boxShadow: '0 0 6px #e2b94a' }}></div>
-                    <span style={{ color: '#a0bcd8', fontSize: '12px', letterSpacing: '1px' }}>VISTA PREVIA DEL DOCUMENTO</span>
+                  {/* Barra superior azul */}
+                  <div style={{ padding: '12px 20px', borderBottom: '2px solid #e2b94a', background: 'linear-gradient(135deg, #1a3a5c, #0d2240)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.2) inset' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#e2b94a', boxShadow: '0 0 6px #e2b94a' }}></div>
+                      <span style={{ color: '#a0bcd8', fontSize: '12px', letterSpacing: '1px' }}>
+                        {modoEdicion ? '✏️ MODO EDICIÓN — Edita el documento libremente' : 'VISTA PREVIA DEL DOCUMENTO'}
+                      </span>
+                    </div>
+                    <button
+                      onClick={() => setModoEdicion(!modoEdicion)}
+                      style={{
+                        padding: '5px 14px',
+                        background: modoEdicion ? 'linear-gradient(135deg, #e2b94a, #c9a030)' : 'rgba(255,255,255,0.1)',
+                        border: `1px solid ${modoEdicion ? '#e2b94a' : '#ffffff44'}`,
+                        borderRadius: '5px', cursor: 'pointer',
+                        color: modoEdicion ? '#1a3a5c' : '#e2b94a',
+                        fontSize: '12px', fontWeight: 'bold',
+                        boxShadow: modoEdicion ? '0 2px 0 #8a6418' : '0 2px 0 rgba(0,0,0,0.3)'
+                      }}>
+                      {modoEdicion ? '✅ Salir de edición' : '✏️ Editar documento'}
+                    </button>
                   </div>
-                  <iframe id="preview-iframe" srcDoc={previewHTML} style={{ width: '100%', height: '850px', border: 'none' }} title="Vista previa del documento" />
+
+                  {/* Barra de herramientas tipo Word — solo visible en modo edicion */}
+                  {modoEdicion && (
+                    <div style={{
+                      display: 'flex', flexWrap: 'wrap', gap: '4px', padding: '8px 12px',
+                      background: '#f0f4f8', borderBottom: '2px solid #c8d8e8',
+                      alignItems: 'center'
+                    }}>
+                      {/* Fuente */}
+                      <select onChange={e => document.execCommand('fontName', false, e.target.value)}
+                        style={{ height: '28px', borderRadius: '4px', border: '1px solid #c8d8e8', fontSize: '12px', padding: '0 4px', cursor: 'pointer' }}>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Calibri">Calibri</option>
+                        <option value="Courier New">Courier New</option>
+                      </select>
+
+                      {/* Tamaño */}
+                      <select onChange={e => document.execCommand('fontSize', false, e.target.value)}
+                        style={{ height: '28px', borderRadius: '4px', border: '1px solid #c8d8e8', fontSize: '12px', padding: '0 4px', cursor: 'pointer', width: '60px' }}>
+                        <option value="1">8</option>
+                        <option value="2">10</option>
+                        <option value="3" selected>12</option>
+                        <option value="4">14</option>
+                        <option value="5">18</option>
+                        <option value="6">24</option>
+                        <option value="7">36</option>
+                      </select>
+
+                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
+
+                      {/* Negrita */}
+                      {[
+                        { cmd: 'bold', icon: 'B', title: 'Negrita', style: { fontWeight: 'bold' } },
+                        { cmd: 'italic', icon: 'I', title: 'Cursiva', style: { fontStyle: 'italic' } },
+                        { cmd: 'underline', icon: 'U', title: 'Subrayado', style: { textDecoration: 'underline' } },
+                        { cmd: 'strikeThrough', icon: 'S̶', title: 'Tachado', style: { textDecoration: 'line-through' } },
+                      ].map(({ cmd, icon, title, style }) => (
+                        <button key={cmd} title={title}
+                          onMouseDown={e => { e.preventDefault(); document.execCommand(cmd, false, null) }}
+                          style={{ width: '28px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '13px', ...style, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                          {icon}
+                        </button>
+                      ))}
+
+                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
+
+                      {/* Alineacion */}
+                      {[
+                        { cmd: 'justifyLeft', icon: '≡', title: 'Alinear izquierda' },
+                        { cmd: 'justifyCenter', icon: '☰', title: 'Centrar' },
+                        { cmd: 'justifyRight', icon: '≡', title: 'Alinear derecha' },
+                        { cmd: 'justifyFull', icon: '▤', title: 'Justificar' },
+                      ].map(({ cmd, icon, title }) => (
+                        <button key={cmd} title={title}
+                          onMouseDown={e => { e.preventDefault(); document.execCommand(cmd, false, null) }}
+                          style={{ width: '28px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                          {icon}
+                        </button>
+                      ))}
+
+                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
+
+                      {/* Listas */}
+                      {[
+                        { cmd: 'insertUnorderedList', icon: '• —', title: 'Lista con viñetas' },
+                        { cmd: 'insertOrderedList', icon: '1. —', title: 'Lista numerada' },
+                      ].map(({ cmd, icon, title }) => (
+                        <button key={cmd} title={title}
+                          onMouseDown={e => { e.preventDefault(); document.execCommand(cmd, false, null) }}
+                          style={{ padding: '0 8px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '11px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                          {icon}
+                        </button>
+                      ))}
+
+                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
+
+                      {/* Sangria */}
+                      {[
+                        { cmd: 'indent', icon: '→|', title: 'Aumentar sangría' },
+                        { cmd: 'outdent', icon: '|←', title: 'Disminuir sangría' },
+                      ].map(({ cmd, icon, title }) => (
+                        <button key={cmd} title={title}
+                          onMouseDown={e => { e.preventDefault(); document.execCommand(cmd, false, null) }}
+                          style={{ padding: '0 8px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '11px' }}>
+                          {icon}
+                        </button>
+                      ))}
+
+                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
+
+                      {/* Color de texto */}
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                        <span style={{ fontSize: '11px', color: '#4a6a8a' }}>Color:</span>
+                        <input type="color" defaultValue="#000000" title="Color del texto"
+                          onChange={e => document.execCommand('foreColor', false, e.target.value)}
+                          style={{ width: '28px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', cursor: 'pointer', padding: '1px' }} />
+                      </div>
+
+                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
+
+                      {/* Deshacer / Rehacer */}
+                      {[
+                        { cmd: 'undo', icon: '↩', title: 'Deshacer' },
+                        { cmd: 'redo', icon: '↪', title: 'Rehacer' },
+                      ].map(({ cmd, icon, title }) => (
+                        <button key={cmd} title={title}
+                          onMouseDown={e => { e.preventDefault(); document.execCommand(cmd, false, null) }}
+                          style={{ width: '28px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                          {icon}
+                        </button>
+                      ))}
+
+                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
+
+                      {/* Insertar linea horizontal */}
+                      <button title="Insertar línea horizontal"
+                        onMouseDown={e => { e.preventDefault(); document.execCommand('insertHorizontalRule', false, null) }}
+                        style={{ padding: '0 8px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '11px' }}>
+                        --- Línea
+                      </button>
+
+                      {/* Borrar formato */}
+                      <button title="Borrar formato"
+                        onMouseDown={e => { e.preventDefault(); document.execCommand('removeFormat', false, null) }}
+                        style={{ padding: '0 8px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '11px', color: '#c0392b' }}>
+                        ✕ Formato
+                      </button>
+                    </div>
+                  )}
+
+                  {/* Contenido editable o iframe */}
+                  {modoEdicion ? (
+                    <div
+                      ref={editorRef}
+                      contentEditable={true}
+                      suppressContentEditableWarning={true}
+                      spellCheck={true}
+                      lang="es"
+                      dangerouslySetInnerHTML={{ __html: previewHTML }}
+                      style={{
+                        width: '100%', minHeight: '850px',
+                        padding: '60px 80px',
+                        fontFamily: 'Times New Roman, serif',
+                        fontSize: '12pt', lineHeight: '1.8',
+                        color: '#000', outline: 'none',
+                        boxSizing: 'border-box',
+                        background: '#fff'
+                      }}
+                    />
+                  ) : (
+                    <iframe id="preview-iframe" srcDoc={previewHTML} style={{ width: '100%', height: '850px', border: 'none' }} title="Vista previa del documento" />
+                  )}
                 </div>
               )}
             </div>
