@@ -1,0 +1,3385 @@
+[
+  {
+    "id": "pagare",
+    "title": "Pagaré",
+    "subtitle": "Títulos Valores",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "numero_pagare",
+        "label": "Número del pagaré",
+        "type": "text",
+        "required": true,
+        "help": "Número consecutivo que identifica este pagaré. Ej: 001, 002. Es importante para referenciarlo en la carta de instrucciones."
+      },
+      {
+        "name": "ciudad_lugar",
+        "label": "Ciudad donde se celebra",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se firma el pagaré. Ej: Bogotá, Cali, Medellín."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes en que se firma. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero, febrero, marzo."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "valor_numeros",
+        "label": "Valor total del pagaré en números",
+        "type": "text",
+        "required": true,
+        "help": "Monto total que se adeuda en cifras. Ej: 5.000.000."
+      },
+      {
+        "name": "ciudad_pago",
+        "label": "Ciudad donde se hará el pago",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde el deudor pagará al acreedor. Generalmente la ciudad del acreedor."
+      },
+      {
+        "name": "direccion_pago",
+        "label": "Dirección donde se hará el pago",
+        "type": "text",
+        "required": true,
+        "help": "Dirección exacta para el pago. Ej: Calle 10 # 5-20 Of. 301."
+      },
+      {
+        "name": "nombre_deudor1",
+        "label": "Nombre completo del primer deudor",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del primer firmante del pagaré."
+      },
+      {
+        "name": "cedula_deudor1",
+        "label": "Cédula del primer deudor",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula de ciudadanía del primer deudor."
+      },
+      {
+        "name": "expedicion_deudor1",
+        "label": "Ciudad expedición cédula del primer deudor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del primer deudor. Ej: Cali."
+      },
+      {
+        "name": "nombre_deudor2",
+        "label": "Nombre del segundo deudor (si hay uno)",
+        "type": "text",
+        "required": true,
+        "help": "Si hay un segundo deudor solidario, escriba su nombre. Si no hay segundo deudor escriba: no aplica."
+      },
+      {
+        "name": "cedula_deudor2",
+        "label": "Cédula del segundo deudor (si aplica)",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del segundo deudor. Si no hay segundo deudor escriba: no aplica."
+      },
+      {
+        "name": "expedicion_deudor2",
+        "label": "Ciudad expedición cédula segundo deudor (si aplica)",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad expedición del segundo deudor. Si no hay segundo deudor escriba: no aplica."
+      },
+      {
+        "name": "nombre_acreedor",
+        "label": "Nombre del acreedor (a cuya orden se pagará)",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo de quien recibirá el pago. Puede ser persona natural o jurídica."
+      },
+      {
+        "name": "valor_letras",
+        "label": "Valor total en letras",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor pero escrito en palabras. Ej: cinco millones de pesos."
+      },
+      {
+        "name": "cuota_numeros",
+        "label": "Valor de cada cuota mensual en números",
+        "type": "text",
+        "required": true,
+        "help": "Monto de cada pago mensual. Ej: 500.000. Si es pago único escriba el valor total."
+      },
+      {
+        "name": "fecha_primer_pago",
+        "label": "Fecha del primer pago",
+        "type": "text",
+        "required": true,
+        "help": "Fecha exacta del primer pago. Ej: 1 de febrero de 2025."
+      },
+      {
+        "name": "fecha_pagos_siguientes",
+        "label": "Descripción de cuándo se pagarán las cuotas siguientes",
+        "type": "text",
+        "required": true,
+        "help": "Explique la periodicidad. Ej: el día 1 de cada mes siguiente hasta completar el pago total."
+      },
+      {
+        "name": "interes_corriente",
+        "label": "Porcentaje de interés corriente mensual (%)",
+        "type": "text",
+        "required": true,
+        "help": "Tasa de interés mensual acordada. No puede superar el interés bancario corriente certificado por la Superfinanciera. Ej: 1.5."
+      },
+      {
+        "name": "interes_mora",
+        "label": "Porcentaje de interés de mora mensual (%)",
+        "type": "text",
+        "required": true,
+        "help": "Tasa que se cobra si el deudor incumple. No puede superar 1.5 veces el interés corriente. Ej: 2.5."
+      }
+    ],
+    "template": "PAGARÉ Nº. {{numero_pagare}}\n\nLugar y fecha: {{ciudad_lugar}}, {{dia}} de {{mes}} de {{anio}}\nValor: $ {{valor_numeros}}\nCiudad y dirección donde se efectuará el pago: {{ciudad_pago}}, {{direccion_pago}}\n\n{{nombre_deudor1}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_deudor1}} de {{expedicion_deudor1}}, y {{nombre_deudor2}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_deudor2}} de {{expedicion_deudor2}}, por medio del presente documento manifestamos que deseamos suscribir un pagaré que se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— Que por virtud del presente título valor pagaremos incondicionalmente, a la orden de {{nombre_acreedor}} o a quien represente sus derechos, en la ciudad y dirección indicados, en las fechas de amortización por cuotas señaladas en la cláusula segunda de este mismo pagaré, la suma de {{valor_letras}} ($ {{valor_numeros}}) más los intereses señalados en la cláusula tercera de este documento.\n\nSEGUNDA. Plazo.— Que pagaremos la suma indicada en la cláusula anterior mediante instalamentos mensuales sucesivos correspondientes cada uno a la cantidad de $ {{cuota_numeros}}. El primer pago se efectuará el {{fecha_primer_pago}} y los demás instalamentos serán cancelados {{fecha_pagos_siguientes}}.\n\nTERCERA. Intereses.— Que sobre la suma debida reconoceremos intereses equivalentes al {{interes_corriente}}% mensual sobre el capital o su saldo insoluto. En caso de mora reconoceremos intereses iguales al {{interes_mora}}% mensual.\n\nCUARTA. Cláusula aceleratoria.— El tenedor podrá declarar insubsistente los plazos de esta obligación y exigir su pago inmediato judicial o extrajudicialmente en los siguientes casos: a) Cuando los deudores incumplan una cualquiera de las obligaciones derivadas del presente documento, y b) Cuando los deudores inicien trámite de liquidación obligatoria, se sometan a proceso concordatario o convoquen a concurso de acreedores.\n\n_______________________          _______________________\n{{nombre_deudor1}}               {{nombre_deudor2}}\nC.C. Nº. {{cedula_deudor1}}      C.C. Nº. {{cedula_deudor2}}"
+  },
+  {
+    "id": "carta-instrucciones-pagare",
+    "title": "Carta de Instrucciones Anexa a Pagaré con Espacios en Blanco",
+    "subtitle": "Títulos Valores",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma la carta",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se suscribe la carta. Debe coincidir con la ciudad del pagaré."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_suscriptor1",
+        "label": "Nombre completo del primer suscriptor del pagaré",
+        "type": "text",
+        "required": true,
+        "help": "Quien firmó el pagaré como primer deudor."
+      },
+      {
+        "name": "cedula_suscriptor1",
+        "label": "Cédula del primer suscriptor",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del primer deudor, igual a la del pagaré."
+      },
+      {
+        "name": "expedicion_suscriptor1",
+        "label": "Ciudad expedición cédula del primer suscriptor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del primer suscriptor."
+      },
+      {
+        "name": "nombre_suscriptor2",
+        "label": "Nombre del segundo suscriptor (si aplica)",
+        "type": "text",
+        "required": true,
+        "help": "Segundo firmante del pagaré. Si no hay escriba: no aplica."
+      },
+      {
+        "name": "cedula_suscriptor2",
+        "label": "Cédula del segundo suscriptor (si aplica)",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del segundo suscriptor. Si no hay escriba: no aplica."
+      },
+      {
+        "name": "nombre_autorizado",
+        "label": "Nombre de la persona autorizada para llenar los espacios",
+        "type": "text",
+        "required": true,
+        "help": "Persona o entidad (banco, financiera, etc.) facultada para completar el pagaré cuando ocurra alguna de las circunstancias señaladas."
+      },
+      {
+        "name": "cedula_autorizado",
+        "label": "Cédula de la persona autorizada",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula o NIT de la persona autorizada."
+      },
+      {
+        "name": "expedicion_autorizado",
+        "label": "Ciudad expedición cédula del autorizado",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del autorizado."
+      },
+      {
+        "name": "numero_pagare",
+        "label": "Número del pagaré adjunto",
+        "type": "text",
+        "required": true,
+        "help": "El mismo número del pagaré que acompaña esta carta. Ej: 001."
+      },
+      {
+        "name": "nombre_acreedor",
+        "label": "Nombre del acreedor en cuyo favor se llenará el pagaré",
+        "type": "text",
+        "required": true,
+        "help": "Entidad o persona a cuyo favor existirán las obligaciones que motivan el llenado."
+      },
+      {
+        "name": "circunstancias_llenado",
+        "label": "Circunstancias en que se llenarán los espacios en blanco",
+        "type": "text",
+        "required": true,
+        "help": "Describa cuándo se podrá llenar el pagaré. Ej: cuando el deudor incumpla el pago de una cuota de cualquier obligación a su cargo; cuando el deudor entre en mora de más de 30 días."
+      }
+    ],
+    "template": "Ciudad y fecha: {{ciudad}}, {{dia}} de {{mes}} de {{anio}}\n\n{{nombre_suscriptor1}}, identificado con la cédula de ciudadanía Nº. {{cedula_suscriptor1}} de {{expedicion_suscriptor1}}, y {{nombre_suscriptor2}}, identificado con la cédula de ciudadanía Nº. {{cedula_suscriptor2}}, autorizamos a {{nombre_autorizado}}, quien se identifica con la cédula de ciudadanía Nº. {{cedula_autorizado}} de {{expedicion_autorizado}}, para que, haciendo uso de las facultades conferidas por el artículo 622 del Código de Comercio, llene los espacios que se han dejado en blanco en el pagaré Nº. {{numero_pagare}} adjunto, para lo cual deberá ceñirse a las siguientes instrucciones:\n\n1. El monto será igual al valor de todas las obligaciones exigibles que a cargo nuestro y en favor de {{nombre_acreedor}} existan al momento de ser llenados los espacios.\n\n2. Los espacios en blanco se llenarán cuando ocurra una cualquiera de las siguientes circunstancias: {{circunstancias_llenado}}.\n\n3. La fecha será aquella en que se llenen los espacios dejados en blanco.\n\nFirmado en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\n_______________________\n{{nombre_suscriptor1}}\nC.C. Nº. {{cedula_suscriptor1}} de {{expedicion_suscriptor1}}\n\n_______________________\n{{nombre_suscriptor2}}\nC.C. Nº. {{cedula_suscriptor2}}"
+  },
+  {
+    "id": "compraventa-establecimiento-comercio",
+    "title": "Compraventa de Establecimiento de Comercio",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato. Ej: Bogotá."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_vendedor",
+        "label": "Nombre completo del vendedor",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del vendedor o representante legal de la empresa vendedora."
+      },
+      {
+        "name": "cedula_vendedor",
+        "label": "Cédula del vendedor",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula de ciudadanía del vendedor."
+      },
+      {
+        "name": "expedicion_vendedor",
+        "label": "Ciudad expedición cédula del vendedor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del vendedor."
+      },
+      {
+        "name": "domicilio_vendedor",
+        "label": "Ciudad de domicilio del vendedor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive o tiene su domicilio el vendedor."
+      },
+      {
+        "name": "nombre_comprador",
+        "label": "Nombre completo del comprador",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del comprador o representante legal."
+      },
+      {
+        "name": "cedula_comprador",
+        "label": "Cédula del comprador",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del comprador."
+      },
+      {
+        "name": "expedicion_comprador",
+        "label": "Ciudad expedición cédula del comprador",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del comprador."
+      },
+      {
+        "name": "domicilio_comprador",
+        "label": "Ciudad de domicilio del comprador",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el comprador."
+      },
+      {
+        "name": "nombre_establecimiento",
+        "label": "Nombre del establecimiento de comercio",
+        "type": "text",
+        "required": true,
+        "help": "Nombre comercial del negocio que se vende. Ej: Restaurante El Buen Sabor."
+      },
+      {
+        "name": "matricula_mercantil",
+        "label": "Número de matrícula mercantil del establecimiento",
+        "type": "text",
+        "required": true,
+        "help": "Número asignado por la Cámara de Comercio. Lo encuentra en el certificado de existencia del establecimiento."
+      },
+      {
+        "name": "direccion_establecimiento",
+        "label": "Dirección del establecimiento",
+        "type": "text",
+        "required": true,
+        "help": "Dirección exacta donde funciona el negocio. Ej: Carrera 5 # 12-34 Local 2."
+      },
+      {
+        "name": "barrio_establecimiento",
+        "label": "Barrio del establecimiento",
+        "type": "text",
+        "required": true,
+        "help": "Barrio donde está ubicado el establecimiento."
+      },
+      {
+        "name": "ciudad_establecimiento",
+        "label": "Ciudad del establecimiento",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde funciona el negocio."
+      },
+      {
+        "name": "precio_letras",
+        "label": "Precio total de venta en letras",
+        "type": "text",
+        "required": true,
+        "help": "Valor acordado por el establecimiento escrito en palabras. Ej: veinte millones de pesos."
+      },
+      {
+        "name": "precio_numeros",
+        "label": "Precio total en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 20.000.000."
+      },
+      {
+        "name": "ciudad_pago",
+        "label": "Ciudad donde se realizará el pago",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde el comprador entregará el dinero al vendedor."
+      },
+      {
+        "name": "pago_inicial_letras",
+        "label": "Pago inicial al firmar el contrato (en letras)",
+        "type": "text",
+        "required": true,
+        "help": "Valor que se paga en el momento de firmar, en palabras. Ej: diez millones de pesos."
+      },
+      {
+        "name": "saldo_letras",
+        "label": "Saldo restante en letras",
+        "type": "text",
+        "required": true,
+        "help": "Lo que queda por pagar después del inicial, en palabras."
+      },
+      {
+        "name": "saldo_numeros",
+        "label": "Saldo restante en números",
+        "type": "text",
+        "required": true,
+        "help": "El saldo en cifras. Ej: 10.000.000."
+      },
+      {
+        "name": "fecha_pago_saldo",
+        "label": "Fecha en que se pagará el saldo",
+        "type": "text",
+        "required": true,
+        "help": "Fecha exacta para pagar el saldo. Ej: 1 de marzo de 2025."
+      },
+      {
+        "name": "fecha_entrega",
+        "label": "Fecha en que se entregará el establecimiento",
+        "type": "text",
+        "required": true,
+        "help": "Cuándo el vendedor hace entrega física del negocio al comprador."
+      },
+      {
+        "name": "clausula_penal_letras",
+        "label": "Cláusula penal por incumplimiento en letras",
+        "type": "text",
+        "required": true,
+        "help": "Multa que pagará quien incumpla el contrato, en palabras. Ej: dos millones de pesos."
+      },
+      {
+        "name": "clausula_penal_numeros",
+        "label": "Cláusula penal en números",
+        "type": "text",
+        "required": true,
+        "help": "La misma multa en cifras. Ej: 2.000.000."
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos: {{nombre_vendedor}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_vendedor}} de {{expedicion_vendedor}}, domiciliado en {{domicilio_vendedor}}, quien en adelante se denominará el VENDEDOR, y {{nombre_comprador}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_comprador}} de {{expedicion_comprador}}, domiciliado en {{domicilio_comprador}}, quien se denominará el COMPRADOR, han acordado celebrar un contrato de compraventa de establecimiento de comercio que se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— El VENDEDOR transfiere al COMPRADOR a título de compraventa el derecho real de dominio que tiene sobre el establecimiento de comercio denominado {{nombre_establecimiento}}, con Nº. de matrícula mercantil {{matricula_mercantil}} de la Cámara de Comercio, ubicado en {{direccion_establecimiento}}, barrio {{barrio_establecimiento}}, de la ciudad de {{ciudad_establecimiento}}, como unidad económica en los términos del artículo 525 del Código de Comercio.\n\nSEGUNDA. Precio.— Las partes acuerdan como precio de la venta la suma de {{precio_letras}} ($ {{precio_numeros}}) moneda corriente, que el comprador se obliga a pagar en la ciudad de {{ciudad_pago}} de la siguiente manera: al firmarse el presente documento la cantidad de {{pago_inicial_letras}}, y el saldo, es decir la suma de {{saldo_letras}} ($ {{saldo_numeros}}), el {{fecha_pago_saldo}}.\n\nTERCERA. Situación del establecimiento.— El VENDEDOR declara que el establecimiento se encuentra libre de demandas civiles, embargos judiciales, arrendamientos y pleitos pendientes; que su derecho de dominio no está sujeto a condiciones resolutorias, y que se obliga al saneamiento de la venta. Así mismo, declara que la información contable contenida en los estados financieros y en los libros de contabilidad refleja adecuadamente la situación financiera y económica del establecimiento.\n\nCUARTA. Obligaciones del vendedor.— El VENDEDOR se obliga a hacer los trámites de registro, publicidad a los acreedores y a la entrega del establecimiento, la cual se hará el {{fecha_entrega}}.\n\nQUINTA. Reserva de dominio.— El VENDEDOR se reserva el dominio sobre el establecimiento hasta tanto no le sea pagada la totalidad del precio pactado. Entre tanto, el comprador no será poseedor sino mero tenedor del establecimiento.\n\nSEXTA. Cláusula penal.— Si cualquiera de las partes incumpliere las obligaciones establecidas en este contrato deberá pagar a la otra la suma de {{clausula_penal_letras}} ($ {{clausula_penal_numeros}}) a título de pena derivada de dicho incumplimiento.\n\nEn señal de asentimiento, las partes suscriben este documento en dos ejemplares, siendo los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nVendedor: _______________________     Comprador: _______________________\n{{nombre_vendedor}}                   {{nombre_comprador}}\nC.C. Nº. {{cedula_vendedor}}          C.C. Nº. {{cedula_comprador}}"
+  },
+  {
+    "id": "arrendamiento-local-comercial",
+    "title": "Arrendamiento de Local Comercial",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_arrendador",
+        "label": "Nombre completo del arrendador",
+        "type": "text",
+        "required": true,
+        "help": "Dueño del local que lo da en arriendo."
+      },
+      {
+        "name": "cedula_arrendador",
+        "label": "Cédula del arrendador",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del arrendador."
+      },
+      {
+        "name": "nombre_arrendatario",
+        "label": "Nombre completo del arrendatario",
+        "type": "text",
+        "required": true,
+        "help": "Quien toma el local en arriendo para su negocio."
+      },
+      {
+        "name": "cedula_arrendatario",
+        "label": "Cédula del arrendatario",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del arrendatario."
+      },
+      {
+        "name": "descripcion_local",
+        "label": "Descripción del local",
+        "type": "text",
+        "required": true,
+        "help": "Qué tipo de inmueble es. Ej: local comercial de dos plantas, bodega, oficina de 50 m2."
+      },
+      {
+        "name": "direccion_local",
+        "label": "Dirección del local",
+        "type": "text",
+        "required": true,
+        "help": "Dirección exacta del local. Ej: Calle 10 # 5-20 Local 3."
+      },
+      {
+        "name": "linderos_local",
+        "label": "Linderos del local",
+        "type": "text",
+        "required": true,
+        "help": "Descripción de los límites del local. Ej: Norte con local 2, Sur con parqueadero, Oriente con vía pública, Occidente con depósito."
+      },
+      {
+        "name": "canon_letras",
+        "label": "Canon mensual en letras",
+        "type": "text",
+        "required": true,
+        "help": "Valor del arriendo mensual en palabras. Ej: dos millones de pesos."
+      },
+      {
+        "name": "canon_numeros",
+        "label": "Canon mensual en números",
+        "type": "text",
+        "required": true,
+        "help": "Valor del arriendo en cifras. Ej: 2.000.000."
+      },
+      {
+        "name": "dias_pago",
+        "label": "Primeros días del mes para pagar",
+        "type": "text",
+        "required": true,
+        "help": "Número de días hábiles del mes para pagar. Ej: 5 (significa que se paga dentro de los primeros 5 días de cada mes)."
+      },
+      {
+        "name": "porcentaje_aumento",
+        "label": "Porcentaje de aumento anual del canon (%)",
+        "type": "text",
+        "required": true,
+        "help": "En qué porcentaje sube el arriendo cada año. Para locales comerciales no hay límite legal, acuérdelo libremente. Ej: 8."
+      },
+      {
+        "name": "duracion",
+        "label": "Duración del contrato",
+        "type": "text",
+        "required": true,
+        "help": "Tiempo del contrato. Ej: doce (12) meses, dos (2) años."
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de inicio del contrato",
+        "type": "text",
+        "required": true,
+        "help": "Cuándo empieza el arriendo. Ej: 1 de febrero de 2025."
+      },
+      {
+        "name": "fecha_terminacion",
+        "label": "Fecha de terminación del contrato",
+        "type": "text",
+        "required": true,
+        "help": "Cuándo termina el arriendo según el plazo acordado. Ej: 31 de enero de 2026."
+      },
+      {
+        "name": "servicios_incluidos",
+        "label": "Servicios incluidos en el canon",
+        "type": "text",
+        "required": true,
+        "help": "Servicios que el arrendador paga. Si ninguno escriba: ninguno."
+      },
+      {
+        "name": "servicios_por_arrendatario",
+        "label": "Servicios a cargo del arrendatario",
+        "type": "text",
+        "required": true,
+        "help": "Servicios que paga el arrendatario. Ej: agua, luz, gas, teléfono, internet."
+      },
+      {
+        "name": "destinacion_local",
+        "label": "Uso al que se destinará el local",
+        "type": "text",
+        "required": true,
+        "help": "Para qué usará el local el arrendatario. Ej: restaurante, tienda de ropa, consultorio médico."
+      },
+      {
+        "name": "lugar_pago_canon",
+        "label": "Lugar donde se pagará el canon",
+        "type": "text",
+        "required": true,
+        "help": "Dónde entregará el canon el arrendatario. Ej: en las oficinas del arrendador ubicadas en Carrera 5 # 10-20."
+      },
+      {
+        "name": "actividades_prohibidas",
+        "label": "Actividades prohibidas en el local",
+        "type": "text",
+        "required": true,
+        "help": "Usos del local que lesionan los derechos del arrendador. Ej: venta de licores, actividades ruidosas nocturnas, subarrendar la totalidad."
+      },
+      {
+        "name": "clausula_penal_letras",
+        "label": "Cláusula penal por incumplimiento en letras",
+        "type": "text",
+        "required": true,
+        "help": "Multa por incumplimiento en palabras. No puede ser mayor al valor del canon. Ej: dos millones de pesos."
+      },
+      {
+        "name": "clausula_penal_numeros",
+        "label": "Cláusula penal en números",
+        "type": "text",
+        "required": true,
+        "help": "La misma multa en cifras."
+      },
+      {
+        "name": "impuestos_a_cargo",
+        "label": "¿Quién paga los impuestos del contrato?",
+        "type": "text",
+        "required": true,
+        "help": "Quién asume los impuestos y derechos que genere el contrato. Ej: el arrendatario, el arrendador, ambos por partes iguales."
+      }
+    ],
+    "template": "CONTRATO DE ARRENDAMIENTO DE LOCAL COMERCIAL\n\nCiudad y fecha: {{ciudad}}, {{dia}} de {{mes}} de {{anio}}\n\nArrendador: {{nombre_arrendador}}          Identificación: {{cedula_arrendador}}\nArrendatario: {{nombre_arrendatario}}     Identificación: {{cedula_arrendatario}}\nObjeto: Conceder el goce del inmueble que consta de {{descripcion_local}}\nDirección: {{direccion_local}}     Linderos: {{linderos_local}}\nPrecio: {{canon_letras}} ($ {{canon_numeros}}) mensuales, pagaderos dentro de los {{dias_pago}} primeros días de cada mes.\nAumento: {{porcentaje_aumento}}% del precio cada año.\nTérmino: {{duracion}}\nFecha de iniciación: {{fecha_inicio}}     Fecha de terminación: {{fecha_terminacion}}\nServicios incluidos: {{servicios_incluidos}}\nServicios por cuenta del arrendatario: {{servicios_por_arrendatario}}\nPena por incumplimiento: $ {{clausula_penal_numeros}}\n\nAdemás de las anteriores estipulaciones, el ARRENDADOR y el ARRENDATARIO convienen las siguientes:\n\nPRIMERA. Pago.— El arrendatario se obliga a pagar el precio dentro de los plazos previstos, en {{lugar_pago_canon}}.\n\nSEGUNDA. Destinación.— El arrendatario se compromete a utilizar el inmueble para {{destinacion_local}}.\n\nTERCERA. Subarriendo y cesión.— El ARRENDATARIO no podrá subarrendar el inmueble ni ceder el contrato sino de conformidad con los términos del artículo 523 del Código de Comercio.\n\nCUARTA. Lesión de los derechos del arrendador.— Son lesivos de los derechos del arrendador las siguientes actividades: {{actividades_prohibidas}}.\n\nQUINTA. Reparaciones.— El arrendatario se obliga a efectuar las reparaciones locativas y aquellas necesarias por hechos de él o de sus dependientes.\n\nSEXTA. Inspección.— El arrendatario permitirá en cualquier tiempo las visitas que el arrendador realice para constatar el estado y conservación del inmueble.\n\nSÉPTIMA. Seguros.— El arrendatario pagará la diferencia de valor en el seguro de incendio si la tasa se modifica por causa de la destinación dada al inmueble.\n\nOCTAVA. Restitución.— El arrendatario restituirá el inmueble al arrendador a la terminación del contrato en el mismo estado en que lo recibe, salvo el deterioro natural.\n\nNOVENA. Entrega.— El arrendador se obliga a entregar el inmueble el día {{fecha_inicio}} junto con los elementos que lo integran, los que se detallarán en escrito separado firmado por los contratantes.\n\nDÉCIMA. Incumplimiento.— El incumplimiento de las obligaciones del arrendatario dará derecho al arrendador para dar por terminado el contrato y exigir la entrega inmediata del inmueble.\n\nDÉCIMO PRIMERA. Cláusula penal.— El incumplimiento del arrendatario lo constituirá en deudor del arrendador por la suma de {{clausula_penal_letras}} ($ {{clausula_penal_numeros}}) a título de pena, sin menoscabo del cobro de la renta y los perjuicios causados.\n\nDÉCIMO SEGUNDA. Terminación y prórroga.— Este contrato termina por el vencimiento del término estipulado. Los contratantes podrán prorrogarlo mediante comunicaciones escritas con al menos un mes de antelación a su vencimiento.\n\nDÉCIMO TERCERA. Impuestos y derechos.— Los impuestos y derechos que cause este contrato estarán a cargo de {{impuestos_a_cargo}}.\n\nEn constancia se firma en dos ejemplares en la ciudad y fecha arriba mencionadas.\n\nArrendador: _______________________     Arrendatario: _______________________\n{{nombre_arrendador}}                   {{nombre_arrendatario}}\nC.C. Nº. {{cedula_arrendador}}          C.C. Nº. {{cedula_arrendatario}}\n\nTestigos: _______________________"
+  },
+  {
+    "id": "subarriendo-local-comercial",
+    "title": "Subarriendo de Local Comercial",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato de subarriendo."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_subarrendador",
+        "label": "Nombre completo del subarrendador",
+        "type": "text",
+        "required": true,
+        "help": "Quien tiene arrendado el local y lo subarrienda parcialmente. Es el arrendatario original."
+      },
+      {
+        "name": "cedula_subarrendador",
+        "label": "Cédula del subarrendador",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del subarrendador."
+      },
+      {
+        "name": "expedicion_subarrendador",
+        "label": "Ciudad expedición cédula del subarrendador",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del subarrendador."
+      },
+      {
+        "name": "domicilio_subarrendador",
+        "label": "Ciudad de domicilio del subarrendador",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el subarrendador."
+      },
+      {
+        "name": "nombre_subarrendatario",
+        "label": "Nombre completo del subarrendatario",
+        "type": "text",
+        "required": true,
+        "help": "Quien tomará en arriendo la parte del local."
+      },
+      {
+        "name": "cedula_subarrendatario",
+        "label": "Cédula del subarrendatario",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del subarrendatario."
+      },
+      {
+        "name": "expedicion_subarrendatario",
+        "label": "Ciudad expedición cédula subarrendatario",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del subarrendatario."
+      },
+      {
+        "name": "domicilio_subarrendatario",
+        "label": "Ciudad de domicilio del subarrendatario",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el subarrendatario."
+      },
+      {
+        "name": "direccion_local",
+        "label": "Dirección del local comercial completo",
+        "type": "text",
+        "required": true,
+        "help": "Dirección exacta del local donde se subarrienda la parte."
+      },
+      {
+        "name": "ciudad_local",
+        "label": "Ciudad donde está el local",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se ubica el local."
+      },
+      {
+        "name": "fecha_contrato_original",
+        "label": "Fecha del contrato de arrendamiento original",
+        "type": "text",
+        "required": true,
+        "help": "Cuándo firmó el subarrendador el contrato de arrendamiento con el dueño del local. Ej: 1 de enero de 2024."
+      },
+      {
+        "name": "nombre_arrendador_original",
+        "label": "Nombre del dueño original del local",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del propietario del local o arrendador original."
+      },
+      {
+        "name": "descripcion_parte_subarrendada",
+        "label": "Descripción de la parte del local que se subarrienda",
+        "type": "text",
+        "required": true,
+        "help": "Qué parte exacta del local se entrega en subarriendo. Ej: el área trasera de 20 m2, el segundo piso. Recuerde que solo se puede subarrendar hasta la mitad."
+      },
+      {
+        "name": "linderos_local",
+        "label": "Linderos del local comercial completo",
+        "type": "text",
+        "required": true,
+        "help": "Linderos del local total. Ej: Norte con local 2, Sur con parqueadero."
+      },
+      {
+        "name": "canon_letras",
+        "label": "Canon mensual de subarriendo en letras",
+        "type": "text",
+        "required": true,
+        "help": "Valor mensual del subarriendo en palabras. Ej: un millón de pesos."
+      },
+      {
+        "name": "canon_numeros",
+        "label": "Canon mensual de subarriendo en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 1.000.000."
+      },
+      {
+        "name": "dias_pago",
+        "label": "Días del mes para pagar el canon",
+        "type": "text",
+        "required": true,
+        "help": "Número de días del mes para pagar. Ej: 5 primeros días de cada mes."
+      },
+      {
+        "name": "destinacion_permitida",
+        "label": "Uso permitido de la parte subarrendada",
+        "type": "text",
+        "required": true,
+        "help": "Para qué se puede usar la parte subarrendada. Ej: venta de ropa, consultorio, oficina administrativa."
+      },
+      {
+        "name": "actividades_prohibidas",
+        "label": "Actividades prohibidas en la parte subarrendada",
+        "type": "text",
+        "required": true,
+        "help": "Usos que lesionan derechos del arrendador original. Ej: venta de licores, actividades ruidosas, depósito de materiales peligrosos."
+      },
+      {
+        "name": "servicios_incluidos",
+        "label": "Servicios incluidos y quién los paga",
+        "type": "text",
+        "required": true,
+        "help": "Qué servicios van incluidos en el subarriendo y quién los paga. Ej: agua y luz a cargo del subarrendatario según facturación."
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de inicio del subarriendo",
+        "type": "text",
+        "required": true,
+        "help": "Cuándo empieza el subarriendo. Ej: 1 de febrero de 2025."
+      },
+      {
+        "name": "gastos_a_cargo",
+        "label": "¿Quién asume los gastos de celebración del contrato?",
+        "type": "text",
+        "required": true,
+        "help": "Quién paga los gastos de firmar y legalizar el contrato. Ej: el subarrendatario, el subarrendador, por partes iguales."
+      }
+    ],
+    "template": "Entre los suscritos: {{nombre_subarrendador}}, mayor de edad, domiciliado en {{domicilio_subarrendador}}, identificado con la cédula de ciudadanía Nº. {{cedula_subarrendador}} de {{expedicion_subarrendador}}, quien se denominará el SUBARRENDADOR, y {{nombre_subarrendatario}}, mayor de edad, domiciliado en {{domicilio_subarrendatario}}, identificado con la cédula de ciudadanía Nº. {{cedula_subarrendatario}} de {{expedicion_subarrendatario}}, quien se denominará el SUBARRENDATARIO, hemos convenido celebrar un contrato de subarriendo que se regirá por las disposiciones del Código de Comercio para el arrendamiento de locales comerciales y por las siguientes cláusulas:\n\nPRIMERA. Objeto.— El SUBARRENDADOR concede al SUBARRENDATARIO el goce parcial del local comercial ubicado en {{direccion_local}}, de la ciudad de {{ciudad_local}}, el cual ocupa en calidad de arrendatario en virtud del contrato de arrendamiento celebrado el {{fecha_contrato_original}} con el señor {{nombre_arrendador_original}}. La parte del inmueble que se subarrienda es: {{descripcion_parte_subarrendada}}.\n\nSEGUNDA. Linderos.— El local comercial al cual pertenece la parte subarrendada tiene los siguientes linderos: {{linderos_local}}.\n\nTERCERA. Precio.— El SUBARRENDATARIO se obliga a pagar por concepto de canon de subarriendo la suma de {{canon_letras}} ($ {{canon_numeros}}) mensuales, dentro de los {{dias_pago}} días de cada mes.\n\nCUARTA. Destinación.— El inmueble tendrá una destinación de {{destinacion_permitida}}. Queda prohibida la destinación para las siguientes actividades: {{actividades_prohibidas}}, por ser lesivas de los intereses del arrendador.\n\nQUINTA. Servicios.— {{servicios_incluidos}}.\n\nSEXTA. Mejoras.— El SUBARRENDATARIO se compromete a realizar las mejoras locativas necesarias y a restituir la parte del inmueble en el mismo estado que la recibió, salvo el deterioro natural.\n\nSÉPTIMA. Duración.— La duración del presente contrato es de un año, contado desde el {{fecha_inicio}}. El contrato se entenderá prorrogado por un término igual, siempre que ninguna de las partes manifieste su intención de darlo por terminado con al menos un mes de antelación.\n\nOCTAVA. Causales de Terminación.— El subarrendador podrá dar por terminado el contrato cuando sobrevenga: a) mora en el pago de uno de los cánones; b) destinación del local para actividades prohibidas; c) no pago oportuno de los servicios públicos a cargo del subarrendatario; d) solicitud de liquidación obligatoria del subarrendatario; e) incumplimiento de cualquier obligación del documento.\n\nNOVENA. Gastos.— Los gastos de celebración y legalización de este contrato correrán a cargo de {{gastos_a_cargo}}.\n\nEn señal de conformidad, las partes suscriben este documento en la ciudad de {{ciudad_local}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nSubarrendador: _______________________     Subarrendatario: _______________________\n{{nombre_subarrendador}}                   {{nombre_subarrendatario}}\nC.C. Nº. {{cedula_subarrendador}}          C.C. Nº. {{cedula_subarrendatario}}\n\nTestigos: _______________________"
+  },
+  {
+    "id": "agencia-comercial",
+    "title": "Agencia Comercial",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_agente",
+        "label": "Nombre completo del representante legal del agente",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre de la empresa agente."
+      },
+      {
+        "name": "cedula_agente",
+        "label": "Cédula del representante del agente",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante legal del agente."
+      },
+      {
+        "name": "expedicion_agente",
+        "label": "Ciudad expedición cédula del agente",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del agente."
+      },
+      {
+        "name": "nombre_empresa_agente",
+        "label": "Nombre de la empresa del agente",
+        "type": "text",
+        "required": true,
+        "help": "Razón social de la empresa que actuará como agente."
+      },
+      {
+        "name": "nombre_empresario",
+        "label": "Nombre completo del representante del empresario",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre de la empresa que encarga la agencia."
+      },
+      {
+        "name": "cedula_empresario",
+        "label": "Cédula del representante del empresario",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante del empresario."
+      },
+      {
+        "name": "expedicion_empresario",
+        "label": "Ciudad expedición cédula del empresario",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad expedición de la cédula del empresario."
+      },
+      {
+        "name": "nombre_empresa_empresario",
+        "label": "Nombre de la empresa del empresario",
+        "type": "text",
+        "required": true,
+        "help": "Razón social de la empresa que encarga la promoción y venta."
+      },
+      {
+        "name": "objeto_agencia",
+        "label": "Productos o servicios que el agente promoverá y venderá",
+        "type": "text",
+        "required": true,
+        "help": "Qué promoverá el agente. Ej: seguros de vida, productos farmacéuticos, maquinaria industrial."
+      },
+      {
+        "name": "zona_agencia",
+        "label": "Zona o territorio donde operará el agente",
+        "type": "text",
+        "required": true,
+        "help": "Área geográfica donde el agente tiene exclusividad. Ej: departamento del Valle del Cauca, municipios de Cali y Palmira."
+      },
+      {
+        "name": "duracion",
+        "label": "Duración del contrato",
+        "type": "text",
+        "required": true,
+        "help": "Tiempo del contrato. Ej: un (1) año, dos (2) años."
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de inicio del contrato",
+        "type": "text",
+        "required": true,
+        "help": "Cuándo empieza a regir el contrato. Ej: 1 de febrero de 2025."
+      },
+      {
+        "name": "dias_informe",
+        "label": "Primeros días del mes para rendir informes",
+        "type": "text",
+        "required": true,
+        "help": "En qué días del mes siguiente rinde cuentas el agente. Ej: 5 (rinde informe en los 5 primeros días del mes siguiente)."
+      },
+      {
+        "name": "porcentaje_remuneracion",
+        "label": "Porcentaje de remuneración del agente (%)",
+        "type": "text",
+        "required": true,
+        "help": "Comisión del agente sobre las ventas realizadas. Ej: 10 (significa el 10% del valor de cada venta)."
+      },
+      {
+        "name": "dias_entrega_final",
+        "label": "Días para rendir cuentas al terminar el contrato",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos días tiene el agente para entregar el informe final y rendir cuentas después de terminado el contrato. Ej: 15 días hábiles."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad donde se resolverán los conflictos",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde operará el tribunal de arbitramento si hay disputas. Ej: Bogotá, Cali, Medellín."
+      }
+    ],
+    "template": "Entre los suscritos: {{nombre_agente}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_agente}} de {{expedicion_agente}}, quien actúa como representante legal de {{nombre_empresa_agente}}, denominado en adelante el AGENTE, y {{nombre_empresario}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_empresario}} de {{expedicion_empresario}}, quien obra como representante de {{nombre_empresa_empresario}}, denominado en adelante el EMPRESARIO, han convenido celebrar un contrato de agencia comercial que se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— El EMPRESARIO encarga al AGENTE, quien asume en forma independiente y de manera estable, la promoción y venta a nombre de él de {{objeto_agencia}}.\n\nSEGUNDA. Zona.— El AGENTE ejecutará el encargo en el territorio de {{zona_agencia}}, República de Colombia.\n\nTERCERA. Facultades del agente.— a) Establecer dentro de la zona las dependencias convenientes; b) Ofrecer y vender al público los productos o servicios encomendados; c) Anunciar en forma apropiada su carácter de AGENTE; d) Descontar de cada consignación las comisiones que le correspondan y los gastos autorizados por escrito.\n\nCUARTA. Duración.— El término de duración de este contrato es de {{duracion}}, contado a partir del {{fecha_inicio}}.\n\nQUINTA. Prórroga.— Se entenderá prorrogado por un término igual al pactado a menos que una de las partes manifieste por escrito, con anticipación no menor de treinta días, su intención de no continuarlo.\n\nSEXTA. Obligaciones del agente.— a) Proporcionar informes completos al empresario. En todo caso se presentarán informes en los {{dias_informe}} primeros días del mes siguiente; b) Las oficinas del AGENTE estarán ubicadas en lugares céntricos de la zona; c) Cumplir fielmente las instrucciones del empresario; d) No hacer descuentos distintos a los fijados por el EMPRESARIO; e) Comunicar inmediatamente al EMPRESARIO cualquier reclamo sobre la calidad de los productos.\n\nSÉPTIMA. Remuneración.— El EMPRESARIO reconocerá al AGENTE el {{porcentaje_remuneracion}}% sobre el valor de las ventas realizadas.\n\nOCTAVA. Obligaciones del empresario.— a) Suministrar oportunamente al AGENTE instrucciones, reglamentos y tarifas pertinentes; b) Reconocer al AGENTE los gastos solicitados y aprobados.\n\nNOVENA. Exclusividad.— El EMPRESARIO se compromete a servirse únicamente del AGENTE en la zona y ramo de productos acordado.\n\nDÉCIMA. No competencia.— El AGENTE no podrá promover ni vender en la zona productos de empresarios que sean competidores del EMPRESARIO.\n\nDÉCIMO PRIMERA. Terminación.— El contrato terminará por: a) Mutuo acuerdo; b) Expiración del término de duración; c) Sentencia que así lo ordene; d) Los casos consagrados en la ley. Al terminar, el AGENTE dispondrá de {{dias_entrega_final}} días para entregar el último informe y la rendición de cuentas.\n\nDÉCIMO SEGUNDA. Cláusula compromisoria.— Toda diferencia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nEn constancia se firma en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nAgente: _______________________     Empresario: _______________________\n{{nombre_agente}}                   {{nombre_empresario}}\n{{nombre_empresa_agente}}           {{nombre_empresa_empresario}}"
+  },
+  {
+    "id": "concesion-comercial",
+    "title": "Concesión Comercial",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_concedente",
+        "label": "Nombre del representante legal del concedente",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre del fabricante o importador que da la concesión."
+      },
+      {
+        "name": "cedula_concedente",
+        "label": "Cédula del representante del concedente",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante del concedente."
+      },
+      {
+        "name": "nombre_empresa_concedente",
+        "label": "Nombre de la empresa concedente",
+        "type": "text",
+        "required": true,
+        "help": "Razón social del fabricante o importador. Ej: Honda de Colombia S.A.S."
+      },
+      {
+        "name": "nombre_concesionario",
+        "label": "Nombre del representante legal del concesionario",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre de la empresa que distribuirá los productos."
+      },
+      {
+        "name": "cedula_concesionario",
+        "label": "Cédula del representante del concesionario",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante del concesionario."
+      },
+      {
+        "name": "nombre_empresa_concesionario",
+        "label": "Nombre de la empresa concesionaria",
+        "type": "text",
+        "required": true,
+        "help": "Razón social del distribuidor. Ej: Motos del Valle S.A.S."
+      },
+      {
+        "name": "bienes_concesion",
+        "label": "Bienes o productos objeto de la concesión",
+        "type": "text",
+        "required": true,
+        "help": "Qué productos se entregarán en concesión para vender. Ej: motocicletas Honda, línea blanca marca X, vehículos marca Y."
+      },
+      {
+        "name": "precio_venta_publico",
+        "label": "Precio de los bienes para venta al público",
+        "type": "text",
+        "required": true,
+        "help": "Precio al que el concesionario venderá los bienes. Ej: según lista de precios del concedente vigente a la fecha de cada venta."
+      },
+      {
+        "name": "comision_ventas",
+        "label": "Porcentaje de comisión por venta al público (%)",
+        "type": "text",
+        "required": true,
+        "help": "Ganancia del concesionario sobre cada venta. Ej: 8 (significa 8% del precio de venta)."
+      },
+      {
+        "name": "comision_repuestos",
+        "label": "Porcentaje de comisión sobre repuestos (%)",
+        "type": "text",
+        "required": true,
+        "help": "Comisión sobre repuestos vendidos. Ej: 15."
+      },
+      {
+        "name": "duracion_meses",
+        "label": "Duración del contrato en meses",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos meses dura el contrato. Ej: 12, 24, 36."
+      },
+      {
+        "name": "prorroga_meses",
+        "label": "Meses de prórroga automática",
+        "type": "text",
+        "required": true,
+        "help": "Por cuántos meses se prorroga automáticamente si nadie avisa que no continuará. Ej: 12."
+      },
+      {
+        "name": "aviso_terminacion_meses",
+        "label": "Meses de anticipación para avisar que no se prorroga",
+        "type": "text",
+        "required": true,
+        "help": "Con cuántos meses de anticipación se debe avisar para no prorrogar. Ej: 3."
+      },
+      {
+        "name": "lugar_entrega_bienes",
+        "label": "Lugar donde el concedente entregará los bienes",
+        "type": "text",
+        "required": true,
+        "help": "Dónde el concedente pone los bienes a disposición del concesionario. Ej: bodega del concedente en Bogotá."
+      },
+      {
+        "name": "clausula_penal_letras",
+        "label": "Cláusula penal por incumplimiento en letras",
+        "type": "text",
+        "required": true,
+        "help": "Multa por incumplimiento en palabras. Ej: cinco millones de pesos."
+      },
+      {
+        "name": "clausula_penal_numeros",
+        "label": "Cláusula penal en números",
+        "type": "text",
+        "required": true,
+        "help": "La misma multa en cifras. Ej: 5.000.000."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad donde se resolverán los conflictos",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del tribunal de arbitramento. Ej: Bogotá."
+      }
+    ],
+    "template": "Entre los suscritos: {{nombre_concedente}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_concedente}}, quien obra en nombre y representación de {{nombre_empresa_concedente}}, denominado en adelante el CONCEDENTE, y {{nombre_concesionario}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_concesionario}}, quien obra en nombre y representación de {{nombre_empresa_concesionario}}, denominado en adelante el CONCESIONARIO, hemos convenido celebrar el presente contrato de concesión que se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— El CONCEDENTE transfiere en CONCESIÓN al CONCESIONARIO, para su venta, los siguientes bienes: {{bienes_concesion}}.\n\nSEGUNDA. Valor de venta.— El precio de los bienes para venta a terceros será {{precio_venta_publico}}, quedando expresamente prohibido que el CONCESIONARIO pueda variarlo sin autorización previa y expresa del CONCEDENTE.\n\nTERCERA. Remuneración.— El CONCESIONARIO tendrá derecho a percibir una comisión del {{comision_ventas}}% de venta al público por unidad vendida, y del {{comision_repuestos}}% sobre repuestos vendidos.\n\nCUARTA. Duración.— La duración del presente contrato será de {{duracion_meses}} meses, prorrogables por {{prorroga_meses}} meses más si alguna de las partes no informa a la otra con antelación no inferior a {{aviso_terminacion_meses}} meses su intención de no prorrogarlo.\n\nQUINTA. Exclusividad.— Se pacta exclusividad en favor del CONCEDENTE: el CONCESIONARIO no podrá distribuir, vender o representar la misma clase de bienes de persona diferente al CONCEDENTE.\n\nSEXTA. Causales de terminación anticipada.— El CONCEDENTE podrá revocar el contrato en los siguientes eventos: a) Insolvencia del concesionario; b) Ineficiencia en la prestación de servicios de postventa; c) Violación a la cláusula de exclusividad.\n\nSÉPTIMA. Servicios de postventa.— El CONCESIONARIO se obliga a prestar los servicios de mantenimiento y reparación de los bienes; el CONCEDENTE suministrará permanentemente los repuestos necesarios.\n\nOCTAVA. Despacho de los bienes.— Los bienes serán entregados al CONCESIONARIO en {{lugar_entrega_bienes}}, siendo de su cuenta los gastos de bodegaje, transporte y seguros desde que se pongan a su disposición.\n\nNOVENA. Cláusula penal.— Si cualquiera de las partes incumpliere sus obligaciones deberá pagar a la otra la suma de {{clausula_penal_letras}} ($ {{clausula_penal_numeros}}) a título de pena.\n\nDÉCIMA. Cláusula compromisoria.— Toda diferencia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nEn señal de conformidad, las partes suscriben este documento en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nConcedente: _______________________     Concesionario: _______________________\n{{nombre_empresa_concedente}}           {{nombre_empresa_concesionario}}"
+  },
+  {
+    "id": "contrato-suministro",
+    "title": "Contrato de Suministro",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_empresa_proveedor",
+        "label": "Nombre de la empresa proveedora",
+        "type": "text",
+        "required": true,
+        "help": "Razón social de quien suministra los bienes o servicios."
+      },
+      {
+        "name": "nombre_representante_proveedor",
+        "label": "Nombre del representante legal del proveedor",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre de la empresa proveedora."
+      },
+      {
+        "name": "cedula_representante_proveedor",
+        "label": "Cédula del representante del proveedor",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante legal del proveedor."
+      },
+      {
+        "name": "expedicion_representante_proveedor",
+        "label": "Ciudad expedición cédula del representante del proveedor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del representante."
+      },
+      {
+        "name": "domicilio_proveedor",
+        "label": "Ciudad de domicilio del proveedor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde tiene domicilio la empresa proveedora."
+      },
+      {
+        "name": "nombre_consumidor",
+        "label": "Nombre o razón social del consumidor",
+        "type": "text",
+        "required": true,
+        "help": "Empresa o persona que recibirá periódicamente los bienes o servicios."
+      },
+      {
+        "name": "nombre_representante_consumidor",
+        "label": "Nombre del representante del consumidor",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre del consumidor."
+      },
+      {
+        "name": "cedula_representante_consumidor",
+        "label": "Cédula del representante del consumidor",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante del consumidor."
+      },
+      {
+        "name": "domicilio_consumidor",
+        "label": "Ciudad de domicilio del consumidor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde tiene domicilio el consumidor."
+      },
+      {
+        "name": "bienes_servicios",
+        "label": "Descripción de los bienes o servicios a suministrar",
+        "type": "text",
+        "required": true,
+        "help": "Qué se suministrará periódicamente. Ej: papelería y útiles de oficina, productos de aseo, materias primas para producción."
+      },
+      {
+        "name": "descuento_porcentaje",
+        "label": "Porcentaje de descuento sobre precio de lista (%)",
+        "type": "text",
+        "required": true,
+        "help": "Descuento que el proveedor concede al consumidor sobre el precio oficial. Ej: 10."
+      },
+      {
+        "name": "descuento_pronto_pago",
+        "label": "Porcentaje de descuento adicional por pago en 30 días (%)",
+        "type": "text",
+        "required": true,
+        "help": "Descuento extra si el consumidor paga dentro de 30 días de la factura. Ej: 2."
+      },
+      {
+        "name": "cuantia_minima_pedido_letras",
+        "label": "Cuantía mínima de cada pedido en letras",
+        "type": "text",
+        "required": true,
+        "help": "Monto mínimo de cada orden de compra en palabras. Ej: quinientos mil pesos."
+      },
+      {
+        "name": "cuantia_minima_pedido_numeros",
+        "label": "Cuantía mínima de cada pedido en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo monto en cifras. Ej: 500.000."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad donde se resolverán los conflictos",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del tribunal de arbitramento. Ej: Bogotá."
+      }
+    ],
+    "template": "Entre los suscritos: {{nombre_empresa_proveedor}}, representada por el señor {{nombre_representante_proveedor}}, mayor de edad, identificado con cédula de ciudadanía Nº. {{cedula_representante_proveedor}} de {{expedicion_representante_proveedor}}, domiciliado en {{domicilio_proveedor}}, denominado en adelante el PROVEEDOR, y {{nombre_consumidor}}, representada por {{nombre_representante_consumidor}}, mayor de edad, identificado con cédula de ciudadanía Nº. {{cedula_representante_consumidor}}, domiciliado en {{domicilio_consumidor}}, denominado en adelante el CONSUMIDOR, hemos acordado celebrar el presente contrato de suministro que se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— El presente contrato tiene por objeto el suministro periódico por parte del PROVEEDOR de {{bienes_servicios}} a favor del CONSUMIDOR, a cambio de la contraprestación pactada en la cláusula tercera.\n\nSEGUNDA. Obligaciones del proveedor.— 1. Suministrar al CONSUMIDOR los productos acordados con los plazos de entrega establecidos. 2. Conceder al CONSUMIDOR un descuento del {{descuento_porcentaje}}% sobre el precio de la mercancía según listas oficiales. 3. Conceder un descuento adicional del {{descuento_pronto_pago}}% por el pago dentro de los 30 días siguientes a la fecha de factura. 4. Fijar como cuantía mínima de cada pedido la suma de {{cuantia_minima_pedido_letras}} ($ {{cuantia_minima_pedido_numeros}}). 5. Entregar material publicitario y catálogos en cantidad adecuada. 6. Asumir el valor de los fletes, empaques y seguros de la mercancía despachada dentro de las condiciones del contrato.\n\nTERCERA. Obligaciones del consumidor.— 1. Adquirir los productos del PROVEEDOR para revenderlos, sujetándose a los precios fijados por éste. 2. Pagar de contado el pedido inicial. 3. Firmar las facturas y documentos comerciales del PROVEEDOR en señal de aceptación.\n\nCUARTA. Naturaleza del suministro.— Cada suministro constituye una venta en firme. El PROVEEDOR no aceptará devoluciones, salvo artículos con defectos de fabricación notificados dentro de los cinco días siguientes a cada entrega.\n\nQUINTA. Duración.— El presente contrato es de plazo indefinido pero podrá ser terminado en cualquier momento por incumplimiento de obligaciones o con aviso escrito a la otra parte con un mes de anticipación.\n\nSEXTA. Cesión.— Este contrato no podrá ser cedido sin previa aprobación del PROVEEDOR.\n\nSÉPTIMA. Representación.— El CONSUMIDOR no tiene autorización que le faculte para representar o comprometer al PROVEEDOR.\n\nOCTAVA. Cláusula compromisoria.— Toda diferencia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nEn señal de conformidad, las partes suscriben este documento en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nProveedor: _______________________     Consumidor: _______________________\n{{nombre_empresa_proveedor}}           {{nombre_consumidor}}"
+  },
+  {
+    "id": "constancia-contrato-suministro",
+    "title": "Constancia Anexa al Contrato de Suministro",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se suscribe la constancia."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_empresa_proveedor",
+        "label": "Nombre de la empresa proveedora",
+        "type": "text",
+        "required": true,
+        "help": "Razón social del proveedor que expide la constancia."
+      },
+      {
+        "name": "nombre_representante_proveedor",
+        "label": "Nombre del representante del proveedor",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre del proveedor."
+      },
+      {
+        "name": "cedula_representante_proveedor",
+        "label": "Cédula del representante del proveedor",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante del proveedor."
+      },
+      {
+        "name": "cargo_representante_proveedor",
+        "label": "Cargo del representante del proveedor",
+        "type": "text",
+        "required": true,
+        "help": "Cargo que ostenta en la empresa. Ej: Gerente General, Representante Legal."
+      },
+      {
+        "name": "nombre_consumidor",
+        "label": "Nombre completo del consumidor",
+        "type": "text",
+        "required": true,
+        "help": "Persona natural o jurídica que ha comprado al proveedor y que firmará la constancia."
+      },
+      {
+        "name": "cedula_consumidor",
+        "label": "Cédula del consumidor",
+        "type": "text",
+        "required": true,
+        "help": "Cédula o NIT del consumidor."
+      },
+      {
+        "name": "domicilio_consumidor",
+        "label": "Ciudad de domicilio del consumidor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive o tiene domicilio el consumidor."
+      },
+      {
+        "name": "tipo_relacion_comercial",
+        "label": "Tipo de relaciones comerciales que han tenido",
+        "type": "text",
+        "required": true,
+        "help": "Qué tipo de contratos han celebrado. Ej: compraventa al por mayor, suministro periódico de productos de aseo."
+      }
+    ],
+    "template": "Entre los suscritos: {{nombre_empresa_proveedor}}, representada por el señor {{nombre_representante_proveedor}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_representante_proveedor}}, en su calidad de {{cargo_representante_proveedor}}, y {{nombre_consumidor}}, mayor de edad, domiciliado y residente en {{domicilio_consumidor}}, identificado con la cédula de ciudadanía Nº. {{cedula_consumidor}}, por medio del presente documento hacemos constar:\n\nPRIMERO.— Que {{nombre_empresa_proveedor}} ha venido celebrando con {{nombre_consumidor}}, desde hace algún tiempo, contratos de {{tipo_relacion_comercial}}, con base en los cuales este último ha adquirido de {{nombre_empresa_proveedor}} productos elaborados o representados por ésta, destinándolos libremente luego de así adquiridos.\n\nSEGUNDO.— Que fuera de las relaciones comerciales señaladas en la declaración anterior, no ha existido entre las partes ninguna clase de vinculación, ni se ha celebrado contrato alguno de índole civil, laboral o comercial diferente al mencionado.\n\nTERCERO.— Que a {{nombre_consumidor}} no lo une ni le ha unido con {{nombre_empresa_proveedor}} ningún contrato de mandato, comisión ni agencia comercial. Carece de cualquier autorización o vínculo contractual que le faculte para representar o comprometer de manera alguna a dicha empresa, por cuanto en desarrollo de su gestión comercial ha actuado y seguirá actuando como comerciante independiente, por su propia cuenta y en propio nombre. Por lo anterior, {{nombre_consumidor}} se obliga a no anunciarse bajo forma alguna como titular de ninguna de las calidades referidas.\n\nCUARTO.— Que nunca ha sido obligación de {{nombre_consumidor}} la de promover o explotar negocios en que {{nombre_empresa_proveedor}} tenga algún interés, ni la de asumir su representación o agencia en parte alguna del territorio nacional.\n\nQUINTO.— Que las relaciones entre las partes seguirán siendo exclusivamente las derivadas del contrato de {{tipo_relacion_comercial}} que han venido celebrando.\n\nEn constancia de lo anterior se suscribe el presente en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nProveedor: _______________________     Consumidor: _______________________\n{{nombre_empresa_proveedor}}           {{nombre_consumidor}}\n{{nombre_representante_proveedor}}     C.C. Nº. {{cedula_consumidor}}\n{{cargo_representante_proveedor}}"
+  },
+  {
+    "id": "contrato-franquicia",
+    "title": "Contrato de Franquicia",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_franquiciante",
+        "label": "Nombre del representante legal del franquiciante",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre del dueño de la marca o franquicia."
+      },
+      {
+        "name": "cedula_franquiciante",
+        "label": "Cédula del representante del franquiciante",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante del franquiciante."
+      },
+      {
+        "name": "nombre_empresa_franquiciante",
+        "label": "Nombre de la empresa franquiciante",
+        "type": "text",
+        "required": true,
+        "help": "Razón social del dueño de la franquicia. Ej: Colombiana de Franquicias S.A.S."
+      },
+      {
+        "name": "nombre_franquiciado",
+        "label": "Nombre del representante legal del franquiciado",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre del que adquiere la franquicia."
+      },
+      {
+        "name": "cedula_franquiciado",
+        "label": "Cédula del representante del franquiciado",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante del franquiciado."
+      },
+      {
+        "name": "nombre_empresa_franquiciado",
+        "label": "Nombre de la empresa franquiciada",
+        "type": "text",
+        "required": true,
+        "help": "Razón social de quien explotará la franquicia."
+      },
+      {
+        "name": "nombre_marca",
+        "label": "Nombre de la marca objeto de la franquicia",
+        "type": "text",
+        "required": true,
+        "help": "Marca registrada que se autoriza usar. Ej: MiniMercado Express, Pollo Feliz."
+      },
+      {
+        "name": "numero_registro_marca",
+        "label": "Número de registro de la marca en la Superintendencia",
+        "type": "text",
+        "required": true,
+        "help": "Número de registro en la Superintendencia de Industria y Comercio. Lo encuentra en el certificado de registro de la marca."
+      },
+      {
+        "name": "objeto_franquicia",
+        "label": "Para qué se explotará la franquicia (tipo de negocio)",
+        "type": "text",
+        "required": true,
+        "help": "Actividad económica del negocio. Ej: venta de comida rápida, ropa deportiva, productos de belleza."
+      },
+      {
+        "name": "ciudad_punto_venta",
+        "label": "Ciudad donde estará el punto de venta",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde operará el negocio franquiciado."
+      },
+      {
+        "name": "valor_derechos_entrada",
+        "label": "Valor de los derechos de entrada y uso de marca",
+        "type": "text",
+        "required": true,
+        "help": "Cuánto paga el franquiciado por adquirir el derecho de usar la franquicia. Ej: veinte millones de pesos ($ 20.000.000)."
+      },
+      {
+        "name": "duracion",
+        "label": "Duración del contrato",
+        "type": "text",
+        "required": true,
+        "help": "Cuánto tiempo tendrá vigencia el contrato. Ej: dos (2) años, cinco (5) años."
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de inicio del contrato",
+        "type": "text",
+        "required": true,
+        "help": "Cuándo empieza el contrato de franquicia. Ej: 1 de febrero de 2025."
+      },
+      {
+        "name": "clausula_penal_letras",
+        "label": "Cláusula penal por incumplimiento en letras",
+        "type": "text",
+        "required": true,
+        "help": "Multa por incumplimiento en palabras. Ej: cinco millones de pesos."
+      },
+      {
+        "name": "clausula_penal_numeros",
+        "label": "Cláusula penal en números",
+        "type": "text",
+        "required": true,
+        "help": "La misma multa en cifras. Ej: 5.000.000."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad donde se resolverán los conflictos",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del tribunal de arbitramento si hay disputas. Ej: Bogotá."
+      }
+    ],
+    "template": "Entre los suscritos: {{nombre_franquiciante}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_franquiciante}}, quien obra en nombre y representación de {{nombre_empresa_franquiciante}}, denominado en adelante el FRANQUICIANTE, y {{nombre_franquiciado}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_franquiciado}}, quien obra en nombre y representación de {{nombre_empresa_franquiciado}}, denominado en adelante el FRANQUICIADO, hemos convenido celebrar el presente CONTRATO DE FRANQUICIA que se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— El FRANQUICIANTE, propietario de la marca {{nombre_marca}}, registrada en la Superintendencia de Industria y Comercio bajo el Nº. {{numero_registro_marca}}, concede el uso de la marca, nombre comercial, emblema, modelos, diseños y Know How para ser explotado para {{objeto_franquicia}}. El punto de venta estará ubicado en la ciudad de {{ciudad_punto_venta}}.\n\nSEGUNDA. Derechos de entrada y uso de marca.— El FRANQUICIANTE concede el uso de su marca y producto por la suma de {{valor_derechos_entrada}}.\n\nTERCERA. Regalías.— La utilización de la franquicia no generará cobro de regalías adicionales.\n\nCUARTA. Obligaciones del franquiciante.— 1. Incorporar nuevos productos y mejorar la calidad de los existentes. 2. Permitir el uso de los derechos de propiedad intelectual e industrial. 3. Colocar a disposición del franquiciado las mercancías que componen su surtido. 4. Determinar las políticas y estrategias de mercadeo. 5. Otorgar formación, adiestramiento y asistencia técnica al franquiciado.\n\nQUINTA. Obligaciones del franquiciado.— 1. Comercializar los productos con las especificaciones del FRANQUICIANTE. 2. No explotar directa ni indirectamente la franquicia por medio de establecimientos similares. 3. Utilizar el Know How y Licencia de Marca solo para la explotación autorizada. 4. No revelar el Know How suministrado. 5. Aplicar los precios de venta definidos por el FRANQUICIANTE. 6. Registrar cada punto de venta en la Cámara de Comercio. 7. Responder por las infracciones civiles y administrativas derivadas del uso de la marca durante el término del contrato.\n\nSEXTA. Terminación y prórroga.— La duración del presente contrato será de {{duracion}}, contado desde el {{fecha_inicio}}. El contrato podrá ser prorrogado previo acuerdo escrito de las partes.\n\nSÉPTIMA. Cesión de derechos.— El FRANQUICIADO no podrá ceder el contrato sin autorización escrita del FRANQUICIANTE.\n\nOCTAVA. Causales de terminación anticipada.— El FRANQUICIANTE podrá terminar el contrato unilateralmente ante: a) Insolvencia del FRANQUICIADO; b) Ineficiencia en los servicios de postventa; c) Violación de cualquiera de las cláusulas del contrato.\n\nNOVENA. Cláusula penal.— Si cualquiera de las partes incumpliere sus obligaciones deberá pagar a la otra la suma de {{clausula_penal_letras}} ($ {{clausula_penal_numeros}}) a título de pena.\n\nDÉCIMA. Cláusula compromisoria.— Toda diferencia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nEn constancia se firma en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nFranquiciante: _______________________     Franquiciado: _______________________\n{{nombre_empresa_franquiciante}}           {{nombre_empresa_franquiciado}}"
+  },
+  {
+    "id": "contrato-fabricacion",
+    "title": "Contrato de Fabricación",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_ordenante",
+        "label": "Nombre completo del ordenante",
+        "type": "text",
+        "required": true,
+        "help": "Quien encarga la fabricación de los productos. Es quien comprará lo que se fabrique."
+      },
+      {
+        "name": "cedula_ordenante",
+        "label": "Cédula del ordenante",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del ordenante."
+      },
+      {
+        "name": "expedicion_ordenante",
+        "label": "Ciudad expedición cédula del ordenante",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del ordenante."
+      },
+      {
+        "name": "domicilio_ordenante",
+        "label": "Ciudad de domicilio del ordenante",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el ordenante."
+      },
+      {
+        "name": "nombre_fabricante",
+        "label": "Nombre completo del fabricante",
+        "type": "text",
+        "required": true,
+        "help": "Quien fabricará los productos. Es la empresa con capacidad de producción."
+      },
+      {
+        "name": "cedula_fabricante",
+        "label": "Cédula del fabricante",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del fabricante."
+      },
+      {
+        "name": "expedicion_fabricante",
+        "label": "Ciudad expedición cédula del fabricante",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del fabricante."
+      },
+      {
+        "name": "domicilio_fabricante",
+        "label": "Ciudad de domicilio del fabricante",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive o tiene su taller el fabricante."
+      },
+      {
+        "name": "descripcion_productos",
+        "label": "Descripción detallada de los productos a fabricar",
+        "type": "text",
+        "required": true,
+        "help": "Qué productos fabricará. Incluya especificaciones, materiales y referencias. Ej: camisetas de algodón ref. 001 con logo bordado."
+      },
+      {
+        "name": "precios_productos",
+        "label": "Precios acordados por tipo o volumen de producto",
+        "type": "text",
+        "required": true,
+        "help": "Cuánto pagará el ordenante al fabricante por los productos. Ej: $ 15.000 por unidad de la ref. 001; $ 20.000 por unidad de la ref. 002."
+      },
+      {
+        "name": "dias_pago",
+        "label": "Días hábiles para pagar después de recibir factura",
+        "type": "text",
+        "required": true,
+        "help": "Plazo que tiene el ordenante para pagar cada factura. Ej: 15 días hábiles."
+      },
+      {
+        "name": "dias_entrega",
+        "label": "Días para entregar después de recibir orden de producción",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos días tiene el fabricante para entregar desde que recibe la orden. Ej: 10 días hábiles."
+      },
+      {
+        "name": "direccion_entrega",
+        "label": "Dirección de las oficinas del ordenante para la entrega",
+        "type": "text",
+        "required": true,
+        "help": "Dónde entregará el fabricante la mercancía. Ej: Carrera 5 # 10-20 Bodega 3."
+      },
+      {
+        "name": "ciudad_entrega",
+        "label": "Ciudad de entrega",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se recibirá la mercancía."
+      },
+      {
+        "name": "dias_reclamo",
+        "label": "Días hábiles para formular reclamos sobre la mercancía",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos días tiene el ordenante para reclamar diferencias después de recibir. Ej: 3 días hábiles."
+      },
+      {
+        "name": "suministrador_materia_prima",
+        "label": "¿Quién suministra la materia prima?",
+        "type": "text",
+        "required": true,
+        "help": "Quién aporta los insumos. Ej: el ordenante suministra la tela y el fabricante los demás insumos; el fabricante suministra toda la materia prima."
+      },
+      {
+        "name": "duracion",
+        "label": "Duración del contrato",
+        "type": "text",
+        "required": true,
+        "help": "Cuánto dura el contrato. Ej: un (1) año. Si no tiene plazo fijo escriba: indefinido."
+      },
+      {
+        "name": "dias_preaviso_terminacion",
+        "label": "Días de preaviso para terminar el contrato",
+        "type": "text",
+        "required": true,
+        "help": "Con cuántos días de anticipación debe avisarse la terminación. Ej: 30 días."
+      },
+      {
+        "name": "clausula_penal_letras",
+        "label": "Cláusula penal por incumplimiento en letras",
+        "type": "text",
+        "required": true,
+        "help": "Multa por incumplimiento en palabras. Ej: tres millones de pesos."
+      },
+      {
+        "name": "clausula_penal_numeros",
+        "label": "Cláusula penal en números",
+        "type": "text",
+        "required": true,
+        "help": "La misma multa en cifras. Ej: 3.000.000."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad donde se resolverán los conflictos",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del tribunal de arbitramento. Ej: Bogotá."
+      }
+    ],
+    "template": "Entre los suscritos: {{nombre_ordenante}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_ordenante}} de {{expedicion_ordenante}}, domiciliado en {{domicilio_ordenante}}, denominado en adelante el ORDENANTE, y {{nombre_fabricante}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_fabricante}} de {{expedicion_fabricante}}, domiciliado en {{domicilio_fabricante}}, denominado en adelante el FABRICANTE, hemos decidido celebrar el contrato de fabricación que se rige por las cláusulas siguientes:\n\nPRIMERA. Objeto.— El FABRICANTE se obliga a producir y el ORDENANTE a comprar los siguientes productos: {{descripcion_productos}}.\n\nSEGUNDA. Precio.— El ORDENANTE pagará al FABRICANTE, acorde con el volumen de mercaderías realmente entregado, los siguientes valores: {{precios_productos}}.\n\nTERCERA. Pago.— El ORDENANTE pagará al FABRICANTE los dineros que llegue a deber dentro de los {{dias_pago}} días hábiles siguientes a la presentación de las facturas correspondientes a cada entrega.\n\nCUARTA. Entrega.— El FABRICANTE realizará la entrega {{dias_entrega}} días después de recibir la orden de producción del ORDENANTE.\n\nQUINTA. Procedimiento para la entrega.— El FABRICANTE hará la entrega en las oficinas del ORDENANTE ubicadas en {{direccion_entrega}} de la ciudad de {{ciudad_entrega}}. El ORDENANTE dispondrá de {{dias_reclamo}} días hábiles para formular los reclamos que procedan.\n\nSEXTA. Materia prima.— La materia prima será suministrada por {{suministrador_materia_prima}}.\n\nSÉPTIMA. Duración.— El presente contrato tiene una duración de {{duracion}}. Para terminarlo, cualquiera de las partes podrá comunicar a la otra con una anticipación mínima de {{dias_preaviso_terminacion}} días su intención de cesar el vínculo contractual.\n\nOCTAVA. Obligaciones del FABRICANTE.— a) Elaborar los bienes según las especificaciones acordadas; b) Realizar las entregas dentro del plazo acordado; c) Mantener la exclusividad en el diseño de los bienes fabricados.\n\nNOVENA. Obligaciones del ORDENANTE.— a) Pagar los precios dentro del plazo previsto; b) Recibir los bienes que le entregue el FABRICANTE conforme a las órdenes de producción impartidas.\n\nDÉCIMA. Cláusula penal.— Las partes acuerdan como sanción pecuniaria el pago de {{clausula_penal_letras}} ($ {{clausula_penal_numeros}}) pesos a cargo de quien incumpla, cantidad exigible sin necesidad de requerimiento.\n\nDÉCIMO PRIMERA. Cláusula compromisoria.— Toda diferencia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nEn señal de conformidad, las partes suscriben el presente en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante dos testigos hábiles.\n\nOrdenante: _______________________     Fabricante: _______________________\n{{nombre_ordenante}}                   {{nombre_fabricante}}\nC.C. Nº. {{cedula_ordenante}}          C.C. Nº. {{cedula_fabricante}}"
+  },
+  {
+    "id": "outsourcing-sistemas",
+    "title": "Administración y Mantenimiento de Recursos Tecnológicos (Outsourcing)",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_contratante",
+        "label": "Nombre del representante legal del contratante",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre de la empresa que contrata el servicio de outsourcing."
+      },
+      {
+        "name": "cedula_contratante",
+        "label": "Cédula del representante del contratante",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante del contratante."
+      },
+      {
+        "name": "expedicion_contratante",
+        "label": "Ciudad expedición cédula del contratante",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del contratante."
+      },
+      {
+        "name": "nombre_empresa_contratante",
+        "label": "Nombre de la empresa contratante",
+        "type": "text",
+        "required": true,
+        "help": "Razón social de la empresa que necesita el servicio tecnológico."
+      },
+      {
+        "name": "nombre_administrador",
+        "label": "Nombre del representante legal del administrador",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre de la empresa de sistemas que prestará el servicio."
+      },
+      {
+        "name": "cedula_administrador",
+        "label": "Cédula del representante del administrador",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante del administrador."
+      },
+      {
+        "name": "expedicion_administrador",
+        "label": "Ciudad expedición cédula del administrador",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del administrador."
+      },
+      {
+        "name": "nombre_empresa_administrador",
+        "label": "Nombre de la empresa administradora (outsourcing)",
+        "type": "text",
+        "required": true,
+        "help": "Razón social de la empresa especializada en sistemas que prestará el servicio."
+      },
+      {
+        "name": "plazo_contrato",
+        "label": "Plazo de ejecución del contrato",
+        "type": "text",
+        "required": true,
+        "help": "Cuánto tiempo durará el contrato. Ej: seis (6) meses, un (1) año."
+      },
+      {
+        "name": "valor_contrato_letras",
+        "label": "Valor total del contrato en letras",
+        "type": "text",
+        "required": true,
+        "help": "Valor total del servicio en palabras. Ej: doce millones de pesos."
+      },
+      {
+        "name": "valor_contrato_numeros",
+        "label": "Valor total del contrato en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 12.000.000."
+      },
+      {
+        "name": "forma_pago",
+        "label": "Forma de pago del contrato",
+        "type": "text",
+        "required": true,
+        "help": "Cómo se pagará el servicio. Ej: cuotas mensuales de un millón de pesos; pago al finalizar cada mes de servicio."
+      },
+      {
+        "name": "dias_vencimiento_pago",
+        "label": "Días al vencimiento del pago después de cuenta de cobro",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos días tiene el contratante para pagar después de recibir la factura. Ej: 15 días."
+      },
+      {
+        "name": "clausula_penal_letras",
+        "label": "Cláusula penal por incumplimiento en letras",
+        "type": "text",
+        "required": true,
+        "help": "Multa por incumplimiento en palabras. Ej: dos millones de pesos."
+      },
+      {
+        "name": "clausula_penal_numeros",
+        "label": "Cláusula penal en números",
+        "type": "text",
+        "required": true,
+        "help": "La misma multa en cifras. Ej: 2.000.000."
+      },
+      {
+        "name": "direccion_contratante",
+        "label": "Dirección del contratante para notificaciones",
+        "type": "text",
+        "required": true,
+        "help": "Dirección donde se enviarán notificaciones al contratante. Ej: Carrera 10 # 5-20 Oficina 301, Bogotá."
+      },
+      {
+        "name": "direccion_administrador",
+        "label": "Dirección del administrador para notificaciones",
+        "type": "text",
+        "required": true,
+        "help": "Dirección donde se enviarán notificaciones al administrador."
+      }
+    ],
+    "template": "Entre los suscritos: {{nombre_contratante}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_contratante}} de {{expedicion_contratante}}, actuando en nombre y representación de {{nombre_empresa_contratante}}, denominado en adelante el CONTRATANTE, y {{nombre_administrador}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_administrador}} de {{expedicion_administrador}}, actuando en nombre y representación de {{nombre_empresa_administrador}}, denominado en adelante el ADMINISTRADOR, acuerdan celebrar el presente contrato de administración y mantenimiento de recursos tecnológicos, que se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— El ADMINISTRADOR se obliga para con el CONTRATANTE a ejecutar los trabajos de asesoría tecnológica, apoyo a la gerencia de sistemas, administración y operación de sistemas de cómputo y demás actividades propias del servicio contratado.\n\nSEGUNDA. Plazo.— El plazo para la ejecución del presente contrato será de {{plazo_contrato}}, prorrogable por acuerdo entre las partes mediante contrato adicional escrito.\n\nTERCERA. Valor.— El valor del contrato será por la suma de {{valor_contrato_letras}} ($ {{valor_contrato_numeros}}).\n\nCUARTA. Forma de pago.— El valor pactado será cancelado de la siguiente manera: {{forma_pago}}, previa la presentación de la cuenta de cobro ante el CONTRATANTE, con {{dias_vencimiento_pago}} días al vencimiento del pago.\n\nQUINTA. Obligaciones del CONTRATANTE.— Deberá facilitar acceso a la información necesaria de manera oportuna para la debida ejecución del objeto del contrato.\n\nSEXTA. Obligaciones del ADMINISTRADOR.— Deberá cumplir en forma eficiente y oportuna los trabajos encomendados y las obligaciones que se generen de acuerdo con la naturaleza del servicio.\n\nSÉPTIMA. Vigilancia del contrato.— El CONTRATANTE o su representante supervisará la ejecución del servicio y podrá formular observaciones para ser analizadas conjuntamente con el ADMINISTRADOR.\n\nOCTAVA. Cláusula penal.— Las partes establecen como sanción pecuniaria a cargo de quien incumpla el pago de {{clausula_penal_letras}} ($ {{clausula_penal_numeros}}) pesos, sin necesidad de requerimiento.\n\nNOVENA. Terminación.— El presente contrato podrá darse por terminado por mutuo acuerdo o en forma unilateral por incumplimiento de obligaciones de cualquiera de las partes.\n\nDÉCIMA. Independencia del ADMINISTRADOR.— El ADMINISTRADOR actuará por su propia cuenta con absoluta autonomía y no estará sometido a subordinación laboral con el CONTRATANTE.\n\nDÉCIMO PRIMERA. Cesión del contrato.— El ADMINISTRADOR no podrá ceder la ejecución del presente contrato a un tercero sin autorización expresa y escrita del CONTRATANTE.\n\nDÉCIMO SEGUNDA. Domicilio contractual.— El domicilio contractual será la ciudad de {{ciudad}}. Notificaciones: el CONTRATANTE en {{direccion_contratante}}; el ADMINISTRADOR en {{direccion_administrador}}.\n\nDe conformidad con lo anterior, las partes suscriben el presente en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nAdministrador: _______________________     Contratante: _______________________\n{{nombre_empresa_administrador}}           {{nombre_empresa_contratante}}"
+  },
+  {
+    "id": "contrato-consignacion",
+    "title": "Contrato de Consignación",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_consignatario",
+        "label": "Nombre completo del consignatario",
+        "type": "text",
+        "required": true,
+        "help": "Quien recibe la mercancía para venderla a nombre del dueño."
+      },
+      {
+        "name": "cedula_consignatario",
+        "label": "Cédula del consignatario",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del consignatario."
+      },
+      {
+        "name": "expedicion_consignatario",
+        "label": "Ciudad expedición cédula del consignatario",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del consignatario."
+      },
+      {
+        "name": "domicilio_consignatario",
+        "label": "Ciudad de domicilio del consignatario",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el consignatario."
+      },
+      {
+        "name": "nombre_consignante",
+        "label": "Nombre completo del consignante",
+        "type": "text",
+        "required": true,
+        "help": "Dueño de la mercancía que la entrega para que sea vendida."
+      },
+      {
+        "name": "cedula_consignante",
+        "label": "Cédula del consignante",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del consignante."
+      },
+      {
+        "name": "expedicion_consignante",
+        "label": "Ciudad expedición cédula del consignante",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del consignante."
+      },
+      {
+        "name": "domicilio_consignante",
+        "label": "Ciudad de domicilio del consignante",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el consignante."
+      },
+      {
+        "name": "descripcion_mercancia",
+        "label": "Descripción detallada de la mercancía consignada",
+        "type": "text",
+        "required": true,
+        "help": "Qué mercancía se entrega para vender, con cantidades y estado. Ej: 50 pares de zapatos ref. A-100 talla 38 a 42 en buen estado."
+      },
+      {
+        "name": "precio_total_letras",
+        "label": "Precio total de la mercancía en letras",
+        "type": "text",
+        "required": true,
+        "help": "Valor total de toda la mercancía en palabras. Ej: cinco millones de pesos."
+      },
+      {
+        "name": "precio_total_numeros",
+        "label": "Precio total de la mercancía en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 5.000.000."
+      },
+      {
+        "name": "precios_unitarios",
+        "label": "Precio de cada producto (artículo con su valor)",
+        "type": "text",
+        "required": true,
+        "help": "Cuánto vale cada artículo individualmente. Ej: zapatos ref. A-100 a $ 100.000 cada par."
+      },
+      {
+        "name": "dias_pago",
+        "label": "Días del período para realizar el pago al consignante",
+        "type": "text",
+        "required": true,
+        "help": "Qué día del período se paga. Ej: primeros 5 días de cada mes."
+      },
+      {
+        "name": "periodicidad_pago",
+        "label": "Periodicidad del pago (mensual, quincenal, etc.)",
+        "type": "text",
+        "required": true,
+        "help": "Con qué frecuencia se rinde cuentas y se paga. Ej: mensual, quincenal."
+      },
+      {
+        "name": "porcentaje_comision",
+        "label": "Porcentaje de comisión del consignatario (%)",
+        "type": "text",
+        "required": true,
+        "help": "Ganancia del consignatario sobre el precio de venta. Ej: 20 (significa 20% por cada artículo vendido)."
+      },
+      {
+        "name": "plazo_venta_letras",
+        "label": "Plazo para vender la mercancía en letras",
+        "type": "text",
+        "required": true,
+        "help": "Tiempo que tiene el consignatario para vender la mercancía, en palabras. Ej: tres (3) meses."
+      },
+      {
+        "name": "plazo_venta_numeros",
+        "label": "Plazo para vender la mercancía en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo plazo en cifras o abreviado. Ej: 3 meses."
+      }
+    ],
+    "template": "Se ha celebrado el presente contrato de consignación entre: {{nombre_consignatario}}, mayor de edad, domiciliado en {{domicilio_consignatario}}, identificado con la cédula de ciudadanía Nº. {{cedula_consignatario}} de {{expedicion_consignatario}}, quien se denominará el CONSIGNATARIO, y {{nombre_consignante}}, mayor de edad, domiciliado en {{domicilio_consignante}}, identificado con la cédula de ciudadanía Nº. {{cedula_consignante}} de {{expedicion_consignante}}, quien se denominará el CONSIGNANTE. El contrato se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— El CONSIGNANTE entrega al CONSIGNATARIO, a título de mero tenedor, la siguiente mercancía para que proceda a su venta: {{descripcion_mercancia}}.\n\nSEGUNDA. Precio de venta.— El CONSIGNANTE entrega la mercancía para ser vendida por la suma total de {{precio_total_letras}} ($ {{precio_total_numeros}}), y se determina el valor de cada producto así: {{precios_unitarios}}. La forma de pago será de contado, cancelándose dentro de los primeros {{dias_pago}} días de cada {{periodicidad_pago}}. Se reconoce al CONSIGNATARIO un porcentaje del {{porcentaje_comision}}% sobre el valor total de las mercancías aquí pactado.\n\nTERCERA. Obligaciones del consignante.— a) Pagar al CONSIGNATARIO como remuneración el mayor valor de la venta sobre el precio estipulado; b) Abstenerse de disponer durante el término del contrato de las mercancías consignadas; c) Garantizar que las mercancías son de su exclusiva propiedad y que sobre ellas no pesa ningún gravamen.\n\nCUARTA. Obligaciones del consignatario.— a) Vender la mercancía y entregar al CONSIGNANTE la suma fijada como precio de venta al vencimiento del plazo; b) Responder hasta por la culpa leve en el cuidado del bien consignado; c) Abstenerse de devolver las mercancías mientras esté pendiente el plazo.\n\nQUINTA. Duración.— El plazo de la venta de las mercancías es de {{plazo_venta_letras}} ({{plazo_venta_numeros}}), contados a partir de la firma del presente documento, plazo prorrogable a voluntad de las partes.\n\nSEXTA. Causales de terminación.— a) El vencimiento del término estipulado; b) El cumplimiento del objeto del contrato; c) El incumplimiento de las obligaciones de cualquiera de las partes.\n\nPara constancia se firma en {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nConsignatario: _______________________     Consignante: _______________________\n{{nombre_consignatario}}                   {{nombre_consignante}}\nC.C. Nº. {{cedula_consignatario}}          C.C. Nº. {{cedula_consignante}}"
+  },
+  {
+    "id": "cuentas-en-participacion",
+    "title": "Contrato de Cuentas en Participación",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_gestor",
+        "label": "Nombre completo del asociado gestor",
+        "type": "text",
+        "required": true,
+        "help": "Quien actuará frente a terceros como responsable del negocio. Es el socio visible."
+      },
+      {
+        "name": "cedula_gestor",
+        "label": "Cédula del asociado gestor",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del socio gestor."
+      },
+      {
+        "name": "expedicion_gestor",
+        "label": "Ciudad expedición cédula del gestor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del gestor."
+      },
+      {
+        "name": "domicilio_gestor",
+        "label": "Ciudad de domicilio del gestor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el gestor."
+      },
+      {
+        "name": "nombre_participe",
+        "label": "Nombre completo del partícipe no gestor",
+        "type": "text",
+        "required": true,
+        "help": "Socio oculto que aporta capital pero no aparece ante terceros."
+      },
+      {
+        "name": "cedula_participe",
+        "label": "Cédula del partícipe no gestor",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del partícipe oculto."
+      },
+      {
+        "name": "expedicion_participe",
+        "label": "Ciudad expedición cédula del partícipe",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del partícipe."
+      },
+      {
+        "name": "domicilio_participe",
+        "label": "Ciudad de domicilio del partícipe",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el partícipe."
+      },
+      {
+        "name": "objeto_asociacion",
+        "label": "Objeto de la asociación (actividad comercial)",
+        "type": "text",
+        "required": true,
+        "help": "Qué negocio van a desarrollar juntos. Ej: explotación de una panadería, importación y venta de electrodomésticos."
+      },
+      {
+        "name": "ambito_territorial",
+        "label": "Ciudad o territorio donde se operará",
+        "type": "text",
+        "required": true,
+        "help": "Dónde se desarrollará el negocio. Ej: la ciudad de Cali y sus municipios aledaños."
+      },
+      {
+        "name": "fondo_comun_letras",
+        "label": "Valor total del fondo común en letras",
+        "type": "text",
+        "required": true,
+        "help": "Capital total que aportan entre los dos en palabras. Ej: veinte millones de pesos."
+      },
+      {
+        "name": "fondo_comun_numeros",
+        "label": "Valor total del fondo común en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo capital en cifras. Ej: 20.000.000."
+      },
+      {
+        "name": "proporcion_aportes",
+        "label": "Proporción de aportes de cada partícipe",
+        "type": "text",
+        "required": true,
+        "help": "Cuánto aporta cada uno. Ej: el gestor aporta el 60% ($ 12.000.000) y el partícipe el 40% ($ 8.000.000)."
+      },
+      {
+        "name": "duracion",
+        "label": "Duración de la asociación",
+        "type": "text",
+        "required": true,
+        "help": "Cuánto tiempo durará la asociación. Ej: dos (2) años."
+      },
+      {
+        "name": "distribucion_utilidades",
+        "label": "Distribución de utilidades entre los partícipes",
+        "type": "text",
+        "required": true,
+        "help": "Cómo se repartirán las ganancias. Ej: el 60% para el gestor y el 40% para el partícipe; en proporción a sus aportes."
+      },
+      {
+        "name": "gastos_gestor_letras",
+        "label": "Suma máxima para gastos del gestor en letras",
+        "type": "text",
+        "required": true,
+        "help": "Límite de gastos que el gestor puede tomar del fondo para sus operaciones, en palabras. Ej: un millón de pesos mensual."
+      },
+      {
+        "name": "gastos_gestor_numeros",
+        "label": "Suma máxima para gastos del gestor en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo límite en cifras. Ej: 1.000.000."
+      },
+      {
+        "name": "meses_aviso_renuncia",
+        "label": "Meses de anticipación para avisar renuncia de un asociado",
+        "type": "text",
+        "required": true,
+        "help": "Con cuántos meses de anticipación debe un socio avisar que se retira. Ej: 3."
+      }
+    ],
+    "template": "{{nombre_gestor}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_gestor}} de {{expedicion_gestor}}, domiciliado en {{domicilio_gestor}}, y {{nombre_participe}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_participe}} de {{expedicion_participe}}, domiciliado en {{domicilio_participe}}, han convenido celebrar un contrato de asociación o cuentas en participación que se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— La presente asociación tiene por objeto desarrollar y explotar las operaciones mercantiles relacionadas con {{objeto_asociacion}}.\n\nSEGUNDA. Ámbito.— Las operaciones se ejecutarán de manera preferente en el territorio de {{ambito_territorial}}.\n\nTERCERA. Asociado gestor.— Las operaciones se ejecutarán y se darán a conocer ante terceros como propias del asociado {{nombre_gestor}}, quien será el responsable de las obligaciones contraídas en el giro ordinario del negocio.\n\nCUARTA. Aportes fondo común.— Los partícipes ponen en común la cantidad de {{fondo_comun_letras}} ($ {{fondo_comun_numeros}}) en las siguientes proporciones: {{proporcion_aportes}}. Dicho fondo se invertirá primordialmente en las operaciones que constituyen el objeto de la asociación.\n\nQUINTA. Duración.— El término de la asociación será de {{duracion}}, contado a partir de la fecha del presente documento, prorrogable por acuerdo unánime escrito.\n\nSEXTA. Utilidades y pérdidas.— Las utilidades se distribuirán así: {{distribucion_utilidades}}. Las pérdidas se repartirán en proporción a los aportes.\n\nSÉPTIMA. Gastos del gestor.— Para sus gastos el gestor podrá utilizar hasta la suma de {{gastos_gestor_letras}} ($ {{gastos_gestor_numeros}}), suma que no será deducida de las utilidades que le correspondan.\n\nOCTAVA. Inventario y balances.— Cada seis meses se realizará un corte de cuentas para practicar un inventario de los bienes de la asociación y el balance de sus operaciones.\n\nNOVENA. Causales de terminación.— La asociación terminará por: a) Muerte o incapacidad absoluta del gestor; b) Pérdida del cincuenta por ciento (50%) del fondo común; c) Acuerdo de los asociados para vender todos los bienes; d) Renuncia con causa justificada de un asociado comunicada con {{meses_aviso_renuncia}} meses de anticipación.\n\nDÉCIMA. Liquidación.— La liquidación de la asociación será efectuada por los copartícipes de común acuerdo.\n\nDÉCIMO PRIMERA. Responsabilidad del no gestor.— El partícipe {{nombre_participe}} limitará su responsabilidad al valor de su aporte.\n\nDÉCIMO SEGUNDA. Dedicación del gestor.— El gestor {{nombre_gestor}} se obliga a consagrar su tiempo a la administración de los negocios de la asociación.\n\nPara constancia se firma en {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nGestor: _______________________     Partícipe: _______________________\n{{nombre_gestor}}                   {{nombre_participe}}\nC.C. Nº. {{cedula_gestor}}          C.C. Nº. {{cedula_participe}}"
+  },
+  {
+    "id": "contrato-revisoria-fiscal",
+    "title": "Contrato de Prestación de Servicios de Revisoría Fiscal",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_representante_sociedad",
+        "label": "Nombre del representante legal de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre de la empresa que contrata la revisoría fiscal."
+      },
+      {
+        "name": "cedula_representante_sociedad",
+        "label": "Cédula del representante legal de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante legal."
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre de la sociedad que contrata",
+        "type": "text",
+        "required": true,
+        "help": "Razón social de la empresa que necesita revisor fiscal."
+      },
+      {
+        "name": "nombre_representante_contratista",
+        "label": "Nombre del representante de la firma de revisoría",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre de la firma o contador que prestará el servicio de revisoría."
+      },
+      {
+        "name": "cedula_representante_contratista",
+        "label": "Cédula del representante del contratista",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante del contratista."
+      },
+      {
+        "name": "nombre_empresa_contratista",
+        "label": "Nombre de la firma o empresa de revisoría fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Razón social de la firma de contadores o auditoría que prestará el servicio."
+      },
+      {
+        "name": "domicilio_contratista",
+        "label": "Ciudad de domicilio del contratista",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde tiene domicilio la firma de revisoría."
+      },
+      {
+        "name": "articulos_estatutos",
+        "label": "Artículos de los estatutos que regulan funciones del revisor",
+        "type": "text",
+        "required": true,
+        "help": "Número de los artículos de los estatutos sociales que definen las funciones del revisor fiscal. Ej: 45, 46 y 47. Si no conoce los artículos exactos escriba: los pertinentes."
+      },
+      {
+        "name": "duracion_contrato",
+        "label": "Duración del contrato",
+        "type": "text",
+        "required": true,
+        "help": "Tiempo del contrato. Generalmente coincide con el período social. Ej: un (1) año, igual al período de la junta directiva."
+      },
+      {
+        "name": "dia_inicio_honorarios",
+        "label": "Día de inicio del período de honorarios",
+        "type": "text",
+        "required": true,
+        "help": "Día en que empieza el período por el que se pagarán honorarios. Ej: 1."
+      },
+      {
+        "name": "mes_inicio_honorarios",
+        "label": "Mes de inicio del período de honorarios",
+        "type": "text",
+        "required": true,
+        "help": "Mes de inicio en letras. Ej: enero."
+      },
+      {
+        "name": "anio_inicio_honorarios",
+        "label": "Año de inicio del período de honorarios",
+        "type": "text",
+        "required": true,
+        "help": "Año de inicio. Ej: 2025."
+      },
+      {
+        "name": "dia_fin_honorarios",
+        "label": "Día de fin del período de honorarios",
+        "type": "text",
+        "required": true,
+        "help": "Día en que termina el período de honorarios. Ej: 31."
+      },
+      {
+        "name": "mes_fin_honorarios",
+        "label": "Mes de fin del período de honorarios",
+        "type": "text",
+        "required": true,
+        "help": "Mes de fin en letras. Ej: diciembre."
+      },
+      {
+        "name": "anio_fin_honorarios",
+        "label": "Año de fin del período de honorarios",
+        "type": "text",
+        "required": true,
+        "help": "Año de fin. Ej: 2025."
+      },
+      {
+        "name": "honorarios_letras",
+        "label": "Valor de los honorarios en letras",
+        "type": "text",
+        "required": true,
+        "help": "Total de honorarios por el período en palabras. Ej: doce millones de pesos."
+      },
+      {
+        "name": "honorarios_numeros",
+        "label": "Valor de los honorarios en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 12.000.000."
+      },
+      {
+        "name": "forma_pago_honorarios",
+        "label": "Forma de pago de los honorarios",
+        "type": "text",
+        "required": true,
+        "help": "Cómo y cuándo se pagarán los honorarios. Ej: cuotas mensuales de un millón de pesos pagaderas el último día de cada mes."
+      },
+      {
+        "name": "num_ejemplares",
+        "label": "Número de ejemplares del contrato",
+        "type": "text",
+        "required": true,
+        "help": "Cuántas copias del contrato se firman. Generalmente dos (2)."
+      }
+    ],
+    "template": "Entre los suscritos: {{nombre_representante_sociedad}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_representante_sociedad}}, actuando en nombre y representación de {{nombre_sociedad}}, denominada en adelante la SOCIEDAD, y {{nombre_representante_contratista}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_representante_contratista}}, actuando en nombre y representación de {{nombre_empresa_contratista}}, domiciliado en {{domicilio_contratista}}, denominado en adelante el CONTRATISTA, acuerdan celebrar el presente contrato de prestación de servicios profesionales de revisoría fiscal, que se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— Por medio del presente contrato el CONTRATISTA se obliga con la SOCIEDAD a realizar las funciones asignadas por las leyes y los estatutos de la sociedad, en especial las consagradas en los artículos 207 del Código de Comercio, 38 de la Ley 222 de 1995 y en los artículos {{articulos_estatutos}} de los Estatutos Sociales, que comprende el examen de todas las áreas, operaciones, actos, documentos, registros y bienes de la SOCIEDAD para emitir la totalidad de las certificaciones, dictámenes e informes que las normas jurídicas vigentes exigen del revisor fiscal.\n\nSEGUNDA. Obligaciones especiales.— Mientras esté vigente este contrato la SOCIEDAD se obliga a inscribir y publicar el nombramiento en el Registro Mercantil; y a su vez el CONTRATISTA se obliga a designar dos contadores públicos, como principal y suplente, para que desempeñen el cargo con sujeción a las normas legales y estatutarias.\n\nTERCERA. Ausencia de subordinación laboral.— El CONTRATISTA tiene el carácter de contratista independiente y son de su exclusiva responsabilidad los salarios, prestaciones, indemnizaciones y demás pagos que se causen al personal que emplee.\n\nCUARTA. Autonomía de gestión.— El CONTRATISTA desarrollará su trabajo de acuerdo con la ley y los estatutos sociales, con libertad y autonomía técnica y administrativa.\n\nQUINTA. Duración.— El término de duración del presente contrato es de {{duracion_contrato}}, contado a partir de la fecha de la inscripción y publicación del nombramiento, hasta el día en que se cancele tal inscripción mediante la notificación en el Registro Mercantil de un nuevo nombramiento.\n\nSEXTA. Responsabilidad.— El REVISOR FISCAL responderá por sus actos de conformidad con lo previsto en la ley.\n\nSÉPTIMA. Obligaciones de la sociedad.— 1. Diseñar y mantener en operación un adecuado control interno. 2. Permitir y garantizar la efectiva realización de los procedimientos de auditoría necesarios. 3. Suministrar al CONTRATISTA la información que requiera. 4. Actuar en forma leal y transparente con el CONTRATISTA.\n\nOCTAVA. Obligaciones del revisor fiscal.— 1. Velar por el adecuado desarrollo de las operaciones de la sociedad. 2. Informar oportunamente sobre situaciones que puedan afectar el patrimonio social. 3. Velar por la adecuada planificación fiscal y el cumplimiento oportuno de obligaciones tributarias. 4. Elaborar un plan de trabajo anual. 5. Presentar los informes que se requieran.\n\nNOVENA. Otros costos.— La SOCIEDAD asumirá directamente el costo de recursos físicos, humanos o técnicos no incluidos en la remuneración del revisor, tales como hospedaje, transporte y comunicaciones.\n\nDÉCIMA. Honorarios.— A título de honorarios por el período comprendido entre el día {{dia_inicio_honorarios}} del mes de {{mes_inicio_honorarios}} del año {{anio_inicio_honorarios}} y el día {{dia_fin_honorarios}} del mes de {{mes_fin_honorarios}} del año {{anio_fin_honorarios}}, la SOCIEDAD pagará al CONTRATISTA la suma de {{honorarios_letras}} ($ {{honorarios_numeros}}), pagaderos así: {{forma_pago_honorarios}}.\n\nDÉCIMO PRIMERA. Terminación del contrato.— Cada parte podrá poner fin al contrato en cualquier tiempo dando a la otra aviso escrito con una antelación no inferior a un mes.\n\nDÉCIMO SEGUNDA. Gastos.— Los gastos e impuestos que ocasione el perfeccionamiento del presente contrato serán pagados por partes iguales.\n\nPara constancia se firma el presente contrato en {{num_ejemplares}} ejemplares del mismo tenor en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nSociedad: _______________________     Contratista: _______________________\n{{nombre_sociedad}}                   {{nombre_empresa_contratista}}\n{{nombre_representante_sociedad}}     {{nombre_representante_contratista}}"
+  },
+  {
+    "id": "contrato-corretaje",
+    "title": "Contrato de Corretaje",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_proponente",
+        "label": "Nombre completo del proponente",
+        "type": "text",
+        "required": true,
+        "help": "Dueño del bien que encarga al corredor su venta."
+      },
+      {
+        "name": "cedula_proponente",
+        "label": "Cédula del proponente",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del proponente."
+      },
+      {
+        "name": "expedicion_proponente",
+        "label": "Ciudad expedición cédula del proponente",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del proponente."
+      },
+      {
+        "name": "domicilio_proponente",
+        "label": "Ciudad de domicilio del proponente",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el proponente."
+      },
+      {
+        "name": "nombre_corredor",
+        "label": "Nombre completo del corredor",
+        "type": "text",
+        "required": true,
+        "help": "Intermediario que buscará comprador para el bien."
+      },
+      {
+        "name": "cedula_corredor",
+        "label": "Cédula del corredor",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del corredor."
+      },
+      {
+        "name": "expedicion_corredor",
+        "label": "Ciudad expedición cédula del corredor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del corredor."
+      },
+      {
+        "name": "domicilio_corredor",
+        "label": "Ciudad de domicilio del corredor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el corredor."
+      },
+      {
+        "name": "descripcion_bien",
+        "label": "Descripción detallada del bien a vender",
+        "type": "text",
+        "required": true,
+        "help": "Qué se quiere vender. Puede ser mueble o inmueble. Ej: vehículo Toyota Hilux 2022 placa ABC-123; bodega industrial de 500 m2 en zona industrial."
+      },
+      {
+        "name": "calidades_bien",
+        "label": "Calidades y características del bien",
+        "type": "text",
+        "required": true,
+        "help": "Estado y características relevantes del bien. Ej: vehículo en excelente estado, 50.000 km recorridos, sin accidentes."
+      },
+      {
+        "name": "porcentaje_remuneracion",
+        "label": "Porcentaje de remuneración del corredor (%)",
+        "type": "text",
+        "required": true,
+        "help": "Comisión del corredor sobre el valor total del negocio. Ej: 3 (significa el 3% del precio de venta)."
+      },
+      {
+        "name": "dias_aviso_proponente",
+        "label": "Días de anticipación para que el proponente termine el contrato",
+        "type": "text",
+        "required": true,
+        "help": "Con cuántos días el proponente puede avisar que no quiere continuar. Ej: 15 días."
+      },
+      {
+        "name": "dias_aviso_corredor",
+        "label": "Días de anticipación para que el corredor renuncie",
+        "type": "text",
+        "required": true,
+        "help": "Con cuántos días el corredor puede renunciar al encargo. Ej: 10 días."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad donde se resolverán los conflictos",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del tribunal de arbitramento. Ej: Bogotá."
+      }
+    ],
+    "template": "Entre los suscritos: {{nombre_proponente}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_proponente}} de {{expedicion_proponente}}, domiciliado en {{domicilio_proponente}}, denominado en adelante EL PROPONENTE, y {{nombre_corredor}}, también mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_corredor}} de {{expedicion_corredor}}, domiciliado en {{domicilio_corredor}}, denominado en adelante EL CORREDOR, hemos decidido celebrar el contrato de corretaje que se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— EL PROPONENTE hace entrega al CORREDOR de {{descripcion_bien}} para promover su venta y obtener la mejor oferta posible.\n\nSEGUNDA. Condiciones del bien.— Las calidades y características del bien son: {{calidades_bien}}.\n\nTERCERA. Obligaciones del CORREDOR.— 1. Ejecutar todas las actividades necesarias para cumplir con la labor de intermediación. 2. Poner a disposición del PROPONENTE los medios utilizados para el desarrollo del contrato. 3. Comunicar al PROPONENTE todas las circunstancias conocidas que puedan influir en la celebración del futuro negocio.\n\nCUARTA. Obligaciones del PROPONENTE.— 1. Pagar al CORREDOR la remuneración estipulada. 2. No realizar labores orientadas a celebrar el futuro negocio sin intermediación del CORREDOR. 3. Pagar al CORREDOR los gastos en que incurrió para el desarrollo del contrato si el negocio no se realiza por intermedio suyo. 4. Entregar al CORREDOR toda la información que requiera.\n\nQUINTA. Remuneración.— La remuneración pactada es del {{porcentaje_remuneracion}}% sobre el valor total del negocio realizado. EL CORREDOR tendrá derecho al pago total de la remuneración acordada una vez se perfeccione el negocio jurídico.\n\nSEXTA. Terminación.— El presente contrato termina por: 1. El cumplimiento del objeto. 2. Decisión del PROPONENTE comunicada por escrito con {{dias_aviso_proponente}} días de antelación. 3. Renuncia del CORREDOR comunicada por escrito con {{dias_aviso_corredor}} días de antelación. 4. Pérdida o destrucción del bien.\n\nSÉPTIMA. Cláusula compromisoria.— Toda diferencia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nOCTAVA. Efectos del contrato.— El presente contrato regula en su integridad las relaciones jurídicas entre las partes y deja sin efecto cualquier convenio anterior.\n\nPara constancia se firma el presente en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nEl Proponente: _______________________     El Corredor: _______________________\n{{nombre_proponente}}                       {{nombre_corredor}}\nC.C. Nº. {{cedula_proponente}}              C.C. Nº. {{cedula_corredor}}"
+  },
+  {
+    "id": "corretaje-inmuebles",
+    "title": "Contrato de Corretaje de Inmuebles",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_proponente",
+        "label": "Nombre completo del proponente (dueño del inmueble)",
+        "type": "text",
+        "required": true,
+        "help": "Propietario del inmueble que encarga su venta a la inmobiliaria."
+      },
+      {
+        "name": "cedula_proponente",
+        "label": "Cédula del proponente",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del propietario del inmueble."
+      },
+      {
+        "name": "representante_corredor",
+        "label": "Nombre del representante legal del corredor",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre de la empresa inmobiliaria."
+      },
+      {
+        "name": "nombre_empresa_corredor",
+        "label": "Nombre de la empresa corredora inmobiliaria",
+        "type": "text",
+        "required": true,
+        "help": "Razón social de la inmobiliaria o empresa de corretaje."
+      },
+      {
+        "name": "cedula_corredor",
+        "label": "Cédula del representante del corredor",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante de la inmobiliaria."
+      },
+      {
+        "name": "direccion_inmueble",
+        "label": "Dirección del inmueble a vender",
+        "type": "text",
+        "required": true,
+        "help": "Dirección exacta del inmueble. Ej: Calle 15 # 8-30 Apto 402."
+      },
+      {
+        "name": "ciudad_inmueble",
+        "label": "Ciudad donde está el inmueble",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se ubica el inmueble a vender."
+      },
+      {
+        "name": "numero_matricula",
+        "label": "Número de matrícula inmobiliaria",
+        "type": "text",
+        "required": true,
+        "help": "Número asignado por la Oficina de Registro de Instrumentos Públicos. Lo encuentra en el certificado de tradición del inmueble."
+      },
+      {
+        "name": "area_lote",
+        "label": "Área del lote o del inmueble",
+        "type": "text",
+        "required": true,
+        "help": "Metros cuadrados del lote o del inmueble. Ej: 120 m2 de lote, 80 m2 construidos."
+      },
+      {
+        "name": "linderos_inmueble",
+        "label": "Linderos del inmueble",
+        "type": "text",
+        "required": true,
+        "help": "Descripción de los límites del inmueble. Ej: Norte con lote Nº 5, Sur con vía pública, Oriente con lote Nº 7, Occidente con zona verde."
+      },
+      {
+        "name": "tiempo_construccion",
+        "label": "Tiempo de construcción del inmueble",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos años tiene construido el inmueble. Ej: 10 años."
+      },
+      {
+        "name": "observaciones_inmueble",
+        "label": "Observaciones adicionales sobre el inmueble",
+        "type": "text",
+        "required": true,
+        "help": "Información relevante del inmueble. Ej: tiene hipoteca a favor del Banco X, acabados en cerámica, garaje para 2 vehículos. Si no hay escriba: ninguna."
+      },
+      {
+        "name": "porcentaje_comision",
+        "label": "Porcentaje de comisión del corredor (%)",
+        "type": "text",
+        "required": true,
+        "help": "Comisión de la inmobiliaria sobre el precio de venta del inmueble. Ej: 3 (significa el 3% del valor de venta)."
+      },
+      {
+        "name": "interes_mora",
+        "label": "Porcentaje de interés mensual en mora del proponente (%)",
+        "type": "text",
+        "required": true,
+        "help": "Interés si el proponente no paga la comisión a tiempo. Ej: 2 por ciento mensual."
+      },
+      {
+        "name": "valor_terminacion_anticipada_letras",
+        "label": "Valor a pagar si el proponente termina el contrato anticipadamente en letras",
+        "type": "text",
+        "required": true,
+        "help": "Lo que pagará el proponente si decide retirar el inmueble antes de que se venda, en palabras. Ej: quinientos mil pesos."
+      },
+      {
+        "name": "valor_terminacion_anticipada_numeros",
+        "label": "Valor a pagar por terminación anticipada en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 500.000."
+      },
+      {
+        "name": "dias_aviso_corredor",
+        "label": "Días de anticipación para que el corredor renuncie",
+        "type": "text",
+        "required": true,
+        "help": "Con cuántos días puede renunciar la inmobiliaria. Ej: 15 días."
+      },
+      {
+        "name": "dias_aviso_proponente",
+        "label": "Días de anticipación para que el proponente decida terminar",
+        "type": "text",
+        "required": true,
+        "help": "Con cuántos días puede el propietario retirar el inmueble del contrato. Ej: 15 días."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad donde se resolverán los conflictos",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del tribunal de arbitramento. Ej: Bogotá."
+      }
+    ],
+    "template": "Entre los suscritos: {{nombre_proponente}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_proponente}}, denominado en adelante EL PROPONENTE, y {{representante_corredor}}, mayor de edad, actuando en su calidad de representante legal de {{nombre_empresa_corredor}}, identificado con la cédula de ciudadanía Nº. {{cedula_corredor}}, denominado en adelante EL CORREDOR, se ha celebrado el CONTRATO DE CORRETAJE DE BIENES INMUEBLES que se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— EL PROPONENTE consigna a EL CORREDOR el inmueble ubicado en {{direccion_inmueble}}, de la ciudad de {{ciudad_inmueble}}, identificado con el número de matrícula inmobiliaria Nº. {{numero_matricula}}.\n\nSEGUNDA. Características.— Las características del inmueble son: Dirección: {{direccion_inmueble}}, área: {{area_lote}}, linderos: {{linderos_inmueble}}, tiempo de construcción: {{tiempo_construccion}}, observaciones: {{observaciones_inmueble}}.\n\nTERCERA. Facultades del CORREDOR.— 1. Colocar avisos en el inmueble. 2. Ofrecer el inmueble en venta por cualquier medio publicitario. 3. Exhibir el inmueble a posibles compradores. 4. Ofrecer el inmueble en ruedas de ventas de la lonja de propiedad raíz. 5. Compartir la comisión con otras empresas inmobiliarias.\n\nCUARTA. Obligaciones del CORREDOR.— 1. Poner al servicio del PROPONENTE los medios disponibles para ejecutar el objeto del contrato. 2. Comunicar al PROPONENTE las circunstancias conocidas que puedan influir en la celebración del negocio.\n\nQUINTA. Obligaciones del PROPONENTE.— 1. Pagar al CORREDOR la comisión estipulada. 2. Abstenerse de gestionar la venta del inmueble sin intermediación del CORREDOR. 3. Pagar los gastos de publicidad si el inmueble no se vende por intermedio del CORREDOR. 4. Suministrar toda la información que requiera el CORREDOR de manera clara y veraz.\n\nSEXTA. La remuneración.— La remuneración pactada es del {{porcentaje_comision}}% sobre el valor total de la venta del inmueble. EL CORREDOR tendrá derecho al pago total en el momento en que se firme el contrato de promesa de compraventa. En caso de mora, la suma adeudada causará intereses del {{interes_mora}}% mensual.\n\nParágrafo Primero.— Si EL PROPONENTE decide dar por terminado el presente contrato antes de la realización del negocio, pagará a EL CORREDOR la suma de {{valor_terminacion_anticipada_letras}} ($ {{valor_terminacion_anticipada_numeros}}) moneda corriente.\n\nParágrafo Segundo.— Si firmada la promesa la venta no se realiza, EL CORREDOR reintegrará a EL PROPONENTE el 50% del valor total de la comisión.\n\nSÉPTIMA. Causales de terminación.— 1. Por cumplimiento del objeto. 2. Por renuncia del CORREDOR con {{dias_aviso_corredor}} días de anticipación. 3. Por decisión del PROPONENTE con {{dias_aviso_proponente}} días de anticipación. 4. Por destrucción o pérdida total del inmueble.\n\nOCTAVA. Modalidad.— El presente contrato tiene el carácter de exclusivo. Si el inmueble es vendido por alguien diferente al CORREDOR, EL PROPONENTE reconocerá a éste el valor pactado como comisión.\n\nNOVENA. Cláusula compromisoria.— Toda diferencia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nPara constancia se firma en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nEl Proponente: _______________________     El Corredor: _______________________\n{{nombre_proponente}}                       {{nombre_empresa_corredor}}\nC.C. Nº. {{cedula_proponente}}              {{representante_corredor}}"
+  },
+  {
+    "id": "consultoria-extranjeros",
+    "title": "Contrato de Consultoría con Extranjeros",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato en Colombia."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_contratante",
+        "label": "Nombre de la empresa contratante colombiana",
+        "type": "text",
+        "required": true,
+        "help": "Razón social de la empresa colombiana que contrata la consultoría."
+      },
+      {
+        "name": "presidente_contratante",
+        "label": "Nombre del representante legal de la contratante",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre de la empresa colombiana. Ej: Gerente General, Presidente."
+      },
+      {
+        "name": "nombre_consultor",
+        "label": "Nombre completo o razón social del consultor extranjero",
+        "type": "text",
+        "required": true,
+        "help": "Empresa o persona extranjera que prestará la consultoría."
+      },
+      {
+        "name": "pais_consultor",
+        "label": "País de origen del consultor",
+        "type": "text",
+        "required": true,
+        "help": "País donde está domiciliado el consultor. Ej: Estados Unidos, España, Alemania."
+      },
+      {
+        "name": "representante_consultor",
+        "label": "Nombre del representante del consultor",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre del consultor extranjero."
+      },
+      {
+        "name": "objeto_consultoria",
+        "label": "Tema o materia de la consultoría",
+        "type": "text",
+        "required": true,
+        "help": "Sobre qué versará la consultoría. Ej: implementación de sistemas ERP, estrategia de expansión internacional, optimización de procesos productivos."
+      },
+      {
+        "name": "objetivos_consultoria",
+        "label": "Objetivos básicos de la consultoría",
+        "type": "text",
+        "required": true,
+        "help": "Qué resultados concretos se esperan. Ej: i) diagnóstico de procesos actuales, ii) diseño de plan de mejora, iii) acompañamiento en implementación."
+      },
+      {
+        "name": "valor_total_letras",
+        "label": "Valor total del contrato en letras",
+        "type": "text",
+        "required": true,
+        "help": "Monto total de la consultoría en palabras, en la moneda acordada. Ej: cincuenta mil dólares americanos."
+      },
+      {
+        "name": "valor_total_numeros",
+        "label": "Valor total del contrato en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: USD 50.000."
+      },
+      {
+        "name": "porcentaje_anticipo",
+        "label": "Porcentaje del anticipo inicial (%)",
+        "type": "text",
+        "required": true,
+        "help": "Qué porcentaje del total se paga como anticipo al inicio. Ej: 30 (significa el 30% del valor total)."
+      },
+      {
+        "name": "valor_anticipo_letras",
+        "label": "Valor del anticipo en letras",
+        "type": "text",
+        "required": true,
+        "help": "Valor del anticipo en palabras. Ej: quince mil dólares americanos."
+      },
+      {
+        "name": "valor_anticipo_numeros",
+        "label": "Valor del anticipo en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: USD 15.000."
+      },
+      {
+        "name": "dias_entrega_anticipo",
+        "label": "Días para entregar el anticipo después de firmar",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos días calendario tiene la contratante para entregar el anticipo. Ej: 10 días."
+      },
+      {
+        "name": "duracion_meses",
+        "label": "Duración estimada del contrato en meses",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos meses durará la consultoría. Ej: 6 meses."
+      },
+      {
+        "name": "meses_suspension_maxima",
+        "label": "Meses máximos de suspensión sin indemnización",
+        "type": "text",
+        "required": true,
+        "help": "Por cuántos meses puede suspenderse el contrato sin pagar indemnización al consultor. Ej: 3 meses."
+      },
+      {
+        "name": "dias_aviso_terminacion",
+        "label": "Días de aviso para terminación anticipada sin justa causa",
+        "type": "text",
+        "required": true,
+        "help": "Con cuántos días la contratante puede terminar el contrato sin causa. Ej: 30 días."
+      },
+      {
+        "name": "meses_minimos_para_terminar",
+        "label": "Meses mínimos para poder terminar anticipadamente",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos meses deben haber transcurrido antes de que la contratante pueda terminar sin causa. Ej: 3 meses."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad donde se resolverán los conflictos",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del tribunal de arbitramento. Ej: Bogotá."
+      },
+      {
+        "name": "direccion_contratante",
+        "label": "Dirección de la contratante para notificaciones",
+        "type": "text",
+        "required": true,
+        "help": "Dirección postal de la empresa colombiana. Ej: Carrera 7 # 71-21 Torre B, Bogotá, Colombia."
+      },
+      {
+        "name": "ciudad_pais_consultor",
+        "label": "Ciudad y país del consultor para notificaciones",
+        "type": "text",
+        "required": true,
+        "help": "Dirección del consultor extranjero para notificaciones. Ej: 123 Main Street, New York, NY 10001, USA."
+      }
+    ],
+    "template": "Entre los suscritos: la sociedad CONTRATANTE {{nombre_contratante}}, legalmente constituida de conformidad con las leyes de Colombia, con domicilio principal en la ciudad de {{ciudad}}, representada por su Presidente {{presidente_contratante}}, y el CONSULTOR {{nombre_consultor}}, legalmente constituido de conformidad con las normas de {{pais_consultor}}, representado por {{representante_consultor}}, se ha acordado celebrar un Contrato de Prestación de Servicios de Consultoría que se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— El CONSULTOR se obliga para con la CONTRATANTE a prestar, por sus propios medios y con plena autonomía técnica, los servicios de consultoría sobre el tema de {{objeto_consultoria}}. Los objetivos básicos son: {{objetivos_consultoria}}.\n\nSEGUNDA. Valor del contrato.— Por la debida ejecución del objeto, el CONSULTOR recibirá la suma total de {{valor_total_letras}} ({{valor_total_numeros}}), pagaderos así: a. Un anticipo equivalente al {{porcentaje_anticipo}}% del valor total, es decir {{valor_anticipo_letras}} ({{valor_anticipo_numeros}}), que se entregará dentro de los {{dias_entrega_anticipo}} días calendario siguientes a la firma y previa entrega de la póliza de buen manejo del anticipo. b. Los pagos restantes se realizarán conforme al avance de las etapas y la satisfacción de la CONTRATANTE.\n\nTERCERA. Trabajos adicionales.— Cuando haya necesidad de ejecutar trabajos adicionales originados por el CONSULTOR, éste renuncia a reclamar sobrecostos por dicha causa.\n\nCUARTA. Seguros.— El CONSULTOR deberá otorgar a favor de la CONTRATANTE pólizas de seguros expedidas por aseguradora legalmente establecida en Colombia.\n\nQUINTA. Duración.— El presente Contrato tendrá una duración de {{duracion_meses}} meses, contados a partir de la suscripción del acta de inicio de actividades.\n\nSEXTA. Auditoría.— La CONTRATANTE podrá requerir al CONSULTOR información sobre su contabilidad en lo relacionado con este Contrato durante su vigencia y hasta tres años después.\n\nSÉPTIMA. Coordinación.— La CONTRATANTE designará un Funcionario encargado de coordinar e intervenir los trabajos del presente Contrato.\n\nOCTAVA. Fuerza mayor o caso fortuito.— Ninguna de las partes tendrá responsabilidad cuando el incumplimiento se produzca por causas constitutivas de fuerza mayor o caso fortuito comprobadas.\n\nNOVENA. Suspensión.— La CONTRATANTE podrá suspender la ejecución de los trabajos por un período no superior a {{meses_suspension_maxima}} meses, sin que el CONSULTOR tenga derecho a indemnización por dicha suspensión dentro de ese plazo.\n\nDÉCIMA. Terminación.— El incumplimiento del CONSULTOR dará derecho a la CONTRATANTE a terminar el Contrato sin previo aviso. Además, mediante aviso escrito con {{dias_aviso_terminacion}} días de anticipación, siempre que hayan transcurrido por lo menos {{meses_minimos_para_terminar}} meses, la CONTRATANTE podrá darlo por terminado sin justa causa ni indemnización.\n\nDÉCIMO PRIMERA. Régimen Jurídico.— El presente Contrato será interpretado de conformidad con las leyes de Colombia.\n\nDÉCIMO SEGUNDA. Confidencialidad.— El CONSULTOR se compromete a mantener en la más estricta reserva el material e información que llegue a su poder con motivo de la prestación del servicio contratado.\n\nDÉCIMO TERCERA. Cesión.— El CONSULTOR no podrá ceder ni subcontratar este Contrato sin la autorización previa y escrita de la CONTRATANTE.\n\nDÉCIMO CUARTA. Cláusula compromisoria.— Toda diferencia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nDÉCIMO QUINTA. Notificaciones.— La CONTRATANTE: {{direccion_contratante}}. El CONSULTOR: {{ciudad_pais_consultor}}.\n\nPara constancia se firma en dos ejemplares del mismo tenor en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nContratante: _______________________     Consultor: _______________________\n{{nombre_contratante}}                   {{nombre_consultor}}\n{{presidente_contratante}}               {{representante_consultor}}"
+  },
+  {
+    "id": "poder-derechos-autor",
+    "title": "Poder para Tramitar Asuntos de Derechos de Autor",
+    "subtitle": "Propiedad Intelectual",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad desde donde se otorga el poder."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre completo del poderdante",
+        "type": "text",
+        "required": true,
+        "help": "Quien otorga el poder. Generalmente el representante legal de la empresa."
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Cédula del poderdante",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del poderdante."
+      },
+      {
+        "name": "expedicion_poderdante",
+        "label": "Ciudad expedición cédula del poderdante",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del poderdante."
+      },
+      {
+        "name": "cargo_poderdante",
+        "label": "Cargo del poderdante en la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Cargo que ostenta. Ej: Representante Legal, Gerente General, Presidente."
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre de la sociedad que otorga el poder",
+        "type": "text",
+        "required": true,
+        "help": "Razón social de la empresa titular de los derechos de autor."
+      },
+      {
+        "name": "nombre_apoderado",
+        "label": "Nombre completo del apoderado",
+        "type": "text",
+        "required": true,
+        "help": "Persona facultada para realizar los trámites. Puede ser un abogado u otro funcionario."
+      },
+      {
+        "name": "cedula_apoderado",
+        "label": "Cédula del apoderado",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del apoderado."
+      },
+      {
+        "name": "expedicion_apoderado",
+        "label": "Ciudad expedición cédula del apoderado",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del apoderado."
+      }
+    ],
+    "template": "Señores\nDirección Nacional del Derecho de Autor\nOficina de Registro\n\nApreciados señores:\n\n{{nombre_poderdante}}, mayor de edad, domiciliado en {{ciudad}}, identificado con la cédula de ciudadanía Nº. {{cedula_poderdante}} de {{expedicion_poderdante}}, obrando en mi carácter de {{cargo_poderdante}} de la sociedad {{nombre_sociedad}}, calidad que acredito con certificado de existencia y representación expedido por la Cámara de Comercio, manifiesto a ustedes que por medio del presente documento confiero poder especial, amplio y suficiente a {{nombre_apoderado}}, portador de la cédula de ciudadanía Nº. {{cedula_apoderado}} de {{expedicion_apoderado}}, para que adelante ante esa dependencia todos los trámites que sean indispensables para la eficaz protección de los derechos de la sociedad {{nombre_sociedad}} en relación con el Derecho de Autor.\n\nEl señor {{nombre_apoderado}} queda investido de las amplias facultades para el desarrollo del encargo, en especial para promover los registros a que se refieren las Leyes 23 de 1982 y 44 de 1993 y demás normas concordantes. Queda autorizado además para recibir, desistir, sustituir y reasumir este poder, transar y en general para cualquier otra actuación que tienda a defender los derechos de la sociedad {{nombre_sociedad}}, quedando obligado a cumplir con los requisitos que imponen las normas reguladoras del derecho de autor.\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nAtentamente,\n\nPoderdante: _______________________\n{{nombre_poderdante}}\nC.C. Nº. {{cedula_poderdante}} de {{expedicion_poderdante}}\n{{cargo_poderdante}} de {{nombre_sociedad}}\n\nAcepto:\n\nApoderado: _______________________\n{{nombre_apoderado}}\nC.C. Nº. {{cedula_apoderado}} de {{expedicion_apoderado}}"
+  },
+  {
+    "id": "contrato-edicion",
+    "title": "Contrato de Edición",
+    "subtitle": "Propiedad Intelectual",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_editor",
+        "label": "Nombre completo del representante legal del editor",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre de la editorial."
+      },
+      {
+        "name": "cedula_editor",
+        "label": "Cédula del editor",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante de la editorial."
+      },
+      {
+        "name": "nombre_empresa_editorial",
+        "label": "Nombre de la empresa editorial",
+        "type": "text",
+        "required": true,
+        "help": "Razón social de la editorial que publicará la obra."
+      },
+      {
+        "name": "nombre_autor",
+        "label": "Nombre completo del autor",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del escritor o creador de la obra."
+      },
+      {
+        "name": "cedula_autor",
+        "label": "Cédula del autor",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del autor."
+      },
+      {
+        "name": "expedicion_autor",
+        "label": "Ciudad expedición cédula del autor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del autor."
+      },
+      {
+        "name": "domicilio_autor",
+        "label": "Ciudad de domicilio del autor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el autor."
+      },
+      {
+        "name": "descripcion_obra",
+        "label": "Descripción de la obra (partes y temas que trata)",
+        "type": "text",
+        "required": true,
+        "help": "De qué trata la obra. Ej: obra que consta de 3 partes: historia colonial, historia moderna e historia contemporánea de Colombia."
+      },
+      {
+        "name": "titulo_obra",
+        "label": "Título de la obra",
+        "type": "text",
+        "required": true,
+        "help": "Nombre con el que se publicará la obra."
+      },
+      {
+        "name": "fecha_entrega_originales",
+        "label": "Fecha límite para entregar los originales",
+        "type": "text",
+        "required": true,
+        "help": "Cuándo el autor debe tener lista y entregada la obra al editor. Ej: 30 de junio de 2025."
+      },
+      {
+        "name": "porcentaje_regalias",
+        "label": "Porcentaje de regalías del autor (%)",
+        "type": "text",
+        "required": true,
+        "help": "Ganancia del autor sobre cada libro vendido. Por ley si no se pacta es el 20%. Ej: 15 (significa el 15% del precio de venta al público de cada ejemplar)."
+      },
+      {
+        "name": "ciudad_pago_regalias",
+        "label": "Ciudad donde se pagarán las regalías",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde el editor pagará al autor las regalías."
+      },
+      {
+        "name": "direccion_pago_regalias",
+        "label": "Dirección de las oficinas del editor para el pago",
+        "type": "text",
+        "required": true,
+        "help": "Dirección exacta donde se pagarán las regalías. Ej: Carrera 13 # 85-60 Oficina 201."
+      },
+      {
+        "name": "meses_poner_en_venta",
+        "label": "Meses para poner la obra en venta después de recibir originales",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos meses tiene el editor para publicar la obra. Ej: 6 meses."
+      },
+      {
+        "name": "ejemplares_gratuitos_autor",
+        "label": "Número de ejemplares gratuitos para el autor",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos libros gratis recibirá el autor. Por ley: 50 si la edición es de 1.000 a 5.000; 80 si es de 5.000 a 10.000; 100 si supera 10.000."
+      },
+      {
+        "name": "numero_ejemplares_edicion",
+        "label": "Número de ejemplares de la edición",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos libros se imprimirán en esta edición. Ej: 2.000 ejemplares."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad donde se resolverán los conflictos",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del tribunal de arbitramento. Ej: Bogotá."
+      }
+    ],
+    "template": "{{nombre_editor}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_editor}}, domiciliado y residente en {{ciudad}}, actuando en condición de representante legal de {{nombre_empresa_editorial}}, quien para efectos de este contrato se denominará el EDITOR, y {{nombre_autor}}, también mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_autor}} de {{expedicion_autor}}, domiciliado y residente en {{domicilio_autor}}, actuando en nombre propio, quien se designará como el AUTOR, han acordado celebrar un contrato de edición que se regulará por las disposiciones legales aplicables y en especial por las siguientes cláusulas:\n\nPRIMERA. Objeto.— El AUTOR se obliga a entregar al EDITOR una obra que consta de {{descripcion_obra}}. La obra tendrá por título {{titulo_obra}}. El EDITOR se compromete a publicar, promocionar y distribuir la obra en el mercado por su cuenta y riesgo.\n\nSEGUNDA. Plazo y condiciones de entrega.— El AUTOR debe entregar la obra antes del {{fecha_entrega_originales}}, en original mecanografiado o por computador, a doble espacio, sin interpolaciones y con fotos, dibujos y gráficas aptos para la reproducción.\n\nTERCERA. Calidad de la obra y autorización concedida.— El AUTOR precisa que la obra es inédita y autoriza de manera exclusiva al EDITOR para su publicación y distribución.\n\nCUARTA. Regalías y precio al público.— El AUTOR tendrá derecho a percibir como remuneración el {{porcentaje_regalias}}% del precio de venta al público de los ejemplares editados.\n\nQUINTA. Periodicidad en el pago de las regalías.— Las regalías se pagarán al AUTOR trimestralmente, los días 31 de marzo, 30 de junio, 30 de septiembre y 31 de diciembre. El pago se efectuará en las oficinas del EDITOR, situadas en {{direccion_pago_regalias}} de la ciudad de {{ciudad_pago_regalias}}.\n\nSEXTA. Obligaciones del EDITOR.— a) Pagar las regalías en el porcentaje y lugar acordados; b) Dar amplia publicidad a la obra; c) Rendir cuentas al AUTOR cuando lo solicite; d) No modificar los originales; e) Hacer en la obra las indicaciones que la ley exige; f) Poner en venta los ejemplares dentro de los {{meses_poner_en_venta}} meses siguientes a la recepción de los originales; g) Entregar {{ejemplares_gratuitos_autor}} ejemplares al AUTOR de manera gratuita.\n\nSÉPTIMA. Responsabilidad del EDITOR.— El EDITOR responde por los originales una vez recibidos. Si los originales se perdieren en su poder, quedará obligado a cubrir las regalías acordadas.\n\nOCTAVA. Terminación del contrato.— El EDITOR podrá dar por terminado el contrato en los siguientes eventos: a) Por incumplimiento del AUTOR en la entrega; b) Por la venta total de los ejemplares editados; c) Por la muerte del AUTOR o su imposibilidad física o mental antes de terminar la obra; d) Si transcurridos cinco años las ventas no superan el 30% de los ejemplares editados.\n\nNOVENA. Edición y número de ejemplares.— El presente contrato sólo aplica a la edición original, para la cual se pacta un número de ejemplares igual a {{numero_ejemplares_edicion}}.\n\nDÉCIMA. Cláusula compromisoria.— Toda diferencia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nEn señal de asentimiento, se firma el presente documento en dos ejemplares en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nAutor: _______________________     Editor: _______________________\n{{nombre_autor}}                   {{nombre_editor}}\nC.C. Nº. {{cedula_autor}}          {{nombre_empresa_editorial}}"
+  },
+  {
+    "id": "cesion-derechos-patrimoniales-autor",
+    "title": "Cesión de Derechos Patrimoniales de Autor",
+    "subtitle": "Propiedad Intelectual",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_cesionario",
+        "label": "Nombre completo del cesionario (quien recibe los derechos)",
+        "type": "text",
+        "required": true,
+        "help": "Persona o empresa que adquiere los derechos patrimoniales de autor."
+      },
+      {
+        "name": "cedula_cesionario",
+        "label": "Cédula del cesionario",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del cesionario."
+      },
+      {
+        "name": "expedicion_cesionario",
+        "label": "Ciudad expedición cédula del cesionario",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del cesionario."
+      },
+      {
+        "name": "nombre_empresa_cesionario",
+        "label": "Empresa que representa el cesionario (si aplica)",
+        "type": "text",
+        "required": true,
+        "help": "Si el cesionario actúa en nombre de una empresa escriba su nombre. Si actúa en nombre propio escriba: en nombre propio."
+      },
+      {
+        "name": "nombre_autor_cedente",
+        "label": "Nombre completo del autor o cedente",
+        "type": "text",
+        "required": true,
+        "help": "Creador de la obra que transfiere sus derechos patrimoniales."
+      },
+      {
+        "name": "cedula_autor_cedente",
+        "label": "Cédula del autor o cedente",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del autor."
+      },
+      {
+        "name": "expedicion_autor_cedente",
+        "label": "Ciudad expedición cédula del autor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del autor."
+      },
+      {
+        "name": "titulo_obra",
+        "label": "Título de la obra cuyo derecho se cede",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de la obra creada. Ej: Historia del Arte Colombiano, Software de Gestión Empresarial, fotografías de la serie Paisajes."
+      },
+      {
+        "name": "caracteristicas_obra",
+        "label": "Características de la obra",
+        "type": "text",
+        "required": true,
+        "help": "Tipo de obra y sus características. Ej: libro de 250 páginas; software desarrollado en Java; serie fotográfica de 30 imágenes en formato digital."
+      },
+      {
+        "name": "anio_creacion_obra",
+        "label": "Año en que fue creada la obra",
+        "type": "text",
+        "required": true,
+        "help": "En qué año fue creada o terminada la obra. Ej: 2024."
+      }
+    ],
+    "template": "Entre los suscritos: {{nombre_cesionario}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_cesionario}} de {{expedicion_cesionario}}, quien actúa en nombre propio y representación de {{nombre_empresa_cesionario}}, denominado en adelante el CESIONARIO (COMPRADOR), y {{nombre_autor_cedente}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_autor_cedente}} de {{expedicion_autor_cedente}}, denominado en adelante el AUTOR O CEDENTE (VENDEDOR), han acordado suscribir el presente contrato de cesión de derechos de autor, el cual se regirá por la Ley 23 de 1982, Ley 44 de 1993 y demás disposiciones concordantes, y en especial por las siguientes cláusulas:\n\nPRIMERA. Objeto.— El AUTOR manifiesta que de manera voluntaria realiza la Cesión en favor del CESIONARIO de todos los derechos de autor patrimoniales que le corresponden como creador de la obra denominada {{titulo_obra}}, cuyas características son: {{caracteristicas_obra}}. Dicha obra fue realizada por el AUTOR en el año de {{anio_creacion_obra}}.\n\nSEGUNDA. Determinación y Alcance del objeto.— Los derechos que se ceden incluyen todos los derechos patrimoniales: transformación, reproducción, comunicación pública y distribución, sin ninguna limitación en cuanto a territorio. Así mismo, esta cesión se da por todo el término de duración establecido en la legislación de derechos de autor vigente en Colombia.\n\nTERCERA. Derechos morales.— La cesión de los derechos patrimoniales no implica la cesión de los derechos morales sobre la obra, dado que éstos son irrenunciables, imprescriptibles, inembargables e inalienables. Por tanto, los derechos morales seguirán radicados en cabeza del AUTOR O CEDENTE.\n\nCUARTA. Elaboración y responsabilidad.— El AUTOR manifiesta que la obra es original y fue realizada por él mismo, sin violar derechos de autor de terceros. En caso de presentarse cualquier reclamación de un tercero sobre los derechos de autor de la obra, el AUTOR O CEDENTE asumirá toda la responsabilidad.\n\nQUINTA. Exclusividad.— El AUTOR manifiesta que los derechos sobre la obra no han sido cedidos con antelación y que sobre ellos no pesa ningún gravamen ni limitación.\n\nEn señal de asentimiento, se firma el presente documento en dos ejemplares en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nAutor o Cedente: _______________________     Cesionario: _______________________\n{{nombre_autor_cedente}}                     {{nombre_cesionario}}\nC.C. Nº. {{cedula_autor_cedente}}            C.C. Nº. {{cedula_cesionario}}"
+  },
+  {
+    "id": "contrato-traduccion",
+    "title": "Contrato de Traducción",
+    "subtitle": "Propiedad Intelectual",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se celebra el contrato."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2025."
+      },
+      {
+        "name": "nombre_editor",
+        "label": "Nombre completo del representante legal del editor",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma en nombre de la editorial que encarga la traducción."
+      },
+      {
+        "name": "cedula_editor",
+        "label": "Cédula del editor",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del representante de la editorial."
+      },
+      {
+        "name": "nombre_empresa_editorial",
+        "label": "Nombre de la empresa editorial",
+        "type": "text",
+        "required": true,
+        "help": "Razón social de la editorial que publicará la obra traducida."
+      },
+      {
+        "name": "nombre_traductor",
+        "label": "Nombre completo del traductor",
+        "type": "text",
+        "required": true,
+        "help": "Persona que realizará la traducción de la obra."
+      },
+      {
+        "name": "cedula_traductor",
+        "label": "Cédula del traductor",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del traductor."
+      },
+      {
+        "name": "expedicion_traductor",
+        "label": "Ciudad expedición cédula del traductor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del traductor."
+      },
+      {
+        "name": "nacionalidad_traductor",
+        "label": "Nacionalidad del traductor",
+        "type": "text",
+        "required": true,
+        "help": "País de origen del traductor. Ej: colombiana, venezolana, española."
+      },
+      {
+        "name": "domicilio_traductor",
+        "label": "Ciudad de domicilio del traductor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el traductor."
+      },
+      {
+        "name": "nombre_autor_original",
+        "label": "Nombre del autor de la obra original",
+        "type": "text",
+        "required": true,
+        "help": "Quién escribió la obra que se va a traducir."
+      },
+      {
+        "name": "titulo_obra_original",
+        "label": "Título de la obra original a traducir",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del libro o documento en el idioma original."
+      },
+      {
+        "name": "idioma_original",
+        "label": "Idioma en que está escrita la obra original",
+        "type": "text",
+        "required": true,
+        "help": "Idioma del texto que se traducirá. Ej: inglés, francés, alemán, portugués."
+      },
+      {
+        "name": "numero_paginas_original",
+        "label": "Número de páginas de la obra original",
+        "type": "text",
+        "required": true,
+        "help": "Cuántas páginas tiene el documento original. Ej: 320 páginas."
+      },
+      {
+        "name": "numero_paginas_espanol",
+        "label": "Número aproximado de páginas en español",
+        "type": "text",
+        "required": true,
+        "help": "Estimado de páginas que tendrá la traducción. Generalmente similar al original. Ej: 340 páginas aproximadamente."
+      },
+      {
+        "name": "editor_original",
+        "label": "Nombre del editor de la obra original",
+        "type": "text",
+        "required": true,
+        "help": "Editorial que publicó la obra en el idioma original."
+      },
+      {
+        "name": "anio_edicion_original",
+        "label": "Año de la edición original",
+        "type": "text",
+        "required": true,
+        "help": "Cuándo fue publicada la obra original. Ej: 2020."
+      },
+      {
+        "name": "valor_adicional_pagina",
+        "label": "Valor adicional por cada página que exceda el 5% de margen",
+        "type": "text",
+        "required": true,
+        "help": "Si la traducción supera en más del 5% el número de páginas estimado, cuánto se pagará por cada página adicional. Ej: 30.000 pesos por página."
+      },
+      {
+        "name": "plazos_entrega_traduccion",
+        "label": "Plazos de entrega de la traducción acordados",
+        "type": "text",
+        "required": true,
+        "help": "Cuándo debe entregar el traductor la obra. Ej: 60 días hábiles después de recibir el original; entrega parcial de los primeros 5 capítulos el 15 de marzo y el resto el 30 de mayo."
+      },
+      {
+        "name": "precio_traduccion_letras",
+        "label": "Precio total por el trabajo de traducción en letras",
+        "type": "text",
+        "required": true,
+        "help": "Total que el editor pagará al traductor en palabras. Ej: tres millones de pesos."
+      },
+      {
+        "name": "precio_traduccion_numeros",
+        "label": "Precio total de la traducción en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 3.000.000."
+      },
+      {
+        "name": "ejemplares_gratuitos_traductor",
+        "label": "Número de ejemplares gratuitos para el traductor",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos libros gratis recibirá el traductor de la edición publicada. Ej: 5 ejemplares."
+      }
+    ],
+    "template": "{{nombre_editor}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_editor}}, domiciliado y residente en {{ciudad}}, actuando en condición de representante legal de {{nombre_empresa_editorial}}, quien para efectos de este contrato se denominará el EDITOR, y {{nombre_traductor}}, también mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_traductor}} de {{expedicion_traductor}}, de nacionalidad {{nacionalidad_traductor}}, domiciliado y residente en {{domicilio_traductor}}, quien para efectos de este contrato se denominará el TRADUCTOR, han acordado suscribir el presente contrato de Traducción, teniendo en cuenta los siguientes antecedentes:\n1. El EDITOR es una empresa dedicada, entre otras actividades, a realizar diversos actos o convenios sobre derechos de autor.\n2. El EDITOR ha adquirido los derechos de traducción al español de la obra descrita en la cláusula primera.\n\nCLÁUSULAS:\n\nPRIMERA. Entrega de la obra.— El EDITOR entrega al TRADUCTOR para preparar su versión en lengua española, un libro redactado en idioma {{idioma_original}} de las siguientes características: Autor: {{nombre_autor_original}}; Título: {{titulo_obra_original}}; Número de páginas: {{numero_paginas_original}}; Número de páginas aproximadamente en español: {{numero_paginas_espanol}}. Se considera una variación del cinco por ciento (5%) como límite máximo que no afecta el precio del contrato. Si resultan páginas adicionales sobre este margen, se pagará al TRADUCTOR la suma de {{valor_adicional_pagina}} pesos por cada página publicada. Editor original: {{editor_original}}; año de edición: {{anio_edicion_original}}.\n\nSEGUNDA. Versión en español.— El TRADUCTOR se compromete a realizar una versión en español, utilizando un lenguaje claro y corriente, con estilo atractivo y ateniéndose a la más escrupulosa fidelidad, salvo errores evidentes que el buen sentido le aconseje enmendar.\n\nTERCERA. Obligación del traductor.— El TRADUCTOR se obliga a entregar al EDITOR el texto de la traducción en español en original y una copia, escrito a máquina o en computador a doble espacio, en hojas tamaño oficio.\n\nCUARTA. Obligación del editor.— El EDITOR se obliga a hacer constar en todos los ejemplares de la obra traducida el nombre del TRADUCTOR en la página donde se anota el copyright, inmediatamente después del nombre del autor original.\n\nQUINTA. Revisión de la traducción.— El EDITOR tiene el derecho de hacer revisar la traducción por un revisor técnico de su elección. Si hubiere errores, el TRADUCTOR se obliga a rehacer sin costo adicional las partes deficientemente traducidas.\n\nSEXTA. Plazos.— Los plazos de entrega de la traducción serán los siguientes: {{plazos_entrega_traduccion}}. El incumplimiento de esta cláusula facultará al EDITOR para terminar el presente contrato.\n\nSÉPTIMA. Precio.— El EDITOR pagará al TRADUCTOR la cantidad de {{precio_traduccion_letras}} ($ {{precio_traduccion_numeros}}), dentro de los diez días hábiles siguientes al recibo de conformidad del 100% de la traducción contratada.\n\nOCTAVA. Publicación de ejemplares.— El TRADUCTOR consiente en que el EDITOR podrá publicar el número de ejemplares que considere necesarios y efectuar las reimpresiones que le convengan, sin que se cause suma adicional a favor del TRADUCTOR.\n\nNOVENA. Entrega gratuita de ejemplares.— El EDITOR se obliga a entregar gratuitamente al TRADUCTOR {{ejemplares_gratuitos_traductor}} ejemplares de la edición en español.\n\nDÉCIMA. Prohibiciones.— El TRADUCTOR se obliga a no hacer uso del conocimiento que adquiera de los planes de producción del EDITOR ni a comunicarlos a terceros.\n\nDÉCIMO PRIMERA. Cesión de derechos patrimoniales.— El TRADUCTOR cede expresamente al EDITOR todos los derechos patrimoniales que puedan corresponderle por la traducción de la obra referida. Queda prohibido al EDITOR modificar o alterar la traducción sin autorización previa y escrita del TRADUCTOR.\n\nEste contrato se firma de conformidad por ambas partes en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nEditor: _______________________     Traductor: _______________________\n{{nombre_editor}}                   {{nombre_traductor}}\n{{nombre_empresa_editorial}}        C.C. Nº. {{cedula_traductor}}"
+  }
+]

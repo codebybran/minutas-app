@@ -912,6 +912,317 @@ const FIELD_HELP = {
   fecha_nacimiento2: 'Escriba la fecha de nacimiento del segundo contrayente. Ej: 10 de junio de 1992.',
   fecha_solicitud: 'Escriba la fecha en que se presentó la solicitud de matrimonio ante la Notaría. Ej: el 5 de abril de 2026.',
 
+  // -- DERECHO COMERCIAL --
+  numero_pagare: 'Número consecutivo que identifica este pagaré. Ej: 001.',
+  ciudad_lugar: 'Ciudad donde se firma el pagaré. Ej: Bogotá, Cali.',
+  valor_numeros: 'Monto total adeudado en cifras. Ej: 5.000.000.',
+  ciudad_pago: 'Ciudad donde el deudor pagará al acreedor.',
+  direccion_pago: 'Dirección exacta para el pago. Ej: Calle 10 # 5-20 Of. 301.',
+  nombre_deudor1: 'Nombre completo del primer firmante del pagaré.',
+  cedula_deudor1: 'Número de cédula del primer deudor.',
+  expedicion_deudor1: 'Ciudad donde fue expedida la cédula del primer deudor.',
+  nombre_deudor2: 'Nombre del segundo deudor solidario. Si no hay, escriba: no aplica.',
+  cedula_deudor2: 'Cédula del segundo deudor. Si no hay, escriba: no aplica.',
+  expedicion_deudor2: 'Ciudad expedición del segundo deudor. Si no hay, escriba: no aplica.',
+  nombre_acreedor: 'Nombre completo de quien recibirá el pago.',
+  cuota_numeros: 'Monto de cada cuota mensual en cifras. Ej: 500.000.',
+  fecha_primer_pago: 'Fecha exacta del primer pago. Ej: 1 de febrero de 2026.',
+  fecha_pagos_siguientes: 'Periodicidad de los pagos. Ej: el día 1 de cada mes siguiente.',
+  interes_corriente: 'Tasa de interés mensual acordada en porcentaje. Ej: 1.5',
+  interes_mora: 'Tasa de interés de mora mensual en porcentaje. Ej: 2.5',
+  nombre_suscriptor1: 'Nombre completo del primer firmante del pagaré.',
+  cedula_suscriptor1: 'Cédula del primer suscriptor.',
+  expedicion_suscriptor1: 'Ciudad expedición cédula del primer suscriptor.',
+  nombre_suscriptor2: 'Nombre del segundo suscriptor. Si no hay, escriba: no aplica.',
+  cedula_suscriptor2: 'Cédula del segundo suscriptor. Si no hay, escriba: no aplica.',
+  nombre_autorizado: 'Persona o entidad autorizada para llenar los espacios en blanco del pagaré.',
+  cedula_autorizado: 'Cédula o NIT de la persona autorizada.',
+  expedicion_autorizado: 'Ciudad expedición cédula del autorizado.',
+  numero_pagare: 'Número del pagaré adjunto que se autoriza llenar.',
+  circunstancias_llenado: 'Cuándo se podrá llenar el pagaré. Ej: cuando el deudor incumpla el pago de una cuota.',
+  nombre_vendedor: 'Nombre completo del vendedor o representante legal.',
+  cedula_vendedor: 'Cédula del vendedor.',
+  expedicion_vendedor: 'Ciudad expedición cédula del vendedor.',
+  domicilio_vendedor: 'Ciudad donde vive el vendedor.',
+  nombre_comprador: 'Nombre completo del comprador.',
+  cedula_comprador: 'Cédula del comprador.',
+  expedicion_comprador: 'Ciudad expedición cédula del comprador.',
+  domicilio_comprador: 'Ciudad donde vive el comprador.',
+  nombre_establecimiento: 'Nombre comercial del negocio que se vende.',
+  matricula_mercantil: 'Número de matrícula mercantil asignado por la Cámara de Comercio.',
+  direccion_establecimiento: 'Dirección exacta del establecimiento.',
+  barrio_establecimiento: 'Barrio donde está ubicado el establecimiento.',
+  ciudad_establecimiento: 'Ciudad donde funciona el negocio.',
+  precio_letras: 'Precio total de venta en palabras. Ej: veinte millones de pesos.',
+  precio_numeros: 'Precio total en cifras. Ej: 20.000.000.',
+  ciudad_pago: 'Ciudad donde se realizará el pago.',
+  pago_inicial_letras: 'Valor que se paga al firmar, en palabras.',
+  saldo_letras: 'Lo que queda por pagar, en palabras.',
+  saldo_numeros: 'El saldo pendiente en cifras.',
+  fecha_pago_saldo: 'Fecha exacta para pagar el saldo pendiente.',
+  fecha_entrega: 'Cuándo el vendedor entrega físicamente el establecimiento.',
+  clausula_penal_letras: 'Multa por incumplimiento en palabras.',
+  clausula_penal_numeros: 'La misma multa en cifras.',
+  nombre_arrendador: 'Nombre completo del dueño del local.',
+  cedula_arrendador: 'Cédula del arrendador.',
+  nombre_arrendatario: 'Nombre completo de quien toma el local en arriendo.',
+  cedula_arrendatario: 'Cédula del arrendatario.',
+  descripcion_local: 'Tipo de inmueble. Ej: local comercial de 50 m2, bodega, oficina.',
+  linderos_local: 'Límites del local. Ej: Norte con local 2, Sur con parqueadero.',
+  canon_letras: 'Valor del arriendo mensual en palabras.',
+  canon_numeros: 'Valor del arriendo en cifras.',
+  dias_pago: 'Días del mes para pagar el canon. Ej: 5 primeros días.',
+  porcentaje_aumento: 'Porcentaje de aumento anual del canon. Ej: 8.',
+  fecha_inicio: 'Cuándo empieza el contrato.',
+  fecha_terminacion: 'Cuándo termina el contrato.',
+  servicios_incluidos: 'Servicios que paga el arrendador. Si ninguno escriba: ninguno.',
+  servicios_por_arrendatario: 'Servicios que paga el arrendatario. Ej: agua, luz, gas.',
+  destinacion_local: 'Para qué usará el local el arrendatario.',
+  lugar_pago_canon: 'Dónde se entregará el canon mensual.',
+  actividades_prohibidas: 'Actividades no permitidas en el local.',
+  impuestos_a_cargo: '¿Quién paga los impuestos del contrato? Ej: el arrendatario, ambos por partes iguales.',
+  nombre_subarrendador: 'Quien tiene arrendado el local y lo subarrienda parcialmente.',
+  cedula_subarrendador: 'Cédula del subarrendador.',
+  expedicion_subarrendador: 'Ciudad expedición cédula del subarrendador.',
+  domicilio_subarrendador: 'Ciudad donde vive el subarrendador.',
+  nombre_subarrendatario: 'Quien tomará en arriendo la parte del local.',
+  cedula_subarrendatario: 'Cédula del subarrendatario.',
+  expedicion_subarrendatario: 'Ciudad expedición cédula del subarrendatario.',
+  domicilio_subarrendatario: 'Ciudad donde vive el subarrendatario.',
+  ciudad_local: 'Ciudad donde está el local.',
+  fecha_contrato_original: 'Fecha del contrato de arrendamiento original con el dueño.',
+  nombre_arrendador_original: 'Nombre del dueño original del local.',
+  descripcion_parte_subarrendada: 'Qué parte exacta del local se subarrienda. Solo puede ser hasta la mitad.',
+  destinacion_permitida: 'Para qué se puede usar la parte subarrendada.',
+  gastos_a_cargo: '¿Quién paga los gastos de celebración del contrato?',
+  nombre_agente: 'Representante legal de la empresa agente.',
+  cedula_agente: 'Cédula del representante del agente.',
+  expedicion_agente: 'Ciudad expedición cédula del agente.',
+  nombre_empresa_agente: 'Razón social de la empresa que actuará como agente.',
+  nombre_empresario: 'Representante legal del empresario que encarga la agencia.',
+  cedula_empresario: 'Cédula del representante del empresario.',
+  expedicion_empresario: 'Ciudad expedición cédula del empresario.',
+  nombre_empresa_empresario: 'Razón social de la empresa que encarga la promoción y venta.',
+  objeto_agencia: 'Qué promoverá el agente. Ej: seguros de vida, productos farmacéuticos.',
+  zona_agencia: 'Área geográfica donde el agente tiene exclusividad. Ej: departamento del Valle.',
+  dias_informe: 'Días del mes siguiente para rendir informes. Ej: 5 primeros días.',
+  porcentaje_remuneracion: 'Comisión del agente sobre ventas en porcentaje. Ej: 10.',
+  dias_entrega_final: 'Días para rendir cuentas finales al terminar el contrato.',
+  nombre_concedente: 'Representante del fabricante o importador que da la concesión.',
+  cedula_concedente: 'Cédula del representante del concedente.',
+  nombre_empresa_concedente: 'Razón social del fabricante o importador.',
+  nombre_concesionario: 'Representante de la empresa que distribuirá los productos.',
+  cedula_concesionario: 'Cédula del representante del concesionario.',
+  nombre_empresa_concesionario: 'Razón social del distribuidor.',
+  bienes_concesion: 'Productos que se entregarán en concesión para vender.',
+  precio_venta_publico: 'Precio al que el concesionario venderá los bienes.',
+  comision_ventas: 'Ganancia del concesionario por venta en porcentaje. Ej: 8.',
+  comision_repuestos: 'Comisión sobre repuestos vendidos en porcentaje. Ej: 15.',
+  duracion_meses: 'Cuántos meses dura el contrato. Ej: 12, 24.',
+  prorroga_meses: 'Por cuántos meses se prorroga automáticamente si nadie avisa.',
+  aviso_terminacion_meses: 'Con cuántos meses de anticipación se avisa para no prorrogar.',
+  lugar_entrega_bienes: 'Dónde el concedente pone los bienes a disposición del concesionario.',
+  nombre_empresa_proveedor: 'Razón social de quien suministra los bienes o servicios.',
+  nombre_representante_proveedor: 'Quien firma en nombre de la empresa proveedora.',
+  cedula_representante_proveedor: 'Cédula del representante del proveedor.',
+  expedicion_representante_proveedor: 'Ciudad expedición cédula del representante.',
+  domicilio_proveedor: 'Ciudad donde tiene domicilio la empresa proveedora.',
+  nombre_consumidor: 'Empresa o persona que recibirá periódicamente los bienes.',
+  nombre_representante_consumidor: 'Quien firma en nombre del consumidor.',
+  cedula_representante_consumidor: 'Cédula del representante del consumidor.',
+  domicilio_consumidor: 'Ciudad donde tiene domicilio el consumidor.',
+  bienes_servicios: 'Qué se suministrará periódicamente. Ej: papelería, materias primas.',
+  descuento_porcentaje: 'Descuento sobre precio de lista en porcentaje. Ej: 10.',
+  descuento_pronto_pago: 'Descuento extra por pagar en 30 días en porcentaje. Ej: 2.',
+  cuantia_minima_pedido_letras: 'Monto mínimo de cada pedido en palabras.',
+  cuantia_minima_pedido_numeros: 'El mismo monto en cifras.',
+  nombre_empresa_proveedor: 'Razón social del proveedor.',
+  nombre_representante_proveedor: 'Representante legal del proveedor.',
+  cedula_representante_proveedor: 'Cédula del representante.',
+  cargo_representante_proveedor: 'Cargo en la empresa. Ej: Gerente General.',
+  tipo_relacion_comercial: 'Tipo de contratos que han celebrado. Ej: compraventa al por mayor.',
+  nombre_franquiciante: 'Representante legal del dueño de la franquicia.',
+  cedula_franquiciante: 'Cédula del representante del franquiciante.',
+  nombre_empresa_franquiciante: 'Razón social del dueño de la franquicia.',
+  nombre_franquiciado: 'Representante legal del que adquiere la franquicia.',
+  cedula_franquiciado: 'Cédula del representante del franquiciado.',
+  nombre_empresa_franquiciado: 'Razón social de quien explotará la franquicia.',
+  nombre_marca: 'Nombre de la marca registrada objeto de la franquicia.',
+  numero_registro_marca: 'Número de registro en la Superintendencia de Industria y Comercio.',
+  objeto_franquicia: 'Tipo de negocio. Ej: venta de comida rápida, ropa deportiva.',
+  ciudad_punto_venta: 'Ciudad donde operará el negocio franquiciado.',
+  valor_derechos_entrada: 'Cuánto paga el franquiciado por adquirir el derecho de usar la franquicia.',
+  nombre_ordenante: 'Quien encarga la fabricación de los productos.',
+  cedula_ordenante: 'Cédula del ordenante.',
+  expedicion_ordenante: 'Ciudad expedición cédula del ordenante.',
+  domicilio_ordenante: 'Ciudad donde vive el ordenante.',
+  nombre_fabricante: 'Quien fabricará los productos.',
+  cedula_fabricante: 'Cédula del fabricante.',
+  expedicion_fabricante: 'Ciudad expedición cédula del fabricante.',
+  domicilio_fabricante: 'Ciudad donde tiene su taller el fabricante.',
+  descripcion_productos: 'Qué productos fabricará con especificaciones. Ej: camisetas ref. 001 con logo bordado.',
+  precios_productos: 'Cuánto pagará el ordenante por los productos. Ej: $ 15.000 por unidad.',
+  dias_entrega: 'Días para entregar después de recibir la orden de producción.',
+  direccion_entrega: 'Dirección de las oficinas del ordenante para la entrega.',
+  ciudad_entrega: 'Ciudad de entrega de los productos.',
+  dias_reclamo: 'Días hábiles para formular reclamos sobre la mercancía recibida.',
+  suministrador_materia_prima: '¿Quién aporta los insumos? Ej: el ordenante, el fabricante, ambos.',
+  dias_preaviso_terminacion: 'Días de anticipación para avisar la terminación del contrato.',
+  nombre_contratante: 'Empresa que contrata el servicio de outsourcing o consultoría.',
+  cedula_contratante: 'Cédula del representante del contratante.',
+  expedicion_contratante: 'Ciudad expedición cédula del contratante.',
+  nombre_empresa_contratante: 'Razón social de la empresa contratante.',
+  nombre_administrador: 'Representante de la empresa de sistemas que prestará el servicio.',
+  cedula_administrador: 'Cédula del representante del administrador.',
+  expedicion_administrador: 'Ciudad expedición cédula del administrador.',
+  nombre_empresa_administrador: 'Razón social de la empresa especializada en sistemas.',
+  plazo_contrato: 'Duración del contrato. Ej: seis (6) meses, un (1) año.',
+  valor_contrato_letras: 'Valor total del servicio en palabras.',
+  valor_contrato_numeros: 'El mismo valor en cifras.',
+  forma_pago: 'Cómo se pagará el servicio. Ej: cuotas mensuales de un millón de pesos.',
+  dias_vencimiento_pago: 'Días para pagar después de recibir la factura. Ej: 15 días.',
+  direccion_contratante: 'Dirección postal de la empresa contratante.',
+  direccion_administrador: 'Dirección del administrador para notificaciones.',
+  nombre_consignatario: 'Quien recibe la mercancía para venderla a nombre del dueño.',
+  cedula_consignatario: 'Cédula del consignatario.',
+  expedicion_consignatario: 'Ciudad expedición cédula del consignatario.',
+  domicilio_consignatario: 'Ciudad donde vive el consignatario.',
+  nombre_consignante: 'Dueño de la mercancía que la entrega para que sea vendida.',
+  cedula_consignante: 'Cédula del consignante.',
+  expedicion_consignante: 'Ciudad expedición cédula del consignante.',
+  domicilio_consignante: 'Ciudad donde vive el consignante.',
+  descripcion_mercancia: 'Qué mercancía se entrega con cantidades y estado. Ej: 50 pares de zapatos ref. A-100.',
+  precio_total_letras: 'Valor total de toda la mercancía en palabras.',
+  precio_total_numeros: 'El mismo valor en cifras.',
+  precios_unitarios: 'Cuánto vale cada artículo individualmente.',
+  periodicidad_pago: 'Con qué frecuencia se paga. Ej: mensual, quincenal.',
+  porcentaje_comision: 'Ganancia del consignatario o corredor sobre el precio en porcentaje. Ej: 20.',
+  plazo_venta_letras: 'Tiempo para vender la mercancía en palabras. Ej: tres (3) meses.',
+  plazo_venta_numeros: 'El mismo plazo en cifras. Ej: 3 meses.',
+  nombre_gestor: 'Socio visible que actúa frente a terceros como responsable del negocio.',
+  cedula_gestor: 'Cédula del socio gestor.',
+  expedicion_gestor: 'Ciudad expedición cédula del gestor.',
+  domicilio_gestor: 'Ciudad donde vive el gestor.',
+  nombre_participe: 'Socio oculto que aporta capital pero no aparece ante terceros.',
+  cedula_participe: 'Cédula del partícipe oculto.',
+  expedicion_participe: 'Ciudad expedición cédula del partícipe.',
+  domicilio_participe: 'Ciudad donde vive el partícipe.',
+  objeto_asociacion: 'Qué negocio van a desarrollar juntos. Ej: explotación de una panadería.',
+  ambito_territorial: 'Dónde se desarrollará el negocio. Ej: la ciudad de Cali.',
+  fondo_comun_letras: 'Capital total que aportan entre los dos en palabras.',
+  fondo_comun_numeros: 'El mismo capital en cifras.',
+  proporcion_aportes: 'Cuánto aporta cada uno. Ej: 60% el gestor y 40% el partícipe.',
+  distribucion_utilidades: 'Cómo se repartirán las ganancias. Ej: 60% para el gestor y 40% para el partícipe.',
+  gastos_gestor_letras: 'Límite de gastos del gestor del fondo en palabras.',
+  gastos_gestor_numeros: 'El mismo límite en cifras.',
+  meses_aviso_renuncia: 'Meses de anticipación para avisar que un socio se retira. Ej: 3.',
+  nombre_representante_sociedad: 'Quien firma en nombre de la empresa que contrata la revisoría fiscal.',
+  cedula_representante_sociedad: 'Cédula del representante legal.',
+  nombre_sociedad: 'Razón social de la empresa que necesita revisor fiscal.',
+  nombre_representante_contratista: 'Quien firma en nombre de la firma de revisoría.',
+  cedula_representante_contratista: 'Cédula del representante del contratista.',
+  nombre_empresa_contratista: 'Razón social de la firma de contadores o auditoría.',
+  domicilio_contratista: 'Ciudad donde tiene domicilio la firma de revisoría.',
+  articulos_estatutos: 'Artículos de los estatutos que regulan las funciones del revisor. Ej: 45, 46 y 47.',
+  duracion_contrato: 'Tiempo del contrato. Ej: un (1) año, igual al período de la junta directiva.',
+  dia_inicio_honorarios: 'Día en que empieza el período de honorarios. Ej: 1.',
+  mes_inicio_honorarios: 'Mes de inicio en letras. Ej: enero.',
+  anio_inicio_honorarios: 'Año de inicio. Ej: 2025.',
+  dia_fin_honorarios: 'Día en que termina el período de honorarios. Ej: 31.',
+  mes_fin_honorarios: 'Mes de fin en letras. Ej: diciembre.',
+  anio_fin_honorarios: 'Año de fin. Ej: 2025.',
+  honorarios_letras: 'Total de honorarios por el período en palabras.',
+  honorarios_numeros: 'El mismo valor en cifras.',
+  forma_pago_honorarios: 'Cómo y cuándo se pagarán los honorarios.',
+  num_ejemplares: 'Cuántas copias del contrato se firman. Generalmente dos (2).',
+  nombre_proponente: 'Dueño del bien que encarga al corredor su venta.',
+  cedula_proponente: 'Cédula del proponente.',
+  expedicion_proponente: 'Ciudad expedición cédula del proponente.',
+  domicilio_proponente: 'Ciudad donde vive el proponente.',
+  nombre_corredor: 'Intermediario que buscará comprador para el bien.',
+  cedula_corredor: 'Cédula del corredor.',
+  expedicion_corredor: 'Ciudad expedición cédula del corredor.',
+  domicilio_corredor: 'Ciudad donde vive el corredor.',
+  calidades_bien: 'Estado y características del bien. Ej: vehículo en excelente estado, 50.000 km.',
+  dias_aviso_proponente: 'Días de anticipación para que el proponente termine el contrato.',
+  dias_aviso_corredor: 'Días de anticipación para que el corredor renuncie.',
+  representante_corredor: 'Quien firma en nombre de la empresa inmobiliaria.',
+  nombre_empresa_corredor: 'Razón social de la inmobiliaria o empresa de corretaje.',
+  numero_matricula: 'Número de matrícula inmobiliaria del inmueble a vender.',
+  area_lote: 'Metros cuadrados del lote o del inmueble.',
+  tiempo_construccion: 'Cuántos años tiene construido el inmueble.',
+  observaciones_inmueble: 'Información relevante del inmueble. Si no hay escriba: ninguna.',
+  interes_mora: 'Interés si el proponente no paga la comisión a tiempo en porcentaje mensual.',
+  valor_terminacion_anticipada_letras: 'Lo que paga el proponente si retira el inmueble antes de que se venda, en palabras.',
+  valor_terminacion_anticipada_numeros: 'El mismo valor en cifras.',
+  presidente_contratante: 'Representante legal de la empresa colombiana que contrata.',
+  nombre_consultor: 'Empresa o persona extranjera que prestará la consultoría.',
+  pais_consultor: 'País de origen del consultor. Ej: Estados Unidos, España.',
+  representante_consultor: 'Quien firma en nombre del consultor extranjero.',
+  objeto_consultoria: 'Sobre qué versará la consultoría. Ej: implementación de sistemas ERP.',
+  objetivos_consultoria: 'Resultados concretos esperados. Ej: i) diagnóstico, ii) diseño de plan.',
+  valor_total_letras: 'Monto total de la consultoría en palabras.',
+  valor_total_numeros: 'El mismo valor en cifras.',
+  porcentaje_anticipo: 'Qué porcentaje del total se paga como anticipo inicial. Ej: 30.',
+  valor_anticipo_letras: 'Valor del anticipo en palabras.',
+  valor_anticipo_numeros: 'Valor del anticipo en cifras.',
+  dias_entrega_anticipo: 'Días calendario para entregar el anticipo después de firmar.',
+  duracion_meses: 'Cuántos meses durará la consultoría o el contrato.',
+  meses_suspension_maxima: 'Por cuántos meses puede suspenderse sin pagar indemnización al consultor.',
+  dias_aviso_terminacion: 'Días de aviso para terminación sin justa causa.',
+  meses_minimos_para_terminar: 'Meses mínimos transcurridos para poder terminar anticipadamente.',
+  ciudad_pais_consultor: 'Dirección del consultor extranjero para notificaciones.',
+  nombre_poderdante: 'Quien otorga el poder. Generalmente el representante legal de la empresa.',
+  cedula_poderdante: 'Cédula del poderdante.',
+  expedicion_poderdante: 'Ciudad donde fue expedida la cédula del poderdante.',
+  cargo_poderdante: 'Cargo que ostenta. Ej: Representante Legal, Gerente General.',
+  nombre_apoderado: 'Persona facultada para realizar los trámites de derechos de autor.',
+  cedula_apoderado: 'Cédula del apoderado.',
+  expedicion_apoderado: 'Ciudad expedición cédula del apoderado.',
+  nombre_editor: 'Representante legal de la editorial.',
+  cedula_editor: 'Cédula del representante de la editorial.',
+  nombre_empresa_editorial: 'Razón social de la editorial.',
+  nombre_autor: 'Nombre del escritor o creador de la obra.',
+  cedula_autor: 'Cédula del autor.',
+  expedicion_autor: 'Ciudad expedición cédula del autor.',
+  domicilio_autor: 'Ciudad donde vive el autor.',
+  descripcion_obra: 'De qué trata la obra. Ej: obra que consta de 3 partes sobre historia de Colombia.',
+  titulo_obra: 'Nombre con el que se publicará la obra.',
+  fecha_entrega_originales: 'Cuándo el autor debe entregar la obra al editor. Ej: 30 de junio de 2025.',
+  porcentaje_regalias: 'Ganancia del autor sobre cada libro vendido en porcentaje. Por ley si no se pacta es el 20%.',
+  ciudad_pago_regalias: 'Ciudad donde el editor pagará al autor las regalías.',
+  direccion_pago_regalias: 'Dirección exacta donde se pagarán las regalías.',
+  meses_poner_en_venta: 'Cuántos meses tiene el editor para publicar la obra.',
+  ejemplares_gratuitos_autor: 'Cuántos libros gratis recibirá el autor.',
+  numero_ejemplares_edicion: 'Cuántos libros se imprimirán en esta edición.',
+  nombre_cesionario: 'Persona o empresa que adquiere los derechos patrimoniales de autor.',
+  cedula_cesionario: 'Cédula del cesionario.',
+  expedicion_cesionario: 'Ciudad expedición cédula del cesionario.',
+  nombre_empresa_cesionario: 'Empresa que representa el cesionario. Si actúa en nombre propio escriba: en nombre propio.',
+  nombre_autor_cedente: 'Creador de la obra que transfiere sus derechos patrimoniales.',
+  cedula_autor_cedente: 'Cédula del autor cedente.',
+  expedicion_autor_cedente: 'Ciudad expedición cédula del autor.',
+  titulo_obra: 'Nombre de la obra creada. Ej: Historia del Arte Colombiano.',
+  caracteristicas_obra: 'Tipo y características de la obra. Ej: libro de 250 páginas, software en Java.',
+  anio_creacion_obra: 'En qué año fue creada o terminada la obra. Ej: 2024.',
+  nombre_traductor: 'Persona que realizará la traducción de la obra.',
+  cedula_traductor: 'Cédula del traductor.',
+  expedicion_traductor: 'Ciudad expedición cédula del traductor.',
+  nacionalidad_traductor: 'País de origen del traductor. Ej: colombiana, española.',
+  domicilio_traductor: 'Ciudad donde vive el traductor.',
+  nombre_autor_original: 'Quién escribió la obra que se va a traducir.',
+  titulo_obra_original: 'Nombre del libro en el idioma original.',
+  idioma_original: 'Idioma del texto a traducir. Ej: inglés, francés, alemán.',
+  numero_paginas_original: 'Cuántas páginas tiene el documento original.',
+  numero_paginas_espanol: 'Estimado de páginas que tendrá la traducción.',
+  editor_original: 'Editorial que publicó la obra en el idioma original.',
+  anio_edicion_original: 'Cuándo fue publicada la obra original. Ej: 2020.',
+  valor_adicional_pagina: 'Si la traducción supera el 5% de páginas estimadas, cuánto se pagará por cada página adicional.',
+  plazos_entrega_traduccion: 'Cuándo debe entregar el traductor la obra.',
+  precio_traduccion_letras: 'Total que el editor pagará al traductor en palabras.',
+  precio_traduccion_numeros: 'El mismo valor en cifras.',
+  ejemplares_gratuitos_traductor: 'Cuántos libros gratis recibirá el traductor de la edición publicada.',
+
 }
 
 const DATOS_PRUEBA = {
@@ -1751,27 +2062,27 @@ const DATOS_PRUEBA = {
   // Disolución y Liquidación de Sociedad Conyugal -
 
   // Estado Civil - Legitimacion hijo extramatrimonial
-  nombre_padre: 'Jhon Brandon Martinez Velez',
+  nombre_padre: 'Jhon Brandon Martínez Vélez',
   cedula_padre: '1234567890',
   expedicion_padre: 'El Cerrito',
   domicilio_padre: 'El Cerrito',
-  nombre_madre: 'Diana Patricia Garcia Lopez',
+  nombre_madre: 'Diana Patricia García López',
   cedula_madre: '0987654321',
   expedicion_madre: 'Cali',
   domicilio_madre: 'Cali',
   tipo_matrimonio: 'civil',
   fecha_matrimonio: 'el 15 de junio de 2010',
-  lugar_matrimonio: 'Notaria Unica de El Cerrito',
+  lugar_matrimonio: 'Notaría Única de El Cerrito',
   ciudad_matrimonio: 'El Cerrito',
-  notaria_registro_matrimonio: 'Unica',
+  notaria_registro_matrimonio: 'Única',
   circulo_registro_matrimonio: 'El Cerrito',
   tomo_matrimonio: '5',
   folio_matrimonio: '120',
   fecha_registro_matrimonio: 'el 20 de junio de 2010',
-  nombre_hijo: 'Samuel Martinez Garcia',
+  nombre_hijo: 'Samuel Martínez García',
   fecha_nacimiento_hijo: 'el 5 de marzo de 2009',
   ciudad_nacimiento_hijo: 'El Cerrito',
-  notaria_registro_hijo: 'Unica',
+  notaria_registro_hijo: 'Única',
   circulo_registro_hijo: 'El Cerrito',
   serial_registro_hijo: '1234567',
   fecha_registro_hijo: 'el 10 de marzo de 2009',
@@ -1779,37 +2090,37 @@ const DATOS_PRUEBA = {
   estado_civil_padre: 'soltero',
   estado_civil_madre_concepcion: 'soltera',
   estado_civil_madre_actual: 'soltera',
-  nombre_completo_hijo_nuevo: 'Samuel Martinez Garcia',
+  nombre_completo_hijo_nuevo: 'Samuel Martínez García',
   // Estado Civil - Solicitud correccion registro civil
-  nombre_solicitante: 'Jhon Brandon Martinez Velez',
+  nombre_solicitante: 'Jhon Brandon Martínez Vélez',
   cedula_solicitante: '1234567890',
   expedicion_solicitante: 'El Cerrito',
   domicilio_solicitante: 'El Cerrito',
   folio_registro: '045',
   libro_registro: '003',
   fecha_inscripcion_nacimiento: 'el 15 de enero de 1990',
-  nombre_inscrito_nacimiento: 'Jhon Brandon Martinez Velez',
+  nombre_inscrito_nacimiento: 'Jhon Brandon Martínez Vélez',
   tipo_documento_matrimonio: 'registro civil de matrimonio',
-  notaria_matrimonio: 'Unica',
+  notaria_matrimonio: 'Única',
   circulo_matrimonio: 'El Cerrito',
-  nombre_conyuge: 'Diana Patricia Garcia Lopez',
+  nombre_conyuge: 'Diana Patricia García López',
   numero_escritura: '1245',
   folio_registro_matrimonio: '120',
   libro_registro_matrimonio: '5',
   fecha_registro_matrimonio: 'el 20 de junio de 2010',
-  tipo_error: 'mecanografico',
+  tipo_error: 'mecanográfico',
   dato_errado: 'GARSIA',
   dato_correcto: 'GARCIA',
   // Estado Civil - Correccion errores registro civil
   estado_civil_solicitante: 'soltero',
   fecha_registro_nacimiento: 'el 15 de enero de 1990',
-  nombre_inscrito: 'Jhon Brandon Martinez Velez',
+  nombre_inscrito: 'Jhon Brandon Martínez Vélez',
   folio_nacimiento: '045',
   libro_nacimiento: '003',
-  documento_prueba: 'certificado medico del parto expedido por la Clinica Valle de El Cerrito que asistio a la senora Ana Lucia Velez de Martinez',
-  nombre_madre: 'Ana Lucia Velez de Martinez',
+  documento_prueba: 'certificado médico del parto expedido por la Clínica Valle de El Cerrito que asistió a la señora Ana Lucía Vélez de Martínez',
+  nombre_madre: 'Ana Lucía Vélez de Martínez',
   // Estado Civil - Cambio correccion adicion nombre
-  notaria_nacimiento: 'Unica',
+  notaria_nacimiento: 'Única',
   circulo_nacimiento: 'El Cerrito',
   tipo_modificacion: 'cambio',
   nombre_anterior: 'Jhon',
@@ -1875,107 +2186,393 @@ const DATOS_PRUEBA = {
   hijuela2_descripcion: 'A. Vehículo automotor Renault Logan, modelo 2019, placas XYZ789, adjudicado en la suma de veinte millones de pesos ($20.000.000). B. Saldo en cuenta de ahorros Davivienda número 456-789012-11, adjudicado en la suma de diez millones de pesos ($10.000.000).', 
 
   // Sucesiones - Testamento Abierto
-  testigo1: 'Carlos Eduardo Perez Rios',
-  testigo2: 'Maria Fernanda Garcia Lopez',
-  testigo3: 'Luis Fernando Gomez Torres',
-  testigo4: 'Roberto Salcedo Munoz',
-  testigo5: 'Patricia Londono Vera',
+  testigo1: 'Carlos Eduardo Pérez Ríos',
+  testigo2: 'María Fernanda García López',
+  testigo3: 'Luis Fernando Gómez Torres',
+  testigo4: 'Roberto Salcedo Muñoz',
+  testigo5: 'Patricia Londoño Vera',
   domicilio_testigos: 'El Cerrito',
-  nombre_testador: 'Jhon Brandon Martinez Velez',
+  nombre_testador: 'Jhon Brandon Martínez Vélez',
   cedula_testador: '1234567890',
   expedicion_testador: 'El Cerrito',
   domicilio_testador: 'El Cerrito',
   nacionalidad_testador: 'colombiano',
   edad_testador: '55',
   fecha_nacimiento_testador: 'el 21 de abril de 1971',
-  padre_testador: 'Roberto Martinez Gomez',
-  madre_testador: 'Ana Lucia Velez de Martinez',
+  padre_testador: 'Roberto Martínez Gómez',
+  madre_testador: 'Ana Lucía Vélez de Martínez',
   tipo_matrimonio_testador: 'civil',
   fecha_matrimonio_testador: 'el 15 de junio de 2000',
-  lugar_matrimonio_testador: 'Notaria Unica de El Cerrito',
+  lugar_matrimonio_testador: 'Notaría Única de El Cerrito',
   ciudad_matrimonio_testador: 'El Cerrito',
-  nombre_conyuge: 'Diana Patricia Garcia Lopez',
+  nombre_conyuge: 'Diana Patricia García López',
   declaracion_descendencia: 'De nuestro matrimonio no ha habido descendientes y tampoco tengo hijos extramatrimoniales ni adoptivos.',
-  heredero_universal: 'mi esposa legitima, señora Diana Patricia Garcia Lopez',
+  heredero_universal: 'mi esposa legítima, señora Diana Patricia García López',
   descripcion_herencia: 'Le corresponderan todos mis bienes muebles e inmuebles presentes y futuros.',
-  nombre_albacea: 'mi esposa Diana Patricia Garcia Lopez',
-  nombre_albacea_suplente: 'Carlos Eduardo Perez Rios',
+  nombre_albacea: 'mi esposa Diana Patricia García López',
+  nombre_albacea_suplente: 'Carlos Eduardo Pérez Ríos',
   cedula_albacea_suplente: '1122334455',
   expedicion_albacea_suplente: 'El Cerrito',
-  remuneracion_albacea: 'una remuneracion equivalente a la decima parte de los frutos de los bienes que administra',
-  descripcion_cubierta: 'un sobre manila tamano oficio, cerrado con cinta adhesiva y lacrado en sus cuatro esquinas con sello personal del testador',
+  remuneracion_albacea: 'una remuneración equivalente a la décima parte de los frutos de los bienes que administra',
+  descripcion_cubierta: 'un sobre manila tamaño oficio, cerrado con cinta adhesiva y lacrado en sus cuatro esquinas con sello personal del testador',
   ciudad_nacimiento_testador: 'El Cerrito',
   departamento_nacimiento: 'Valle del Cauca',
-  notaria_registro_matrimonio: 'Unica',
+  notaria_registro_matrimonio: 'Única',
   circulo_registro_matrimonio: 'El Cerrito',
   cedula_albacea: '0987654321',
   expedicion_albacea: 'Cali',
   revocacion_testamento_anterior: 'No existen testamentos anteriores que revocar.',
   numero_hojas: 'dos (2)',
   // Solicitud apertura testamento cerrado
-  nombre_abogado: 'Luis Fernando Gomez Torres',
+  nombre_abogado: 'Luis Fernando Gómez Torres',
   cedula_abogado: '0987654321',
   expedicion_abogado: 'Cali',
   domicilio_abogado: 'Cali',
   tarjeta_profesional_abogado: '123456-A',
-  nombres_representados: 'Diana Patricia Garcia Lopez y Carlos Martinez Garcia',
+  nombres_representados: 'Diana Patricia García López y Carlos Martínez García',
   domicilio_representados: 'El Cerrito',
-  calidad_representados: 'conyuge sobreviviente e hijo legitimo del testador',
-  nombre_causante: 'Jhon Brandon Martinez Velez',
+  calidad_representados: 'cónyuge sobreviviente e hijo legítimo del testador',
+  nombre_causante: 'Jhon Brandon Martínez Vélez',
   ciudad_fallecimiento: 'El Cerrito',
   fecha_fallecimiento: 'el 5 de enero de 2024',
   fecha_registro_defuncion: 'el 6 de enero de 2024',
   numero_escritura_testamento: '1245',
   fecha_escritura_testamento: '21 de abril de 2020',
-  direcciones_testigos: 'Testigo 1: Carlos Eduardo Perez Rios, Calle 4 Sur No. 2A-56, El Cerrito. Testigo 2: Maria Fernanda Garcia Lopez, Carrera 8 No. 12-34, El Cerrito. Testigo 3: Luis Fernando Gomez Torres, Calle 10 No. 5-20, Cali.',
+  direcciones_testigos: 'Testigo 1: Carlos Eduardo Pérez Ríos, Calle 4 Sur No. 2A-56, El Cerrito. Testigo 2: María Fernanda García López, Carrera 8 No. 12-34, El Cerrito. Testigo 3: Luis Fernando Gómez Torres, Calle 10 No. 5-20, Cali.',
   // Cesion derechos hereditarios
-  nombre_vendedor: 'Carlos Martinez Garcia',
+  nombre_vendedor: 'Carlos Martínez García',
   estado_civil_vendedor: 'soltero',
   cedula_vendedor: '1122334455',
   expedicion_vendedor: 'El Cerrito',
   domicilio_vendedor: 'El Cerrito',
-  nombre_comprador: 'Alexander Garcia Lopez',
+  nombre_comprador: 'Alexander García López',
   cedula_comprador: '5544332211',
   expedicion_comprador: 'Cali',
   fecha_fallecimiento_causante: 'el 5 de enero de 2024',
   ciudad_fallecimiento_causante: 'El Cerrito',
-  juzgado_o_notaria_sucesion: 'Notaria Unica del Circulo de El Cerrito',
-  condicion_vendedor_en_sucesion: 'hijo legitimo',
-  escritura_adquisicion_causante: 'escritura publica No. 890 de fecha 15 de mayo de 2010 otorgada en la Notaria Unica del Circulo de El Cerrito, registrada bajo el folio de matricula inmobiliaria No. 370-123456',
+  juzgado_o_notaria_sucesion: 'Notaría Única del Círculo de El Cerrito',
+  condicion_vendedor_en_sucesion: 'hijo legítimo',
+  escritura_adquisicion_causante: 'escritura pública No. 890 de fecha 15 de mayo de 2010 otorgada en la Notaría Única del Círculo de El Cerrito, registrada bajo el folio de matrícula inmobiliaria No. 370-123456',
   precio_letras: 'veinte millones de pesos',
   precio_numeros: '20.000.000',
   estado_civil_comprador: 'casado',
   domicilio_comprador: 'Cali',
   // Poder liquidacion sucesion
-  poderdantes: 'Diana Patricia Garcia Lopez, mayor de edad, cedula de ciudadania No. 0987654321 de Cali; y Carlos Martinez Garcia, mayor de edad, cedula de ciudadania No. 1122334455 de El Cerrito',
+  poderdantes: 'Diana Patricia García López, mayor de edad, cédula de ciudadanía No. 0987654321 de Cali; y Carlos Martínez García, mayor de edad, cédula de ciudadanía No. 1122334455 de El Cerrito',
   domicilio_poderdantes: 'El Cerrito',
-  calidad_poderdantes: 'conyuge superstite e hijo legitimo del causante',
-  nombre_apoderado: 'Luis Fernando Gomez Torres',
+  calidad_poderdantes: 'cónyuge supérstite e hijo legítimo del causante',
+  nombre_apoderado: 'Luis Fernando Gómez Torres',
   tarjeta_profesional_apoderado: '123456-A',
   cedula_apoderado: '0987654321',
   expedicion_apoderado: 'Cali',
   ultimo_domicilio_causante: 'El Cerrito',
   // Solicitud liquidacion sucesion
-  nombres_herederos: 'Diana Patricia Garcia Lopez y Carlos Martinez Garcia',
+  nombres_herederos: 'Diana Patricia García López y Carlos Martínez García',
   domicilio_herederos: 'El Cerrito',
-  calidad_herederos: 'conyuge superstite e hijo legitimo del causante',
+  calidad_herederos: 'cónyuge supérstite e hijo legítimo del causante',
   forma_aceptacion_herencia: 'con beneficio de inventario',
   // Inventarios y avaluos
-  activo_sucesion: 'Partida primera. Casa de habitacion ubicada en la Calle 4 Sur No. 2A-56, Barrio Villa del Carmen, El Cerrito, con todas sus anexidades y dependencias, comprendida dentro de los siguientes linderos: Norte: con la Calle 4 Sur en extension de diez (10) metros; Sur: con el predio de Roberto Salcedo Munoz en diez (10) metros; Oriente: con la Carrera 2A en doce (12) metros; Occidente: con el predio de Patricia Londono Vera en doce (12) metros. Identificado con cedula catastral No. 762480002000000020546 y matricula inmobiliaria No. 370-123456. Fue adquirida por el causante por compra a Carlos Eduardo Perez Rios segun escritura publica No. 890 de la Notaria Unica de El Cerrito, registrada el 20 de mayo de 2010. Avaluado en cien millones de pesos ($100.000.000). Partida segunda. Vehiculo automotor Chevrolet Spark, modelo 2020, placas ABC123, motor ABC123456, de servicio particular. Avaluado en treinta millones de pesos ($30.000.000).',
+  activo_sucesion: 'Partida primera. Casa de habitación ubicada en la Calle 4 Sur No. 2A-56, Barrio Villa del Carmen, El Cerrito, con todas sus anexidades y dependencias, comprendida dentro de los siguientes linderos: Norte: con la Calle 4 Sur en extensión de diez (10) metros; Sur: con el predio de Roberto Salcedo Muñoz en diez (10) metros; Oriente: con la Carrera 2A en doce (12) metros; Occidente: con el predio de Patricia Londoño Vera en doce (12) metros. Identificado con cédula catastral No. 762480002000000020546 y matrícula inmobiliaria No. 370-123456. Fue adquirida por el causante por compra a Carlos Eduardo Pérez Ríos según escritura pública No. 890 de la Notaría Única de El Cerrito, registrada el 20 de mayo de 2010. Avaluado en cien millones de pesos ($100.000.000). Partida segunda. Vehículo automotor Chevrolet Spark, modelo 2020, placas ABC123, motor ABC123456, de servicio particular. Avaluado en treinta millones de pesos ($30.000.000).',
   total_activo_letras: 'ciento treinta millones de pesos',
   total_activo_numeros: '130.000.000',
   pasivo_sucesion: 'No existe pasivo.',
   total_pasivo_letras: 'cero pesos',
   total_pasivo_numeros: '0',
   // Trabajo particion
-  nombre_conyuge_superstite: 'Diana Patricia Garcia Lopez',
+  nombre_conyuge_superstite: 'Diana Patricia García López',
   fecha_matrimonio_causante: 'el 15 de junio de 2000',
-  hijos_causante: 'Carlos Martinez Garcia, mayor de edad',
+  hijos_causante: 'Carlos Martínez García, mayor de edad',
   tipo_sucesion: 'intestada',
   gananciales_conyuge_letras: 'sesenta y cinco millones de pesos',
   gananciales_conyuge_numeros: '65.000.000',
-  hijuelas: 'Hijuela de Diana Patricia Garcia Lopez (conyuge superstite): Por su mitad de gananciales y su cuota hereditaria le corresponde la suma de ochenta y siete millones quinientos mil pesos ($87.500.000), que se le paga con la casa de habitacion ubicada en Calle 4 Sur No. 2A-56, El Cerrito, matricula 370-123456, adjudicada en cien millones de pesos ($100.000.000), menos la deduccion por valor de su hijuela. Hijuela de Carlos Martinez Garcia (hijo): Por su cuota hereditaria le corresponde la suma de cuarenta y dos millones quinientos mil pesos ($42.500.000), que se le paga con el vehiculo Chevrolet Spark placa ABC123 en treinta millones de pesos ($30.000.000) y el saldo en dinero.',
+  hijuelas: 'Hijuela de Diana Patricia García López (cónyuge supérstite): Por su mitad de gananciales y su cuota hereditaria le corresponde la suma de ochenta y siete millones quinientos mil pesos ($87.500.000), que se le paga con la casa de habitación ubicada en la Calle 4 Sur No. 2A-56, El Cerrito, matrícula 370-123456, adjudicada en cien millones de pesos ($100.000.000), menos la deducción por valor de su hijuela. Hijuela de Carlos Martínez García (hijo): Por su cuota hereditaria le corresponde la suma de cuarenta y dos millones quinientos mil pesos ($42.500.000), que se le paga con el vehículo Chevrolet Spark placa ABC123 en treinta millones de pesos ($30.000.000) y el saldo en dinero.',
 
+
+
+  // -- DERECHO COMERCIAL --
+  'pagare': {
+    numero_pagare: '001', ciudad_lugar: 'Cali', dia: '15', mes: 'abril', anio: '2026',
+    valor_numeros: '5.000.000', ciudad_pago: 'Cali', direccion_pago: 'Calle 10 # 5-20 Of. 301',
+    nombre_deudor1: 'Carlos Andrés López Martínez', cedula_deudor1: '1234567890', expedicion_deudor1: 'Cali',
+    nombre_deudor2: 'no aplica', cedula_deudor2: 'no aplica', expedicion_deudor2: 'no aplica',
+    nombre_acreedor: 'Banco de Occidente S.A.', valor_letras: 'cinco millones de pesos',
+    cuota_numeros: '500.000', fecha_primer_pago: '1 de mayo de 2026',
+    fecha_pagos_siguientes: 'el día 1 de cada mes siguiente hasta completar el pago total',
+    interes_corriente: '1.5', interes_mora: '2.5'
+  },
+  'carta-instrucciones-pagare': {
+    ciudad: 'Cali', dia: '15', mes: 'abril', anio: '2026',
+    nombre_suscriptor1: 'Carlos Andrés López Martínez', cedula_suscriptor1: '1234567890',
+    expedicion_suscriptor1: 'Cali', nombre_suscriptor2: 'no aplica', cedula_suscriptor2: 'no aplica',
+    nombre_autorizado: 'Banco de Occidente S.A.', cedula_autorizado: '890.123.456-7',
+    expedicion_autorizado: 'Bogotá', numero_pagare: '001',
+    nombre_acreedor: 'Banco de Occidente S.A.',
+    circunstancias_llenado: 'cuando el deudor incumpla el pago de una cuota de cualquier obligación a su cargo con el acreedor'
+  },
+  'compraventa-establecimiento-comercio': {
+    ciudad: 'Cali', dia: '15', mes: 'abril', anio: '2026',
+    nombre_vendedor: 'María Fernanda Rodríguez Pérez', cedula_vendedor: '31.234.567', expedicion_vendedor: 'Cali', domicilio_vendedor: 'Cali',
+    nombre_comprador: 'Juan Pablo Gómez Torres', cedula_comprador: '1.098.765.432', expedicion_comprador: 'Palmira', domicilio_comprador: 'Palmira',
+    nombre_establecimiento: 'Tienda El Buen Precio', matricula_mercantil: '987654',
+    direccion_establecimiento: 'Carrera 5 # 12-34 Local 2', barrio_establecimiento: 'San Fernando', ciudad_establecimiento: 'Cali',
+    precio_letras: 'veinte millones de pesos', precio_numeros: '20.000.000', ciudad_pago: 'Cali',
+    pago_inicial_letras: 'diez millones de pesos', saldo_letras: 'diez millones de pesos',
+    saldo_numeros: '10.000.000', fecha_pago_saldo: '1 de junio de 2026',
+    fecha_entrega: '20 de abril de 2026',
+    clausula_penal_letras: 'dos millones de pesos', clausula_penal_numeros: '2.000.000'
+  },
+  'arrendamiento-local-comercial': {
+    ciudad: 'Cali', dia: '15', mes: 'abril', anio: '2026',
+    nombre_arrendador: 'Luis Eduardo Vargas Castaño', cedula_arrendador: '16.543.210',
+    nombre_arrendatario: 'Inversiones El Valle S.A.S.', cedula_arrendatario: '900.123.456-7',
+    descripcion_local: 'local comercial de una planta de 60 metros cuadrados',
+    direccion_local: 'Carrera 15 # 8-30 Local 101', linderos_local: 'Norte con local 102, Sur con zona de circulación, Oriente con vía pública, Occidente con bodega',
+    canon_letras: 'dos millones de pesos', canon_numeros: '2.000.000',
+    dias_pago: '5', porcentaje_aumento: '8', duracion: 'doce (12) meses',
+    fecha_inicio: '1 de mayo de 2026', fecha_terminacion: '30 de abril de 2027',
+    servicios_incluidos: 'ninguno', servicios_por_arrendatario: 'agua, luz, gas, internet y telefonía',
+    destinacion_local: 'establecimiento de comercio dedicado a la venta de ropa y accesorios',
+    lugar_pago_canon: 'las oficinas del arrendador ubicadas en Carrera 10 # 5-20, Cali',
+    actividades_prohibidas: 'venta de licores, actividades nocturnas ruidosas, depósito de materiales inflamables',
+    clausula_penal_letras: 'dos millones de pesos', clausula_penal_numeros: '2.000.000',
+    impuestos_a_cargo: 'el arrendatario'
+  },
+  'subarriendo-local-comercial': {
+    ciudad: 'Cali', dia: '15', mes: 'abril', anio: '2026',
+    nombre_subarrendador: 'Inversiones El Valle S.A.S.', cedula_subarrendador: '900.123.456-7',
+    expedicion_subarrendador: 'Cali', domicilio_subarrendador: 'Cali',
+    nombre_subarrendatario: 'Pedro Antonio Morales Ríos', cedula_subarrendatario: '1.067.890.123',
+    expedicion_subarrendatario: 'Cali', domicilio_subarrendatario: 'Cali',
+    direccion_local: 'Carrera 15 # 8-30 Local 101', ciudad_local: 'Cali',
+    fecha_contrato_original: '1 de mayo de 2026', nombre_arrendador_original: 'Luis Eduardo Vargas Castaño',
+    descripcion_parte_subarrendada: 'el área delantera de 30 metros cuadrados del local',
+    linderos_local: 'Norte con local 102, Sur con zona de circulación, Oriente con vía pública, Occidente con bodega',
+    canon_letras: 'un millón de pesos', canon_numeros: '1.000.000', dias_pago: '5 primeros días',
+    destinacion_permitida: 'venta de calzado y accesorios',
+    actividades_prohibidas: 'venta de licores, depósito de materiales peligrosos',
+    servicios_incluidos: 'agua y luz a cargo del subarrendatario según facturación proporcional',
+    fecha_inicio: '1 de mayo de 2026', gastos_a_cargo: 'el subarrendatario'
+  },
+  'agencia-comercial': {
+    ciudad: 'Bogotá', dia: '15', mes: 'abril', anio: '2026',
+    nombre_agente: 'Sandra Patricia Ríos Montoya', cedula_agente: '43.234.567', expedicion_agente: 'Medellín',
+    nombre_empresa_agente: 'Distribuciones del Pacífico S.A.S.',
+    nombre_empresario: 'Rodrigo Alejandro Castro Herrera', cedula_empresario: '79.456.789', expedicion_empresario: 'Bogotá',
+    nombre_empresa_empresario: 'Laboratorios Naturales de Colombia S.A.',
+    objeto_agencia: 'productos farmacéuticos de línea natural y suplementos vitamínicos',
+    zona_agencia: 'departamentos del Valle del Cauca, Cauca y Nariño',
+    duracion: 'un (1) año', fecha_inicio: '1 de mayo de 2026',
+    dias_informe: '5', porcentaje_remuneracion: '12',
+    dias_entrega_final: '15 días hábiles', ciudad_arbitraje: 'Bogotá'
+  },
+  'concesion-comercial': {
+    ciudad: 'Bogotá', dia: '15', mes: 'abril', anio: '2026',
+    nombre_concedente: 'Alejandro Méndez Vargas', cedula_concedente: '80.234.567',
+    nombre_empresa_concedente: 'Honda de Colombia S.A.',
+    nombre_concesionario: 'Fabio Andrés Quintero Salcedo', cedula_concesionario: '1.032.456.789',
+    nombre_empresa_concesionario: 'Motos del Valle S.A.S.',
+    bienes_concesion: 'motocicletas Honda línea deportiva y de trabajo, repuestos y accesorios originales',
+    precio_venta_publico: 'según lista de precios del concedente vigente a la fecha de cada venta',
+    comision_ventas: '8', comision_repuestos: '15',
+    duracion_meses: '12', prorroga_meses: '12', aviso_terminacion_meses: '3',
+    lugar_entrega_bienes: 'bodega del concedente ubicada en la Zona Industrial de Bogotá',
+    clausula_penal_letras: 'cinco millones de pesos', clausula_penal_numeros: '5.000.000',
+    ciudad_arbitraje: 'Bogotá'
+  },
+  'contrato-suministro': {
+    ciudad: 'Cali', dia: '15', mes: 'abril', anio: '2026',
+    nombre_empresa_proveedor: 'Papelería y Suministros del Valle S.A.S.',
+    nombre_representante_proveedor: 'Gloria Inés Patiño Cardona', cedula_representante_proveedor: '31.567.890',
+    expedicion_representante_proveedor: 'Cali', domicilio_proveedor: 'Cali',
+    nombre_consumidor: 'Constructora Andina S.A.S.',
+    nombre_representante_consumidor: 'Héctor Fabio Torres Muñoz', cedula_representante_consumidor: '16.789.012',
+    domicilio_consumidor: 'Cali',
+    bienes_servicios: 'papelería, útiles de oficina y material de aseo',
+    descuento_porcentaje: '10', descuento_pronto_pago: '2',
+    cuantia_minima_pedido_letras: 'quinientos mil pesos', cuantia_minima_pedido_numeros: '500.000',
+    ciudad_arbitraje: 'Cali'
+  },
+  'constancia-contrato-suministro': {
+    ciudad: 'Cali', dia: '15', mes: 'abril', anio: '2026',
+    nombre_empresa_proveedor: 'Distribuidora Nacional de Productos S.A.S.',
+    nombre_representante_proveedor: 'Andrés Felipe Castaño Ospina', cedula_representante_proveedor: '1.049.234.567',
+    cargo_representante_proveedor: 'Gerente General',
+    nombre_consumidor: 'José Alberto Giraldo Restrepo', cedula_consumidor: '71.234.567',
+    domicilio_consumidor: 'Medellín',
+    tipo_relacion_comercial: 'compraventa al por mayor de productos de consumo masivo'
+  },
+  'contrato-franquicia': {
+    ciudad: 'Bogotá', dia: '15', mes: 'abril', anio: '2026',
+    nombre_franquiciante: 'Claudia Marcela Ospina Herrera', cedula_franquiciante: '52.345.678',
+    nombre_empresa_franquiciante: 'Colombiana de Franquicias Express S.A.S.',
+    nombre_franquiciado: 'Rafael Antonio Bermúdez López', cedula_franquiciado: '1.020.345.678',
+    nombre_empresa_franquiciado: 'Inversiones BL Valle S.A.S.',
+    nombre_marca: 'Pollo Feliz Express', numero_registro_marca: '543210',
+    objeto_franquicia: 'venta de comida rápida especializada en pollo frito y hamburguesas',
+    ciudad_punto_venta: 'Cali',
+    valor_derechos_entrada: 'treinta millones de pesos ($ 30.000.000)',
+    duracion: 'tres (3) años', fecha_inicio: '1 de mayo de 2026',
+    clausula_penal_letras: 'cinco millones de pesos', clausula_penal_numeros: '5.000.000',
+    ciudad_arbitraje: 'Bogotá'
+  },
+  'contrato-fabricacion': {
+    ciudad: 'Cali', dia: '15', mes: 'abril', anio: '2026',
+    nombre_ordenante: 'Almacenes Textileros del Norte S.A.S.', cedula_ordenante: '800.234.567',
+    expedicion_ordenante: 'Bogotá', domicilio_ordenante: 'Bogotá',
+    nombre_fabricante: 'Mario Augusto Tejada Cano', cedula_fabricante: '1.059.456.789',
+    expedicion_fabricante: 'Cali', domicilio_fabricante: 'Cali',
+    descripcion_productos: 'camisetas de algodón 100% ref. 001 con logo bordado, en tallas S, M, L y XL',
+    precios_productos: '$ 15.000 por unidad de la ref. 001 en todas las tallas',
+    dias_pago: '15', dias_entrega: '10',
+    direccion_entrega: 'Carrera 7 # 52-30 Bodega 2', ciudad_entrega: 'Bogotá',
+    dias_reclamo: '3', suministrador_materia_prima: 'el ordenante suministrará la tela y el fabricante los demás insumos',
+    duracion: 'un (1) año', dias_preaviso_terminacion: '30',
+    clausula_penal_letras: 'tres millones de pesos', clausula_penal_numeros: '3.000.000',
+    ciudad_arbitraje: 'Cali'
+  },
+  'outsourcing-sistemas': {
+    ciudad: 'Bogotá', dia: '15', mes: 'abril', anio: '2026',
+    nombre_contratante: 'Adriana Lucía Ramírez Forero', cedula_contratante: '52.678.901', expedicion_contratante: 'Bogotá',
+    nombre_empresa_contratante: 'Empresa Colombiana de Servicios S.A.S.',
+    nombre_administrador: 'Carlos Eduardo Nieto Parra', cedula_administrador: '79.890.123', expedicion_administrador: 'Bogotá',
+    nombre_empresa_administrador: 'TecnoSoluciones BPO S.A.S.',
+    plazo_contrato: 'doce (12) meses',
+    valor_contrato_letras: 'veinticuatro millones de pesos', valor_contrato_numeros: '24.000.000',
+    forma_pago: 'cuotas mensuales de dos millones de pesos pagaderas el último día de cada mes',
+    dias_vencimiento_pago: '15',
+    clausula_penal_letras: 'tres millones de pesos', clausula_penal_numeros: '3.000.000',
+    direccion_contratante: 'Carrera 7 # 71-21 Torre A Of. 502, Bogotá',
+    direccion_administrador: 'Calle 100 # 19-61 Of. 302, Bogotá'
+  },
+  'contrato-consignacion': {
+    ciudad: 'Cali', dia: '15', mes: 'abril', anio: '2026',
+    nombre_consignatario: 'Diana Carolina Salcedo Muñoz', cedula_consignatario: '31.890.234',
+    expedicion_consignatario: 'Cali', domicilio_consignatario: 'Cali',
+    nombre_consignante: 'Manufacturas Artesanales del Pacífico S.A.S.', cedula_consignante: '900.456.789',
+    expedicion_consignante: 'Buenaventura', domicilio_consignante: 'Buenaventura',
+    descripcion_mercancia: '50 bolsos artesanales de cuero ref. B-100 en colores café, negro y crema, en buen estado',
+    precio_total_letras: 'cinco millones de pesos', precio_total_numeros: '5.000.000',
+    precios_unitarios: 'bolsos ref. B-100 a $ 100.000 cada uno',
+    dias_pago: '5', periodicidad_pago: 'mes',
+    porcentaje_comision: '20', plazo_venta_letras: 'tres (3) meses', plazo_venta_numeros: '3 meses'
+  },
+  'cuentas-en-participacion': {
+    ciudad: 'Cali', dia: '15', mes: 'abril', anio: '2026',
+    nombre_gestor: 'Bernardo Augusto Lozano Valencia', cedula_gestor: '16.012.345',
+    expedicion_gestor: 'Cali', domicilio_gestor: 'Cali',
+    nombre_participe: 'Inversiones Privadas del Valle S.A.S.', cedula_participe: '900.567.890',
+    expedicion_participe: 'Cali', domicilio_participe: 'Cali',
+    objeto_asociacion: 'explotación de una panadería y pastelería artesanal',
+    ambito_territorial: 'la ciudad de Cali y sus municipios aledaños',
+    fondo_comun_letras: 'veinte millones de pesos', fondo_comun_numeros: '20.000.000',
+    proporcion_aportes: 'el gestor aporta el 60% ($ 12.000.000) y el partícipe el 40% ($ 8.000.000)',
+    duracion: 'dos (2) años',
+    distribucion_utilidades: 'el 60% para el gestor y el 40% para el partícipe',
+    gastos_gestor_letras: 'un millón de pesos mensual', gastos_gestor_numeros: '1.000.000',
+    meses_aviso_renuncia: '3'
+  },
+  'contrato-revisoria-fiscal': {
+    ciudad: 'Bogotá', dia: '15', mes: 'abril', anio: '2026',
+    nombre_representante_sociedad: 'Jorge Iván Pedraza Suárez', cedula_representante_sociedad: '79.123.456',
+    nombre_sociedad: 'Comercializadora Nacional de Productos S.A.',
+    nombre_representante_contratista: 'Luz Marina Vásquez Díaz', cedula_representante_contratista: '52.234.567',
+    nombre_empresa_contratista: 'Auditoría y Revisoría Fiscal Vásquez & Asociados S.A.S.',
+    domicilio_contratista: 'Bogotá',
+    articulos_estatutos: '45, 46 y 47',
+    duracion_contrato: 'un (1) año',
+    dia_inicio_honorarios: '1', mes_inicio_honorarios: 'enero', anio_inicio_honorarios: '2026',
+    dia_fin_honorarios: '31', mes_fin_honorarios: 'diciembre', anio_fin_honorarios: '2026',
+    honorarios_letras: 'veinticuatro millones de pesos', honorarios_numeros: '24.000.000',
+    forma_pago_honorarios: 'cuotas mensuales de dos millones de pesos pagaderas el último día hábil de cada mes',
+    num_ejemplares: 'dos (2)'
+  },
+  'contrato-corretaje': {
+    ciudad: 'Cali', dia: '15', mes: 'abril', anio: '2026',
+    nombre_proponente: 'Esperanza del Carmen Holguín Ríos', cedula_proponente: '34.567.890',
+    expedicion_proponente: 'Cali', domicilio_proponente: 'Cali',
+    nombre_corredor: 'Nicolás Alejandro Bejarano Castro', cedula_corredor: '1.006.789.012',
+    expedicion_corredor: 'Palmira', domicilio_corredor: 'Cali',
+    descripcion_bien: 'vehículo Toyota Hilux 4x4 modelo 2022, color blanco, placa ABC-123',
+    calidades_bien: 'vehículo en excelente estado mecánico y estético, con 45.000 km recorridos, sin accidentes reportados, con todos los documentos al día',
+    porcentaje_remuneracion: '3', dias_aviso_proponente: '15', dias_aviso_corredor: '10',
+    ciudad_arbitraje: 'Cali'
+  },
+  'corretaje-inmuebles': {
+    ciudad: 'Cali', dia: '15', mes: 'abril', anio: '2026',
+    nombre_proponente: 'Alejandro José Cifuentes Mora', cedula_proponente: '16.345.678',
+    representante_corredor: 'Patricia Lorena Ángel Ruiz',
+    nombre_empresa_corredor: 'Inmobiliaria Valle del Cauca S.A.S.', cedula_corredor: '31.456.789',
+    direccion_inmueble: 'Calle 15 Norte # 8-30 Apto 402', ciudad_inmueble: 'Cali',
+    numero_matricula: '370-123456', area_lote: '65 m2 construidos',
+    linderos_inmueble: 'Norte con apto 403, Sur con zona de circulación, Oriente con fachada, Occidente con caja de escaleras',
+    tiempo_construccion: '8 años', observaciones_inmueble: 'apartamento sin deudas de administración, con cocina integral y pisos en porcelanato',
+    porcentaje_comision: '3', interes_mora: '2',
+    valor_terminacion_anticipada_letras: 'quinientos mil pesos', valor_terminacion_anticipada_numeros: '500.000',
+    dias_aviso_corredor: '15', dias_aviso_proponente: '15', ciudad_arbitraje: 'Cali'
+  },
+  'consultoria-extranjeros': {
+    ciudad: 'Bogotá', dia: '15', mes: 'abril', anio: '2026',
+    nombre_contratante: 'Grupo Empresarial Andes S.A.S.',
+    presidente_contratante: 'Ricardo Emilio Montoya Acosta',
+    nombre_consultor: 'Global Consulting Partners LLC',
+    pais_consultor: 'Estados Unidos de América',
+    representante_consultor: 'John Anderson Williams',
+    objeto_consultoria: 'transformación digital e implementación de sistemas ERP en la organización',
+    objetivos_consultoria: 'i) diagnóstico del estado actual de los procesos, ii) diseño del plan de transformación, iii) acompañamiento en la implementación del sistema ERP',
+    valor_total_letras: 'ochenta mil dólares americanos', valor_total_numeros: 'USD 80.000',
+    porcentaje_anticipo: '30', valor_anticipo_letras: 'veinticuatro mil dólares americanos', valor_anticipo_numeros: 'USD 24.000',
+    dias_entrega_anticipo: '10', duracion_meses: '8',
+    meses_suspension_maxima: '3', dias_aviso_terminacion: '30', meses_minimos_para_terminar: '3',
+    ciudad_arbitraje: 'Bogotá',
+    direccion_contratante: 'Carrera 7 # 71-21 Torre B Piso 12, Bogotá, Colombia',
+    ciudad_pais_consultor: '350 Fifth Avenue, New York, NY 10118, USA'
+  },
+  'poder-derechos-autor': {
+    ciudad: 'Bogotá', dia: '15', mes: 'abril', anio: '2026',
+    nombre_poderdante: 'Francisco Javier Morales Duque', cedula_poderdante: '80.567.890', expedicion_poderdante: 'Bogotá',
+    cargo_poderdante: 'Representante Legal',
+    nombre_sociedad: 'Editorial Académica Colombiana S.A.S.',
+    nombre_apoderado: 'Catalina María Reyes Acosta', cedula_apoderado: '52.678.901', expedicion_apoderado: 'Bogotá'
+  },
+  'contrato-edicion': {
+    ciudad: 'Bogotá', dia: '15', mes: 'abril', anio: '2026',
+    nombre_editor: 'Francisco Javier Morales Duque', cedula_editor: '80.567.890',
+    nombre_empresa_editorial: 'Editorial Académica Colombiana S.A.S.',
+    nombre_autor: 'Hernando José Arbeláez Cárdenas', cedula_autor: '71.890.123',
+    expedicion_autor: 'Bogotá', domicilio_autor: 'Bogotá',
+    descripcion_obra: 'tres partes: historia precolombina, historia colonial e historia republicana de Colombia',
+    titulo_obra: 'Historia Ilustrada de Colombia',
+    fecha_entrega_originales: '30 de junio de 2026',
+    porcentaje_regalias: '15', ciudad_pago_regalias: 'Bogotá',
+    direccion_pago_regalias: 'Carrera 13 # 85-60 Oficina 201',
+    meses_poner_en_venta: '6', ejemplares_gratuitos_autor: '50',
+    numero_ejemplares_edicion: '2.000', ciudad_arbitraje: 'Bogotá'
+  },
+  'cesion-derechos-patrimoniales-autor': {
+    ciudad: 'Bogotá', dia: '15', mes: 'abril', anio: '2026',
+    nombre_cesionario: 'Francisco Javier Morales Duque', cedula_cesionario: '80.567.890',
+    expedicion_cesionario: 'Bogotá', nombre_empresa_cesionario: 'Editorial Académica Colombiana S.A.S.',
+    nombre_autor_cedente: 'Hernando José Arbeláez Cárdenas', cedula_autor_cedente: '71.890.123',
+    expedicion_autor_cedente: 'Bogotá',
+    titulo_obra: 'Historia Ilustrada de Colombia',
+    caracteristicas_obra: 'libro de 350 páginas con ilustraciones a color, formato 21x28 cm',
+    anio_creacion_obra: '2025'
+  },
+  'contrato-traduccion': {
+    ciudad: 'Bogotá', dia: '15', mes: 'abril', anio: '2026',
+    nombre_editor: 'Francisco Javier Morales Duque', cedula_editor: '80.567.890',
+    nombre_empresa_editorial: 'Editorial Académica Colombiana S.A.S.',
+    nombre_traductor: 'Valeria Alejandra Suárez Bernal', cedula_traductor: '53.012.345',
+    expedicion_traductor: 'Bogotá', nacionalidad_traductor: 'colombiana', domicilio_traductor: 'Bogotá',
+    nombre_autor_original: 'James William Parker',
+    titulo_obra_original: 'Modern History of Latin America',
+    idioma_original: 'inglés', numero_paginas_original: '420',
+    numero_paginas_espanol: '440 aproximadamente',
+    editor_original: 'Oxford University Press', anio_edicion_original: '2023',
+    valor_adicional_pagina: '30.000', plazos_entrega_traduccion: '90 días hábiles después de recibir el original completo',
+    precio_traduccion_letras: 'ocho millones de pesos', precio_traduccion_numeros: '8.000.000',
+    ejemplares_gratuitos_traductor: '5'
+  },
 
 }
 
@@ -2640,6 +3237,140 @@ const PASOS_SIGUIENTE = {
       { num: 7, titulo: 'Notificar a la administración del edificio', descripcion: 'Una vez registrada la escritura, el nuevo propietario debe notificar a la administración del edificio el cambio de propietario, presentar copia de la escritura y actualizar sus datos de contacto para el cobro de cuotas de administración.' },
     ]
   },
+
+  // -- DERECHO COMERCIAL --
+  'pagare': [
+    'Imprima el pagaré en papel tamaño carta.',
+    'Firme el documento junto con todos los deudores en presencia de un notario para autenticar las firmas.',
+    'Conserve el original en lugar seguro. El tenedor lo necesitará para cualquier cobro judicial.',
+    'Si hay espacios en blanco, adjunte la carta de instrucciones debidamente firmada.',
+  ],
+  'carta-instrucciones-pagare': [
+    'La carta debe firmarse junto con el pagaré, por las mismas personas.',
+    'Identifique el pagaré claramente con su número en la carta.',
+    'Conserve la carta adjunta al pagaré en todo momento.',
+    'El llenado incorrecto de espacios en blanco puede constituir delito; respete las instrucciones.',
+  ],
+  'compraventa-establecimiento-comercio': [
+    'Solicite a un contador el balance general y relación del pasivo del establecimiento antes de firmar.',
+    'Registre la enajenación en la Cámara de Comercio mediante el formulario correspondiente.',
+    'Publique avisos de la venta en un diario de amplia circulación para notificar a los acreedores.',
+    'Verifique que el establecimiento esté al día en impuestos de industria y comercio.',
+  ],
+  'arrendamiento-local-comercial': [
+    'Elabore un inventario detallado del local y sus elementos al momento de la entrega.',
+    'Autentique las firmas ante notario para mayor seguridad probatoria.',
+    'Registre el contrato ante la Cámara de Comercio si supera 2 años.',
+    'Si el arrendatario ocupa más de 2 años el local, tendrá derecho a renovación por ley.',
+  ],
+  'subarriendo-local-comercial': [
+    'Verifique que el contrato original de arrendamiento permita el subarriendo.',
+    'Recuerde que solo puede subarrendar hasta la mitad del local según el Código de Comercio.',
+    'Elabore un inventario de la parte que se subarrienda.',
+    'Autentique las firmas ante notario para mayor seguridad probatoria.',
+  ],
+  'agencia-comercial': [
+    'Inscriba el contrato en la Cámara de Comercio del lugar de ejecución.',
+    'Al terminar el contrato, el agente tendrá derecho a una prestación especial del art. 1324 del C. Co.',
+    'Pague el impuesto de timbre correspondiente al registrar el contrato.',
+    'Conserve copia de todos los informes mensuales del agente.',
+  ],
+  'concesion-comercial': [
+    'Establezca claramente las políticas de precios y no permita variaciones sin autorización.',
+    'El contrato es atípico; en caso de conflicto el juez interpretará según los principios generales.',
+    'Lleve un registro detallado de los bienes entregados en concesión.',
+    'Al terminar, el concesionario debe devolver los bienes no vendidos.',
+  ],
+  'contrato-suministro': [
+    'Conserve todas las facturas firmadas por el consumidor como soporte de cada entrega.',
+    'Revise periódicamente el cupo de crédito del consumidor.',
+    'La cláusula de representación es clave para evitar que el consumidor actúe como agente.',
+    'Registre el contrato si supera determinados montos para efectos tributarios.',
+  ],
+  'constancia-contrato-suministro': [
+    'Autentique las firmas ante notario para mayor valor probatorio.',
+    'Conserve este documento junto con el contrato de suministro.',
+    'Este documento protege al proveedor de demandas de agencia comercial del consumidor.',
+    'Renueve la constancia periódicamente si la relación comercial continúa.',
+  ],
+  'contrato-franquicia': [
+    'Registre el contrato ante la Cámara de Comercio.',
+    'El Know How debe estar claramente documentado en un manual operativo separado.',
+    'Establezca un manual de estándares de calidad para el franquiciado.',
+    'Verifique que la marca esté debidamente registrada antes de firmar.',
+  ],
+  'contrato-fabricacion': [
+    'Anexe las especificaciones técnicas de los productos como parte integral del contrato.',
+    'Establezca controles de calidad en cada entrega.',
+    'Conserve todas las órdenes de producción y facturas correspondientes.',
+    'Si el fabricante usa materia prima del ordenante, controle el inventario de desperdicios.',
+  ],
+  'outsourcing-sistemas': [
+    'Defina claramente el alcance del servicio y los niveles de servicio (SLA) en un anexo técnico.',
+    'Establezca indicadores de desempeño mensuales.',
+    'El administrador no crea vínculo laboral con el contratante; conserve la independencia.',
+    'Autentique las firmas ante notario para mayor seguridad probatoria.',
+  ],
+  'contrato-consignacion': [
+    'Elabore un inventario fotográfico de la mercancía entregada.',
+    'Las mercancías en consignación no pueden ser embargadas por acreedores del consignatario.',
+    'Rinda cuentas periódicamente y conserve los soportes de cada venta.',
+    'Si la mercancía no se vende en el plazo, el consignatario debe devolverla en buen estado.',
+  ],
+  'cuentas-en-participacion': [
+    'No inscriba el contrato en el registro mercantil para mantener oculta la identidad del partícipe.',
+    'Lleve contabilidad separada de las operaciones de la asociación.',
+    'El partícipe oculto no debe revelarse ante terceros so pena de responsabilidad solidaria.',
+    'Autentique el documento privado ante notario para mayor seguridad.',
+  ],
+  'contrato-revisoria-fiscal': [
+    'La designación del revisor fiscal debe hacerse por la asamblea o junta de socios.',
+    'Inscríbalo en el Registro Mercantil para que surta efectos frente a terceros.',
+    'El revisor debe ser contador público con matrícula vigente.',
+    'Conserve los informes trimestrales del revisor como soporte de gestión.',
+  ],
+  'contrato-corretaje': [
+    'El corredor tiene derecho a su comisión desde que se perfeccione el negocio por su intermediación.',
+    'Conserve comprobantes de todos los gastos en que incurrió el corredor.',
+    'No realice gestiones directas de venta mientras el contrato esté vigente.',
+    'Si hay varios corredores, la comisión se distribuye en partes iguales.',
+  ],
+  'corretaje-inmuebles': [
+    'Entregue al corredor el certificado de tradición y libertad actualizado del inmueble.',
+    'Adjunte avalúo catastral y escrituras de los últimos 5 años.',
+    'La comisión se causa al firmar la promesa de compraventa, no al escriturar.',
+    'Si el contrato es exclusivo y el inmueble se vende por otro medio, igual debe pagar comisión.',
+  ],
+  'consultoria-extranjeros': [
+    'Verifique que el consultor cuente con poder notariado para firmar el contrato.',
+    'Las pólizas de seguro deben ser expedidas por aseguradora autorizada en Colombia.',
+    'Registre el contrato ante el Banco de la República por ser un contrato de cambios.',
+    'Retenga en la fuente sobre los pagos realizados al consultor extranjero según las normas tributarias.',
+  ],
+  'poder-derechos-autor': [
+    'Presente el poder junto con el certificado de existencia y representación de la empresa.',
+    'El poder puede ser sustituido o revocado en cualquier momento por el poderdante.',
+    'Conserve copia del poder con sello de radicación de la Dirección Nacional del Derecho de Autor.',
+    'El apoderado debe presentar el original del poder al momento de adelantar cualquier trámite.',
+  ],
+  'contrato-edicion': [
+    'Registre el contrato ante la Dirección Nacional del Derecho de Autor.',
+    'El autor conserva los derechos morales sobre la obra en todo caso.',
+    'Si el editor no pone en venta la obra en el plazo acordado, el autor puede dar por terminado el contrato.',
+    'Las regalías deben pagarse máximo cada 6 meses por disposición legal.',
+  ],
+  'cesion-derechos-patrimoniales-autor': [
+    'Registre la cesión ante la Dirección Nacional del Derecho de Autor.',
+    'Los derechos morales son irrenunciables y no se ceden nunca, solo los patrimoniales.',
+    'Conserve copia de la obra cedida y sus características como soporte del contrato.',
+    'El cesionario puede explotar la obra comercialmente en todo el territorio nacional.',
+  ],
+  'contrato-traduccion': [
+    'Registre el contrato ante la Dirección Nacional del Derecho de Autor.',
+    'El traductor tiene derechos de autor sobre su traducción como obra derivada independiente.',
+    'Los derechos morales del traductor son irrenunciables; siempre debe citarse su nombre.',
+    'Verifique que el editor tenga los derechos de traducción de la obra original antes de firmar.',
+  ],
 }
 
 function TooltipField({ field, onChange, value, error }) {
@@ -2716,8 +3447,7 @@ function TooltipField({ field, onChange, value, error }) {
         document.body
       )}
     </div>
-  )
-}
+  )}
 
 function PanelPasos({ minutaId, onClose }) {
   const pasos = PASOS_SIGUIENTE[minutaId]
@@ -2764,6 +3494,7 @@ function PanelPasos({ minutaId, onClose }) {
       </div>
     </div>
   )
+
 }
 
 function App() {
@@ -2776,8 +3507,6 @@ function App() {
   const [loading, setLoading] = useState(false)
   const [loadingWord, setLoadingWord] = useState(false)
   const [showPasos, setShowPasos] = useState(false)
-  const [modoEdicion, setModoEdicion] = useState(false)
-  const editorRef = useRef(null)
   const [historial, setHistorial] = useState([])
   const [showHistorial, setShowHistorial] = useState(false)
   const [busqueda, setBusqueda] = useState('')
@@ -2810,8 +3539,13 @@ function App() {
   const handleLlenarPrueba = () => {
     if (!minutaDetail) return
     const datosFiltrados = {}
+    const datosPorMinuta = DATOS_PRUEBA[minutaDetail.id]
     minutaDetail.fields.forEach(field => {
-      if (DATOS_PRUEBA[field.name] !== undefined) datosFiltrados[field.name] = String(DATOS_PRUEBA[field.name])
+      if (datosPorMinuta && datosPorMinuta[field.name] !== undefined) {
+        datosFiltrados[field.name] = String(datosPorMinuta[field.name])
+      } else if (DATOS_PRUEBA[field.name] !== undefined) {
+        datosFiltrados[field.name] = String(DATOS_PRUEBA[field.name])
+      }
     })
     setFormData(datosFiltrados)
     setErrores({})
@@ -2842,28 +3576,14 @@ function App() {
     setHistorial(prev => [{ id: Date.now(), titulo: minutaDetail.title, hora: new Date().toLocaleTimeString('es-CO', { hour: '2-digit', minute: '2-digit' }), html: data.html }, ...prev.slice(0, 9)])
   }
 
-  const handlePrint = () => {
-    if (modoEdicion && editorRef.current) {
-      const ventana = window.open('', '_blank')
-      ventana.document.write(editorRef.current.innerHTML)
-      ventana.document.close()
-      ventana.print()
-    } else {
-      document.getElementById('preview-iframe').contentWindow.print()
-    }
-  }
+  const handlePrint = () => { document.getElementById('preview-iframe').contentWindow.print() }
 
   const handleDownloadWord = async () => {
     setLoadingWord(true)
     try {
       const res = await fetch('http://localhost:3001/api/generate/word', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          template: minutaDetail.template,
-          title: minutaDetail.title,
-          data: formData,
-          htmlEditado: modoEdicion && editorRef.current ? editorRef.current.innerHTML : null
-        })
+        body: JSON.stringify({ template: minutaDetail.template, title: minutaDetail.title, data: formData })
       })
       const blob = await res.blob()
       const url = URL.createObjectURL(blob)
@@ -3025,9 +3745,9 @@ function App() {
 
           {minutaDetail && (
             <div style={{ padding: '28px 36px' }}>
-              <div className="card-3d" style={{ borderLeft: '5px solid #b8962e !important', borderRadius: '8px', padding: '18px 24px', marginBottom: '24px' }}>
-                <div style={{ color: '#b8962e', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '6px' }}>Documento Legal</div>
-                <h1 style={{ color: '#1a3a5c', fontSize: '20px', fontWeight: 'bold', margin: 0, textShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>{minutaDetail.title}</h1>
+              <div className="card-3d" style={{ borderLeft: '5px solid #b8962e !important', borderRadius: '8px', padding: '18px 24px', marginBottom: '24px', textAlign: 'center' }}>
+                <div style={{ color: '#b8962e', fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '6px', textAlign: 'center' }}>{minutaDetail.subtitle || 'Documento Legal'}</div>
+                <h1 style={{ color: '#1a3a5c', fontSize: '20px', fontWeight: 'bold', margin: 0, textShadow: '0 1px 2px rgba(0,0,0,0.08)', textAlign: 'center' }}>{minutaDetail.title}</h1>
                 <div style={{ color: '#7a9ab5', fontSize: '12px', marginTop: '6px' }}>
                   {minutaDetail.fields.length} campos requeridos · Pasa el mouse sobre <span style={{ background: 'linear-gradient(135deg, #c9a030, #b8962e)', color: '#fff', borderRadius: '50%', padding: '0 4px', fontSize: '10px', fontWeight: 'bold', boxShadow: '0 1px 3px rgba(0,0,0,0.3)' }}>?</span> para instrucciones
                 </div>
@@ -3106,183 +3826,13 @@ function App() {
               </div>
 
               {previewHTML && (
-                <div className="preview-3d" style={{ background: '#fff', borderRadius: '8px', overflow: 'hidden', border: '1px solid #c8d8e8' }}>
+                <div className="preview-3d" style={{ background: '#fff', borderRadius: '8px', overflow: 'hidden', border: '1px solid #c8d8e8', width: '100%', boxSizing: 'border-box', position: 'relative' }}>
                   {/* Barra superior azul */}
-                  <div style={{ padding: '12px 20px', borderBottom: '2px solid #e2b94a', background: 'linear-gradient(135deg, #1a3a5c, #0d2240)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.2) inset' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#e2b94a', boxShadow: '0 0 6px #e2b94a' }}></div>
-                      <span style={{ color: '#a0bcd8', fontSize: '12px', letterSpacing: '1px' }}>
-                        {modoEdicion ? '✏️ MODO EDICIÓN — Edita el documento libremente' : 'VISTA PREVIA DEL DOCUMENTO'}
-                      </span>
-                    </div>
-                    <button
-                      onClick={() => setModoEdicion(!modoEdicion)}
-                      style={{
-                        padding: '5px 14px',
-                        background: modoEdicion ? 'linear-gradient(135deg, #e2b94a, #c9a030)' : 'rgba(255,255,255,0.1)',
-                        border: `1px solid ${modoEdicion ? '#e2b94a' : '#ffffff44'}`,
-                        borderRadius: '5px', cursor: 'pointer',
-                        color: modoEdicion ? '#1a3a5c' : '#e2b94a',
-                        fontSize: '12px', fontWeight: 'bold',
-                        boxShadow: modoEdicion ? '0 2px 0 #8a6418' : '0 2px 0 rgba(0,0,0,0.3)'
-                      }}>
-                      {modoEdicion ? '✅ Salir de edición' : '✏️ Editar documento'}
-                    </button>
+                  <div style={{ padding: '12px 20px', borderBottom: '2px solid #e2b94a', background: 'linear-gradient(135deg, #1a3a5c, #0d2240)', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.2) inset' }}>
+                    <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#e2b94a', boxShadow: '0 0 6px #e2b94a' }}></div>
+                    <span style={{ color: '#a0bcd8', fontSize: '12px', letterSpacing: '1px' }}>VISTA PREVIA DEL DOCUMENTO</span>
                   </div>
-
-                  {/* Barra de herramientas tipo Word — solo visible en modo edicion */}
-                  {modoEdicion && (
-                    <div style={{
-                      display: 'flex', flexWrap: 'wrap', gap: '4px', padding: '8px 12px',
-                      background: '#f0f4f8', borderBottom: '2px solid #c8d8e8',
-                      alignItems: 'center'
-                    }}>
-                      {/* Fuente */}
-                      <select onChange={e => document.execCommand('fontName', false, e.target.value)}
-                        style={{ height: '28px', borderRadius: '4px', border: '1px solid #c8d8e8', fontSize: '12px', padding: '0 4px', cursor: 'pointer' }}>
-                        <option value="Times New Roman">Times New Roman</option>
-                        <option value="Arial">Arial</option>
-                        <option value="Georgia">Georgia</option>
-                        <option value="Calibri">Calibri</option>
-                        <option value="Courier New">Courier New</option>
-                      </select>
-
-                      {/* Tamaño */}
-                      <select onChange={e => document.execCommand('fontSize', false, e.target.value)}
-                        style={{ height: '28px', borderRadius: '4px', border: '1px solid #c8d8e8', fontSize: '12px', padding: '0 4px', cursor: 'pointer', width: '60px' }}>
-                        <option value="1">8</option>
-                        <option value="2">10</option>
-                        <option value="3" selected>12</option>
-                        <option value="4">14</option>
-                        <option value="5">18</option>
-                        <option value="6">24</option>
-                        <option value="7">36</option>
-                      </select>
-
-                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
-
-                      {/* Negrita */}
-                      {[
-                        { cmd: 'bold', icon: 'B', title: 'Negrita', style: { fontWeight: 'bold' } },
-                        { cmd: 'italic', icon: 'I', title: 'Cursiva', style: { fontStyle: 'italic' } },
-                        { cmd: 'underline', icon: 'U', title: 'Subrayado', style: { textDecoration: 'underline' } },
-                        { cmd: 'strikeThrough', icon: 'S̶', title: 'Tachado', style: { textDecoration: 'line-through' } },
-                      ].map(({ cmd, icon, title, style }) => (
-                        <button key={cmd} title={title}
-                          onMouseDown={e => { e.preventDefault(); document.execCommand(cmd, false, null) }}
-                          style={{ width: '28px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '13px', ...style, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                          {icon}
-                        </button>
-                      ))}
-
-                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
-
-                      {/* Alineacion */}
-                      {[
-                        { cmd: 'justifyLeft', icon: '≡', title: 'Alinear izquierda' },
-                        { cmd: 'justifyCenter', icon: '☰', title: 'Centrar' },
-                        { cmd: 'justifyRight', icon: '≡', title: 'Alinear derecha' },
-                        { cmd: 'justifyFull', icon: '▤', title: 'Justificar' },
-                      ].map(({ cmd, icon, title }) => (
-                        <button key={cmd} title={title}
-                          onMouseDown={e => { e.preventDefault(); document.execCommand(cmd, false, null) }}
-                          style={{ width: '28px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                          {icon}
-                        </button>
-                      ))}
-
-                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
-
-                      {/* Listas */}
-                      {[
-                        { cmd: 'insertUnorderedList', icon: '• —', title: 'Lista con viñetas' },
-                        { cmd: 'insertOrderedList', icon: '1. —', title: 'Lista numerada' },
-                      ].map(({ cmd, icon, title }) => (
-                        <button key={cmd} title={title}
-                          onMouseDown={e => { e.preventDefault(); document.execCommand(cmd, false, null) }}
-                          style={{ padding: '0 8px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '11px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                          {icon}
-                        </button>
-                      ))}
-
-                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
-
-                      {/* Sangria */}
-                      {[
-                        { cmd: 'indent', icon: '→|', title: 'Aumentar sangría' },
-                        { cmd: 'outdent', icon: '|←', title: 'Disminuir sangría' },
-                      ].map(({ cmd, icon, title }) => (
-                        <button key={cmd} title={title}
-                          onMouseDown={e => { e.preventDefault(); document.execCommand(cmd, false, null) }}
-                          style={{ padding: '0 8px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '11px' }}>
-                          {icon}
-                        </button>
-                      ))}
-
-                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
-
-                      {/* Color de texto */}
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                        <span style={{ fontSize: '11px', color: '#4a6a8a' }}>Color:</span>
-                        <input type="color" defaultValue="#000000" title="Color del texto"
-                          onChange={e => document.execCommand('foreColor', false, e.target.value)}
-                          style={{ width: '28px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', cursor: 'pointer', padding: '1px' }} />
-                      </div>
-
-                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
-
-                      {/* Deshacer / Rehacer */}
-                      {[
-                        { cmd: 'undo', icon: '↩', title: 'Deshacer' },
-                        { cmd: 'redo', icon: '↪', title: 'Rehacer' },
-                      ].map(({ cmd, icon, title }) => (
-                        <button key={cmd} title={title}
-                          onMouseDown={e => { e.preventDefault(); document.execCommand(cmd, false, null) }}
-                          style={{ width: '28px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                          {icon}
-                        </button>
-                      ))}
-
-                      <div style={{ width: '1px', height: '24px', background: '#c8d8e8', margin: '0 4px' }} />
-
-                      {/* Insertar linea horizontal */}
-                      <button title="Insertar línea horizontal"
-                        onMouseDown={e => { e.preventDefault(); document.execCommand('insertHorizontalRule', false, null) }}
-                        style={{ padding: '0 8px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '11px' }}>
-                        --- Línea
-                      </button>
-
-                      {/* Borrar formato */}
-                      <button title="Borrar formato"
-                        onMouseDown={e => { e.preventDefault(); document.execCommand('removeFormat', false, null) }}
-                        style={{ padding: '0 8px', height: '28px', border: '1px solid #c8d8e8', borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '11px', color: '#c0392b' }}>
-                        ✕ Formato
-                      </button>
-                    </div>
-                  )}
-
-                  {/* Contenido editable o iframe */}
-                  {modoEdicion ? (
-                    <div
-                      ref={editorRef}
-                      contentEditable={true}
-                      suppressContentEditableWarning={true}
-                      spellCheck={true}
-                      lang="es"
-                      dangerouslySetInnerHTML={{ __html: previewHTML }}
-                      style={{
-                        width: '100%', minHeight: '850px',
-                        padding: '60px 80px',
-                        fontFamily: 'Times New Roman, serif',
-                        fontSize: '12pt', lineHeight: '1.8',
-                        color: '#000', outline: 'none',
-                        boxSizing: 'border-box',
-                        background: '#fff'
-                      }}
-                    />
-                  ) : (
-                    <iframe id="preview-iframe" srcDoc={previewHTML} style={{ width: '100%', height: '850px', border: 'none' }} title="Vista previa del documento" />
-                  )}
+                  <iframe id="preview-iframe" srcDoc={previewHTML} style={{ width: '100%', height: '850px', border: 'none' }} title="Vista previa del documento" />
                 </div>
               )}
             </div>
