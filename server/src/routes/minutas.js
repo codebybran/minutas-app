@@ -10,7 +10,7 @@ const SUBTITLE_ORDER_CIVIL = [
 ]
 const SUBTITLE_ORDER_FAMILIA = ['Matrimonio','Sociedad Conyugal y Patrimonial','Estado Civil','Sucesiones']
 const SUBTITLE_ORDER_COMERCIAL = ['Títulos Valores','Contratos Mercantiles','Propiedad Intelectual']
-const SUBTITLE_ORDER_SOCIEDADES = ['Empresa Unipersonal y Sociedades Básicas','Sociedad Anónima']
+const SUBTITLE_ORDER_SOCIEDADES = ['Empresa Unipersonal y Sociedades Básicas','Sociedad Anónima','Sociedad Limitada (Ltda.)','Sociedad en Comandita']
 
 const TIPO_TRAMITE = {
   1:'Notarial',2:'Notarial',3:'Notarial',4:'Notarial',5:'Privado',6:'Privado',7:'Privado',
@@ -61,6 +61,16 @@ const TIPO_TRAMITE = {
   'constitucion-sociedad-colectiva':'Notarial','poder-constituir-sociedad-anonima':'Privado',
   'poder-representar-asamblea':'Privado','poder-representar-accionista-permanente':'Privado',
   'constitucion-sociedad-anonima':'Notarial','estatutos-sociedad-anonima-compleja':'Notarial',
+  'constitucion-sociedad-limitada':'Notarial',
+  'acta-junta-socios-ordinaria':'Privado',
+  'acta-junta-socios-cesion-cuotas':'Privado',
+  'extracto-asamblea-reforma-estatutos':'Privado',
+  'extracto-asamblea-reforma-estatutos':'Privado',
+  'autorizacion-reforma-estatutaria-supersociedades':'Privado',
+  'escritura-reforma-cesion-cuotas-ltda':'Notarial',
+  'certificacion-legalidad-cesion-cuotas':'Privado',
+  'estatutos-sociedad-comandita-simple':'Notarial',
+  'estatutos-sociedad-comandita-acciones':'Notarial',
   'acta-asamblea-general':'Privado','dictamen-revisor-fiscal-sin-salvedades-sa':'Privado',
   'dictamen-revisor-fiscal-sin-salvedades-sucursal':'Privado',
   'dictamen-revisor-fiscal-abstencion':'Privado','reglamento-emision-acciones':'Privado',
@@ -101,21 +111,21 @@ router.get('/', (req, res) => {
         }))
       },
       {
-        id: 'derecho-familia', name: 'Minutas Derecho de Familia',
+        id: 'derecho-familia', name: 'Derecho de Familia',
         minutas: ordenarMinutas(minutasFamilia, SUBTITLE_ORDER_FAMILIA).map(m => ({
           id: m.id, title: m.title, subtitle: m.subtitle,
           tipo_tramite: TIPO_TRAMITE[m.id] || 'Notarial'
         }))
       },
       {
-        id: 'derecho-comercial', name: 'Minutas Derecho Comercial',
+        id: 'derecho-comercial', name: 'Derecho Comercial',
         minutas: ordenarMinutas(minutasComercial, SUBTITLE_ORDER_COMERCIAL).map(m => ({
           id: m.id, title: m.title, subtitle: m.subtitle,
           tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
         }))
       },
       {
-        id: 'derecho-sociedades', name: 'Minutas Derecho de Sociedades',
+        id: 'derecho-sociedades', name: 'Derecho de Sociedades',
         minutas: ordenarMinutas(minutasSociedades, SUBTITLE_ORDER_SOCIEDADES).map(m => ({
           id: m.id, title: m.title, subtitle: m.subtitle,
           tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'

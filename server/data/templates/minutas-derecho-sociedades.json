@@ -2320,5 +2320,1397 @@
       }
     ],
     "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} de {{anio}}, ante mí {{nombre_notario}}, Notario {{numero_notaria}} del Círculo de {{circulo_notarial}}, comparecieron {{comparecientes}}, todos mayores de edad, {{estado_civil_comparecientes}}, domiciliados en {{domicilio_comparecientes}}, quienes manifestaron que por medio del presente instrumento público han decidido constituir una sociedad anónima compleja la cual se regirá por lo siguiente:\n\nPRIMERO. Ánimo de asociarse.— Los comparecientes han acordado asociarse entre sí para establecer una empresa destinada a la explotación de {{objeto_social_principal}} mediante la constitución de una sociedad por acciones, y declaran constituida una sociedad comercial de la especie anónima compleja con la denominación social de {{nombre_sociedad}} S.A.\n\nESTATUTOS\n\nCAPÍTULO I - Nombre, domicilio, objeto y duración\n\nARTÍCULO 1º.— La sociedad se denominará \"{{nombre_sociedad}} S.A.\", Sociedad Anónima Comercial, de nacionalidad colombiana.\n\nARTÍCULO 2º.— El domicilio de la sociedad será la ciudad de {{domicilio_sociedad}}, pero podrá crear sucursales, agencias o dependencias en otros lugares del país o del exterior, por disposición de la asamblea general de accionistas y con arreglo a la ley.\n\nARTÍCULO 3º.— La sociedad tendrá como objeto principal las siguientes actividades: {{objeto_social_principal}}. En desarrollo del mismo podrá la sociedad ejecutar todos los actos o contratos que fueren convenientes o necesarios para el cabal cumplimiento de su objeto social, tales como: {{objeto_social_secundario}}.\n\nARTÍCULO 4º.— La sociedad durará por el término de {{duracion_anios}} años que empezarán a contarse desde la fecha de esta escritura.\n\nCAPÍTULO II - Capital social, aportes y reservas\n\nARTÍCULO 5º.— El capital social autorizado es de {{capital_autorizado_letras}} ($ {{capital_autorizado_numeros}}).\n\nARTÍCULO 6º.— El capital de la sociedad se encuentra dividido en {{numero_acciones}} acciones de valor nominal de $ {{valor_nominal_accion}} cada una.\n\nARTÍCULO 7º.— Los accionistas tendrán derecho a suscribir preferencialmente en toda nueva emisión de acciones una cantidad proporcional a las que posean en la fecha en que el órgano social competente apruebe el reglamento de suscripción.\n\nARTÍCULO 8º.— La sociedad formará una reserva legal con el diez por ciento (10%) de las utilidades líquidas de cada ejercicio, hasta completar el cincuenta por ciento (50%) del capital suscrito.\n\nARTÍCULO 9º.— Salvo determinación en contrario aprobada por el setenta por ciento (70%) de las acciones representadas en la asamblea, la sociedad repartirá no menos del cincuenta por ciento (50%) de las utilidades líquidas obtenidas en cada ejercicio.\n\nCAPÍTULO III - Revisor fiscal\n\nARTÍCULO 10.— El revisor fiscal deberá ser contador público. Será nombrado por la asamblea general de accionistas, podrá ser reelegido indefinidamente y tendrá un suplente.\n\nCAPÍTULO IV - Elecciones y votaciones\n\nARTÍCULO 11.— En las elecciones y votaciones de la asamblea se observarán las siguientes reglas: a) Todas las votaciones serán secretas; b) El nombramiento del revisor fiscal y su suplente se hará por mayoría absoluta; c) Para la elección de miembros de la junta directiva se aplicará el sistema del cuociente electoral; d) Se requiere el voto de no menos de las tres cuartas partes de las acciones suscritas para decretar la disolución extraordinaria, fusión, traspaso o enajenación de la totalidad de la empresa; e) Para reformas de estatutos se requiere el voto favorable del setenta por ciento (70%) de las acciones representadas en la reunión.\n\nCAPÍTULO V - Asamblea general, junta directiva y gerente\n\nARTÍCULO 12.— Las reuniones ordinarias de la asamblea se celebrarán dentro de los tres primeros meses siguientes al vencimiento del ejercicio social. La convocatoria se hará con quince (15) días hábiles de anticipación.\n\nARTÍCULO 13.— La junta directiva se compone de {{numero_miembros_junta}} miembros principales con suplente personal cada uno. El período de duración será de {{periodo_junta_anios}} año(s).\n\nARTÍCULO 14.— La sociedad tendrá un gerente elegido por la junta directiva para períodos de {{periodo_gerente_anios}} año(s). El gerente requerirá autorización previa de la junta para celebrar contratos que excedan de {{cuantia_autorizacion_junta_letras}} ($ {{cuantia_autorizacion_junta_numeros}}).\n\nCAPÍTULO VI - Balance, dividendos\n\nARTÍCULO 15.— La sociedad tendrá ejercicios anuales que se cerrarán el treinta y uno (31) de diciembre de cada año. Dentro de los treinta (30) días hábiles siguientes a la reunión de la asamblea el representante legal remitirá a la Superintendencia de Sociedades copia del balance y del acta de la reunión.\n\nCAPÍTULO VII - Disolución y liquidación\n\nARTÍCULO 16.— La sociedad se disolverá por las causales previstas en la ley, entre ellas: por vencimiento del término; por pérdidas que reduzcan el patrimonio neto por debajo del cincuenta por ciento (50%) del capital suscrito; cuando el noventa y cinco por ciento (95%) o más de las acciones llegue a pertenecer a un solo accionista.\n\nCAPÍTULO VIII - Diferencias\n\nARTÍCULO 17.— Toda diferencia o controversia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres (3) árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nSEGUNDO. Suscripción y pago del capital.— {{suscripcion_acciones_detalle}}\n\nCapital suscrito: {{capital_suscrito_letras}} ($ {{capital_suscrito_numeros}})\nCapital pagado: {{capital_pagado_letras}} ($ {{capital_pagado_numeros}})\n\nTERCERO. Nombramientos iniciales:\n\nJunta Directiva:\n1. Principal: {{junta_directiva_principal1}} — Suplente: {{junta_directiva_suplente1}}\n2. Principal: {{junta_directiva_principal2}} — Suplente: {{junta_directiva_suplente2}}\n3. Principal: {{junta_directiva_principal3}} — Suplente: {{junta_directiva_suplente3}}\n\nGerente: {{nombre_gerente}}\nRevisor Fiscal: {{nombre_revisor_fiscal}}\nSuplente Revisor Fiscal: {{nombre_suplente_revisor}}\n\nLas personas designadas son mayores de edad, vecinas de {{ciudad_accionistas}} y aceptan los cargos asignados.\n\nFirmas: _______________________\nFirma del Notario: _______________________"
+  },
+  {
+    "id": "constitucion-sociedad-limitada",
+    "title": "Constitución de Sociedad Limitada",
+    "subtitle": "Sociedad Limitada (Ltda.)",
+    "tipo_tramite": "Notarial",
+    "nota_proceso": null,
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se otorga la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde está la notaría. Ej: Cali, El Cerrito, Bogotá."
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true,
+        "help": "Departamento de la notaría. Ej: Valle del Cauca, Cundinamarca."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: abril."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2026."
+      },
+      {
+        "name": "nombre_notario",
+        "label": "Nombre del Notario",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del notario que autoriza la escritura."
+      },
+      {
+        "name": "numero_notaria",
+        "label": "Número de la Notaría",
+        "type": "text",
+        "required": true,
+        "help": "Ej: Primera, Segunda, Única."
+      },
+      {
+        "name": "circulo_notarial",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del círculo notarial."
+      },
+      {
+        "name": "socios",
+        "label": "Nombre, cédula y ciudad de todos los socios",
+        "type": "text",
+        "required": true,
+        "help": "Liste todos los socios. Ej: Carlos López C.C. 12345 de Cali; María García C.C. 67890 de Bogotá. Máximo 25 socios."
+      },
+      {
+        "name": "domicilio_socios",
+        "label": "Ciudad de domicilio de los socios",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde viven los socios."
+      },
+      {
+        "name": "estado_civil_socios",
+        "label": "Estado civil de los socios",
+        "type": "text",
+        "required": true,
+        "help": "Ej: todos solteros; con sociedad conyugal vigente."
+      },
+      {
+        "name": "razon_social",
+        "label": "Razón social o denominación (sin Limitada)",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de la empresa SIN incluir Limitada o Ltda. El sistema lo agrega. Ej: Comercializadora del Valle."
+      },
+      {
+        "name": "domicilio_sociedad",
+        "label": "Ciudad domicilio de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad principal donde funcionará la empresa."
+      },
+      {
+        "name": "objeto_social",
+        "label": "Objeto social principal",
+        "type": "text",
+        "required": true,
+        "help": "Actividades principales de la empresa. Ej: compra, venta y distribución de alimentos al por mayor y al detal."
+      },
+      {
+        "name": "capital_total_letras",
+        "label": "Capital total en letras",
+        "type": "text",
+        "required": true,
+        "help": "Capital total de la empresa en palabras. Ej: veinte millones de pesos."
+      },
+      {
+        "name": "capital_total_numeros",
+        "label": "Capital total en números",
+        "type": "text",
+        "required": true,
+        "help": "Capital en cifras. Ej: 20.000.000. Debe estar pagado en su totalidad al constituir la Ltda."
+      },
+      {
+        "name": "numero_cuotas",
+        "label": "Número total de cuotas",
+        "type": "text",
+        "required": true,
+        "help": "En cuántas cuotas se divide el capital. Ej: 200."
+      },
+      {
+        "name": "valor_cuota",
+        "label": "Valor de cada cuota",
+        "type": "text",
+        "required": true,
+        "help": "Valor de cada cuota. Ej: si el capital es $20M y hay 200 cuotas, cada cuota vale $100.000."
+      },
+      {
+        "name": "distribucion_cuotas",
+        "label": "Distribución de cuotas entre socios",
+        "type": "text",
+        "required": true,
+        "help": "Cuántas cuotas le corresponden a cada socio. Ej: Carlos López: 100 cuotas por $10.000.000; María García: 100 cuotas por $10.000.000."
+      },
+      {
+        "name": "periodo_gerente_anios",
+        "label": "Período del gerente en años",
+        "type": "text",
+        "required": true,
+        "help": "Años del período del gerente. Ej: 2."
+      },
+      {
+        "name": "cuantia_autorizacion_letras",
+        "label": "Cuantía máxima del gerente sin autorización (letras)",
+        "type": "text",
+        "required": true,
+        "help": "Para actos mayores a este valor el gerente necesita autorización de la junta. Ej: diez millones de pesos."
+      },
+      {
+        "name": "cuantia_autorizacion_numeros",
+        "label": "Cuantía máxima en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 10.000.000."
+      },
+      {
+        "name": "duracion_anios",
+        "label": "Duración de la sociedad en años",
+        "type": "text",
+        "required": true,
+        "help": "Años de duración de la empresa. Ej: 25."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad del tribunal de arbitramento",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se resolverán los conflictos entre socios. Ej: Cali, Bogotá."
+      },
+      {
+        "name": "nombre_gerente",
+        "label": "Nombre del gerente designado",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del primer gerente de la sociedad."
+      },
+      {
+        "name": "cedula_gerente",
+        "label": "Cédula del gerente",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del gerente."
+      },
+      {
+        "name": "expedicion_gerente",
+        "label": "Ciudad expedición cédula del gerente",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del gerente."
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} de {{anio}}, ante mí {{nombre_notario}}, Notario {{numero_notaria}} del Círculo de {{circulo_notarial}}, comparecieron {{socios}}, todos mayores de edad, {{estado_civil_socios}}, domiciliados en {{domicilio_socios}}, quienes manifestaron que por medio del presente instrumento público han decidido constituir una sociedad de responsabilidad limitada, la cual se regirá por los siguientes:\n\nESTATUTOS\n\nCAPÍTULO I — La Sociedad en General\n\nARTÍCULO 1°.— Son socios de la compañía comercial que por esta escritura se constituye, los señores mencionados en el encabezamiento del presente instrumento.\n\nARTÍCULO 2°.— La sociedad será de responsabilidad limitada y girará bajo la razón social de {{razon_social}} \"Limitada\".\n\nARTÍCULO 3°.— El domicilio de la sociedad será la ciudad de {{domicilio_sociedad}}, pero podrá crear sucursales, agencias o dependencias en otros lugares del país o del exterior, por disposición de la junta general de socios y con arreglo a la ley.\n\nARTÍCULO 4°.— La sociedad tendrá como objeto principal las siguientes actividades: {{objeto_social}}. En desarrollo del mismo podrá ejecutar todos los actos o contratos que fueren convenientes o necesarios para el cabal cumplimiento de su objeto social.\n\nARTÍCULO 5°.— La sociedad tendrá un capital de {{capital_total_letras}} ($ {{capital_total_numeros}}), representado en {{numero_cuotas}} cuotas de igual valor de $ {{valor_cuota}} cada una. Este capital ha sido suscrito y pagado en su integridad así: {{distribucion_cuotas}}.\n\nARTÍCULO 6°.— La responsabilidad de los socios queda limitada al valor de sus aportes.\n\nARTÍCULO 7°.— La sociedad llevará un libro de registro de socios, registrado en la Cámara de Comercio, en el que se anotarán el nombre, domicilio, documento de identificación y número de cuotas que cada uno posea, así como los embargos, gravámenes y cesiones que se hubieren efectuado.\n\nARTÍCULO 8°.— Los socios tendrán derecho a ceder sus cuotas, lo que implicará una reforma estatutaria y se hará por escritura pública, previa aprobación de la junta de socios. La escritura será otorgada por el representante legal de la compañía, el cedente y el cesionario.\n\nARTÍCULO 9°.— El socio que pretenda ceder sus cuotas las ofrecerá a los demás socios por conducto del representante legal de la compañía, quien les dará traslado inmediatamente y por escrito a fin de que dentro de los quince días hábiles siguientes manifiesten si tienen interés en adquirirlas.\n\nCAPÍTULO II — Dirección y Administración\n\nARTÍCULO 10.— La dirección y administración de la sociedad estarán a cargo de: a) La junta general de socios, y b) El gerente.\n\nARTÍCULO 11.— La junta general de socios se reunirá ordinariamente dentro de los tres primeros meses siguientes al vencimiento del ejercicio social, por convocatoria del gerente hecha mediante comunicación escrita dirigida a cada socio con quince días hábiles de anticipación.\n\nARTÍCULO 12.— Habrá quórum para deliberar con socios que representen más del cincuenta por ciento (50%) de las cuotas en que se encuentra dividido el capital social. Las reformas estatutarias se adoptarán con el voto favorable de socios que representen el setenta por ciento (70%) de las cuotas.\n\nARTÍCULO 13.— Son funciones de la junta general de socios: a) Estudiar y aprobar las reformas de estatutos; b) Examinar y aprobar los balances de fin de ejercicio; c) Disponer de las utilidades sociales; d) Elegir y remover al gerente y fijar su remuneración; e) Resolver sobre la cesión de cuotas y admisión de nuevos socios; f) Las demás que le asignen las leyes y estos estatutos.\n\nCAPÍTULO III — Gerente\n\nARTÍCULO 14.— La sociedad tendrá un gerente de libre nombramiento y remoción de la junta general de socios, el cual tendrá un suplente que lo reemplazará en sus faltas absolutas, temporales o accidentales. El gerente tendrá un período de {{periodo_gerente_anios}} años, sin perjuicio de que pueda ser reelegido indefinidamente o removido en cualquier tiempo.\n\nARTÍCULO 15.— El gerente es el representante legal de la sociedad, con facultades para ejecutar todos los actos y contratos acordes con la naturaleza de su encargo y que se relacionen directamente con el giro ordinario de los negocios sociales.\n\nPARÁGRAFO.— El gerente requerirá autorización previa de la junta general de socios para la ejecución de todo acto o contrato que exceda de {{cuantia_autorizacion_letras}} ($ {{cuantia_autorizacion_numeros}}).\n\nCAPÍTULO IV — Balance, Reserva Legal y Utilidades\n\nARTÍCULO 16.— Anualmente, el 31 de diciembre, se cortarán las cuentas y se hará el balance general de fin de ejercicio, que junto con el estado de pérdidas y ganancias y un proyecto de distribución de utilidades, se presentará a la junta general de socios.\n\nARTÍCULO 17.— La sociedad formará una reserva legal con el diez por ciento (10%) de las utilidades líquidas de cada ejercicio, hasta completar el cincuenta por ciento (50%) del capital social.\n\nCAPÍTULO V — Disolución y Liquidación\n\nARTÍCULO 18.— La sociedad durará por el término de {{duracion_anios}} años, contados desde la fecha de esta escritura.\n\nARTÍCULO 19.— La sociedad se disolverá por: a) Vencimiento del término de duración si antes no fuere prorrogado; b) Imposibilidad de desarrollar el objeto social; c) Aumento del número de socios a más de veinticinco; d) Decisión de la junta general de socios; e) Pérdidas que reduzcan el capital por debajo del cincuenta por ciento (50%); f) Las demás causales señaladas en la ley.\n\nCAPÍTULO VI — Disposiciones Finales\n\nARTÍCULO 20.— Toda diferencia o controversia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres (3) árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nNOMBRAMIENTOS INICIALES\n\nGerente: {{nombre_gerente}}, identificado con cédula de ciudadanía No. {{cedula_gerente}} de {{expedicion_gerente}}, quien acepta el cargo.\n\nFirmas de los socios: _______________________\nFirma del Notario: _______________________"
+  },
+  {
+    "id": "acta-junta-socios-ordinaria",
+    "title": "Acta de Junta General de Socios",
+    "subtitle": "Sociedad Limitada (Ltda.)",
+    "tipo_tramite": "Privado",
+    "nota_proceso": null,
+    "fields": [
+      {
+        "name": "numero_acta",
+        "label": "Número del acta",
+        "type": "text",
+        "required": true,
+        "help": "Número consecutivo del acta. Ej: 005. Las actas deben numerarse en orden cronológico."
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre completo de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Nombre con Ltda. Ej: Comercializadora del Valle Limitada."
+      },
+      {
+        "name": "tipo_reunion",
+        "label": "Tipo de reunión",
+        "type": "text",
+        "required": true,
+        "help": "Escriba: ordinaria o extraordinaria."
+      },
+      {
+        "name": "ciudad",
+        "label": "Ciudad de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se realiza la reunión."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: marzo."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Año. Ej: 2026."
+      },
+      {
+        "name": "hora_inicio",
+        "label": "Hora de inicio",
+        "type": "text",
+        "required": true,
+        "help": "Hora de inicio. Ej: 10:00 a.m."
+      },
+      {
+        "name": "sede_social",
+        "label": "Dirección de la sede social",
+        "type": "text",
+        "required": true,
+        "help": "Dirección exacta donde se realiza la reunión. Ej: Calle 10 # 5-20 Of. 301, Cali."
+      },
+      {
+        "name": "listado_socios",
+        "label": "Lista de socios asistentes con cuotas",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de cada socio, si asiste personalmente o representado, y número de cuotas. Ej: Carlos López (personal): 100 cuotas; María García (representada por Juan Torres): 100 cuotas."
+      },
+      {
+        "name": "total_cuotas_representadas",
+        "label": "Total cuotas representadas",
+        "type": "text",
+        "required": true,
+        "help": "Suma total de cuotas presentes en la reunión. Ej: 200."
+      },
+      {
+        "name": "total_cuotas_sociedad",
+        "label": "Total cuotas de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Total de cuotas en que se divide el capital social. Ej: 200."
+      },
+      {
+        "name": "fecha_convocatoria",
+        "label": "Fecha de la convocatoria",
+        "type": "text",
+        "required": true,
+        "help": "Fecha en que se envió la convocatoria. Ej: 28 de febrero de 2026."
+      },
+      {
+        "name": "nombre_presidente_junta",
+        "label": "Nombre del presidente elegido",
+        "type": "text",
+        "required": true,
+        "help": "Socio elegido para presidir la reunión."
+      },
+      {
+        "name": "nombre_secretario_junta",
+        "label": "Nombre del secretario elegido",
+        "type": "text",
+        "required": true,
+        "help": "Socio elegido como secretario de la reunión."
+      },
+      {
+        "name": "nombre_gerente",
+        "label": "Nombre del gerente que presenta informe",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del gerente que presenta el informe de gestión."
+      },
+      {
+        "name": "resumen_informe_gerente",
+        "label": "Resumen del informe del gerente",
+        "type": "text",
+        "required": true,
+        "help": "Resuma el informe del gerente: ventas, situación financiera, logros del período."
+      },
+      {
+        "name": "anio_balance",
+        "label": "Año del balance presentado",
+        "type": "text",
+        "required": true,
+        "help": "Año del ejercicio contable. Ej: 2025."
+      },
+      {
+        "name": "resultado_balance",
+        "label": "Resultado de la votación del balance",
+        "type": "text",
+        "required": true,
+        "help": "Ej: aprobado por unanimidad / aprobado con 2 votos a favor y 1 en contra."
+      },
+      {
+        "name": "distribucion_utilidades",
+        "label": "Decisión sobre distribución de utilidades",
+        "type": "text",
+        "required": true,
+        "help": "Cómo se distribuirán las utilidades. Ej: se aprueba distribuir el 50% entre los socios y el 50% como reserva voluntaria."
+      },
+      {
+        "name": "nombramientos",
+        "label": "Nombramientos realizados",
+        "type": "text",
+        "required": true,
+        "help": "Gerente, revisor fiscal u otros nombramientos. Si no hay escriba: no se realizaron nombramientos."
+      },
+      {
+        "name": "hora_cierre",
+        "label": "Hora de cierre",
+        "type": "text",
+        "required": true,
+        "help": "Hora en que se levantó la sesión. Ej: 12:00 m."
+      }
+    ],
+    "template": "ACTA No. {{numero_acta}}\n\nRef.: Reunión {{tipo_reunion}} de la Junta General de Socios de {{nombre_sociedad}}, celebrada el {{dia}} de {{mes}} de {{anio}}.\n\nEn la ciudad de {{ciudad}}, siendo las {{hora_inicio}} del día {{dia}} de {{mes}} de {{anio}}, se reunieron en la sede social ubicada en {{sede_social}}, los socios de la mencionada compañía:\n\n{{listado_socios}}\n\nTotal cuotas representadas: {{total_cuotas_representadas}} de {{total_cuotas_sociedad}} que conforman el capital de la compañía.\n\nLa convocatoria fue enviada por escrito el {{fecha_convocatoria}}, dirigida a la dirección registrada por cada socio.\n\nORDEN DEL DÍA\n1. Verificación del quórum.\n2. Elección del presidente y secretario de la reunión.\n3. Informe del gerente.\n4. Consideración del balance y estados financieros a 31 de diciembre de {{anio_balance}}.\n5. Distribución de utilidades.\n6. Nombramientos.\n7. Proposiciones y varios.\n8. Lectura y aprobación del acta.\n\n1. VERIFICACIÓN DEL QUÓRUM.— El gerente informó que se encontraban representadas {{total_cuotas_representadas}} cuotas de un total de {{total_cuotas_sociedad}}, encontrándose conformado el quórum para deliberar y decidir.\n\n2. ELECCIÓN DE PRESIDENTE Y SECRETARIO.— Por unanimidad fueron elegidos {{nombre_presidente_junta}} como presidente y {{nombre_secretario_junta}} como secretario de la reunión.\n\n3. INFORME DEL GERENTE.— El señor {{nombre_gerente}} presentó el siguiente informe:\n{{resumen_informe_gerente}}\n\nEl informe fue recibido de conformidad por los socios asistentes.\n\n4. CONSIDERACIÓN DEL BALANCE.— Se presentó a consideración de la junta el balance general y el estado de pérdidas y ganancias con corte al 31 de diciembre de {{anio_balance}}. Sometido a votación, el balance fue {{resultado_balance}}.\n\n5. DISTRIBUCIÓN DE UTILIDADES.— La junta aprobó la siguiente distribución de utilidades: {{distribucion_utilidades}}.\n\n6. NOMBRAMIENTOS.— {{nombramientos}}\n\n7. PROPOSICIONES Y VARIOS.— Los socios no presentaron proposiciones adicionales.\n\n8. LECTURA Y APROBACIÓN DEL ACTA.— El secretario dio lectura a la presente acta, la cual fue aprobada por unanimidad.\n\nNo existiendo otro tema que tratar y agotado el orden del día, el presidente levantó la sesión a las {{hora_cierre}} del día {{dia}} de {{mes}} de {{anio}}.\n\nPresidente: _______________________\n{{nombre_presidente_junta}}\n\nSecretario: _______________________\n{{nombre_secretario_junta}}"
+  },
+  {
+    "id": "acta-junta-socios-cesion-cuotas",
+    "title": "Acta de Junta de Socios — Aprobación de Cesión de Cuotas",
+    "subtitle": "Sociedad Limitada (Ltda.)",
+    "tipo_tramite": "Privado",
+    "nota_proceso": "📋 PROCESO COMPLETO PARA CEDER CUOTAS EN UNA LTDA.\n\nEste documento es el PASO 1 de 3 para formalizar la cesión de cuotas. El proceso completo es:\n\n🔵 PASO 1 — Este documento: Acta de Junta de Socios que aprueba la cesión.\n🔵 PASO 2 — Si la sociedad está vigilada por la Superintendencia de Sociedades: Carta de Autorización de Reforma Estatutaria (use esa minuta).\n🔵 PASO 3 — Escritura de Reforma por Cesión de Cuotas ante Notario (use esa minuta).\n🔵 PASO 4 — Certificación de Legalidad del Proceso ante la Cámara de Comercio (use esa minuta).\n\n⚠️ Sin completar todos los pasos la cesión no produce efectos legales frente a terceros.",
+    "fields": [
+      {
+        "name": "numero_acta",
+        "label": "Número del acta",
+        "type": "text",
+        "required": true,
+        "help": "Número consecutivo del acta. Ej: 006."
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre completo de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Nombre con Ltda. Ej: Comercializadora del Valle Limitada."
+      },
+      {
+        "name": "ciudad",
+        "label": "Ciudad de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se realiza la reunión."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: abril."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Año. Ej: 2026."
+      },
+      {
+        "name": "hora_inicio",
+        "label": "Hora de inicio",
+        "type": "text",
+        "required": true,
+        "help": "Hora de inicio. Ej: 3:00 p.m."
+      },
+      {
+        "name": "listado_socios",
+        "label": "Lista de socios asistentes con cuotas",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de cada socio y número de cuotas. Ej: Carlos López: 100 cuotas; María García: 100 cuotas."
+      },
+      {
+        "name": "total_cuotas_representadas",
+        "label": "Total cuotas representadas",
+        "type": "text",
+        "required": true,
+        "help": "Suma total de cuotas presentes."
+      },
+      {
+        "name": "total_cuotas_sociedad",
+        "label": "Total cuotas de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Total cuotas del capital social."
+      },
+      {
+        "name": "nombre_socio_cedente",
+        "label": "Nombre del socio que vende sus cuotas",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del socio que quiere ceder (vender) sus cuotas."
+      },
+      {
+        "name": "numero_cuotas_cedidas",
+        "label": "Número de cuotas que se ceden",
+        "type": "text",
+        "required": true,
+        "help": "Cuántas cuotas cede el socio. Ej: 100."
+      },
+      {
+        "name": "nombre_cesionario",
+        "label": "Nombre de quien recibe las cuotas",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo de quien compra o recibe las cuotas. Puede ser otro socio o un tercero."
+      },
+      {
+        "name": "cedula_cesionario",
+        "label": "Cédula del cesionario",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula de quien recibe las cuotas."
+      },
+      {
+        "name": "fecha_oferta_socios",
+        "label": "Fecha en que se ofreció a los socios",
+        "type": "text",
+        "required": true,
+        "help": "Fecha en que el representante legal comunicó la oferta a los demás socios. Ej: 1 de marzo de 2026."
+      },
+      {
+        "name": "resultado_oferta",
+        "label": "Resultado de la oferta a socios",
+        "type": "text",
+        "required": true,
+        "help": "Qué pasó con la oferta. Ej: ningún socio manifestó interés en adquirir las cuotas / los socios renunciaron expresamente al derecho de preferencia."
+      },
+      {
+        "name": "nuevo_articulo_capital",
+        "label": "Nueva redacción del artículo de capital",
+        "type": "text",
+        "required": true,
+        "help": "Cómo quedará el capital después de la cesión. Ej: El capital de $20.000.000 representado en 200 cuotas queda así: Carlos López: 50 cuotas; María García: 100 cuotas; Pedro Torres (cesionario): 50 cuotas."
+      },
+      {
+        "name": "nombre_presidente_junta",
+        "label": "Nombre del presidente elegido",
+        "type": "text",
+        "required": true,
+        "help": "Socio elegido para presidir la reunión."
+      },
+      {
+        "name": "nombre_secretario_junta",
+        "label": "Nombre del secretario elegido",
+        "type": "text",
+        "required": true,
+        "help": "Socio elegido como secretario."
+      },
+      {
+        "name": "nombre_gerente",
+        "label": "Nombre del gerente/representante legal",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del gerente encargado de elevar la reforma a escritura pública."
+      },
+      {
+        "name": "hora_cierre",
+        "label": "Hora de cierre",
+        "type": "text",
+        "required": true,
+        "help": "Hora en que se levantó la sesión. Ej: 4:30 p.m."
+      }
+    ],
+    "template": "ACTA No. {{numero_acta}}\n\nRef.: Reunión extraordinaria de la Junta General de Socios de {{nombre_sociedad}}, celebrada el {{dia}} de {{mes}} de {{anio}}.\n\nEn la ciudad de {{ciudad}}, siendo las {{hora_inicio}} del día {{dia}} de {{mes}} de {{anio}}, se reunieron los socios de la mencionada compañía:\n\n{{listado_socios}}\n\nTotal cuotas representadas: {{total_cuotas_representadas}} de {{total_cuotas_sociedad}}.\n\nORDEN DEL DÍA\n1. Verificación del quórum.\n2. Elección del presidente y secretario de la reunión.\n3. Reforma estatutaria — Cesión de cuotas.\n4. Encargo al gerente.\n5. Lectura y aprobación del acta.\n\n1. VERIFICACIÓN DEL QUÓRUM.— Se verificó que se encontraban representadas {{total_cuotas_representadas}} cuotas de un total de {{total_cuotas_sociedad}}, encontrándose conformado el quórum para deliberar y decidir.\n\n2. ELECCIÓN DE PRESIDENTE Y SECRETARIO.— Por unanimidad fueron elegidos {{nombre_presidente_junta}} como presidente y {{nombre_secretario_junta}} como secretario.\n\n3. REFORMA ESTATUTARIA — CESIÓN DE CUOTAS.— El representante legal informó:\n\na) Que el socio {{nombre_socio_cedente}} manifestó su intención de ceder {{numero_cuotas_cedidas}} cuotas de interés social de su propiedad al señor {{nombre_cesionario}}, identificado con cédula de ciudadanía No. {{cedula_cesionario}}.\n\nb) Que el {{fecha_oferta_socios}} se comunicó la oferta a los demás socios conforme al artículo 363 del Código de Comercio.\n\nc) Que el resultado de dicha oferta fue: {{resultado_oferta}}.\n\nd) Que en consecuencia, procede aprobar la cesión de cuotas y reformar el artículo de capital social para que en lo sucesivo quede así: {{nuevo_articulo_capital}}.\n\nSometida a consideración, la reforma fue aprobada por unanimidad, comisionándose al gerente {{nombre_gerente}} para otorgar la escritura pública correspondiente.\n\n4. ENCARGO AL GERENTE.— Se encargó al gerente {{nombre_gerente}} adelantar todos los trámites para elevar a escritura pública la reforma estatutaria aprobada e inscribirla en el Registro Mercantil.\n\n5. LECTURA Y APROBACIÓN DEL ACTA.— El secretario dio lectura a la presente acta, la cual fue aprobada por unanimidad.\n\nAgotado el orden del día, el presidente levantó la sesión a las {{hora_cierre}}.\n\nPresidente: _______________________\n{{nombre_presidente_junta}}\n\nSecretario: _______________________\n{{nombre_secretario_junta}}"
+  },
+  {
+    "id": "extracto-asamblea-reforma-estatutos",
+    "title": "Extracto de Asamblea para Reforma de Estatutos",
+    "subtitle": "Sociedad Limitada (Ltda.)",
+    "tipo_tramite": "Privado",
+    "nota_proceso": "📋 CUÁNDO SE USA ESTE DOCUMENTO\n\nEste es el documento que se ADJUNTA a la carta de Autorización de Reforma Estatutaria que se envía a la Superintendencia de Sociedades. No va solo — siempre acompaña al PASO 2 del proceso de cesión de cuotas.\n\nEl proceso completo es:\n✅ PASO 1 — Acta de Junta de Socios aprobando la cesión.\n🔵 PASO 2 — Este extracto + la carta de Autorización ante Supersociedades (solo si la sociedad está vigilada).\n✅ PASO 3 — Escritura de Reforma ante Notario.\n✅ PASO 4 — Certificación de Legalidad ante Cámara de Comercio.\n\n⚠️ Este documento es una copia fiel del acta de la junta firmada por el secretario, que certifica que la reforma fue aprobada válidamente.",
+    "fields": [
+      {
+        "name": "numero_acta",
+        "label": "Número del acta",
+        "type": "text",
+        "required": true,
+        "help": "Número del acta de la junta que aprobó la reforma. Ej: 006."
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre completo de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Nombre con Ltda. Ej: Comercializadora del Valle Limitada."
+      },
+      {
+        "name": "tipo_reunion",
+        "label": "Tipo de reunión",
+        "type": "text",
+        "required": true,
+        "help": "Escriba: ordinaria o extraordinaria."
+      },
+      {
+        "name": "ciudad",
+        "label": "Ciudad de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se realizó la junta."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: abril."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Año. Ej: 2026."
+      },
+      {
+        "name": "hora_inicio",
+        "label": "Hora de inicio",
+        "type": "text",
+        "required": true,
+        "help": "Hora de inicio de la reunión. Ej: 3:00 p.m."
+      },
+      {
+        "name": "listado_socios",
+        "label": "Lista de socios con cuotas",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de cada socio y sus cuotas. Ej: Carlos López: 100 cuotas; María García: 100 cuotas."
+      },
+      {
+        "name": "total_cuotas_representadas",
+        "label": "Total cuotas representadas",
+        "type": "text",
+        "required": true,
+        "help": "Total de cuotas presentes en la reunión."
+      },
+      {
+        "name": "total_cuotas_sociedad",
+        "label": "Total cuotas de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Total de cuotas del capital social."
+      },
+      {
+        "name": "nombre_presidente_junta",
+        "label": "Presidente de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del socio elegido como presidente."
+      },
+      {
+        "name": "nombre_secretario_junta",
+        "label": "Secretario de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del socio elegido como secretario."
+      },
+      {
+        "name": "descripcion_reforma",
+        "label": "Descripción de la reforma aprobada",
+        "type": "text",
+        "required": true,
+        "help": "Explique qué reforma aprobó la junta. Ej: cesión de 50 cuotas del socio Carlos López al señor Pedro Torres, y reforma del artículo 5° de los estatutos para reflejar la nueva composición del capital social."
+      },
+      {
+        "name": "porcentaje_votos",
+        "label": "Porcentaje de votos con que se aprobó",
+        "type": "text",
+        "required": true,
+        "help": "Ej: unanimidad / el 70% de las cuotas representadas / mayoría absoluta."
+      },
+      {
+        "name": "nombre_comisionado",
+        "label": "Persona comisionada para elevar la reforma",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del gerente o representante legal comisionado para ir al notario. Ej: Carlos Andrés Martínez Vélez."
+      },
+      {
+        "name": "hora_cierre",
+        "label": "Hora de cierre",
+        "type": "text",
+        "required": true,
+        "help": "Hora en que se levantó la sesión. Ej: 4:30 p.m."
+      },
+      {
+        "name": "nombre_secretario_certificador",
+        "label": "Nombre del secretario que certifica",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del secretario que firma el extracto como fiel copia del acta original."
+      }
+    ],
+    "template": "EXTRACTO DEL ACTA No. {{numero_acta}}\n\nRef.: Reunión {{tipo_reunion}} de la Junta General de Socios de {{nombre_sociedad}}\n\nEn la ciudad de {{ciudad}}, siendo las {{hora_inicio}} del día {{dia}} de {{mes}} de {{anio}}, se reunieron en la sede social los socios de la mencionada compañía:\n\n{{listado_socios}}\n\nTotal cuotas representadas: {{total_cuotas_representadas}} de {{total_cuotas_sociedad}} que conforman el capital de la compañía.\n\nPor unanimidad fueron elegidos {{nombre_presidente_junta}} como presidente y {{nombre_secretario_junta}} como secretario de la reunión.\n\nEl presidente sometió a consideración de la junta la siguiente propuesta de reforma estatutaria:\n\n{{descripcion_reforma}}\n\nSometida a votación, la anterior propuesta fue aprobada por {{porcentaje_votos}}, comisionándose al señor {{nombre_comisionado}} para adelantar las gestiones tendientes a formalizar la reforma estatutaria aprobada.\n\nNo existiendo otro tema que tratar, el presidente levantó la sesión a las {{hora_cierre}} del día {{dia}} de {{mes}} de {{anio}}.\n\nPresidente: _______________________\n{{nombre_presidente_junta}}\n\nSecretario: _______________________\n{{nombre_secretario_junta}}\n\n---\n\nEl presente extracto es fiel copia del libro de actas de la junta general de socios de {{nombre_sociedad}}.\n\nSecretario certificador: _______________________\n{{nombre_secretario_certificador}}"
+  },
+  {
+    "id": "autorizacion-reforma-estatutaria-supersociedades",
+    "title": "Autorización de Reforma Estatutaria ante Supersociedades",
+    "subtitle": "Sociedad Limitada (Ltda.)",
+    "tipo_tramite": "Privado",
+    "nota_proceso": "📋 CUÁNDO SE USA ESTE DOCUMENTO\n\nEste documento es el PASO 2 del proceso de cesión de cuotas, y SOLO se necesita cuando la sociedad está bajo vigilancia de la Superintendencia de Sociedades (sociedades con activos superiores a los topes legales o en determinados sectores).\n\n🔵 Si su sociedad NO está vigilada por la Superintendencia, omita este paso y vaya directamente al PASO 3: Escritura de Reforma por Cesión de Cuotas.\n🔵 Si su sociedad SÍ está vigilada, primero complete el PASO 1 (Acta de Junta) y luego envíe esta carta antes de ir al notario.",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad desde donde se envía la carta. Ej: Cali."
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: abril."
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true,
+        "help": "Año. Ej: 2026."
+      },
+      {
+        "name": "nombre_representante_legal",
+        "label": "Nombre del representante legal",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del gerente o representante legal que firma la carta."
+      },
+      {
+        "name": "cedula_representante",
+        "label": "Cédula del representante legal",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del representante legal."
+      },
+      {
+        "name": "expedicion_representante",
+        "label": "Ciudad expedición cédula",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del representante."
+      },
+      {
+        "name": "domicilio_representante",
+        "label": "Ciudad de domicilio del representante",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el representante legal."
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre completo de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Nombre con Ltda. Ej: Comercializadora del Valle Limitada."
+      },
+      {
+        "name": "domicilio_sociedad",
+        "label": "Ciudad domicilio de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad principal donde funciona la empresa."
+      },
+      {
+        "name": "tipo_reforma",
+        "label": "Tipo de reforma (parcial o total)",
+        "type": "text",
+        "required": true,
+        "help": "Escriba: parcial o total."
+      },
+      {
+        "name": "tipo_asamblea",
+        "label": "Tipo de asamblea que aprobó la reforma",
+        "type": "text",
+        "required": true,
+        "help": "Escriba: ordinaria o extraordinaria."
+      },
+      {
+        "name": "dia_asamblea",
+        "label": "Día de la asamblea",
+        "type": "text",
+        "required": true,
+        "help": "Día en que se reunió la junta de socios. Ej: 15."
+      },
+      {
+        "name": "mes_asamblea",
+        "label": "Mes de la asamblea",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: marzo."
+      },
+      {
+        "name": "anio_asamblea",
+        "label": "Año de la asamblea",
+        "type": "text",
+        "required": true,
+        "help": "Año. Ej: 2026."
+      },
+      {
+        "name": "numero_acta",
+        "label": "Número del acta de la asamblea",
+        "type": "text",
+        "required": true,
+        "help": "Número del acta donde consta la reforma aprobada. Ej: 006."
+      },
+      {
+        "name": "motivo_reforma",
+        "label": "Motivo de la reforma",
+        "type": "text",
+        "required": true,
+        "help": "Explique brevemente por qué se hace la reforma. Ej: cesión de cuotas del socio Carlos López al señor Pedro Torres."
+      },
+      {
+        "name": "camara_comercio",
+        "label": "Cámara de Comercio donde está registrada",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad de la Cámara de Comercio donde está registrada la sociedad. Ej: Cali."
+      }
+    ],
+    "template": "{{ciudad}}, {{dia}} de {{mes}} de {{anio}}\n\nSeñores\nSuperintendencia de Sociedades\nRef.: Autorización reforma estatutaria\nAtt.: Señor Superintendente\nCiudad.\n\n{{nombre_representante_legal}}, mayor de edad, identificado con la cédula de ciudadanía No. {{cedula_representante}} de {{expedicion_representante}}, domiciliado y residente en {{domicilio_representante}}, actuando en mi condición de representante legal de {{nombre_sociedad}}, sociedad comercial legalmente constituida, con domicilio principal en la ciudad de {{domicilio_sociedad}}, solicito a usted respetuosamente que, de conformidad con las prescripciones legales vigentes, autorice a la sociedad que represento para solemnizar la reforma {{tipo_reforma}} de estatutos adoptada por la asamblea general {{tipo_asamblea}} de socios celebrada el día {{dia_asamblea}} del mes de {{mes_asamblea}} del año {{anio_asamblea}}, copia de la cual adjunto a la presente.\n\nLa reforma en cuestión obedece a {{motivo_reforma}}.\n\nAcompaño, en punto del propósito perseguido, extracto auténtico del Acta No. {{numero_acta}} de la junta general de socios correspondiente a la reunión celebrada el {{dia_asamblea}} de {{mes_asamblea}} de {{anio_asamblea}}, y certificado de existencia y representación legal expedido por la Cámara de Comercio de {{camara_comercio}}.\n\nAtentamente,\n\n{{nombre_sociedad}}\n\nRepresentante legal: _______________________\n{{nombre_representante_legal}}\nC.C. No. {{cedula_representante}} de {{expedicion_representante}}"
+  },
+  {
+    "id": "escritura-reforma-cesion-cuotas-ltda",
+    "title": "Escritura de Reforma — Cesión de Cuotas (Ltda.)",
+    "subtitle": "Sociedad Limitada (Ltda.)",
+    "tipo_tramite": "Notarial",
+    "nota_proceso": "📋 PROCESO COMPLETO PARA CEDER CUOTAS EN UNA LTDA.\n\nEste documento es el PASO 3 del proceso. Antes de venir al notario con esta escritura usted debe tener:\n\n✅ PASO 1 completado: Acta de Junta de Socios aprobando la cesión.\n✅ PASO 2 completado (solo si la sociedad está vigilada por Supersociedades): Autorización de la Superintendencia.\n🔵 PASO 3 — Este documento: Escritura de Reforma ante Notario.\n🔵 PASO 4 — Después de la escritura: Certificación de Legalidad ante la Cámara de Comercio (use esa minuta).\n\n⚠️ A la notaría deben ir: el representante legal, el cedente y el cesionario.",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se otorga la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde está la notaría."
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true,
+        "help": "Departamento de la notaría. Ej: Valle del Cauca."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 20."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: abril."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Año. Ej: 2026."
+      },
+      {
+        "name": "numero_notaria",
+        "label": "Número de la Notaría",
+        "type": "text",
+        "required": true,
+        "help": "Ej: Primera, Segunda, Única."
+      },
+      {
+        "name": "circulo_notarial",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del círculo notarial."
+      },
+      {
+        "name": "nombre_gerente",
+        "label": "Nombre del gerente/representante legal",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del gerente que otorga la escritura en nombre de la sociedad."
+      },
+      {
+        "name": "cedula_gerente",
+        "label": "Cédula del gerente",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del gerente."
+      },
+      {
+        "name": "expedicion_gerente",
+        "label": "Ciudad expedición cédula del gerente",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del gerente."
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre completo de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Nombre con Ltda. Ej: Comercializadora del Valle Limitada."
+      },
+      {
+        "name": "domicilio_sociedad",
+        "label": "Ciudad domicilio de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad principal donde funciona la empresa."
+      },
+      {
+        "name": "camara_comercio",
+        "label": "Cámara de Comercio donde está registrada",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad de la Cámara de Comercio. Ej: Cali."
+      },
+      {
+        "name": "tipo_reunion",
+        "label": "Tipo de reunión que aprobó la reforma",
+        "type": "text",
+        "required": true,
+        "help": "Escriba: extraordinaria u ordinaria."
+      },
+      {
+        "name": "numero_acta",
+        "label": "Número del acta de la junta",
+        "type": "text",
+        "required": true,
+        "help": "Número del acta de la junta de socios que aprobó la cesión. Ej: 006."
+      },
+      {
+        "name": "fecha_acta",
+        "label": "Fecha del acta",
+        "type": "text",
+        "required": true,
+        "help": "Fecha en que se celebró la junta. Ej: 15 de marzo de 2026."
+      },
+      {
+        "name": "nombre_socio_cedente",
+        "label": "Nombre del socio cedente",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del socio que cede (vende) sus cuotas."
+      },
+      {
+        "name": "nombre_cesionario",
+        "label": "Nombre del cesionario",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo de quien recibe las cuotas."
+      },
+      {
+        "name": "nuevo_texto_articulo_capital",
+        "label": "Nueva redacción del artículo de capital",
+        "type": "text",
+        "required": true,
+        "help": "Cómo queda el artículo de capital después de la cesión. Ej: ARTÍCULO 5°. CAPITAL. La sociedad tendrá un capital de $20.000.000 representado en 200 cuotas de $100.000 cada una, distribuidas así: Carlos López: 50 cuotas; María García: 100 cuotas; Pedro Torres: 50 cuotas."
+      },
+      {
+        "name": "cedula_cedente",
+        "label": "Cédula del cedente",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del socio que cede las cuotas."
+      },
+      {
+        "name": "expedicion_cedente",
+        "label": "Ciudad expedición cédula del cedente",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del cedente."
+      },
+      {
+        "name": "cedula_cesionario",
+        "label": "Cédula del cesionario",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula de quien recibe las cuotas."
+      },
+      {
+        "name": "expedicion_cesionario",
+        "label": "Ciudad expedición cédula del cesionario",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del cesionario."
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} del mes de {{mes}} del año {{anio}}, ante mí Notario {{numero_notaria}} del Círculo de {{circulo_notarial}}, compareció {{nombre_gerente}}, mayor de edad, identificado con la cédula de ciudadanía No. {{cedula_gerente}} de {{expedicion_gerente}}, quien manifestó lo siguiente:\n\nPRIMERO.— Que actúa en su condición de gerente y representante legal de {{nombre_sociedad}}, sociedad de responsabilidad limitada legalmente constituida, con domicilio principal en la ciudad de {{domicilio_sociedad}}, calidad que acredita con Certificado de Existencia y Representación expedido por la Cámara de Comercio de {{camara_comercio}}, que adjunta para su protocolización.\n\nSEGUNDO.— Que obrando en la condición ya señalada procede a reducir a escritura pública la reforma a los estatutos sociales que se deriva de la cesión de cuotas sociales por parte de {{nombre_socio_cedente}} a {{nombre_cesionario}}, adoptada en la reunión {{tipo_reunion}} de junta de socios No. {{numero_acta}} celebrada el {{fecha_acta}}.\n\nTERCERO.— Que como consecuencia de la referida reforma, el artículo del capital social de los estatutos quedará en lo sucesivo del siguiente tenor:\n\n{{nuevo_texto_articulo_capital}}\n\nCUARTO.— Que el proceso de cesión de cuotas se desarrolló con sujeción a los estatutos sociales y a las disposiciones legales, en especial a las pautas señaladas por los artículos 363 a 365 del Código de Comercio.\n\nQUINTO.— Que se anexa copia del Acta No. {{numero_acta}} para que se protocolice con el presente instrumento público.\n\nPresente {{nombre_socio_cedente}}, quien se identificó con la cédula de ciudadanía No. {{cedula_cedente}} de {{expedicion_cedente}}. Manifestó: Que suscribe el presente documento en su carácter de cedente y acepta en todas sus partes su contenido por hallarse ajustado a la realidad.\n\nPresente {{nombre_cesionario}}, quien se identificó con la cédula de ciudadanía No. {{cedula_cesionario}} de {{expedicion_cesionario}}. Manifestó: Que actúa en su condición de cesionario y acepta en su totalidad el contenido de la presente escritura pública por encontrarse ajustada a la realidad.\n\nRepresentante legal: _______________________\n{{nombre_gerente}}\n\nCedente: _______________________\n{{nombre_socio_cedente}}\n\nCesionario: _______________________\n{{nombre_cesionario}}\n\nNotario: _______________________"
+  },
+  {
+    "id": "certificacion-legalidad-cesion-cuotas",
+    "title": "Certificación de Legalidad del Proceso de Cesión de Cuotas",
+    "subtitle": "Sociedad Limitada (Ltda.)",
+    "tipo_tramite": "Privado",
+    "nota_proceso": "📋 CUÁNDO SE USA ESTE DOCUMENTO\n\nEste documento es el PASO 4 y último del proceso de cesión de cuotas. Se presenta ante la Cámara de Comercio junto con la escritura de reforma para que procedan a registrar el cambio de socios.\n\n✅ PASO 1: Acta de Junta aprobando la cesión — completado.\n✅ PASO 2: Autorización Supersociedades si aplica — completado.\n✅ PASO 3: Escritura de Reforma ante Notario — completada.\n🔵 PASO 4 — Este documento: Certificación de Legalidad del Proceso.\n\n⚠️ Sin este certificado la Cámara de Comercio no puede registrar la cesión.",
+    "fields": [
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre completo de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Nombre con Ltda. Ej: Comercializadora del Valle Limitada."
+      },
+      {
+        "name": "nombre_representante_legal",
+        "label": "Nombre del representante legal",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del gerente que certifica."
+      },
+      {
+        "name": "numero_escritura",
+        "label": "Número de la escritura de reforma",
+        "type": "text",
+        "required": true,
+        "help": "Número de la escritura pública de cesión. Ej: 1245."
+      },
+      {
+        "name": "numero_notaria",
+        "label": "Número de la Notaría",
+        "type": "text",
+        "required": true,
+        "help": "Ej: Primera, Segunda, Única."
+      },
+      {
+        "name": "circulo_notarial",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del círculo notarial."
+      },
+      {
+        "name": "dia_escritura",
+        "label": "Día de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Día en que se otorgó la escritura. Ej: 20."
+      },
+      {
+        "name": "mes_escritura",
+        "label": "Mes de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: abril."
+      },
+      {
+        "name": "anio_escritura",
+        "label": "Año de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Año. Ej: 2026."
+      },
+      {
+        "name": "ciudad_camara",
+        "label": "Ciudad de la Cámara de Comercio",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad de la Cámara de Comercio donde se registrará la cesión. Ej: Cali."
+      }
+    ],
+    "template": "Señores\nCámara de Comercio de {{ciudad_camara}}\nCiudad\n\nRef.: Cesión de cuotas de la sociedad {{nombre_sociedad}}\n\nComo representante legal de la sociedad {{nombre_sociedad}}, certifico que la cesión de cuotas de que da fe la escritura pública No. {{numero_escritura}}, otorgada ante la Notaría {{numero_notaria}} del Círculo de {{circulo_notarial}} el día {{dia_escritura}} de {{mes_escritura}} de {{anio_escritura}}, se ajustó a las prescripciones legales contenidas en los artículos 363, 364 y 365 del Código de Comercio.\n\nLa presente certificación se expide con el objeto de que se sirvan proceder al registro de la cesión, en cumplimiento de lo dispuesto por el artículo 367 del Código de Comercio.\n\nRespetuosamente,\n\n{{nombre_sociedad}}\n\nRepresentante legal: _______________________\n{{nombre_representante_legal}}"
+  },
+  {
+    "id": "estatutos-sociedad-comandita-simple",
+    "title": "Estatutos para Sociedad en Comandita Simple",
+    "subtitle": "Sociedad en Comandita",
+    "tipo_tramite": "Notarial",
+    "nota_proceso": null,
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se otorga la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde está la notaría."
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true,
+        "help": "Departamento de la notaría. Ej: Valle del Cauca."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: abril."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Año. Ej: 2026."
+      },
+      {
+        "name": "nombre_notario",
+        "label": "Nombre del Notario",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del notario."
+      },
+      {
+        "name": "numero_notaria",
+        "label": "Número de la Notaría",
+        "type": "text",
+        "required": true,
+        "help": "Ej: Primera, Segunda, Única."
+      },
+      {
+        "name": "circulo_notarial",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del círculo notarial."
+      },
+      {
+        "name": "nombre_socio_gestor",
+        "label": "Nombre del socio gestor",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del socio gestor. El gestor responde solidaria e ilimitadamente y administra la sociedad."
+      },
+      {
+        "name": "cedula_gestor",
+        "label": "Cédula del socio gestor",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del socio gestor."
+      },
+      {
+        "name": "expedicion_gestor",
+        "label": "Ciudad expedición cédula del gestor",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del gestor."
+      },
+      {
+        "name": "socios_comanditarios",
+        "label": "Nombre, cédula y ciudad de los socios comanditarios",
+        "type": "text",
+        "required": true,
+        "help": "Liste los socios comanditarios. Ej: Carlos López C.C. 12345 de Cali; María García C.C. 67890 de Bogotá. Los comanditarios solo responden hasta el monto de sus aportes."
+      },
+      {
+        "name": "razon_social",
+        "label": "Razón social (sin 'en C.')",
+        "type": "text",
+        "required": true,
+        "help": "Nombre formado con apellido del gestor. Ej: Martínez. El sistema agrega 'en C.' automáticamente."
+      },
+      {
+        "name": "domicilio_sociedad",
+        "label": "Ciudad domicilio de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad principal donde funcionará la empresa."
+      },
+      {
+        "name": "objeto_social",
+        "label": "Objeto social",
+        "type": "text",
+        "required": true,
+        "help": "Actividades principales de la empresa."
+      },
+      {
+        "name": "capital_total_letras",
+        "label": "Capital total aportado por comanditarios en letras",
+        "type": "text",
+        "required": true,
+        "help": "Capital total que aportan los socios comanditarios en palabras. Ej: veinte millones de pesos."
+      },
+      {
+        "name": "capital_total_numeros",
+        "label": "Capital total en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 20.000.000."
+      },
+      {
+        "name": "numero_cuotas",
+        "label": "Número de cuotas del capital",
+        "type": "text",
+        "required": true,
+        "help": "En cuántas cuotas se divide el capital. Ej: 200."
+      },
+      {
+        "name": "valor_cuota",
+        "label": "Valor de cada cuota",
+        "type": "text",
+        "required": true,
+        "help": "Valor nominal de cada cuota. Ej: 100.000."
+      },
+      {
+        "name": "distribucion_cuotas_comanditarios",
+        "label": "Distribución de cuotas entre comanditarios",
+        "type": "text",
+        "required": true,
+        "help": "Cuántas cuotas le corresponden a cada comanditario. Ej: Carlos López: 100 cuotas; María García: 100 cuotas."
+      },
+      {
+        "name": "porcentaje_utilidades_gestor",
+        "label": "Porcentaje de utilidades para el gestor (%)",
+        "type": "text",
+        "required": true,
+        "help": "Qué porcentaje de las utilidades recibe el socio gestor. Ej: 30."
+      },
+      {
+        "name": "porcentaje_utilidades_comanditarios",
+        "label": "Porcentaje de utilidades para los comanditarios (%)",
+        "type": "text",
+        "required": true,
+        "help": "Qué porcentaje de las utilidades reciben los comanditarios. Ej: 70. Debe sumar 100 con el del gestor."
+      },
+      {
+        "name": "duracion_anios",
+        "label": "Duración de la sociedad en años",
+        "type": "text",
+        "required": true,
+        "help": "Años de duración. Ej: 25."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad del tribunal de arbitramento",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se resolverán los conflictos. Ej: Cali."
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} de {{anio}}, ante mí {{nombre_notario}}, Notario {{numero_notaria}} del Círculo de {{circulo_notarial}}, comparecieron {{nombre_socio_gestor}}, identificado con cédula de ciudadanía No. {{cedula_gestor}} de {{expedicion_gestor}}, en su calidad de socio gestor, y {{socios_comanditarios}}, en su calidad de socios comanditarios, todos mayores de edad, quienes manifiestan que constituyen una sociedad en comandita simple que se regirá por los siguientes:\n\nESTATUTOS\n\nCAPÍTULO I — Aspectos Generales\n\nARTÍCULO 1°. SOCIOS GESTORES.— {{nombre_socio_gestor}} será el socio gestor y colectivo y, como tal, se obliga a administrar y representar a la sociedad, en los términos de estos estatutos. Fuera del socio gestor, la sociedad tendrá socios comanditarios.\n\nARTÍCULO 2°. RAZÓN SOCIAL, DOMICILIO Y DURACIÓN.— La sociedad girará bajo la razón social \"{{razon_social}} en C.\", es de nacionalidad colombiana, tiene su domicilio en la ciudad de {{domicilio_sociedad}} y tendrá una duración de {{duracion_anios}} años contados a partir de la fecha de la escritura de constitución.\n\nARTÍCULO 3°. OBJETO.— La sociedad tendrá como objeto principal el desarrollo de las siguientes actividades: {{objeto_social}}. En desarrollo de su objeto, la sociedad podrá asociarse con otras personas naturales o jurídicas y ejecutar todo acto y celebrar todo contrato lícito necesario para el logro del objeto social.\n\nARTÍCULO 4°. CAPITAL.— El capital de la sociedad es de {{capital_total_letras}} ($ {{capital_total_numeros}}), el cual ha sido pagado por los socios comanditarios en dinero efectivo. El capital se encuentra dividido en {{numero_cuotas}} cuotas de interés social del valor nominal de $ {{valor_cuota}} cada una, distribuido en la siguiente forma: {{distribucion_cuotas_comanditarios}}.\n\nCAPÍTULO II — Administración y Representación\n\nARTÍCULO 5°. ADMINISTRACIÓN.— La administración y representación de la sociedad corresponde al socio gestor {{nombre_socio_gestor}}, quien tendrá las más amplias facultades para ejecutar todos los actos y contratos acordes con el objeto social y el giro ordinario de los negocios sociales.\n\nCAPÍTULO III — Junta de Socios\n\nARTÍCULO 6°. COMPOSICIÓN.— La junta de socios se compone de todos los socios, tanto gestor como comanditarios. Las reuniones serán ordinarias y extraordinarias. La junta se reunirá ordinariamente una vez al año, en el primer trimestre, mediante convocatoria con quince días hábiles de anticipación.\n\nARTÍCULO 7°. QUÓRUM Y DECISIONES.— La junta deliberará y decidirá válidamente con la asistencia del socio gestor y un número plural de socios comanditarios que represente la mitad más uno de las partes del capital comanditario. Las reformas estatutarias deberán aprobarse por unanimidad de los socios colectivos y la mayoría absoluta de votos de los comanditarios.\n\nCAPÍTULO IV — Balance, Pérdidas y Utilidades\n\nARTÍCULO 8°. EJERCICIO SOCIAL.— El ejercicio anual de la sociedad está comprendido entre el 1° de enero y el 31 de diciembre de cada año. Al finalizar el ejercicio se hará el inventario y balance generales.\n\nARTÍCULO 9°. DISTRIBUCIÓN DE UTILIDADES.— Las utilidades líquidas se distribuirán entre los socios en la siguiente proporción: al socio gestor el {{porcentaje_utilidades_gestor}} por ciento; a los socios comanditarios el {{porcentaje_utilidades_comanditarios}} por ciento, distribuido entre ellos en proporción a sus aportes de capital.\n\nCAPÍTULO V — Disolución y Liquidación\n\nARTÍCULO 10°. DISOLUCIÓN.— La sociedad se disolverá por: a) Vencimiento del término de su duración; b) Pérdidas que reduzcan su capital a la tercera parte o menos; c) Imposibilidad de desarrollar la empresa social; d) Desaparición de una de las dos categorías de socios; e) Las demás causales establecidas por la ley.\n\nCAPÍTULO VI — Disposiciones Finales\n\nARTÍCULO 11°. ARBITRAMENTO.— Toda diferencia o controversia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres (3) árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nFirmas: _______________________\nFirma del Notario: _______________________"
+  },
+  {
+    "id": "estatutos-sociedad-comandita-acciones",
+    "title": "Estatutos para Sociedad en Comandita por Acciones",
+    "subtitle": "Sociedad en Comandita",
+    "tipo_tramite": "Notarial",
+    "nota_proceso": null,
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se otorga la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde está la notaría."
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true,
+        "help": "Departamento de la notaría. Ej: Valle del Cauca."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: abril."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Año. Ej: 2026."
+      },
+      {
+        "name": "nombre_notario",
+        "label": "Nombre del Notario",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del notario."
+      },
+      {
+        "name": "numero_notaria",
+        "label": "Número de la Notaría",
+        "type": "text",
+        "required": true,
+        "help": "Ej: Primera, Segunda, Única."
+      },
+      {
+        "name": "circulo_notarial",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del círculo notarial."
+      },
+      {
+        "name": "socios_gestores",
+        "label": "Nombre y cédula de los socios gestores",
+        "type": "text",
+        "required": true,
+        "help": "Liste los socios gestores. Estos responden solidaria e ilimitadamente. Ej: Carlos López C.C. 12345 de Cali."
+      },
+      {
+        "name": "socios_comanditarios",
+        "label": "Nombre y cédula de los socios comanditarios",
+        "type": "text",
+        "required": true,
+        "help": "Liste los socios comanditarios (mínimo 5). Estos responden solo hasta el valor de sus aportes."
+      },
+      {
+        "name": "razon_social",
+        "label": "Razón social (sin S.C.A.)",
+        "type": "text",
+        "required": true,
+        "help": "Nombre formado con apellido del gestor. Ej: Martínez y Compañía. El sistema agrega S.C.A. automáticamente."
+      },
+      {
+        "name": "domicilio_sociedad",
+        "label": "Ciudad domicilio de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad principal donde funcionará la empresa."
+      },
+      {
+        "name": "objeto_social",
+        "label": "Objeto social",
+        "type": "text",
+        "required": true,
+        "help": "Actividades principales de la empresa."
+      },
+      {
+        "name": "capital_total_letras",
+        "label": "Capital total en letras",
+        "type": "text",
+        "required": true,
+        "help": "Capital total de la empresa en palabras. Ej: cien millones de pesos."
+      },
+      {
+        "name": "capital_total_numeros",
+        "label": "Capital total en números",
+        "type": "text",
+        "required": true,
+        "help": "Capital en cifras. Ej: 100.000.000."
+      },
+      {
+        "name": "numero_acciones",
+        "label": "Número total de acciones",
+        "type": "text",
+        "required": true,
+        "help": "Total de acciones en que se divide el capital. Ej: 1.000."
+      },
+      {
+        "name": "valor_nominal_accion",
+        "label": "Valor nominal de cada acción",
+        "type": "text",
+        "required": true,
+        "help": "Valor de cada acción. Ej: 100.000."
+      },
+      {
+        "name": "suscripcion_acciones",
+        "label": "Suscripción de acciones por comanditarios",
+        "type": "text",
+        "required": true,
+        "help": "Cuántas acciones suscribe cada comanditario. Ej: Carlos López: 300 acciones por $30.000.000; María García: 700 acciones por $70.000.000."
+      },
+      {
+        "name": "periodo_revisor_fiscal",
+        "label": "Período del revisor fiscal en años",
+        "type": "text",
+        "required": true,
+        "help": "Años del período del revisor fiscal. Ej: 1."
+      },
+      {
+        "name": "cuantia_autorizacion_gestores_letras",
+        "label": "Cuantía máxima de gestores sin autorización (letras)",
+        "type": "text",
+        "required": true,
+        "help": "Para actos mayores los gestores necesitan autorización de la asamblea. Ej: cincuenta millones de pesos."
+      },
+      {
+        "name": "cuantia_autorizacion_gestores_numeros",
+        "label": "Cuantía máxima en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 50.000.000."
+      },
+      {
+        "name": "distribucion_utilidades",
+        "label": "Distribución de utilidades entre gestores y comanditarios",
+        "type": "text",
+        "required": true,
+        "help": "Cómo se reparten las utilidades. Ej: el 20% para los socios gestores y el 80% para los socios comanditarios en proporción a sus acciones."
+      },
+      {
+        "name": "duracion_anios",
+        "label": "Duración de la sociedad en años",
+        "type": "text",
+        "required": true,
+        "help": "Años de duración. Ej: 25."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad del tribunal de arbitramento",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se resolverán los conflictos. Ej: Bogotá."
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} de {{anio}}, ante mí {{nombre_notario}}, Notario {{numero_notaria}} del Círculo de {{circulo_notarial}}, comparecieron como socios gestores: {{socios_gestores}}; y como socios comanditarios: {{socios_comanditarios}}, todos mayores de edad, quienes manifiestan que constituyen una sociedad en comandita por acciones que se regirá por los siguientes:\n\nESTATUTOS\n\nCAPÍTULO I — Aspectos Generales\n\nARTÍCULO 1°.— Son socios gestores de la sociedad: {{socios_gestores}}; y socios comanditarios: {{socios_comanditarios}}.\n\nARTÍCULO 2°.— La sociedad será comercial de la especie de las en comandita por acciones y girará bajo la razón social \"{{razon_social}} S.C.A.\".\n\nARTÍCULO 3°.— El domicilio de la sociedad será la ciudad de {{domicilio_sociedad}}, pero podrá crear sucursales, agencias o dependencias en otros lugares del país o del exterior por disposición de la asamblea general de accionistas.\n\nARTÍCULO 4°.— La sociedad tendrá como objeto principal las siguientes actividades: {{objeto_social}}.\n\nARTÍCULO 5°.— La sociedad tendrá un capital de {{capital_total_letras}} ($ {{capital_total_numeros}}), dividido en {{numero_acciones}} acciones de un valor nominal de $ {{valor_nominal_accion}} cada una, suscritas y pagadas por los socios comanditarios así: {{suscripcion_acciones}}.\n\nARTÍCULO 6°.— La responsabilidad de los socios gestores por las obligaciones sociales será solidaria e ilimitada. La de los socios comanditarios se extenderá hasta concurrencia de sus aportes.\n\nCAPÍTULO II — De las Acciones\n\nARTÍCULO 7°.— Las acciones serán indivisibles. Los accionistas tendrán derecho a suscribir preferencialmente en toda nueva emisión de acciones, una cantidad proporcional a las que posean.\n\nARTÍCULO 8°.— La sociedad llevará un libro de registro de acciones en el cual se anotarán las enajenaciones, gravámenes y demás circunstancias que afecten su propiedad.\n\nCAPÍTULO III — Administración y Representación\n\nARTÍCULO 9°.— La dirección de la sociedad estará a cargo de la asamblea general de accionistas. La administración y representación legal estarán a cargo de los socios gestores.\n\nARTÍCULO 10°.— Los socios gestores requerirán autorización de la asamblea general de accionistas para la ejecución o celebración de todo acto o contrato que exceda de {{cuantia_autorizacion_gestores_letras}} ($ {{cuantia_autorizacion_gestores_numeros}}).\n\nARTÍCULO 11°.— Las reuniones ordinarias de la asamblea se celebrarán dentro de los tres primeros meses siguientes al vencimiento de cada ejercicio social, por convocatoria de los socios gestores hecha con quince días hábiles de anticipación.\n\nCAPÍTULO IV — Revisor Fiscal\n\nARTÍCULO 12°.— La sociedad tendrá un revisor fiscal con su respectivo suplente, elegido por la asamblea general de accionistas para períodos de {{periodo_revisor_fiscal}} año(s).\n\nCAPÍTULO V — Balance, Pérdidas y Utilidades\n\nARTÍCULO 13°.— Anualmente, el 31 de diciembre, se cortarán las cuentas y se hará el balance general de fin de ejercicio.\n\nARTÍCULO 14°.— La sociedad formará una reserva legal con el diez por ciento (10%) de las utilidades líquidas de cada ejercicio hasta completar el cincuenta por ciento (50%) del capital suscrito.\n\nARTÍCULO 15°.— Hechas las apropiaciones de ley y las reservas acordadas por la asamblea, las utilidades líquidas se distribuirán así: {{distribucion_utilidades}}.\n\nCAPÍTULO VI — Disolución y Liquidación\n\nARTÍCULO 16°.— La sociedad durará por el término de {{duracion_anios}} años contados desde la fecha de esta escritura y se disolverá por las causales previstas en la ley, entre ellas: disminución del número de socios comanditarios a menos de cinco, pérdidas que reduzcan el patrimonio neto a menos del cincuenta por ciento del capital suscrito, o desaparición de una categoría de socios.\n\nARTÍCULO 17°.— La liquidación del patrimonio social se hará por los socios gestores, quienes actuarán como liquidadores.\n\nCAPÍTULO VII — Disposiciones Finales\n\nARTÍCULO 18°.— Toda diferencia o controversia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres (3) árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nFirmas: _______________________\nFirma del Notario: _______________________"
   }
 ]
