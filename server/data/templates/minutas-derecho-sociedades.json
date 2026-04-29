@@ -1,0 +1,2324 @@
+[
+  {
+    "id": "constitucion-empresa-unipersonal",
+    "title": "Constitución de Empresa Unipersonal",
+    "subtitle": "Empresa Unipersonal y Sociedades Básicas",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se constituye",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se firma el documento. Ej: Cali, Bogotá, Medellín."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero, abril."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2026."
+      },
+      {
+        "name": "nombre_constituyente",
+        "label": "Nombre completo del constituyente",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo de la persona natural que crea la empresa."
+      },
+      {
+        "name": "cedula_constituyente",
+        "label": "Cédula del constituyente",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del constituyente."
+      },
+      {
+        "name": "expedicion_constituyente",
+        "label": "Ciudad expedición cédula del constituyente",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula."
+      },
+      {
+        "name": "domicilio_constituyente",
+        "label": "Ciudad de domicilio del constituyente",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el constituyente."
+      },
+      {
+        "name": "direccion_constituyente",
+        "label": "Dirección del constituyente",
+        "type": "text",
+        "required": true,
+        "help": "Dirección exacta del constituyente. La ley exige indicarla."
+      },
+      {
+        "name": "nombre_empresa",
+        "label": "Nombre de la empresa (sin E.U.)",
+        "type": "text",
+        "required": true,
+        "help": "Nombre comercial SIN incluir E.U. Ej: Servicios Integrales del Valle."
+      },
+      {
+        "name": "domicilio_empresa",
+        "label": "Ciudad domicilio de la empresa",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad principal donde funcionará la empresa."
+      },
+      {
+        "name": "departamento_empresa",
+        "label": "Departamento de la empresa",
+        "type": "text",
+        "required": true,
+        "help": "Ej: Valle del Cauca, Cundinamarca."
+      },
+      {
+        "name": "objeto_empresa",
+        "label": "Objeto de la empresa",
+        "type": "text",
+        "required": true,
+        "help": "Actividades del negocio. Ej: compra, venta y distribución de productos de aseo al por mayor y al detal."
+      },
+      {
+        "name": "duracion_anios",
+        "label": "Duración en años (o: indefinida)",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos años durará la empresa. Puede escribir: indefinida."
+      },
+      {
+        "name": "capital_total_letras",
+        "label": "Capital total en letras",
+        "type": "text",
+        "required": true,
+        "help": "Valor del capital en palabras. Ej: diez millones de pesos."
+      },
+      {
+        "name": "capital_total_numeros",
+        "label": "Capital total en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 10.000.000."
+      },
+      {
+        "name": "descripcion_capital",
+        "label": "Descripción detallada de los bienes aportados",
+        "type": "text",
+        "required": true,
+        "help": "Liste cada bien con su valor. Ej: 1. Dinero en efectivo $5.000.000; 2. Computador portátil valorado en $3.000.000."
+      },
+      {
+        "name": "numero_cuotas",
+        "label": "Número de cuotas del capital",
+        "type": "text",
+        "required": true,
+        "help": "Cuántas cuotas tiene el capital. Ej: 100."
+      },
+      {
+        "name": "valor_cuota",
+        "label": "Valor nominal de cada cuota",
+        "type": "text",
+        "required": true,
+        "help": "Cuánto vale cada cuota. Ej: 100.000."
+      },
+      {
+        "name": "periodo_gerente_anios",
+        "label": "Período del gerente en años",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos años durará el gerente en el cargo. Ej: 2."
+      },
+      {
+        "name": "cuantia_autorizacion_letras",
+        "label": "Cuantía máxima del gerente sin autorización en letras",
+        "type": "text",
+        "required": true,
+        "help": "Para actos que superen este valor el gerente necesitará autorización del constituyente. Ej: diez millones de pesos."
+      },
+      {
+        "name": "cuantia_autorizacion_numeros",
+        "label": "Cuantía máxima en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 10.000.000."
+      },
+      {
+        "name": "nombre_gerente",
+        "label": "Nombre completo del gerente designado",
+        "type": "text",
+        "required": true,
+        "help": "Puede ser el mismo constituyente u otra persona."
+      },
+      {
+        "name": "cedula_gerente",
+        "label": "Cédula del gerente",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del gerente."
+      },
+      {
+        "name": "expedicion_gerente",
+        "label": "Ciudad expedición cédula del gerente",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del gerente."
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, el {{dia}} de {{mes}} de {{anio}}, el suscrito {{nombre_constituyente}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_constituyente}} de {{expedicion_constituyente}}, domiciliado y residente en {{domicilio_constituyente}}, con dirección {{direccion_constituyente}}, quien para todos los efectos se denominará el CONSTITUYENTE O EMPRESARIO, mediante el presente escrito manifiesto mi voluntad de constituir una Empresa Unipersonal, que se regulará conforme lo establecido en las disposiciones que regulan la materia y en especial por los siguientes estatutos:\n\nPRIMERO. Razón Social.— La Empresa que mediante este documento se constituye se denominará \"{{nombre_empresa}} E.U.\"\n\nSEGUNDO. Domicilio.— El domicilio de la Empresa será la ciudad de {{domicilio_empresa}}, Departamento {{departamento_empresa}}, pudiendo constituir o establecer sucursales, agencias o dependencias en otras ciudades del país o del exterior.\n\nTERCERO. Objeto.— La Empresa tendrá por objeto el desarrollo de las siguientes actividades: {{objeto_empresa}}\n\nCUARTO. Duración.— La Empresa tendrá una duración de {{duracion_anios}}, contados desde la fecha de la firma del presente documento.\n\nQUINTO. Capital.— El capital de la Empresa es la suma de {{capital_total_letras}} ($ {{capital_total_numeros}}), discriminado de la siguiente manera: {{descripcion_capital}}\n\nSEXTO. Cuotas.— El capital de la Empresa se halla dividido en {{numero_cuotas}} cuotas de un valor nominal de $ {{valor_cuota}} cada una, capital que se halla aportado en su totalidad.\n\nSÉPTIMO. Responsabilidad.— La responsabilidad del suscrito, en calidad de constituyente de la Empresa, se circunscribe al monto de los aportes que conforman el capital de la misma, sin perjuicio de que éste posteriormente sea aumentado con arreglo a las normas vigentes.\n\nOCTAVO. Cesión de Cuotas.— Las cuotas en que se representa el capital de la empresa podrán ser cedidas total o parcialmente, en cuyo caso dicha cesión deberá constar por escrito con anotación en el respectivo registro mercantil.\n\nNOVENO. Administración.— La administración de la Empresa estará en cabeza de un Gerente, de libre nombramiento y remoción por parte del constituyente. El Gerente tendrá un período de {{periodo_gerente_anios}} años, sin perjuicio de que pueda ser reelegido indefinidamente o removido en cualquier tiempo.\n\nDÉCIMO. Facultades del Gerente.— El gerente es el representante legal de la Empresa, con facultades para ejecutar todos los actos y contratos acordes con la naturaleza de su encargo y que se relacionen directamente con el giro ordinario de los negocios de la Empresa. En especial, el Gerente tendrá las siguientes funciones:\n1. Usar de la firma o razón social.\n2. Designar los empleados que requiera el normal funcionamiento de la compañía y señalarles su remuneración.\n3. Rendir cuentas de su gestión al constituyente en la forma establecida en el artículo undécimo.\n4. Constituir los apoderados judiciales necesarios para la defensa de los intereses sociales.\n\nPARÁGRAFO.— El gerente requerirá autorización previa del Constituyente para la ejecución de todo acto o contrato que exceda de {{cuantia_autorizacion_letras}} ($ {{cuantia_autorizacion_numeros}}).\n\nDÉCIMO PRIMERO. Rendición de cuentas.— El Gerente deberá rendir al Constituyente cuentas comprobadas de su gestión al final de cada ejercicio, dentro del mes siguiente a la fecha en la cual se retire de su cargo y en cualquier momento en que el Constituyente las exija. Las cuentas anuales de final de ejercicio deberán presentarse antes del 1º de abril de cada año.\n\nDÉCIMO SEGUNDO. Designación.— Se nombra como gerente a {{nombre_gerente}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_gerente}} de {{expedicion_gerente}}, quien ejercerá sus funciones hasta cuando se designe y efectúe el registro correspondiente de cualquier nuevo nombramiento.\n\nDÉCIMO TERCERO. Reserva Legal.— La Empresa formará una reserva legal con el diez por ciento (10%) de las utilidades líquidas de cada ejercicio, hasta completar el cincuenta por ciento (50%) del capital.\n\nDÉCIMO CUARTO. Causales de disolución.— La Empresa se disolverá por las siguientes causales:\n1. Por voluntad del Constituyente.\n2. Por vencimiento del término previsto, a menos que fuere prorrogado mediante documento inscrito en el registro mercantil antes de su expiración.\n3. Por muerte del constituyente.\n4. Por imposibilidad de desarrollar las actividades previstas.\n5. Por orden de autoridad competente.\n6. Por pérdidas que reduzcan el patrimonio de la empresa en más del cincuenta por ciento.\n7. Por la iniciación del trámite de liquidación obligatoria.\n\nDÉCIMO QUINTO. Liquidación.— Disuelta la Empresa, se procederá de inmediato a su liquidación en la forma indicada en la ley. El nombre de la Empresa, una vez disuelta, se adicionará con la expresión \"en liquidación\".\n\nConstituyente o empresario: _______________________\n{{nombre_constituyente}}\nC.C. Nº. {{cedula_constituyente}} de {{expedicion_constituyente}}"
+  },
+  {
+    "id": "constitucion-sociedad-hecho",
+    "title": "Constitución de Sociedad de Hecho",
+    "subtitle": "Empresa Unipersonal y Sociedades Básicas",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se constituye",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se firma el documento."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la firma",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2026."
+      },
+      {
+        "name": "nombre_socio1",
+        "label": "Nombre completo del primer socio",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del primer socio tal como aparece en su cédula."
+      },
+      {
+        "name": "cedula_socio1",
+        "label": "Cédula del primer socio",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del primer socio."
+      },
+      {
+        "name": "expedicion_socio1",
+        "label": "Ciudad expedición cédula primer socio",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del primer socio."
+      },
+      {
+        "name": "nombre_socio2",
+        "label": "Nombre completo del segundo socio",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del segundo socio."
+      },
+      {
+        "name": "cedula_socio2",
+        "label": "Cédula del segundo socio",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del segundo socio."
+      },
+      {
+        "name": "expedicion_socio2",
+        "label": "Ciudad expedición cédula segundo socio",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del segundo socio."
+      },
+      {
+        "name": "nombre_socio3",
+        "label": "Nombre del tercer socio (si no hay escriba: no aplica)",
+        "type": "text",
+        "required": true,
+        "help": "Si solo son dos socios escriba: no aplica."
+      },
+      {
+        "name": "cedula_socio3",
+        "label": "Cédula del tercer socio (si no hay escriba: no aplica)",
+        "type": "text",
+        "required": true,
+        "help": "Si no hay tercer socio escriba: no aplica."
+      },
+      {
+        "name": "expedicion_socio3",
+        "label": "Ciudad expedición tercer socio (si no hay escriba: no aplica)",
+        "type": "text",
+        "required": true,
+        "help": "Si no hay tercer socio escriba: no aplica."
+      },
+      {
+        "name": "estado_civil_socios",
+        "label": "Estado civil de los socios",
+        "type": "text",
+        "required": true,
+        "help": "Ej: todos solteros; el señor X casado y la señora Y soltera."
+      },
+      {
+        "name": "domicilio_socios",
+        "label": "Ciudad de domicilio de los socios",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde viven los socios."
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre de la sociedad de hecho",
+        "type": "text",
+        "required": true,
+        "help": "Nombre con que operará. Ej: Comercializadora Los Andes."
+      },
+      {
+        "name": "domicilio_sociedad",
+        "label": "Ciudad domicilio de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad principal donde funcionará la sociedad."
+      },
+      {
+        "name": "departamento_sociedad",
+        "label": "Departamento de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Departamento del domicilio. Ej: Valle del Cauca."
+      },
+      {
+        "name": "objeto_social",
+        "label": "Objeto social",
+        "type": "text",
+        "required": true,
+        "help": "Actividades del negocio. Ej: compra, venta y distribución de alimentos al por mayor y al detal."
+      },
+      {
+        "name": "duracion_anios",
+        "label": "Duración en años",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos años durará la sociedad. Ej: 5, 10."
+      },
+      {
+        "name": "capital_total_letras",
+        "label": "Capital social total en letras",
+        "type": "text",
+        "required": true,
+        "help": "Capital en palabras. Ej: veinte millones de pesos."
+      },
+      {
+        "name": "capital_total_numeros",
+        "label": "Capital social total en números",
+        "type": "text",
+        "required": true,
+        "help": "Capital en cifras. Ej: 20.000.000."
+      },
+      {
+        "name": "aportes_socios",
+        "label": "Aporte de cada socio",
+        "type": "text",
+        "required": true,
+        "help": "Qué aporta cada socio. Ej: El señor X aporta $10.000.000 en efectivo; La señora Y aporta maquinaria valorada en $10.000.000."
+      },
+      {
+        "name": "dia_cierre_ejercicio",
+        "label": "Día de cierre del ejercicio financiero",
+        "type": "text",
+        "required": true,
+        "help": "Generalmente 31."
+      },
+      {
+        "name": "mes_cierre_ejercicio",
+        "label": "Mes de cierre del ejercicio financiero",
+        "type": "text",
+        "required": true,
+        "help": "Generalmente diciembre."
+      },
+      {
+        "name": "dias_distribucion_utilidades",
+        "label": "Días para distribuir utilidades",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos días después del cierre se distribuyen. Ej: 30."
+      },
+      {
+        "name": "porcentaje_reserva",
+        "label": "Porcentaje de reserva sobre utilidades (%)",
+        "type": "text",
+        "required": true,
+        "help": "Porcentaje que se guarda como reserva. Ej: 10."
+      },
+      {
+        "name": "cuotas_retiro_socio",
+        "label": "Cuotas para pagar al socio que se retira",
+        "type": "text",
+        "required": true,
+        "help": "En cuántas cuotas mensuales se le paga. Ej: 6, 12."
+      },
+      {
+        "name": "porcentaje_perdida_disolucion",
+        "label": "Porcentaje de pérdida que obliga a disolver (%)",
+        "type": "text",
+        "required": true,
+        "help": "Si las pérdidas superan este porcentaje del capital, la sociedad se disuelve. Ej: 50."
+      }
+    ],
+    "template": "Entre los suscritos a saber: {{nombre_socio1}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_socio1}} de {{expedicion_socio1}}, {{nombre_socio2}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_socio2}} de {{expedicion_socio2}}, y {{nombre_socio3}}, mayor de edad, identificado con la cédula de ciudadanía Nº. {{cedula_socio3}} de {{expedicion_socio3}}, {{estado_civil_socios}}, domiciliados y residentes en {{domicilio_socios}}, por medio del presente documento manifestamos que es nuestra voluntad celebrar un contrato de sociedad de hecho que se regirá por las siguientes cláusulas:\n\nPRIMERA. Denominación y domicilio.— La sociedad comercial que se constituye con el presente escrito recibirá la denominación de \"{{nombre_sociedad}}\", teniendo como domicilio social y principal en la ciudad de {{domicilio_sociedad}}, Departamento de {{departamento_sociedad}}, sin embargo, esto no impide la posibilidad de crear sucursales, agencias o dependencias en otros lugares del país o del exterior por acuerdo de los socios.\n\nSEGUNDA. Objeto social.— El objeto social de esta sociedad consiste en {{objeto_social}}. En desarrollo de este objeto social podrá invertir sus fondos disponibles en bienes inmuebles o muebles que produzcan rendimientos periódicos, negociar toda clase de títulos valores, comprar, vender, arrendar y celebrar toda clase de actos, operaciones o contratos que tengan relación directa con las actividades que conforman el objeto principal.\n\nTERCERA. Duración.— La sociedad tendrá una duración de {{duracion_anios}} años, contados desde la fecha de la firma del presente contrato.\n\nCUARTA. Capital social.— El capital social se fijará en la suma de {{capital_total_letras}} ($ {{capital_total_numeros}}), integrado de la siguiente manera: {{aportes_socios}}\n\nQUINTA. Prohibiciones.— Se prohíbe a los socios utilizar la firma social en asuntos que no sean inherentes a la sociedad o para garantizar obligaciones personales o de terceros. Igualmente, los socios no podrán realizar operaciones en competencia con la sociedad, ni contratar con ésta en forma personal o por terceras personas, salvo autorización por escrito de la totalidad de los socios.\n\nSEXTA. Terminación de ejercicio financiero.— El ejercicio financiero termina todos los {{dia_cierre_ejercicio}} del mes de {{mes_cierre_ejercicio}} de cada año, debiendo en esta fecha confeccionarse un balance general firmado por todos los socios previa aprobación. Dentro del término de {{dias_distribucion_utilidades}} días se distribuirán las utilidades conforme a los porcentajes de los capitales integrados por cada socio, previa deducción del {{porcentaje_reserva}}% de las mismas por concepto de reserva.\n\nSÉPTIMA. Retiro de socios.— Cuando uno de los socios solicitare su retiro de la sociedad, se deberá realizar un balance general firmado por todos los socios. El valor de la cuota de capital aportado y de las ganancias pertenecientes al socio renunciante le serán reintegradas en {{cuotas_retiro_socio}} cuotas mensuales y consecutivas pagaderas en el domicilio social.\n\nOCTAVA. Incapacidad o fallecimiento de un socio.— En caso de incapacidad sobreviniente o fallecimiento de alguno de los socios, la sociedad continuará con sus labores si así lo decide la mayoría de los socios, quienes oirán a los herederos o representantes del socio para efectos de incorporarlos o proceder al pago de la parte social.\n\nNOVENA. Liquidación.— La sociedad entrará en liquidación si así lo solicitan más de la mitad de sus socios o si en un ejercicio financiero se produjera una pérdida igual o mayor al {{porcentaje_perdida_disolucion}}% del capital social. Para tal efecto se nombrará un liquidador que procederá a realizar el activo, pagar las deudas contraídas y terminar las operaciones pendientes.\n\nPresentes los socios, en constancia de su aceptación firman el presente documento.\n\nSocio: _______________________\n{{nombre_socio1}} - C.C. {{cedula_socio1}}\n\nSocio: _______________________\n{{nombre_socio2}} - C.C. {{cedula_socio2}}\n\nSocio: _______________________\n{{nombre_socio3}} - C.C. {{cedula_socio3}}"
+  },
+  {
+    "id": "constitucion-sociedad-colectiva",
+    "title": "Constitución de Sociedad Colectiva",
+    "subtitle": "Empresa Unipersonal y Sociedades Básicas",
+    "tipo_tramite": "Notarial",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se otorga la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde está la notaría."
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true,
+        "help": "Departamento de la notaría. Ej: Valle del Cauca."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2026."
+      },
+      {
+        "name": "nombre_notario",
+        "label": "Nombre del Notario",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del notario."
+      },
+      {
+        "name": "numero_notaria",
+        "label": "Número de la Notaría",
+        "type": "text",
+        "required": true,
+        "help": "Ej: Primera, Segunda, Única."
+      },
+      {
+        "name": "circulo_notarial",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del círculo notarial. Ej: El Cerrito."
+      },
+      {
+        "name": "nombre_socio1",
+        "label": "Nombre completo del primer socio",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del primer socio."
+      },
+      {
+        "name": "cedula_socio1",
+        "label": "Cédula del primer socio",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del primer socio."
+      },
+      {
+        "name": "expedicion_socio1",
+        "label": "Ciudad expedición cédula primer socio",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad expedición primer socio."
+      },
+      {
+        "name": "nombre_socio2",
+        "label": "Nombre completo del segundo socio",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del segundo socio."
+      },
+      {
+        "name": "cedula_socio2",
+        "label": "Cédula del segundo socio",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del segundo socio."
+      },
+      {
+        "name": "expedicion_socio2",
+        "label": "Ciudad expedición cédula segundo socio",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad expedición segundo socio."
+      },
+      {
+        "name": "nombre_socio3",
+        "label": "Nombre del tercer socio (si no hay escriba: no aplica)",
+        "type": "text",
+        "required": true,
+        "help": "Si no hay tercer socio escriba: no aplica."
+      },
+      {
+        "name": "cedula_socio3",
+        "label": "Cédula del tercer socio (si no hay escriba: no aplica)",
+        "type": "text",
+        "required": true,
+        "help": "Si no hay tercer socio escriba: no aplica."
+      },
+      {
+        "name": "expedicion_socio3",
+        "label": "Ciudad expedición tercer socio (si no hay escriba: no aplica)",
+        "type": "text",
+        "required": true,
+        "help": "Si no hay tercer socio escriba: no aplica."
+      },
+      {
+        "name": "estado_civil_socios",
+        "label": "Estado civil de los socios",
+        "type": "text",
+        "required": true,
+        "help": "Ej: todos casados con sociedad conyugal vigente."
+      },
+      {
+        "name": "domicilio_socios",
+        "label": "Ciudad de domicilio de los socios",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde viven los socios."
+      },
+      {
+        "name": "razon_social",
+        "label": "Razón social de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Debe formarse con el apellido de algún socio. Ej: Martínez y Compañía, López Hermanos."
+      },
+      {
+        "name": "domicilio_sociedad",
+        "label": "Ciudad domicilio de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad principal donde funcionará la sociedad."
+      },
+      {
+        "name": "objeto_social",
+        "label": "Objeto social principal",
+        "type": "text",
+        "required": true,
+        "help": "Actividades principales de la sociedad."
+      },
+      {
+        "name": "capital_total_letras",
+        "label": "Capital social en letras",
+        "type": "text",
+        "required": true,
+        "help": "Capital en palabras. Ej: cincuenta millones de pesos."
+      },
+      {
+        "name": "capital_total_numeros",
+        "label": "Capital social en números",
+        "type": "text",
+        "required": true,
+        "help": "Capital en cifras. Ej: 50.000.000."
+      },
+      {
+        "name": "aportes_socios",
+        "label": "Aporte de cada socio",
+        "type": "text",
+        "required": true,
+        "help": "Qué aporta cada socio. Ej: El señor X aporta $25.000.000 en efectivo; La señora Y aporta $25.000.000 en maquinaria."
+      },
+      {
+        "name": "cuantia_actuacion_individual_letras",
+        "label": "Cuantía máxima para actuar individualmente en letras",
+        "type": "text",
+        "required": true,
+        "help": "Para actos mayores, los administradores deben actuar conjuntamente. Ej: diez millones de pesos."
+      },
+      {
+        "name": "cuantia_actuacion_individual_numeros",
+        "label": "Cuantía máxima para actuar individualmente en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 10.000.000."
+      },
+      {
+        "name": "dias_convocatoria_ordinaria",
+        "label": "Días de anticipación convocatoria ordinaria",
+        "type": "text",
+        "required": true,
+        "help": "Con cuántos días se convoca la reunión ordinaria. Ej: 15."
+      },
+      {
+        "name": "dias_convocatoria_extraordinaria",
+        "label": "Días de anticipación convocatoria extraordinaria",
+        "type": "text",
+        "required": true,
+        "help": "Con cuántos días se convoca la reunión extraordinaria. Ej: 5."
+      },
+      {
+        "name": "duracion_anios",
+        "label": "Duración de la sociedad en años",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos años durará la sociedad. Ej: 25."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad del tribunal de arbitramento",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se resolverán los conflictos. Ej: Bogotá, Cali."
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} de {{anio}}, ante mí {{nombre_notario}}, Notario {{numero_notaria}} del Círculo de {{circulo_notarial}}, comparecieron {{nombre_socio1}}, {{nombre_socio2}} y {{nombre_socio3}}, todos mayores de edad, {{estado_civil_socios}}, domiciliados en {{domicilio_socios}}, identificados con las cédulas de ciudadanía Nº. {{cedula_socio1}} de {{expedicion_socio1}}, {{cedula_socio2}} de {{expedicion_socio2}} y {{cedula_socio3}} de {{expedicion_socio3}}, quienes manifestaron que por medio del presente instrumento público han decidido constituir una sociedad colectiva, la cual se regirá por los siguientes estatutos:\n\nARTÍCULO 1º.— Son socios de la compañía comercial que por esta escritura se constituye: {{nombre_socio1}}, {{nombre_socio2}} y {{nombre_socio3}}.\n\nARTÍCULO 2º.— La sociedad será comercial colectiva y girará bajo la razón social de {{razon_social}}.\n\nARTÍCULO 3º.— El domicilio de la sociedad será la ciudad de {{domicilio_sociedad}}, pero podrá crear sucursales o agencias en otros lugares del país o del exterior, por disposición de la junta general de socios y con arreglo a la ley.\n\nARTÍCULO 4º.— La sociedad tendrá como objeto principal las siguientes actividades: {{objeto_social}}\n\nARTÍCULO 5º.— La sociedad tendrá un capital de {{capital_total_letras}} ($ {{capital_total_numeros}}), suscrito y pagado por los socios de la siguiente forma: {{aportes_socios}}\n\nARTÍCULO 6º.— La responsabilidad de los socios por las operaciones sociales es solidaria e ilimitada y se deducirá contra los socios en la forma y en las oportunidades señaladas en la ley.\n\nARTÍCULO 7º.— Los socios podrán ceder total o parcialmente su interés en la sociedad, y la cesión se tendrá como una reforma del contrato social, aunque se haga a favor de otro socio, por lo que requerirá que sea aprobada por la junta de socios con el voto unánime de los asociados.\n\nARTÍCULO 8º.— La administración de la sociedad corresponderá a todos y cada uno de los socios, quienes podrán delegarla en sus consocios o en extraños, pero en este último caso se requerirá autorización expresa de sus demás consocios.\n\nARTÍCULO 9º.— La representación de la sociedad llevará implícita la facultad de usar la firma social y de celebrar todas las operaciones comprendidas dentro del giro ordinario de los negocios sociales. Cuando sean varios los delegados, deberán actuar de consuno, excepto cuando se trate de operaciones cuya cuantía no sea superior a {{cuantia_actuacion_individual_letras}} ($ {{cuantia_actuacion_individual_numeros}}).\n\nARTÍCULO 10.— Los administradores representarán legalmente a la sociedad y tendrán especialmente las siguientes funciones: a) Usar de la firma o razón social; b) Designar los empleados que requiera el normal funcionamiento de la compañía; c) Presentar informes a la junta general de socios; d) Convocar la junta general de socios a reuniones ordinarias y extraordinarias; e) Constituir apoderados judiciales necesarios para la defensa de los intereses sociales.\n\nARTÍCULO 11.— La junta general de socios se reunirá en sesiones ordinarias dentro de los tres primeros meses siguientes al vencimiento del ejercicio social, con una anticipación no menor de {{dias_convocatoria_ordinaria}} días. Las reuniones extraordinarias se efectuarán cuando las necesidades imprevistas de la compañía así lo exijan, con una anticipación no menor de {{dias_convocatoria_extraordinaria}} días.\n\nARTÍCULO 12.— En las reuniones de la junta general de socios habrá quórum para deliberar con la mayoría numérica de los asociados. Sus decisiones se adoptarán con la misma mayoría, excepto las reformas estatutarias que requieren unanimidad.\n\nARTÍCULO 13.— La sociedad tendrá una duración de {{duracion_anios}} años, contados desde la fecha de esta escritura.\n\nARTÍCULO 14.— La sociedad formará una reserva legal con el diez por ciento (10%) de las utilidades líquidas de cada ejercicio, hasta completar el cincuenta por ciento (50%) del capital.\n\nARTÍCULO 15.— Toda diferencia o controversia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nSocios: _______________________\nNotario: _______________________"
+  },
+  {
+    "id": "poder-constituir-sociedad-anonima",
+    "title": "Poder para Constituir una Sociedad Anónima",
+    "subtitle": "Sociedad Anónima",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empresa_extranjera",
+        "label": "Nombre de la empresa extranjera poderdante",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo de la compañía extranjera que otorga el poder. Ej: International Commerce Corp."
+      },
+      {
+        "name": "pais_empresa_extranjera",
+        "label": "País donde está constituida la empresa extranjera",
+        "type": "text",
+        "required": true,
+        "help": "País de constitución de la empresa. Ej: Estados Unidos, España, Francia."
+      },
+      {
+        "name": "domicilio_empresa_extranjera",
+        "label": "Ciudad domicilio de la empresa extranjera",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad principal de la empresa extranjera. Ej: Nueva York, Madrid."
+      },
+      {
+        "name": "nombre_representante_extranjero",
+        "label": "Nombre del representante legal de la empresa extranjera",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de quien firma el poder en representación de la empresa extranjera."
+      },
+      {
+        "name": "cedula_representante_extranjero",
+        "label": "Documento de identidad del representante extranjero",
+        "type": "text",
+        "required": true,
+        "help": "Número de identificación del representante. Puede ser cédula, pasaporte u otro documento."
+      },
+      {
+        "name": "expedicion_representante_extranjero",
+        "label": "Ciudad expedición documento representante extranjero",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedido el documento."
+      },
+      {
+        "name": "cargo_representante_extranjero",
+        "label": "Cargo del representante en la empresa extranjera",
+        "type": "text",
+        "required": true,
+        "help": "Cargo que ocupa. Ej: Presidente, Gerente General, Director Ejecutivo."
+      },
+      {
+        "name": "fecha_reunion_autorizacion",
+        "label": "Fecha de la reunión que autorizó el poder",
+        "type": "text",
+        "required": true,
+        "help": "Fecha de la junta que autorizó al representante para otorgar este poder. Ej: 15 de enero de 2026."
+      },
+      {
+        "name": "numero_acta_autorizacion",
+        "label": "Número del acta de autorización",
+        "type": "text",
+        "required": true,
+        "help": "Número del acta de la reunión donde se autorizó el poder. Ej: 125."
+      },
+      {
+        "name": "nombre_apoderado_principal",
+        "label": "Nombre del apoderado principal (colombiano)",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del colombiano designado como apoderado principal para constituir la sociedad."
+      },
+      {
+        "name": "cedula_apoderado_principal",
+        "label": "Cédula del apoderado principal",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del apoderado principal."
+      },
+      {
+        "name": "expedicion_apoderado_principal",
+        "label": "Ciudad expedición cédula apoderado principal",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del apoderado."
+      },
+      {
+        "name": "nombre_apoderado_sustituto",
+        "label": "Nombre del apoderado sustituto",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del colombiano que reemplazará al apoderado principal si este no puede actuar."
+      },
+      {
+        "name": "cedula_apoderado_sustituto",
+        "label": "Cédula del apoderado sustituto",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del apoderado sustituto."
+      },
+      {
+        "name": "expedicion_apoderado_sustituto",
+        "label": "Ciudad expedición cédula apoderado sustituto",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del apoderado sustituto."
+      },
+      {
+        "name": "domicilio_apoderados",
+        "label": "Ciudad de domicilio de los apoderados",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde viven los apoderados colombianos. Generalmente Bogotá o la ciudad donde se constituirá la sociedad."
+      },
+      {
+        "name": "nombre_otro_socio_colombiano",
+        "label": "Nombre del otro socio colombiano que participará",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de la persona colombiana que se asociará con la empresa extranjera."
+      },
+      {
+        "name": "nombre_sociedad_proyectada",
+        "label": "Nombre de la sociedad que se va a constituir",
+        "type": "text",
+        "required": true,
+        "help": "Nombre propuesto para la nueva sociedad anónima. Ej: Inversiones del Pacífico."
+      },
+      {
+        "name": "capital_autorizado_letras",
+        "label": "Capital autorizado de la nueva sociedad en letras",
+        "type": "text",
+        "required": true,
+        "help": "Capital total autorizado de la nueva S.A. en palabras. Ej: quinientos millones de pesos."
+      },
+      {
+        "name": "capital_autorizado_numeros",
+        "label": "Capital autorizado en números",
+        "type": "text",
+        "required": true,
+        "help": "Capital en cifras. Ej: 500.000.000."
+      },
+      {
+        "name": "porcentaje_maximo_participacion",
+        "label": "Porcentaje máximo de participación de la empresa extranjera (%)",
+        "type": "text",
+        "required": true,
+        "help": "Qué porcentaje máximo del capital suscribirá la empresa extranjera. Ej: 40."
+      },
+      {
+        "name": "limite_aporte_extranjero_letras",
+        "label": "Límite del aporte extranjero en letras",
+        "type": "text",
+        "required": true,
+        "help": "Valor máximo que aportará la empresa extranjera en palabras. Ej: doscientos millones de pesos."
+      },
+      {
+        "name": "limite_aporte_extranjero_numeros",
+        "label": "Límite del aporte extranjero en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 200.000.000."
+      },
+      {
+        "name": "objeto_principal_sociedad",
+        "label": "Objeto principal de la nueva sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Actividades principales de la sociedad a constituir. Ej: explotación minera; servicios de tecnología."
+      },
+      {
+        "name": "objeto_secundario_sociedad",
+        "label": "Objeto secundario de la nueva sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Actividades secundarias relacionadas. Ej: importación de equipos; consultoría."
+      },
+      {
+        "name": "ciudad_otorgamiento_poder",
+        "label": "Ciudad donde se otorga el poder",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se firma este poder. Generalmente en el país extranjero."
+      },
+      {
+        "name": "dia",
+        "label": "Día del otorgamiento",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes del otorgamiento",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año del otorgamiento",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2026."
+      }
+    ],
+    "template": "Conste por el presente documento que {{nombre_empresa_extranjera}}, compañía por acciones constituida conforme a las leyes de {{pais_empresa_extranjera}}, con domicilio principal en la ciudad de {{domicilio_empresa_extranjera}}, representada por el suscrito {{nombre_representante_extranjero}}, identificado con el documento Nº. {{cedula_representante_extranjero}} de {{expedicion_representante_extranjero}}, en calidad de {{cargo_representante_extranjero}} y representante legal, obrando en ejercicio de las autorizaciones que le fueron conferidas por la Junta de la compañía en su reunión del {{fecha_reunion_autorizacion}}, como consta en el Acta Nº. {{numero_acta_autorizacion}} correspondiente a dicha reunión, para los efectos relacionados con una inversión de capital en la República de Colombia, relativa a la constitución de una compañía con participación de capital colombiano, por medio del presente escrito confiere poder especial, amplio y suficiente a los señores {{nombre_apoderado_principal}} y {{nombre_apoderado_sustituto}}, ciudadanos colombianos, mayores de edad, domiciliados y residentes en {{domicilio_apoderados}}, identificados con las cédulas de ciudadanía Nº. {{cedula_apoderado_principal}} de {{expedicion_apoderado_principal}} y {{cedula_apoderado_sustituto}} de {{expedicion_apoderado_sustituto}}, respectivamente, como principal y sustituto en su orden, para que en nombre y representación de {{nombre_empresa_extranjera}}, y en asocio del señor {{nombre_otro_socio_colombiano}} y de otras personas, constituyan una sociedad comercial anónima en la República de Colombia, de acuerdo con las leyes de dicho país, que se denominará {{nombre_sociedad_proyectada}} S.A., o bajo otra denominación que acuerden los constituyentes, cuyo capital autorizado será de {{capital_autorizado_letras}} ($ {{capital_autorizado_numeros}}) moneda legal colombiana.\n\nEn ejercicio del poder conferido mediante el presente documento, los mandatarios quedan investidos de amplias facultades para acordar con los demás constituyentes la forma y cuantía de la suscripción inicial del capital y la parte de éste que suscribirá {{nombre_empresa_extranjera}}, sin exceder del {{porcentaje_maximo_participacion}} por ciento ({{porcentaje_maximo_participacion}}%) del total, con un límite de {{limite_aporte_extranjero_letras}} ($ {{limite_aporte_extranjero_numeros}}) moneda legal colombiana; pactar el domicilio social; convenir las demás estipulaciones del contrato social, y especialmente:\n\n1. El número, valor y clase de las acciones.\n2. La duración de la compañía, las causales de disolución y la forma de liquidación.\n3. Determinar de manera precisa las actividades que han de constituir el objeto principal de la compañía en asuntos relacionados con {{objeto_principal_sociedad}} y secundariamente {{objeto_secundario_sociedad}}.\n4. Estipular la administración, la composición y atribuciones de la junta directiva.\n5. Celebrar todas las estipulaciones y pactos accesorios que fueren necesarios o convenientes para la realización del negocio que es objeto del presente mandato.\n6. Otorgar la escritura de constitución y las demás escrituras públicas adicionales o aclaratorias que fueren necesarias.\n7. Representar a {{nombre_empresa_extranjera}} en las reuniones de la asamblea de accionistas que fueren convocadas.\n\nSe otorga el presente documento en {{ciudad_otorgamiento_poder}}, el {{dia}} de {{mes}} de {{anio}}, ante notario público de dicha ciudad.\n\nPoderdante: _______________________\n{{nombre_representante_extranjero}}\n{{cargo_representante_extranjero}} de {{nombre_empresa_extranjera}}\n\nAcepto:\nApoderado principal: _______________________\n{{nombre_apoderado_principal}}\nC.C. Nº. {{cedula_apoderado_principal}} de {{expedicion_apoderado_principal}}\n\nApoderado sustituto: _______________________\n{{nombre_apoderado_sustituto}}\nC.C. Nº. {{cedula_apoderado_sustituto}} de {{expedicion_apoderado_sustituto}}"
+  },
+  {
+    "id": "poder-representar-asamblea",
+    "title": "Poder para Representar en Asamblea",
+    "subtitle": "Sociedad Anónima",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se otorga el poder",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se firma este poder. Ej: Cali, Bogotá."
+      },
+      {
+        "name": "dia",
+        "label": "Día del otorgamiento",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes del otorgamiento",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año del otorgamiento",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2026."
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre del poderdante (quien otorga el poder)",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo de quien otorga el poder para asistir a la asamblea."
+      },
+      {
+        "name": "domicilio_poderdante",
+        "label": "Ciudad de domicilio del poderdante",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el poderdante."
+      },
+      {
+        "name": "calidad_poderdante",
+        "label": "Calidad en que actúa el poderdante",
+        "type": "text",
+        "required": true,
+        "help": "Ej: Representante Legal de la sociedad ABC S.A.; accionista en nombre propio."
+      },
+      {
+        "name": "nombre_sociedad_poderdante",
+        "label": "Nombre de la sociedad que representa (si aplica)",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de la empresa que el poderdante representa. Si actúa en nombre propio escriba: no aplica."
+      },
+      {
+        "name": "nombre_apoderado",
+        "label": "Nombre del apoderado",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de quien asistirá a la asamblea en representación del poderdante."
+      },
+      {
+        "name": "cedula_apoderado",
+        "label": "Cédula del apoderado",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del apoderado."
+      },
+      {
+        "name": "expedicion_apoderado",
+        "label": "Ciudad expedición cédula del apoderado",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula del apoderado."
+      },
+      {
+        "name": "tipo_sesion",
+        "label": "Tipo de sesión (ordinaria o extraordinaria)",
+        "type": "text",
+        "required": true,
+        "help": "Escriba: ordinaria o extraordinaria."
+      },
+      {
+        "name": "fecha_sesion",
+        "label": "Fecha de la sesión de asamblea",
+        "type": "text",
+        "required": true,
+        "help": "Fecha de la reunión para la que se otorga el poder. Ej: 15 de marzo de 2026."
+      },
+      {
+        "name": "nombre_sociedad_asamblea",
+        "label": "Nombre de la sociedad cuya asamblea se celebrará",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de la empresa que convoca la asamblea. Ej: Inversiones del Pacífico S.A."
+      },
+      {
+        "name": "ciudad_sesion",
+        "label": "Ciudad donde se celebrará la asamblea",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde tendrá lugar la reunión."
+      },
+      {
+        "name": "nombre_sustituto",
+        "label": "Nombre del sustituto (si no puede asistir el apoderado)",
+        "type": "text",
+        "required": true,
+        "help": "Persona que reemplazará al apoderado si este no puede asistir. Si no hay sustituto escriba: no aplica."
+      }
+    ],
+    "template": "{{ciudad}}, {{dia}} de {{mes}} de {{anio}}\n\nSeñores:\n{{nombre_sociedad_asamblea}}\nCiudad\n\n{{nombre_poderdante}}, mayor de edad, domiciliado y residente en {{domicilio_poderdante}}, en mi calidad de {{calidad_poderdante}} de la sociedad {{nombre_sociedad_poderdante}}, según certificado de existencia y representación legal que se anexa, mediante el presente escrito respetuosamente manifiesto a ustedes que confiero poder amplio y suficiente a {{nombre_apoderado}}, identificado con la cédula de ciudadanía Nº. {{cedula_apoderado}} de {{expedicion_apoderado}}, para que asista y delibere en mi nombre en la sesión {{tipo_sesion}} de fecha {{fecha_sesion}} de la {{nombre_sociedad_asamblea}}, que se celebrará en la ciudad de {{ciudad_sesion}}.\n\nEl apoderado está facultado para votar por todas las decisiones que deba tomar en dicha reunión, en la forma que considere más conveniente para los intereses de la entidad que represento.\n\nAsí mismo, en caso de no poder asistir a dicha sesión, mi apoderado está facultado para sustituir el poder a {{nombre_sustituto}}.\n\nCordialmente,\n\n_______________________\n{{nombre_poderdante}}\n{{calidad_poderdante}}\n{{nombre_sociedad_poderdante}}"
+  },
+  {
+    "id": "poder-representar-accionista-permanente",
+    "title": "Poder para Representar a un Accionista de Manera Permanente",
+    "subtitle": "Sociedad Anónima",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empresa_extranjera",
+        "label": "Nombre de la empresa extranjera accionista",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de la empresa extranjera cuyas acciones se van a representar."
+      },
+      {
+        "name": "pais_empresa_extranjera",
+        "label": "País de constitución de la empresa extranjera",
+        "type": "text",
+        "required": true,
+        "help": "País donde está constituida la empresa. Ej: Estados Unidos."
+      },
+      {
+        "name": "domicilio_empresa_extranjera",
+        "label": "Domicilio de la empresa extranjera",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad principal de la empresa extranjera."
+      },
+      {
+        "name": "escritura_constitucion_numero",
+        "label": "Número de la escritura de constitución",
+        "type": "text",
+        "required": true,
+        "help": "Número de la escritura pública con que fue constituida la empresa extranjera."
+      },
+      {
+        "name": "fecha_escritura_constitucion",
+        "label": "Fecha de la escritura de constitución",
+        "type": "text",
+        "required": true,
+        "help": "Fecha de la escritura de constitución de la empresa extranjera."
+      },
+      {
+        "name": "notario_constitucion",
+        "label": "Notario que autorizó la escritura de constitución",
+        "type": "text",
+        "required": true,
+        "help": "Nombre y ciudad del notario que autorizó la escritura."
+      },
+      {
+        "name": "nombre_representante_extranjero",
+        "label": "Nombre del representante de la empresa extranjera",
+        "type": "text",
+        "required": true,
+        "help": "Quien firma este poder en nombre de la empresa extranjera."
+      },
+      {
+        "name": "nacionalidad_representante",
+        "label": "Nacionalidad del representante",
+        "type": "text",
+        "required": true,
+        "help": "Ej: estadounidense, español, colombiano."
+      },
+      {
+        "name": "domicilio_representante",
+        "label": "Ciudad de domicilio del representante",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde vive el representante."
+      },
+      {
+        "name": "cedula_representante",
+        "label": "Documento de identidad del representante",
+        "type": "text",
+        "required": true,
+        "help": "Número de identificación del representante."
+      },
+      {
+        "name": "expedicion_representante",
+        "label": "Ciudad expedición documento representante",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedido el documento."
+      },
+      {
+        "name": "cargo_representante",
+        "label": "Cargo del representante en la empresa extranjera",
+        "type": "text",
+        "required": true,
+        "help": "Ej: Presidente, Gerente General."
+      },
+      {
+        "name": "nombre_apoderado_principal",
+        "label": "Nombre del apoderado principal",
+        "type": "text",
+        "required": true,
+        "help": "Colombiano designado como apoderado principal."
+      },
+      {
+        "name": "cedula_apoderado_principal",
+        "label": "Cédula del apoderado principal",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del apoderado principal."
+      },
+      {
+        "name": "expedicion_apoderado_principal",
+        "label": "Ciudad expedición cédula apoderado principal",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad expedición."
+      },
+      {
+        "name": "nombre_apoderado_sustituto",
+        "label": "Nombre del apoderado sustituto",
+        "type": "text",
+        "required": true,
+        "help": "Colombiano que reemplazará al apoderado principal."
+      },
+      {
+        "name": "cedula_apoderado_sustituto",
+        "label": "Cédula del apoderado sustituto",
+        "type": "text",
+        "required": true,
+        "help": "Cédula del apoderado sustituto."
+      },
+      {
+        "name": "expedicion_apoderado_sustituto",
+        "label": "Ciudad expedición cédula apoderado sustituto",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad expedición."
+      },
+      {
+        "name": "domicilio_apoderados",
+        "label": "Ciudad de domicilio de los apoderados",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde viven los apoderados colombianos."
+      },
+      {
+        "name": "nombre_sociedad_colombiana",
+        "label": "Nombre de la sociedad colombiana donde tiene acciones",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de la S.A. colombiana donde la empresa extranjera es accionista. Ej: Construcciones del Valle S.A."
+      },
+      {
+        "name": "domicilio_sociedad_colombiana",
+        "label": "Ciudad domicilio de la sociedad colombiana",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde está la sociedad colombiana."
+      },
+      {
+        "name": "ciudad_notario",
+        "label": "Ciudad del notario donde se otorga el poder",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del notario ante quien se firma. Generalmente en el extranjero."
+      },
+      {
+        "name": "dia",
+        "label": "Día del otorgamiento",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes del otorgamiento",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año del otorgamiento",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2026."
+      }
+    ],
+    "template": "Por este escrito {{nombre_empresa_extranjera}}, compañía comercial constituida y organizada de acuerdo a las leyes de {{pais_empresa_extranjera}}, con domicilio en {{domicilio_empresa_extranjera}}, según consta en la escritura pública Nº. {{escritura_constitucion_numero}} de {{fecha_escritura_constitucion}}, autorizada por el Notario {{notario_constitucion}}, representada en este acto por el suscrito {{nombre_representante_extranjero}}, {{nacionalidad_representante}}, domiciliado y residente en {{domicilio_representante}}, identificado con el documento Nº. {{cedula_representante}} de {{expedicion_representante}}, en su calidad de {{cargo_representante}}, autorizado por la junta directiva de la compañía, confiere poder especial a los señores {{nombre_apoderado_principal}} y {{nombre_apoderado_sustituto}}, identificados con las cédulas de ciudadanía Nº. {{cedula_apoderado_principal}} de {{expedicion_apoderado_principal}} y {{cedula_apoderado_sustituto}} de {{expedicion_apoderado_sustituto}} respectivamente, ambos domiciliados y residentes en {{domicilio_apoderados}}, República de Colombia, como principal y sustituto en su orden, para que representen las acciones que {{nombre_empresa_extranjera}} tiene en la Compañía {{nombre_sociedad_colombiana}}, con domicilio en {{domicilio_sociedad_colombiana}}, República de Colombia, en todas las reuniones ordinarias y extraordinarias de la asamblea de accionistas de la compañía descrita, con facultades amplias para intervenir en su gobierno y dirección general, votar las decisiones que deban ser adoptadas por dicha asamblea en desarrollo de las facultades que estatutaria o legalmente le correspondan, sean actos de dirección, administrativos o dispositivos, o actuaciones que se relacionen con la ejecución del contrato social, o se refieran a la existencia y modificación del mismo.\n\nLos apoderados quedan también facultados para representar a {{nombre_empresa_extranjera}} ante {{nombre_sociedad_colombiana}} y ante los demás accionistas para el ejercicio de los derechos que le corresponden como accionista, incluyendo el derecho de inspección, el de suscribir acciones de nueva emisión, el de nombrar árbitro o perito si es procedente, y en general en todos los actos o gestiones en que ella deba o pueda intervenir en su calidad de accionista.\n\nEl poder que por este escrito se confiere se entenderá vigente para todas y cada una de las reuniones de la asamblea de accionistas de {{nombre_sociedad_colombiana}} que se realicen a partir de la fecha de su perfeccionamiento, hasta su renovación por otro instrumento.\n\nEn constancia se suscribe ante el Notario de {{ciudad_notario}} el {{dia}} de {{mes}} de {{anio}}.\n\nPoderdante: _______________________\n{{nombre_representante_extranjero}}\n{{cargo_representante}}, {{nombre_empresa_extranjera}}\n\nAcepto:\nApoderado principal: _______________________\n{{nombre_apoderado_principal}}\nC.C. Nº. {{cedula_apoderado_principal}} de {{expedicion_apoderado_principal}}\n\nApoderado sustituto: _______________________\n{{nombre_apoderado_sustituto}}\nC.C. Nº. {{cedula_apoderado_sustituto}} de {{expedicion_apoderado_sustituto}}"
+  },
+  {
+    "id": "constitucion-sociedad-anonima",
+    "title": "Constitución de Sociedad Anónima",
+    "subtitle": "Sociedad Anónima",
+    "tipo_tramite": "Notarial",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se otorga la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde está la notaría."
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true,
+        "help": "Departamento de la notaría."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: enero."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2026."
+      },
+      {
+        "name": "nombre_notario",
+        "label": "Nombre del Notario",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del notario."
+      },
+      {
+        "name": "numero_notaria",
+        "label": "Número de la Notaría",
+        "type": "text",
+        "required": true,
+        "help": "Ej: Primera, Segunda."
+      },
+      {
+        "name": "circulo_notarial",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del círculo notarial."
+      },
+      {
+        "name": "comparecientes",
+        "label": "Nombre y cédula de todos los accionistas fundadores",
+        "type": "text",
+        "required": true,
+        "help": "Liste todos los accionistas: nombre, cédula y ciudad. Deben ser mínimo 5. Ej: Carlos López C.C. 12345 de Cali; María Gómez C.C. 67890 de Bogotá."
+      },
+      {
+        "name": "domicilio_comparecientes",
+        "label": "Ciudad de domicilio de los comparecientes",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde viven los accionistas fundadores."
+      },
+      {
+        "name": "estado_civil_comparecientes",
+        "label": "Estado civil de los comparecientes",
+        "type": "text",
+        "required": true,
+        "help": "Ej: todos solteros; con sociedad conyugal vigente."
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre de la sociedad (sin S.A.)",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de la empresa SIN incluir S.A. Ej: Inversiones del Pacífico."
+      },
+      {
+        "name": "domicilio_sociedad",
+        "label": "Ciudad domicilio de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad principal donde funcionará la S.A."
+      },
+      {
+        "name": "objeto_social",
+        "label": "Objeto social principal",
+        "type": "text",
+        "required": true,
+        "help": "Actividades principales de la sociedad."
+      },
+      {
+        "name": "duracion_anios",
+        "label": "Duración de la sociedad en años",
+        "type": "text",
+        "required": true,
+        "help": "Años de duración. Ej: 25."
+      },
+      {
+        "name": "capital_autorizado_letras",
+        "label": "Capital autorizado en letras",
+        "type": "text",
+        "required": true,
+        "help": "Capital autorizado total en palabras. Ej: mil millones de pesos."
+      },
+      {
+        "name": "capital_autorizado_numeros",
+        "label": "Capital autorizado en números",
+        "type": "text",
+        "required": true,
+        "help": "Capital en cifras. Ej: 1.000.000.000."
+      },
+      {
+        "name": "numero_acciones",
+        "label": "Número total de acciones",
+        "type": "text",
+        "required": true,
+        "help": "Cuántas acciones tiene el capital autorizado. Ej: 1.000.000."
+      },
+      {
+        "name": "valor_nominal_accion",
+        "label": "Valor nominal de cada acción",
+        "type": "text",
+        "required": true,
+        "help": "Cuánto vale cada acción. Ej: 1.000."
+      },
+      {
+        "name": "capital_suscrito_letras",
+        "label": "Capital suscrito en letras",
+        "type": "text",
+        "required": true,
+        "help": "Capital suscrito por los fundadores en palabras. Debe ser mínimo el 50% del autorizado."
+      },
+      {
+        "name": "capital_suscrito_numeros",
+        "label": "Capital suscrito en números",
+        "type": "text",
+        "required": true,
+        "help": "Capital suscrito en cifras."
+      },
+      {
+        "name": "capital_pagado_letras",
+        "label": "Capital pagado inicial en letras",
+        "type": "text",
+        "required": true,
+        "help": "Capital pagado al momento de la constitución en palabras. Debe ser mínimo 1/3 del suscrito."
+      },
+      {
+        "name": "capital_pagado_numeros",
+        "label": "Capital pagado inicial en números",
+        "type": "text",
+        "required": true,
+        "help": "Capital pagado en cifras."
+      },
+      {
+        "name": "suscripcion_acciones_detalle",
+        "label": "Detalle de suscripción de acciones por accionista",
+        "type": "text",
+        "required": true,
+        "help": "Cuántas acciones suscribe cada accionista y por qué valor. Ej: Carlos López: 500 acciones por $500.000."
+      },
+      {
+        "name": "numero_miembros_junta",
+        "label": "Número de miembros de la junta directiva",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos miembros principales tiene la junta. Mínimo 3. Ej: 3, 5."
+      },
+      {
+        "name": "periodo_junta_anios",
+        "label": "Período de la junta directiva en años",
+        "type": "text",
+        "required": true,
+        "help": "Años del período de los miembros de la junta. Ej: 1, 2."
+      },
+      {
+        "name": "periodo_gerente_anios",
+        "label": "Período del gerente en años",
+        "type": "text",
+        "required": true,
+        "help": "Años del período del gerente. Ej: 1, 2."
+      },
+      {
+        "name": "periodo_revisor_fiscal",
+        "label": "Período del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Período del revisor fiscal. Generalmente 1 año."
+      },
+      {
+        "name": "junta_directiva_principal1",
+        "label": "Primer miembro principal de la junta directiva",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del primer miembro principal de la junta directiva."
+      },
+      {
+        "name": "junta_directiva_suplente1",
+        "label": "Suplente del primer miembro",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del suplente del primer miembro."
+      },
+      {
+        "name": "junta_directiva_principal2",
+        "label": "Segundo miembro principal de la junta directiva",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del segundo miembro principal."
+      },
+      {
+        "name": "junta_directiva_suplente2",
+        "label": "Suplente del segundo miembro",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del suplente del segundo miembro."
+      },
+      {
+        "name": "junta_directiva_principal3",
+        "label": "Tercer miembro principal de la junta directiva",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del tercer miembro principal."
+      },
+      {
+        "name": "junta_directiva_suplente3",
+        "label": "Suplente del tercer miembro",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del suplente del tercer miembro."
+      },
+      {
+        "name": "nombre_gerente",
+        "label": "Nombre del gerente designado",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del gerente para el período inicial."
+      },
+      {
+        "name": "nombre_revisor_fiscal",
+        "label": "Nombre del revisor fiscal designado",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del revisor fiscal. Debe ser contador público."
+      },
+      {
+        "name": "nombre_suplente_revisor",
+        "label": "Nombre del suplente del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del suplente del revisor fiscal."
+      },
+      {
+        "name": "ciudad_accionistas",
+        "label": "Ciudad donde son vecinos los designados",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde viven los designados para los cargos iniciales."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad del tribunal de arbitramento",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se resolverán los conflictos. Ej: Bogotá."
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} de {{anio}}, ante mí {{nombre_notario}}, Notario {{numero_notaria}} del Círculo de {{circulo_notarial}}, comparecieron {{comparecientes}}, todos mayores de edad, {{estado_civil_comparecientes}}, domiciliados en {{domicilio_comparecientes}}, quienes manifestaron que por medio del presente instrumento público han decidido constituir una sociedad anónima la cual se regirá por lo siguiente:\n\nPRIMERO. Comparecencia.— Los comparecientes han acordado asociarse entre sí para establecer una empresa destinada a la explotación de {{objeto_social}} mediante la constitución de una sociedad por acciones y declaran constituida una sociedad comercial de la especie anónima con la denominación social de {{nombre_sociedad}} S.A.\n\nESTATUTOS\n\nCAPÍTULO I - Nombre, domicilio, objeto y duración\n\nARTÍCULO 1º.— La Sociedad se denominará \"{{nombre_sociedad}} S.A.\", Sociedad Anónima Comercial, de nacionalidad colombiana.\n\nARTÍCULO 2º.— El domicilio de la sociedad será la ciudad de {{domicilio_sociedad}}, pero podrá crear sucursales, agencias o dependencias en otros lugares del país o del exterior, por disposición de la asamblea general de accionistas y con arreglo a la ley.\n\nARTÍCULO 3º.— La sociedad tendrá como objeto principal las siguientes actividades: {{objeto_social}}. En desarrollo del mismo podrá la sociedad ejecutar todos los actos o contratos que fueren convenientes o necesarios para el cabal cumplimiento de su objeto social.\n\nARTÍCULO 4º.— La sociedad durará por el término de {{duracion_anios}} años que empezarán a contarse desde la fecha de esta escritura.\n\nCAPÍTULO II - Capital social\n\nARTÍCULO 5º.— El capital social autorizado es de {{capital_autorizado_letras}} ($ {{capital_autorizado_numeros}}).\n\nARTÍCULO 6º.— El capital de la sociedad se encuentra dividido en {{numero_acciones}} acciones de valor nominal de $ {{valor_nominal_accion}} cada una.\n\nARTÍCULO 7º.— La sociedad formará una reserva legal con el diez por ciento (10%) de las utilidades líquidas de cada ejercicio, hasta completar el cincuenta por ciento (50%) del capital suscrito.\n\nCAPÍTULO III - Revisor fiscal\n\nARTÍCULO 8º.— El revisor fiscal deberá ser contador público. Será nombrado por la asamblea general de accionistas para un período de {{periodo_revisor_fiscal}} año(s), podrá ser reelegido indefinidamente y tendrá un suplente.\n\nCAPÍTULO IV - Asamblea general de accionistas, junta directiva y gerente\n\nARTÍCULO 9º.— Las reuniones ordinarias de la asamblea se celebrarán dentro de los tres primeros meses siguientes al vencimiento del ejercicio social. La convocatoria deberá hacerse con quince días hábiles de anticipación.\n\nARTÍCULO 10.— La junta directiva se compone de {{numero_miembros_junta}} miembros principales, quienes tendrán un suplente personal cada uno. El período de duración será de {{periodo_junta_anios}} años.\n\nARTÍCULO 11.— La sociedad tendrá un gerente, con un suplente. Serán elegidos por la junta directiva para períodos de {{periodo_gerente_anios}} años.\n\nCAPÍTULO V - Disolución y liquidación\n\nARTÍCULO 12.— La sociedad se disolverá por las causales previstas en la ley, entre ellas: por vencimiento del término; por pérdidas que reduzcan el patrimonio neto por debajo del cincuenta por ciento (50%) del capital suscrito; cuando el noventa y cinco por ciento (95%) o más de las acciones suscritas llegue a pertenecer a un solo accionista.\n\nSEGUNDO. Suscripción y pago del capital.— {{suscripcion_acciones_detalle}}\n\nCapital suscrito: {{capital_suscrito_letras}} ($ {{capital_suscrito_numeros}})\nCapital pagado: {{capital_pagado_letras}} ($ {{capital_pagado_numeros}})\n\nTERCERO. Nombramientos.— Para el período inicial de la compañía se efectúan los siguientes nombramientos:\n\nJunta Directiva:\n1. Principal: {{junta_directiva_principal1}} — Suplente: {{junta_directiva_suplente1}}\n2. Principal: {{junta_directiva_principal2}} — Suplente: {{junta_directiva_suplente2}}\n3. Principal: {{junta_directiva_principal3}} — Suplente: {{junta_directiva_suplente3}}\n\nGerente: {{nombre_gerente}}\nRevisor Fiscal: {{nombre_revisor_fiscal}}\nSuplente Revisor Fiscal: {{nombre_suplente_revisor}}\n\nLas personas designadas son mayores de edad y vecinas de {{ciudad_accionistas}} y manifiestan su aceptación al cargo que se les ha asignado.\n\nToda diferencia o controversia relativa a este contrato se someterá a la decisión de árbitros. El tribunal funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nAccionistas: _______________________\nNotario: _______________________"
+  },
+  {
+    "id": "acta-asamblea-general",
+    "title": "Acta de Asamblea General de Accionistas",
+    "subtitle": "Sociedad Anónima",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "numero_acta",
+        "label": "Número del acta",
+        "type": "text",
+        "required": true,
+        "help": "Número consecutivo del acta. Ej: 15."
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo de la S.A. Ej: Inversiones del Pacífico S.A."
+      },
+      {
+        "name": "tipo_reunion",
+        "label": "Tipo de reunión (ordinaria o extraordinaria)",
+        "type": "text",
+        "required": true,
+        "help": "Escriba: ordinaria o extraordinaria."
+      },
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se celebra la asamblea",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde tiene lugar la reunión."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: marzo."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2026."
+      },
+      {
+        "name": "hora_inicio",
+        "label": "Hora de inicio de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Hora en que inició la reunión. Ej: 10:00 a.m."
+      },
+      {
+        "name": "sede_social",
+        "label": "Dirección sede social donde se realiza la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Dirección donde se celebra la asamblea."
+      },
+      {
+        "name": "listado_accionistas",
+        "label": "Listado de accionistas asistentes y acciones",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de cada accionista o su apoderado y número de acciones. Ej: Carlos López (propio): 500 acciones; María Gómez (apoderada por Juan Pérez): 300 acciones."
+      },
+      {
+        "name": "total_acciones_representadas",
+        "label": "Total de acciones representadas en la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Suma total de acciones presentes. Ej: 800."
+      },
+      {
+        "name": "total_acciones_suscritas",
+        "label": "Total de acciones suscritas de la compañía",
+        "type": "text",
+        "required": true,
+        "help": "Total de acciones suscritas y pagadas de la compañía. Ej: 1.000."
+      },
+      {
+        "name": "fecha_convocatoria",
+        "label": "Fecha de la convocatoria",
+        "type": "text",
+        "required": true,
+        "help": "Fecha en que se envió la convocatoria. Ej: 28 de febrero de 2026."
+      },
+      {
+        "name": "nombre_presidente_asamblea",
+        "label": "Nombre del presidente de la asamblea",
+        "type": "text",
+        "required": true,
+        "help": "Accionista elegido para presidir la reunión."
+      },
+      {
+        "name": "nombre_secretario_asamblea",
+        "label": "Nombre del secretario de la asamblea",
+        "type": "text",
+        "required": true,
+        "help": "Accionista o empleado elegido como secretario."
+      },
+      {
+        "name": "nombre_revisor_fiscal",
+        "label": "Nombre del revisor fiscal que asistió",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del revisor fiscal que concurrió a la reunión."
+      },
+      {
+        "name": "anio_balance",
+        "label": "Año del balance que se estudia",
+        "type": "text",
+        "required": true,
+        "help": "Año del ejercicio del balance. Ej: 2025."
+      },
+      {
+        "name": "utilidades_ejercicio",
+        "label": "Utilidades del ejercicio en números",
+        "type": "text",
+        "required": true,
+        "help": "Valor de las utilidades del año. Ej: 50.000.000."
+      },
+      {
+        "name": "reserva_legal_apropiada",
+        "label": "Valor apropiado para reserva legal",
+        "type": "text",
+        "required": true,
+        "help": "10% de las utilidades. Ej: 5.000.000."
+      },
+      {
+        "name": "dividendo_por_accion",
+        "label": "Dividendo decretado por acción",
+        "type": "text",
+        "required": true,
+        "help": "Valor del dividendo por cada acción. Ej: 10.000."
+      },
+      {
+        "name": "fecha_inicio_pago_dividendos",
+        "label": "Mes desde el que se pagará el dividendo",
+        "type": "text",
+        "required": true,
+        "help": "Mes a partir del cual se pagará. Ej: abril de 2026."
+      },
+      {
+        "name": "nueva_junta_directiva",
+        "label": "Nueva junta directiva elegida (principales y suplentes)",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de los miembros elegidos. Ej: Principal 1: Carlos López — Suplente: Ana Torres."
+      },
+      {
+        "name": "nuevo_revisor_fiscal",
+        "label": "Revisor fiscal elegido para el próximo período",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del revisor fiscal elegido."
+      },
+      {
+        "name": "hora_cierre",
+        "label": "Hora de cierre de la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Hora en que finalizó la reunión. Ej: 12:00 m."
+      }
+    ],
+    "template": "ACTA Nº. {{numero_acta}}\n\nASUNTO: Reunión {{tipo_reunion}} de la asamblea general de accionistas de {{nombre_sociedad}}\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}, siendo las {{hora_inicio}}, se reunieron en la sede social de {{nombre_sociedad}}, ubicada en {{sede_social}}, las siguientes personas:\n\n{{listado_accionistas}}\n\nTotal acciones representadas: {{total_acciones_representadas}} de un total de {{total_acciones_suscritas}} acciones suscritas.\n\nSe hace constar que los libros de la compañía y demás elementos exigidos por la ley estuvieron a disposición de los accionistas durante los quince días hábiles anteriores a la reunión.\n\nTambién concurrió a la reunión el revisor fiscal {{nombre_revisor_fiscal}}.\n\nLa asamblea aprobó el siguiente ORDEN DEL DÍA:\n1º. Verificación del quórum.\n2º. Elección de presidente y secretario de la asamblea.\n3º. Informe del presidente y de la junta directiva.\n4º. Informe del revisor fiscal.\n5º. Estudio del balance a 31 de diciembre de {{anio_balance}}.\n6º. Distribución de utilidades.\n7º. Elección de junta directiva.\n8º. Elección de revisor fiscal.\n9º. Proposiciones de los accionistas.\n10. Lectura y aprobación del acta.\n\n1º. Verificación de quórum.— El presidente de la compañía informó que se encontraban representadas {{total_acciones_representadas}} acciones de un total de {{total_acciones_suscritas}} que integran el capital suscrito y pagado de la compañía. Se constituyó válidamente la asamblea con capacidad para deliberar y tomar decisiones.\n\n2º. Elección de presidente y secretario.— Por unanimidad fueron elegidos el señor {{nombre_presidente_asamblea}} como presidente y el señor {{nombre_secretario_asamblea}} como secretario.\n\n3º. Informe del presidente y de la junta directiva.— Se dio lectura al informe de gestión correspondiente al ejercicio cerrado a 31 de diciembre de {{anio_balance}}, el cual fue presentado a consideración de la asamblea. Dicho informe contiene la exposición sobre la evolución de los negocios, la situación económica, administrativa y jurídica de la sociedad.\n\n4º. Informe del revisor fiscal.— Se dio lectura al informe presentado por el revisor fiscal {{nombre_revisor_fiscal}}, el cual fue conocido por los presentes.\n\n5º. Estudio del balance.— Oídas las explicaciones de los administradores y del revisor fiscal, la asamblea impartió su aprobación por unanimidad al balance general presentado con corte a 31 de diciembre de {{anio_balance}}.\n\n6º. Distribución de utilidades.— La asamblea aprobó por unanimidad el siguiente proyecto de distribución:\n\nUtilidades del ejercicio: $ {{utilidades_ejercicio}}\nReserva legal (10%): $ {{reserva_legal_apropiada}}\nDividendo decretado: $ {{dividendo_por_accion}} por acción, pagadero a partir de {{fecha_inicio_pago_dividendos}}.\n\n7º. Elección de junta directiva.— La asamblea eligió por unanimidad la siguiente junta directiva: {{nueva_junta_directiva}}\n\n8º. Elección de revisor fiscal.— La asamblea eligió por unanimidad a {{nuevo_revisor_fiscal}} para ejercer las funciones de revisor fiscal por el siguiente período.\n\n10. Lectura y aprobación del acta.— El secretario dio lectura a la presente acta, la cual fue aprobada por los presentes.\n\nHabiéndose agotado el orden del día y no habiendo otro asunto que tratar, el presidente de la asamblea levantó la sesión siendo las {{hora_cierre}}.\n\nPresidente: _______________________\n{{nombre_presidente_asamblea}}\n\nSecretario: _______________________\n{{nombre_secretario_asamblea}}"
+  },
+  {
+    "id": "dictamen-revisor-fiscal-sin-salvedades-sa",
+    "title": "Dictamen del Revisor Fiscal sin Salvedades S.A.",
+    "subtitle": "Sociedad Anónima",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de la S.A. auditada. Ej: Inversiones del Pacífico S.A."
+      },
+      {
+        "name": "nombre_revisor_fiscal",
+        "label": "Nombre del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del revisor fiscal que emite el dictamen."
+      },
+      {
+        "name": "cedula_revisor",
+        "label": "Cédula del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del revisor fiscal."
+      },
+      {
+        "name": "expedicion_revisor",
+        "label": "Ciudad expedición cédula del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula."
+      },
+      {
+        "name": "anio_auditado",
+        "label": "Año auditado",
+        "type": "text",
+        "required": true,
+        "help": "Año del ejercicio que se audita. Ej: 2025."
+      },
+      {
+        "name": "dia_cierre",
+        "label": "Día de cierre del ejercicio",
+        "type": "text",
+        "required": true,
+        "help": "Generalmente 31."
+      },
+      {
+        "name": "mes_cierre",
+        "label": "Mes de cierre del ejercicio",
+        "type": "text",
+        "required": true,
+        "help": "Generalmente diciembre."
+      },
+      {
+        "name": "anio_comparativo",
+        "label": "Año de los estados comparativos",
+        "type": "text",
+        "required": true,
+        "help": "Año anterior con el que se compara. Ej: 2024."
+      },
+      {
+        "name": "nombre_contador_anterior",
+        "label": "Nombre del contador que auditó el año anterior",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del contador público que emitió el dictamen del año anterior."
+      },
+      {
+        "name": "dia_dictamen_anterior",
+        "label": "Día del dictamen anterior",
+        "type": "text",
+        "required": true,
+        "help": "Día en que se emitió el dictamen del año anterior."
+      },
+      {
+        "name": "mes_dictamen_anterior",
+        "label": "Mes del dictamen anterior",
+        "type": "text",
+        "required": true,
+        "help": "Mes del dictamen anterior en letras."
+      },
+      {
+        "name": "anio_dictamen_anterior",
+        "label": "Año del dictamen anterior",
+        "type": "text",
+        "required": true,
+        "help": "Año en que se emitió el dictamen anterior."
+      },
+      {
+        "name": "nombre_subordinadas",
+        "label": "Nombre de las compañías subordinadas (si no hay escriba: no aplica)",
+        "type": "text",
+        "required": true,
+        "help": "Subsidiarias o filiales incluidas en los estados consolidados. Si no hay escriba: no aplica."
+      },
+      {
+        "name": "fecha_dictamen",
+        "label": "Fecha de emisión del dictamen",
+        "type": "text",
+        "required": true,
+        "help": "Fecha en que se firma el dictamen. Ej: 28 de febrero de 2026."
+      },
+      {
+        "name": "matricula_revisor",
+        "label": "Número de matrícula profesional del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Número de tarjeta profesional del contador público."
+      }
+    ],
+    "template": "Señores accionistas de {{nombre_sociedad}}\n\nRef.: Dictamen de revisor fiscal.\n\n{{nombre_revisor_fiscal}}, identificado con la cédula de ciudadanía Nº. {{cedula_revisor}} de {{expedicion_revisor}}, en mi calidad de revisor fiscal, he auditado el balance general consolidado de la empresa al día {{dia_cierre}} de {{mes_cierre}} del año {{anio_auditado}} y el correspondiente estado consolidado de resultados, de cambios de patrimonio de los accionistas, de cambios de la situación financiera y de flujo de efectivo del año terminado en esa fecha. Los estados financieros consolidados del año {{anio_comparativo}} que se presentan con fines comparativos fueron examinados por el contador público {{nombre_contador_anterior}}, quien emitió un informe sin salvedad sobre los mismos el día {{dia_dictamen_anterior}} del mes de {{mes_dictamen_anterior}} del año {{anio_dictamen_anterior}}. Los estados financieros consolidados que se acompañan fueron preparados por la administración y es mi deber auditarlos y expresar una opinión sobre ellos. No audité los estados financieros de compañías subordinadas de {{nombre_subordinadas}} incluidos en los estados consolidados.\n\nEl trabajo se realizó de acuerdo con normas de auditoría generalmente aceptados. Estas normas requieren que planee y efectúe la auditoría para cerciorarme de que los estados financieros reflejan razonablemente la situación financiera y los resultados de las operaciones del ejercicio. La auditoría de estados financieros implica, entre otras cosas, hacer un examen con base en pruebas selectivas de la evidencia que respalda las cifras y las revelaciones en los estados financieros, y evaluar los principios de contabilidad utilizados, las estimaciones contables hechas por la administración, y la presentación de los estados financieros en conjunto. Considero que el auditaje provee una base razonable para expresar mi opinión sobre los estados financieros.\n\nEn mi opinión, con sujeción a los asuntos relevantes que hubiera podido conocer por haber recibido los informes de los otros contadores públicos sobre los estados financieros de las compañías subordinadas que se mencionan en el primer párrafo, dichos estados financieros consolidados presentan razonablemente la situación financiera de {{nombre_sociedad}} al {{dia_cierre}} de {{mes_cierre}} del año {{anio_auditado}} y los resultados consolidados de sus operaciones, de cambios en el patrimonio de los accionistas, de cambios en la situación financiera y de flujo de efectivo del año terminado en esa fecha, de conformidad con principios de contabilidad generalmente aceptados en Colombia.\n\n{{fecha_dictamen}}\n\nRevisor fiscal: _______________________\n{{nombre_revisor_fiscal}}\nMatrícula Nº. {{matricula_revisor}}"
+  },
+  {
+    "id": "dictamen-revisor-fiscal-sin-salvedades-sucursal",
+    "title": "Dictamen del Revisor Fiscal sin Salvedades — Sucursal Extranjera",
+    "subtitle": "Sociedad Anónima",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre de la sucursal o empresa auditada",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de la sucursal colombiana de la empresa extranjera."
+      },
+      {
+        "name": "destinatarios",
+        "label": "Destinatarios del dictamen",
+        "type": "text",
+        "required": true,
+        "help": "A quiénes va dirigido el dictamen. Ej: Miembros de la junta directiva de XYZ S.A."
+      },
+      {
+        "name": "nombre_revisor_fiscal",
+        "label": "Nombre del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del revisor fiscal."
+      },
+      {
+        "name": "cedula_revisor",
+        "label": "Cédula del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del revisor fiscal."
+      },
+      {
+        "name": "expedicion_revisor",
+        "label": "Ciudad expedición cédula del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde fue expedida la cédula."
+      },
+      {
+        "name": "anio_auditado",
+        "label": "Año auditado",
+        "type": "text",
+        "required": true,
+        "help": "Año del ejercicio auditado. Ej: 2025."
+      },
+      {
+        "name": "dia_cierre",
+        "label": "Día de cierre del ejercicio",
+        "type": "text",
+        "required": true,
+        "help": "Generalmente 31."
+      },
+      {
+        "name": "mes_cierre",
+        "label": "Mes de cierre del ejercicio",
+        "type": "text",
+        "required": true,
+        "help": "Generalmente diciembre."
+      },
+      {
+        "name": "anio_comparativo",
+        "label": "Año de los estados comparativos",
+        "type": "text",
+        "required": true,
+        "help": "Año anterior con el que se compara."
+      },
+      {
+        "name": "nombre_contador_anterior",
+        "label": "Nombre del contador que auditó el año anterior",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del contador del año anterior."
+      },
+      {
+        "name": "dia_dictamen_anterior",
+        "label": "Día del dictamen anterior",
+        "type": "text",
+        "required": true,
+        "help": "Día de emisión del dictamen anterior."
+      },
+      {
+        "name": "mes_dictamen_anterior",
+        "label": "Mes del dictamen anterior",
+        "type": "text",
+        "required": true,
+        "help": "Mes del dictamen anterior."
+      },
+      {
+        "name": "anio_dictamen_anterior",
+        "label": "Año del dictamen anterior",
+        "type": "text",
+        "required": true,
+        "help": "Año del dictamen anterior."
+      },
+      {
+        "name": "fecha_dictamen",
+        "label": "Fecha de emisión del dictamen",
+        "type": "text",
+        "required": true,
+        "help": "Fecha en que se firma el dictamen."
+      },
+      {
+        "name": "matricula_revisor",
+        "label": "Número de matrícula profesional del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Número de tarjeta profesional del contador público."
+      }
+    ],
+    "template": "Señores\n{{destinatarios}}\n\nRef.: Dictamen de revisor fiscal.\n\n{{nombre_revisor_fiscal}}, identificado con la cédula de ciudadanía Nº. {{cedula_revisor}} de {{expedicion_revisor}}, en mi calidad de revisor fiscal, he auditado el balance general consolidado de la sucursal colombiana al día {{dia_cierre}} de {{mes_cierre}} del año {{anio_auditado}} y el correspondiente estado consolidado de resultados, de cambios de patrimonio de los accionistas, de cambios de la situación financiera y de flujo de efectivo del año terminado en esa fecha. Los estados financieros consolidados del año {{anio_comparativo}} que se presentan con fines comparativos fueron examinados por el contador público {{nombre_contador_anterior}}, quien emitió un informe sin salvedad sobre los mismos el día {{dia_dictamen_anterior}} del mes de {{mes_dictamen_anterior}} del año {{anio_dictamen_anterior}}. Los estados financieros consolidados que se acompañan fueron preparados por la administración y es mi deber auditarlos y expresar una opinión sobre ellos.\n\nEl trabajo se realizó de acuerdo con normas de auditoría generalmente aceptados. Estas normas requieren que planee y efectúe la auditoría para cerciorarme de que los estados financieros reflejan razonablemente la situación financiera y los resultados de las operaciones del ejercicio. La auditoría de estados financieros implica, entre otras cosas, hacer un examen con base en pruebas selectivas de la evidencia que respalda las cifras y las revelaciones en los estados financieros, y evaluar los principios de contabilidad utilizados, las estimaciones contables hechas por la administración, y la presentación de los estados financieros en conjunto. Considero que el auditaje provee una base razonable para expresar mi opinión sobre los estados financieros.\n\nLos estados financieros antes mencionados, fielmente tomados de los libros y adjuntos a este informe, presentan en forma fidedigna la situación financiera de la sucursal al {{dia_cierre}} de {{mes_cierre}} de {{anio_auditado}}, reflejan el resultado de sus operaciones y los cambios en su situación financiera del año finalizado en la mencionada fecha, conforme a principios de contabilidad generalmente aceptados, aplicados uniformemente.\n\nAdemás, conceptúo que durante el año la sucursal ha llevado su contabilidad ceñida a las normas legales y a la técnica contable; que las operaciones registradas en sus libros y los actos de los administradores se ajustan a las decisiones de las directivas en su casa matriz; que la correspondencia y los comprobantes de las cuentas se conservan debidamente; y que se han observado medidas adecuadas de control interno y de conservación y custodia de sus bienes y de los de terceros en su poder.\n\n{{fecha_dictamen}}\n\nRevisor fiscal: _______________________\n{{nombre_revisor_fiscal}}\nMatrícula Nº. {{matricula_revisor}}"
+  },
+  {
+    "id": "dictamen-revisor-fiscal-abstencion",
+    "title": "Dictamen del Revisor Fiscal — Abstención de Opinión",
+    "subtitle": "Sociedad Anónima",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "destinatarios",
+        "label": "Destinatarios del dictamen",
+        "type": "text",
+        "required": true,
+        "help": "A quiénes va dirigido. Ej: Señores accionistas de XYZ S.A."
+      },
+      {
+        "name": "nombre_revisor_fiscal",
+        "label": "Nombre del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del revisor fiscal."
+      },
+      {
+        "name": "cedula_revisor",
+        "label": "Cédula del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Número de cédula del revisor fiscal."
+      },
+      {
+        "name": "expedicion_revisor",
+        "label": "Ciudad expedición cédula del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad expedición."
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre de la sociedad auditada",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de la empresa auditada."
+      },
+      {
+        "name": "anio_auditado",
+        "label": "Año auditado",
+        "type": "text",
+        "required": true,
+        "help": "Año del ejercicio auditado. Ej: 2025."
+      },
+      {
+        "name": "dia_cierre",
+        "label": "Día de cierre del ejercicio",
+        "type": "text",
+        "required": true,
+        "help": "Generalmente 31."
+      },
+      {
+        "name": "mes_cierre",
+        "label": "Mes de cierre del ejercicio",
+        "type": "text",
+        "required": true,
+        "help": "Generalmente diciembre."
+      },
+      {
+        "name": "anio_comparativo",
+        "label": "Año de los estados comparativos",
+        "type": "text",
+        "required": true,
+        "help": "Año anterior."
+      },
+      {
+        "name": "nombre_contador_anterior",
+        "label": "Nombre del contador del año anterior",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del contador del año anterior."
+      },
+      {
+        "name": "dia_dictamen_anterior",
+        "label": "Día del dictamen anterior",
+        "type": "text",
+        "required": true,
+        "help": "Día del dictamen anterior."
+      },
+      {
+        "name": "mes_dictamen_anterior",
+        "label": "Mes del dictamen anterior",
+        "type": "text",
+        "required": true,
+        "help": "Mes del dictamen anterior."
+      },
+      {
+        "name": "anio_dictamen_anterior",
+        "label": "Año del dictamen anterior",
+        "type": "text",
+        "required": true,
+        "help": "Año del dictamen anterior."
+      },
+      {
+        "name": "valor_inventarios",
+        "label": "Valor de los inventarios que no se pudieron verificar",
+        "type": "text",
+        "required": true,
+        "help": "Valor de los inventarios que no tienen respaldo documental. Ej: 80.000.000."
+      },
+      {
+        "name": "fecha_dictamen",
+        "label": "Fecha de emisión del dictamen",
+        "type": "text",
+        "required": true,
+        "help": "Fecha en que se firma el dictamen."
+      },
+      {
+        "name": "matricula_revisor",
+        "label": "Número de matrícula profesional del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Número de tarjeta profesional."
+      }
+    ],
+    "template": "{{destinatarios}}\n\nRef.: Dictamen del revisor fiscal.\n\n{{nombre_revisor_fiscal}}, identificado con la cédula de ciudadanía Nº. {{cedula_revisor}} de {{expedicion_revisor}}, en mi calidad de revisor fiscal, he auditado el balance general consolidado de {{nombre_sociedad}} al día {{dia_cierre}} de {{mes_cierre}} del año {{anio_auditado}} y el correspondiente estado consolidado de resultados, de cambios de patrimonio de los accionistas, de cambios de la situación financiera y de flujo de efectivo del año terminado en esa fecha. Los estados financieros consolidados del año {{anio_comparativo}} que se presentan con fines comparativos fueron examinados por el contador público {{nombre_contador_anterior}}, quien emitió un informe sin salvedad sobre los mismos el día {{dia_dictamen_anterior}} del mes de {{mes_dictamen_anterior}} del año {{anio_dictamen_anterior}}. Los estados financieros consolidados que se acompañan fueron preparados por la administración y es mi deber auditarlos y expresar una opinión sobre ellos.\n\nEl trabajo se realizó de acuerdo con normas de auditoría generalmente aceptados. Estas normas requieren que planee y efectúe la auditoría para cerciorarme de que los estados financieros reflejan razonablemente la situación financiera y los resultados de las operaciones del ejercicio. La auditoría de estados financieros implica, entre otras cosas, hacer un examen con base en pruebas selectivas de la evidencia que respalda las cifras y las revelaciones en los estados financieros, y evaluar los principios de contabilidad utilizados, las estimaciones contables hechas por la administración, y la presentación de los estados financieros en conjunto. Considero que el auditaje provee una base razonable para expresar mi opinión sobre los estados financieros.\n\nLa compañía no tomó un inventario físico de la mercancía, cuyo valor en los estados financieros que se acompañan asciende a ($ {{valor_inventarios}}) al {{dia_cierre}} de {{mes_cierre}} del año {{anio_auditado}}. Además, no se dispone de evidencia que respalde el costo de propiedades y equipos adquiridos con anterioridad a dicha fecha. Los registros de la compañía no permiten la aplicación de procedimientos supletorios adecuados respecto a los inventarios y al costo de las propiedades y los equipos.\n\nDado que la compañía no tomó inventario físico y no pude aplicar procedimientos supletorios adecuados respecto a los inventarios y al costo de las propiedades y los equipos, como se indica en el aparte anterior, el alcance de mi trabajo no fue suficiente para permitirme expresar, y no expreso, un concepto sobre los estados financieros ya mencionados.\n\n{{fecha_dictamen}}\n\nRevisor fiscal: _______________________\n{{nombre_revisor_fiscal}}\nMatrícula Nº. {{matricula_revisor}}"
+  },
+  {
+    "id": "reglamento-emision-acciones",
+    "title": "Reglamento de Emisión de Acciones",
+    "subtitle": "Sociedad Anónima",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de la S.A. que emite las acciones."
+      },
+      {
+        "name": "articulo_estatutario",
+        "label": "Artículo estatutario que autoriza la emisión",
+        "type": "text",
+        "required": true,
+        "help": "Número del artículo de los estatutos que faculta a la junta directiva para aprobar el reglamento. Ej: 11."
+      },
+      {
+        "name": "numero_acciones_emitir",
+        "label": "Número de acciones a emitir",
+        "type": "text",
+        "required": true,
+        "help": "Cuántas acciones se van a emitir y colocar. Ej: 500.000."
+      },
+      {
+        "name": "valor_nominal_accion",
+        "label": "Valor nominal de cada acción",
+        "type": "text",
+        "required": true,
+        "help": "Valor nominal de cada acción. Ej: 1.000."
+      },
+      {
+        "name": "precio_oferta_accion",
+        "label": "Precio de oferta de cada acción",
+        "type": "text",
+        "required": true,
+        "help": "Precio al que se ofrecerán las acciones. No puede ser menor al valor nominal. Ej: 1.000 (a valor nominal), 1.500 (con prima)."
+      },
+      {
+        "name": "porcentaje_pago_inicial",
+        "label": "Porcentaje de pago al momento de suscribir (%)",
+        "type": "text",
+        "required": true,
+        "help": "Qué porcentaje del valor se paga al suscribir. Mínimo 33.33%. Ej: 50."
+      },
+      {
+        "name": "esquema_pago_saldo",
+        "label": "Esquema de pago del saldo restante",
+        "type": "text",
+        "required": true,
+        "help": "Cómo se pagará el saldo. Ej: El saldo del 50% se pagará en 6 cuotas mensuales iguales a partir del mes siguiente a la suscripción."
+      },
+      {
+        "name": "proporcion_derecho_preferencia",
+        "label": "Proporción del derecho de preferencia",
+        "type": "text",
+        "required": true,
+        "help": "Cuántas acciones nuevas puede suscribir cada accionista por cada acción que posee. Ej: 1 acción nueva por cada 2 que posea."
+      },
+      {
+        "name": "dias_plazo_suscripcion",
+        "label": "Días hábiles de plazo para suscribir",
+        "type": "text",
+        "required": true,
+        "help": "Cuántos días hábiles tendrán los accionistas para suscribir. Mínimo 15, máximo 90. Ej: 15."
+      },
+      {
+        "name": "nombre_junta_directiva",
+        "label": "Identificación de la junta directiva que aprueba",
+        "type": "text",
+        "required": true,
+        "help": "Composición de la junta que aprueba el reglamento. Ej: Junta Directiva reunida el 15 de enero de 2026."
+      }
+    ],
+    "template": "La junta directiva de {{nombre_sociedad}}, en ejercicio de la facultad que le confiere el artículo {{articulo_estatutario}} del estatuto social de la compañía resuelve:\n\nARTÍCULO 1º.— Emitir y colocar la cantidad de {{numero_acciones_emitir}} acciones de la compañía, de valor nominal de $ {{valor_nominal_accion}} moneda legal colombiana cada una, de las que actualmente se encuentran en reserva.\n\nARTÍCULO 2º.— Las acciones emitidas serán ofrecidas a su precio de $ {{precio_oferta_accion}} por acción.\n\nARTÍCULO 3º.— Las acciones que sean suscritas deberán ser pagadas así: el {{porcentaje_pago_inicial}}% del valor en la fecha de suscripción de las acciones. {{esquema_pago_saldo}}\n\nARTÍCULO 4º.— Las acciones cuya emisión y colocación se ordena, se ofrecerán con sujeción al derecho de preferencia a quienes tengan la calidad de accionistas en la fecha en que el representante legal de la sociedad haga el correspondiente aviso de oferta, en la proporción de {{proporcion_derecho_preferencia}}. Los residuos por fracciones de acción que llegaren a resultar no dan derecho a suscribir una acción adicional, pero podrán ser negociados entre los suscriptores a fin de completar acciones enteras.\n\nPARÁGRAFO.— La proporción indicada ha sido determinada en función de las acciones suscritas al momento de aprobación del presente reglamento.\n\nARTÍCULO 5º.— El representante legal de la compañía ofrecerá las acciones emitidas utilizando para hacer la oferta los mismos medios previstos en el estatuto social para convocar la asamblea general de accionistas.\n\nARTÍCULO 6º.— Los accionistas dispondrán de un plazo de {{dias_plazo_suscripcion}} días hábiles contados a partir de la fecha del aviso de oferta para suscribir las acciones que conforme a este reglamento se les ofrezcan.\n\nPARÁGRAFO.— Se entenderá que un accionista no tiene interés en suscribir las acciones ofrecidas, cuando haya transcurrido el plazo de la oferta sin haber hecho manifestación alguna en tal sentido.\n\nARTÍCULO 7º.— Las acciones que por cualquier causa no fueren suscritas quedarán en reserva para emisiones futuras.\n\nARTÍCULO 8º.— Vencido el plazo de la oferta, el presidente o su suplente y el revisor fiscal de la compañía informarán a la Superintendencia de Sociedades el número de acciones suscritas, los pagos efectuados por cuenta de las mismas, la cifra en que se eleve el capital suscrito y pagado, y el nombre y la nacionalidad de los suscriptores.\n\n{{nombre_junta_directiva}}\n\nJunta Directiva: _______________________"
+  },
+  {
+    "id": "estatutos-sociedad-anonima-compleja",
+    "title": "Estatutos para una Sociedad Anónima Compleja",
+    "subtitle": "Sociedad Anónima",
+    "tipo_tramite": "Notarial",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se otorga la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde está la notaría. Ej: Bogotá, Cali."
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true,
+        "help": "Departamento de la notaría. Ej: Valle del Cauca, Cundinamarca."
+      },
+      {
+        "name": "dia",
+        "label": "Día de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Día del mes. Ej: 15."
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Mes en letras. Ej: abril."
+      },
+      {
+        "name": "anio",
+        "label": "Año de la escritura",
+        "type": "text",
+        "required": true,
+        "help": "Año completo. Ej: 2026."
+      },
+      {
+        "name": "nombre_notario",
+        "label": "Nombre del Notario",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo del notario."
+      },
+      {
+        "name": "numero_notaria",
+        "label": "Número de la Notaría",
+        "type": "text",
+        "required": true,
+        "help": "Ej: Primera, Segunda, Única."
+      },
+      {
+        "name": "circulo_notarial",
+        "label": "Círculo notarial (ciudad)",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad del círculo notarial."
+      },
+      {
+        "name": "comparecientes",
+        "label": "Nombre y cédula de todos los accionistas fundadores",
+        "type": "text",
+        "required": true,
+        "help": "Liste todos los accionistas con nombre, cédula y ciudad. Mínimo 5. Ej: Carlos López C.C. 12345 de Cali; María Gómez C.C. 67890 de Bogotá."
+      },
+      {
+        "name": "domicilio_comparecientes",
+        "label": "Ciudad de domicilio de los comparecientes",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde viven los accionistas fundadores."
+      },
+      {
+        "name": "estado_civil_comparecientes",
+        "label": "Estado civil de los comparecientes",
+        "type": "text",
+        "required": true,
+        "help": "Ej: todos solteros; con sociedad conyugal vigente."
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre de la sociedad (sin S.A.)",
+        "type": "text",
+        "required": true,
+        "help": "Nombre de la empresa SIN incluir S.A. Ej: Inversiones del Pacífico."
+      },
+      {
+        "name": "domicilio_sociedad",
+        "label": "Ciudad domicilio de la sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad principal donde funcionará la S.A."
+      },
+      {
+        "name": "objeto_social_principal",
+        "label": "Objeto social principal",
+        "type": "text",
+        "required": true,
+        "help": "Actividades principales de la sociedad."
+      },
+      {
+        "name": "objeto_social_secundario",
+        "label": "Objeto social secundario (actividades complementarias)",
+        "type": "text",
+        "required": true,
+        "help": "Actividades secundarias relacionadas con el objeto principal. Ej: formar parte de otras sociedades; importar equipos."
+      },
+      {
+        "name": "duracion_anios",
+        "label": "Duración de la sociedad en años",
+        "type": "text",
+        "required": true,
+        "help": "Años de duración. Ej: 25."
+      },
+      {
+        "name": "capital_autorizado_letras",
+        "label": "Capital autorizado en letras",
+        "type": "text",
+        "required": true,
+        "help": "Capital autorizado total en palabras. Ej: dos mil millones de pesos."
+      },
+      {
+        "name": "capital_autorizado_numeros",
+        "label": "Capital autorizado en números",
+        "type": "text",
+        "required": true,
+        "help": "Capital en cifras. Ej: 2.000.000.000."
+      },
+      {
+        "name": "numero_acciones",
+        "label": "Número total de acciones del capital autorizado",
+        "type": "text",
+        "required": true,
+        "help": "Cuántas acciones tiene el capital autorizado. Ej: 2.000.000."
+      },
+      {
+        "name": "valor_nominal_accion",
+        "label": "Valor nominal de cada acción",
+        "type": "text",
+        "required": true,
+        "help": "Cuánto vale cada acción. Ej: 1.000."
+      },
+      {
+        "name": "capital_suscrito_letras",
+        "label": "Capital suscrito en letras",
+        "type": "text",
+        "required": true,
+        "help": "Capital suscrito por los fundadores en palabras. Mínimo el 50% del autorizado."
+      },
+      {
+        "name": "capital_suscrito_numeros",
+        "label": "Capital suscrito en números",
+        "type": "text",
+        "required": true,
+        "help": "Capital suscrito en cifras."
+      },
+      {
+        "name": "capital_pagado_letras",
+        "label": "Capital pagado inicial en letras",
+        "type": "text",
+        "required": true,
+        "help": "Capital pagado al momento de la constitución en palabras. Mínimo 1/3 del suscrito."
+      },
+      {
+        "name": "capital_pagado_numeros",
+        "label": "Capital pagado inicial en números",
+        "type": "text",
+        "required": true,
+        "help": "Capital pagado en cifras."
+      },
+      {
+        "name": "suscripcion_acciones_detalle",
+        "label": "Detalle de suscripción por accionista",
+        "type": "text",
+        "required": true,
+        "help": "Cuántas acciones suscribe cada accionista. Ej: Carlos López: 400.000 acciones por $400.000.000."
+      },
+      {
+        "name": "numero_miembros_junta",
+        "label": "Número de miembros de la junta directiva",
+        "type": "text",
+        "required": true,
+        "help": "Mínimo 3 miembros principales. Ej: 5."
+      },
+      {
+        "name": "periodo_junta_anios",
+        "label": "Período de la junta directiva en años",
+        "type": "text",
+        "required": true,
+        "help": "Años del período. Ej: 1, 2."
+      },
+      {
+        "name": "periodo_gerente_anios",
+        "label": "Período del gerente en años",
+        "type": "text",
+        "required": true,
+        "help": "Años del período del gerente. Ej: 1."
+      },
+      {
+        "name": "cuantia_autorizacion_junta_letras",
+        "label": "Cuantía que requiere autorización de junta para el gerente en letras",
+        "type": "text",
+        "required": true,
+        "help": "Para contratos mayores a este valor el gerente necesita autorización de la junta. Ej: cien millones de pesos."
+      },
+      {
+        "name": "cuantia_autorizacion_junta_numeros",
+        "label": "Cuantía que requiere autorización de junta en números",
+        "type": "text",
+        "required": true,
+        "help": "El mismo valor en cifras. Ej: 100.000.000."
+      },
+      {
+        "name": "junta_directiva_principal1",
+        "label": "Primer miembro principal de la junta",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del primer miembro principal."
+      },
+      {
+        "name": "junta_directiva_suplente1",
+        "label": "Suplente del primer miembro",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del suplente."
+      },
+      {
+        "name": "junta_directiva_principal2",
+        "label": "Segundo miembro principal de la junta",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del segundo miembro principal."
+      },
+      {
+        "name": "junta_directiva_suplente2",
+        "label": "Suplente del segundo miembro",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del suplente."
+      },
+      {
+        "name": "junta_directiva_principal3",
+        "label": "Tercer miembro principal de la junta",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del tercer miembro principal."
+      },
+      {
+        "name": "junta_directiva_suplente3",
+        "label": "Suplente del tercer miembro",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del suplente."
+      },
+      {
+        "name": "nombre_gerente",
+        "label": "Nombre del gerente designado",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del gerente para el período inicial."
+      },
+      {
+        "name": "nombre_revisor_fiscal",
+        "label": "Nombre del revisor fiscal designado",
+        "type": "text",
+        "required": true,
+        "help": "Debe ser contador público con matrícula vigente."
+      },
+      {
+        "name": "nombre_suplente_revisor",
+        "label": "Nombre del suplente del revisor fiscal",
+        "type": "text",
+        "required": true,
+        "help": "Nombre del suplente del revisor fiscal."
+      },
+      {
+        "name": "ciudad_accionistas",
+        "label": "Ciudad donde son vecinos los designados",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde viven los designados para los cargos."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad del tribunal de arbitramento",
+        "type": "text",
+        "required": true,
+        "help": "Ciudad donde se resolverán los conflictos. Ej: Bogotá."
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} de {{anio}}, ante mí {{nombre_notario}}, Notario {{numero_notaria}} del Círculo de {{circulo_notarial}}, comparecieron {{comparecientes}}, todos mayores de edad, {{estado_civil_comparecientes}}, domiciliados en {{domicilio_comparecientes}}, quienes manifestaron que por medio del presente instrumento público han decidido constituir una sociedad anónima compleja la cual se regirá por lo siguiente:\n\nPRIMERO. Ánimo de asociarse.— Los comparecientes han acordado asociarse entre sí para establecer una empresa destinada a la explotación de {{objeto_social_principal}} mediante la constitución de una sociedad por acciones, y declaran constituida una sociedad comercial de la especie anónima compleja con la denominación social de {{nombre_sociedad}} S.A.\n\nESTATUTOS\n\nCAPÍTULO I - Nombre, domicilio, objeto y duración\n\nARTÍCULO 1º.— La sociedad se denominará \"{{nombre_sociedad}} S.A.\", Sociedad Anónima Comercial, de nacionalidad colombiana.\n\nARTÍCULO 2º.— El domicilio de la sociedad será la ciudad de {{domicilio_sociedad}}, pero podrá crear sucursales, agencias o dependencias en otros lugares del país o del exterior, por disposición de la asamblea general de accionistas y con arreglo a la ley.\n\nARTÍCULO 3º.— La sociedad tendrá como objeto principal las siguientes actividades: {{objeto_social_principal}}. En desarrollo del mismo podrá la sociedad ejecutar todos los actos o contratos que fueren convenientes o necesarios para el cabal cumplimiento de su objeto social, tales como: {{objeto_social_secundario}}.\n\nARTÍCULO 4º.— La sociedad durará por el término de {{duracion_anios}} años que empezarán a contarse desde la fecha de esta escritura.\n\nCAPÍTULO II - Capital social, aportes y reservas\n\nARTÍCULO 5º.— El capital social autorizado es de {{capital_autorizado_letras}} ($ {{capital_autorizado_numeros}}).\n\nARTÍCULO 6º.— El capital de la sociedad se encuentra dividido en {{numero_acciones}} acciones de valor nominal de $ {{valor_nominal_accion}} cada una.\n\nARTÍCULO 7º.— Los accionistas tendrán derecho a suscribir preferencialmente en toda nueva emisión de acciones una cantidad proporcional a las que posean en la fecha en que el órgano social competente apruebe el reglamento de suscripción.\n\nARTÍCULO 8º.— La sociedad formará una reserva legal con el diez por ciento (10%) de las utilidades líquidas de cada ejercicio, hasta completar el cincuenta por ciento (50%) del capital suscrito.\n\nARTÍCULO 9º.— Salvo determinación en contrario aprobada por el setenta por ciento (70%) de las acciones representadas en la asamblea, la sociedad repartirá no menos del cincuenta por ciento (50%) de las utilidades líquidas obtenidas en cada ejercicio.\n\nCAPÍTULO III - Revisor fiscal\n\nARTÍCULO 10.— El revisor fiscal deberá ser contador público. Será nombrado por la asamblea general de accionistas, podrá ser reelegido indefinidamente y tendrá un suplente.\n\nCAPÍTULO IV - Elecciones y votaciones\n\nARTÍCULO 11.— En las elecciones y votaciones de la asamblea se observarán las siguientes reglas: a) Todas las votaciones serán secretas; b) El nombramiento del revisor fiscal y su suplente se hará por mayoría absoluta; c) Para la elección de miembros de la junta directiva se aplicará el sistema del cuociente electoral; d) Se requiere el voto de no menos de las tres cuartas partes de las acciones suscritas para decretar la disolución extraordinaria, fusión, traspaso o enajenación de la totalidad de la empresa; e) Para reformas de estatutos se requiere el voto favorable del setenta por ciento (70%) de las acciones representadas en la reunión.\n\nCAPÍTULO V - Asamblea general, junta directiva y gerente\n\nARTÍCULO 12.— Las reuniones ordinarias de la asamblea se celebrarán dentro de los tres primeros meses siguientes al vencimiento del ejercicio social. La convocatoria se hará con quince (15) días hábiles de anticipación.\n\nARTÍCULO 13.— La junta directiva se compone de {{numero_miembros_junta}} miembros principales con suplente personal cada uno. El período de duración será de {{periodo_junta_anios}} año(s).\n\nARTÍCULO 14.— La sociedad tendrá un gerente elegido por la junta directiva para períodos de {{periodo_gerente_anios}} año(s). El gerente requerirá autorización previa de la junta para celebrar contratos que excedan de {{cuantia_autorizacion_junta_letras}} ($ {{cuantia_autorizacion_junta_numeros}}).\n\nCAPÍTULO VI - Balance, dividendos\n\nARTÍCULO 15.— La sociedad tendrá ejercicios anuales que se cerrarán el treinta y uno (31) de diciembre de cada año. Dentro de los treinta (30) días hábiles siguientes a la reunión de la asamblea el representante legal remitirá a la Superintendencia de Sociedades copia del balance y del acta de la reunión.\n\nCAPÍTULO VII - Disolución y liquidación\n\nARTÍCULO 16.— La sociedad se disolverá por las causales previstas en la ley, entre ellas: por vencimiento del término; por pérdidas que reduzcan el patrimonio neto por debajo del cincuenta por ciento (50%) del capital suscrito; cuando el noventa y cinco por ciento (95%) o más de las acciones llegue a pertenecer a un solo accionista.\n\nCAPÍTULO VIII - Diferencias\n\nARTÍCULO 17.— Toda diferencia o controversia relativa a este contrato se someterá a la decisión de árbitros. El tribunal estará integrado por tres (3) árbitros y funcionará en la ciudad de {{ciudad_arbitraje}}.\n\nSEGUNDO. Suscripción y pago del capital.— {{suscripcion_acciones_detalle}}\n\nCapital suscrito: {{capital_suscrito_letras}} ($ {{capital_suscrito_numeros}})\nCapital pagado: {{capital_pagado_letras}} ($ {{capital_pagado_numeros}})\n\nTERCERO. Nombramientos iniciales:\n\nJunta Directiva:\n1. Principal: {{junta_directiva_principal1}} — Suplente: {{junta_directiva_suplente1}}\n2. Principal: {{junta_directiva_principal2}} — Suplente: {{junta_directiva_suplente2}}\n3. Principal: {{junta_directiva_principal3}} — Suplente: {{junta_directiva_suplente3}}\n\nGerente: {{nombre_gerente}}\nRevisor Fiscal: {{nombre_revisor_fiscal}}\nSuplente Revisor Fiscal: {{nombre_suplente_revisor}}\n\nLas personas designadas son mayores de edad, vecinas de {{ciudad_accionistas}} y aceptan los cargos asignados.\n\nFirmas: _______________________\nFirma del Notario: _______________________"
+  }
+]
