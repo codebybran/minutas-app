@@ -66,6 +66,41 @@ function notaLegal(tipo_tramite, categoryId) {
 </div>`
   }
 
+// ── DERECHO CONSTITUCIONAL ──────────────────────────────────
+  if (categoryId === 'derecho-constitucional') {
+    return `
+<div style="margin-top:48pt;font-family:'Times New Roman',serif;">
+  <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
+    <div style="height:5px;background:linear-gradient(90deg,#4a0080,#9c27b0,#4a0080);"></div>
+    <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
+      <div style="flex-shrink:0;width:52px;height:52px;background:rgba(156,39,176,0.15);border:2px solid #9c27b0;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;line-height:1;text-align:center;padding-top:4px;">
+        ⚖️
+      </div>
+      <div style="flex:1;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+          <span style="background:#9c27b0;color:#fff;font-size:8pt;font-weight:bold;letter-spacing:1.5px;padding:2px 10px;border-radius:20px;text-transform:uppercase;">Acción Constitucional</span>
+        </div>
+        <p style="color:#ce93d8;font-size:12pt;font-weight:bold;margin:0 0 8px 0;letter-spacing:0.5px;">RECOMENDACIONES ANTES DE PRESENTAR</p>
+        <p style="color:#c8d8e8;font-size:9.5pt;margin:0 0 6px 0;line-height:1.55;text-align:justify;">
+          Este documento es una acción constitucional que puede presentar directamente ante un juez <strong style="color:#fff;">sin necesidad de abogado</strong>. Para garantizar su efectividad recuerde:
+        </p>
+        <ul style="color:#c8d8e8;font-size:9.5pt;margin:0 0 6px 0;padding-left:18px;line-height:1.7;">
+          <li>Preséntelo ante la <strong style="color:#fff;">oficina de reparto del juzgado</strong> de su ciudad y exija sello de radicado con fecha y número en su copia.</li>
+          <li>La tutela debe resolverse en <strong style="color:#ce93d8;">10 días hábiles</strong>. Si el juez no responde en ese plazo puede impugnar la decisión ante el superior jerárquico.</li>
+          <li>Este documento <strong style="color:#fff;">no requiere firma ante notaría</strong> ni autenticación para ser presentado.</li>
+          <li>Si la acción es de tutela y el juez la niega, tiene <strong style="color:#ce93d8;">3 días hábiles</strong> para impugnar la decisión.</li>
+        </ul>
+      </div>
+    </div>
+    <div style="background:rgba(156,39,176,0.10);border-top:1px solid rgba(156,39,176,0.25);padding:8px 28px;">
+      <p style="color:rgba(200,216,232,0.6);font-size:7.5pt;margin:0;letter-spacing:0.3px;">
+        LEXDOC · Documento generado con fines informativos · Naturaleza: Acción Constitucional · Colombia
+      </p>
+    </div>
+  </div>
+</div>`
+  }
+
   // ── NOTARIAL ────────────────────────────────────────────────────────────────
   if (t === 'notarial') {
     return `

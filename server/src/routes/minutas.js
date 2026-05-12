@@ -17,9 +17,16 @@ const SUBTITLE_ORDER_SOCIEDADES = [
   'Sociedad en Comandita',
   'Transformación y Fusión de Sociedades'
 ]
-const SUBTITLE_ORDER_LABORAL = ['Contratos de Trabajo', 'Reglamentos Internos', 'Contratos Especiales de Trabajo', 'Terminación del Contrato', 'Derecho Sindical y Negociación Colectiva', 'Seguridad Social y Licencias']
-
-const SUBTITLE_ORDER_ADMINISTRATIVO = ['Derechos de Petición', 'Quejas y Reclamos']
+const SUBTITLE_ORDER_LABORAL = [
+  'Contratos de Trabajo', 'Reglamentos Internos', 'Contratos Especiales de Trabajo',
+  'Terminación del Contrato', 'Derecho Sindical y Negociación Colectiva', 'Seguridad Social y Licencias'
+]
+const SUBTITLE_ORDER_ADMINISTRATIVO = [
+  'Derechos de Petición', 'Quejas y Reclamos', 'Contratación Estatal'
+]
+const SUBTITLE_ORDER_CONSTITUCIONAL = [
+  'Acciones de Tutela', 'Acciones Populares y de Cumplimiento', 'Control Constitucional'
+]
 
 const TIPO_TRAMITE = {
   1:'Notarial',2:'Notarial',3:'Notarial',4:'Notarial',5:'Privado',6:'Privado',7:'Privado',
@@ -107,10 +114,26 @@ const TIPO_TRAMITE = {
   'acta-final-arreglo-directo':'Privado',
   'solicitud-licencia-paternidad':'Privado',
   // --- DERECHO ADMINISTRATIVO ---
-  'derecho-peticion-interes-general':'Publico',
-  'derecho-peticion-interes-particular':'Publico',
-  'derecho-peticion-informacion-copias':'Publico',
-  'modelo-quejas-reclamos':'Publico',
+  'derecho-peticion-interes-general':'Privado',
+  'derecho-peticion-interes-particular':'Privado',
+  'derecho-peticion-informacion-copias':'Privado',
+  'modelo-quejas-reclamos':'Privado',
+  'queja-entidad-financiera':'Privado',
+  'desistimiento-derecho-peticion':'Privado',
+  'solicitud-facultades-oficiosas':'Privado',
+  'constitucion-union-temporal':'Privado',
+  'constitucion-consorcio':'Privado',
+  'pliego-condiciones-licitacion':'Privado',
+  // --- DERECHO CONSTITUCIONAL ---
+  'accion-tutela':'Privado',
+  'tutela-agente-oficioso':'Privado',
+  'poder-tramitar-tutela':'Privado',
+  'poder-contestar-tutela':'Privado',
+  'solicitud-insistencia-revision-tutela':'Privado',
+  'accion-popular':'Privado',
+  'accion-cumplimiento':'Privado',
+  'contestacion-accion-cumplimiento':'Privado',
+  'accion-inconstitucionalidad':'Privado',
 }
 
 function ordenarMinutas(minutas, order) {
@@ -137,6 +160,7 @@ router.get('/', (req, res) => {
     const sociedadesPath = path.join(__dirname, '../../data/templates/minutas-derecho-sociedades.json')
     const laboralPath = path.join(__dirname, '../../data/templates/minutas-derecho-laboral.json')
     const administrativoPath = path.join(__dirname, '../../data/templates/minutas-derecho-administrativo.json')
+    const constitucionalPath = path.join(__dirname, '../../data/templates/minutas-derecho-constitucional.json')
 
     const minutasCivil = JSON.parse(fs.readFileSync(civilPath, 'utf8'))
     const minutasFamilia = JSON.parse(fs.readFileSync(familiaPath, 'utf8'))
@@ -144,6 +168,7 @@ router.get('/', (req, res) => {
     const minutasSociedades = JSON.parse(fs.readFileSync(sociedadesPath, 'utf8'))
     const minutasLaboral = JSON.parse(fs.readFileSync(laboralPath, 'utf8'))
     const minutasAdministrativo = JSON.parse(fs.readFileSync(administrativoPath, 'utf8'))
+    const minutasConstitucional = JSON.parse(fs.readFileSync(constitucionalPath, 'utf8'))
 
     const categories = [
       {
@@ -185,7 +210,14 @@ router.get('/', (req, res) => {
         id: 'derecho-administrativo', name: 'Derecho Administrativo',
         minutas: ordenarMinutas(minutasAdministrativo, SUBTITLE_ORDER_ADMINISTRATIVO).map(m => ({
           id: m.id, title: m.title, subtitle: m.subtitle,
-          tipo_tramite: TIPO_TRAMITE[m.id] || 'Publico'
+          tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+        }))
+      },
+      {
+        id: 'derecho-constitucional', name: 'Derecho Constitucional',
+        minutas: ordenarMinutas(minutasConstitucional, SUBTITLE_ORDER_CONSTITUCIONAL).map(m => ({
+          id: m.id, title: m.title, subtitle: m.subtitle,
+          tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
         }))
       }
     ]
@@ -210,6 +242,8 @@ router.get('/:categoryId/:minutaId', (req, res) => {
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-laboral.json')
     else if (categoryId === 'derecho-administrativo')
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-administrativo.json')
+    else if (categoryId === 'derecho-constitucional')
+      filePath = path.join(__dirname, '../../data/templates/minutas-derecho-constitucional.json')
     else
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-civil.json')
 
