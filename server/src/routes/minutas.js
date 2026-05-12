@@ -10,7 +10,16 @@ const SUBTITLE_ORDER_CIVIL = [
 ]
 const SUBTITLE_ORDER_FAMILIA = ['Matrimonio','Sociedad Conyugal y Patrimonial','Estado Civil','Sucesiones']
 const SUBTITLE_ORDER_COMERCIAL = ['Títulos Valores','Contratos Mercantiles','Propiedad Intelectual']
-const SUBTITLE_ORDER_SOCIEDADES = ['Empresa Unipersonal y Sociedades Básicas','Sociedad Anónima','Sociedad Limitada (Ltda.)','Sociedad en Comandita']
+const SUBTITLE_ORDER_SOCIEDADES = [
+  'Empresa Unipersonal y Sociedades Básicas',
+  'Sociedad Anónima',
+  'Sociedad Limitada (Ltda.)',
+  'Sociedad en Comandita',
+  'Transformación y Fusión de Sociedades'
+]
+const SUBTITLE_ORDER_LABORAL = ['Contratos de Trabajo', 'Reglamentos Internos', 'Contratos Especiales de Trabajo', 'Terminación del Contrato', 'Derecho Sindical y Negociación Colectiva', 'Seguridad Social y Licencias']
+
+const SUBTITLE_ORDER_ADMINISTRATIVO = ['Derechos de Petición', 'Quejas y Reclamos']
 
 const TIPO_TRAMITE = {
   1:'Notarial',2:'Notarial',3:'Notarial',4:'Notarial',5:'Privado',6:'Privado',7:'Privado',
@@ -65,7 +74,6 @@ const TIPO_TRAMITE = {
   'acta-junta-socios-ordinaria':'Privado',
   'acta-junta-socios-cesion-cuotas':'Privado',
   'extracto-asamblea-reforma-estatutos':'Privado',
-  'extracto-asamblea-reforma-estatutos':'Privado',
   'autorizacion-reforma-estatutaria-supersociedades':'Privado',
   'escritura-reforma-cesion-cuotas-ltda':'Notarial',
   'certificacion-legalidad-cesion-cuotas':'Privado',
@@ -74,6 +82,35 @@ const TIPO_TRAMITE = {
   'acta-asamblea-general':'Privado','dictamen-revisor-fiscal-sin-salvedades-sa':'Privado',
   'dictamen-revisor-fiscal-sin-salvedades-sucursal':'Privado',
   'dictamen-revisor-fiscal-abstencion':'Privado','reglamento-emision-acciones':'Privado',
+  'transformacion-comandita-simple-acciones':'Notarial',
+  'acta-asamblea-aprueba-fusion':'Privado',
+  'estatutos-fondo-empleados':'Privado',
+  // --- DERECHO LABORAL ---
+  'contrato-termino-indefinido':'Privado',
+  'contrato-termino-fijo-1-3':'Privado',
+  'contrato-termino-fijo-inferior-1':'Privado',
+  'contrato-obra-labor':'Privado',
+  'contrato-salario-integral':'Privado',
+  'reglamento-interno-trabajo':'Privado',
+  'reglamento-higiene-seguridad':'Privado',
+  'contrato-direccion-confianza-manejo':'Privado',
+  'contrato-celadores-vigilantes':'Privado',
+  'contrato-servicio-domestico':'Privado',
+  'contrato-aprendizaje':'Privado',
+  'carta-terminacion-justa-causa':'Privado',
+  'terminacion-sin-justa-causa':'Privado',
+  'liquidacion-prestaciones-sociales':'Privado',
+  'solicitud-compensacion-vacaciones':'Privado',
+  'estatutos-organizacion-sindical':'Privado',
+  'acta-iniciacion-arreglo-directo':'Privado',
+  'actas-tramite-arreglo-directo':'Privado',
+  'acta-final-arreglo-directo':'Privado',
+  'solicitud-licencia-paternidad':'Privado',
+  // --- DERECHO ADMINISTRATIVO ---
+  'derecho-peticion-interes-general':'Publico',
+  'derecho-peticion-interes-particular':'Publico',
+  'derecho-peticion-informacion-copias':'Publico',
+  'modelo-quejas-reclamos':'Publico',
 }
 
 function ordenarMinutas(minutas, order) {
@@ -98,13 +135,19 @@ router.get('/', (req, res) => {
     const familiaPath = path.join(__dirname, '../../data/templates/minutas-derecho-familia.json')
     const comercialPath = path.join(__dirname, '../../data/templates/minutas-derecho-comercial.json')
     const sociedadesPath = path.join(__dirname, '../../data/templates/minutas-derecho-sociedades.json')
+    const laboralPath = path.join(__dirname, '../../data/templates/minutas-derecho-laboral.json')
+    const administrativoPath = path.join(__dirname, '../../data/templates/minutas-derecho-administrativo.json')
+
     const minutasCivil = JSON.parse(fs.readFileSync(civilPath, 'utf8'))
     const minutasFamilia = JSON.parse(fs.readFileSync(familiaPath, 'utf8'))
     const minutasComercial = JSON.parse(fs.readFileSync(comercialPath, 'utf8'))
     const minutasSociedades = JSON.parse(fs.readFileSync(sociedadesPath, 'utf8'))
+    const minutasLaboral = JSON.parse(fs.readFileSync(laboralPath, 'utf8'))
+    const minutasAdministrativo = JSON.parse(fs.readFileSync(administrativoPath, 'utf8'))
+
     const categories = [
       {
-        id: 'derecho-civil', name: 'Minutas Derecho Civil',
+        id: 'derecho-civil', name: 'Derecho Civil',
         minutas: ordenarMinutas(minutasCivil, SUBTITLE_ORDER_CIVIL).map(m => ({
           id: m.id, title: m.title, subtitle: m.subtitle,
           tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
@@ -130,6 +173,20 @@ router.get('/', (req, res) => {
           id: m.id, title: m.title, subtitle: m.subtitle,
           tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
         }))
+      },
+      {
+        id: 'derecho-laboral', name: 'Derecho Laboral',
+        minutas: ordenarMinutas(minutasLaboral, SUBTITLE_ORDER_LABORAL).map(m => ({
+          id: m.id, title: m.title, subtitle: m.subtitle,
+          tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+        }))
+      },
+      {
+        id: 'derecho-administrativo', name: 'Derecho Administrativo',
+        minutas: ordenarMinutas(minutasAdministrativo, SUBTITLE_ORDER_ADMINISTRATIVO).map(m => ({
+          id: m.id, title: m.title, subtitle: m.subtitle,
+          tipo_tramite: TIPO_TRAMITE[m.id] || 'Publico'
+        }))
       }
     ]
     res.json(categories)
@@ -149,8 +206,13 @@ router.get('/:categoryId/:minutaId', (req, res) => {
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-comercial.json')
     else if (categoryId === 'derecho-sociedades')
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-sociedades.json')
+    else if (categoryId === 'derecho-laboral')
+      filePath = path.join(__dirname, '../../data/templates/minutas-derecho-laboral.json')
+    else if (categoryId === 'derecho-administrativo')
+      filePath = path.join(__dirname, '../../data/templates/minutas-derecho-administrativo.json')
     else
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-civil.json')
+
     const minutas = JSON.parse(fs.readFileSync(filePath, 'utf8'))
     const minuta = minutas.find(m => String(m.id) === String(minutaId))
     if (!minuta) return res.status(404).json({ error: 'Minuta no encontrada' })

@@ -22,10 +22,51 @@ function cleanTitle(title) {
 }
 
 
-function notaLegal(tipo_tramite) {
+function notaLegal(tipo_tramite, categoryId) {
   if (!tipo_tramite) return ''
   const t = tipo_tramite.toLowerCase()
 
+  // ── DERECHO ADMINISTRATIVO ──────────────────────────────────────────────────
+  if (categoryId === 'derecho-administrativo') {
+    return `
+<div style="margin-top:48pt;font-family:'Times New Roman',serif;">
+  <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
+    <!-- Franja azul superior -->
+    <div style="height:5px;background:linear-gradient(90deg,#1565c0,#42a5f5,#1565c0);"></div>
+    <!-- Contenido principal -->
+    <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
+      <!-- Ícono -->
+      <div style="flex-shrink:0;width:52px;height:52px;background:rgba(66,165,245,0.15);border:2px solid #42a5f5;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;line-height:1;text-align:center;padding-top:4px;">
+        🏛️
+      </div>
+      <!-- Texto -->
+      <div style="flex:1;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+          <span style="background:#42a5f5;color:#0d2137;font-size:8pt;font-weight:bold;letter-spacing:1.5px;padding:2px 10px;border-radius:20px;text-transform:uppercase;">Documento de Gestión Pública</span>
+        </div>
+        <p style="color:#42a5f5;font-size:12pt;font-weight:bold;margin:0 0 8px 0;letter-spacing:0.5px;">RECOMENDACIONES ANTES DE PRESENTAR</p>
+        <p style="color:#c8d8e8;font-size:9.5pt;margin:0 0 6px 0;line-height:1.55;text-align:justify;">
+          Este documento es una petición dirigida a una entidad pública o empresa de servicios. Para garantizar su efectividad recuerde:
+        </p>
+        <ul style="color:#c8d8e8;font-size:9.5pt;margin:0 0 6px 0;padding-left:18px;line-height:1.7;">
+          <li>Exija <strong style="color:#fff;">sello de radicado con fecha</strong> en su copia al momento de presentarlo.</li>
+          <li>La entidad tiene <strong style="color:#42a5f5;">15 días hábiles</strong> para responder (10 días para solicitudes de información).</li>
+          <li>Si no recibe respuesta en el plazo legal, puede interponer <strong style="color:#fff;">acción de tutela</strong> por vulneración del derecho de petición fundamental consagrado en el artículo 23 de la Constitución Nacional.</li>
+          <li>Este documento <strong style="color:#fff;">no requiere firma ante notaría</strong> ni autenticación.</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Franja inferior -->
+    <div style="background:rgba(66,165,245,0.10);border-top:1px solid rgba(66,165,245,0.25);padding:8px 28px;">
+      <p style="color:rgba(200,216,232,0.6);font-size:7.5pt;margin:0;letter-spacing:0.3px;">
+        LEXDOC · Documento generado con fines informativos · Naturaleza: Derecho de Petición / Queja · Colombia
+      </p>
+    </div>
+  </div>
+</div>`
+  }
+
+  // ── NOTARIAL ────────────────────────────────────────────────────────────────
   if (t === 'notarial') {
     return `
 <div style="margin-top:48pt;font-family:'Times New Roman',serif;">
@@ -62,7 +103,7 @@ function notaLegal(tipo_tramite) {
 </div>`
   }
 
-  // Privado (default)
+  // ── PRIVADO (default) ───────────────────────────────────────────────────────
   return `
 <div style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
@@ -98,7 +139,7 @@ function notaLegal(tipo_tramite) {
 </div>`
 }
 
-function toHTML(filledText, title, tipo_tramite) {
+function toHTML(filledText, title, tipo_tramite, categoryId) {
   const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:', 'PRIMERA.', 'SEGUNDA.', 'TERCERA.', 'CUARTA.', 'QUINTA.', 'SEXTA.', 'SÉPTIMA.', 'OCTAVA.', 'PRIMERO.', 'SEGUNDO.', 'TERCERO.', 'CUARTO.', 'QUINTO.', 'SEXTO.', 'SÉPTIMO.', 'OCTAVO.', 'NOVENO.'];
   const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE', 'EL VENDEDOR', 'EL COMPRADOR', 'LAS COMPARECIENTES', 'COMPARECIENTES:', 'PODERDANTE:', 'CONTRAYENTES:'];
 
@@ -154,7 +195,7 @@ function toHTML(filledText, title, tipo_tramite) {
 <body>
   <h1>${cleanTitle(title)}</h1>
   ${parrafos}
-  ${notaLegal(tipo_tramite)}
+  ${notaLegal(tipo_tramite, categoryId)}
 </body>
 </html>`;
 }
@@ -219,16 +260,16 @@ async function toDocx(filledText, title) {
 }
 
 router.post('/preview', (req, res) => {
-  const { template, title, data, tipo_tramite } = req.body;
+  const { template, title, data, tipo_tramite, categoryId } = req.body;
   const filled = generateFromTemplate(template, data);
-  const html = toHTML(filled, title, tipo_tramite);
+  const html = toHTML(filled, title, tipo_tramite, categoryId);
   res.json({ html, filled });
 });
 
 router.post('/pdf', (req, res) => {
-  const { template, title, data, tipo_tramite } = req.body;
+  const { template, title, data, tipo_tramite, categoryId } = req.body;
   const filled = generateFromTemplate(template, data);
-  const html = toHTML(filled, title, tipo_tramite);
+  const html = toHTML(filled, title, tipo_tramite, categoryId);
   res.json({ html });
 });
 

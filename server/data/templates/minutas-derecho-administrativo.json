@@ -1,0 +1,78 @@
+[
+  {
+    "id": "derecho-peticion-interes-general",
+    "title": "Derecho de Petición en Interés General",
+    "subtitle": "Derechos de Petición",
+    "tipo_tramite": "Publico",
+    "fields": [
+      {"name": "nombre_trabajador", "label": "Nombre Completo del Peticionario", "type": "text", "required": true},
+      {"name": "cedula_trabajador", "label": "Número de Cédula de Ciudadanía del Peticionario", "type": "text", "required": true},
+      {"name": "ciudad_contratacion", "label": "Ciudad de Expedición de la Cédula", "type": "text", "required": true},
+      {"name": "direccion_trabajador", "label": "Domicilio y Residencia del Peticionario", "type": "text", "required": true},
+      {"name": "nombre_empresa", "label": "Entidad o Autoridad a la que va Dirigida", "type": "text", "required": true},
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha de la Petición", "type": "text", "required": true},
+      {"name": "oficio_trabajador", "label": "Objeto de la Petición (qué solicita exactamente)", "type": "text", "required": true},
+      {"name": "salario", "label": "Razones que Apoyan la Petición", "type": "text", "required": true},
+      {"name": "lugar_trabajo", "label": "Documentos que Acompaña la Petición (si no hay, escriba: ninguno)", "type": "text", "required": true}
+    ],
+    "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñores\n{{nombre_empresa}}\n\nRef.: Derecho de petición\n\n{{nombre_trabajador}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_trabajador}}, de {{ciudad_contratacion}}, domiciliado y residente en {{direccion_trabajador}}, en ejercicio del derecho de petición consagrado en el artículo 23 de la Constitución Nacional y en el artículo 5° del Código Contencioso Administrativo, me permito muy respetuosamente solicitar de esta entidad lo siguiente:\n\n{{oficio_trabajador}}\n\nApoyo mi petición en las razones que paso a exponer:\n\n{{salario}}\n\nA efectos de sustentar la solicitud efectuada me permito acompañar los siguientes documentos:\n\n{{lugar_trabajo}}\n\nEspero la pronta resolución de la presente petición dentro del término de quince (15) días establecido por la ley.\n\nAtentamente,\n\n\n____________________________\n{{nombre_trabajador}}\nC.C. N°. {{cedula_trabajador}} de {{ciudad_contratacion}}"
+  },
+  {
+    "id": "derecho-peticion-interes-particular",
+    "title": "Derecho de Petición en Interés Particular (Reclamo Servicios Públicos)",
+    "subtitle": "Derechos de Petición",
+    "tipo_tramite": "Publico",
+    "fields": [
+      {"name": "nombre_trabajador", "label": "Nombre Completo del Peticionario", "type": "text", "required": true},
+      {"name": "cedula_trabajador", "label": "Número de Cédula de Ciudadanía", "type": "text", "required": true},
+      {"name": "ciudad_contratacion", "label": "Ciudad de Expedición de la Cédula", "type": "text", "required": true},
+      {"name": "direccion_trabajador", "label": "Domicilio y Residencia del Peticionario", "type": "text", "required": true},
+      {"name": "nombre_empresa", "label": "Empresa de Servicios Públicos a la que va Dirigida", "type": "text", "required": true},
+      {"name": "oficio_trabajador", "label": "Tipo de Servicio Público (Ej: energía eléctrica, acueducto, gas)", "type": "text", "required": true},
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha del Reclamo", "type": "text", "required": true},
+      {"name": "salario", "label": "Peticiones Concretas (qué solicita exactamente)", "type": "text", "required": true},
+      {"name": "lugar_trabajo", "label": "Fundamento de las Peticiones (razones y hechos)", "type": "text", "required": true},
+      {"name": "periodo_pago", "label": "Dirección para Recibir Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñores\n{{nombre_empresa}}\nOficina de Quejas y Reclamos\n\nRef.: Reclamo de facturación del servicio de {{oficio_trabajador}}\n\n{{nombre_trabajador}}, mayor de edad, domiciliado y residente en {{direccion_trabajador}}, identificado con la cédula de ciudadanía N°. {{cedula_trabajador}} de {{ciudad_contratacion}}, actuando en mi calidad de usuario del servicio público de {{oficio_trabajador}}, en ejercicio del derecho de petición de que trata el Código Contencioso Administrativo, me dirijo a ustedes con el objeto de formular lo siguiente:\n\nPETICIONES:\n{{salario}}\n\nFUNDAMENTO DE LAS PETICIONES:\n{{lugar_trabajo}}\n\nFACULTAD ESPECIAL: Como quiera que la presente reclamación la formulo en calidad de usuario del servicio, solicito que no se exija la cancelación del servicio ni se proceda a la suspensión hasta tanto no se practiquen las visitas y pruebas técnicas requeridas para verificar los motivos del reclamo, conforme al artículo 48 del Decreto 1842 de 1991.\n\nNOTIFICACIONES: Las notificaciones personales las recibiré en la siguiente dirección: {{periodo_pago}}\n\nAtentamente,\n\n\n____________________________\n{{nombre_trabajador}}\nC.C. N°. {{cedula_trabajador}} de {{ciudad_contratacion}}"
+  },
+  {
+    "id": "derecho-peticion-informacion-copias",
+    "title": "Derecho de Petición de Información y Copias",
+    "subtitle": "Derechos de Petición",
+    "tipo_tramite": "Publico",
+    "fields": [
+      {"name": "nombre_trabajador", "label": "Nombre Completo del Peticionario", "type": "text", "required": true},
+      {"name": "cedula_trabajador", "label": "Número de Cédula de Ciudadanía", "type": "text", "required": true},
+      {"name": "ciudad_contratacion", "label": "Ciudad de Expedición de la Cédula", "type": "text", "required": true},
+      {"name": "direccion_trabajador", "label": "Domicilio y Residencia del Peticionario", "type": "text", "required": true},
+      {"name": "nombre_empresa", "label": "Entidad o Autoridad a la que va Dirigida", "type": "text", "required": true},
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha de la Petición", "type": "text", "required": true},
+      {"name": "oficio_trabajador", "label": "Información que Solicita (describa las actuaciones sobre las que pide información)", "type": "text", "required": true},
+      {"name": "salario", "label": "Documentos o Copias que Solicita", "type": "text", "required": true}
+    ],
+    "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñores\n{{nombre_empresa}}\n\nRef.: Derecho de petición de información y copias\n\n{{nombre_trabajador}}, mayor de edad, domiciliado y residente en {{direccion_trabajador}}, identificado con la cédula de ciudadanía N°. {{cedula_trabajador}} de {{ciudad_contratacion}}, por medio del presente documento, presento la siguiente petición, con el fin de que se me suministre información acerca del contenido y desarrollo de las siguientes actuaciones:\n\n{{oficio_trabajador}}\n\nY que se me expidan copias de los documentos que relaciono a continuación:\n\n{{salario}}\n\nLa anterior petición la fundamento con base en los artículos 23 y 15 de la Constitución Nacional, 17 y 19 del Código Contencioso Administrativo, y 12 de la Ley 57 de 1985.\n\nSolicito dar respuesta a la presente petición dentro del término máximo de diez (10) días hábiles establecido por la ley. Vencido dicho término sin respuesta, se entenderá aceptada la solicitud (silencio administrativo positivo), debiendo entregarse el documento dentro de los tres (3) días siguientes.\n\nDe usted respetuosamente,\n\n\n____________________________\n{{nombre_trabajador}}\nC.C. N°. {{cedula_trabajador}} de {{ciudad_contratacion}}"
+  },
+  {
+    "id": "modelo-quejas-reclamos",
+    "title": "Modelo de Quejas y Reclamos (Estatuto de Protección al Consumidor)",
+    "subtitle": "Quejas y Reclamos",
+    "tipo_tramite": "Publico",
+    "fields": [
+      {"name": "nombre_trabajador", "label": "Nombre Completo del Consumidor", "type": "text", "required": true},
+      {"name": "cedula_trabajador", "label": "Número de Cédula de Ciudadanía", "type": "text", "required": true},
+      {"name": "ciudad_contratacion", "label": "Ciudad de Expedición de la Cédula", "type": "text", "required": true},
+      {"name": "direccion_trabajador", "label": "Domicilio y Residencia del Consumidor", "type": "text", "required": true},
+      {"name": "nombre_empresa", "label": "Entidad ante la que se Presenta (Ej: Superintendencia de Industria y Comercio, Alcaldía)", "type": "text", "required": true},
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha de la Queja", "type": "text", "required": true},
+      {"name": "oficio_trabajador", "label": "Nombre del Proveedor o Establecimiento Comercial contra el que se Queja", "type": "text", "required": true},
+      {"name": "salario", "label": "Descripción de los Hechos que Originan la Queja", "type": "text", "required": true},
+      {"name": "lugar_trabajo", "label": "Dirección para Recibir Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor:\n{{nombre_empresa}}\n\n{{nombre_trabajador}}, mayor de edad, domiciliado y residente en {{direccion_trabajador}}, identificado con la cédula de ciudadanía N°. {{cedula_trabajador}} de {{ciudad_contratacion}}, actuando a nombre propio, por medio del presente escrito y para los efectos legales a que haya lugar, me permito bajo la gravedad del juramento poner en su conocimiento los siguientes hechos, en mi concepto violatorios del estatuto del consumidor (Decreto 3466 de 1982) y normas complementarias, con el fin de que se proceda a imponer las sanciones a que haya lugar:\n\nHECHOS:\n\nEn contra de: {{oficio_trabajador}}\n\n{{salario}}\n\nA la presente acompaño copia de la correspondiente factura de compra de la mercancía o del documento que acredita la relación comercial.\n\nRuego disponer que las comunicaciones relacionadas con la presente solicitud sean remitidas a la siguiente dirección: {{lugar_trabajo}}\n\nAtentamente,\n\n\n____________________________\n{{nombre_trabajador}}\nC.C. N°. {{cedula_trabajador}} de {{ciudad_contratacion}}"
+  }
+]

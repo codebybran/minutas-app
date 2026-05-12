@@ -1,0 +1,1682 @@
+[
+  {
+    "id": "contrato-termino-indefinido",
+    "title": "Contrato Individual de Trabajo a Término Indefinido",
+    "subtitle": "Contratos de Trabajo",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empleador",
+        "label": "Nombre del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nit_empleador",
+        "label": "Cédula o NIT del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_empleador",
+        "label": "Domicilio del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_trabajador",
+        "label": "Cédula del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_trabajador",
+        "label": "Dirección del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_nacimiento_trabajador",
+        "label": "Lugar y Fecha de Nacimiento del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nacionalidad_trabajador",
+        "label": "Nacionalidad del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "oficio_trabajador",
+        "label": "Oficio o Cargo que Desempeñará",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "salario",
+        "label": "Salario (en letras y números)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_pago",
+        "label": "Período de Pago",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de Iniciación de Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_trabajo",
+        "label": "Lugar donde Desempeñará las Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_contratacion",
+        "label": "Ciudad donde fue Contratado el Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad de Firma del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de Firma del Contrato",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO INDEFINIDO\n\nEMPLEADOR: {{nombre_empleador}} — C.C. o NIT: {{nit_empleador}} — Domicilio: {{domicilio_empleador}}\nTRABAJADOR: {{nombre_trabajador}} — C.C.: {{cedula_trabajador}} — Dirección: {{direccion_trabajador}}\nNacimiento y Nacionalidad: {{lugar_nacimiento_trabajador}} — {{nacionalidad_trabajador}}\nOficio: {{oficio_trabajador}}\nSalario: {{salario}} — Período de pago: {{periodo_pago}}\nFecha de inicio: {{fecha_inicio}} — Lugar de trabajo: {{lugar_trabajo}}\nCiudad de contratación: {{ciudad_contratacion}}\n\nEntre EL EMPLEADOR y EL TRABAJADOR se ha celebrado el presente contrato individual de trabajo, regido por las siguientes cláusulas:\n\nPRIMERA.—EL EMPLEADOR contrata los servicios personales del TRABAJADOR y éste se obliga a poner al servicio del EMPLEADOR toda su capacidad normal de trabajo en forma exclusiva, y a no prestar servicios laborales a otros empleadores durante la vigencia de este contrato.\n\nSEGUNDA.—EL TRABAJADOR se obliga a observar rigurosamente las normas de la empresa, guardar absoluta reserva de las informaciones privadas, ejecutar por sí mismo las funciones asignadas, cuidar los intereses de la empresa, y obrar con lealtad, colaboración y disciplina.\n\nTERCERA.—EL EMPLEADOR pagará al TRABAJADOR el salario indicado, pagadero en las oportunidades señaladas, incluyendo la remuneración de los descansos dominicales y festivos.\n\nCUARTA.—Los primeros dos (2) meses del presente contrato se consideran como período de prueba. Vencido éste, la duración del contrato será indefinida.\n\nQUINTA.—Son justas causas para dar por terminado unilateralmente este contrato las enumeradas en el artículo 7º del Decreto 2351 de 1965.\n\nSEXTA.—El presente contrato reemplaza en su integridad cualquier otro contrato verbal o escrito celebrado entre las partes con anterioridad.\n\nPara constancia se firma en la ciudad de {{ciudad_firma}}, el {{fecha_firma}}.\n\n\nEL EMPLEADOR\n\n____________________________\n{{nombre_empleador}}\nC.C. o NIT: {{nit_empleador}}\n\n\nEL TRABAJADOR\n\n____________________________\n{{nombre_trabajador}}\nC.C.: {{cedula_trabajador}}"
+  },
+  {
+    "id": "contrato-termino-fijo-1-3",
+    "title": "Contrato Individual de Trabajo a Término Fijo de 1 a 3 Años",
+    "subtitle": "Contratos de Trabajo",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empleador",
+        "label": "Nombre del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nit_empleador",
+        "label": "Cédula o NIT del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_empleador",
+        "label": "Domicilio del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_trabajador",
+        "label": "Cédula del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_trabajador",
+        "label": "Dirección del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_nacimiento_trabajador",
+        "label": "Lugar y Fecha de Nacimiento del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nacionalidad_trabajador",
+        "label": "Nacionalidad del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "oficio_trabajador",
+        "label": "Oficio o Cargo que Desempeñará",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "salario",
+        "label": "Salario (en letras y números)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion_contrato",
+        "label": "Duración del Contrato (Ej: un año, dos años)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_pago",
+        "label": "Período de Pago",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de Iniciación de Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_trabajo",
+        "label": "Lugar donde Desempeñará las Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_contratacion",
+        "label": "Ciudad donde fue Contratado el Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad de Firma del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de Firma del Contrato",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO DE UNO A TRES AÑOS\n\nEMPLEADOR: {{nombre_empleador}} — C.C. o NIT: {{nit_empleador}} — Domicilio: {{domicilio_empleador}}\nTRABAJADOR: {{nombre_trabajador}} — C.C.: {{cedula_trabajador}} — Dirección: {{direccion_trabajador}}\nNacimiento y Nacionalidad: {{lugar_nacimiento_trabajador}} — {{nacionalidad_trabajador}}\nOficio: {{oficio_trabajador}}\nSalario: {{salario}} — Duración: {{duracion_contrato}} — Período de pago: {{periodo_pago}}\nFecha de inicio: {{fecha_inicio}} — Lugar de trabajo: {{lugar_trabajo}}\nCiudad de contratación: {{ciudad_contratacion}}\n\nEntre EL EMPLEADOR y EL TRABAJADOR se ha celebrado el presente contrato de trabajo a término fijo, regido por las siguientes cláusulas:\n\nPRIMERA.—EL EMPLEADOR contrata los servicios personales del TRABAJADOR en forma exclusiva para el desempeño del oficio mencionado.\n\nSEGUNDA.—EL EMPLEADOR pagará al TRABAJADOR el salario indicado, pagadero en las oportunidades señaladas.\n\nTERCERA.—Los primeros dos meses se consideran período de prueba.\n\nCUARTA.—La duración del presente contrato es de {{duracion_contrato}}. Si ninguna de las partes avisa por escrito su determinación de no prorrogar con antelación de 30 días, el contrato se renovará por el mismo período.\n\nQUINTA.—Son justas causas para terminar este contrato las enumeradas en el artículo 7º del Decreto 2351 de 1965.\n\nSEXTA.—El presente contrato reemplaza cualquier otro contrato anterior.\n\nPara constancia se firma en la ciudad de {{ciudad_firma}}, el {{fecha_firma}}.\n\n\nEL EMPLEADOR\n\n____________________________\n{{nombre_empleador}}\nC.C. o NIT: {{nit_empleador}}\n\n\nEL TRABAJADOR\n\n____________________________\n{{nombre_trabajador}}\nC.C.: {{cedula_trabajador}}"
+  },
+  {
+    "id": "contrato-termino-fijo-inferior-1",
+    "title": "Contrato Individual de Trabajo a Término Fijo Inferior a un Año",
+    "subtitle": "Contratos de Trabajo",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empleador",
+        "label": "Nombre del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nit_empleador",
+        "label": "Cédula o NIT del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_empleador",
+        "label": "Domicilio del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_trabajador",
+        "label": "Cédula del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_trabajador",
+        "label": "Dirección del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_nacimiento_trabajador",
+        "label": "Lugar y Fecha de Nacimiento del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nacionalidad_trabajador",
+        "label": "Nacionalidad del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "oficio_trabajador",
+        "label": "Oficio o Cargo que Desempeñará",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "salario",
+        "label": "Salario (en letras y números)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_pago",
+        "label": "Período de Pago",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_contratacion",
+        "label": "Ciudad donde fue Contratado el Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_trabajo",
+        "label": "Lugar donde Desempeñará las Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de Iniciación de Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion_contrato",
+        "label": "Duración del Contrato (Ej: seis meses, tres meses)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_vencimiento",
+        "label": "Fecha de Vencimiento del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dias_periodo_prueba",
+        "label": "Días de Período de Prueba (máximo la quinta parte de la duración)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad de Firma del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de Firma del Contrato",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO INFERIOR A UN AÑO\n\nEMPLEADOR: {{nombre_empleador}} — C.C. o NIT: {{nit_empleador}} — Domicilio: {{domicilio_empleador}}\nTRABAJADOR: {{nombre_trabajador}} — C.C.: {{cedula_trabajador}} — Dirección: {{direccion_trabajador}}\nNacimiento y Nacionalidad: {{lugar_nacimiento_trabajador}} — {{nacionalidad_trabajador}}\nOficio: {{oficio_trabajador}}\nSalario: {{salario}} — Período de pago: {{periodo_pago}}\nCiudad de contratación: {{ciudad_contratacion}} — Lugar de trabajo: {{lugar_trabajo}}\nFecha de inicio: {{fecha_inicio}} — Duración: {{duracion_contrato}} — Vence el: {{fecha_vencimiento}}\n\nEntre EL EMPLEADOR y EL TRABAJADOR se ha celebrado el presente contrato de trabajo a término fijo inferior a un año, regido por las siguientes cláusulas:\n\nPRIMERA.—EL EMPLEADOR contrata los servicios personales del TRABAJADOR en forma exclusiva.\n\nSEGUNDA.—EL EMPLEADOR pagará al TRABAJADOR el salario indicado, pagadero en las oportunidades señaladas.\n\nTERCERA.—Las partes acuerdan un período de prueba de {{dias_periodo_prueba}} días.\n\nCUARTA.—La duración del presente contrato es de {{duracion_contrato}}, venciendo el día {{fecha_vencimiento}}.\n\nQUINTA.—Son justas causas para terminar este contrato las enumeradas en el artículo 7º del Decreto 2351 de 1965.\n\nSEXTA.—El presente contrato reemplaza cualquier otro contrato anterior.\n\nPara constancia se firma en la ciudad de {{ciudad_firma}}, el {{fecha_firma}}.\n\n\nEL EMPLEADOR\n\n____________________________\n{{nombre_empleador}}\nC.C. o NIT: {{nit_empleador}}\n\n\nEL TRABAJADOR\n\n____________________________\n{{nombre_trabajador}}\nC.C.: {{cedula_trabajador}}"
+  },
+  {
+    "id": "contrato-obra-labor",
+    "title": "Contrato de Trabajo por la Duración de una Obra o Labor Contratada",
+    "subtitle": "Contratos de Trabajo",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empleador",
+        "label": "Nombre del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nit_empleador",
+        "label": "Cédula o NIT del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_empleador",
+        "label": "Domicilio del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_trabajador",
+        "label": "Cédula del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_trabajador",
+        "label": "Dirección del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_nacimiento_trabajador",
+        "label": "Lugar y Fecha de Nacimiento del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nacionalidad_trabajador",
+        "label": "Nacionalidad del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "oficio_trabajador",
+        "label": "Oficio o Cargo que Desempeñará",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "salario",
+        "label": "Salario (en letras y números)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_pago",
+        "label": "Período de Pago",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de Iniciación de Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_trabajo",
+        "label": "Lugar donde Desempeñará las Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_contratacion",
+        "label": "Ciudad donde fue Contratado el Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_obra_labor",
+        "label": "Descripción de la Obra o Labor Contratada",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad de Firma del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de Firma del Contrato",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO DE TRABAJO POR LA DURACIÓN DE UNA OBRA O LABOR CONTRATADA\n\nEMPLEADOR: {{nombre_empleador}} — C.C. o NIT: {{nit_empleador}} — Domicilio: {{domicilio_empleador}}\nTRABAJADOR: {{nombre_trabajador}} — C.C.: {{cedula_trabajador}} — Dirección: {{direccion_trabajador}}\nNacimiento y Nacionalidad: {{lugar_nacimiento_trabajador}} — {{nacionalidad_trabajador}}\nOficio: {{oficio_trabajador}}\nSalario: {{salario}} — Período de pago: {{periodo_pago}}\nFecha de inicio: {{fecha_inicio}} — Lugar de trabajo: {{lugar_trabajo}}\nCiudad de contratación: {{ciudad_contratacion}}\nObra o Labor: {{descripcion_obra_labor}}\n\nEntre EL EMPLEADOR y EL TRABAJADOR se ha celebrado el presente contrato por obra o labor, regido por las siguientes cláusulas:\n\nPRIMERA.—EL EMPLEADOR contrata los servicios del TRABAJADOR para la realización de la obra o labor descrita.\n\nSEGUNDA.—EL EMPLEADOR pagará al TRABAJADOR el salario indicado.\n\nTERCERA.—Los primeros dos meses se consideran período de prueba.\n\nCUARTA.—La duración corresponde al tiempo que dure la realización de la obra o labor contratada, conforme al artículo 45 del CST.\n\nQUINTA.—Son justas causas para terminar este contrato las del artículo 7º del Decreto 2351 de 1965.\n\nPara constancia se firma en la ciudad de {{ciudad_firma}}, el {{fecha_firma}}.\n\n\nEL EMPLEADOR\n\n____________________________\n{{nombre_empleador}}\nC.C. o NIT: {{nit_empleador}}\n\n\nEL TRABAJADOR\n\n____________________________\n{{nombre_trabajador}}\nC.C.: {{cedula_trabajador}}"
+  },
+  {
+    "id": "contrato-salario-integral",
+    "title": "Contrato de Trabajo a Término Indefinido con Salario Integral",
+    "subtitle": "Contratos de Trabajo",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empleador",
+        "label": "Nombre del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nit_empleador",
+        "label": "Cédula o NIT del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_empleador",
+        "label": "Domicilio del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_trabajador",
+        "label": "Cédula del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_trabajador",
+        "label": "Dirección del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_nacimiento_trabajador",
+        "label": "Lugar y Fecha de Nacimiento del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nacionalidad_trabajador",
+        "label": "Nacionalidad del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "oficio_trabajador",
+        "label": "Oficio o Cargo que Desempeñará",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "salario_integral",
+        "label": "Salario Integral Total (mínimo 13 SMLMV)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "factor_prestacional",
+        "label": "Factor Prestacional (mínimo 30% del salario base)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_pago",
+        "label": "Período de Pago",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de Iniciación de Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_trabajo",
+        "label": "Lugar donde Desempeñará las Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_contratacion",
+        "label": "Ciudad donde fue Contratado el Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad de Firma del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de Firma del Contrato",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO A TÉRMINO INDEFINIDO CON SALARIO INTEGRAL\n\nEMPLEADOR: {{nombre_empleador}} — C.C. o NIT: {{nit_empleador}} — Domicilio: {{domicilio_empleador}}\nTRABAJADOR: {{nombre_trabajador}} — C.C.: {{cedula_trabajador}} — Dirección: {{direccion_trabajador}}\nNacimiento y Nacionalidad: {{lugar_nacimiento_trabajador}} — {{nacionalidad_trabajador}}\nOficio: {{oficio_trabajador}}\nSalario Integral: {{salario_integral}} — Factor Prestacional: {{factor_prestacional}}\nPeríodo de pago: {{periodo_pago}} — Fecha de inicio: {{fecha_inicio}}\nLugar de trabajo: {{lugar_trabajo}} — Ciudad de contratación: {{ciudad_contratacion}}\n\nEntre EL EMPLEADOR y EL TRABAJADOR se ha celebrado el presente contrato con salario integral, regido por las siguientes cláusulas:\n\nPRIMERA.—EL EMPLEADOR contrata los servicios del TRABAJADOR en forma exclusiva.\n\nSEGUNDA.—EL EMPLEADOR pagará un salario integral de {{salario_integral}}, que comprende prestaciones, recargos y beneficios excepto vacaciones. El factor prestacional es de {{factor_prestacional}}, no inferior al 30%.\n\nTERCERA.—Los primeros dos (2) meses se consideran período de prueba.\n\nCUARTA.—Son justas causas para terminar este contrato las del artículo 7º del Decreto 2351 de 1965.\n\nPara constancia se firma en la ciudad de {{ciudad_firma}}, el {{fecha_firma}}.\n\n\nEL EMPLEADOR\n\n____________________________\n{{nombre_empleador}}\nC.C. o NIT: {{nit_empleador}}\n\n\nEL TRABAJADOR\n\n____________________________\n{{nombre_trabajador}}\nC.C.: {{cedula_trabajador}}"
+  },
+  {
+    "id": "reglamento-interno-trabajo",
+    "title": "Reglamento Interno de Trabajo",
+    "subtitle": "Reglamentos Internos",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empresa",
+        "label": "Nombre o Razón Social de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_empresa",
+        "label": "Domicilio de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_empresa",
+        "label": "Dirección de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_empresa",
+        "label": "Ciudad de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "actividad_economica",
+        "label": "Actividad Económica de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "documentos_admision",
+        "label": "Documentos adicionales para admisión (si aplica, de lo contrario escriba: ninguno adicional)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "horario_administrativo",
+        "label": "Horario del Personal Administrativo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "horario_operativo",
+        "label": "Horario del Personal Operativo (si aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodos_pago",
+        "label": "Períodos de Pago (Ej: quincenal, mensual)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "orden_jerarquico",
+        "label": "Orden Jerárquico de Cargos de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "quien_impone_sanciones",
+        "label": "Cargos Facultados para Imponer Sanciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "quien_recibe_reclamos",
+        "label": "Cargo ante quien se Presentan los Reclamos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodicidad_comite",
+        "label": "Periodicidad del Comité de Convivencia Laboral (Ej: mensual, bimestral)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_representante_legal",
+        "label": "Nombre del Representante Legal",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento_firma",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de Elaboración",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "REGLAMENTO INTERNO DE TRABAJO\n\nARTÍCULO 1°.—El presente reglamento prescrito por la empresa {{nombre_empresa}} domiciliada en {{domicilio_empresa}}, dirección {{direccion_empresa}}, ciudad de {{ciudad_empresa}}.\n\nARTÍCULO 2°.—Documentos de admisión:\na) Cédula de ciudadanía.\nb) Autorización del Ministerio del Trabajo si es menor de 18 años.\nc) Certificado del último empleador.\nd) Certificado de conducta.\n{{documentos_admision}}\n\nARTÍCULO 3°.—Horarios:\nPersonal Administrativo: {{horario_administrativo}}\nPersonal Operativo: {{horario_operativo}}\n\nARTÍCULO 4°.—Períodos de pago: {{periodos_pago}}.\n\nARTÍCULO 5°.—Orden jerárquico: {{orden_jerarquico}}.\nFacultados para imponer sanciones: {{quien_impone_sanciones}}.\n\nARTÍCULO 6°.—Reclamos ante: {{quien_recibe_reclamos}}.\n\nARTÍCULO 7°.—Comité de Convivencia Laboral reunido por lo menos {{periodicidad_comite}}, conforme a la Ley 1010 de 2006.\n\n\nFecha: {{fecha_firma}}\nDirección: {{direccion_empresa}}\nCiudad: {{ciudad_firma}}\nDepartamento: {{departamento_firma}}\n\n\nRepresentante Legal\n\n____________________________\n{{nombre_representante_legal}}"
+  },
+  {
+    "id": "reglamento-higiene-seguridad",
+    "title": "Reglamento de Higiene y Seguridad Industrial",
+    "subtitle": "Reglamentos Internos",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empresa",
+        "label": "Nombre o Razón Social de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nit_cedula_empresa",
+        "label": "Cédula de Ciudadanía o NIT de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "arp_empresa",
+        "label": "ARP (Administradora de Riesgos Profesionales)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_patronal",
+        "label": "Número Patronal",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_empresa",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento_empresa",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_empresa",
+        "label": "Dirección de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "telefono_empresa",
+        "label": "Teléfono de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tiene_sucursales",
+        "label": "¿Tiene Sucursales? (Escriba: Sí y el número, o No)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "actividad_economica",
+        "label": "Actividad Económica de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "clase_riesgo",
+        "label": "Clase de Riesgo según Tabla de Clasificación de Actividades Económicas",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "riesgos_empresa",
+        "label": "Riesgos Existentes en la Empresa (Ej: físicos, químicos, ergonómicos, de inseguridad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_representante_legal",
+        "label": "Nombre del Representante Legal",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de Elaboración",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "REGLAMENTO DE HIGIENE Y SEGURIDAD INDUSTRIAL\n\nIDENTIFICACIÓN: {{nit_cedula_empresa}}\nARP: {{arp_empresa}} — Nº Patronal: {{numero_patronal}}\n\nLA EMPRESA: {{nombre_empresa}}\nCiudad: {{ciudad_empresa}} — Departamento: {{departamento_empresa}} — Dirección: {{direccion_empresa}} — Teléfono: {{telefono_empresa}}\nSucursales: {{tiene_sucursales}}\nActividad económica: {{actividad_economica}}\nClase de riesgo: {{clase_riesgo}}\n\nARTÍCULO 1°.—La empresa se compromete a garantizar la prevención de accidentes y enfermedades profesionales conforme a la ley.\n\nARTÍCULO 2°.—La empresa promoverá el Comité Paritario de Salud Ocupacional.\n\nARTÍCULO 3°.—Los riesgos existentes son:\n{{riesgos_empresa}}\n\nARTÍCULO 4°.—Este reglamento permanecerá exhibido en lugares visibles y entra en vigencia con la aprobación del Ministerio del Trabajo.\n\n\nFecha: {{fecha_firma}}\n\n\nRepresentante Legal\n\n____________________________\n{{nombre_representante_legal}}\n{{nombre_empresa}}"
+  },
+  {
+    "id": "contrato-direccion-confianza-manejo",
+    "title": "Contrato a Término Indefinido para Trabajadores de Dirección, Confianza o Manejo",
+    "subtitle": "Contratos Especiales de Trabajo",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empleador",
+        "label": "Nombre del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_empleador",
+        "label": "Domicilio del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_trabajador",
+        "label": "Dirección del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_nacimiento_trabajador",
+        "label": "Lugar, Fecha de Nacimiento y Nacionalidad del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "oficio_trabajador",
+        "label": "Oficio o Cargo que Desempeñará",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "salario",
+        "label": "Salario (en letras y números)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_pago",
+        "label": "Período de Pago",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de Iniciación de Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_trabajo",
+        "label": "Lugar donde Desempeñará las Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_contratacion",
+        "label": "Lugar donde fue Contratado el Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad de Firma del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de Firma del Contrato",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO A TÉRMINO INDEFINIDO CON TRABAJADORES DE DIRECCIÓN, CONFIANZA O MANEJO\n\nEMPLEADOR: {{nombre_empleador}} — Domicilio: {{domicilio_empleador}}\nTRABAJADOR: {{nombre_trabajador}} — Dirección: {{direccion_trabajador}}\nLugar, Fecha de Nacimiento y Nacionalidad: {{lugar_nacimiento_trabajador}}\nOficio: {{oficio_trabajador}}\nSalario: {{salario}} — Período de pago: {{periodo_pago}}\nFecha de inicio: {{fecha_inicio}} — Lugar de trabajo: {{lugar_trabajo}}\nLugar de contratación: {{ciudad_contratacion}}\n\nEntre EL EMPLEADOR y EL TRABAJADOR se ha celebrado el presente contrato, regido por las siguientes cláusulas:\n\nPRIMERA.—El EMPLEADOR contrata los servicios del TRABAJADOR para desempeñar en forma exclusiva el cargo de {{oficio_trabajador}}, con la diligencia y cuidado necesarios.\n\nSEGUNDA.—EL TRABAJADOR se obliga a: poner su capacidad al servicio del EMPLEADOR en forma exclusiva; no prestar servicios a otros empleadores; guardar estricta reserva de la información; y prestar el servicio personalmente.\n\nPROHIBICIONES: Solicitar préstamos a clientes; autorizar operaciones fuera de su competencia; retener dineros del empleador; presentar cuentas ficticias; afectar la reputación del empleador; retirar elementos sin autorización.\n\nTERCERA.—EL EMPLEADOR pagará el salario indicado, incluyendo la remuneración de dominicales y festivos.\n\nCUARTA.—Por ser cargo de confianza y manejo, EL TRABAJADOR está excluido de la regulación sobre jornada máxima legal.\n\nQUINTA.—Los primeros dos (2) meses son período de prueba. Vencido éste, el contrato será indefinido.\n\nSEXTA.—Son justas causas para terminar este contrato las del artículo 7º del Decreto 2351 de 1965, más el incumplimiento de la cláusula segunda.\n\nPara constancia se firma en la ciudad de {{ciudad_firma}}, el {{fecha_firma}}.\n\n\nEL EMPLEADOR\n\n____________________________\n{{nombre_empleador}}\n\n\nEL TRABAJADOR\n\n____________________________\n{{nombre_trabajador}}"
+  },
+  {
+    "id": "contrato-celadores-vigilantes",
+    "title": "Contrato de Trabajo a Término Indefinido para Celadores o Vigilantes",
+    "subtitle": "Contratos Especiales de Trabajo",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empleador",
+        "label": "Nombre del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_empleador",
+        "label": "Domicilio del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_trabajador",
+        "label": "Dirección del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_nacimiento_trabajador",
+        "label": "Lugar, Fecha de Nacimiento y Nacionalidad del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "oficio_trabajador",
+        "label": "Oficio o Cargo que Desempeñará",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "salario",
+        "label": "Salario (en letras y números)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_pago",
+        "label": "Período de Pago",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de Iniciación de Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_trabajo",
+        "label": "Lugar donde Desempeñará las Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_contratacion",
+        "label": "Ciudad donde fue Contratado el Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad de Firma del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de Firma del Contrato",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO DE TRABAJO A TÉRMINO INDEFINIDO PARA CELADORES O VIGILANTES\n\nEMPLEADOR: {{nombre_empleador}} — Domicilio: {{domicilio_empleador}}\nTRABAJADOR: {{nombre_trabajador}} — Dirección: {{direccion_trabajador}}\nLugar, Fecha de Nacimiento y Nacionalidad: {{lugar_nacimiento_trabajador}}\nOficio: {{oficio_trabajador}}\nSalario: {{salario}} — Período de pago: {{periodo_pago}}\nFecha de inicio: {{fecha_inicio}} — Lugar de trabajo: {{lugar_trabajo}}\nCiudad de contratación: {{ciudad_contratacion}}\n\nEntre EL EMPLEADOR y EL TRABAJADOR se ha celebrado el presente contrato, regido por las siguientes cláusulas:\n\nPRIMERA.—EL EMPLEADOR contrata los servicios del TRABAJADOR en forma exclusiva para el cargo mencionado.\n\nSEGUNDA.—EL TRABAJADOR se obliga a: observar las normas de la empresa; guardar reserva de informaciones privadas; permanecer despierto y atento durante toda la jornada; cuidar los intereses de la empresa.\n\nTERCERA.—EL EMPLEADOR pagará el salario indicado, incluyendo dominicales y festivos.\n\nCUARTA.—Los primeros dos meses son período de prueba. Vencido éste, el contrato será indefinido.\n\nQUINTA.—Los instrumentos de trabajo suministrados (armas, uniformes, etc.) deben ser devueltos al terminar el contrato. EL TRABAJADOR debe evitar todo uso indebido de armas de fuego.\n\nSEXTA.—Son justas causas para terminar este contrato las del artículo 7º del Decreto 2351 de 1965.\n\nPara constancia se firma en la ciudad de {{ciudad_firma}}, el {{fecha_firma}}.\n\n\nEL EMPLEADOR\n\n____________________________\n{{nombre_empleador}}\n\n\nEL TRABAJADOR\n\n____________________________\n{{nombre_trabajador}}"
+  },
+  {
+    "id": "contrato-servicio-domestico",
+    "title": "Contrato Individual de Trabajo (Servicio Doméstico)",
+    "subtitle": "Contratos Especiales de Trabajo",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empleador",
+        "label": "Nombre del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_empleador",
+        "label": "Domicilio del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "oficio_trabajador",
+        "label": "Oficio que Desempeñará el Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_nacimiento_trabajador",
+        "label": "Lugar y Fecha de Nacimiento del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de Iniciación de Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "salario",
+        "label": "Salario (en letras y números)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_pago",
+        "label": "Período de Pago",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion_contrato",
+        "label": "Duración del Contrato (Ej: indefinido, a término fijo, por días)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad de Firma del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de Firma del Contrato",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO INDIVIDUAL DE TRABAJO\n(Servicio Doméstico)\n\nEMPLEADOR: {{nombre_empleador}} — Domicilio: {{domicilio_empleador}}\nTRABAJADOR: {{nombre_trabajador}} — Oficio: {{oficio_trabajador}}\nLugar y Fecha de Nacimiento: {{lugar_nacimiento_trabajador}}\nFecha de iniciación: {{fecha_inicio}}\nSalario: {{salario}} — Período de pago: {{periodo_pago}}\nDuración: {{duracion_contrato}}\n\nEntre EL EMPLEADOR y EL TRABAJADOR se ha celebrado el presente contrato, regido por las siguientes cláusulas:\n\nPRIMERA.—EL EMPLEADOR contrata los servicios del TRABAJADOR para labores domésticas en casa de familia (aseo, cocina, lavado, planchado), de conformidad con las instrucciones del EMPLEADOR.\n\nSEGUNDA.—EL EMPLEADOR pagará el salario indicado con la periodicidad establecida.\n\nTERCERA.—Los primeros dos (2) meses son período de prueba.\n\nCUARTA.—EL EMPLEADOR concederá descanso dominical remunerado incluido en el sueldo.\n\nQUINTA.—Son justas causas para terminar el contrato las del artículo 7º del Decreto 2351 de 1965, y además: labores para terceros sin autorización; desavenencias con la familia; abuso de confianza; ingreso de personas no autorizadas.\n\nPara constancia se firma en la ciudad de {{ciudad_firma}}, el {{fecha_firma}}.\n\n\nEL EMPLEADOR\n\n____________________________\n{{nombre_empleador}}\n\n\nEL TRABAJADOR\n\n____________________________\n{{nombre_trabajador}}"
+  },
+  {
+    "id": "contrato-aprendizaje",
+    "title": "Contrato de Aprendizaje",
+    "subtitle": "Contratos Especiales de Trabajo",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empleador",
+        "label": "Nombre de la Empresa Patrocinadora",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_empleador",
+        "label": "Domicilio de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Aprendiz",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_trabajador",
+        "label": "Tarjeta de Identidad o Cédula del Aprendiz",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_nacimiento_trabajador",
+        "label": "Lugar y Fecha de Nacimiento del Aprendiz",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de Iniciación del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion_contrato",
+        "label": "Duración del Contrato (máximo 2 años)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "oficio_trabajador",
+        "label": "Especialidad u Oficio de Formación",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "centro_formacion",
+        "label": "Centro de Formación (Ej: SENA Regional Valle)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "salario",
+        "label": "Apoyo Económico Fase Lectiva (mínimo 50% SMMLV)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_pago",
+        "label": "Apoyo Económico Fase Práctica (mínimo 75% SMMLV)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad de Firma del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de Firma del Contrato",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO DE APRENDIZAJE\n\nEMPRESA PATROCINADORA: {{nombre_empleador}} — Domicilio: {{domicilio_empleador}}\nAPRENDIZ: {{nombre_trabajador}} — T.I. o C.C.: {{cedula_trabajador}}\nLugar y Fecha de Nacimiento: {{lugar_nacimiento_trabajador}}\nFecha de iniciación: {{fecha_inicio}} — Duración: {{duracion_contrato}}\n\nEntre LA EMPRESA y EL APRENDIZ se ha celebrado el presente contrato de aprendizaje, regido por las siguientes cláusulas:\n\nPRIMERA. Objeto.—Garantizar al APRENDIZ formación profesional integral en {{oficio_trabajador}}, impartida en etapa lectiva por {{centro_formacion}} y en etapa práctica en LA EMPRESA.\n\nSEGUNDA. Duración.—{{duracion_contrato}} contados desde el inicio de la formación.\n\nTERCERA. Obligaciones de LA EMPRESA.—Facilitar medios de formación; reportar evaluaciones; pagar apoyo económico de {{salario}} en etapa lectiva y {{periodo_pago}} en etapa práctica; afiliar a ARL en etapa práctica.\n\nCUARTA. Obligaciones del APRENDIZ.—Asistir puntualmente a clases y a la empresa; afiliarse a salud como independiente.\n\nQUINTA. Terminación.—Por mutuo acuerdo; vencimiento del término; cancelación de matrícula; incumplimiento de obligaciones.\n\nSEXTA.—Este contrato no implica relación laboral y se rige por la Ley 789 de 2002.\n\nPara constancia se firma en la ciudad de {{ciudad_firma}}, el {{fecha_firma}}.\n\n\nLA EMPRESA\n\n____________________________\n{{nombre_empleador}}\n\n\nEL APRENDIZ\n\n____________________________\n{{nombre_trabajador}}"
+  },
+  {
+    "id": "carta-terminacion-justa-causa",
+    "title": "Carta de Terminación Unilateral del Contrato por Justa Causa",
+    "subtitle": "Terminación del Contrato",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empresa",
+        "label": "Nombre de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Carta",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_efectiva",
+        "label": "Fecha Efectiva de Terminación",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "causal_despido",
+        "label": "Número de Causal (Ej: numeral 6 del literal a)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hechos_despido",
+        "label": "Descripción de los Hechos que Fundamentan el Despido",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor:\n{{nombre_trabajador}}\n\nPor medio de la presente nos permitimos comunicarle que la empresa ha resuelto dar por terminado unilateralmente su contrato de trabajo, por justa causa.\n\nEsta terminación es efectiva a la finalización de la jornada de trabajo del día {{fecha_efectiva}}.\n\nPara esta decisión, la empresa se apoya en la causal {{causal_despido}} del literal a) del artículo 7º del Decreto 2351 de 1965.\n\nEsta causal tiene fundamento en los siguientes hechos:\n\n{{hechos_despido}}\n\nEn nuestro departamento de tesorería le serán pagadas sus prestaciones sociales y demás derechos a que tiene lugar.\n\nAtentamente,\n\n\n____________________________\n{{nombre_empresa}}"
+  },
+  {
+    "id": "terminacion-sin-justa-causa",
+    "title": "Terminación Unilateral del Contrato Sin Justa Causa (Despido Injustificado)",
+    "subtitle": "Terminación del Contrato",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empresa",
+        "label": "Nombre de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Carta",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_efectiva",
+        "label": "Fecha Efectiva de Terminación",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor:\n{{nombre_trabajador}}\n\nPor medio de la presente nos permitimos comunicarle que la empresa ha resuelto dar por terminado su contrato de trabajo con fundamento en el artículo 6º de la Ley 50 de 1990 (CST, art. 64).\n\nEsta determinación es efectiva a la finalización de la jornada de trabajo del día {{fecha_efectiva}}.\n\nEn nuestro Departamento de Tesorería le serán pagadas su indemnización, prestaciones sociales y demás derechos a su favor.\n\nAtentamente,\n\n\n____________________________\n{{nombre_empresa}}"
+  },
+  {
+    "id": "liquidacion-prestaciones-sociales",
+    "title": "Liquidación de Prestaciones Sociales por Terminación del Contrato",
+    "subtitle": "Terminación del Contrato",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empresa",
+        "label": "Nombre o Razón Social del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_empresa",
+        "label": "Dirección del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "telefono_empresa",
+        "label": "Teléfono del Empleador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre Completo del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_trabajador",
+        "label": "Dirección de Residencia del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "oficio_trabajador",
+        "label": "Cargo o Actividad Desempeñada",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion_contrato",
+        "label": "Clase de Contrato (Ej: término indefinido, término fijo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de Ingreso",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_efectiva",
+        "label": "Fecha de Egreso o Retiro",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_trabajo",
+        "label": "Lugar donde Desempeñó las Labores",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "causal_despido",
+        "label": "Causal de Terminación del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "salario",
+        "label": "Salario Básico (en letras y números)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de Elaboración de la Liquidación",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "LIQUIDACIÓN DE PRESTACIONES SOCIALES POR TERMINACIÓN DEL CONTRATO DE TRABAJO\n\n1. DATOS DEL EMPLEADOR\nNombre o razón social: {{nombre_empresa}}\nDirección: {{direccion_empresa}} — Teléfono: {{telefono_empresa}}\n\n2. DATOS DEL TRABAJADOR\nNombre: {{nombre_trabajador}}\nDirección: {{direccion_trabajador}}\nCargo: {{oficio_trabajador}}\nClase de contrato: {{duracion_contrato}}\nFecha de ingreso: {{fecha_inicio}}\nFecha de egreso: {{fecha_efectiva}}\nLugar de labores: {{lugar_trabajo}}\nCausal de terminación: {{causal_despido}}\n\n3. SALARIO BASE\nSalario básico: {{salario}}\n\n4. PRESTACIONES SOCIALES\nCesantías: Último salario x Nº días / 360 = $____________\nIntereses cesantías: Cesantías x días x 0.12 / 360 = $____________\nPrima de servicios: Días semestre x ½ salario / 180 = $____________\nVacaciones: Salario x días / 720 = $____________\n\nTOTAL PRESTACIONES: $____________\n\n5. SALARIOS PENDIENTES: $____________\n\n6. INDEMNIZACIONES (si aplica): $____________\n\nTOTAL LIQUIDACIÓN A FAVOR DEL TRABAJADOR: $____________\n\nCon el pago de esta liquidación las partes quedan a paz y salvo por todo concepto laboral.\n\n\nCiudad: {{ciudad_firma}} — Fecha: {{fecha_firma}}\n\n\nEL EMPLEADOR\n\n____________________________\n{{nombre_empresa}}\n\n\nEL TRABAJADOR\n\n____________________________\n{{nombre_trabajador}}"
+  },
+  {
+    "id": "solicitud-compensacion-vacaciones",
+    "title": "Solicitud de Compensación de Vacaciones ante el Ministerio del Trabajo",
+    "subtitle": "Terminación del Contrato",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empresa",
+        "label": "Nombre de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_trabajador",
+        "label": "Cédula de Ciudadanía del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "oficio_trabajador",
+        "label": "Cargo que Desempeña",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "salario",
+        "label": "Salario del Trabajador (en números)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha Inicio del Período de Vacaciones (día/mes/año)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_efectiva",
+        "label": "Fecha Fin del Período de Vacaciones (día/mes/año)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion_contrato",
+        "label": "Días a Compensar en Dinero",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_trabajo",
+        "label": "Días a Disfrutar (inicio: día/mes/año — fin: día/mes/año)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "causal_despido",
+        "label": "Justificación de la Solicitud",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Solicitud",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "Señores\nMinisterio del Trabajo\n{{ciudad_firma}}\n\nRef: Solicitud autorización del pago en dinero hasta del 50% de las vacaciones\n\nDe conformidad con el artículo 189 del Código Sustantivo del Trabajo, solicitamos autorizar la compensación en dinero de las vacaciones del trabajador:\n\nNombre de la Empresa: {{nombre_empresa}}\nNombre del trabajador: {{nombre_trabajador}}\nCédula: {{cedula_trabajador}}\nCargo: {{oficio_trabajador}}\nSalario: ${{salario}}\n\nPeríodo de causación: Del {{fecha_inicio}} al {{fecha_efectiva}}\n\nDías a compensar en dinero: {{duracion_contrato}}\n(Máximo la mitad del total según el artículo 189 del CST)\n\nDías a disfrutar: {{lugar_trabajo}}\n\nJustificación:\n{{causal_despido}}\n\nAtentamente,\n\n\nEmpleador: ____________________________\n{{nombre_empresa}}\n\nTrabajador: ____________________________\n{{nombre_trabajador}}\n\nFecha: {{fecha_firma}}"
+  },
+  {
+    "id": "estatutos-organizacion-sindical",
+    "title": "Estatutos para Organizaciones Sindicales",
+    "subtitle": "Derecho Sindical y Negociación Colectiva",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_sindicato",
+        "label": "Nombre del Sindicato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "clase_sindicato",
+        "label": "Clase de Sindicato (Ej: de empresa, de industria, gremial, de oficios varios)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_empresa",
+        "label": "Nombre de la Empresa o Actividad Económica",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Municipio Domicilio del Sindicato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento_firma",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_junta",
+        "label": "Período de la Junta Directiva (Ej: un año, dos años)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodicidad_asamblea",
+        "label": "Periodicidad de la Asamblea General (Ej: cada seis meses)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de Aprobación de los Estatutos",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "ESTATUTOS PARA ORGANIZACIONES SINDICALES\n\nCAPÍTULO I\nNombre del Sindicato\n\nARTÍCULO 1°.—Con el nombre de {{nombre_sindicato}} establécese una organización {{clase_sindicato}}, formada por trabajadores de {{nombre_empresa}}, la cual funcionará de conformidad con la Constitución Nacional, el Código Sustantivo del Trabajo y demás disposiciones pertinentes sobre la materia.\n\nCAPÍTULO II\nDomicilio\n\nARTÍCULO 2°.—El domicilio principal del sindicato {{nombre_sindicato}} será el municipio de {{ciudad_firma}}, en el departamento de {{departamento_firma}}.\n\nARTÍCULO 3°.—La residencia de la junta directiva del sindicato será {{ciudad_firma}}.\n\nCAPÍTULO III\nObjetivos y Fines del Sindicato\n\nARTÍCULO 4°.—Los fines principales del sindicato son los siguientes:\na) Estudiar las características de la respectiva profesión y los salarios, prestaciones, horarios, sistemas de protección o de prevención de accidentes y demás condiciones de trabajo referentes a sus asociados para procurar su mejoramiento y su defensa.\nb) Procurar el acercamiento de patronos y trabajadores sobre bases de justicia, de mutuo respeto y subordinación a la ley.\nc) Celebrar convenciones colectivas y contratos sindicales; garantizar su cumplimiento por parte de sus afiliados.\nd) Asesorar a sus asociados en la defensa de los derechos emanados de un contrato de trabajo o de la actividad profesional correspondiente.\ne) Representar en juicio o ante cualquiera autoridad u organismos los intereses económicos comunes o generales de los agremiados.\nf) Promover la educación técnica y general de sus miembros.\ng) Prestar socorro a sus afiliados en caso de enfermedad o calamidad.\nh) Declarar la huelga de acuerdo con los preceptos de la ley.\n\nCAPÍTULO IV\nCondiciones de Admisión\n\nARTÍCULO 5°.—Para ser miembro del sindicato se requiere:\na) Ser mayor de catorce (14) años.\nb) Trabajar en {{nombre_empresa}}.\nc) No ser miembro de otro sindicato de la misma clase o actividad.\n\nCAPÍTULO V\nObligaciones y Derechos de los Afiliados\n\nARTÍCULO 6°.—Son obligaciones de cada uno de los afiliados:\na) Cumplir fielmente los presentes estatutos y las órdenes emanadas de la asamblea general y de la junta directiva.\nb) Concurrir puntualmente a las sesiones de la asamblea general y de la junta directiva.\nc) Observar buena conducta y proceder lealmente con sus compañeros de trabajo.\nd) Pagar puntualmente las cuotas ordinarias y extraordinarias.\n\nARTÍCULO 7°.—Son derechos de los asociados:\na) Participar en los debates de las asambleas generales con derecho a voz y voto.\nb) Ser elegidos miembros de la junta directiva o de las comisiones.\nc) Gozar de los beneficios que otorgue el sindicato.\nd) Solicitar la intervención del sindicato para el estudio y solución de todos los conflictos de trabajo individuales y colectivos.\n\nCAPÍTULO VI\nDe la Asamblea General\n\nARTÍCULO 8°.—La reunión de todos los afiliados, o de su mayoría, que en ningún caso será inferior a la mitad más uno, constituye la asamblea general, que es la máxima autoridad del sindicato.\n\nARTÍCULO 9°.—La asamblea general se reunirá ordinariamente {{periodicidad_asamblea}}, y extraordinariamente cuando sea convocada por la junta directiva o por un número no inferior al 25% de afiliados.\n\nCAPÍTULO VII\nDe la Junta Directiva\n\nARTÍCULO 10.—El sindicato tendrá una junta directiva compuesta de cinco (5) principales y cinco (5) suplentes: presidente, vicepresidente, secretario, tesorero y fiscal. Solo gozarán del fuero sindical los cinco principales y los cinco suplentes.\n\nARTÍCULO 11.—La elección de junta directiva se hará siempre por votación secreta para un período de {{periodo_junta}}.\n\nCAPÍTULO VIII\nDe las Cuotas Sindicales\n\nARTÍCULO 12.—Los socios del sindicato estarán obligados a pagar cuotas de admisión, cuotas ordinarias y cuotas extraordinarias, cuyos montos serán fijados por la asamblea general.\n\nCAPÍTULO IX\nDe la Disolución y Liquidación\n\nARTÍCULO 13.—Para decretar la disolución del sindicato se requiere la aprobación, cuando menos, de las dos terceras partes de los afiliados, en dos sesiones de la asamblea general celebradas en días diferentes.\n\nARTÍCULO 14.—El sindicato se disolverá: a) Por la liquidación o clausura definitiva de la empresa; b) Por acuerdo de las dos terceras partes de los miembros; c) Por sentencia judicial; d) Por reducción de los afiliados a un número inferior a 25.\n\nCAPÍTULO X\nDisposiciones Generales\n\nARTÍCULO 15.—El sindicato estará obligado a cumplir estrictamente las normas contenidas en el título I de la segunda parte del Código Sustantivo del Trabajo y las demás que se dicten sobre la materia.\n\nLos presentes estatutos fueron aprobados en sesión de la asamblea general del sindicato, en {{ciudad_firma}}, el {{fecha_firma}}."
+  },
+  {
+    "id": "acta-iniciacion-arreglo-directo",
+    "title": "Acta de Iniciación de Arreglo Directo",
+    "subtitle": "Derecho Sindical y Negociación Colectiva",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "numero_acta",
+        "label": "Número del Acta",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_empresa",
+        "label": "Nombre de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_sindicato",
+        "label": "Nombre del Sindicato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Reunión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hora_reunion",
+        "label": "Hora de Inicio de la Reunión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_trabajo",
+        "label": "Sitio de Reunión Acordado para el Arreglo Directo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_pago",
+        "label": "Días y Horas de Reunión Acordados",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Representante de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_empleador",
+        "label": "Nombre del Representante del Sindicato",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "ACTA N°. {{numero_acta}}\nNegociación colectiva entre la empresa {{nombre_empresa}} y el sindicato {{nombre_sindicato}}\n\nEn {{ciudad_firma}}, el {{fecha_firma}}, se reunieron siendo las {{hora_reunion}}, los negociadores de la empresa y del sindicato debidamente designados, con el objeto de dar comienzo a las discusiones del pliego de peticiones en su etapa de arreglo directo. Los representantes de las partes hacen constar expresamente que esta primera reunión se celebra dentro de los cinco días hábiles de que se dispone posteriores a la presentación del pliego, para iniciar conversaciones.\n\nPrevia discusión se definió lo siguiente:\n\n1. Establécese como sitio de reunión en la etapa de arreglo directo: {{lugar_trabajo}}. Las reuniones se llevarán a cabo los días {{periodo_pago}}.\n\n2. Las actas deberán contener: fecha y hora de reunión; punto(s) del pliego de peticiones debatido(s); texto definitivo de la cláusula que haya sido fruto de acuerdo; las actas deberán ser firmadas por todos los negociadores asistentes a la reunión.\n\n3. Las partes podrán citar asesores cuando lo consideren conveniente para la buena marcha de la discusión, siempre que estos se limiten a responder las preguntas de una u otra parte, o a exponer su parecer cuando les haya sido solicitado.\n\nPara constancia firman:\n\n\nPor la Empresa\n\n____________________________\n{{nombre_trabajador}}\n\n\nPor el Sindicato\n\n____________________________\n{{nombre_empleador}}"
+  },
+  {
+    "id": "actas-tramite-arreglo-directo",
+    "title": "Actas de Trámite de Arreglo Directo",
+    "subtitle": "Derecho Sindical y Negociación Colectiva",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "numero_acta",
+        "label": "Número del Acta",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_empresa",
+        "label": "Nombre de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_sindicato",
+        "label": "Nombre del Sindicato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Reunión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hora_reunion",
+        "label": "Hora de Inicio de la Reunión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_trabajo",
+        "label": "Lugar de la Reunión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "punto_acordado",
+        "label": "Punto del Pliego Acordado y Texto del Acuerdo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "punto_desacuerdo",
+        "label": "Punto del Pliego en Desacuerdo y Propuestas de las Partes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Representante de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_empleador",
+        "label": "Nombre del Representante del Sindicato",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "ACTA N°. {{numero_acta}}\nNegociación colectiva entre la empresa {{nombre_empresa}} y el sindicato {{nombre_sindicato}}\n\nEn la ciudad de {{ciudad_firma}}, el {{fecha_firma}}, se reunieron en {{lugar_trabajo}} siendo las {{hora_reunion}}, los representantes de la empresa con los representantes del sindicato, con el propósito de celebrar una reunión de negociación del pliego de peticiones en la etapa de arreglo directo.\n\nEstando presentes todos los negociadores, se procedió a discutir los siguientes puntos del pliego de peticiones:\n\nPUNTOS ACORDADOS:\n{{punto_acordado}}\n\nPUNTOS EN DESACUERDO:\n{{punto_desacuerdo}}\n\nPara constancia firman:\n\n\nPor la Empresa\n\n____________________________\n{{nombre_trabajador}}\n\n\nPor el Sindicato\n\n____________________________\n{{nombre_empleador}}"
+  },
+  {
+    "id": "acta-final-arreglo-directo",
+    "title": "Acta Final de Arreglo Directo",
+    "subtitle": "Derecho Sindical y Negociación Colectiva",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "numero_acta",
+        "label": "Número del Acta",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_empresa",
+        "label": "Nombre de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_sindicato",
+        "label": "Nombre del Sindicato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Reunión Final",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hora_reunion",
+        "label": "Hora de Inicio de la Reunión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_trabajo",
+        "label": "Lugar de la Reunión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "punto_acordado",
+        "label": "Puntos Acordados (número de acta y fecha en que se acordaron)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "punto_desacuerdo",
+        "label": "Puntos en Desacuerdo con Propuestas Finales de las Partes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Representante de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_empleador",
+        "label": "Nombre del Representante del Sindicato",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "ACTA N°. {{numero_acta}}\nNegociación colectiva entre la empresa {{nombre_empresa}} y el sindicato {{nombre_sindicato}}\n\nEn {{ciudad_firma}}, el {{fecha_firma}}, se reunieron en {{lugar_trabajo}} siendo las {{hora_reunion}}, los representantes de la empresa con los representantes del sindicato, con el objeto de celebrar la última reunión de la etapa de arreglo directo dentro de la negociación colectiva que se adelanta entre las partes.\n\nSe hace constar el acuerdo producido respecto de los siguientes puntos del pliego de peticiones:\n{{punto_acordado}}\n\nIgualmente se deja constancia del desacuerdo en los demás puntos del pliego, para los cuales las partes propusieron oficialmente sus fórmulas de acercamiento definitivas:\n{{punto_desacuerdo}}\n\nCon la suscripción de la presente acta final se da por terminada la etapa de arreglo directo. En caso de persistir diferencias, las partes podrán optar por la huelga o someter sus diferencias a la decisión de un tribunal de arbitramento, de conformidad con la Ley 50 de 1990.\n\nPara constancia firman:\n\n\nPor la Empresa\n\n____________________________\n{{nombre_trabajador}}\n\n\nPor el Sindicato\n\n____________________________\n{{nombre_empleador}}"
+  },
+  {
+    "id": "solicitud-licencia-paternidad",
+    "title": "Solicitud de Licencia de Paternidad",
+    "subtitle": "Seguridad Social y Licencias",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "nombre_empresa",
+        "label": "Nombre de la Empresa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_trabajador",
+        "label": "Nombre del Trabajador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Solicitud",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_nacimiento_hijo",
+        "label": "Fecha de Nacimiento del Hijo o Hija",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñores:\n{{nombre_empresa}}\n\nRef: Solicitud licencia de paternidad.\n\nApreciados Señores:\n\nMe permito solicitarles cordialmente los días correspondientes a la licencia de paternidad conforme con la Ley 755 de 2002, debido al nacimiento de mi hijo(a) el día {{fecha_nacimiento_hijo}}.\n\nPara el efecto aportaré oportunamente el registro civil correspondiente y los documentos requeridos por la EPS.\n\nLa licencia remunerada de paternidad corresponde a cuatro (4) días si solo el padre cotiza al sistema general de seguridad social en salud, u ocho (8) días hábiles si ambos padres cotizan al sistema.\n\nAtentamente,\n\n\n____________________________\n{{nombre_trabajador}}\nTrabajador"
+  }
+]
