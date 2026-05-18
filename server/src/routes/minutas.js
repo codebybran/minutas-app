@@ -22,10 +22,14 @@ const SUBTITLE_ORDER_LABORAL = [
   'Terminación del Contrato', 'Derecho Sindical y Negociación Colectiva', 'Seguridad Social y Licencias'
 ]
 const SUBTITLE_ORDER_ADMINISTRATIVO = [
-  'Derechos de Petición', 'Quejas y Reclamos', 'Contratación Estatal'
+  'Derechos de Petición', 'Quejas y Reclamos', 'Contratación Estatal',
+  'Procesos Policivos', 'Vía Gubernativa y Contencioso Administrativo'
 ]
 const SUBTITLE_ORDER_CONSTITUCIONAL = [
   'Acciones de Tutela', 'Acciones Populares y de Cumplimiento', 'Control Constitucional'
+]
+const SUBTITLE_ORDER_PROCESAL_CIVIL = [
+  'Disposiciones Generales', 'Procesos Declarativos', 'Procesos Ejecutivos'
 ]
 
 const TIPO_TRAMITE = {
@@ -124,6 +128,28 @@ const TIPO_TRAMITE = {
   'constitucion-union-temporal':'Privado',
   'constitucion-consorcio':'Privado',
   'pliego-condiciones-licitacion':'Privado',
+  'informe-interventoria-obra':'Privado',
+  'acta-iniciacion-contrato-obra':'Privado',
+  'contrato-obra-estatal':'Privado',
+  'contrato-compraventa-estatal':'Privado',
+  'contrato-suministro-estatal':'Privado',
+  'contrato-administracion-delegada':'Privado',
+  'poder-lanzamiento-ocupacion-hecho':'Privado',
+  'querella-lanzamiento-ocupacion-hecho':'Privado',
+  'solicitud-declaracion-extrajuicio':'Privado',
+  'poder-amparo-domicilio':'Privado',
+  'querella-amparo-domicilio-propietario':'Privado',
+  'querella-amparo-domicilio-tenedor':'Privado',
+  'poder-perturbacion-posesion':'Privado',
+  'querella-perturbacion-posesion':'Privado',
+  'poder-recuperacion-espacio-publico':'Privado',
+  'querella-recuperacion-espacio-publico':'Privado',
+  'recurso-reposicion':'Privado',
+  'recurso-apelacion-administrativo':'Privado',
+  'revocatoria-directa':'Privado',
+  'demanda-nulidad-simple':'Privado',
+  'demanda-nulidad-restablecimiento-derecho':'Privado',
+  'demanda-electoral':'Privado',
   // --- DERECHO CONSTITUCIONAL ---
   'accion-tutela':'Privado',
   'tutela-agente-oficioso':'Privado',
@@ -134,6 +160,25 @@ const TIPO_TRAMITE = {
   'accion-cumplimiento':'Privado',
   'contestacion-accion-cumplimiento':'Privado',
   'accion-inconstitucionalidad':'Privado',
+  // --- DERECHO PROCESAL CIVIL ---
+  'cesion-derechos-litigiosos-procesal':'Privado',
+  'solicitud-amparo-pobreza':'Privado',
+  'solicitud-suspension-proceso-civil':'Privado',
+  'poder-pruebas-anticipadas':'Privado',
+  'solicitud-interrogatorio-parte':'Privado',
+  'poder-proceso-ordinario':'Privado',
+  'demanda-ordinaria-civil':'Privado',
+  'contestacion-demanda-civil':'Privado',
+  'demanda-proceso-pertenencia':'Privado',
+  'demanda-restitucion-inmueble-arrendado':'Privado',
+  'demanda-pago-consignacion':'Privado',
+  'demanda-imposicion-servidumbre':'Privado',
+  'demanda-division-material':'Privado',
+  'poder-proceso-ejecutivo':'Privado',
+  'demanda-proceso-ejecutivo-singular':'Privado',
+  'demanda-ejecutiva-titulo-hipotecario':'Privado',
+  'excepciones-previas-proceso-ejecutivo':'Privado',
+  'excepciones-merito-proceso-ejecutivo':'Privado',
 }
 
 function ordenarMinutas(minutas, order) {
@@ -161,6 +206,7 @@ router.get('/', (req, res) => {
     const laboralPath = path.join(__dirname, '../../data/templates/minutas-derecho-laboral.json')
     const administrativoPath = path.join(__dirname, '../../data/templates/minutas-derecho-administrativo.json')
     const constitucionalPath = path.join(__dirname, '../../data/templates/minutas-derecho-constitucional.json')
+    const procesalCivilPath = path.join(__dirname, '../../data/templates/minutas-derecho-procesal-civil.json')
 
     const minutasCivil = JSON.parse(fs.readFileSync(civilPath, 'utf8'))
     const minutasFamilia = JSON.parse(fs.readFileSync(familiaPath, 'utf8'))
@@ -169,6 +215,7 @@ router.get('/', (req, res) => {
     const minutasLaboral = JSON.parse(fs.readFileSync(laboralPath, 'utf8'))
     const minutasAdministrativo = JSON.parse(fs.readFileSync(administrativoPath, 'utf8'))
     const minutasConstitucional = JSON.parse(fs.readFileSync(constitucionalPath, 'utf8'))
+    const minutasProcesalCivil = JSON.parse(fs.readFileSync(procesalCivilPath, 'utf8'))
 
     const categories = [
       {
@@ -219,6 +266,13 @@ router.get('/', (req, res) => {
           id: m.id, title: m.title, subtitle: m.subtitle,
           tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
         }))
+      },
+      {
+        id: 'derecho-procesal-civil', name: 'Derecho Procesal Civil',
+        minutas: ordenarMinutas(minutasProcesalCivil, SUBTITLE_ORDER_PROCESAL_CIVIL).map(m => ({
+          id: m.id, title: m.title, subtitle: m.subtitle,
+          tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+        }))
       }
     ]
     res.json(categories)
@@ -244,6 +298,8 @@ router.get('/:categoryId/:minutaId', (req, res) => {
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-administrativo.json')
     else if (categoryId === 'derecho-constitucional')
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-constitucional.json')
+    else if (categoryId === 'derecho-procesal-civil')
+      filePath = path.join(__dirname, '../../data/templates/minutas-derecho-procesal-civil.json')
     else
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-civil.json')
 

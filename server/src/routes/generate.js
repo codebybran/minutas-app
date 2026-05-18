@@ -31,15 +31,11 @@ function notaLegal(tipo_tramite, categoryId) {
     return `
 <div style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
-    <!-- Franja azul superior -->
     <div style="height:5px;background:linear-gradient(90deg,#1565c0,#42a5f5,#1565c0);"></div>
-    <!-- Contenido principal -->
     <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
-      <!-- Ícono -->
       <div style="flex-shrink:0;width:52px;height:52px;background:rgba(66,165,245,0.15);border:2px solid #42a5f5;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;line-height:1;text-align:center;padding-top:4px;">
         🏛️
       </div>
-      <!-- Texto -->
       <div style="flex:1;">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
           <span style="background:#42a5f5;color:#0d2137;font-size:8pt;font-weight:bold;letter-spacing:1.5px;padding:2px 10px;border-radius:20px;text-transform:uppercase;">Documento de Gestión Pública</span>
@@ -56,7 +52,6 @@ function notaLegal(tipo_tramite, categoryId) {
         </ul>
       </div>
     </div>
-    <!-- Franja inferior -->
     <div style="background:rgba(66,165,245,0.10);border-top:1px solid rgba(66,165,245,0.25);padding:8px 28px;">
       <p style="color:rgba(200,216,232,0.6);font-size:7.5pt;margin:0;letter-spacing:0.3px;">
         LEXDOC · Documento generado con fines informativos · Naturaleza: Derecho de Petición / Queja · Colombia
@@ -66,7 +61,7 @@ function notaLegal(tipo_tramite, categoryId) {
 </div>`
   }
 
-// ── DERECHO CONSTITUCIONAL ──────────────────────────────────
+  // ── DERECHO CONSTITUCIONAL ──────────────────────────────────────────────────
   if (categoryId === 'derecho-constitucional') {
     return `
 <div style="margin-top:48pt;font-family:'Times New Roman',serif;">
@@ -101,20 +96,51 @@ function notaLegal(tipo_tramite, categoryId) {
 </div>`
   }
 
+  // ── DERECHO PROCESAL CIVIL ──────────────────────────────────────────────────
+  if (categoryId === 'derecho-procesal-civil') {
+    return `
+<div style="margin-top:48pt;font-family:'Times New Roman',serif;">
+  <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
+    <div style="height:5px;background:linear-gradient(90deg,#1b5e20,#43a047,#1b5e20);"></div>
+    <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
+      <div style="flex-shrink:0;width:52px;height:52px;background:rgba(67,160,71,0.15);border:2px solid #43a047;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;line-height:1;text-align:center;padding-top:4px;">
+        🏛️
+      </div>
+      <div style="flex:1;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+          <span style="background:#43a047;color:#fff;font-size:8pt;font-weight:bold;letter-spacing:1.5px;padding:2px 10px;border-radius:20px;text-transform:uppercase;">Documento Judicial / Procesal</span>
+        </div>
+        <p style="color:#a5d6a7;font-size:12pt;font-weight:bold;margin:0 0 8px 0;letter-spacing:0.5px;">RECOMENDACIONES ANTES DE PRESENTAR</p>
+        <p style="color:#c8d8e8;font-size:9.5pt;margin:0 0 6px 0;line-height:1.55;text-align:justify;">
+          Este documento es una demanda, poder o escrito judicial que debe presentarse ante un <strong style="color:#fff;">Juzgado Civil</strong>. Para garantizar su efectividad recuerde:
+        </p>
+        <ul style="color:#c8d8e8;font-size:9.5pt;margin:0 0 6px 0;padding-left:18px;line-height:1.7;">
+          <li>Preséntelo ante la <strong style="color:#fff;">oficina de reparto del juzgado</strong> de su ciudad y exija sello de radicado con fecha y número en su copia.</li>
+          <li>Los escritos judiciales deben ser presentados por un <strong style="color:#a5d6a7;">abogado con tarjeta profesional vigente</strong>, salvo las excepciones de ley.</li>
+          <li>Adjunte siempre el <strong style="color:#fff;">poder debidamente firmado y con presentación personal</strong> ante notaría o juzgado.</li>
+          <li><strong style="color:#a5d6a7;">Advertencia normativa:</strong> Algunas disposiciones citadas corresponden al Código de Procedimiento Civil. Verifique con su abogado la aplicación del <strong style="color:#fff;">Código General del Proceso (Ley 1564 de 2012)</strong>, vigente actualmente en Colombia.</li>
+        </ul>
+      </div>
+    </div>
+    <div style="background:rgba(67,160,71,0.10);border-top:1px solid rgba(67,160,71,0.25);padding:8px 28px;">
+      <p style="color:rgba(200,216,232,0.6);font-size:7.5pt;margin:0;letter-spacing:0.3px;">
+        LEXDOC · Documento generado con fines informativos · Naturaleza: Escrito Judicial / Procesal Civil · Colombia
+      </p>
+    </div>
+  </div>
+</div>`
+  }
+
   // ── NOTARIAL ────────────────────────────────────────────────────────────────
   if (t === 'notarial') {
     return `
 <div style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
-    <!-- Franja dorada superior -->
     <div style="height:5px;background:linear-gradient(90deg,#b8962e,#e2b94a,#b8962e);"></div>
-    <!-- Contenido principal -->
     <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
-      <!-- Ícono -->
       <div style="flex-shrink:0;width:52px;height:52px;background:rgba(184,150,46,0.15);border:2px solid #e2b94a;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;line-height:1;text-align:center;padding-top:4px;">
         ⚖️
       </div>
-      <!-- Texto -->
       <div style="flex:1;">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
           <span style="background:#e2b94a;color:#0d2137;font-size:8pt;font-weight:bold;letter-spacing:1.5px;padding:2px 10px;border-radius:20px;text-transform:uppercase;">Acto Notarial Obligatorio</span>
@@ -128,7 +154,6 @@ function notaLegal(tipo_tramite, categoryId) {
         </p>
       </div>
     </div>
-    <!-- Franja dorada inferior con texto legal -->
     <div style="background:rgba(184,150,46,0.12);border-top:1px solid rgba(226,185,74,0.25);padding:8px 28px;">
       <p style="color:rgba(200,216,232,0.6);font-size:7.5pt;margin:0;letter-spacing:0.3px;">
         LEXDOC · Documento generado con fines informativos · Naturaleza: Minuta para Acto Notarial · Colombia
@@ -142,15 +167,11 @@ function notaLegal(tipo_tramite, categoryId) {
   return `
 <div style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
-    <!-- Franja dorada superior -->
     <div style="height:5px;background:linear-gradient(90deg,#b8962e,#e2b94a,#b8962e);"></div>
-    <!-- Contenido principal -->
     <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
-      <!-- Ícono -->
       <div style="flex-shrink:0;width:52px;height:52px;background:rgba(184,150,46,0.15);border:2px solid #e2b94a;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;line-height:1;text-align:center;padding-top:4px;">
         🛡️
       </div>
-      <!-- Texto -->
       <div style="flex:1;">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
           <span style="background:#e2b94a;color:#0d2137;font-size:8pt;font-weight:bold;letter-spacing:1.5px;padding:2px 10px;border-radius:20px;text-transform:uppercase;">Documento Privado</span>
@@ -164,7 +185,6 @@ function notaLegal(tipo_tramite, categoryId) {
         </p>
       </div>
     </div>
-    <!-- Franja dorada inferior con texto legal -->
     <div style="background:rgba(184,150,46,0.12);border-top:1px solid rgba(226,185,74,0.25);padding:8px 28px;">
       <p style="color:rgba(200,216,232,0.6);font-size:7.5pt;margin:0;letter-spacing:0.3px;">
         LEXDOC · Documento generado con fines informativos · Naturaleza: Documento Privado · Colombia
