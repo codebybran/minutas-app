@@ -96,6 +96,38 @@ function notaLegal(tipo_tramite, categoryId) {
 </div>`
   }
 
+// ── DERECHO DE FAMILIA (minutas judiciales) ─
+  if (categoryId === 'derecho-familia' && t !== 'notarial') {
+    return `
+<div style="margin-top:48pt;font-family:'Times New Roman',serif;">
+  <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
+    <div style="height:5px;background:linear-gradient(90deg,#880e4f,#e91e63,#880e4f);"></div>
+    <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
+      <div style="flex-shrink:0;width:52px;height:52px;background:rgba(233,30,99,0.15);border:2px solid #e91e63;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;line-height:1;text-align:center;padding-top:4px;">
+        👨‍👩‍👧
+      </div>
+      <div style="flex:1;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+          <span style="background:#e91e63;color:#fff;font-size:8pt;font-weight:bold;letter-spacing:1.5px;padding:2px 10px;border-radius:20px;text-transform:uppercase;">Documento Judicial — Derecho de Familia</span>
+        </div>
+        <p style="color:#f48fb1;font-size:12pt;font-weight:bold;margin:0 0 8px 0;letter-spacing:0.5px;">RECOMENDACIONES ANTES DE PRESENTAR</p>
+        <ul style="color:#c8d8e8;font-size:9.5pt;margin:0 0 6px 0;padding-left:18px;line-height:1.7;">
+          <li>Preséntelo ante la <strong style="color:#fff;">oficina de reparto del Juzgado de Familia</strong> de su ciudad y exija sello de radicado con fecha y número en su copia.</li>
+          <li>Los escritos judiciales deben ser presentados por un <strong style="color:#f48fb1;">abogado con tarjeta profesional vigente</strong>.</li>
+          <li>Adjunte siempre el <strong style="color:#fff;">poder debidamente autenticado</strong> ante notaría o juzgado.</li>
+          <li>El Defensor de Familia debe ser notificado cuando el proceso involucre menores de edad.</li>
+        </ul>
+      </div>
+    </div>
+    <div style="background:rgba(233,30,99,0.10);border-top:1px solid rgba(233,30,99,0.25);padding:8px 28px;">
+      <p style="color:rgba(200,216,232,0.6);font-size:7.5pt;margin:0;letter-spacing:0.3px;">
+        LEXDOC · Documento generado con fines informativos · Naturaleza: Escrito Judicial — Derecho de Familia · Colombia
+      </p>
+    </div>
+  </div>
+</div>`
+  }
+
   // ── DERECHO PROCESAL CIVIL ──────────────────────────────────────────────────
   if (categoryId === 'derecho-procesal-civil') {
     return `

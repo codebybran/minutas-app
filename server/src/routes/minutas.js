@@ -8,7 +8,12 @@ const SUBTITLE_ORDER_CIVIL = [
   'Garantías y Crédito', 'Representación y Poderes', 'Litigios y Créditos',
   'Personas Jurídicas', 'Propiedad Horizontal'
 ]
-const SUBTITLE_ORDER_FAMILIA = ['Matrimonio','Sociedad Conyugal y Patrimonial','Estado Civil','Sucesiones']
+const SUBTITLE_ORDER_FAMILIA = [
+  'Matrimonio','Sociedad Conyugal y Patrimonial','Estado Civil','Sucesiones',
+  'Filiación y Reconocimiento','Unión Marital de Hecho','Rendición de Cuentas',
+  'Separación y Divorcio','Alimentos','Sucesiones Judiciales',
+  'Patrimonio de Familia','Permisos y Declaraciones'
+]
 const SUBTITLE_ORDER_COMERCIAL = ['Títulos Valores','Contratos Mercantiles','Propiedad Intelectual']
 const SUBTITLE_ORDER_SOCIEDADES = [
   'Empresa Unipersonal y Sociedades Básicas',
@@ -29,7 +34,8 @@ const SUBTITLE_ORDER_CONSTITUCIONAL = [
   'Acciones de Tutela', 'Acciones Populares y de Cumplimiento', 'Control Constitucional'
 ]
 const SUBTITLE_ORDER_PROCESAL_CIVIL = [
-  'Disposiciones Generales', 'Procesos Declarativos', 'Procesos Ejecutivos'
+  'Disposiciones Generales', 'Procesos Declarativos', 'Procesos Ejecutivos',
+  'Medidas Cautelares', 'Incidentes y Recursos'
 ]
 
 const TIPO_TRAMITE = {
@@ -51,6 +57,7 @@ const TIPO_TRAMITE = {
   'reglamento-propiedad-horizontal':'Notarial','acta-asamblea-propietarios':'Privado',
   'carta-primera-convocatoria':'Privado','carta-segunda-convocatoria':'Privado',
   'poder-asistir-asamblea':'Privado',
+  // --- DERECHO DE FAMILIA ---
   'capitulaciones-matrimoniales':'Notarial','poder-contraer-matrimonio':'Notarial',
   'solicitud-matrimonio-notario':'Notarial','matrimonio-civil-notario':'Notarial',
   'disolucion-liquidacion-sociedad-conyugal':'Notarial',
@@ -66,6 +73,33 @@ const TIPO_TRAMITE = {
   'cesion-derechos-hereditarios':'Notarial','poder-liquidacion-sucesion':'Privado',
   'solicitud-liquidacion-sucesion':'Privado','inventarios-avaluos-sucesion':'Privado',
   'trabajo-particion-adjudicacion':'Privado',
+  // Familia nuevas
+  'demanda-filiacion-natural':'Privado',
+  'demanda-declaracion-union-marital':'Privado',
+  'poder-rendicion-provocada-cuentas':'Privado',
+  'demanda-rendicion-provocada-cuentas':'Privado',
+  'poder-rendicion-espontanea-cuentas':'Privado',
+  'demanda-rendicion-espontanea-cuentas':'Privado',
+  'poder-proceso-separacion-bienes':'Privado',
+  'demanda-separacion-bienes':'Privado',
+  'medidas-cautelares-separacion-bienes':'Privado',
+  'demanda-separacion-cuerpos':'Privado',
+  'demanda-divorcio-contencioso':'Privado',
+  'demanda-fijacion-cuota-alimentaria':'Privado',
+  'demanda-ejecutivo-alimentos':'Privado',
+  'demanda-apertura-sucesion':'Privado',
+  'presentacion-inventarios-avaluos-judicial':'Privado',
+  'demanda-cancelacion-patrimonio-familia':'Privado',
+  'cancelacion-patrimonio-familia-hijos-mayores':'Notarial',
+  'autorizacion-hijos-cancelar-patrimonio':'Privado',
+  'demanda-divorcio-mutuo-consentimiento':'Privado',
+  'acuerdo-divorcio-mutuo-consentimiento':'Privado',
+  'divorcio-ante-notario':'Notarial',
+  'solicitud-declaracion-muerte-desaparecimiento':'Privado',
+  'demanda-adopcion':'Privado',
+  'solicitud-reconocimiento-hijo-extramatrimonial':'Privado',
+  'solicitud-permiso-menor-salir-pais':'Privado',
+  // --- DERECHO COMERCIAL ---
   'pagare':'Privado','carta-instrucciones-pagare':'Privado',
   'compraventa-establecimiento-comercio':'Privado','arrendamiento-local-comercial':'Privado',
   'subarriendo-local-comercial':'Privado','agencia-comercial':'Privado',
@@ -77,6 +111,9 @@ const TIPO_TRAMITE = {
   'corretaje-inmuebles':'Privado','consultoria-extranjeros':'Privado',
   'poder-derechos-autor':'Privado','contrato-edicion':'Privado',
   'cesion-derechos-patrimoniales-autor':'Privado','contrato-traduccion':'Privado',
+  // Comercial nueva
+  'demanda-cancelacion-reposicion-titulo-valor':'Privado',
+  // --- DERECHO DE SOCIEDADES ---
   'constitucion-empresa-unipersonal':'Privado','constitucion-sociedad-hecho':'Privado',
   'constitucion-sociedad-colectiva':'Notarial','poder-constituir-sociedad-anonima':'Privado',
   'poder-representar-asamblea':'Privado','poder-representar-accionista-permanente':'Privado',
@@ -179,6 +216,13 @@ const TIPO_TRAMITE = {
   'demanda-ejecutiva-titulo-hipotecario':'Privado',
   'excepciones-previas-proceso-ejecutivo':'Privado',
   'excepciones-merito-proceso-ejecutivo':'Privado',
+  // Procesal Civil nuevas
+  'solicitud-medidas-cautelares':'Privado',
+  'incidente-levantamiento-medidas-cautelares':'Privado',
+  'terminacion-proceso-ejecutivo-pago':'Privado',
+  'acumulacion-procesos-ejecutivos':'Privado',
+  'recurso-queja-auto-apelable':'Privado',
+  'incidente-nulidad-remate':'Privado',
 }
 
 function ordenarMinutas(minutas, order) {

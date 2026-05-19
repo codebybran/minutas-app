@@ -5,21 +5,96 @@
     "subtitle": "Disposiciones Generales",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha del Contrato", "type": "text", "required": true},
-      {"name": "nombre_cedente", "label": "Nombre Completo del Cedente (quien transfiere el derecho)", "type": "text", "required": true},
-      {"name": "cedula_cedente", "label": "Número de Cédula del Cedente", "type": "text", "required": true},
-      {"name": "ciudad_cedula_cedente", "label": "Ciudad de Expedición de la Cédula del Cedente", "type": "text", "required": true},
-      {"name": "domicilio_cedente", "label": "Domicilio y Residencia del Cedente", "type": "text", "required": true},
-      {"name": "nombre_cesionario", "label": "Nombre Completo del Cesionario (quien adquiere el derecho)", "type": "text", "required": true},
-      {"name": "cedula_cesionario", "label": "Número de Cédula del Cesionario", "type": "text", "required": true},
-      {"name": "ciudad_cedula_cesionario", "label": "Ciudad de Expedición de la Cédula del Cesionario", "type": "text", "required": true},
-      {"name": "domicilio_cesionario", "label": "Domicilio y Residencia del Cesionario", "type": "text", "required": true},
-      {"name": "nombre_demandado_proceso", "label": "Nombre de la Contraparte en el Proceso (contra quien va el litigio)", "type": "text", "required": true},
-      {"name": "juzgado_proceso", "label": "Juzgado donde Cursa el Proceso", "type": "text", "required": true},
-      {"name": "fecha_notificacion_demanda", "label": "Fecha de Notificación de la Demanda (cuando surgió el derecho litigioso)", "type": "text", "required": true},
-      {"name": "precio_cesion", "label": "Precio de la Cesión en Letras y Números", "type": "text", "required": true},
-      {"name": "forma_pago_cesion", "label": "Forma de Pago del Precio (Ej: de contado al momento de la firma, en cuotas)", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_cedente",
+        "label": "Nombre Completo del Cedente (quien transfiere el derecho)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_cedente",
+        "label": "Número de Cédula del Cedente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_cedente",
+        "label": "Ciudad de Expedición de la Cédula del Cedente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_cedente",
+        "label": "Domicilio y Residencia del Cedente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_cesionario",
+        "label": "Nombre Completo del Cesionario (quien adquiere el derecho)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_cesionario",
+        "label": "Número de Cédula del Cesionario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_cesionario",
+        "label": "Ciudad de Expedición de la Cédula del Cesionario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_cesionario",
+        "label": "Domicilio y Residencia del Cesionario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado_proceso",
+        "label": "Nombre de la Contraparte en el Proceso (contra quien va el litigio)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "juzgado_proceso",
+        "label": "Juzgado donde Cursa el Proceso",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_notificacion_demanda",
+        "label": "Fecha de Notificación de la Demanda (cuando surgió el derecho litigioso)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "precio_cesion",
+        "label": "Precio de la Cesión en Letras y Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "forma_pago_cesion",
+        "label": "Forma de Pago del Precio (Ej: de contado al momento de la firma, en cuotas)",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "CONTRATO DE CESIÓN DE DERECHOS LITIGIOSOS\n\nEntre los suscritos a saber: {{nombre_cedente}}, identificado con la cédula de ciudadanía N°. {{cedula_cedente}} de {{ciudad_cedula_cedente}}, domiciliado y residente en {{domicilio_cedente}}, por una parte, quien en adelante se denominará el CEDENTE y {{nombre_cesionario}}, identificado con la cédula de ciudadanía N°. {{cedula_cesionario}} de {{ciudad_cedula_cesionario}}, domiciliado y residente en {{domicilio_cesionario}}, por la otra parte, que en este documento se llamará el CESIONARIO, hemos celebrado el contrato de cesión de derechos litigiosos que se rige por las siguientes cláusulas:\n\nPRIMERA. Objeto.— Que por medio de este instrumento el CEDENTE transfiere a título de venta al señor {{nombre_cesionario}} los derechos que le correspondan o puedan corresponderle en el proceso que se encuentra radicado en el {{juzgado_proceso}}, seguido contra {{nombre_demandado_proceso}}.\n\nSEGUNDA. Existencia del derecho litigioso.— El CEDENTE no responde por el resultado del proceso. El CEDENTE garantiza que el derecho litigioso objeto de la cesión surgió con la notificación de la demanda ocurrida el {{fecha_notificacion_demanda}}.\n\nTERCERA. Vinculación.— El derecho que aquí se dispone recae sobre todos los bienes que conforman el litigio mencionado.\n\nCUARTA. Responsabilidad y obligaciones.— El CEDENTE responde al CESIONARIO de la existencia del proceso y declara no haber enajenado antes el derecho objeto de la cesión.\n\nQUINTA. Autorización.— El comprador CESIONARIO queda autorizado para solicitar que todas las declaraciones judiciales y los títulos sean a su nombre.\n\nSEXTA. Precio.— Que esta cesión se realiza por la cantidad de {{precio_cesion}}, que el CESIONARIO pagará de la siguiente manera: {{forma_pago_cesion}}.\n\nEn señal de conformidad las partes suscriben el presente documento en dos ejemplares del mismo tenor, en {{ciudad_firma}}, el {{fecha_firma}}.\n\n\n____________________________               ____________________________\nCedente:                                   Cesionario:\n{{nombre_cedente}}                         {{nombre_cesionario}}\nC.C. N°. {{cedula_cedente}}                C.C. N°. {{cedula_cesionario}}"
   },
@@ -29,23 +104,108 @@
     "subtitle": "Disposiciones Generales",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha de la Solicitud", "type": "text", "required": true},
-      {"name": "tipo_juez", "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado Solicitante", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "calidad_parte", "label": "Calidad de quien Solicita el Amparo (Ej: demandante, demandado, persona citada)", "type": "text", "required": true},
-      {"name": "nombre_poderdante", "label": "Nombre Completo del Poderdante que Solicita el Amparo", "type": "text", "required": true},
-      {"name": "cedula_poderdante", "label": "Número de Cédula del Poderdante", "type": "text", "required": true},
-      {"name": "ciudad_cedula_poderdante", "label": "Ciudad de Expedición de la Cédula del Poderdante", "type": "text", "required": true},
-      {"name": "tipo_proceso", "label": "Tipo de Proceso a Iniciar o en Curso (Ej: proceso ordinario de resolución de contrato)", "type": "text", "required": true},
-      {"name": "nombre_demandante_proceso", "label": "Nombre del Demandante en el Proceso", "type": "text", "required": true},
-      {"name": "nombre_demandado_proceso", "label": "Nombre del Demandado en el Proceso", "type": "text", "required": true},
-      {"name": "descripcion_relacion_procesal", "label": "Descripción de la Situación que Origina el Proceso", "type": "text", "required": true},
-      {"name": "motivos_dificultad_economica", "label": "Motivos de la Dificultad Económica del Poderdante", "type": "text", "required": true},
-      {"name": "pruebas_pobreza", "label": "Pruebas de la Situación Económica (Ej: extractos bancarios, certificado de ingresos)", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Solicitud",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juez",
+        "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado Solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "calidad_parte",
+        "label": "Calidad de quien Solicita el Amparo (Ej: demandante, demandado, persona citada)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo del Poderdante que Solicita el Amparo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Número de Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_poderdante",
+        "label": "Ciudad de Expedición de la Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_proceso",
+        "label": "Tipo de Proceso a Iniciar o en Curso (Ej: proceso ordinario de resolución de contrato)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandante_proceso",
+        "label": "Nombre del Demandante en el Proceso",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado_proceso",
+        "label": "Nombre del Demandado en el Proceso",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_relacion_procesal",
+        "label": "Descripción de la Situación que Origina el Proceso",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "motivos_dificultad_economica",
+        "label": "Motivos de la Dificultad Económica del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pruebas_pobreza",
+        "label": "Pruebas de la Situación Económica (Ej: extractos bancarios, certificado de ingresos)",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juez}} de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Solicitud de amparo de pobreza\nProceso: {{tipo_proceso}}\nDemandante: {{nombre_demandante_proceso}}\nDemandado: {{nombre_demandado_proceso}}\n\n{{nombre_abogado}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, abogado en ejercicio, con la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, actuando en mi condición de apoderado de la parte {{calidad_parte}}, según poder que se adjunta, por medio de este escrito, presento ante usted solicitud de amparo de pobreza a favor de la persona que represento, el señor {{nombre_poderdante}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}. Es indispensable para la concesión de dicho amparo tener en cuenta los siguientes:\n\nHECHOS\n\n1. {{descripcion_relacion_procesal}}\n\n2. Actualmente, mi poderdante se encuentra en una situación económica difícil, ya que {{motivos_dificultad_economica}}, por tanto, no se halla en capacidad de atender los gastos del proceso sin que sufra menoscabo en el cumplimiento de las obligaciones para su propia subsistencia y para dar cumplimiento a las obligaciones alimentarias de ley.\n\nSOLICITUD\n\nSeñor juez, solicito que me sea concedido el amparo de pobreza con fundamento en los artículos 160 a 167 del Código de Procedimiento Civil, por cuanto son estas normas las que regulan este tema.\n\nJURAMENTO\n\nManifiesto bajo la gravedad de juramento que mi poderdante se encuentra en las condiciones señaladas en el artículo 160 del Código de Procedimiento Civil y que una vez cesen los motivos que llevan a solicitar el amparo de pobreza así será informado a este despacho.\n\nPRUEBAS\n\nAnexo las siguientes:\n\n{{pruebas_pobreza}}\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -55,19 +215,84 @@
     "subtitle": "Disposiciones Generales",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha de la Solicitud", "type": "text", "required": true},
-      {"name": "tipo_juez", "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)", "type": "text", "required": true},
-      {"name": "nombre_demandante_proceso", "label": "Nombre del Demandante", "type": "text", "required": true},
-      {"name": "nombre_demandado_proceso", "label": "Nombre del Demandado", "type": "text", "required": true},
-      {"name": "tipo_proceso", "label": "Tipo de Proceso (Ej: ordinario de simulación)", "type": "text", "required": true},
-      {"name": "nombre_apoderado_demandante", "label": "Nombre del Apoderado del Demandante", "type": "text", "required": true},
-      {"name": "tarjeta_profesional_demandante", "label": "Tarjeta Profesional del Apoderado del Demandante", "type": "text", "required": true},
-      {"name": "nombre_apoderado_demandado", "label": "Nombre del Apoderado del Demandado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional_demandado", "label": "Tarjeta Profesional del Apoderado del Demandado", "type": "text", "required": true},
-      {"name": "meses_suspension", "label": "Número de Meses de Suspensión Solicitados", "type": "text", "required": true},
-      {"name": "descripcion_convenio", "label": "Descripción del Convenio o Arreglo Celebrado entre las Partes", "type": "text", "required": true},
-      {"name": "fecha_cumplimiento_convenio", "label": "Fecha en que se Cumplirá el Convenio", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Solicitud",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juez",
+        "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandante_proceso",
+        "label": "Nombre del Demandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado_proceso",
+        "label": "Nombre del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_proceso",
+        "label": "Tipo de Proceso (Ej: ordinario de simulación)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado_demandante",
+        "label": "Nombre del Apoderado del Demandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional_demandante",
+        "label": "Tarjeta Profesional del Apoderado del Demandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado_demandado",
+        "label": "Nombre del Apoderado del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional_demandado",
+        "label": "Tarjeta Profesional del Apoderado del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "meses_suspension",
+        "label": "Número de Meses de Suspensión Solicitados",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_convenio",
+        "label": "Descripción del Convenio o Arreglo Celebrado entre las Partes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_cumplimiento_convenio",
+        "label": "Fecha en que se Cumplirá el Convenio",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juez}} de {{ciudad_firma}}\nE. S. D.\n\nRef.: Proceso {{tipo_proceso}} de {{nombre_demandante_proceso}} contra {{nombre_demandado_proceso}}\n\n{{nombre_apoderado_demandante}}, actuando con tarjeta profesional N°. {{tarjeta_profesional_demandante}} en mi calidad de apoderado de la parte demandante, y {{nombre_apoderado_demandado}}, portador de la tarjeta profesional N°. {{tarjeta_profesional_demandado}}, quien actúa como apoderado de la parte demandada dentro del asunto de la referencia, solicitamos a usted se decrete la suspensión del proceso por el término de {{meses_suspension}} meses, toda vez que de mutuo acuerdo hemos celebrado un convenio sobre {{descripcion_convenio}}, para ser cumplido el {{fecha_cumplimiento_convenio}}, que al llevarse a cabo, daría lugar a la terminación del mismo.\n\nLo anterior de conformidad con el numeral 1° del artículo 170 del Código de Procedimiento Civil.\n\n\n____________________________               ____________________________\nApoderado Demandante:                      Apoderado Demandado:\n{{nombre_apoderado_demandante}}            {{nombre_apoderado_demandado}}\nT.P. N°. {{tarjeta_profesional_demandante}} del C.S.J.   T.P. N°. {{tarjeta_profesional_demandado}} del C.S.J."
   },
@@ -77,18 +302,78 @@
     "subtitle": "Procesos Declarativos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha del Poder", "type": "text", "required": true},
-      {"name": "tipo_juez", "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)", "type": "text", "required": true},
-      {"name": "nombre_poderdante", "label": "Nombre Completo de quien Otorga el Poder", "type": "text", "required": true},
-      {"name": "cedula_poderdante", "label": "Número de Cédula de quien Otorga el Poder", "type": "text", "required": true},
-      {"name": "ciudad_cedula_poderdante", "label": "Ciudad de Expedición de la Cédula", "type": "text", "required": true},
-      {"name": "nombre_apoderado", "label": "Nombre Completo del Abogado Apoderado", "type": "text", "required": true},
-      {"name": "cedula_apoderado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_apoderado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_interrogado", "label": "Nombre de la Persona a Interrogar", "type": "text", "required": true},
-      {"name": "objeto_prueba", "label": "Objeto de la Prueba (qué se pretende demostrar con el interrogatorio)", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha del Poder",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juez",
+        "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo de quien Otorga el Poder",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Número de Cédula de quien Otorga el Poder",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_poderdante",
+        "label": "Ciudad de Expedición de la Cédula",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado",
+        "label": "Nombre Completo del Abogado Apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_apoderado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_apoderado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_interrogado",
+        "label": "Nombre de la Persona a Interrogar",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "objeto_prueba",
+        "label": "Objeto de la Prueba (qué se pretende demostrar con el interrogatorio)",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juez}} de {{ciudad_firma}} (Reparto)\nE. S. D.\n\n{{nombre_poderdante}}, mayor de edad, domiciliado y residente en {{ciudad_firma}}, identificado con la cédula de ciudadanía N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}, obrando en mi propio nombre, manifiesto a usted por el presente escrito que confiero Poder Especial al doctor {{nombre_apoderado}}, identificado con cédula de ciudadanía N°. {{cedula_apoderado}} de {{ciudad_cedula_apoderado}}, abogado en ejercicio, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, para que en mi nombre y representación solicite a prevención la práctica de prueba anticipada de un interrogatorio de parte al señor {{nombre_interrogado}}, mayor de edad, domiciliado en esta ciudad, cuyo objeto de prueba es {{objeto_prueba}}.\n\nMi apoderado cuenta con las más amplias facultades para el ejercicio del presente poder, en especial las de recibir, transigir, sustituir, reasumir y desistir.\n\n{{ciudad_firma}}, {{fecha_firma}}\n\n\n____________________________\nPoderdante:\n{{nombre_poderdante}}\nC.C. N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}\n\nAcepto:\n\n____________________________\nApoderado:\nDr. {{nombre_apoderado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -98,22 +383,102 @@
     "subtitle": "Procesos Declarativos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha de la Solicitud", "type": "text", "required": true},
-      {"name": "tipo_juez", "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_poderdante", "label": "Nombre del Poderdante (quien solicita el interrogatorio)", "type": "text", "required": true},
-      {"name": "cedula_poderdante", "label": "Número de Cédula del Poderdante", "type": "text", "required": true},
-      {"name": "nombre_interrogado", "label": "Nombre de la Persona a Interrogar", "type": "text", "required": true},
-      {"name": "relacion_interrogado", "label": "Relación del Interrogado con el Poderdante (Ej: a quien mi poderdante pretende demandar en relación con)", "type": "text", "required": true},
-      {"name": "objeto_prueba", "label": "Objeto de la Prueba (qué se pretende demostrar)", "type": "text", "required": true},
-      {"name": "cuantia_proceso", "label": "Cuantía Estimada del Proceso en Números", "type": "text", "required": true},
-      {"name": "direccion_demandante", "label": "Dirección del Presunto Demandante para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_demandado", "label": "Dirección del Presunto Demandado para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_abogado", "label": "Dirección de la Oficina del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Solicitud",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juez",
+        "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre del Poderdante (quien solicita el interrogatorio)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Número de Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_interrogado",
+        "label": "Nombre de la Persona a Interrogar",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "relacion_interrogado",
+        "label": "Relación del Interrogado con el Poderdante (Ej: a quien mi poderdante pretende demandar en relación con)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "objeto_prueba",
+        "label": "Objeto de la Prueba (qué se pretende demostrar)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cuantia_proceso",
+        "label": "Cuantía Estimada del Proceso en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_demandante",
+        "label": "Dirección del Presunto Demandante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_demandado",
+        "label": "Dirección del Presunto Demandado para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección de la Oficina del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juez}} de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Solicitud de interrogatorio de parte a {{nombre_interrogado}}\n\n{{nombre_abogado}}, abogado en ejercicio, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura e identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, actuando en mi condición de apoderado de {{nombre_poderdante}}, quien se identifica con la cédula de ciudadanía N°. {{cedula_poderdante}}, según poder que adjunto, por medio del presente escrito solicito a usted la práctica de interrogatorio del señor {{nombre_interrogado}}, {{relacion_interrogado}}. Es indispensable la práctica de la prueba en cuestión pues no existe otro medio para demostrar {{objeto_prueba}}.\n\nSOLICITUD\n\nSeñor Juez, solicito que decrete y practique en la hora y fecha que tenga usted a bien señalar, el interrogatorio que en sobre cerrado allego con este escrito, reservándome la posibilidad de formular el interrogatorio oralmente el día de la diligencia.\n\nFUNDAMENTOS DE DERECHO\n\nComo fundamento de la solicitud cito las disposiciones contenidas en el Código de Procedimiento Civil, en especial los artículos 202 y siguientes y el artículo 294.\n\nCUANTÍA\n\nLa estimo en más de ${{cuantia_proceso}}, debido al valor del bien o la pretensión.\n\nCOMPETENCIA\n\nEs usted competente para la práctica de la prueba solicitada, atendiendo a la cuantía, al domicilio del citado objeto de este interrogatorio y a la naturaleza del asunto.\n\nNOTIFICACIONES\n\nLa del presunto demandante: {{direccion_demandante}}.\nLa del presunto demandado: {{direccion_demandado}}.\nLas del suscrito en la secretaría de su despacho o en {{direccion_abogado}}.\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -123,22 +488,102 @@
     "subtitle": "Procesos Declarativos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha del Poder", "type": "text", "required": true},
-      {"name": "numero_juzgado", "label": "Número del Juzgado (Ej: Primero, Segundo, Único)", "type": "text", "required": true},
-      {"name": "nombre_poderdante", "label": "Nombre Completo de quien Otorga el Poder", "type": "text", "required": true},
-      {"name": "cedula_poderdante", "label": "Número de Cédula de quien Otorga el Poder", "type": "text", "required": true},
-      {"name": "ciudad_cedula_poderdante", "label": "Ciudad de Expedición de la Cédula", "type": "text", "required": true},
-      {"name": "calidad_poderdante", "label": "Calidad con que Actúa (Ej: en nombre propio, como gerente de la sociedad)", "type": "text", "required": true},
-      {"name": "nombre_apoderado", "label": "Nombre Completo del Abogado Apoderado", "type": "text", "required": true},
-      {"name": "cedula_apoderado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_apoderado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "tipo_cuantia", "label": "Tipo de Cuantía (Ej: mayor cuantía, menor cuantía)", "type": "text", "required": true},
-      {"name": "nombre_demandado", "label": "Nombre Completo del Demandado", "type": "text", "required": true},
-      {"name": "cedula_demandado", "label": "Número de Cédula del Demandado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_demandado", "label": "Ciudad de Expedición de la Cédula del Demandado", "type": "text", "required": true},
-      {"name": "objeto_proceso", "label": "Objeto del Proceso (qué se pretende obtener con la demanda)", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha del Poder",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_juzgado",
+        "label": "Número del Juzgado (Ej: Primero, Segundo, Único)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo de quien Otorga el Poder",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Número de Cédula de quien Otorga el Poder",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_poderdante",
+        "label": "Ciudad de Expedición de la Cédula",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "calidad_poderdante",
+        "label": "Calidad con que Actúa (Ej: en nombre propio, como gerente de la sociedad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado",
+        "label": "Nombre Completo del Abogado Apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_apoderado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_apoderado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_cuantia",
+        "label": "Tipo de Cuantía (Ej: mayor cuantía, menor cuantía)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado",
+        "label": "Nombre Completo del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_demandado",
+        "label": "Número de Cédula del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_demandado",
+        "label": "Ciudad de Expedición de la Cédula del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "objeto_proceso",
+        "label": "Objeto del Proceso (qué se pretende obtener con la demanda)",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{numero_juzgado}} Civil del Circuito de {{ciudad_firma}} (Reparto)\nE. S. D.\n\n{{nombre_poderdante}}, mayor de edad, domiciliado y residente en {{ciudad_firma}}, identificado con la cédula de ciudadanía N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}, obrando {{calidad_poderdante}}, manifiesto a usted respetuosamente que confiero Poder especial amplio y suficiente al doctor {{nombre_apoderado}}, mayor de edad, domiciliado y residente en esta ciudad, identificado con la cédula de ciudadanía N°. {{cedula_apoderado}} de {{ciudad_cedula_apoderado}}, abogado titulado en ejercicio, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, para que en mi nombre inicie, tramite y lleve hasta su culminación un Proceso Ordinario de {{tipo_cuantia}} contra el señor {{nombre_demandado}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_demandado}} de {{ciudad_cedula_demandado}}, domiciliado en esta ciudad, con el fin de obtener mediante sentencia {{objeto_proceso}}.\n\nMi apoderado cuenta con todas las facultades inherentes para el ejercicio del presente poder, en especial las de recibir, transigir, conciliar, sustituir, desistir, renunciar, reasumir y todas aquellas que tienden al buen cumplimiento de su gestión.\n\nSírvase, señor juez, reconocerle personería en los términos aquí señalados.\n\n{{ciudad_firma}}, {{fecha_firma}}\n\n\n____________________________\nPoderdante:\n{{nombre_poderdante}}\nC.C. N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}\n\nAcepto:\n\n____________________________\nApoderado:\nDr. {{nombre_apoderado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -148,26 +593,126 @@
     "subtitle": "Procesos Declarativos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
-      {"name": "tipo_juez", "label": "Tipo de Juez (Ej: Civil del Circuito)", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado Demandante", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_poderdante", "label": "Nombre Completo del Poderdante (demandante)", "type": "text", "required": true},
-      {"name": "nombre_demandado", "label": "Nombre Completo del Demandado", "type": "text", "required": true},
-      {"name": "domicilio_demandado", "label": "Ciudad de Domicilio del Demandado", "type": "text", "required": true},
-      {"name": "numero_escritura", "label": "Número de la Escritura Pública que se Impugna", "type": "text", "required": true},
-      {"name": "fecha_escritura", "label": "Fecha de la Escritura Pública", "type": "text", "required": true},
-      {"name": "notaria_escritura", "label": "Notaría donde se Otorgó la Escritura", "type": "text", "required": true},
-      {"name": "descripcion_inmueble", "label": "Descripción y Linderos del Inmueble objeto del Contrato Simulado", "type": "text", "required": true},
-      {"name": "hechos_simulacion", "label": "Hechos que Demuestran la Simulación del Contrato (numérelos)", "type": "text", "required": true},
-      {"name": "cuantia_demanda", "label": "Cuantía Estimada de las Pretensiones en Números", "type": "text", "required": true},
-      {"name": "pruebas_demanda", "label": "Pruebas que Aporta (documentales, testimoniales, periciales)", "type": "text", "required": true},
-      {"name": "direccion_demandante", "label": "Dirección del Demandante para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_demandado", "label": "Dirección del Demandado para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Demanda",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juez",
+        "label": "Tipo de Juez (Ej: Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado Demandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo del Poderdante (demandante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado",
+        "label": "Nombre Completo del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_demandado",
+        "label": "Ciudad de Domicilio del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura",
+        "label": "Número de la Escritura Pública que se Impugna",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_escritura",
+        "label": "Fecha de la Escritura Pública",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_escritura",
+        "label": "Notaría donde se Otorgó la Escritura",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_inmueble",
+        "label": "Descripción y Linderos del Inmueble objeto del Contrato Simulado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hechos_simulacion",
+        "label": "Hechos que Demuestran la Simulación del Contrato (numérelos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cuantia_demanda",
+        "label": "Cuantía Estimada de las Pretensiones en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pruebas_demanda",
+        "label": "Pruebas que Aporta (documentales, testimoniales, periciales)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_demandante",
+        "label": "Dirección del Demandante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_demandado",
+        "label": "Dirección del Demandado para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juez}} de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Proceso ordinario por simulación de contrato de {{nombre_poderdante}} contra {{nombre_demandado}}\n\n{{nombre_abogado}}, mayor de edad, abogado titulado en ejercicio, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, obrando en mi condición de apoderado especial del señor {{nombre_poderdante}}, según poder que se anexa, formulo Demanda Ordinaria de Mayor Cuantía contra {{nombre_demandado}}, persona mayor de edad y domiciliada en {{domicilio_demandado}}, previos los siguientes:\n\nHECHOS\n\n{{hechos_simulacion}}\n\nPRETENSIONES\n\n1. Que es simulado el contrato de compraventa contenido en la escritura pública N°. {{numero_escritura}} de {{fecha_escritura}} de la {{notaria_escritura}}.\n2. Que sobre este contrato ostensible debe prevalecer el acto oculto real.\n3. Que el acto oculto adolece de nulidad absoluta.\n4. Que se ordene la cancelación de la escritura y registro.\n5. Que se condene a la demandada a la restitución del inmueble y al pago de sus frutos civiles, así como a las costas del proceso.\n\nINMUEBLE OBJETO DEL CONTRATO SIMULADO\n\n{{descripcion_inmueble}}\n\nFUNDAMENTOS DE DERECHO\n\nFundamento la presente demanda en lo dispuesto por los artículos 1524, 1766, 1946 y siguientes del Código Civil.\n\nCOMPETENCIA\n\nEs usted competente por razón de la naturaleza del asunto, por la ubicación del inmueble en la ciudad de {{ciudad_firma}} y por el domicilio del demandado.\n\nCUANTÍA\n\nEl valor de la cuantía de las pretensiones lo estimo en ${{cuantia_demanda}} moneda legal.\n\nPRUEBAS\n\n{{pruebas_demanda}}\n\nNOTIFICACIONES\n\nDemandante: {{direccion_demandante}}.\nDemandado: {{direccion_demandado}}.\nEl suscrito: {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -177,24 +722,114 @@
     "subtitle": "Procesos Declarativos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha de la Contestación", "type": "text", "required": true},
-      {"name": "tipo_juez", "label": "Tipo de Juez (Ej: Civil del Circuito)", "type": "text", "required": true},
-      {"name": "nombre_demandante_proceso", "label": "Nombre del Demandante", "type": "text", "required": true},
-      {"name": "nombre_demandado_proceso", "label": "Nombre del Demandado", "type": "text", "required": true},
-      {"name": "tipo_proceso", "label": "Tipo de Proceso (Ej: ordinario de simulación)", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado que Contesta", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_poderdante", "label": "Nombre Completo del Poderdante (demandado)", "type": "text", "required": true},
-      {"name": "domicilio_poderdante", "label": "Ciudad de Domicilio del Poderdante", "type": "text", "required": true},
-      {"name": "pronunciamiento_hechos", "label": "Pronunciamiento sobre los Hechos (indique cuáles son ciertos, cuáles no y cuáles parcialmente ciertos)", "type": "text", "required": true},
-      {"name": "excepciones_fondo", "label": "Excepciones de Fondo que Propone (Ej: prescripción, pago, novación — describa los hechos que las configuran)", "type": "text", "required": true},
-      {"name": "pruebas_contestacion", "label": "Pruebas que Aporta en la Contestación (documentales, testimoniales)", "type": "text", "required": true},
-      {"name": "direccion_poderdante", "label": "Dirección del Poderdante para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_demandante_notif", "label": "Dirección del Demandante para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Contestación",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juez",
+        "label": "Tipo de Juez (Ej: Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandante_proceso",
+        "label": "Nombre del Demandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado_proceso",
+        "label": "Nombre del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_proceso",
+        "label": "Tipo de Proceso (Ej: ordinario de simulación)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado que Contesta",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo del Poderdante (demandado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_poderdante",
+        "label": "Ciudad de Domicilio del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pronunciamiento_hechos",
+        "label": "Pronunciamiento sobre los Hechos (indique cuáles son ciertos, cuáles no y cuáles parcialmente ciertos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "excepciones_fondo",
+        "label": "Excepciones de Fondo que Propone (Ej: prescripción, pago, novación — describa los hechos que las configuran)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pruebas_contestacion",
+        "label": "Pruebas que Aporta en la Contestación (documentales, testimoniales)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_poderdante",
+        "label": "Dirección del Poderdante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_demandante_notif",
+        "label": "Dirección del Demandante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juez}} de {{ciudad_firma}}\nE. S. D.\n\nRef.: Proceso {{tipo_proceso}} de {{nombre_demandante_proceso}} contra {{nombre_demandado_proceso}}\n\n{{nombre_abogado}}, mayor de edad, abogado en ejercicio, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, con tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, obrando en representación de {{nombre_poderdante}}, también mayor de edad, domiciliado y residente en {{domicilio_poderdante}}, según poder que se adjunta, por medio del presente escrito procedo a contestar la demanda formulada ante usted.\n\nA LOS HECHOS\n\n{{pronunciamiento_hechos}}\n\nA LAS PRETENSIONES\n\nMe opongo a las pretensiones de la parte actora porque no le asiste el derecho invocado.\n\nEXCEPCIONES DE FONDO\n\n{{excepciones_fondo}}\n\nPRUEBAS\n\n{{pruebas_contestacion}}\n\nNOTIFICACIONES\n\nMi poderdante en {{direccion_poderdante}}.\nEl demandante en {{direccion_demandante_notif}}.\nEl suscrito en {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -204,27 +839,132 @@
     "subtitle": "Procesos Declarativos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_poderdante", "label": "Nombre Completo del Poderdante (poseedor que prescribe)", "type": "text", "required": true},
-      {"name": "cedula_poderdante", "label": "Número de Cédula del Poderdante", "type": "text", "required": true},
-      {"name": "ciudad_cedula_poderdante", "label": "Ciudad de Expedición de la Cédula del Poderdante", "type": "text", "required": true},
-      {"name": "nombre_demandado", "label": "Nombre del Demandado (propietario registral)", "type": "text", "required": true},
-      {"name": "domicilio_demandado", "label": "Domicilio del Demandado", "type": "text", "required": true},
-      {"name": "ubicacion_inmueble", "label": "Ubicación y Linderos del Inmueble", "type": "text", "required": true},
-      {"name": "matricula_inmobiliaria", "label": "Número de Matrícula Inmobiliaria del Predio", "type": "text", "required": true},
-      {"name": "ano_inicio_posesion", "label": "Año desde el cual el Poseedor Habita el Inmueble", "type": "text", "required": true},
-      {"name": "actos_posesion", "label": "Actos de Señor y Dueño Ejercidos (pagos, mejoras, servicios públicos)", "type": "text", "required": true},
-      {"name": "tipo_prescripcion", "label": "Tipo de Prescripción (Ej: ordinaria de 5 años, extraordinaria de 10 años)", "type": "text", "required": true},
-      {"name": "anos_prescripcion", "label": "Número de Años de Posesión", "type": "text", "required": true},
-      {"name": "pruebas_demanda", "label": "Pruebas que Aporta (documentales, testimoniales, inspección)", "type": "text", "required": true},
-      {"name": "direccion_demandante", "label": "Dirección del Demandante para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_demandado_notif", "label": "Dirección del Demandado para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Demanda",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo del Poderdante (poseedor que prescribe)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Número de Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_poderdante",
+        "label": "Ciudad de Expedición de la Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado",
+        "label": "Nombre del Demandado (propietario registral)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_demandado",
+        "label": "Domicilio del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ubicacion_inmueble",
+        "label": "Ubicación y Linderos del Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "matricula_inmobiliaria",
+        "label": "Número de Matrícula Inmobiliaria del Predio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ano_inicio_posesion",
+        "label": "Año desde el cual el Poseedor Habita el Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "actos_posesion",
+        "label": "Actos de Señor y Dueño Ejercidos (pagos, mejoras, servicios públicos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_prescripcion",
+        "label": "Tipo de Prescripción (Ej: ordinaria de 5 años, extraordinaria de 10 años)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anos_prescripcion",
+        "label": "Número de Años de Posesión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pruebas_demanda",
+        "label": "Pruebas que Aporta (documentales, testimoniales, inspección)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_demandante",
+        "label": "Dirección del Demandante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_demandado_notif",
+        "label": "Dirección del Demandado para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez Civil del Circuito de {{ciudad_firma}} (Reparto)\nE.S.D.\n\nRef.: Proceso de pertenencia de {{nombre_poderdante}} contra {{nombre_demandado}}\n\n{{nombre_abogado}}, mayor de edad, abogado en ejercicio, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, en mi calidad de apoderado especial del señor {{nombre_poderdante}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}, según poder que se adjunta, presento a su despacho Demanda ordinaria de pertenencia de mayor cuantía, de acuerdo con el artículo 407 del Código de Procedimiento Civil, en contra de {{nombre_demandado}}, persona mayor de edad y domiciliada en {{domicilio_demandado}}, previos los siguientes:\n\nHECHOS\n\n1. El bien inmueble objeto del litigio se encuentra ubicado en {{ubicacion_inmueble}}, registrado en la Oficina de Instrumentos Públicos con matrícula inmobiliaria N°. {{matricula_inmobiliaria}}.\n\n2. El señor {{nombre_poderdante}} se encuentra habitando el bien inmueble en calidad de poseedor desde el año {{ano_inicio_posesion}}, y desde esa fecha ha ejercido actos de señor y dueño sobre el mismo.\n\n3. Los actos de señor y dueño ejercidos por el demandante son los siguientes: {{actos_posesion}}.\n\n4. Por haber ejercido posesión de manera libre, no clandestina, pacífica e ininterrumpida por más de {{anos_prescripcion}} años, se solicita que se declare la correspondiente propiedad por la vía de prescripción {{tipo_prescripcion}}.\n\nPRETENSIONES\n\n1. Que se declare por vía de prescripción {{tipo_prescripcion}} que el señor {{nombre_poderdante}} es propietario del bien inmueble ubicado en {{ubicacion_inmueble}}, con matrícula inmobiliaria N°. {{matricula_inmobiliaria}}.\n\n2. Que se ordene la cancelación del registro de propiedad anterior y se ordene la inscripción de la propiedad del demandante.\n\n3. Que se condene en costas a la parte demandada.\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 2512 y siguientes del Código Civil; artículos 398 y siguientes del Código de Procedimiento Civil.\n\nPRUEBAS\n\n{{pruebas_demanda}}\n\nNOTIFICACIONES\n\nDemandante: {{direccion_demandante}}.\nDemandado: {{direccion_demandado_notif}}.\nEl suscrito: {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -234,26 +974,126 @@
     "subtitle": "Procesos Declarativos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
-      {"name": "tipo_juez", "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_arrendador", "label": "Nombre Completo del Arrendador (demandante)", "type": "text", "required": true},
-      {"name": "nombre_arrendatario", "label": "Nombre Completo del Arrendatario (demandado)", "type": "text", "required": true},
-      {"name": "domicilio_arrendatario", "label": "Domicilio del Arrendatario", "type": "text", "required": true},
-      {"name": "ubicacion_inmueble", "label": "Dirección y Linderos del Inmueble Arrendado", "type": "text", "required": true},
-      {"name": "fecha_contrato", "label": "Fecha de Celebración del Contrato de Arrendamiento", "type": "text", "required": true},
-      {"name": "termino_contrato", "label": "Término del Contrato de Arrendamiento (Ej: un año, indefinido)", "type": "text", "required": true},
-      {"name": "canon_mensual", "label": "Canon Mensual de Arrendamiento en Letras y Números", "type": "text", "required": true},
-      {"name": "dia_pago", "label": "Día de Pago del Canon (Ej: primeros cinco días)", "type": "text", "required": true},
-      {"name": "mes_mora", "label": "Mes a partir del cual el Arrendatario incurrió en Mora", "type": "text", "required": true},
-      {"name": "tipo_inmueble", "label": "Tipo de Inmueble (Ej: vivienda urbana, local comercial)", "type": "text", "required": true},
-      {"name": "direccion_arrendador", "label": "Dirección del Arrendador para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_arrendatario_notif", "label": "Dirección del Arrendatario para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Demanda",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juez",
+        "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_arrendador",
+        "label": "Nombre Completo del Arrendador (demandante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_arrendatario",
+        "label": "Nombre Completo del Arrendatario (demandado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_arrendatario",
+        "label": "Domicilio del Arrendatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ubicacion_inmueble",
+        "label": "Dirección y Linderos del Inmueble Arrendado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_contrato",
+        "label": "Fecha de Celebración del Contrato de Arrendamiento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "termino_contrato",
+        "label": "Término del Contrato de Arrendamiento (Ej: un año, indefinido)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "canon_mensual",
+        "label": "Canon Mensual de Arrendamiento en Letras y Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia_pago",
+        "label": "Día de Pago del Canon (Ej: primeros cinco días)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes_mora",
+        "label": "Mes a partir del cual el Arrendatario incurrió en Mora",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_inmueble",
+        "label": "Tipo de Inmueble (Ej: vivienda urbana, local comercial)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_arrendador",
+        "label": "Dirección del Arrendador para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_arrendatario_notif",
+        "label": "Dirección del Arrendatario para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juez}} de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Proceso de restitución de inmueble arrendado de {{nombre_arrendador}} contra {{nombre_arrendatario}} por mora en el pago de las rentas\n\n{{nombre_abogado}}, mayor de edad, abogado titulado en ejercicio, con tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, obrando en mi condición de apoderado especial del señor {{nombre_arrendador}}, por el presente documento presento Demanda de Restitución de Inmueble Arrendado contra {{nombre_arrendatario}}, persona mayor de edad y domiciliada en {{domicilio_arrendatario}}, de acuerdo con los siguientes:\n\nHECHOS\n\n1. El demandante {{nombre_arrendador}} como arrendador celebró, mediante documento privado de fecha {{fecha_contrato}}, un contrato de arrendamiento con el demandado {{nombre_arrendatario}} como arrendatario sobre el inmueble ubicado en {{ubicacion_inmueble}}.\n\n2. El contrato de arrendamiento se celebró por el término de {{termino_contrato}} y los arrendatarios se obligaron a pagar por el arrendamiento como canon mensual la suma de {{canon_mensual}}, pago que debían efectuar anticipadamente dentro de los {{dia_pago}} de cada mensualidad.\n\n3. El demandado incumplió la obligación de pagar el canon de arrendamiento en la forma estipulada e incurrió en mora en el pago correspondiente al mes de {{mes_mora}}.\n\nPRETENSIONES\n\n1. Que se declare terminado el contrato de arrendamiento de {{tipo_inmueble}}, celebrado entre {{nombre_arrendador}} como arrendador y {{nombre_arrendatario}} como arrendatario, por incumplimiento en el pago de los cánones pactados, a partir del mes de {{mes_mora}}.\n\n2. Que se condene al demandado a restituir al demandante el inmueble ubicado en {{ubicacion_inmueble}}.\n\n3. Que no se escuche al demandado durante el proceso mientras no consigne el valor de los cánones adeudados.\n\n4. Que se condene al demandado al pago de las costas y gastos del proceso.\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 1608, 1973, 2000 del Código Civil; artículo 22 de la Ley 820 de 2003; artículos 337, 408 del Código de Procedimiento Civil.\n\nPRUEBAS\n\nDocumentales: Original del contrato de arrendamiento de fecha {{fecha_contrato}} suscrito entre las partes.\n\nNOTIFICACIONES\n\nDemandante: {{direccion_arrendador}}.\nDemandado: {{direccion_arrendatario_notif}}.\nEl suscrito: {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -263,26 +1103,126 @@
     "subtitle": "Procesos Declarativos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_poderdante", "label": "Nombre Completo del Poderdante (deudor que quiere pagar)", "type": "text", "required": true},
-      {"name": "cedula_poderdante", "label": "Número de Cédula del Poderdante", "type": "text", "required": true},
-      {"name": "ciudad_cedula_poderdante", "label": "Ciudad de Expedición de la Cédula del Poderdante", "type": "text", "required": true},
-      {"name": "nombre_acreedor", "label": "Nombre del Acreedor (demandado que se niega a recibir)", "type": "text", "required": true},
-      {"name": "domicilio_acreedor", "label": "Domicilio del Acreedor", "type": "text", "required": true},
-      {"name": "descripcion_obligacion", "label": "Descripción de la Obligación y el Contrato que la Origina", "type": "text", "required": true},
-      {"name": "fecha_ofrecimiento_pago", "label": "Fecha en que se Ofreció el Pago y fue Rechazado", "type": "text", "required": true},
-      {"name": "descripcion_bien_ofrecido", "label": "Descripción del Bien u Objeto que se Ofrece en Pago", "type": "text", "required": true},
-      {"name": "valor_saldo_insoluto", "label": "Valor del Saldo Insoluto que se Ofrece Pagar en Números", "type": "text", "required": true},
-      {"name": "cuantia_proceso", "label": "Cuantía Estimada del Proceso en Números", "type": "text", "required": true},
-      {"name": "pruebas_demanda", "label": "Pruebas que Aporta (documentos del contrato, recibos, testimonios)", "type": "text", "required": true},
-      {"name": "direccion_acreedor_notif", "label": "Dirección del Acreedor para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_poderdante_notif", "label": "Dirección del Poderdante para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Demanda",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo del Poderdante (deudor que quiere pagar)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Número de Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_poderdante",
+        "label": "Ciudad de Expedición de la Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_acreedor",
+        "label": "Nombre del Acreedor (demandado que se niega a recibir)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_acreedor",
+        "label": "Domicilio del Acreedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_obligacion",
+        "label": "Descripción de la Obligación y el Contrato que la Origina",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_ofrecimiento_pago",
+        "label": "Fecha en que se Ofreció el Pago y fue Rechazado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_bien_ofrecido",
+        "label": "Descripción del Bien u Objeto que se Ofrece en Pago",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_saldo_insoluto",
+        "label": "Valor del Saldo Insoluto que se Ofrece Pagar en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cuantia_proceso",
+        "label": "Cuantía Estimada del Proceso en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pruebas_demanda",
+        "label": "Pruebas que Aporta (documentos del contrato, recibos, testimonios)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_acreedor_notif",
+        "label": "Dirección del Acreedor para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_poderdante_notif",
+        "label": "Dirección del Poderdante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez Civil Municipal de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Demanda de pago por consignación\n\n{{nombre_abogado}}, mayor de edad, abogado titulado, con tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, actuando en nombre y representación de {{nombre_poderdante}}, identificado con la cédula de ciudadanía N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}, por el presente documento presento proceso de pago por consignación contra {{nombre_acreedor}}, quien es mayor de edad y domiciliado en {{domicilio_acreedor}}, de acuerdo con los siguientes:\n\nHECHOS\n\n1. {{nombre_poderdante}} y {{nombre_acreedor}} celebraron un contrato en el cual mi poderdante asumió la siguiente obligación: {{descripcion_obligacion}}.\n\n2. El {{fecha_ofrecimiento_pago}}, dentro del término previsto para el cumplimiento de su obligación, mi poderdante se presentó a cumplir con la entrega del bien o suma correspondiente.\n\n3. El acreedor {{nombre_acreedor}} se negó a recibirlo sin que argumentara razón valedera de ninguna índole.\n\n4. El bien o suma objeto del ofrecimiento es: {{descripcion_bien_ofrecido}}.\n\n5. El saldo insoluto a pagar asciende a ${{valor_saldo_insoluto}}.\n\nPRETENSIONES\n\n1. Que se declare en mora de recibir a {{nombre_acreedor}} como acreedor de la obligación de recibir el bien o suma ofrecidos.\n2. Que se acepte el ofrecimiento de pago que realiza mi poderdante por medio de esta demanda.\n3. Que para el cumplimiento de la obligación se nombre secuestre para hacer la entrega del caso.\n4. Que se condene al acreedor al pago de las expensas causadas con el proceso.\n5. Que se condene al acreedor a pagar el saldo insoluto acordado junto con los intereses causados hasta el momento de la sentencia.\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 1656 y siguientes del Código Civil; artículos 408 y siguientes y artículo 420 del Código de Procedimiento Civil.\n\nCUANTÍA\n\nLa estimo en ${{cuantia_proceso}} moneda legal.\n\nPRUEBAS\n\n{{pruebas_demanda}}\n\nNOTIFICACIONES\n\nDemandado: {{direccion_acreedor_notif}}.\nMi poderdante: {{direccion_poderdante_notif}}.\nEl suscrito: {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -292,24 +1232,114 @@
     "subtitle": "Procesos Declarativos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_poderdante", "label": "Nombre Completo del Poderdante (dueño del predio dominante)", "type": "text", "required": true},
-      {"name": "nombre_demandado", "label": "Nombre del Demandado (dueño del predio sirviente)", "type": "text", "required": true},
-      {"name": "domicilio_demandado", "label": "Domicilio del Demandado", "type": "text", "required": true},
-      {"name": "descripcion_predio_dominante", "label": "Descripción y Linderos del Predio Dominante (del demandante)", "type": "text", "required": true},
-      {"name": "descripcion_predio_sirviente", "label": "Descripción y Linderos del Predio Sirviente (del demandado)", "type": "text", "required": true},
-      {"name": "municipio_predios", "label": "Municipio donde están Ubicados los Predios", "type": "text", "required": true},
-      {"name": "motivo_servidumbre", "label": "Motivo por el que se Necesita la Servidumbre (Ej: el predio dominante no tiene acceso al camino público)", "type": "text", "required": true},
-      {"name": "descripcion_via_servidumbre", "label": "Descripción de la Vía de Servidumbre Solicitada", "type": "text", "required": true},
-      {"name": "pruebas_demanda", "label": "Pruebas que Aporta (escrituras, certificados, testimonios, peritazgo)", "type": "text", "required": true},
-      {"name": "direccion_poderdante", "label": "Dirección del Poderdante para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_demandado_notif", "label": "Dirección del Demandado para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Demanda",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo del Poderdante (dueño del predio dominante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado",
+        "label": "Nombre del Demandado (dueño del predio sirviente)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_demandado",
+        "label": "Domicilio del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_predio_dominante",
+        "label": "Descripción y Linderos del Predio Dominante (del demandante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_predio_sirviente",
+        "label": "Descripción y Linderos del Predio Sirviente (del demandado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "municipio_predios",
+        "label": "Municipio donde están Ubicados los Predios",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "motivo_servidumbre",
+        "label": "Motivo por el que se Necesita la Servidumbre (Ej: el predio dominante no tiene acceso al camino público)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_via_servidumbre",
+        "label": "Descripción de la Vía de Servidumbre Solicitada",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pruebas_demanda",
+        "label": "Pruebas que Aporta (escrituras, certificados, testimonios, peritazgo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_poderdante",
+        "label": "Dirección del Poderdante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_demandado_notif",
+        "label": "Dirección del Demandado para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez Civil de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Imposición de servidumbre\n\n{{nombre_abogado}}, mayor de edad, abogado en ejercicio, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, obrando en representación de {{nombre_poderdante}}, según poder debidamente otorgado, por medio del presente escrito presento ante usted Demanda de Imposición de Servidumbre Legal sobre el predio de propiedad de {{nombre_demandado}}, de acuerdo con los siguientes:\n\nHECHOS\n\n1. Los predios objeto de este proceso se hallan en jurisdicción del municipio de {{municipio_predios}}.\n\n2. El predio dominante de mi poderdante se determina así: {{descripcion_predio_dominante}}.\n\n3. El predio sirviente de propiedad del demandado se determina así: {{descripcion_predio_sirviente}}.\n\n4. El predio de mi mandante se halla inhabilitado para acceder al camino público, pues {{motivo_servidumbre}}.\n\n5. La vía más expedita para comunicar el predio de mi mandante con el camino en mención es: {{descripcion_via_servidumbre}}.\n\n6. El demandado, pese a las insistentes peticiones de mi mandante, se ha negado a constituir por propia voluntad la tan necesaria servidumbre.\n\nPRETENSIONES\n\n1. Imponer servidumbre de tránsito sobre el predio sirviente de propiedad del demandado {{nombre_demandado}}, a favor del predio dominante de propiedad de mi mandante.\n2. Que junto con la imposición se ordene su registro en la Oficina de Instrumentos Públicos.\n3. Que se condene en costas al demandado.\n\nFUNDAMENTOS DE DERECHO\n\nArtículo 908 y artículo 1394 numeral 5° del Código Civil; artículos 408 y 415 del Código de Procedimiento Civil.\n\nPRUEBAS\n\n{{pruebas_demanda}}\n\nNOTIFICACIONES\n\nMi poderdante: {{direccion_poderdante}}.\nEl demandado: {{direccion_demandado_notif}}.\nEl suscrito: {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -319,27 +1349,132 @@
     "subtitle": "Procesos Declarativos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_poderdante", "label": "Nombre Completo del Poderdante (comunero que solicita la división)", "type": "text", "required": true},
-      {"name": "cedula_poderdante", "label": "Número de Cédula del Poderdante", "type": "text", "required": true},
-      {"name": "ciudad_cedula_poderdante", "label": "Ciudad de Expedición de la Cédula del Poderdante", "type": "text", "required": true},
-      {"name": "nombres_demandados", "label": "Nombres de los Demás Comuneros Demandados", "type": "text", "required": true},
-      {"name": "descripcion_inmueble", "label": "Descripción y Linderos del Inmueble a Dividir", "type": "text", "required": true},
-      {"name": "matricula_inmobiliaria", "label": "Número de Matrícula Inmobiliaria", "type": "text", "required": true},
-      {"name": "escritura_particion", "label": "Número y Notaría de la Escritura de Partición que Originó la Comunidad", "type": "text", "required": true},
-      {"name": "descripcion_cuotas", "label": "Descripción de las Cuotas de Dominio de cada Comunero", "type": "text", "required": true},
-      {"name": "mejoras_poderdante", "label": "Mejoras Realizadas por el Poderdante a sus Expensas (si no hay escriba: ninguna)", "type": "text", "required": true},
-      {"name": "cuantia_division", "label": "Cuantía Estimada de la División en Números", "type": "text", "required": true},
-      {"name": "plazo_partidor", "label": "Plazo Solicitado para el Partidor en Meses (máximo 2 meses)", "type": "text", "required": true},
-      {"name": "pruebas_demanda", "label": "Pruebas que Aporta (escrituras, certificados de tradición, declaraciones)", "type": "text", "required": true},
-      {"name": "direccion_poderdante", "label": "Dirección del Poderdante para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_demandados_notif", "label": "Dirección de los Demandados para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Demanda",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo del Poderdante (comunero que solicita la división)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Número de Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_poderdante",
+        "label": "Ciudad de Expedición de la Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombres_demandados",
+        "label": "Nombres de los Demás Comuneros Demandados",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_inmueble",
+        "label": "Descripción y Linderos del Inmueble a Dividir",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "matricula_inmobiliaria",
+        "label": "Número de Matrícula Inmobiliaria",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "escritura_particion",
+        "label": "Número y Notaría de la Escritura de Partición que Originó la Comunidad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_cuotas",
+        "label": "Descripción de las Cuotas de Dominio de cada Comunero",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mejoras_poderdante",
+        "label": "Mejoras Realizadas por el Poderdante a sus Expensas (si no hay escriba: ninguna)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cuantia_division",
+        "label": "Cuantía Estimada de la División en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "plazo_partidor",
+        "label": "Plazo Solicitado para el Partidor en Meses (máximo 2 meses)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pruebas_demanda",
+        "label": "Pruebas que Aporta (escrituras, certificados de tradición, declaraciones)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_poderdante",
+        "label": "Dirección del Poderdante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_demandados_notif",
+        "label": "Dirección de los Demandados para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez del Circuito Civil de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Demanda de División Material\n\n{{nombre_abogado}}, mayor de edad, abogado titulado, con tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, actuando como apoderado judicial del señor {{nombre_poderdante}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}, según poder que se adjunta, por medio del presente escrito presento demanda de división material del bien, teniendo en cuenta los siguientes:\n\nHECHOS\n\n1. El bien inmueble ubicado en {{descripcion_inmueble}}, con matrícula inmobiliaria N°. {{matricula_inmobiliaria}}, fue adjudicado a mi mandante y a los demandados en virtud de la escritura de partición N°. {{escritura_particion}}.\n\n2. Las cuotas de dominio sobre el bien inmueble quedaron distribuidas así: {{descripcion_cuotas}}.\n\n3. Mi mandante ha realizado las siguientes mejoras a sus expensas: {{mejoras_poderdante}}.\n\n4. Entre los copropietarios no se ha pactado indivisión sobre el bien inmueble.\n\n5. Los demandados no han querido allanarse a efectuar con mi mandante la división extraprocesual del bien, a pesar de que todos tienen la libre administración de sus bienes.\n\nPRETENSIONES\n\n1. Ordenar la división material del inmueble ubicado en {{descripcion_inmueble}}.\n2. Ordenar el avalúo del bien común y designar los peritos.\n3. Prevenir a las partes para que dentro de los tres días siguientes designen partidor.\n4. Señalar al partidor un término de {{plazo_partidor}} meses para la ejecución de su trabajo.\n5. Ordenar el registro de la partición material y la sentencia aprobatoria en la Oficina de Instrumentos Públicos.\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 1374, 1376, 1377, 1379, 1399, 2322 y siguientes del Código Civil; artículos 467 a 474 del Código de Procedimiento Civil.\n\nCUANTÍA\n\nEstimo la cuantía en ${{cuantia_division}} moneda legal.\n\nPRUEBAS\n\n{{pruebas_demanda}}\n\nNOTIFICACIONES\n\nMi poderdante: {{direccion_poderdante}}.\nLos demandados: {{direccion_demandados_notif}}.\nEl suscrito: {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -349,21 +1484,96 @@
     "subtitle": "Procesos Ejecutivos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha del Poder", "type": "text", "required": true},
-      {"name": "tipo_juez", "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)", "type": "text", "required": true},
-      {"name": "nombre_poderdante", "label": "Nombre Completo de quien Otorga el Poder", "type": "text", "required": true},
-      {"name": "cedula_poderdante", "label": "Número de Cédula de quien Otorga el Poder", "type": "text", "required": true},
-      {"name": "ciudad_cedula_poderdante", "label": "Ciudad de Expedición de la Cédula", "type": "text", "required": true},
-      {"name": "nombre_apoderado", "label": "Nombre Completo del Abogado Apoderado", "type": "text", "required": true},
-      {"name": "cedula_apoderado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_apoderado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "tipo_cuantia", "label": "Tipo de Cuantía (Ej: mínima, menor, mayor)", "type": "text", "required": true},
-      {"name": "nombre_ejecutado", "label": "Nombre del Ejecutado (deudor demandado)", "type": "text", "required": true},
-      {"name": "descripcion_titulo", "label": "Descripción del Título Ejecutivo (Ej: pagaré, sentencia judicial, escritura pública)", "type": "text", "required": true},
-      {"name": "fecha_titulo", "label": "Fecha del Título Ejecutivo", "type": "text", "required": true},
-      {"name": "valor_obligacion", "label": "Valor de la Obligación en Letras y Números", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha del Poder",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juez",
+        "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo de quien Otorga el Poder",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Número de Cédula de quien Otorga el Poder",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_poderdante",
+        "label": "Ciudad de Expedición de la Cédula",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado",
+        "label": "Nombre Completo del Abogado Apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_apoderado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_apoderado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_cuantia",
+        "label": "Tipo de Cuantía (Ej: mínima, menor, mayor)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutado",
+        "label": "Nombre del Ejecutado (deudor demandado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_titulo",
+        "label": "Descripción del Título Ejecutivo (Ej: pagaré, sentencia judicial, escritura pública)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_titulo",
+        "label": "Fecha del Título Ejecutivo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_obligacion",
+        "label": "Valor de la Obligación en Letras y Números",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juez}} de {{ciudad_firma}} (Reparto)\nE. S. D.\n\n{{nombre_poderdante}}, mayor de edad, domiciliado y residente en {{ciudad_firma}}, identificado con la cédula de ciudadanía N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}, por medio del presente escrito confiero poder especial, amplio y suficiente al doctor {{nombre_apoderado}}, mayor de edad, domiciliado y residente en esta ciudad, identificado con la cédula de ciudadanía N°. {{cedula_apoderado}} de {{ciudad_cedula_apoderado}}, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, para que en mi nombre y representación inicie, tramite y lleve hasta su terminación Proceso Ejecutivo de {{tipo_cuantia}} cuantía contra el señor {{nombre_ejecutado}}, también mayor de edad, domiciliado en esta ciudad, con el fin de obtener el pago contenido en el título {{descripcion_titulo}} de fecha {{fecha_titulo}}, por valor de {{valor_obligacion}}, junto con sus intereses y accesorios de ley correspondientes.\n\nMi apoderado cuenta con todas las facultades inherentes para el ejercicio del presente poder, en especial las de recibir, transigir, sustituir, desistir, renunciar, reasumir y todas aquellas que tiendan al buen y fiel cumplimiento de su gestión.\n\nSírvase señor juez, reconocerle personería en los términos aquí señalados.\n\n{{ciudad_firma}}, {{fecha_firma}}\n\n\n____________________________\nPoderdante:\n{{nombre_poderdante}}\nC.C. N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}\n\nAcepto:\n\n____________________________\nApoderado:\nDr. {{nombre_apoderado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -373,25 +1583,120 @@
     "subtitle": "Procesos Ejecutivos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
-      {"name": "tipo_juez", "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_ejecutante", "label": "Nombre Completo del Ejecutante (acreedor demandante)", "type": "text", "required": true},
-      {"name": "nombre_ejecutado", "label": "Nombre Completo del Ejecutado (deudor demandado)", "type": "text", "required": true},
-      {"name": "domicilio_ejecutado", "label": "Domicilio del Ejecutado", "type": "text", "required": true},
-      {"name": "descripcion_titulo", "label": "Descripción del Título Ejecutivo (Ej: sentencia del Juzgado X de fecha Y)", "type": "text", "required": true},
-      {"name": "valor_capital", "label": "Valor de la Obligación por Capital en Números", "type": "text", "required": true},
-      {"name": "tasa_interes_mora", "label": "Tasa de Interés Moratorio Mensual en Números (Ej: 1.5)", "type": "text", "required": true},
-      {"name": "fecha_inicio_mora", "label": "Fecha desde la cual se Cuentan los Intereses de Mora", "type": "text", "required": true},
-      {"name": "tipo_cuantia", "label": "Tipo de Cuantía del Proceso (Ej: mayor, menor, mínima)", "type": "text", "required": true},
-      {"name": "pruebas_demanda", "label": "Pruebas que Aporta (título ejecutivo, certificados)", "type": "text", "required": true},
-      {"name": "direccion_ejecutado", "label": "Dirección del Ejecutado para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_ejecutante", "label": "Dirección del Ejecutante para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Demanda",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juez",
+        "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutante",
+        "label": "Nombre Completo del Ejecutante (acreedor demandante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutado",
+        "label": "Nombre Completo del Ejecutado (deudor demandado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_ejecutado",
+        "label": "Domicilio del Ejecutado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_titulo",
+        "label": "Descripción del Título Ejecutivo (Ej: sentencia del Juzgado X de fecha Y)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_capital",
+        "label": "Valor de la Obligación por Capital en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tasa_interes_mora",
+        "label": "Tasa de Interés Moratorio Mensual en Números (Ej: 1.5)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio_mora",
+        "label": "Fecha desde la cual se Cuentan los Intereses de Mora",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_cuantia",
+        "label": "Tipo de Cuantía del Proceso (Ej: mayor, menor, mínima)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pruebas_demanda",
+        "label": "Pruebas que Aporta (título ejecutivo, certificados)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_ejecutado",
+        "label": "Dirección del Ejecutado para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_ejecutante",
+        "label": "Dirección del Ejecutante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juez}} de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Proceso ejecutivo singular de {{nombre_ejecutante}} contra {{nombre_ejecutado}}\n\n{{nombre_abogado}}, mayor de edad, abogado titulado en ejercicio, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, obrando en mi condición de apoderado especial de {{nombre_ejecutante}}, según poder que se anexa, por el presente escrito presento Demanda Ejecutiva Singular contra {{nombre_ejecutado}}, persona mayor de edad y domiciliada en {{domicilio_ejecutado}}, de acuerdo con los siguientes:\n\nHECHOS\n\n1. El título ejecutivo que sirve de base a la presente acción es: {{descripcion_titulo}}.\n\n2. El plazo se halla vencido y el demandado {{nombre_ejecutado}} no ha cancelado ni el capital ni los intereses, a pesar de los requerimientos efectuados.\n\nPRETENSIONES\n\n1. Libre mandamiento ejecutivo a favor de {{nombre_ejecutante}} y en contra de {{nombre_ejecutado}} por las siguientes cantidades de dinero:\n\na) Por la suma de ${{valor_capital}} por concepto de la obligación por capital.\n\nb) Por el valor de los intereses moratorios a la tasa del {{tasa_interes_mora}} por ciento mensual sobre la anterior suma de dinero, contados desde el día {{fecha_inicio_mora}} hasta el día en que se efectúe el pago total de la obligación.\n\n2. Se condene a la demandada al pago de las costas y gastos del proceso.\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 252, 488 y subsiguientes del Código de Procedimiento Civil.\n\nCOMPETENCIA Y CUANTÍA\n\nEs usted competente por el domicilio del demandado y la cuantía del proceso es de {{tipo_cuantia}} cuantía.\n\nPRUEBAS\n\n{{pruebas_demanda}}\n\nNOTIFICACIONES\n\nDemandado: {{direccion_ejecutado}}.\nDemandante: {{direccion_ejecutante}}.\nEl suscrito: {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -401,33 +1706,168 @@
     "subtitle": "Procesos Ejecutivos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
-      {"name": "tipo_juez", "label": "Tipo de Juez (Ej: Civil del Circuito)", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_ejecutante", "label": "Nombre Completo del Acreedor Hipotecario (demandante)", "type": "text", "required": true},
-      {"name": "nombre_ejecutado", "label": "Nombre Completo del Deudor Hipotecario (demandado)", "type": "text", "required": true},
-      {"name": "domicilio_ejecutado", "label": "Domicilio del Ejecutado", "type": "text", "required": true},
-      {"name": "numero_pagare", "label": "Número del Pagaré Base de la Ejecución", "type": "text", "required": true},
-      {"name": "fecha_pagare", "label": "Fecha del Pagaré", "type": "text", "required": true},
-      {"name": "valor_capital", "label": "Valor del Capital del Pagaré en Números", "type": "text", "required": true},
-      {"name": "numero_escritura_hipoteca", "label": "Número de la Escritura Pública de Hipoteca", "type": "text", "required": true},
-      {"name": "fecha_escritura_hipoteca", "label": "Fecha de la Escritura de Hipoteca", "type": "text", "required": true},
-      {"name": "notaria_hipoteca", "label": "Notaría donde se Otorgó la Hipoteca", "type": "text", "required": true},
-      {"name": "grado_hipoteca", "label": "Grado de la Hipoteca (Ej: primer, segundo)", "type": "text", "required": true},
-      {"name": "descripcion_inmueble_hipotecado", "label": "Descripción y Nomenclatura del Inmueble Hipotecado", "type": "text", "required": true},
-      {"name": "matricula_inmobiliaria", "label": "Número de Matrícula Inmobiliaria del Inmueble", "type": "text", "required": true},
-      {"name": "tasa_interes_remuneratorio", "label": "Tasa de Interés Remuneratorio Mensual en Números (Ej: 1.5)", "type": "text", "required": true},
-      {"name": "tasa_interes_moratorio", "label": "Tasa de Interés Moratorio Mensual en Números (Ej: 2)", "type": "text", "required": true},
-      {"name": "fecha_inicio_mora", "label": "Fecha desde la cual el Deudor está en Mora", "type": "text", "required": true},
-      {"name": "zona_registro", "label": "Zona del Registro de Instrumentos Públicos (Ej: principal, seccional)", "type": "text", "required": true},
-      {"name": "tipo_cuantia", "label": "Tipo de Cuantía del Proceso (Ej: mayor, menor)", "type": "text", "required": true},
-      {"name": "direccion_ejecutado", "label": "Dirección del Ejecutado para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_ejecutante", "label": "Dirección del Ejecutante para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Demanda",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juez",
+        "label": "Tipo de Juez (Ej: Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutante",
+        "label": "Nombre Completo del Acreedor Hipotecario (demandante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutado",
+        "label": "Nombre Completo del Deudor Hipotecario (demandado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_ejecutado",
+        "label": "Domicilio del Ejecutado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_pagare",
+        "label": "Número del Pagaré Base de la Ejecución",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_pagare",
+        "label": "Fecha del Pagaré",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_capital",
+        "label": "Valor del Capital del Pagaré en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura_hipoteca",
+        "label": "Número de la Escritura Pública de Hipoteca",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_escritura_hipoteca",
+        "label": "Fecha de la Escritura de Hipoteca",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_hipoteca",
+        "label": "Notaría donde se Otorgó la Hipoteca",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "grado_hipoteca",
+        "label": "Grado de la Hipoteca (Ej: primer, segundo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_inmueble_hipotecado",
+        "label": "Descripción y Nomenclatura del Inmueble Hipotecado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "matricula_inmobiliaria",
+        "label": "Número de Matrícula Inmobiliaria del Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tasa_interes_remuneratorio",
+        "label": "Tasa de Interés Remuneratorio Mensual en Números (Ej: 1.5)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tasa_interes_moratorio",
+        "label": "Tasa de Interés Moratorio Mensual en Números (Ej: 2)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio_mora",
+        "label": "Fecha desde la cual el Deudor está en Mora",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "zona_registro",
+        "label": "Zona del Registro de Instrumentos Públicos (Ej: principal, seccional)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_cuantia",
+        "label": "Tipo de Cuantía del Proceso (Ej: mayor, menor)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_ejecutado",
+        "label": "Dirección del Ejecutado para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_ejecutante",
+        "label": "Dirección del Ejecutante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juez}} de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Proceso ejecutivo con título hipotecario de {{nombre_ejecutante}} contra {{nombre_ejecutado}}\n\n{{nombre_abogado}}, mayor de edad, abogado titulado en ejercicio, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, obrando en mi condición de apoderado especial del señor {{nombre_ejecutante}}, en virtud del poder a mí conferido, por medio del presente escrito formulo ante usted Demanda ejecutiva con título hipotecario contra {{nombre_ejecutado}}, persona mayor de edad, domiciliada en {{domicilio_ejecutado}}, de acuerdo con los siguientes:\n\nHECHOS\n\n1. El señor {{nombre_ejecutado}} se declaró deudor de {{nombre_ejecutante}} al suscribir el pagaré N°. {{numero_pagare}} de fecha {{fecha_pagare}}, por la suma de ${{valor_capital}}, suma recibida a título de mutuo con intereses.\n\n2. Así mismo, el señor {{nombre_ejecutado}} otorgó mediante escritura pública N°. {{numero_escritura_hipoteca}} de {{fecha_escritura_hipoteca}} ante la {{notaria_hipoteca}}, hipoteca de {{grado_hipoteca}} grado sobre el inmueble ubicado en {{descripcion_inmueble_hipotecado}}, registrado en el folio de matrícula inmobiliaria N°. {{matricula_inmobiliaria}}.\n\n3. El deudor se obligó a pagar intereses remuneratorios a la tasa del {{tasa_interes_remuneratorio}} por ciento mensual durante el plazo, e intereses moratorios al {{tasa_interes_moratorio}} por ciento mensual desde el momento en que incurriera en mora, lo cual ocurrió a partir del día {{fecha_inicio_mora}}.\n\n4. El demandado no ha pagado ni el capital ni los intereses.\n\nPRETENSIONES\n\n1. Libre mandamiento ejecutivo a favor de {{nombre_ejecutante}} y en contra de {{nombre_ejecutado}} por:\n\na) La suma de ${{valor_capital}} por concepto del capital contenido en el pagaré N°. {{numero_pagare}}.\n\nb) El valor de los intereses remuneratorios a la tasa del {{tasa_interes_remuneratorio}} por ciento mensual desde la fecha del pagaré hasta el {{fecha_inicio_mora}}.\n\nc) El valor de los intereses moratorios a la tasa del {{tasa_interes_moratorio}} por ciento mensual desde el {{fecha_inicio_mora}} hasta el día del pago total.\n\n2. Simultáneamente con el mandamiento ejecutivo, decrétese el embargo y posterior secuestro del inmueble hipotecado, matrícula N°. {{matricula_inmobiliaria}}, y ofíciese al registrador de instrumentos públicos zona {{zona_registro}} para que inscriba el embargo.\n\n3. Decrétese en su oportunidad procesal la venta en pública subasta del inmueble hipotecado.\n\n4. Se condene en costas al demandado.\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 2432, 2434, 2440, 2443, 2452 del Código Civil; artículos 488, 554, 555 y 557 del Código de Procedimiento Civil.\n\nCOMPETENCIA Y CUANTÍA\n\nEs usted competente por el domicilio del demandado y la ubicación del inmueble. La cuantía es de {{tipo_cuantia}} cuantía.\n\nNOTIFICACIONES\n\nDemandado: {{direccion_ejecutado}}.\nDemandante: {{direccion_ejecutante}}.\nEl suscrito: {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -437,20 +1877,90 @@
     "subtitle": "Procesos Ejecutivos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha del Recurso", "type": "text", "required": true},
-      {"name": "tipo_juez", "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)", "type": "text", "required": true},
-      {"name": "nombre_ejecutante", "label": "Nombre del Ejecutante (demandante)", "type": "text", "required": true},
-      {"name": "nombre_ejecutado", "label": "Nombre del Ejecutado (demandado)", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado del Ejecutado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_poderdante", "label": "Nombre Completo del Poderdante (ejecutado)", "type": "text", "required": true},
-      {"name": "excepcion_propuesta", "label": "Excepción Previa que Propone (Ej: falta de competencia, falta de requisitos formales del título)", "type": "text", "required": true},
-      {"name": "hechos_excepcion", "label": "Hechos que Fundamentan la Excepción (numérelos)", "type": "text", "required": true},
-      {"name": "normas_excepcion", "label": "Normas en que se Fundamenta la Excepción", "type": "text", "required": true},
-      {"name": "declaraciones_solicitadas", "label": "Declaraciones que Solicita al Juez", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha del Recurso",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juez",
+        "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutante",
+        "label": "Nombre del Ejecutante (demandante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutado",
+        "label": "Nombre del Ejecutado (demandado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado del Ejecutado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo del Poderdante (ejecutado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "excepcion_propuesta",
+        "label": "Excepción Previa que Propone (Ej: falta de competencia, falta de requisitos formales del título)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hechos_excepcion",
+        "label": "Hechos que Fundamentan la Excepción (numérelos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "normas_excepcion",
+        "label": "Normas en que se Fundamenta la Excepción",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "declaraciones_solicitadas",
+        "label": "Declaraciones que Solicita al Juez",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juez}} de {{ciudad_firma}}\nE. S. D.\n\nRef.: Proceso ejecutivo de {{nombre_ejecutante}} contra {{nombre_ejecutado}} (Recurso de reposición)\n\n{{nombre_abogado}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, obrando en mi calidad de apoderado judicial del señor {{nombre_poderdante}}, demandado en el proceso de la referencia, en virtud del poder especial a mí conferido que acompaño a este escrito, manifiesto a usted respetuosamente que presento recurso de reposición contra el mandamiento de pago librado, para que se hagan las siguientes:\n\nDECLARACIONES\n\n{{declaraciones_solicitadas}}\n\nHECHOS\n\n{{hechos_excepcion}}\n\nEXCEPCIÓN PREVIA\n\nSe propone la excepción previa de {{excepcion_propuesta}}.\n\nFUNDAMENTOS DE DERECHO\n\n{{normas_excepcion}}\n\nPRUEBAS\n\n1. El título valor base de la ejecución.\n2. La demanda ejecutiva.\n3. La actuación surtida en el proceso principal.\n\nNOTIFICACIONES\n\nLos indicados en la demanda inicial y su contestación.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -460,21 +1970,781 @@
     "subtitle": "Procesos Ejecutivos",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "fecha_firma", "label": "Fecha de las Excepciones", "type": "text", "required": true},
-      {"name": "tipo_juez", "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)", "type": "text", "required": true},
-      {"name": "nombre_ejecutante", "label": "Nombre del Ejecutante (acreedor demandante)", "type": "text", "required": true},
-      {"name": "nombre_ejecutado", "label": "Nombre del Ejecutado (deudor demandado)", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado del Ejecutado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
-      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_poderdante", "label": "Nombre Completo del Poderdante (ejecutado)", "type": "text", "required": true},
-      {"name": "fecha_giro_cheque", "label": "Fecha en que fue Girado y Entregado el Cheque", "type": "text", "required": true},
-      {"name": "fecha_presentacion_cobro", "label": "Fecha en que el Cheque fue Presentado para Cobro (si aplica)", "type": "text", "required": true},
-      {"name": "fecha_demanda_ejecutiva", "label": "Fecha en que fue Presentada la Demanda Ejecutiva", "type": "text", "required": true},
-      {"name": "descripcion_fondos", "label": "Descripción de los Fondos Disponibles durante el Plazo (si los había)", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de las Excepciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juez",
+        "label": "Tipo de Juez (Ej: Civil Municipal, Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutante",
+        "label": "Nombre del Ejecutante (acreedor demandante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutado",
+        "label": "Nombre del Ejecutado (deudor demandado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado del Ejecutado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo del Poderdante (ejecutado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_giro_cheque",
+        "label": "Fecha en que fue Girado y Entregado el Cheque",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_presentacion_cobro",
+        "label": "Fecha en que el Cheque fue Presentado para Cobro (si aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_demanda_ejecutiva",
+        "label": "Fecha en que fue Presentada la Demanda Ejecutiva",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_fondos",
+        "label": "Descripción de los Fondos Disponibles durante el Plazo (si los había)",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juez}} de {{ciudad_firma}}\nE. S. D.\n\nRef.: Proceso Ejecutivo de {{nombre_ejecutante}} contra {{nombre_ejecutado}}\n\n{{nombre_abogado}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, con tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, obrando en mi calidad de apoderado judicial del señor {{nombre_poderdante}}, demandado en el proceso de la referencia, según poder especial a mí conferido, dentro del término del traslado a la notificación del mandamiento de pago, de conformidad con el numeral 1° del artículo 509 del Código de Procedimiento Civil, propongo las siguientes excepciones de mérito, con el fin de que se sirva mediante sentencia hacer las siguientes:\n\nDECLARACIONES\n\n1. Declarar probadas las excepciones de prescripción y caducidad de la acción cambiaria derivada del cheque.\n2. Como consecuencia de la anterior, declarar terminado el proceso, ordenando su archivo.\n3. Decretar el levantamiento de las medidas cautelares que pesan sobre los bienes embargados y secuestrados.\n4. Condenar al pago de los perjuicios sufridos con ocasión de la práctica de las medidas cautelares.\n5. Condenar en costas a la parte ejecutante.\n\nHECHOS\n\n1. CADUCIDAD DE LA ACCIÓN CAMBIARIA\n\n1.1. El cheque como fuente de pago y base de la presente acción ejecutiva fue girado por mi demandante el día {{fecha_giro_cheque}}.\n\n1.2. El señor {{nombre_ejecutante}}, como beneficiario y tenedor legítimo del título valor, no lo presentó para su pago ante el banco en la oportunidad prevista en el artículo 718 del Código de Comercio, esto es dentro de los quince días siguientes a su entrega, siendo esta misma ciudad el lugar indicado para su pago.\n\n1.3. Durante el plazo para su presentación, mi poderdante {{nombre_poderdante}} tenía fondos suficientes: {{descripcion_fondos}}.\n\n2. PRESCRIPCIÓN DE LA ACCIÓN CAMBIARIA\n\n2.1. Este cheque fue girado y entregado el día {{fecha_giro_cheque}}.\n\n2.2. El cheque fue presentado para su pago el día {{fecha_presentacion_cobro}}.\n\n2.3. No obstante, la demanda se presentó el día {{fecha_demanda_ejecutiva}}, después de transcurridos más de los seis meses que el legislador ha concedido para el ejercicio de la acción cambiaria (C. Co., artículo 730).\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 718, 721, 727, 729, 730, 751 y 790 del Código de Comercio; artículos 509 y 510 del Código de Procedimiento Civil.\n\nPRUEBAS\n\n1. El título valor aportado como base de la ejecución forzada.\n2. La demanda contentiva de la acción ejecutiva.\n3. Certificación expedida por el banco que acredita la existencia o no de fondos suficientes durante el término de presentación.\n\nNOTIFICACIONES\n\nDemandante: Las recibe en el lugar indicado en la demanda.\nMi poderdante: Las recibe en la dirección indicada en el proceso.\nEl suscrito: Las recibo en la secretaría del juzgado o en mi oficina en esta ciudad.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
+  },
+  {
+    "id": "solicitud-medidas-cautelares",
+    "title": "Solicitud de Medidas Cautelares (Embargo y Secuestro)",
+    "subtitle": "Medidas Cautelares",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad donde se Presenta la Solicitud",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Solicitud",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juzgado",
+        "label": "Tipo de Juzgado (Ej: Civil del Circuito, Civil Municipal)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado Solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre o Razón Social del Demandante (Ejecutante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "calidad_representante",
+        "label": "Calidad del Representante Legal (Ej: gerente, representante legal)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado",
+        "label": "Nombre o Razón Social del Demandado (Ejecutado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "referencia_proceso",
+        "label": "Referencia del Proceso (Ej: ejecutivo singular de XX contra YY)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_vehiculo",
+        "label": "Descripción del Vehículo a Embargar (marca, tipo, modelo, color, motor, chasis, placas) — si no aplica escriba: no aplica",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "ciudad_transito",
+        "label": "Ciudad de la Dirección de Tránsito (para oficio de embargo del vehículo) — si no aplica escriba: no aplica",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nomenclatura_inmueble",
+        "label": "Nomenclatura del Inmueble a Embargar (dirección) — si no aplica escriba: no aplica",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "matricula_inmobiliaria",
+        "label": "Matrícula Inmobiliaria del Inmueble — si no aplica escriba: no aplica",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "linderos_inmueble",
+        "label": "Linderos del Inmueble (Norte, Sur, Oriente, Occidente) — si no aplica escriba: no aplica",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "ciudad_registro",
+        "label": "Ciudad de la Oficina de Instrumentos Públicos — si no aplica escriba: no aplica",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_sociedad_ejecutado",
+        "label": "Nombre de la Sociedad del Ejecutado (para embargo de bienes muebles) — si no aplica escriba: no aplica",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_bienes_muebles",
+        "label": "Dirección donde se Encuentran los Bienes Muebles a Embargar — si no aplica escriba: no aplica",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_sociedad_acciones",
+        "label": "Nombre de la Sociedad donde tiene Acciones el Demandado — si no aplica escriba: no aplica",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_empleador",
+        "label": "Nombre del Empleador del Demandado (para embargo de salarios) — si no aplica escriba: no aplica",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "entidades_financieras",
+        "label": "Entidades Financieras y Números de Cuenta a Embargar — si no aplica escriba: no aplica",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "deudores_creditos",
+        "label": "Deudores del Ejecutado cuyos Créditos se van a Embargar — si no aplica escriba: no aplica",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "nombre_establecimiento_comercio",
+        "label": "Nombre y Dirección del Establecimiento de Comercio a Embargar — si no aplica escriba: no aplica",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "SOLICITUD DE MEDIDAS CAUTELARES\n(Embargo y Secuestro)\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juzgado}} (Reparto)\nE. S. D.\n\nRef.: {{referencia_proceso}}\n\n{{nombre_abogado}}, mayor de edad, domiciliado en {{ciudad_firma}}, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, abogado titulado en ejercicio, portador de la tarjeta profesional N° {{tarjeta_profesional}} del Consejo Superior de la Judicatura, obrando en mi condición de apoderado judicial de {{nombre_poderdante}}, en virtud del poder especial a mí conferido por su {{calidad_representante}}, por el presente escrito, comedidamente solicito se decreten las siguientes medidas cautelares con carácter de previas:\n\n{{#if_not_na descripcion_vehiculo}}PRIMERA. El embargo y secuestro del vehículo automotor de propiedad del demandado: {{descripcion_vehiculo}}.\n\nSolicito al señor juez librar oficio correspondiente para el registro del embargo al señor Director de Tránsito y Transporte de {{ciudad_transito}}, así como los oficios correspondientes dirigidos al F2 de la Policía Nacional, sección automotores, para que se capture el citado vehículo y se pueda llevar a cabo la diligencia correspondiente.\n\n{{/if_not_na}}{{#if_not_na nomenclatura_inmueble}}SEGUNDA. El embargo y posterior secuestro del inmueble distinguido con el número de nomenclatura urbana {{nomenclatura_inmueble}}, identificado bajo el número de folio de matrícula inmobiliaria {{matricula_inmobiliaria}} de la Oficina de Instrumentos Públicos de {{ciudad_registro}}, alinderado de la siguiente forma: {{linderos_inmueble}}.\n\nSírvase señor juez comunicar mediante oficio la inscripción de la medida en el correspondiente folio de matrícula inmobiliaria.\n\n{{/if_not_na}}{{#if_not_na nombre_sociedad_ejecutado}}TERCERA. El embargo y secuestro de los bienes muebles y enseres que se hallen en el domicilio principal de {{nombre_sociedad_ejecutado}}, situado en {{direccion_bienes_muebles}}, o en el lugar que se indique en el momento de la diligencia, para lo cual se servirá comisionar al funcionario de policía competente.\n\n{{/if_not_na}}{{#if_not_na nombre_sociedad_acciones}}CUARTA. El embargo de las acciones, dividendos, utilidades, intereses y demás beneficios a que tiene derecho el demandado en la sociedad {{nombre_sociedad_acciones}}, previendo al gerente, administrador o liquidador de la respectiva sociedad que a partir de su recibo deberá dar cuenta al juzgado dentro de los tres días siguientes sobre la medida, consignando a órdenes del mismo en la cuenta de depósitos judiciales los rendimientos que reporte el demandado.\n\n{{/if_not_na}}{{#if_not_na nombre_establecimiento_comercio}}QUINTA. El embargo y secuestro de la unidad comercial denominada {{nombre_establecimiento_comercio}}, para lo cual se servirá el señor juez librar el despacho comisorio a la autoridad correspondiente y designar el secuestre encargado de continuar con el funcionamiento y administración del establecimiento.\n\n{{/if_not_na}}{{#if_not_na nombre_empleador}}SEXTA. El embargo y retención de los salarios devengados o por devengar por el demandado como empleado de {{nombre_empleador}}, correspondiente a la quinta parte (1/5) del excedente del salario mínimo. Sírvase señor juez mediante oficio comunicar al pagador o patrono del demandado sobre la medida, previniéndole consignar a órdenes del juzgado las sumas de dinero correspondientes.\n\n{{/if_not_na}}{{#if_not_na entidades_financieras}}SÉPTIMA. El embargo y retención de las sumas de dinero depositadas en cuenta corriente, de ahorros o que a cualquier otro título bancario o financiero posea el demandado en los siguientes establecimientos financieros:\n\n{{entidades_financieras}}\n\nSírvase señor juez librar los correspondientes oficios a los citados establecimientos crediticios, ordenando a sus gerentes o a quienes hagan sus veces, consignar a órdenes de su despacho las sumas retenidas.\n\n{{/if_not_na}}{{#if_not_na deudores_creditos}}OCTAVA. El embargo y retención de los créditos u otro derecho personal que tengan a cargo los siguientes deudores a favor del demandado:\n\n{{deudores_creditos}}\n\nSírvase señor juez librar los oficios correspondientes con el fin de notificar a los gerentes u ordenadores de gasto de la medida cautelar.\n\n{{/if_not_na}}Los anteriores bienes los denuncio bajo la gravedad del juramento como de propiedad del demandado. Para efecto de lo anterior, se presta caución legal en póliza de compañía de seguros autorizada.\n\nAtentamente,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
+  },
+  {
+    "id": "incidente-levantamiento-medidas-cautelares",
+    "title": "Incidente de Levantamiento de Medidas Cautelares por Tercero",
+    "subtitle": "Medidas Cautelares",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha del Incidente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juzgado",
+        "label": "Tipo de Juzgado (Ej: Civil del Circuito, Civil Municipal)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_incidentante",
+        "label": "Nombre Completo del Tercero Poseedor (quien solicita el levantamiento)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_incidentante",
+        "label": "Número de Cédula del Tercero Poseedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandante_proceso",
+        "label": "Nombre del Demandante en el Proceso Ejecutivo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado_proceso",
+        "label": "Nombre del Demandado en el Proceso Ejecutivo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_diligencia",
+        "label": "Fecha en que se Practicó la Diligencia de Embargo y Secuestro",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_diligencia",
+        "label": "Lugar donde se Practicó la Diligencia (dirección)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_bienes",
+        "label": "Descripción de los Bienes Secuestrados que Reclama el Tercero",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "nombre_secuestre",
+        "label": "Nombre del Secuestre Designado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "documentos_prueba_posesion",
+        "label": "Documentos que Prueban la Posesión del Tercero (facturas, contratos, etc.)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "testigos",
+        "label": "Nombres y Direcciones de los Testigos (mínimo 2)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "direccion_incidentante",
+        "label": "Dirección del Tercero Poseedor para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "INCIDENTE DE LEVANTAMIENTO DE MEDIDAS CAUTELARES POR UN TERCERO\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juzgado}}\nE. S. D.\n\nRef.: Proceso ejecutivo de {{nombre_demandante_proceso}} contra {{nombre_demandado_proceso}} — Incidente de levantamiento de medidas cautelares\n\n{{nombre_abogado}}, mayor de edad, domiciliado en {{ciudad_firma}}, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, actuando en mi calidad de apoderado especial del señor(a) {{nombre_incidentante}}, también mayor de edad, domiciliado en esta ciudad, según poder a mí conferido, por el presente escrito solicito a usted muy respetuosamente que previo el trámite incidental, con citación y audiencia de {{nombre_demandante_proceso}}, demandante en el proceso de la referencia, se decrete el Levantamiento del Embargo y Secuestro de los bienes muebles que mi representado tenía en posesión a nombre propio al momento de realizarse la diligencia judicial.\n\nHECHOS\n\n1°. A solicitud del señor {{nombre_demandante_proceso}}, se llevó a cabo el día {{fecha_diligencia}} la diligencia de embargo y secuestro de bienes muebles y enseres en {{lugar_diligencia}}.\n\n2°. Durante la práctica de la diligencia fueron incluidos en el inventario de bienes secuestrados los siguientes bienes que son de propiedad y posesión de mi representado:\n\n{{descripcion_bienes}}\n\n3°. Al momento de la práctica de la diligencia el señor {{nombre_incidentante}} se encontraba ausente del lugar, razón por la cual no tuvo oportunidad de oponerse legalmente al secuestro de los bienes como poseedor material.\n\n4°. El secuestre señor {{nombre_secuestre}}, en uso de sus facultades jurídicas, procedió a depositar los bienes relacionados.\n\n5°. El solicitante es poseedor material en nombre propio, en virtud de haber ejercido regular e ininterrumpidamente todas las facultades materiales que confiere el dominio sobre los bienes objeto de la medida cautelar.\n\n6°. Mi poderdante tiene pleno derecho a recuperar la posesión material de los bienes por él reclamados, y actúa dentro de la oportunidad procesal prevista por la ley.\n\nPRETENSIONES\n\n1ª. Que se fije el monto de la caución correspondiente, previamente a la iniciación y trámite del incidente formulado.\n\n2ª. Que se decrete el levantamiento del embargo y secuestro de los bienes muebles y enseres relacionados y plenamente identificados en los hechos.\n\n3ª. Que se condene al señor {{nombre_demandante_proceso}} a resarcir los perjuicios ocasionados con la práctica de la medida cautelar.\n\n4ª. Que se comunique mediante oficio al secuestre para que haga entrega material de los bienes declarados legalmente secuestrados.\n\n5ª. Que se condene a la parte demandante a pagar las costas y gastos de este incidente.\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 762, 775, 780 y 2220 del Código Civil; artículo 309 y concordantes del Código General del Proceso (Ley 1564 de 2012).\n\nCOMPETENCIA\n\nEs usted competente señor juez por estar conociendo del proceso ejecutivo principal (factor de conexión).\n\nPROCEDIMIENTO\n\nEl presente escrito debe tramitarse por el procedimiento incidental.\n\nPRUEBAS\n\nDocumentales:\n\n{{documentos_prueba_posesion}}\n\nTestimoniales:\n\nSolicito que se cite y haga comparecer a las personas que a continuación se señalan, para que declaren bajo la gravedad del juramento sobre la posesión que ha ejercido el incidentante sobre los bienes secuestrados:\n\n{{testigos}}\n\nNOTIFICACIONES\n\n1. El señor {{nombre_incidentante}} recibe notificaciones en {{direccion_incidentante}}.\n2. A las partes en el proceso, en los lugares indicados en el libelo introductorio y contestación de la demanda.\n3. El suscrito recibe notificaciones en {{direccion_abogado}}.\n\nAtentamente,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
+  },
+  {
+    "id": "terminacion-proceso-ejecutivo-pago",
+    "title": "Terminación del Proceso Ejecutivo por Pago",
+    "subtitle": "Medidas Cautelares",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Solicitud",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juzgado",
+        "label": "Tipo de Juzgado (Ej: Civil del Circuito, Civil Municipal)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado del Demandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutante",
+        "label": "Nombre del Ejecutante (demandante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutado",
+        "label": "Nombre del Ejecutado (demandado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_pago",
+        "label": "Fecha en que se Realizó el Pago Total",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_pago",
+        "label": "Descripción del Pago (valor, forma de pago, recibo)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "hay_embargo_remanentes",
+        "label": "¿Existen Órdenes de Embargo de Remanentes de Otros Juzgados? (Sí/No)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "TERMINACIÓN DEL PROCESO EJECUTIVO POR PAGO\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juzgado}}\nE. S. D.\n\nRef.: Proceso ejecutivo de {{nombre_ejecutante}} contra {{nombre_ejecutado}}\n\n{{nombre_abogado}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, obrando en mi calidad de apoderado judicial del señor {{nombre_ejecutante}}, demandante en el proceso de la referencia, hallándome investido con la facultad expresa para recibir según poder especial que acompañé con la presentación de la demanda, solicito a usted respetuosamente la Terminación del proceso por pago total de la obligación demandada y las costas.\n\nHECHOS Y FUNDAMENTOS\n\nEl día {{fecha_pago}}, el ejecutado {{nombre_ejecutado}} procedió al pago total de la obligación demandada y las costas del proceso, según consta en el siguiente comprobante de pago expedido en nombre de mi mandante:\n\n{{descripcion_pago}}\n\nEn consecuencia señor juez, solicito:\n\n1°. Declarar terminado el presente proceso ejecutivo por pago total de la obligación demandada.\n\n2°. Ordenar, sin lugar a costas adicionales, el levantamiento de las medidas cautelares decretadas y practicadas sobre los bienes del demandado, toda vez que {{hay_embargo_remanentes}}.\n\n3°. Ordenar el archivo del expediente.\n\nNOTIFICACIONES\n\nEl suscrito recibe notificaciones en {{direccion_abogado}}.\n\nAtentamente,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
+  },
+  {
+    "id": "acumulacion-procesos-ejecutivos",
+    "title": "Acumulación de Procesos Ejecutivos",
+    "subtitle": "Incidentes y Recursos",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Solicitud",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juzgado",
+        "label": "Tipo y Número del Juzgado ante quien se Presenta (Ej: Primero Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo del Poderdante (quien solicita la acumulación)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Número de Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutado_comun",
+        "label": "Nombre del Ejecutado Común (demandado en ambos procesos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "juzgado_proceso_acumular",
+        "label": "Juzgado donde Cursa el Proceso que se quiere Acumular (Ej: Segundo Civil Municipal)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_proceso_1",
+        "label": "Descripción del Proceso en Este Juzgado (partes, título, valor)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "descripcion_proceso_2",
+        "label": "Descripción del Proceso a Acumular (partes, título, valor)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "estado_procesos",
+        "label": "Estado Actual de Ambos Procesos (mandamientos notificados, bienes embargados, etc.)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "ACUMULACIÓN DE PROCESOS EJECUTIVOS\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juzgado}}\nE. S. D.\n\nRef.: Proceso ejecutivo de {{nombre_poderdante}} contra {{nombre_ejecutado_comun}}\n\n{{nombre_abogado}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, en mi calidad de apoderado judicial del señor {{nombre_poderdante}}, persona mayor de edad, solicito a usted respetuosamente que, previos los trámites de ley, se sirva decretar la Acumulación del proceso ejecutivo singular que se adelanta contra {{nombre_ejecutado_comun}} y que cursa en el Juzgado {{juzgado_proceso_acumular}}, dentro del proceso de la referencia, con base en lo siguiente:\n\nCAUSAL DE ACUMULACIÓN\n\nMe fundamento en las causales de acumulación previstas en el Código General del Proceso (Ley 1564 de 2012), toda vez que las pretensiones formuladas en ambos procesos habrían podido acumularse en una sola demanda ejecutiva singular, teniendo en cuenta además que el demandado es común en ambos procesos.\n\nHECHOS\n\n1°. {{descripcion_proceso_1}}\n\n2°. {{descripcion_proceso_2}}\n\n3°. Como puede verse, en ambos procesos el demandado es el mismo señor {{nombre_ejecutado_comun}}.\n\n4°. {{estado_procesos}}\n\nFUNDAMENTOS DE DERECHO\n\nEn derecho me fundamento en los artículos 148, 149, 150 y concordantes del Código General del Proceso (Ley 1564 de 2012).\n\nCOMPETENCIA\n\nEs usted competente para conocer de esta acumulación de procesos ejecutivos, puesto que conoce del proceso más antiguo o en el cual primero se practicó el embargo de bienes.\n\nTRÁMITE\n\nEl procedimiento que debe imprimírsele a esta acumulación es el del trámite incidental previsto en el Código General del Proceso.\n\nPRUEBAS\n\n1. La actuación surtida tanto en el proceso ejecutivo que adelanta su despacho como en el que se adelanta ante el Juzgado {{juzgado_proceso_acumular}}.\n\n2. Certificación del Juzgado {{juzgado_proceso_acumular}} sobre la existencia del proceso que se pretende acumular, el estado en que se encuentra, así como la fecha de notificación del mandamiento ejecutivo.\n\nNOTIFICACIONES\n\nEl suscrito recibe notificaciones en {{direccion_abogado}}. A las partes en las direcciones suministradas en cada uno de los procesos.\n\nAtentamente,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
+  },
+  {
+    "id": "recurso-queja-auto-apelable",
+    "title": "Recurso de Queja por Denegación de Auto Apelable",
+    "subtitle": "Incidentes y Recursos",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha del Recurso",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "juzgado_superior",
+        "label": "Nombre del Juzgado Superior ante quien se Presenta el Recurso (Ej: Juzgado Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo del Poderdante (demandante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado",
+        "label": "Nombre del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "juzgado_inferior",
+        "label": "Nombre del Juzgado Inferior que Denegó la Apelación (Ej: Juzgado Primero Civil Municipal)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_auto_impugnado",
+        "label": "Fecha del Auto que se Quería Apelar",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_auto_impugnado",
+        "label": "Descripción del Auto que se Quería Apelar (qué decidió)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "fecha_negacion_apelacion",
+        "label": "Fecha en que el Juzgado Negó el Recurso de Apelación",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fundamentos_queja",
+        "label": "Fundamentos por los que la Apelación Debió Concederse (por qué el auto es apelable)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "RECURSO DE QUEJA POR DENEGACIÓN DE AUTO APELABLE\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{juzgado_superior}}\nE. S. D.\n\nRef.: Proceso de {{nombre_poderdante}} contra {{nombre_demandado}}\n\n{{nombre_abogado}}, mayor de edad, domiciliado en {{ciudad_firma}}, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, apoderado judicial del señor {{nombre_poderdante}}, demandante dentro del proceso de la referencia, por el presente escrito manifiesto a usted respetuosamente que interpongo Recurso de Queja contra el proveído mediante el cual el Juzgado {{juzgado_inferior}} denegó el Recurso de Apelación interpuesto contra el auto de {{fecha_auto_impugnado}}.\n\nHECHOS\n\n1°. El Juzgado {{juzgado_inferior}} profirió el auto de fecha {{fecha_auto_impugnado}}, mediante el cual: {{descripcion_auto_impugnado}}\n\n2°. Dentro del término de ejecutoria de dicho auto se interpuso recurso de reposición y en subsidio el de apelación.\n\n3°. Mediante proveído de {{fecha_negacion_apelacion}}, el juzgado resolvió desfavorablemente la reposición y denegó la apelación interpuesta.\n\n4°. Contra esta última providencia se interpuso recurso de reposición y en subsidio se solicitó la expedición de copias del auto impugnado para sustentar el presente recurso de queja.\n\n5°. Pagadas oportunamente las copias, fueron expedidas y entregadas y hacen parte de este recurso.\n\nFUNDAMENTOS DE DERECHO\n\nEl recurso de queja impetrado busca ante esa instancia que se declare mal denegado el recurso de apelación interpuesto y que en su lugar se conceda el recurso de alzada, por las siguientes razones:\n\n{{fundamentos_queja}}\n\nEl artículo 321 del Código General del Proceso (Ley 1564 de 2012) establece los autos apelables, dentro de los cuales se encuentra el que es objeto del presente recurso. En este orden de ideas, es evidente que el juez de primera instancia desconoció la norma que señala como apelable el auto en cuestión, y por tanto debe subsanarse esa anomalía concediéndose el recurso de apelación.\n\nNOTIFICACIONES\n\nEl suscrito recibe notificaciones en {{direccion_abogado}}.\n\nAtentamente,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
+  },
+  {
+    "id": "incidente-nulidad-remate",
+    "title": "Incidente de Nulidad del Remate",
+    "subtitle": "Incidentes y Recursos",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha del Incidente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_juzgado",
+        "label": "Tipo y Número del Juzgado (Ej: Primero Civil del Circuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutado",
+        "label": "Nombre Completo del Demandado (ejecutado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_ejecutado",
+        "label": "Número de Cédula del Ejecutado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_ejecutante",
+        "label": "Nombre del Demandante (ejecutante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_remate",
+        "label": "Fecha Señalada para el Remate",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ubicacion_bienes_rematados",
+        "label": "Ubicación de los Bienes Rematados (dirección)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "causal_nulidad",
+        "label": "Causal de Nulidad que se Invoca (describa el incumplimiento de formalidades)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "nombre_periodico",
+        "label": "Nombre del Periódico donde se Publicó el Aviso de Remate",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_publicacion",
+        "label": "Fecha en que se Publicó el Aviso en el Periódico",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dias_anticipacion",
+        "label": "Días de Anticipación con que se Publicó el Aviso (Ej: 2 días)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pruebas_nulidad",
+        "label": "Pruebas que Aporta para Demostrar la Nulidad",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "direccion_ejecutante",
+        "label": "Dirección del Ejecutante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_ejecutado",
+        "label": "Dirección del Ejecutado para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "INCIDENTE DE NULIDAD DEL REMATE\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juzgado}}\nE. S. D.\n\nRef.: Proceso ejecutivo de {{nombre_ejecutante}} contra {{nombre_ejecutado}} — Incidente de nulidad del remate\n\n{{nombre_abogado}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, obrando en mi calidad de apoderado judicial del demandado {{nombre_ejecutado}}, según poder a mí conferido, solicito a usted por el presente escrito y con citación y audiencia del señor {{nombre_ejecutante}}, como parte actora, se tramite y resuelva favorablemente este incidente de nulidad del remate.\n\nDECLARACIONES SOLICITADAS\n\n1ª. Declarar la nulidad de la diligencia de remate de los bienes embargados y secuestrados, ubicados en {{ubicacion_bienes_rematados}}.\n\n2ª. Condenar a la parte demandante al pago de las costas y gastos de este incidente.\n\nCAUSAL DE NULIDAD\n\nFundamento el presente incidente en la causal de nulidad por falta de las formalidades prescritas para hacer el remate de bienes, específicamente:\n\n{{causal_nulidad}}\n\nHECHOS\n\n1°. El juez del conocimiento señaló como fecha para el remate de los bienes embargados y secuestrados el día {{fecha_remate}}.\n\n2°. El aviso mediante el cual se anunció al público el remate de dichos bienes apareció publicado en el periódico «{{nombre_periodico}}» el día {{fecha_publicacion}}, es decir, únicamente {{dias_anticipacion}} antes de la fecha señalada para efectuar la diligencia de remate.\n\n3°. Una simple comparación de fechas demuestra claramente que se desconoció el mandato imperativo del Código General del Proceso, que ordena que el aviso se publique con antelación no inferior a cinco días a la fecha señalada para el remate, en un periódico de amplia circulación en el lugar.\n\nFUNDAMENTOS DE DERECHO\n\nEn derecho me fundamento en los artículos 133, 134, 135 y concordantes del Código General del Proceso (Ley 1564 de 2012) relativos a las nulidades procesales, y las disposiciones sobre el remate de bienes.\n\nCOMPETENCIA\n\nEs usted competente señor juez, por estar conociendo del proceso principal.\n\nTRÁMITE\n\nDebe adelantarse por el trámite incidental previsto en el Código General del Proceso.\n\nPRUEBAS\n\n{{pruebas_nulidad}}\n\nNOTIFICACIONES\n\nDemandante: {{direccion_ejecutante}}\nDemandado: {{direccion_ejecutado}}\nEl suscrito: {{direccion_abogado}}\n\nAtentamente,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   }
 ]
