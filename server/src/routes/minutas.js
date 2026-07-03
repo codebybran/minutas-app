@@ -33,6 +33,7 @@ const SUBTITLE_ORDER_ADMINISTRATIVO = [
 const SUBTITLE_ORDER_CONSTITUCIONAL = [
   'Acciones de Tutela', 'Acciones Populares y de Cumplimiento', 'Control Constitucional'
 ]
+const SUBTITLE_ORDER_PROCESAL_LABORAL = ['Procesos Laborales']
 const SUBTITLE_ORDER_PROCESAL_CIVIL = [
   'Disposiciones Generales', 'Procesos Declarativos', 'Procesos Ejecutivos',
   'Medidas Cautelares', 'Incidentes y Recursos'
@@ -251,6 +252,7 @@ router.get('/', (req, res) => {
     const administrativoPath = path.join(__dirname, '../../data/templates/minutas-derecho-administrativo.json')
     const constitucionalPath = path.join(__dirname, '../../data/templates/minutas-derecho-constitucional.json')
     const procesalCivilPath = path.join(__dirname, '../../data/templates/minutas-derecho-procesal-civil.json')
+  const procesalLaboralPath = path.join(__dirname, '../../data/templates/minutas-derecho-procesal-laboral.json')
 
     const minutasCivil = JSON.parse(fs.readFileSync(civilPath, 'utf8'))
     const minutasFamilia = JSON.parse(fs.readFileSync(familiaPath, 'utf8'))
@@ -260,6 +262,7 @@ router.get('/', (req, res) => {
     const minutasAdministrativo = JSON.parse(fs.readFileSync(administrativoPath, 'utf8'))
     const minutasConstitucional = JSON.parse(fs.readFileSync(constitucionalPath, 'utf8'))
     const minutasProcesalCivil = JSON.parse(fs.readFileSync(procesalCivilPath, 'utf8'))
+  const minutasProcesalLaboral = JSON.parse(fs.readFileSync(procesalLaboralPath, 'utf8'))
 
     const categories = [
       {
@@ -318,6 +321,13 @@ router.get('/', (req, res) => {
           tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
         }))
       }
+    ,{
+      id: 'derecho-procesal-laboral', name: 'Derecho Procesal Laboral',
+      minutas: ordenarMinutas(minutasProcesalLaboral, SUBTITLE_ORDER_PROCESAL_LABORAL).map(m => ({
+        id: m.id, title: m.title, subtitle: m.subtitle,
+        tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+      }))
+    }
     ]
     res.json(categories)
   } catch (err) {
@@ -342,6 +352,8 @@ router.get('/:categoryId/:minutaId', (req, res) => {
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-administrativo.json')
     else if (categoryId === 'derecho-constitucional')
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-constitucional.json')
+    else if (categoryId === 'derecho-procesal-laboral')
+    filePath = path.join(__dirname, '../../data/templates/minutas-derecho-procesal-laboral.json')
     else if (categoryId === 'derecho-procesal-civil')
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-procesal-civil.json')
     else
