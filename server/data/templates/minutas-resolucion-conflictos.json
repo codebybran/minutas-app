@@ -1,0 +1,137 @@
+[
+  {
+    "id": "acta-conciliacion-inspeccion-trabajo",
+    "title": "Acta de Conciliación ante Inspección de Trabajo",
+    "subtitle": "Conciliación",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha del Acta", "type": "text", "required": true},
+      {"name": "nombre_inspector", "label": "Nombre del Inspector de Trabajo", "type": "text", "required": true},
+      {"name": "numero_acta", "label": "Número del Acta de Conciliación", "type": "text", "required": true},
+      {"name": "nombre_trabajador", "label": "Nombre Completo del Trabajador", "type": "text", "required": true},
+      {"name": "cedula_trabajador", "label": "Número de Cédula del Trabajador", "type": "text", "required": true},
+      {"name": "nombre_empleador", "label": "Nombre o Razón Social del Empleador", "type": "text", "required": true},
+      {"name": "nit_empleador", "label": "NIT o Cédula del Empleador", "type": "text", "required": true},
+      {"name": "representante_empleador", "label": "Nombre del Representante del Empleador", "type": "text", "required": true},
+      {"name": "fecha_inicio_contrato", "label": "Fecha de Inicio del Contrato de Trabajo", "type": "text", "required": true},
+      {"name": "fecha_fin_contrato", "label": "Fecha de Terminación del Contrato", "type": "text", "required": true},
+      {"name": "cargo_trabajador", "label": "Cargo Desempeñado por el Trabajador", "type": "text", "required": true},
+      {"name": "salario_trabajador", "label": "Último Salario Devengado", "type": "text", "required": true},
+      {"name": "acuerdo_conciliacion", "label": "Acuerdo al que Llegaron las Partes (describa detalladamente)", "type": "textarea", "required": true},
+      {"name": "valor_conciliado", "label": "Valor Total Conciliado en Letras y Números", "type": "text", "required": true},
+      {"name": "forma_pago", "label": "Forma de Pago Acordada", "type": "text", "required": true}
+    ],
+    "template": "ACTA DE CONCILIACIÓN\nINSPECCIÓN DE TRABAJO DE {{ciudad_firma}}\n\nActa N°. {{numero_acta}}\n{{ciudad_firma}}, {{fecha_firma}}\n\nEn las instalaciones de la Inspección de Trabajo de {{ciudad_firma}}, siendo las horas de la fecha indicada, el Inspector de Trabajo {{nombre_inspector}}, con el fin de adelantar la audiencia de conciliación, hace comparecer a las siguientes partes:\n\nPARTE TRABAJADORA: {{nombre_trabajador}}, identificado con cédula de ciudadanía N°. {{cedula_trabajador}}.\n\nPARTE EMPLEADORA: {{nombre_empleador}}, con NIT o cédula N°. {{nit_empleador}}, representada por {{representante_empleador}}.\n\nANTECEDENTES\n\nEl señor {{nombre_trabajador}} prestó sus servicios a {{nombre_empleador}} desde el {{fecha_inicio_contrato}} hasta el {{fecha_fin_contrato}}, desempeñando el cargo de {{cargo_trabajador}}, devengando un salario de {{salario_trabajador}} mensual.\n\nACUERDO DE CONCILIACIÓN\n\nLas partes, de común acuerdo y en pleno uso de sus facultades, llegaron al siguiente acuerdo:\n\n{{acuerdo_conciliacion}}\n\nVALOR TOTAL CONCILIADO: {{valor_conciliado}}\n\nFORMA DE PAGO: {{forma_pago}}\n\nLas partes declaran que con el presente acuerdo quedan a paz y salvo por todo concepto derivado de la relación laboral, y que no tienen ninguna otra reclamación pendiente entre sí.\n\nEn constancia se firma la presente acta de conciliación.\n\n\n____________________________\n{{nombre_trabajador}}\nC.C. N°. {{cedula_trabajador}}\nTrabajador\n\n\n____________________________\n{{representante_empleador}}\nRepresentante de {{nombre_empleador}}\nNIT: {{nit_empleador}}\n\n\n____________________________\n{{nombre_inspector}}\nInspector de Trabajo"
+  },
+  {
+    "id": "poder-conciliacion",
+    "title": "Poder para Conciliación",
+    "subtitle": "Conciliación",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha del Poder", "type": "text", "required": true},
+      {"name": "nombre_poderdante", "label": "Nombre Completo de quien Otorga el Poder", "type": "text", "required": true},
+      {"name": "cedula_poderdante", "label": "Número de Cédula del Poderdante", "type": "text", "required": true},
+      {"name": "ciudad_cedula_poderdante", "label": "Ciudad de Expedición de la Cédula", "type": "text", "required": true},
+      {"name": "nombre_apoderado", "label": "Nombre Completo del Apoderado", "type": "text", "required": true},
+      {"name": "cedula_apoderado", "label": "Número de Cédula del Apoderado", "type": "text", "required": true},
+      {"name": "tarjeta_profesional_apoderado", "label": "Número de Tarjeta Profesional del Apoderado", "type": "text", "required": true},
+      {"name": "tipo_conciliacion", "label": "Tipo de Conciliación (Ej: laboral, civil, familiar, comercial)", "type": "text", "required": true},
+      {"name": "contraparte", "label": "Nombre de la Contraparte en la Conciliación", "type": "text", "required": true},
+      {"name": "asunto_conciliacion", "label": "Asunto de la Conciliación (Ej: cobro de acreencias laborales, indemnización de perjuicios)", "type": "textarea", "required": true},
+      {"name": "direccion_apoderado", "label": "Dirección del Apoderado para Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "PODER ESPECIAL PARA CONCILIACIÓN\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nYo, {{nombre_poderdante}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_poderdante}} expedida en {{ciudad_cedula_poderdante}}, otorgo poder especial, amplio y suficiente al doctor {{nombre_apoderado}}, con cédula N°. {{cedula_apoderado}} y Tarjeta Profesional N°. {{tarjeta_profesional_apoderado}}, para que en mi nombre y representación adelante y suscriba acuerdo de conciliación de carácter {{tipo_conciliacion}} con {{contraparte}}, sobre el siguiente asunto:\n\n{{asunto_conciliacion}}\n\nMi apoderado queda facultado para negociar, conciliar, transigir, suscribir el acuerdo conciliatorio y realizar todos los actos necesarios para el éxito de la conciliación, incluyendo hacer concesiones cuando lo estime conveniente para mis intereses.\n\nDel señor conciliador,\n\n\n____________________________\n{{nombre_poderdante}}\nC.C. N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}\nPoderdante\n\nAcepto el poder,\n\n\n____________________________\n{{nombre_apoderado}}\nC.C. N°. {{cedula_apoderado}}\nT.P. N°. {{tarjeta_profesional_apoderado}}\nDirección: {{direccion_apoderado}}"
+  },
+  {
+    "id": "solicitud-conciliacion",
+    "title": "Solicitud de Conciliación",
+    "subtitle": "Conciliación",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha de la Solicitud", "type": "text", "required": true},
+      {"name": "centro_conciliacion", "label": "Centro de Conciliación o Entidad ante quien se Presenta", "type": "text", "required": true},
+      {"name": "nombre_solicitante", "label": "Nombre Completo del Solicitante", "type": "text", "required": true},
+      {"name": "cedula_solicitante", "label": "Número de Cédula del Solicitante", "type": "text", "required": true},
+      {"name": "direccion_solicitante", "label": "Dirección del Solicitante", "type": "text", "required": true},
+      {"name": "nombre_convocado", "label": "Nombre o Razón Social del Convocado", "type": "text", "required": true},
+      {"name": "direccion_convocado", "label": "Dirección del Convocado para Notificación", "type": "text", "required": true},
+      {"name": "tipo_conflicto", "label": "Tipo de Conflicto (Ej: laboral, civil, comercial, familiar)", "type": "text", "required": true},
+      {"name": "descripcion_conflicto", "label": "Descripción del Conflicto y Pretensiones (qué solicita)", "type": "textarea", "required": true},
+      {"name": "cuantia", "label": "Cuantía Estimada del Conflicto", "type": "text", "required": true},
+      {"name": "pruebas", "label": "Pruebas que Aporta", "type": "textarea", "required": true}
+    ],
+    "template": "SOLICITUD DE CONCILIACIÓN\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nConciliador del {{centro_conciliacion}}\nCiudad\n\nRef.: Solicitud de conciliación — {{nombre_solicitante}} vs. {{nombre_convocado}}\n\nYo, {{nombre_solicitante}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_solicitante}}, domiciliado en {{direccion_solicitante}}, respetuosamente solicito citar a audiencia de conciliación a {{nombre_convocado}}, con domicilio en {{direccion_convocado}}, sobre el siguiente conflicto de naturaleza {{tipo_conflicto}}:\n\nDESCRIPCIÓN DEL CONFLICTO Y PRETENSIONES\n\n{{descripcion_conflicto}}\n\nCUANTÍA ESTIMADA\n\n{{cuantia}}\n\nPRUEBAS\n\n{{pruebas}}\n\nSolicito señalar fecha y hora para la audiencia de conciliación y citar al convocado en la dirección indicada.\n\nAtentamente,\n\n\n____________________________\n{{nombre_solicitante}}\nC.C. N°. {{cedula_solicitante}}"
+  },
+  {
+    "id": "compromiso-arbitramento",
+    "title": "Compromiso de Arbitramento",
+    "subtitle": "Arbitramento",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha del Compromiso", "type": "text", "required": true},
+      {"name": "nombre_parte1", "label": "Nombre o Razón Social de la Primera Parte", "type": "text", "required": true},
+      {"name": "representante_parte1", "label": "Nombre del Representante de la Primera Parte", "type": "text", "required": true},
+      {"name": "cedula_representante1", "label": "Cédula del Representante de la Primera Parte", "type": "text", "required": true},
+      {"name": "nombre_parte2", "label": "Nombre o Razón Social de la Segunda Parte", "type": "text", "required": true},
+      {"name": "representante_parte2", "label": "Nombre del Representante de la Segunda Parte", "type": "text", "required": true},
+      {"name": "cedula_representante2", "label": "Cédula del Representante de la Segunda Parte", "type": "text", "required": true},
+      {"name": "descripcion_controversia", "label": "Descripción de la Controversia que se Somete a Arbitramento", "type": "textarea", "required": true},
+      {"name": "centro_arbitraje", "label": "Centro de Arbitraje donde se Tramitará", "type": "text", "required": true},
+      {"name": "numero_arbitros", "label": "Número de Árbitros (Ej: uno, tres)", "type": "text", "required": true},
+      {"name": "tipo_arbitraje", "label": "Tipo de Arbitraje (Ej: en derecho, en equidad, técnico)", "type": "text", "required": true},
+      {"name": "ciudad_arbitraje", "label": "Ciudad donde se Realizará el Arbitraje", "type": "text", "required": true}
+    ],
+    "template": "COMPROMISO DE ARBITRAMENTO\n\nEntre los suscritos, {{representante_parte1}}, identificado con cédula N°. {{cedula_representante1}}, actuando en nombre de {{nombre_parte1}}, y {{representante_parte2}}, identificado con cédula N°. {{cedula_representante2}}, actuando en nombre de {{nombre_parte2}}, hemos convenido en celebrar el presente Compromiso de Arbitramento en {{ciudad_firma}}, el {{fecha_firma}}, en los siguientes términos:\n\nPRIMERO — CONTROVERSIA\n\nLas partes someten a arbitramento la siguiente controversia:\n\n{{descripcion_controversia}}\n\nSEGUNDO — CENTRO DE ARBITRAJE\n\nEl arbitraje se tramitará ante el {{centro_arbitraje}}, con sede en {{ciudad_arbitraje}}.\n\nTERCERO — ÁRBITROS\n\nEl tribunal estará integrado por {{numero_arbitros}} árbitro(s), designado(s) de conformidad con el reglamento del centro de arbitraje.\n\nCUARTO — TIPO DE ARBITRAJE\n\nEl arbitraje será {{tipo_arbitraje}}.\n\nQUINTO — REGLAMENTO\n\nEl proceso se regirá por la Ley 1563 de 2012 y el reglamento del {{centro_arbitraje}}.\n\nEn constancia se firma en {{ciudad_firma}} el {{fecha_firma}}.\n\n\n____________________________\n{{representante_parte1}}\nC.C. N°. {{cedula_representante1}}\nEn nombre de {{nombre_parte1}}\n\n\n____________________________\n{{representante_parte2}}\nC.C. N°. {{cedula_representante2}}\nEn nombre de {{nombre_parte2}}"
+  },
+  {
+    "id": "convocatoria-tribunal-arbitramento-administrativo",
+    "title": "Convocatoria Tribunal de Arbitramento — Contratación Administrativa",
+    "subtitle": "Arbitramento",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha de la Convocatoria", "type": "text", "required": true},
+      {"name": "centro_arbitraje", "label": "Centro de Arbitraje ante quien se Presenta", "type": "text", "required": true},
+      {"name": "nombre_convocante", "label": "Nombre o Razón Social del Convocante", "type": "text", "required": true},
+      {"name": "representante_convocante", "label": "Nombre del Representante Legal del Convocante", "type": "text", "required": true},
+      {"name": "cedula_representante_convocante", "label": "Cédula del Representante del Convocante", "type": "text", "required": true},
+      {"name": "nombre_convocado", "label": "Nombre o Razón Social del Convocado (entidad estatal)", "type": "text", "required": true},
+      {"name": "representante_convocado", "label": "Nombre del Representante Legal del Convocado", "type": "text", "required": true},
+      {"name": "descripcion_contrato", "label": "Descripción del Contrato Estatal (número, objeto, fecha)", "type": "textarea", "required": true},
+      {"name": "descripcion_controversia", "label": "Descripción de la Controversia", "type": "textarea", "required": true},
+      {"name": "pretensiones", "label": "Pretensiones del Convocante", "type": "textarea", "required": true},
+      {"name": "cuantia", "label": "Cuantía de las Pretensiones", "type": "text", "required": true},
+      {"name": "pruebas", "label": "Pruebas que Aporta", "type": "textarea", "required": true},
+      {"name": "direccion_convocante", "label": "Dirección del Convocante para Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "CONVOCATORIA DE TRIBUNAL DE ARBITRAMENTO\nCONTRATACIÓN ADMINISTRATIVA\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nDirector del {{centro_arbitraje}}\nCiudad\n\nRef.: Convocatoria de tribunal de arbitramento — {{nombre_convocante}} vs. {{nombre_convocado}}\n\n{{representante_convocante}}, identificado con cédula N°. {{cedula_representante_convocante}}, actuando como representante legal de {{nombre_convocante}}, respetuosamente convoco al tribunal de arbitramento para dirimir la controversia con {{nombre_convocado}}, representado por {{representante_convocado}}.\n\nCONTRATO\n\n{{descripcion_contrato}}\n\nCONTROVERSIA\n\n{{descripcion_controversia}}\n\nPRETENSIONES\n\n{{pretensiones}}\n\nCUANTÍA\n\n{{cuantia}}\n\nPRUEBAS\n\n{{pruebas}}\n\nFUNDAMENTO DE LA CLÁUSULA COMPROMISORIA\n\nEl contrato contiene cláusula compromisoria que somete las controversias al arbitramento. La presente convocatoria se presenta de conformidad con la Ley 1563 de 2012 y el reglamento del {{centro_arbitraje}}.\n\nNOTIFICACIONES\n\nEl convocante recibirá notificaciones en {{direccion_convocante}}.\n\nAtentamente,\n\n\n____________________________\n{{representante_convocante}}\nRepresentante Legal de {{nombre_convocante}}"
+  },
+  {
+    "id": "convocatoria-tribunal-arbitramento-comercial",
+    "title": "Convocatoria Tribunal de Arbitramento — Materia Comercial",
+    "subtitle": "Arbitramento",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha de la Convocatoria", "type": "text", "required": true},
+      {"name": "centro_arbitraje", "label": "Centro de Arbitraje ante quien se Presenta", "type": "text", "required": true},
+      {"name": "nombre_convocante", "label": "Nombre o Razón Social del Convocante", "type": "text", "required": true},
+      {"name": "representante_convocante", "label": "Nombre del Representante Legal del Convocante", "type": "text", "required": true},
+      {"name": "cedula_representante_convocante", "label": "Cédula del Representante del Convocante", "type": "text", "required": true},
+      {"name": "nombre_convocado", "label": "Nombre o Razón Social del Convocado", "type": "text", "required": true},
+      {"name": "representante_convocado", "label": "Nombre del Representante Legal del Convocado", "type": "text", "required": true},
+      {"name": "descripcion_relacion_comercial", "label": "Descripción de la Relación Comercial (contrato, negocio, etc.)", "type": "textarea", "required": true},
+      {"name": "descripcion_controversia", "label": "Descripción de la Controversia", "type": "textarea", "required": true},
+      {"name": "pretensiones", "label": "Pretensiones del Convocante", "type": "textarea", "required": true},
+      {"name": "cuantia", "label": "Cuantía de las Pretensiones", "type": "text", "required": true},
+      {"name": "pruebas", "label": "Pruebas que Aporta", "type": "textarea", "required": true},
+      {"name": "direccion_convocante", "label": "Dirección del Convocante para Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "CONVOCATORIA DE TRIBUNAL DE ARBITRAMENTO\nMATERIA COMERCIAL\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nDirector del {{centro_arbitraje}}\nCiudad\n\nRef.: Convocatoria de tribunal de arbitramento — {{nombre_convocante}} vs. {{nombre_convocado}}\n\n{{representante_convocante}}, identificado con cédula N°. {{cedula_representante_convocante}}, actuando como representante legal de {{nombre_convocante}}, respetuosamente convoco al tribunal de arbitramento para dirimir la controversia comercial con {{nombre_convocado}}, representado por {{representante_convocado}}.\n\nRELACIÓN COMERCIAL\n\n{{descripcion_relacion_comercial}}\n\nCONTROVERSIA\n\n{{descripcion_controversia}}\n\nPRETENSIONES\n\n{{pretensiones}}\n\nCUANTÍA\n\n{{cuantia}}\n\nPRUEBAS\n\n{{pruebas}}\n\nFUNDAMENTO DE LA CLÁUSULA COMPROMISORIA\n\nLas partes pactaron cláusula compromisoria que somete sus controversias al arbitramento. La presente convocatoria se presenta de conformidad con la Ley 1563 de 2012 y el reglamento del {{centro_arbitraje}}.\n\nNOTIFICACIONES\n\nEl convocante recibirá notificaciones en {{direccion_convocante}}.\n\nAtentamente,\n\n\n____________________________\n{{representante_convocante}}\nRepresentante Legal de {{nombre_convocante}}"
+  }
+]

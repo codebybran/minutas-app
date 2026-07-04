@@ -1,0 +1,219 @@
+[
+  {
+    "id": "poder-defensa-penal",
+    "title": "Poder para Ejercer la Defensa Penal",
+    "subtitle": "Defensa Penal",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha del Poder", "type": "text", "required": true},
+      {"name": "nombre_poderdante", "label": "Nombre Completo del Sindicado o Imputado (quien otorga el poder)", "type": "text", "required": true},
+      {"name": "cedula_poderdante", "label": "Número de Cédula del Sindicado", "type": "text", "required": true},
+      {"name": "ciudad_cedula_poderdante", "label": "Ciudad de Expedición de la Cédula", "type": "text", "required": true},
+      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado Defensor", "type": "text", "required": true},
+      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
+      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
+      {"name": "tarjeta_profesional_abogado", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
+      {"name": "delito_imputado", "label": "Delito por el que se le Investiga o Juzga (Ej: hurto calificado, lesiones personales)", "type": "text", "required": true},
+      {"name": "proceso_referencia", "label": "Número del Proceso o Radicado (si lo conoce, sino escriba: por determinar)", "type": "text", "required": true},
+      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "PODER ESPECIAL PARA EJERCER LA DEFENSA PENAL\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nYo, {{nombre_poderdante}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_poderdante}} expedida en {{ciudad_cedula_poderdante}}, por medio del presente escrito otorgo poder especial, amplio y suficiente al doctor {{nombre_abogado}}, abogado inscrito con cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}} y Tarjeta Profesional N°. {{tarjeta_profesional_abogado}} del Consejo Superior de la Judicatura, para que en mi nombre y representación ejerza mi defensa técnica dentro del proceso penal que se adelanta en mi contra por el delito de {{delito_imputado}}, radicado bajo el N°. {{proceso_referencia}}.\n\nMi apoderado queda facultado para intervenir en todas las etapas del proceso, interponer recursos, solicitar pruebas, participar en audiencias, conciliar cuando sea procedente, y en general realizar todos los actos procesales necesarios para garantizar mi derecho a la defensa.\n\nDel señor juez,\n\n\n____________________________\n{{nombre_poderdante}}\nC.C. N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}\nSindicado / Imputado\n\nAcepto el poder,\n\n\n____________________________\n{{nombre_abogado}}\nC.C. N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}\nT.P. N°. {{tarjeta_profesional_abogado}}\nAbogado Defensor\nDirección: {{direccion_abogado}}"
+  },
+  {
+    "id": "denuncia-penal",
+    "title": "Denuncia Penal",
+    "subtitle": "Defensa Penal",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha de la Denuncia", "type": "text", "required": true},
+      {"name": "nombre_denunciante", "label": "Nombre Completo del Denunciante", "type": "text", "required": true},
+      {"name": "cedula_denunciante", "label": "Número de Cédula del Denunciante", "type": "text", "required": true},
+      {"name": "ciudad_cedula_denunciante", "label": "Ciudad de Expedición de la Cédula", "type": "text", "required": true},
+      {"name": "direccion_denunciante", "label": "Dirección del Denunciante", "type": "text", "required": true},
+      {"name": "nombre_denunciado", "label": "Nombre del Denunciado (si se conoce, sino escriba: persona o personas indeterminadas)", "type": "text", "required": true},
+      {"name": "delito_denunciado", "label": "Delito que se Denuncia (Ej: hurto, lesiones personales, estafa, amenazas)", "type": "text", "required": true},
+      {"name": "fecha_hechos", "label": "Fecha en que Ocurrieron los Hechos", "type": "text", "required": true},
+      {"name": "lugar_hechos", "label": "Lugar donde Ocurrieron los Hechos", "type": "text", "required": true},
+      {"name": "descripcion_hechos", "label": "Descripción Detallada de los Hechos (numere cada hecho)", "type": "textarea", "required": true},
+      {"name": "pruebas", "label": "Pruebas que Aporta (documentos, testigos, videos, etc.)", "type": "textarea", "required": true},
+      {"name": "direccion_notificacion", "label": "Dirección para Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "DENUNCIA PENAL\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nFiscal General de la Nación o su Delegado\nOficina de Atención al Usuario — Fiscalía General de la Nación\nCiudad\n\nRef.: Denuncia penal por el delito de {{delito_denunciado}}\n\nYo, {{nombre_denunciante}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_denunciante}} expedida en {{ciudad_cedula_denunciante}}, domiciliado en {{direccion_denunciante}}, respetuosamente presento denuncia penal contra {{nombre_denunciado}}, por los siguientes hechos:\n\nHECHOS\n\n{{descripcion_hechos}}\n\nLos hechos anteriores ocurrieron el día {{fecha_hechos}} en {{lugar_hechos}}, y constituyen el delito de {{delito_denunciado}} conforme al Código Penal colombiano.\n\nPRUEBAS\n\n{{pruebas}}\n\nPETICIÓN\n\nSolicito respetuosamente a la Fiscalía iniciar la investigación penal correspondiente, practicar las pruebas del caso y adelantar las acciones legales pertinentes contra el denunciado.\n\nNOTIFICACIONES\n\nRecibiré notificaciones en {{direccion_notificacion}}.\n\nDel señor Fiscal,\n\n\n____________________________\n{{nombre_denunciante}}\nC.C. N°. {{cedula_denunciante}} de {{ciudad_cedula_denunciante}}"
+  },
+  {
+    "id": "poder-accion-civil-proceso-penal",
+    "title": "Poder para Ejercer Acción Civil en Proceso Penal",
+    "subtitle": "Acción Civil",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha del Poder", "type": "text", "required": true},
+      {"name": "nombre_poderdante", "label": "Nombre Completo de la Víctima (quien otorga el poder)", "type": "text", "required": true},
+      {"name": "cedula_poderdante", "label": "Número de Cédula de la Víctima", "type": "text", "required": true},
+      {"name": "ciudad_cedula_poderdante", "label": "Ciudad de Expedición de la Cédula", "type": "text", "required": true},
+      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
+      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
+      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
+      {"name": "tarjeta_profesional_abogado", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
+      {"name": "nombre_procesado", "label": "Nombre del Procesado contra quien se Ejerce la Acción Civil", "type": "text", "required": true},
+      {"name": "delito_proceso", "label": "Delito del Proceso Penal", "type": "text", "required": true},
+      {"name": "proceso_referencia", "label": "Número del Proceso o Radicado", "type": "text", "required": true},
+      {"name": "descripcion_perjuicios", "label": "Descripción de los Perjuicios Sufridos (materiales y morales)", "type": "textarea", "required": true},
+      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "PODER PARA EJERCER ACCIÓN CIVIL EN PROCESO PENAL\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nYo, {{nombre_poderdante}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_poderdante}} expedida en {{ciudad_cedula_poderdante}}, en mi calidad de víctima dentro del proceso penal que se adelanta contra {{nombre_procesado}} por el delito de {{delito_proceso}}, radicado N°. {{proceso_referencia}}, otorgo poder especial al doctor {{nombre_abogado}}, con cédula N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}} y Tarjeta Profesional N°. {{tarjeta_profesional_abogado}}, para que en mi nombre ejerza la acción civil de indemnización de perjuicios dentro del mencionado proceso penal.\n\nLos perjuicios sufridos son los siguientes: {{descripcion_perjuicios}}\n\nMi apoderado queda facultado para solicitar medidas cautelares, practicar pruebas, conciliar e interponer todos los recursos necesarios.\n\n\n____________________________\n{{nombre_poderdante}}\nC.C. N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}\nVíctima\n\nAcepto,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional_abogado}}\nDirección: {{direccion_abogado}}"
+  },
+  {
+    "id": "memorial-entrega-provisional-vehiculo",
+    "title": "Memorial Solicitud Entrega Provisional de Vehículo",
+    "subtitle": "Acción Civil",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha del Memorial", "type": "text", "required": true},
+      {"name": "nombre_fiscal", "label": "Nombre del Fiscal o Despacho al que se Dirige", "type": "text", "required": true},
+      {"name": "numero_radicado", "label": "Número de Radicado del Proceso", "type": "text", "required": true},
+      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
+      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
+      {"name": "tarjeta_profesional_abogado", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
+      {"name": "nombre_propietario", "label": "Nombre Completo del Propietario del Vehículo", "type": "text", "required": true},
+      {"name": "descripcion_vehiculo", "label": "Descripción del Vehículo (marca, línea, modelo, color, placa)", "type": "textarea", "required": true},
+      {"name": "razon_entrega", "label": "Razón por la que se Solicita la Entrega Provisional (Ej: el propietario no tiene relación con el delito investigado)", "type": "textarea", "required": true},
+      {"name": "pruebas_propiedad", "label": "Pruebas de Propiedad que se Aportan (tarjeta de propiedad, factura de compra, etc.)", "type": "textarea", "required": true},
+      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "MEMORIAL — SOLICITUD DE ENTREGA PROVISIONAL DE VEHÍCULO\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\n{{nombre_fiscal}}\nFiscalía General de la Nación\nRef.: Proceso N°. {{numero_radicado}} — Solicitud entrega provisional de vehículo\n\n{{nombre_abogado}}, abogado inscrito con Tarjeta Profesional N°. {{tarjeta_profesional_abogado}}, identificado con cédula N°. {{cedula_abogado}}, actuando como apoderado del señor {{nombre_propietario}}, respetuosamente solicito la entrega provisional del siguiente vehículo:\n\nDESCRIPCIÓN DEL VEHÍCULO\n\n{{descripcion_vehiculo}}\n\nFUNDAMENTOS DE LA SOLICITUD\n\n{{razon_entrega}}\n\nPRUEBAS DE PROPIEDAD\n\n{{pruebas_propiedad}}\n\nFUNDAMENTOS JURÍDICOS\n\nLa presente solicitud se fundamenta en el artículo 83 de la Ley 906 de 2004 y el artículo 2° de la Ley 1453 de 2011, que permiten la entrega provisional de bienes incautados cuando se acredita que el propietario es ajeno al hecho punible investigado.\n\nPETICIÓN\n\nSolicito ordenar la entrega provisional del vehículo descrito al señor {{nombre_propietario}}, propietario legítimo del mismo.\n\nNOTIFICACIONES\n\nEl apoderado recibirá notificaciones en {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nC.C. N°. {{cedula_abogado}}\nT.P. N°. {{tarjeta_profesional_abogado}}"
+  },
+  {
+    "id": "demanda-constitucion-parte-civil",
+    "title": "Demanda de Constitución de Parte Civil",
+    "subtitle": "Acción Civil",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
+      {"name": "nombre_juez", "label": "Nombre del Juzgado o Despacho", "type": "text", "required": true},
+      {"name": "numero_radicado", "label": "Número de Radicado del Proceso Penal", "type": "text", "required": true},
+      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
+      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
+      {"name": "ciudad_cedula_abogado", "label": "Ciudad de Expedición de la Cédula del Abogado", "type": "text", "required": true},
+      {"name": "tarjeta_profesional_abogado", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
+      {"name": "nombre_victima", "label": "Nombre Completo de la Víctima (parte civil)", "type": "text", "required": true},
+      {"name": "cedula_victima", "label": "Número de Cédula de la Víctima", "type": "text", "required": true},
+      {"name": "nombre_procesado", "label": "Nombre del Procesado", "type": "text", "required": true},
+      {"name": "delito_proceso", "label": "Delito por el que se Adelanta el Proceso", "type": "text", "required": true},
+      {"name": "descripcion_perjuicios", "label": "Descripción de los Perjuicios (materiales y morales)", "type": "textarea", "required": true},
+      {"name": "cuantia_perjuicios", "label": "Cuantía de los Perjuicios Reclamados", "type": "text", "required": true},
+      {"name": "pruebas", "label": "Pruebas que Aporta", "type": "textarea", "required": true},
+      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "DEMANDA DE CONSTITUCIÓN DE PARTE CIVIL\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\n{{nombre_juez}}\nRef.: Proceso N°. {{numero_radicado}} — Constitución de parte civil\n\n{{nombre_abogado}}, abogado con Tarjeta Profesional N°. {{tarjeta_profesional_abogado}}, identificado con cédula N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, actuando como apoderado de {{nombre_victima}}, identificado con cédula N°. {{cedula_victima}}, en su calidad de víctima dentro del proceso penal que se adelanta contra {{nombre_procesado}} por el delito de {{delito_proceso}}, radicado N°. {{numero_radicado}}, me constituyo en parte civil en los siguientes términos:\n\nPERJUICIOS SUFRIDOS\n\n{{descripcion_perjuicios}}\n\nCUANTÍA\n\nLos perjuicios reclamados ascienden a la suma de {{cuantia_perjuicios}}.\n\nPRUEBAS\n\n{{pruebas}}\n\nPETICIÓN\n\nSolicito reconocer la personería del apoderado y admitir la constitución de parte civil dentro del presente proceso penal.\n\nNOTIFICACIONES\n\nEl apoderado recibirá notificaciones en {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional_abogado}}\nApoderado de {{nombre_victima}}"
+  },
+  {
+    "id": "designacion-auxiliar-proceso-penal",
+    "title": "Designación de Auxiliar en Proceso Penal",
+    "subtitle": "Defensa Penal",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha", "type": "text", "required": true},
+      {"name": "nombre_juez", "label": "Nombre del Juzgado o Despacho", "type": "text", "required": true},
+      {"name": "numero_radicado", "label": "Número de Radicado del Proceso", "type": "text", "required": true},
+      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
+      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
+      {"name": "tarjeta_profesional_abogado", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
+      {"name": "nombre_poderdante", "label": "Nombre del Procesado que Representa", "type": "text", "required": true},
+      {"name": "nombre_auxiliar", "label": "Nombre Completo del Auxiliar Designado", "type": "text", "required": true},
+      {"name": "cedula_auxiliar", "label": "Número de Cédula del Auxiliar", "type": "text", "required": true},
+      {"name": "calidad_auxiliar", "label": "Calidad del Auxiliar (Ej: perito, intérprete, traductor)", "type": "text", "required": true},
+      {"name": "funcion_auxiliar", "label": "Función Específica del Auxiliar en el Proceso", "type": "textarea", "required": true},
+      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "DESIGNACIÓN DE AUXILIAR EN PROCESO PENAL\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\n{{nombre_juez}}\nRef.: Proceso N°. {{numero_radicado}} — Designación de auxiliar\n\n{{nombre_abogado}}, abogado con Tarjeta Profesional N°. {{tarjeta_profesional_abogado}}, cédula N°. {{cedula_abogado}}, apoderado de {{nombre_poderdante}}, respetuosamente solicito designar como auxiliar dentro del presente proceso penal al señor {{nombre_auxiliar}}, identificado con cédula N°. {{cedula_auxiliar}}, en calidad de {{calidad_auxiliar}}.\n\nFUNCIÓN DEL AUXILIAR\n\n{{funcion_auxiliar}}\n\nPETICIÓN\n\nSolicito aceptar la designación del auxiliar mencionado y fijarlo para los fines pertinentes dentro del proceso.\n\nNOTIFICACIONES\n\nEl apoderado recibirá notificaciones en {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional_abogado}}"
+  },
+  {
+    "id": "solicitud-nulidad-proceso-penal",
+    "title": "Solicitud de Nulidad en Proceso Penal",
+    "subtitle": "Defensa Penal",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha de la Solicitud", "type": "text", "required": true},
+      {"name": "nombre_juez", "label": "Nombre del Juzgado o Despacho", "type": "text", "required": true},
+      {"name": "numero_radicado", "label": "Número de Radicado del Proceso", "type": "text", "required": true},
+      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
+      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
+      {"name": "tarjeta_profesional_abogado", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
+      {"name": "nombre_procesado", "label": "Nombre del Procesado que Representa", "type": "text", "required": true},
+      {"name": "causal_nulidad", "label": "Causal de Nulidad que se Invoca (Ej: falta de competencia, violación del derecho de defensa, irregularidad en la notificación)", "type": "textarea", "required": true},
+      {"name": "fundamentos_nulidad", "label": "Fundamentos de Hecho y Derecho de la Nulidad", "type": "textarea", "required": true},
+      {"name": "actuacion_viciada", "label": "Actuación Procesal que se Solicita Anular", "type": "text", "required": true},
+      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "SOLICITUD DE NULIDAD EN PROCESO PENAL\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\n{{nombre_juez}}\nRef.: Proceso N°. {{numero_radicado}} — Solicitud de nulidad\n\n{{nombre_abogado}}, abogado con Tarjeta Profesional N°. {{tarjeta_profesional_abogado}}, cédula N°. {{cedula_abogado}}, apoderado de {{nombre_procesado}}, respetuosamente solicito declarar la nulidad de lo actuado a partir de {{actuacion_viciada}}, con fundamento en los siguientes:\n\nCAUSAL DE NULIDAD\n\n{{causal_nulidad}}\n\nFUNDAMENTOS\n\n{{fundamentos_nulidad}}\n\nFUNDAMENTOS JURÍDICOS\n\nLa presente solicitud se fundamenta en los artículos 455 y siguientes de la Ley 906 de 2004, que consagran las nulidades procesales como mecanismo de protección de las garantías fundamentales del procesado.\n\nPETICIÓN\n\nSolicito declarar la nulidad de {{actuacion_viciada}} y ordenar la renovación de la actuación viciada.\n\nNOTIFICACIONES\n\nEl apoderado recibirá notificaciones en {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional_abogado}}\nApoderado de {{nombre_procesado}}"
+  },
+  {
+    "id": "desistimiento-querella",
+    "title": "Desistimiento de Querella",
+    "subtitle": "Defensa Penal",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha del Desistimiento", "type": "text", "required": true},
+      {"name": "nombre_fiscal", "label": "Nombre del Fiscal o Despacho", "type": "text", "required": true},
+      {"name": "numero_radicado", "label": "Número de Radicado del Proceso", "type": "text", "required": true},
+      {"name": "nombre_querellante", "label": "Nombre Completo del Querellante (quien desiste)", "type": "text", "required": true},
+      {"name": "cedula_querellante", "label": "Número de Cédula del Querellante", "type": "text", "required": true},
+      {"name": "ciudad_cedula_querellante", "label": "Ciudad de Expedición de la Cédula", "type": "text", "required": true},
+      {"name": "nombre_querellado", "label": "Nombre del Querellado", "type": "text", "required": true},
+      {"name": "delito_querella", "label": "Delito Querellable por el que se Presentó la Querella", "type": "text", "required": true},
+      {"name": "razon_desistimiento", "label": "Razón del Desistimiento (Ej: llegamos a un acuerdo de conciliación, los daños fueron reparados)", "type": "textarea", "required": true},
+      {"name": "direccion_notificacion", "label": "Dirección para Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "DESISTIMIENTO DE QUERELLA\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\n{{nombre_fiscal}}\nFiscalía General de la Nación\nRef.: Proceso N°. {{numero_radicado}} — Desistimiento de querella\n\nYo, {{nombre_querellante}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_querellante}} de {{ciudad_cedula_querellante}}, en mi calidad de querellante dentro del proceso penal que se adelanta contra {{nombre_querellado}} por el delito de {{delito_querella}}, radicado N°. {{numero_radicado}}, respetuosamente manifiesto mi desistimiento de la querella presentada.\n\nRAZONES DEL DESISTIMIENTO\n\n{{razon_desistimiento}}\n\nEl desistimiento lo hago de manera libre, voluntaria y sin presión alguna, siendo plenamente consciente de sus efectos jurídicos.\n\nPETICIÓN\n\nSolicito aceptar el presente desistimiento y en consecuencia cesar el procedimiento penal iniciado con la querella.\n\nNOTIFICACIONES\n\nRecibiré notificaciones en {{direccion_notificacion}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_querellante}}\nC.C. N°. {{cedula_querellante}} de {{ciudad_cedula_querellante}}"
+  },
+  {
+    "id": "solicitud-mediacion-penal",
+    "title": "Solicitud de Mediación",
+    "subtitle": "Mecanismos Alternativos",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha de la Solicitud", "type": "text", "required": true},
+      {"name": "nombre_fiscal", "label": "Nombre del Fiscal o Despacho", "type": "text", "required": true},
+      {"name": "numero_radicado", "label": "Número de Radicado del Proceso", "type": "text", "required": true},
+      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
+      {"name": "cedula_abogado", "label": "Número de Cédula del Abogado", "type": "text", "required": true},
+      {"name": "tarjeta_profesional_abogado", "label": "Número de Tarjeta Profesional del Abogado", "type": "text", "required": true},
+      {"name": "nombre_solicitante", "label": "Nombre del Procesado o Víctima que Solicita la Mediación", "type": "text", "required": true},
+      {"name": "calidad_solicitante", "label": "Calidad del Solicitante (Ej: procesado, víctima)", "type": "text", "required": true},
+      {"name": "nombre_contraparte", "label": "Nombre de la Contraparte en la Mediación", "type": "text", "required": true},
+      {"name": "delito_proceso", "label": "Delito del Proceso Penal", "type": "text", "required": true},
+      {"name": "razones_mediacion", "label": "Razones por las que se Solicita la Mediación", "type": "textarea", "required": true},
+      {"name": "direccion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+    ],
+    "template": "SOLICITUD DE MEDIACIÓN EN PROCESO PENAL\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\n{{nombre_fiscal}}\nFiscalía General de la Nación\nRef.: Proceso N°. {{numero_radicado}} — Solicitud de mediación\n\n{{nombre_abogado}}, abogado con Tarjeta Profesional N°. {{tarjeta_profesional_abogado}}, cédula N°. {{cedula_abogado}}, actuando como apoderado de {{nombre_solicitante}}, en calidad de {{calidad_solicitante}} dentro del proceso penal que se adelanta por el delito de {{delito_proceso}}, radicado N°. {{numero_radicado}}, respetuosamente solicito la aplicación del mecanismo de mediación previsto en los artículos 523 y siguientes de la Ley 906 de 2004.\n\nRAZONES DE LA SOLICITUD\n\n{{razones_mediacion}}\n\nMi representado y {{nombre_contraparte}} están dispuestos a participar voluntariamente en el proceso de mediación con el fin de llegar a un acuerdo que repare los daños causados y permita la terminación anticipada del proceso.\n\nPETICIÓN\n\nSolicito remitir el caso al Centro de Mediación correspondiente para que se surta el trámite de mediación.\n\nNOTIFICACIONES\n\nEl apoderado recibirá notificaciones en {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional_abogado}}\nApoderado de {{nombre_solicitante}}"
+  },
+  {
+    "id": "estipulaciones-probatorias",
+    "title": "Estipulaciones Probatorias",
+    "subtitle": "Defensa Penal",
+    "tipo_tramite": "Procesal",
+    "fields": [
+      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
+      {"name": "fecha_firma", "label": "Fecha", "type": "text", "required": true},
+      {"name": "nombre_juez", "label": "Nombre del Juzgado", "type": "text", "required": true},
+      {"name": "numero_radicado", "label": "Número de Radicado del Proceso", "type": "text", "required": true},
+      {"name": "nombre_abogado_defensa", "label": "Nombre del Abogado Defensor", "type": "text", "required": true},
+      {"name": "tarjeta_profesional_defensa", "label": "Tarjeta Profesional del Defensor", "type": "text", "required": true},
+      {"name": "nombre_fiscal", "label": "Nombre del Fiscal del Caso", "type": "text", "required": true},
+      {"name": "nombre_procesado", "label": "Nombre del Procesado", "type": "text", "required": true},
+      {"name": "delito_proceso", "label": "Delito del Proceso", "type": "text", "required": true},
+      {"name": "hechos_estipulados", "label": "Hechos o Circunstancias que se Estipulan como Probados (numere cada uno)", "type": "textarea", "required": true},
+      {"name": "direccion_abogado", "label": "Dirección del Abogado Defensor", "type": "text", "required": true}
+    ],
+    "template": "ESTIPULACIONES PROBATORIAS\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\n{{nombre_juez}}\nRef.: Proceso N°. {{numero_radicado}} — {{nombre_procesado}} — Delito: {{delito_proceso}}\n\nEl fiscal {{nombre_fiscal}} y el abogado defensor {{nombre_abogado_defensa}}, con Tarjeta Profesional N°. {{tarjeta_profesional_defensa}}, de común acuerdo y en los términos del artículo 356 de la Ley 906 de 2004, estipulan como hechos probados los siguientes:\n\nHECHOS ESTIPULADOS\n\n{{hechos_estipulados}}\n\nLas partes manifiestan que los hechos anteriores no requieren prueba en el juicio oral, por lo que solicitan al Despacho tenerlos como plenamente probados para todos los efectos del presente proceso.\n\n\n____________________________\n{{nombre_fiscal}}\nFiscal del Caso\n\n\n____________________________\n{{nombre_abogado_defensa}}\nT.P. N°. {{tarjeta_profesional_defensa}}\nAbogado Defensor de {{nombre_procesado}}\nDirección: {{direccion_abogado}}"
+  }
+]
