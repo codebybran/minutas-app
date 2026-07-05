@@ -6611,5 +6611,150 @@
     { "name": "mes_firma", "label": "Mes en que se firman los estatutos (ej: abril, mayo)", "type": "text", "required": true },
     { "name": "anio_firma", "label": "Año en que se firman los estatutos (ej: 2026)", "type": "number", "required": true }
   ]
+},
+
+{
+  "id": "poder-especial-compra-inmueble",
+  "title": "Poder Especial para Compra de un Inmueble",
+  "subtitle": "Representación y Poderes",
+  "fields": [
+    { "name": "notario", "label": "Notario", "type": "text", "required": true },
+    { "name": "circulo", "label": "Círculo Notarial", "type": "text", "required": true },
+    { "name": "nombre_poderdante", "label": "Nombre del Poderdante", "type": "text", "required": true },
+    { "name": "domicilio_poderdante", "label": "Domicilio del Poderdante", "type": "text", "required": true },
+    { "name": "cedula_poderdante", "label": "Cédula del Poderdante", "type": "text", "required": true },
+    { "name": "expedicion_poderdante", "label": "Expedición Cédula Poderdante", "type": "text", "required": true },
+    { "name": "nombre_apoderado", "label": "Nombre del Apoderado", "type": "text", "required": true },
+    { "name": "domicilio_apoderado", "label": "Domicilio del Apoderado", "type": "text", "required": true },
+    { "name": "cedula_apoderado", "label": "Cédula del Apoderado", "type": "text", "required": true },
+    { "name": "expedicion_apoderado", "label": "Expedición Cédula Apoderado", "type": "text", "required": true },
+    { "name": "precio_letras", "label": "Precio en Letras", "type": "text", "required": true },
+    { "name": "precio_numeros", "label": "Precio en Números", "type": "text", "required": true },
+    { "name": "descripcion_inmueble", "label": "Descripción del Inmueble", "type": "text", "required": true },
+    { "name": "lindero_norte", "label": "Lindero Norte", "type": "text", "required": true },
+    { "name": "lindero_sur", "label": "Lindero Sur", "type": "text", "required": true },
+    { "name": "lindero_oriente", "label": "Lindero Oriente", "type": "text", "required": true },
+    { "name": "lindero_occidente", "label": "Lindero Occidente", "type": "text", "required": true },
+    { "name": "matricula_inmobiliaria", "label": "Matrícula Inmobiliaria", "type": "text", "required": true }
+  ],
+  "template": "PODER ESPECIAL PARA COMPRA DE UN INMUEBLE\n\nSeñor\nNotario {{notario}} del Círculo de {{circulo}}\n\n{{nombre_poderdante}}, mayor de edad, domiciliado(a) y residente en la ciudad de {{domicilio_poderdante}}, identificado(a) con la cédula de ciudadanía Nº {{cedula_poderdante}} de {{expedicion_poderdante}}, actuando en nombre y representación propia, por medio de este documento confiero poder especial, amplio y suficiente, a {{nombre_apoderado}}, también mayor de edad, domiciliado(a) y residente en la ciudad de {{domicilio_apoderado}}, identificado(a) con la cédula de ciudadanía Nº {{cedula_apoderado}} de {{expedicion_apoderado}}, para comprar por la suma de {{precio_letras}} ({{precio_numeros}}) moneda legal y para suscribir en mi nombre la escritura pública de compraventa sobre el inmueble que a continuación se describe: {{descripcion_inmueble}}, alinderado de manera general así: por el norte, {{lindero_norte}}; por el sur, {{lindero_sur}}; por el oriente, {{lindero_oriente}}; y por el occidente, {{lindero_occidente}}. El inmueble descrito se encuentra identificado con el Nº de matrícula inmobiliaria {{matricula_inmobiliaria}}.\n\nMi apoderado está facultado para realizar todos los actos, gestiones y diligencias que sean necesarios para el perfeccionamiento del contrato de compraventa.\n\nPor lo anterior solicito se sirva tener a la persona anteriormente mencionada como mi apoderado para los efectos descritos en este memorial.\n\nSeñor notario, atentamente,\n\n\nPoderdante: _____________________\nC.C. {{cedula_poderdante}} de {{expedicion_poderdante}}\n\n\nApoderado: _____________________\nC.C. {{cedula_apoderado}} de {{expedicion_apoderado}}"
+},
+
+{
+  "id": "declaracion-fin-extraprocesal",
+  "title": "Declaración para Fin Extraprocesal",
+  "subtitle": "Declaraciones y Actos Notariales",
+  "fields": [
+    { "name": "ciudad", "label": "Ciudad", "type": "text", "required": true },
+    { "name": "departamento", "label": "Departamento", "type": "text", "required": true },
+    { "name": "dia", "label": "Día", "type": "text", "required": true },
+    { "name": "mes", "label": "Mes", "type": "text", "required": true },
+    { "name": "anio", "label": "Año", "type": "text", "required": true },
+    { "name": "notario", "label": "Notario", "type": "text", "required": true },
+    { "name": "circulo", "label": "Círculo Notarial", "type": "text", "required": true },
+    { "name": "nombre_declarante", "label": "Nombre del Declarante", "type": "text", "required": true },
+    { "name": "estado_civil_declarante", "label": "Estado Civil del Declarante", "type": "text", "required": true },
+    { "name": "cedula_declarante", "label": "Cédula del Declarante", "type": "text", "required": true },
+    { "name": "expedicion_declarante", "label": "Expedición Cédula Declarante", "type": "text", "required": true },
+    { "name": "anos_conocimiento", "label": "Años de Conocimiento", "type": "text", "required": true },
+    { "name": "nombre_tercero", "label": "Nombre del Tercero", "type": "text", "required": true },
+    { "name": "cedula_tercero", "label": "Cédula del Tercero", "type": "text", "required": true },
+    { "name": "hechos_declaracion", "label": "Hechos de la Declaración", "type": "text", "required": true },
+    { "name": "nombre_dependiente", "label": "Nombre de quien Depende Económicamente", "type": "text", "required": true },
+    { "name": "razon_testimonio", "label": "Razón del Testimonio", "type": "text", "required": true }
+  ],
+  "template": "DECLARACIÓN PARA FIN EXTRAPROCESAL\n(Escritura pública)\n\nEn la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} del mes de {{mes}} del año {{anio}}, ante mí Notario {{notario}}, del Círculo de {{circulo}}, compareció el señor(a) {{nombre_declarante}}, colombiano(a), mayor de edad, domiciliado y residente en {{ciudad}}, de estado civil {{estado_civil_declarante}}, identificado con la cédula de ciudadanía Nº {{cedula_declarante}} de {{expedicion_declarante}}, quien manifestó lo siguiente:\n\nPRIMERO.— Que por medio del presente documento procede a declarar que conoce desde hace más de {{anos_conocimiento}} años al señor(a) {{nombre_tercero}}, mayor de edad, domiciliado(a) y residente en {{ciudad}}, identificado(a) con la cédula de ciudadanía Nº {{cedula_tercero}}.\n\nSEGUNDO.— Que bajo la gravedad de juramento declara tener conocimiento de que {{hechos_declaracion}}.\n\nTERCERO.— Que {{nombre_dependiente}} depende económicamente de {{nombre_declarante}}, quien se identifica con la cédula de ciudadanía Nº {{cedula_declarante}} de {{expedicion_declarante}}.\n\nCUARTO.— Que la razón del testimonio radica en {{razon_testimonio}}, de acuerdo con lo señalado en el Decreto 1557 de 1989.\n\n\nDeclarante: _____________________\nC.C. {{cedula_declarante}} de {{expedicion_declarante}}\n\nNotario: _____________________"
+},
+
+{
+  "id": "aviso-terminacion-arrendamiento-arrendador",
+  "title": "Carta de Aviso de Terminación de Contrato de Arrendamiento (por el Arrendador)",
+  "subtitle": "Uso y Goce",
+  "fields": [
+    { "name": "ciudad_fecha", "label": "Ciudad y Fecha", "type": "text", "required": true },
+    { "name": "nombre_arrendatario", "label": "Nombre del Arrendatario", "type": "text", "required": true },
+    { "name": "direccion_notificacion_arrendatario", "label": "Dirección del Arrendatario", "type": "text", "required": true },
+    { "name": "ciudad_arrendatario", "label": "Ciudad del Arrendatario", "type": "text", "required": true },
+    { "name": "fecha_contrato", "label": "Fecha de Celebración del Contrato", "type": "text", "required": true },
+    { "name": "duracion_contrato", "label": "Duración Inicial del Contrato", "type": "text", "required": true },
+    { "name": "descripcion_inmueble", "label": "Descripción del Inmueble", "type": "text", "required": true },
+    { "name": "fecha_terminacion", "label": "Fecha de Terminación del Contrato", "type": "text", "required": true },
+    { "name": "entidad_consignacion", "label": "Entidad para la Consignación", "type": "text", "required": true }
+  ],
+  "template": "{{ciudad_fecha}}\n\nSeñor(a):\n{{nombre_arrendatario}}\nDirección: {{direccion_notificacion_arrendatario}}\nCiudad: {{ciudad_arrendatario}}\n\nRef.: Terminación contrato de arrendamiento.\n\nEstimado señor(a):\n\nPor medio de la presente le comunico que, haciendo uso de la facultad establecida en el artículo 22 de la Ley 820 de 2003, he decidido ponerle fin, unilateralmente, al contrato de arrendamiento de vivienda urbana celebrado el {{fecha_contrato}}, con un término de duración inicial de {{duracion_contrato}}, sobre el bien inmueble que se describe a continuación: {{descripcion_inmueble}}.\n\nEn consecuencia, el contrato terminará el día {{fecha_terminacion}}, es decir, tres meses después de la recepción de esta carta por parte suya.\n\nComo constituye una obligación a mi cargo cubrir, a título de indemnización, una suma de dinero igual al valor de tres mensualidades, le informo que este dinero se le consignará a su favor y a órdenes de la autoridad competente {{entidad_consignacion}}, la cual le allegará copia del título respectivo o le enviará comunicación en que se haga constar tal circunstancia, inmediatamente tenga conocimiento de la misma.\n\nAtentamente,\n\n\nArrendador: __________________"
+},
+
+{
+  "id": "aviso-terminacion-arrendamiento-arrendatario",
+  "title": "Carta de Aviso de Terminación de Contrato de Arrendamiento (por el Arrendatario)",
+  "subtitle": "Uso y Goce",
+  "fields": [
+    { "name": "ciudad_fecha", "label": "Ciudad y Fecha", "type": "text", "required": true },
+    { "name": "nombre_arrendador", "label": "Nombre del Arrendador", "type": "text", "required": true },
+    { "name": "direccion_notificacion_arrendador", "label": "Dirección del Arrendador", "type": "text", "required": true },
+    { "name": "ciudad_arrendador", "label": "Ciudad del Arrendador", "type": "text", "required": true },
+    { "name": "fecha_contrato", "label": "Fecha de Celebración del Contrato", "type": "text", "required": true },
+    { "name": "descripcion_inmueble", "label": "Descripción del Inmueble", "type": "text", "required": true },
+    { "name": "linderos_inmueble", "label": "Linderos del Inmueble", "type": "text", "required": true },
+    { "name": "fecha_terminacion", "label": "Fecha de Terminación del Contrato", "type": "text", "required": true },
+    { "name": "entidad_consignacion", "label": "Entidad para la Consignación", "type": "text", "required": true }
+  ],
+  "template": "{{ciudad_fecha}}\n\nSeñor(a):\n{{nombre_arrendador}}\nDirección: {{direccion_notificacion_arrendador}}\nCiudad: {{ciudad_arrendador}}\n\nRef.: Terminación contrato de arrendamiento.\n\nApreciado señor(a):\n\nPor medio de la presente le comunico que, haciendo uso de la facultad que confiere el artículo 24 de la Ley 820 de 2003, he decidido poner fin, unilateralmente, al contrato de arrendamiento de vivienda urbana que celebramos el día {{fecha_contrato}}, sobre el bien inmueble ubicado en {{descripcion_inmueble}} y alinderado de la siguiente manera: {{linderos_inmueble}}.\n\nEn consecuencia, el contrato terminará el día {{fecha_terminacion}}, es decir, tres meses después de la recepción de esta carta por parte suya.\n\nComo constituye una obligación a mi cargo cubrir, a título de indemnización, una suma de dinero igual al valor de tres mensualidades, le informo que este dinero le será consignado a su favor y a órdenes de la autoridad competente {{entidad_consignacion}}, la cual le allegará copia del título respectivo o le enviará comunicación en que se haga constar tal circunstancia, inmediatamente tenga conocimiento de la misma.\n\nSi usted no se presenta a recibir el inmueble me veré precisado a proceder de conformidad con lo establecido en la Ley 820 de 2003, artículo 24, numeral 4º, inciso 2º.\n\nAtentamente,\n\n\nArrendatario: __________________"
+},
+
+{
+  "id": "solicitud-primera-copia-hipoteca",
+  "title": "Solicitud de Primera Copia de Hipoteca (por Extravío)",
+  "subtitle": "Garantías y Crédito",
+  "fields": [
+    { "name": "ciudad", "label": "Ciudad", "type": "text", "required": true },
+    { "name": "departamento", "label": "Departamento", "type": "text", "required": true },
+    { "name": "dia", "label": "Día", "type": "text", "required": true },
+    { "name": "mes", "label": "Mes", "type": "text", "required": true },
+    { "name": "anio", "label": "Año", "type": "text", "required": true },
+    { "name": "notario", "label": "Notario", "type": "text", "required": true },
+    { "name": "circulo", "label": "Círculo Notarial", "type": "text", "required": true },
+    { "name": "nombre_deudor", "label": "Nombre del Deudor Hipotecario", "type": "text", "required": true },
+    { "name": "cedula_deudor", "label": "Cédula del Deudor", "type": "text", "required": true },
+    { "name": "nombre_acreedor", "label": "Nombre del Acreedor Hipotecario", "type": "text", "required": true },
+    { "name": "cedula_acreedor", "label": "Cédula del Acreedor", "type": "text", "required": true },
+    { "name": "numero_escritura_hipoteca", "label": "Número de la Escritura de Hipoteca", "type": "text", "required": true },
+    { "name": "fecha_escritura_hipoteca", "label": "Fecha de la Escritura", "type": "text", "required": true },
+    { "name": "notaria_hipoteca", "label": "Notaría que la Expidió", "type": "text", "required": true },
+    { "name": "fecha_registro", "label": "Fecha de Registro", "type": "text", "required": true },
+    { "name": "folio_matricula", "label": "Folio de Matrícula Inmobiliaria", "type": "text", "required": true },
+    { "name": "descripcion_inmueble", "label": "Descripción del Inmueble", "type": "text", "required": true },
+    { "name": "direccion_inmueble", "label": "Dirección del Inmueble", "type": "text", "required": true },
+    { "name": "cedula_catastral", "label": "Cédula Catastral", "type": "text", "required": true }
+  ],
+  "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} del mes de {{mes}} del año {{anio}}, ante mí Notario {{notario}}, del Círculo de {{circulo}}, comparecieron los señores {{nombre_deudor}}, identificado con la cédula de ciudadanía Nº {{cedula_deudor}}, y {{nombre_acreedor}}, identificado con la cédula de ciudadanía Nº {{cedula_acreedor}}, quienes manifestaron lo siguiente:\n\nPRIMERO. Constitución de hipoteca.— Que mediante la escritura pública Nº {{numero_escritura_hipoteca}} de fecha {{fecha_escritura_hipoteca}}, expedida por la Notaría {{notaria_hipoteca}}, e inscrita en la Oficina de Registro de Instrumentos Públicos el {{fecha_registro}}, bajo el folio de matrícula inmobiliaria Nº {{folio_matricula}}, el señor {{nombre_deudor}} constituyó hipoteca abierta de primer grado en favor del señor {{nombre_acreedor}} sobre el siguiente inmueble: {{descripcion_inmueble}}, ubicado en {{direccion_inmueble}}, al cual corresponde la cédula catastral Nº {{cedula_catastral}}.\n\nSEGUNDO. Primera copia.— La notaría expidió varias copias a solicitud de los interesados, siendo la primera de ellas entregada al señor {{nombre_acreedor}}, en su calidad de acreedor hipotecario.\n\nTERCERO. Extravío.— La primera copia de la escritura Nº {{numero_escritura_hipoteca}} se extravió, sin que se tenga indicio de su paradero.\n\nCUARTO. Obligaciones vigentes.— Aún subsisten obligaciones amparadas por la garantía hipotecaria en cuestión y pueden surgir otras a cargo del deudor hipotecario, haciéndose necesario para los comparecientes poseer una copia con mérito para exigir el cumplimiento de obligaciones, de conformidad con lo prescrito por el artículo 80 del Decreto-Ley 960 de 1970 modificado por el artículo 42 del Decreto 2163 de 1970.\n\nQUINTO. Solicitud de copia.— Como consecuencia de lo expuesto, los comparecientes, de común acuerdo, solicitan la expedición de una nueva copia de la escritura Nº {{numero_escritura_hipoteca}} antes mencionada, que preste mérito para exigir el cumplimiento de obligaciones, acogiéndose a lo previsto en el artículo 81 del Decreto-Ley 960 de 1970, y en todo caso expresan que si apareciere la copia extraviada se abstendrán de usarla y la devolverán al Notario que la expidió.\n\n\nComparecientes: __________\n\nNotario: __________"
+},
+
+{
+  "id": "dacion-en-pago",
+  "title": "Dación en Pago",
+  "subtitle": "Transferencia de Dominio",
+  "fields": [
+    { "name": "ciudad", "label": "Ciudad", "type": "text", "required": true },
+    { "name": "dia", "label": "Día", "type": "text", "required": true },
+    { "name": "mes", "label": "Mes", "type": "text", "required": true },
+    { "name": "anio", "label": "Año", "type": "text", "required": true },
+    { "name": "nombre_acreedor", "label": "Nombre del Acreedor", "type": "text", "required": true },
+    { "name": "cedula_acreedor", "label": "Cédula del Acreedor", "type": "text", "required": true },
+    { "name": "ciudad_acreedor", "label": "Ciudad del Acreedor", "type": "text", "required": true },
+    { "name": "nombre_deudor", "label": "Nombre del Deudor", "type": "text", "required": true },
+    { "name": "cedula_deudor", "label": "Cédula del Deudor", "type": "text", "required": true },
+    { "name": "ciudad_deudor", "label": "Ciudad del Deudor", "type": "text", "required": true },
+    { "name": "valor_capital", "label": "Valor del Capital Adeudado", "type": "text", "required": true },
+    { "name": "valor_intereses", "label": "Valor de Intereses Causados", "type": "text", "required": true },
+    { "name": "valor_honorarios", "label": "Valor de Honorarios de Cobro", "type": "text", "required": true },
+    { "name": "valor_gastos", "label": "Valor de Gastos", "type": "text", "required": true },
+    { "name": "documento_obligacion", "label": "Documento que Contiene la Obligación", "type": "text", "required": true },
+    { "name": "fecha_vencimiento_obligacion", "label": "Fecha de Vencimiento de la Obligación", "type": "text", "required": true },
+    { "name": "descripcion_bienes_dacion", "label": "Descripción de los Bienes Entregados en Dación", "type": "text", "required": true },
+    { "name": "valor_bienes_dacion", "label": "Valor de los Bienes Entregados", "type": "text", "required": true },
+    { "name": "responsable_gastos", "label": "Responsable de los Gastos", "type": "text", "required": true }
+  ],
+  "template": "DACIÓN EN PAGO\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, se reunieron a saber: {{nombre_acreedor}}, mayor de edad, domiciliado y residente en la ciudad de {{ciudad_acreedor}}, identificado con la cédula de ciudadanía Nº {{cedula_acreedor}}, quien para efectos del presente documento se denominará el ACREEDOR, y {{nombre_deudor}}, también mayor de edad y domiciliado y residente en la ciudad de {{ciudad_deudor}}, identificado con la cédula de ciudadanía Nº {{cedula_deudor}}, quien en lo sucesivo se denominará el DEUDOR, han acordado celebrar un convenio de dación en pago que se regulará por las siguientes cláusulas:\n\nPRIMERA. Obligaciones vencidas.— El DEUDOR debe al ACREEDOR la suma discriminada así: a) la suma de {{valor_capital}} por concepto de capital; b) la cantidad de {{valor_intereses}} por intereses causados; c) por concepto de honorarios de cobro la suma de {{valor_honorarios}}; d) por concepto de gastos la suma de {{valor_gastos}}. La obligación consta en el siguiente documento: {{documento_obligacion}}, y se encuentra vencida desde el {{fecha_vencimiento_obligacion}}, siendo exigible en la actualidad.\n\nSEGUNDA. Iliquidez.— Que debido a su situación económica, el DEUDOR se encuentra imposibilitado para cubrir la suma que adeuda en dinero efectivo.\n\nTERCERA. Dación en pago.— Que como consecuencia de lo anterior, el DEUDOR transfiere a título de dación en pago los siguientes bienes: {{descripcion_bienes_dacion}}.\n\nCUARTA. Valor.— Que para efectos del presente acto se estima el valor de los bienes entregados en {{valor_bienes_dacion}}, quedando, en consecuencia, extinguida la deuda.\n\nQUINTA. Propiedad de los bienes.— El DEUDOR manifiesta ser propietario de los bienes que entrega como dación en pago, que estos no soportan gravamen o limitación alguna de dominio, que están libres de impuestos y contribuciones, que no soportan embargos ni son objeto de pleito pendiente, y en todo caso se obliga a salir en defensa del ACREEDOR si fuere perturbado en su posesión por cualquier motivo, en especial por las causales de saneamiento por evicción y vicios redhibitorios que contempla la ley civil.\n\nSEXTA. Aplicación analógica.— Al presente acto serán aplicables, por analogía, las normas reguladoras del contrato de compraventa.\n\nSÉPTIMA. Entrega material.— El DEUDOR se obliga a entregar materialmente los bienes dados en pago dentro de los treinta (30) días siguientes a la firma del presente documento.\n\nOCTAVA. Condición resolutoria.— La dación en pago que por este documento se efectúa se condiciona, en todo caso, a la entrega real y material de los bienes a que alude, bajo las circunstancias anotadas en la cláusula quinta.\n\nNOVENA. Gastos.— Los gastos que ocasione el otorgamiento del presente documento correrán por cuenta de {{responsable_gastos}}.\n\n\nEl deudor: ________________________\n\nEl acreedor: ______________________"
 }
 ]

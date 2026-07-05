@@ -6,7 +6,7 @@ const fs = require('fs')
 const SUBTITLE_ORDER_CIVIL = [
   'Transferencia de Dominio', 'Uso y Goce', 'Servicios y Obra',
   'Garantías y Crédito', 'Representación y Poderes', 'Litigios y Créditos',
-  'Personas Jurídicas', 'Propiedad Horizontal'
+  'Personas Jurídicas', 'Propiedad Horizontal', 'Declaraciones y Actos Notariales'
 ]
 const SUBTITLE_ORDER_FAMILIA = [
   'Matrimonio','Sociedad Conyugal y Patrimonial','Estado Civil','Sucesiones',
@@ -40,6 +40,7 @@ const SUBTITLE_ORDER_PROCESAL_CIVIL = [
   'Disposiciones Generales', 'Procesos Declarativos', 'Procesos Ejecutivos',
   'Medidas Cautelares', 'Incidentes y Recursos'
 ]
+
 
 const TIPO_TRAMITE = {
   1:'Notarial',2:'Notarial',3:'Notarial',4:'Notarial',5:'Privado',6:'Privado',7:'Privado',
@@ -226,6 +227,12 @@ const TIPO_TRAMITE = {
   'acumulacion-procesos-ejecutivos':'Privado',
   'recurso-queja-auto-apelable':'Privado',
   'incidente-nulidad-remate':'Privado',
+  'poder-especial-compra-inmueble':'Notarial',
+  'declaracion-fin-extraprocesal':'Notarial',
+  'aviso-terminacion-arrendamiento-arrendador':'Privado',
+  'aviso-terminacion-arrendamiento-arrendatario':'Privado',
+  'solicitud-primera-copia-hipoteca':'Notarial',
+  'dacion-en-pago':'Privado',
 }
 
 function ordenarMinutas(minutas, order) {

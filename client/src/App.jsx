@@ -29,6 +29,33 @@ function getBadgeTramite(tipo) {
 // 
 
 const FIELD_HELP = {
+  valor_intereses: 'Escriba el valor de los intereses causados por la mora, en letras y números. Ej: dos millones de pesos ($2.000.000).',
+  valor_honorarios: 'Escriba el valor de los honorarios de cobro judicial o extrajudicial, si los hay. Si no aplica escriba: no aplica.',
+  valor_gastos: 'Escriba el valor de los gastos adicionales de cobro. Si no aplica escriba: no aplica.',
+  documento_obligacion: 'Describa el documento donde consta la deuda. Ej: pagaré No. 001-2025 de fecha 15 de enero de 2025.',
+  fecha_vencimiento_obligacion: 'Escriba la fecha en que venció la obligación y se hizo exigible. Ej: el 15 de marzo de 2026.',
+  descripcion_bienes_dacion: 'Describa detalladamente cada bien que se entrega en pago. Si es inmueble incluya dirección, linderos y matrícula inmobiliaria. Si es mueble incluya marca, modelo y características.',
+  valor_bienes_dacion: 'Escriba el valor total en que se estiman los bienes entregados, en letras y números. Debe ser suficiente para cubrir la deuda total.',
+  numero_escritura_hipoteca: 'Escriba solo el número de la escritura pública que constituyó la hipoteca. Ej: 1245.',
+  notaria_hipoteca: 'Escriba el nombre o número de la notaría que expidió la escritura de hipoteca, sin escribir la palabra Notaría. Ej: Primera, Única.',
+  cedula_catastral: 'Escriba el número de cédula catastral del inmueble. Lo encuentra en el recibo del impuesto predial.',
+  nombre_arrendador: 'Escriba el nombre completo del arrendador (dueño del inmueble), tal como aparece en el contrato.',
+  ciudad_arrendador: 'Escriba la ciudad donde vive el arrendador.',
+  linderos_inmueble: 'Describa los linderos del inmueble arrendado por los cuatro puntos cardinales. Si no los conoce con exactitud, describa al menos la dirección completa y el barrio.',
+  ciudad_arrendatario: 'Escriba la ciudad donde vive el arrendatario. Ej: El Cerrito, Cali.',
+  duracion_contrato: 'Escriba la duración inicial pactada del contrato. Ej: un (1) año, seis (6) meses.',
+  fecha_contrato: 'Escriba la fecha en que se firmó el contrato de arrendamiento original. Ej: el 1 de mayo de 2024.',
+  entidad_consignacion: 'Escriba la entidad bancaria autorizada donde consignará la indemnización a favor del arrendatario. Ej: Banco Agrario de Colombia, sucursal El Cerrito.',
+  nombre_declarante: 'Escriba el nombre completo de la persona que rinde la declaración, tal como aparece en su cédula.',
+  estado_civil_declarante: 'Escriba el estado civil del declarante. Ej: soltero, casado, divorciado, viudo.',
+  cedula_declarante: 'Escriba el número de cédula del declarante. Solo los números.',
+  expedicion_declarante: 'Escriba la ciudad donde fue expedida la cédula del declarante.',
+  anos_conocimiento: 'Escriba desde hace cuántos años conoce al tercero mencionado. Ej: cinco (5), diez (10).',
+  nombre_tercero: 'Escriba el nombre completo de la persona sobre la cual trata la declaración.',
+  cedula_tercero: 'Escriba el número de cédula del tercero mencionado en la declaración.',
+  hechos_declaracion: 'Describa con claridad los hechos que el declarante conoce y sobre los cuales declara bajo juramento. Ej: la señora convive con el señor desde hace cinco años en unión libre en la misma residencia.',
+  nombre_dependiente: 'Escriba el nombre completo de la persona que depende económicamente del declarante.',
+  razon_testimonio: 'Explique para qué se necesita esta declaración. Ej: para acreditar la convivencia ante el fondo de pensiones / para efectos de reclamación de subsidio familiar.',
   ciudad: 'Escribe el nombre de la ciudad o municipio donde se está firmando el contrato. Ejemplo: Cali, El Cerrito, Bogotá.',
   dia: 'Escribe el número del día en que se firma el contrato. Ejemplo: 21',
   mes: 'Escribe el nombre del mes. Ejemplo: abril, mayo, enero.',
@@ -2256,6 +2283,19 @@ const FIELD_HELP = {
 }
 
 const DATOS_PRUEBA = {
+
+  'declaracion-fin-extraprocesal': {
+  ciudad: 'El Cerrito', departamento: 'Valle del Cauca', dia: '21', mes: 'abril', anio: '2026',
+  notario: 'Única', circulo: 'El Cerrito',
+  nombre_declarante: 'Jhon Brandon Martínez Vélez', estado_civil_declarante: 'soltero',
+  cedula_declarante: '1234567890', expedicion_declarante: 'El Cerrito',
+  anos_conocimiento: 'cinco (5)',
+  nombre_tercero: 'Diana Patricia García López', cedula_tercero: '0987654321',
+  hechos_declaracion: 'la señora Diana Patricia García López ha convivido en unión libre con el declarante desde el mes de enero de 2021, compartiendo el mismo domicilio y gastos del hogar',
+  nombre_dependiente: 'Diana Patricia García López',
+  razon_testimonio: 'acreditar la convivencia de la pareja ante la entidad de seguridad social correspondiente',
+},
+
   // DERECHO DE FAMILIA — datos de prueba -
   nombre_notario: 'Carlos Alberto Gómez Herrera',
   numero_notaria: 'Única',
@@ -3317,6 +3357,7 @@ const DATOS_PRUEBA = {
   gananciales_conyuge_numeros: '65.000.000',
   hijuelas: 'Hijuela de Diana Patricia García López (cónyuge supérstite): Por su mitad de gananciales y su cuota hereditaria le corresponde la suma de ochenta y siete millones quinientos mil pesos ($87.500.000), que se le paga con la casa de habitación ubicada en la Calle 4 Sur No. 2A-56, El Cerrito, matrícula 370-123456, adjudicada en cien millones de pesos ($100.000.000), menos la deducción por valor de su hijuela. Hijuela de Carlos Martínez García (hijo): Por su cuota hereditaria le corresponde la suma de cuarenta y dos millones quinientos mil pesos ($42.500.000), que se le paga con el vehículo Chevrolet Spark placa ABC123 en treinta millones de pesos ($30.000.000) y el saldo en dinero.',
 
+
 'poder-rendicion-provocada-cuentas': {
     ciudad_firma: 'El Cerrito',
     nombre_poderdante: 'Diana Patricia García López',
@@ -3326,6 +3367,74 @@ const DATOS_PRUEBA = {
     tarjeta_profesional: '123456-A',
     nombre_administrador: 'Jhon Brandon Martínez Vélez',
   },
+
+  'dacion-en-pago': {
+  ciudad: 'El Cerrito', dia: '8', mes: 'mayo', anio: '2026',
+  nombre_acreedor: 'Carlos Eduardo Pérez Ríos', cedula_acreedor: '1122334455', ciudad_acreedor: 'El Cerrito',
+  nombre_deudor: 'Alexander García López', cedula_deudor: '0987654321', ciudad_deudor: 'Cali',
+  valor_capital: 'quince millones de pesos ($15.000.000)',
+  valor_intereses: 'dos millones de pesos ($2.000.000)',
+  valor_honorarios: 'un millón de pesos ($1.000.000)',
+  valor_gastos: 'no aplica',
+  documento_obligacion: 'pagaré No. 001-2025 de fecha 15 de enero de 2025',
+  fecha_vencimiento_obligacion: 'el 15 de marzo de 2026',
+  descripcion_bienes_dacion: 'un vehículo automotor Chevrolet Spark, modelo 2022, color blanco, placa ABC123, motor ABC123456, en perfecto estado de funcionamiento',
+  valor_bienes_dacion: 'dieciocho millones de pesos ($18.000.000)',
+  responsable_gastos: 'el deudor',
+},
+
+  'solicitud-primera-copia-hipoteca': {
+  ciudad: 'El Cerrito', departamento: 'Valle del Cauca', dia: '8', mes: 'mayo', anio: '2026',
+  notario: 'Única', circulo: 'El Cerrito',
+  nombre_deudor: 'Jhon Brandon Martínez Vélez', cedula_deudor: '1234567890',
+  nombre_acreedor: 'Carlos Eduardo Pérez Ríos', cedula_acreedor: '1122334455',
+  numero_escritura_hipoteca: '1245', fecha_escritura_hipoteca: '15 de mayo de 2024',
+  notaria_hipoteca: 'Única', fecha_registro: '20 de mayo de 2024',
+  folio_matricula: '370-123456',
+  descripcion_inmueble: 'casa de habitación de dos pisos con área aproximada de ciento veinte (120) metros cuadrados',
+  direccion_inmueble: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito',
+  cedula_catastral: '762480002000000020546',
+},
+
+  'aviso-terminacion-arrendamiento-arrendatario': {
+  ciudad_fecha: 'El Cerrito, 8 de mayo de 2026',
+  nombre_arrendador: 'Jhon Brandon Martínez Vélez',
+  direccion_notificacion_arrendador: 'Carrera 8 # 12-34, Barrio Los Pinos',
+  ciudad_arrendador: 'El Cerrito',
+  fecha_contrato: 'el 1 de mayo de 2025',
+  descripcion_inmueble: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito',
+  linderos_inmueble: 'Norte: con la Calle 4 Sur; Sur: con el predio de Roberto Salcedo Muñoz; Oriente: con la Carrera 2A; Occidente: con el predio de Patricia Londoño Vera',
+  fecha_terminacion: 'el 8 de agosto de 2026',
+  entidad_consignacion: 'Banco Agrario de Colombia, sucursal El Cerrito',
+},
+
+  'aviso-terminacion-arrendamiento-arrendador': {
+  ciudad_fecha: 'El Cerrito, 8 de mayo de 2026',
+  nombre_arrendatario: 'Alexander García López',
+  direccion_notificacion_arrendatario: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen',
+  ciudad_arrendatario: 'El Cerrito',
+  fecha_contrato: 'el 1 de mayo de 2025',
+  duracion_contrato: 'un (1) año',
+  descripcion_inmueble: 'casa de habitación ubicada en la Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito',
+  fecha_terminacion: 'el 8 de agosto de 2026',
+  entidad_consignacion: 'Banco Agrario de Colombia, sucursal El Cerrito',
+},
+
+  'poder-especial-compra-inmueble': {
+  notario: 'Única', circulo: 'El Cerrito',
+  nombre_poderdante: 'Alexander García López', domicilio_poderdante: 'Cali',
+  cedula_poderdante: '0987654321', expedicion_poderdante: 'Cali',
+  nombre_apoderado: 'Jhon Brandon Martínez Vélez', domicilio_apoderado: 'El Cerrito',
+  cedula_apoderado: '1234567890', expedicion_apoderado: 'El Cerrito',
+  precio_letras: 'ciento veinte millones de pesos', precio_numeros: '120.000.000',
+  descripcion_inmueble: 'una casa de habitación distinguida con el Nº 2A-56 de la Calle 4 Sur, Barrio Villa del Carmen, ciudad de El Cerrito',
+  lindero_norte: 'diez (10) metros con la Calle 4 Sur',
+  lindero_sur: 'diez (10) metros con el predio de Roberto Salcedo Muñoz',
+  lindero_oriente: 'doce (12) metros con la Carrera 2A',
+  lindero_occidente: 'doce (12) metros con el predio de Patricia Londoño Vera',
+  matricula_inmobiliaria: '370-123456',
+},
+
   'demanda-rendicion-provocada-cuentas': {
     ciudad_firma: 'El Cerrito',
     nombre_abogado: 'Luis Fernando Gómez Torres',
@@ -5030,6 +5139,73 @@ const DATOS_PRUEBA = {
 }
 
 const PASOS_SIGUIENTE = {
+
+  'dacion-en-pago': {
+  titulo: 'Dación en Pago',
+  pasos: [
+    { num: 1, titulo: 'Firmar el documento ante testigos', descripcion: 'Deudor y acreedor firman el documento en dos ejemplares. Cada parte conserva una copia original.' },
+    { num: 2, titulo: 'Si los bienes entregados son inmuebles: elevar a Escritura Pública', descripcion: 'Si dentro de los bienes ofrecidos en pago existen inmuebles, este documento DEBE elevarse a escritura pública ante Notario. Solo si son bienes muebles el documento privado es suficiente.' },
+    { num: 3, titulo: 'Registrar la escritura si hay inmuebles', descripcion: 'Si se elevó a escritura pública por incluir inmuebles, debe registrarse en la Oficina de Registro de Instrumentos Públicos de la ciudad donde estén ubicados, para que el acreedor quede como nuevo propietario.' },
+    { num: 4, titulo: 'Traspaso ante tránsito si son vehículos', descripcion: 'Si los bienes entregados son vehículos, ambas partes deben ir al organismo de tránsito correspondiente para hacer el traspaso de propiedad a nombre del acreedor.' },
+    { num: 5, titulo: 'Entrega material dentro del plazo pactado', descripcion: 'El deudor debe entregar físicamente los bienes dentro de los treinta (30) días siguientes a la firma, según lo pactado en la cláusula séptima.' },
+    { num: 6, titulo: 'Guardar el documento como prueba de extinción de la deuda', descripcion: 'Este documento es la prueba de que la deuda quedó completamente extinguida. Consérvelo junto con el comprobante de entrega o registro de los bienes.' },
+  ]
+},
+
+  'solicitud-primera-copia-hipoteca': {
+  titulo: 'Solicitud de Primera Copia de Hipoteca por Extravío',
+  pasos: [
+    { num: 1, titulo: 'Ambas partes deben ir juntas a la Notaría', descripcion: 'Deudor y acreedor hipotecario deben comparecer juntos ante el Notario que expidió la escritura original (o la que conserva el protocolo), con sus cédulas originales.' },
+    { num: 2, titulo: 'El acreedor debe afirmar bajo juramento', descripcion: 'Según el artículo 81 del Decreto-Ley 960 de 1970, el acreedor debe afirmar ante el Notario, bajo juramento, que es el actual titular del derecho, que la copia se perdió sin culpa suya y que la obligación no se ha extinguido.' },
+    { num: 3, titulo: 'Si el deudor no quiere comparecer', descripcion: 'Si el deudor es renuente a acompañar la solicitud, el acreedor puede iniciar un proceso verbal sumario ante la justicia ordinaria para obtener una orden judicial que le ordene al Notario expedir la copia con mérito ejecutivo.' },
+    { num: 4, titulo: 'El Notario expide la nueva copia', descripcion: 'Cumplidos los requisitos, el Notario expedirá una nueva copia que reemplaza a la extraviada, con el mismo mérito para exigir el cumplimiento de obligaciones.' },
+    { num: 5, titulo: 'Compromiso de devolución si aparece la copia extraviada', descripcion: 'Si la copia extraviada llegara a aparecer, los comparecientes se comprometieron a no usarla y devolverla al Notario que la expidió para que la inutilice.' },
+  ]
+},
+
+  'aviso-terminacion-arrendamiento-arrendatario': {
+  titulo: 'Aviso de Terminación de Arrendamiento (por el Arrendatario)',
+  pasos: [
+    { num: 1, titulo: 'Enviar la carta por servicio postal autorizado', descripcion: 'Envíe el aviso por el servicio postal autorizado con no menos de tres (3) meses de anticipación a la fecha en que quiere terminar el contrato.' },
+    { num: 2, titulo: 'Consignar la indemnización', descripcion: 'Consigne a favor del arrendador, en la entidad autorizada, una suma igual a tres meses de arrendamiento, dentro de los tres meses anteriores a la fecha señalada para la terminación.' },
+    { num: 3, titulo: 'Si el arrendador no recibe el inmueble', descripcion: 'Si llegada la fecha el arrendador no se presenta a recibir el inmueble, usted puede solicitar la entrega provisional mediante la intervención de la autoridad competente (Inspección de Policía), sin perjuicio de acudir también a la acción judicial.' },
+    { num: 4, titulo: 'Guardar todos los comprobantes', descripcion: 'Conserve copia de la carta enviada, el comprobante de envío postal y el título de consignación. Son su prueba de haber cumplido con el procedimiento legal.' },
+  ]
+},
+
+  'aviso-terminacion-arrendamiento-arrendador': {
+  titulo: 'Aviso de Terminación de Arrendamiento (por el Arrendador)',
+  pasos: [
+    { num: 1, titulo: 'Enviar la carta por servicio postal autorizado', descripcion: 'La ley exige que el aviso se envíe a través del servicio postal autorizado (no basta un mensaje de texto o correo electrónico) con la antelación mínima de tres (3) meses a la fecha de terminación.' },
+    { num: 2, titulo: 'Verificar que aplique una causal válida', descripcion: 'Solo puede terminar unilateralmente el contrato invocando las causales del artículo 22 de la Ley 820 de 2003: necesidad de habitar el inmueble, demolición, cumplimiento de una compraventa, o su plena voluntad después de 4 años de ejecución del contrato, entre otras.' },
+    { num: 3, titulo: 'Consignar la indemnización dentro de los 3 meses anteriores', descripcion: 'Debe consignar a favor del arrendatario, en la entidad autorizada, una suma igual a tres meses de arrendamiento (o 1.5 meses si es por su sola voluntad tras 4 años), dentro de los tres meses anteriores a la fecha de terminación.' },
+    { num: 4, titulo: 'Guardar el comprobante de consignación', descripcion: 'Conserve el título de consignación y envíe copia o notifique al arrendatario que fue realizada, como lo exige la ley.' },
+    { num: 5, titulo: 'Si el arrendatario no entrega el inmueble', descripcion: 'Si llegada la fecha de terminación el arrendatario no entrega el inmueble, usted puede iniciar el proceso de restitución de inmueble arrendado ante el juez civil competente.' },
+  ]
+},
+
+  'declaracion-fin-extraprocesal': {
+  titulo: 'Declaración para Fin Extraprocesal',
+  pasos: [
+    { num: 1, titulo: 'Ir a la Notaría con el declarante y su cédula', descripcion: 'El declarante debe presentarse personalmente ante el Notario con su cédula de ciudadanía original. Esta declaración se hace bajo la gravedad del juramento directamente ante el Notario.' },
+    { num: 2, titulo: 'El Notario redacta y da fe del acta', descripcion: 'El Notario constata que la declaración cumple los requisitos legales: generales de ley, la manifestación de juramento, la explicación de las razones del testimonio y que versa sobre hechos personales o de conocimiento del declarante.' },
+    { num: 3, titulo: 'Firma del declarante y del Notario', descripcion: 'El acta se suscribe por el declarante y el Notario. Solo si el acta reúne todos los requisitos legales podrá ser firmada.' },
+    { num: 4, titulo: 'Recibir copia del acta', descripcion: 'El Notario entrega el acta al declarante para los fines pertinentes ante la entidad donde deba presentarla (fondo de pensiones, entidad de seguridad social, subsidio familiar, etc.).' },
+    { num: 5, titulo: 'Verificar si la entidad realmente exige esta declaración', descripcion: 'Recuerde que el artículo 25 de la Ley 962 de 2005 eliminó la exigencia de declaraciones extrajuicio ante notario para trámites administrativos: en esos casos basta la afirmación del particular ante la misma entidad bajo la gravedad del juramento. Verifique con la entidad si aún exige este documento notarial.' },
+  ]
+},
+
+'poder-especial-compra-inmueble': {
+  titulo: 'Poder Especial para Compra de un Inmueble',
+  pasos: [
+    { num: 1, titulo: 'Ir a la Notaría con los documentos', descripcion: 'El poderdante debe ir personalmente a la Notaría con su cédula original. Este poder debe otorgarse mediante escritura pública o al menos con reconocimiento de firma ante Notario.' },
+    { num: 2, titulo: 'El apoderado presenta el poder para la compra', descripcion: 'Con este poder, el apoderado puede negociar y firmar la escritura pública de compraventa del inmueble descrito, actuando en nombre del poderdante.' },
+    { num: 3, titulo: 'El poder es solo para este inmueble y este precio', descripcion: 'Este es un poder especial: solo autoriza comprar el inmueble descrito y hasta el precio indicado. El apoderado no puede usarlo para adquirir otros bienes ni pagar un precio mayor sin autorización adicional.' },
+    { num: 4, titulo: 'Verificar el inmueble antes de firmar', descripcion: 'Antes de que el apoderado firme la escritura, verifique el certificado de tradición y libertad del inmueble para confirmar que está libre de gravámenes.' },
+    { num: 5, titulo: 'Para revocar el poder', descripcion: 'Si el poderdante decide no comprar o cambiar de apoderado, debe revocar el poder mediante escrito ante Notario y notificarlo al apoderado antes de que firme la escritura.' },
+  ]
+},
+
   'capitulaciones-matrimoniales': {
     titulo: 'Capitulaciones Matrimoniales',
     pasos: [
