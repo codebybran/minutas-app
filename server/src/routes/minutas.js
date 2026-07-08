@@ -14,7 +14,7 @@ const SUBTITLE_ORDER_FAMILIA = [
   'Separación y Divorcio','Alimentos','Sucesiones Judiciales',
   'Patrimonio de Familia','Permisos y Declaraciones'
 ]
-const SUBTITLE_ORDER_COMERCIAL = ['Títulos Valores','Contratos Mercantiles','Propiedad Intelectual']
+const SUBTITLE_ORDER_COMERCIAL = ['Títulos Valores','Contratos Mercantiles','Propiedad Intelectual','Cobranza']
 const SUBTITLE_ORDER_SOCIEDADES = [
   'Empresa Unipersonal y Sociedades Básicas',
   'Sociedad Anónima',
@@ -40,6 +40,7 @@ const SUBTITLE_ORDER_PROCESAL_CIVIL = [
   'Disposiciones Generales', 'Procesos Declarativos', 'Procesos Ejecutivos',
   'Medidas Cautelares', 'Incidentes y Recursos'
 ]
+const SUBTITLE_ORDER_TRIBUTARIO = ['Recursos y Respuestas', 'Cobro Coactivo']
 
 
 const TIPO_TRAMITE = {
@@ -77,6 +78,7 @@ const TIPO_TRAMITE = {
   'cesion-derechos-hereditarios':'Notarial','poder-liquidacion-sucesion':'Privado',
   'solicitud-liquidacion-sucesion':'Privado','inventarios-avaluos-sucesion':'Privado',
   'trabajo-particion-adjudicacion':'Privado',
+  'revocatoria-poder-contraer-matrimonio':'Notarial',
   // Familia nuevas
   'demanda-filiacion-natural':'Privado',
   'demanda-declaracion-union-marital':'Privado',
@@ -115,6 +117,10 @@ const TIPO_TRAMITE = {
   'corretaje-inmuebles':'Privado','consultoria-extranjeros':'Privado',
   'poder-derechos-autor':'Privado','contrato-edicion':'Privado',
   'cesion-derechos-patrimoniales-autor':'Privado','contrato-traduccion':'Privado',
+  'contrato-licencia-productos':'Privado',
+  'contrato-factoring':'Privado',
+  'carta-cobro':'Privado',
+  'cuenta-cobro':'Privado',
   // Comercial nueva
   'demanda-cancelacion-reposicion-titulo-valor':'Privado',
   // --- DERECHO DE SOCIEDADES ---
@@ -201,6 +207,10 @@ const TIPO_TRAMITE = {
   'accion-cumplimiento':'Privado',
   'contestacion-accion-cumplimiento':'Privado',
   'accion-inconstitucionalidad':'Privado',
+  'desistimiento-accion-tutela':'Privado',
+  'contestacion-accion-tutela-general':'Privado',
+  'recurso-apelacion-tutela-solicitante':'Privado',
+  'recurso-apelacion-tutela-accionado':'Privado',
   // --- DERECHO PROCESAL CIVIL ---
   'cesion-derechos-litigiosos-procesal':'Privado',
   'solicitud-amparo-pobreza':'Privado',
@@ -233,6 +243,11 @@ const TIPO_TRAMITE = {
   'aviso-terminacion-arrendamiento-arrendatario':'Privado',
   'solicitud-primera-copia-hipoteca':'Notarial',
   'dacion-en-pago':'Privado',
+  // --- DERECHO TRIBUTARIO ---
+  'recurso-reconsideracion':'Privado',
+  'respuesta-requerimiento-especial':'Privado',
+  'respuesta-requerimiento-ordinario':'Privado',
+  'excepcion-prescripcion-mandamiento-pago':'Privado',
 }
 
 function ordenarMinutas(minutas, order) {
@@ -264,6 +279,7 @@ router.get('/', (req, res) => {
   const procesalLaboralPath = path.join(__dirname, '../../data/templates/minutas-derecho-procesal-laboral.json')
   const penalPath = path.join(__dirname, '../../data/templates/minutas-derecho-penal.json')
   const resolucionPath = path.join(__dirname, '../../data/templates/minutas-resolucion-conflictos.json')
+  const tributarioPath = path.join(__dirname, '../../data/templates/minutas-derecho-tributario.json')
 
     const minutasCivil = JSON.parse(fs.readFileSync(civilPath, 'utf8'))
     const minutasFamilia = JSON.parse(fs.readFileSync(familiaPath, 'utf8'))
@@ -276,6 +292,7 @@ router.get('/', (req, res) => {
   const minutasProcesalLaboral = JSON.parse(fs.readFileSync(procesalLaboralPath, 'utf8'))
   const minutasPenal = JSON.parse(fs.readFileSync(penalPath, 'utf8'))
   const minutasResolucion = JSON.parse(fs.readFileSync(resolucionPath, 'utf8'))
+  const minutasTributario = JSON.parse(fs.readFileSync(tributarioPath, 'utf8'))
 
     const categories = [
       {
@@ -355,6 +372,13 @@ router.get('/', (req, res) => {
         tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
       }))
     }
+    ,{
+  id: 'derecho-tributario', name: 'Derecho Tributario',
+  minutas: ordenarMinutas(minutasTributario, SUBTITLE_ORDER_TRIBUTARIO).map(m => ({
+    id: m.id, title: m.title, subtitle: m.subtitle,
+    tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+  }))
+}
     ]
     res.json(categories)
   } catch (err) {
@@ -369,6 +393,8 @@ router.get('/:categoryId/:minutaId', (req, res) => {
     let filePath
     if (categoryId === 'derecho-familia')
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-familia.json')
+    else if (categoryId === 'derecho-tributario')
+      filePath = path.join(__dirname, '../../data/templates/minutas-derecho-tributario.json')
     else if (categoryId === 'derecho-comercial')
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-comercial.json')
     else if (categoryId === 'derecho-sociedades')
@@ -389,6 +415,7 @@ router.get('/:categoryId/:minutaId', (req, res) => {
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-procesal-civil.json')
     else
       filePath = path.join(__dirname, '../../data/templates/minutas-derecho-civil.json')
+    
 
     const minutas = JSON.parse(fs.readFileSync(filePath, 'utf8'))
     const minuta = minutas.find(m => String(m.id) === String(minutaId))

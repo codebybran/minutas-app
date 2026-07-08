@@ -3410,5 +3410,93 @@
       {"name": "direccion_notificacion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
     ],
     "template": "DEMANDA DE CANCELACIÓN Y REPOSICIÓN DE TÍTULO VALOR\n\nSeñor\nJuez Civil {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Reposición y cancelación de título valor\n\n{{nombre_abogado}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_abogado}}, con Tarjeta Profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, actuando en mi calidad de apoderado judicial de {{nombre_demandante}}, mayor de edad, domiciliado en {{ciudad_domicilio_demandante}}, identificado con la cédula de ciudadanía N°. {{cedula_demandante}}, por medio del presente escrito presento Demanda de Cancelación y Reposición de Título Valor en contra de {{nombre_demandado}}, con domicilio en {{ciudad_domicilio_demandado}}, legalmente representada por su gerente señor {{nombre_gerente_demandado}}, mayor de edad, de acuerdo con los siguientes:\n\nHECHOS\n\n1°. {{nombre_demandado}} otorgó a favor de {{nombre_demandante}} el {{tipo_titulo_valor}} N°. {{numero_titulo}} por la suma de $ {{valor_titulo}}, con fecha {{fecha_titulo}}, tal como consta en los registros de esa institución.\n\n2°. El documento se {{forma_perdida}} sin que hasta la fecha se haya recuperado de ninguna forma.\n\n3°. Como consecuencia de lo anterior, se formuló denuncia de pérdida de documentos el {{fecha_denuncia}} ante {{autoridad_denuncia}}, en la cual se dejó constancia de los datos del título extraviado.\n\n4°. La entidad demandada tiene conocimiento de lo anterior, según consta en comunicación de {{fecha_comunicacion_entidad}}, dirigida por mi poderdante, en la cual se anunció la pérdida del documento.\n\n5°. A la fecha el título no ha sido reclamado ni cobrado por persona alguna, según se desprende de la certificación adjunta proveniente de la entidad demandada.\n\nPRETENSIONES\n\n1ª. Que se decrete la reposición y cancelación del título valor expresado en {{tipo_titulo_valor}}, con el N°. {{numero_titulo}}, por la suma de $ {{valor_titulo}}, a favor de {{nombre_demandante}}, con fecha {{fecha_titulo}}.\n\n2ª. Que se ordene la publicación del extracto del título que se adjunta a la presente demanda, de acuerdo con el artículo 449 del Código de Procedimiento Civil y el artículo 803 del Código de Comercio.\n\n3ª. Que se condene en costas al demandado en caso de oposición.\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 803, 804 y siguientes del Código de Comercio; artículo 449 del Código de Procedimiento Civil.\n\nCOMPETENCIA\n\nEs usted competente señor juez para conocer del presente proceso en razón de la cuantía de la pretensión, estimada en $ {{cuantia_proceso}}, y por el domicilio de la entidad demandada.\n\nPROCEDIMIENTO\n\nEl trámite aplicable es el proceso verbal según el Código General del Proceso (Ley 1564 de 2012), dependiendo de la cuantía: mayor o menor cuantía, proceso verbal; mínima cuantía, proceso verbal sumario.\n\nPRUEBAS\n\n1. Original de la constancia de la denuncia de la pérdida del título ante {{autoridad_denuncia}}.\n2. Copia de la comunicación enviada por mi poderdante a {{nombre_demandado}} el {{fecha_comunicacion_entidad}}, anunciando la pérdida del documento.\n3. Certificación expedida por {{nombre_demandado}} de que el título no ha sido cobrado.\n\nANEXOS\n\n1. Las pruebas relacionadas en el capítulo de pruebas.\n2. Extracto que contiene la descripción del título objeto de la demanda.\n3. Copia de la demanda con sus anexos para surtir el traslado.\n4. Copia simple para el archivo del juzgado.\n5. Poder para actuar.\n\nNOTIFICACIONES\n\nLas personales en la secretaría de su despacho o en {{direccion_notificacion_abogado}}.\nMi poderdante en {{ciudad_domicilio_demandante}}.\nLa sociedad demandada en {{ciudad_domicilio_demandado}}.\n\nAtentamente,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
-  }
+  },
+
+  {
+  "id": "contrato-licencia-productos",
+  "title": "Contrato de Licencia de Productos",
+  "subtitle": "Propiedad Intelectual",
+  "fields": [
+    { "name": "nombre_contratante", "label": "Nombre del Contratante (Licenciante)", "type": "text", "required": true },
+    { "name": "domicilio_contratante", "label": "Domicilio del Contratante", "type": "text", "required": true },
+    { "name": "nombre_empresa_contratante", "label": "Empresa que Representa el Contratante", "type": "text", "required": true },
+    { "name": "nombre_contratista", "label": "Nombre del Contratista (Licenciatario)", "type": "text", "required": true },
+    { "name": "domicilio_contratista", "label": "Domicilio del Contratista", "type": "text", "required": true },
+    { "name": "nombre_empresa_contratista", "label": "Empresa que Representa el Contratista", "type": "text", "required": true },
+    { "name": "pais_fabricacion", "label": "País donde se Fabricarán los Productos", "type": "text", "required": true },
+    { "name": "descripcion_productos", "label": "Descripción de los Productos", "type": "text", "required": true },
+    { "name": "nombre_marca", "label": "Nombre de la Marca Licenciada", "type": "text", "required": true },
+    { "name": "porcentaje_regalia", "label": "Porcentaje de Regalía", "type": "text", "required": true },
+    { "name": "periodo_pago_regalias", "label": "Período de Pago de Regalías", "type": "text", "required": true },
+    { "name": "ciudad_pago", "label": "Ciudad de Pago", "type": "text", "required": true },
+    { "name": "anios_confidencialidad", "label": "Años de Confidencialidad tras Terminación", "type": "text", "required": true },
+    { "name": "duracion_contrato", "label": "Duración del Contrato", "type": "text", "required": true },
+    { "name": "fecha_inicio", "label": "Fecha de Inicio", "type": "text", "required": true },
+    { "name": "dias_aviso_terminacion", "label": "Días de Aviso para no Renovar", "type": "text", "required": true },
+    { "name": "clausula_penal_valor", "label": "Valor de la Cláusula Penal", "type": "text", "required": true },
+    { "name": "ciudad_arbitraje", "label": "Ciudad del Centro de Arbitraje", "type": "text", "required": true },
+    { "name": "nombre_centro_arbitraje", "label": "Nombre del Centro de Arbitraje", "type": "text", "required": true }
+  ],
+  "template": "CONTRATO DE LICENCIA DE PRODUCTOS\n\nEntre los suscritos a saber: {{nombre_contratante}}, mayor de edad, domiciliado y residente en {{domicilio_contratante}}, obrando en nombre y representación de {{nombre_empresa_contratante}}, la cual para efectos del presente contrato se denominará LA CONTRATANTE, y {{nombre_contratista}}, también mayor de edad, domiciliado y residente en {{domicilio_contratista}}, quien actúa en nombre y representación de {{nombre_empresa_contratista}}, la cual para este contrato se llamará LA CONTRATISTA, han acordado las siguientes cláusulas:\n\nPRIMERA. Definiciones.— El término \"Productos\" significará los bienes descritos así: {{descripcion_productos}}. El término \"derechos de marca de fábrica\" significará los derechos de explotación que posee LA CONTRATANTE sobre la marca {{nombre_marca}}.\n\nSEGUNDA. Concesión de información técnica y conocimientos.— LA CONTRATANTE suministrará a LA CONTRATISTA los datos técnicos, información y conocimientos relacionados con la fabricación, uso o venta de los Productos, concediéndole el derecho de usarlos para fabricar los Productos en {{pais_fabricacion}}.\n\nTERCERA. Concesión de derechos de marca.— LA CONTRATANTE licencia a LA CONTRATISTA el derecho de usar la marca {{nombre_marca}} en lo que respecta a la venta de los Productos, conforme a los estándares de calidad que establezca LA CONTRATANTE.\n\nCUARTA. Regalías.— Por la concesión de conocimientos, derechos de marca y demás beneficios previstos en este contrato, LA CONTRATISTA deberá pagar a LA CONTRATANTE una regalía equivalente al {{porcentaje_regalia}}% del precio neto de venta sobre todos los Productos vendidos. Las regalías se pagarán {{periodo_pago_regalias}}, en la ciudad de {{ciudad_pago}}, acompañadas de un informe escrito de ventas.\n\nQUINTA. Confidencialidad.— LA CONTRATISTA se obliga a mantener la confidencialidad de la información recibida de LA CONTRATANTE durante la vigencia del presente acuerdo y por {{anios_confidencialidad}} años más después de su terminación.\n\nSEXTA. Prohibición de cesión.— LA CONTRATISTA no podrá ceder el presente contrato ni hacerse sustituir por otra persona sin autorización expresa de LA CONTRATANTE.\n\nSÉPTIMA. Cláusula penal.— Si cualquiera de las partes incumpliere alguna de sus obligaciones, deberá pagar a la otra la suma de {{clausula_penal_valor}} a título de pena derivada de dicho incumplimiento.\n\nOCTAVA. Duración.— El término del presente contrato será de {{duracion_contrato}} contados a partir del {{fecha_inicio}}. El contrato será renovable por períodos iguales y sucesivos, siempre que no se dé aviso escrito de terminación con una antelación no inferior a {{dias_aviso_terminacion}} días.\n\nNOVENA. Cláusula compromisoria.— Toda diferencia relativa a este contrato se someterá a la decisión de un tribunal arbitral integrado por tres (3) árbitros, que funcionará en la ciudad de {{ciudad_arbitraje}} en el centro de arbitraje denominado {{nombre_centro_arbitraje}}, y decidirá en derecho.\n\nEn constancia de lo anterior, se firma en dos ejemplares del mismo tenor.\n\n\nLA CONTRATANTE: ________________\n\nLA CONTRATISTA: ________________"
+},
+
+{
+  "id": "contrato-factoring",
+  "title": "Contrato de Factoring",
+  "subtitle": "Contratos Mercantiles",
+  "fields": [
+    { "name": "nombre_cliente", "label": "Nombre del Cliente", "type": "text", "required": true },
+    { "name": "cedula_cliente", "label": "Cédula del Cliente", "type": "text", "required": true },
+    { "name": "domicilio_cliente", "label": "Domicilio del Cliente", "type": "text", "required": true },
+    { "name": "nombre_empresa_cliente", "label": "Empresa que Representa el Cliente", "type": "text", "required": true },
+    { "name": "nombre_factor", "label": "Nombre del Factor", "type": "text", "required": true },
+    { "name": "domicilio_factor", "label": "Domicilio del Factor", "type": "text", "required": true },
+    { "name": "nombre_empresa_factor", "label": "Empresa que Representa el Factor", "type": "text", "required": true },
+    { "name": "porcentaje_comision", "label": "Porcentaje de Comisión del Factor", "type": "text", "required": true },
+    { "name": "porcentaje_anticipo", "label": "Porcentaje de Anticipo sobre Créditos Cedidos", "type": "text", "required": true },
+    { "name": "interes_anticipo", "label": "Interés Efectivo Anual del Anticipo", "type": "text", "required": true },
+    { "name": "duracion_contrato", "label": "Duración del Contrato", "type": "text", "required": true },
+    { "name": "fecha_inicio", "label": "Fecha de Inicio", "type": "text", "required": true },
+    { "name": "meses_aviso_terminacion", "label": "Meses de Aviso para no Renovar", "type": "text", "required": true },
+    { "name": "ciudad_jurisdiccion", "label": "Ciudad de Jurisdicción del Cliente", "type": "text", "required": true }
+  ],
+  "template": "CONTRATO DE FACTORING\n\nEntre los suscritos a saber: {{nombre_cliente}}, mayor de edad, domiciliado y residente en {{domicilio_cliente}}, identificado con cédula de ciudadanía Nº {{cedula_cliente}}, obrando en nombre y representación de {{nombre_empresa_cliente}}, la cual para efectos del presente contrato se llamará EL CLIENTE, y {{nombre_factor}}, también mayor de edad, domiciliado y residente en {{domicilio_factor}}, quien actúa en nombre y representación de {{nombre_empresa_factor}}, el cual para este contrato se denominará EL FACTOR, han convenido en celebrar el presente contrato de factoring que se regirá por las siguientes cláusulas:\n\nPRIMERA. Objeto.— EL FACTOR ejecutará por cuenta de EL CLIENTE un conjunto de servicios consistentes en: investigar la solvencia de los compradores (deudores), asumir el riesgo de insolvencia de los compradores, llevar extractos mensuales relacionados con el total de los créditos cedidos, cobrar las obligaciones y realizar anticipos sobre las mismas. Como contraprestación, EL CLIENTE se obliga a pagar una comisión equivalente al {{porcentaje_comision}}% sobre el valor nominal de los créditos cedidos.\n\nSEGUNDA. Duración.— El término del presente contrato será de {{duracion_contrato}} contados a partir de {{fecha_inicio}}. El contrato será renovable por períodos iguales y sucesivos, siempre que no se dé aviso escrito de terminación dentro de los {{meses_aviso_terminacion}} meses anteriores a la finalización del plazo contractual.\n\nTERCERA. Obligaciones de EL CLIENTE.— EL CLIENTE se obliga a ceder al Factor todos los créditos que se originen de sus ventas, someter a consideración de EL FACTOR las operaciones que le propongan sus compradores, endosar sus facturas indicando que son pagaderas exclusivamente al Factor, y garantizar la existencia y validez de todos los créditos transmitidos.\n\nCUARTA. Obligaciones de EL FACTOR.— EL FACTOR se obliga a pronunciarse sobre cada operación propuesta por EL CLIENTE, efectuar la investigación de solvencia de los compradores, anticipar en efectivo al cliente el {{porcentaje_anticipo}}% de cada crédito cedido —anticipo que devengará un interés efectivo anual del {{interes_anticipo}}%—, asumir el riesgo de insolvencia de los compradores cuyo crédito haya aprobado, y cobrar las obligaciones cedidas.\n\nQUINTA. Retribución al Factor.— Como contraprestación por sus servicios, EL FACTOR devengará una comisión equivalente al {{porcentaje_comision}}% sobre el valor nominal de los créditos cedidos.\n\nSEXTA. Noción de insolvencia.— Para efectos del presente contrato se entenderá por insolvencia la declaración judicial de liquidación obligatoria, la celebración de un acuerdo de pago que comporte una quita del pasivo, o el resultado negativo de una providencia de embargo sobre el patrimonio del deudor.\n\nSÉPTIMA. Jurisdicción.— EL CLIENTE acepta someterse a la jurisdicción de {{ciudad_jurisdiccion}} para efectos de cualquier controversia derivada de este contrato.\n\nEn constancia de lo anterior, se firman dos ejemplares de un mismo tenor.\n\n\nEL CLIENTE: ________________\n\nEL FACTOR: ________________"
+},
+
+{
+  "id": "carta-cobro",
+  "title": "Carta de Cobro",
+  "subtitle": "Cobranza",
+  "fields": [
+    { "name": "ciudad_fecha", "label": "Ciudad y Fecha", "type": "text", "required": true },
+    { "name": "nombre_deudor", "label": "Nombre del Deudor", "type": "text", "required": true },
+    { "name": "numero_cuenta_factura", "label": "Número de la Cuenta o Factura", "type": "text", "required": true },
+    { "name": "fecha_cuenta_factura", "label": "Fecha de la Cuenta o Factura", "type": "text", "required": true },
+    { "name": "valor_deuda", "label": "Valor de la Deuda", "type": "text", "required": true },
+    { "name": "dias_mora", "label": "Días o Tiempo de Mora", "type": "text", "required": true },
+    { "name": "plazo_pago", "label": "Plazo Otorgado para Pagar", "type": "text", "required": true },
+    { "name": "nombre_jefe_cobranzas", "label": "Nombre de quien Firma (Jefe de Cobranzas)", "type": "text", "required": true }
+  ],
+  "template": "{{ciudad_fecha}}\n\nApreciado señor(a) {{nombre_deudor}}\n\nPor medio de la presente nos permitimos informarle que actualmente la factura Nº {{numero_cuenta_factura}} de fecha {{fecha_cuenta_factura}} presenta un atraso de {{dias_mora}}. El valor actual de la deuda es la suma de {{valor_deuda}}, este valor incluye capital e intereses.\n\nEn varias ocasiones le hemos escrito sin recibir respuesta alguna. Por tanto le solicitamos cancelar dicho valor en un término de {{plazo_pago}}, o de lo contrario nos veremos en la obligación de enviar su cuenta al Departamento Jurídico de nuestra empresa. Esta decisión es poco beneficiosa tanto para nuestra empresa como para usted, pues implica que además de la cantidad debida deberá asumir los costos judiciales y los inconvenientes que ello acarrea.\n\nCordialmente,\n\n\n{{nombre_jefe_cobranzas}}\nJefe de Cobranzas"
+},
+
+{
+  "id": "cuenta-cobro",
+  "title": "Cuenta de Cobro",
+  "subtitle": "Cobranza",
+  "fields": [
+    { "name": "ciudad_fecha", "label": "Ciudad y Fecha", "type": "text", "required": true },
+    { "name": "nombre_deudor", "label": "Nombre o Empresa que Debe", "type": "text", "required": true },
+    { "name": "nit_cedula_deudor", "label": "NIT o Cédula del Deudor", "type": "text", "required": true },
+    { "name": "nombre_acreedor", "label": "Nombre de quien Cobra", "type": "text", "required": true },
+    { "name": "cedula_acreedor", "label": "Cédula de quien Cobra", "type": "text", "required": true },
+    { "name": "valor_numeros", "label": "Valor en Números", "type": "text", "required": true },
+    { "name": "valor_letras", "label": "Valor en Letras", "type": "text", "required": true },
+    { "name": "concepto_cobro", "label": "Concepto del Cobro", "type": "text", "required": true },
+    { "name": "cargo_o_profesion", "label": "Cargo o Profesión que da Origen a la Cuenta", "type": "text", "required": true },
+    { "name": "fecha_contrato", "label": "Fecha del Contrato de Origen", "type": "text", "required": true },
+    { "name": "nombre_sociedad", "label": "Nombre de la Sociedad (si aplica)", "type": "text", "required": false }
+  ],
+  "template": "{{ciudad_fecha}}\n\n{{nombre_deudor}}\nDEBE A:\n{{nombre_acreedor}}\nC.C. Nº {{cedula_acreedor}}\n\nRef: Cuenta de cobro relacionada con {{concepto_cobro}}\nContrato de fecha: {{fecha_contrato}}\n\nPor concepto de: {{concepto_cobro}}, el señor(a)/la empresa {{nombre_deudor}}, identificado(a) con C.C./NIT Nº {{nit_cedula_deudor}}, debe la suma de {{valor_letras}} M/cte. ({{valor_numeros}}).\n\nEn mi calidad de {{cargo_o_profesion}} señalada en el contrato que da origen a esta cuenta, el trabajo mencionado ya fue terminado y cuenta con el visto bueno del coordinador del mismo, para lo cual se anexa copia del acta de terminación.\n\nCordialmente,\n\n\nFirma: __________\n{{nombre_acreedor}}\nC.C. {{cedula_acreedor}}\n{{nombre_sociedad}}"
+}
 ]

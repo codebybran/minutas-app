@@ -4724,5 +4724,32 @@
       {"name": "direccion_notificacion", "label": "Dirección del Solicitante para Notificaciones", "type": "text", "required": true}
     ],
     "template": "SOLICITUD DE PERMISO PARA QUE UN MENOR SALGA DEL PAÍS\n\nSeñor\nJuez de Familia de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Permiso para salir del país\n\n{{nombre_padre_solicitante}}, mayor de edad, domiciliado en {{ciudad_firma}}, identificado con la cédula de ciudadanía N°. {{cedula_solicitante}}, actuando en mi condición de padre (madre) del menor {{nombre_menor}}, respetuosamente me dirijo a usted con el fin de solicitar permiso para salir del país de mi hijo menor {{nombre_menor}}, teniendo en cuenta los siguientes:\n\nHECHOS\n\n1°. El {{fecha_matrimonio}} contraje matrimonio civil con el señor(a) {{nombre_conyuge_ausente}} en la ciudad de {{ciudad_firma}}.\n\n2°. El señor(a) {{nombre_conyuge_ausente}}, padre (madre) del menor, abandonó el hogar hace varios años y actualmente ignoro su paradero.\n\n3°. Debido a circunstancias de {{razon_viaje}}, me veo en la obligación de viajar a {{pais_destino}}.\n\n4°. Mi estadía en el citado país será de {{duracion_estadia}}.\n\nPETICIÓN\n\nSolicito señor Juez sea autorizado mi hijo {{nombre_menor}} a salir del país en compañía mía, con destino a {{pais_destino}}, por el lapso de {{duracion_estadia}}.\n\nAdicionalmente solicito:\na) Que se cite a el señor(a) {{nombre_conyuge_ausente}} por medio de un periódico de amplia circulación.\nb) Que se ordene la práctica de una investigación socio-familiar.\nc) Que una vez otorgado el permiso, se envíen copias al Ministerio de Relaciones Exteriores y a la División de Extranjería del DAS.\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 435 y siguientes del Código de Procedimiento Civil; Decreto 2272 de 1989; Ley 962 de 2005, artículo 82.\n\nCOMPETENCIA\n\nEs usted señor juez competente para conocer del asunto, por la naturaleza de la petición y el domicilio de las partes.\n\nPRUEBAS\n\nTestimoniales: {{testigos}}\n\nDocumentales: Registro civil de matrimonio; registro civil de nacimiento del menor {{nombre_menor}}.\n\nNOTIFICACIONES\n\nEl suscrito en {{direccion_notificacion}}.\n\nAtentamente,\n\n_______________________________\n{{nombre_padre_solicitante}}\nC.C. N°. {{cedula_solicitante}}"
-  }
+  },
+
+  {
+  "id": "revocatoria-poder-contraer-matrimonio",
+  "title": "Revocatoria de Poder para Contraer Matrimonio",
+  "subtitle": "Matrimonio",
+  "fields": [
+    { "name": "ciudad", "label": "Ciudad", "type": "text", "required": true },
+    { "name": "departamento", "label": "Departamento", "type": "text", "required": true },
+    { "name": "dia", "label": "Día", "type": "text", "required": true },
+    { "name": "mes", "label": "Mes", "type": "text", "required": true },
+    { "name": "anio", "label": "Año", "type": "text", "required": true },
+    { "name": "notario", "label": "Notario", "type": "text", "required": true },
+    { "name": "circulo", "label": "Círculo Notarial", "type": "text", "required": true },
+    { "name": "nombre_poderdante", "label": "Nombre del Poderdante", "type": "text", "required": true },
+    { "name": "cedula_poderdante", "label": "Cédula del Poderdante", "type": "text", "required": true },
+    { "name": "expedicion_poderdante", "label": "Expedición Cédula Poderdante", "type": "text", "required": true },
+    { "name": "nombre_apoderado_revocado", "label": "Nombre del Apoderado a quien se Revoca", "type": "text", "required": true },
+    { "name": "cedula_apoderado_revocado", "label": "Cédula del Apoderado Revocado", "type": "text", "required": true },
+    { "name": "nombre_contrayente", "label": "Nombre de la Persona con quien se iba a Casar", "type": "text", "required": true },
+    { "name": "numero_clausula_poder", "label": "Número de la Cláusula del Poder Original", "type": "text", "required": true },
+    { "name": "numero_escritura_poder", "label": "Número de la Escritura del Poder Original", "type": "text", "required": true },
+    { "name": "fecha_escritura_poder", "label": "Fecha de la Escritura del Poder Original", "type": "text", "required": true },
+    { "name": "notaria_poder", "label": "Notaría que Expidió el Poder Original", "type": "text", "required": true },
+    { "name": "circulo_poder", "label": "Círculo Notarial del Poder Original", "type": "text", "required": true }
+  ],
+  "template": "REVOCATORIA DE PODER PARA CONTRAER MATRIMONIO\n\nEn la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí Notario {{notario}}, del Círculo de {{circulo}}, compareció el señor {{nombre_poderdante}}, varón, mayor de edad, domiciliado y residente en {{ciudad}}, identificado con la cédula de ciudadanía Nº {{cedula_poderdante}} de {{expedicion_poderdante}}, quien manifestó lo siguiente:\n\nPRIMERO.— Que por medio de la presente escritura revoca en todos sus efectos el poder especial conferido al señor {{nombre_apoderado_revocado}}, mayor de edad, identificado con la cédula de ciudadanía Nº {{cedula_apoderado_revocado}}, para que en nombre y representación del compareciente celebrara matrimonio con la señorita {{nombre_contrayente}}, según consta en la cláusula Nº {{numero_clausula_poder}} de la escritura pública Nº {{numero_escritura_poder}} de fecha {{fecha_escritura_poder}}, expedida por la Notaría {{notaria_poder}} del Círculo de {{circulo_poder}}.\n\nLeído el presente instrumento se aprueba por el compareciente y se firma conmigo, de todo lo cual doy fe.\n\n\nPoderdante: ____________________\n\nNotario: ____________________"
+}
 ]

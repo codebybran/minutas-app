@@ -208,5 +208,92 @@
       {"name": "direccion_notificacion", "label": "Dirección donde el Demandante Recibe Notificaciones", "type": "text", "required": true}
     ],
     "template": "Señores Magistrados\nCorte Constitucional\nE.S.D.\n\nRef.: Demanda de inconstitucionalidad\n\n{{nombre_demandante}}, colombiano, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_demandante}} de {{ciudad_cedula_demandante}}, domiciliado y residente en {{domicilio_demandante}}, de acuerdo con mis derechos y deberes ciudadanos consagrados en los artículos 4°, 40 y 241 de la Constitución Política, me dirijo a ustedes para presentar demanda de inconstitucionalidad contra {{norma_acusada}}, por cuanto contradice la Constitución Nacional.\n\nNORMA ACUSADA\n\n{{texto_norma_acusada}}\n\nNORMA CONSTITUCIONAL INFRINGIDA\n\nMe permito señalar la normatividad constitucional infringida:\n\n{{norma_constitucional_infringida}}\n\nCONCEPTO Y RAZONES DE LA VIOLACIÓN\n\n{{concepto_violacion}}\n\nCOMPETENCIA DE LA CORTE CONSTITUCIONAL\n\nEl artículo 241 de la Constitución Política de 1991 establece que a la Corte Constitucional se le confía la guarda de la integridad y supremacía de la Constitución. Por tanto, en aras de cumplir con dicha norma, debe cumplir la función de decidir sobre las demandas de inconstitucionalidad que presenten los ciudadanos contra las leyes, tanto por su contenido material como por vicios de procedimiento en su formación.\n\nPETICIÓN\n\nDe acuerdo con los anteriores supuestos y haciendo uso de los artículos 4° y 40 de la Constitución, presento ante ustedes honorables magistrados la presente demanda y solicito de manera pronta su pronunciamiento declarando la inexequibilidad de {{norma_acusada}}.\n\nNOTIFICACIONES\n\nLas personales en: {{direccion_notificacion}}\n\n{{ciudad_firma}}, {{fecha_firma}}\n\n\n____________________________\n{{nombre_demandante}}\nC.C. N°. {{cedula_demandante}} de {{ciudad_cedula_demandante}}"
-  }
+  },
+
+  {
+  "id": "desistimiento-accion-tutela",
+  "title": "Desistimiento de la Acción de Tutela",
+  "subtitle": "Acciones de Tutela",
+  "fields": [
+    { "name": "tipo_juez", "label": "Tipo de Juez o Tribunal", "type": "text", "required": true },
+    { "name": "numero_proceso", "label": "Número del Proceso", "type": "text", "required": true },
+    { "name": "nombre_accionado", "label": "Nombre del Accionado", "type": "text", "required": true },
+    { "name": "nombre_solicitante", "label": "Nombre del Solicitante", "type": "text", "required": true },
+    { "name": "cedula_solicitante", "label": "Cédula del Solicitante", "type": "text", "required": true },
+    { "name": "ciudad_residencia", "label": "Ciudad de Residencia", "type": "text", "required": true },
+    { "name": "derecho_fundamental", "label": "Derecho Fundamental Invocado", "type": "text", "required": true },
+    { "name": "motivos_desistimiento", "label": "Motivos del Desistimiento", "type": "text", "required": true }
+  ],
+  "template": "Señor\nJuez {{tipo_juez}}\nE. S. D.\n\nRef.: Proceso {{numero_proceso}} de {{nombre_solicitante}} contra {{nombre_accionado}}\n         Desistimiento de la acción de tutela\n\n{{nombre_solicitante}}, identificado con la cédula de ciudadanía Nº {{cedula_solicitante}}, residente en la ciudad de {{ciudad_residencia}}, actuando en nombre propio, en la acción de tutela que se presentó ante su despacho para proteger el derecho fundamental de {{derecho_fundamental}}, por medio de este documento solicito a usted se decrete el desistimiento del trámite de tutela, toda vez que ha cesado la vulneración del derecho fundamental objeto de esta tutela ya que {{motivos_desistimiento}}, y por tanto solicito terminar el proceso y archivar el mismo.\n\nLa anterior solicitud de conformidad con el artículo 26 del Decreto 2591 de 1991, decreto reglamentario de la acción de tutela.\n\nAtentamente;\n\n\nSolicitante: ____________________"
+},
+
+{
+  "id": "contestacion-accion-tutela-general",
+  "title": "Contestación de la Acción de Tutela",
+  "subtitle": "Acciones de Tutela",
+  "fields": [
+    { "name": "tipo_juez", "label": "Tipo de Juez o Tribunal", "type": "text", "required": true },
+    { "name": "nombre_accionante", "label": "Nombre del Accionante", "type": "text", "required": true },
+    { "name": "derecho_invocado", "label": "Derecho Invocado por el Accionante", "type": "text", "required": true },
+    { "name": "nombre_apoderado_o_representante", "label": "Nombre de quien Contesta", "type": "text", "required": true },
+    { "name": "ciudad_domicilio", "label": "Ciudad de Domicilio", "type": "text", "required": true },
+    { "name": "nombre_representado", "label": "Nombre de la Entidad Representada (si aplica)", "type": "text", "required": false },
+    { "name": "pronunciamiento_hechos", "label": "Pronunciamiento sobre los Hechos", "type": "text", "required": true },
+    { "name": "razones_no_vulneracion", "label": "Razones por las que no Hubo Vulneración", "type": "text", "required": true },
+    { "name": "excepciones_propuestas", "label": "Excepciones Propuestas", "type": "text", "required": true },
+    { "name": "pruebas_documentales", "label": "Pruebas Documentales", "type": "text", "required": true },
+    { "name": "nombres_testigos", "label": "Nombres de Testigos (si aplica)", "type": "text", "required": false },
+    { "name": "direccion_testigos", "label": "Dirección para Citar Testigos", "type": "text", "required": false },
+    { "name": "direccion_notificacion", "label": "Dirección para Notificaciones", "type": "text", "required": true }
+  ],
+  "template": "Señor\nJuez {{tipo_juez}}\nE. S. D.\n\nRef.: Acción de tutela de {{nombre_accionante}} contra {{nombre_representado}}\n\n{{nombre_apoderado_o_representante}}, mayor de edad, domiciliado y residente en {{ciudad_domicilio}}, obrando en representación de {{nombre_representado}} (o en nombre propio), por medio del presente escrito procedo a contestar la solicitud de tutela por vulneración del derecho de {{derecho_invocado}} formulada ante usted por {{nombre_accionante}}, de la siguiente manera:\n\nA los hechos\n{{pronunciamiento_hechos}}\n\nExcepciones a la solicitud de tutela\n{{excepciones_propuestas}}\n\nRazones de la defensa\n{{razones_no_vulneracion}}\n\nPruebas\n\nDocumentales\n{{pruebas_documentales}}\n\nTestimoniales\nSírvase señor juez citar a los señores {{nombres_testigos}}, en la siguiente dirección: {{direccion_testigos}}, para que bajo juramento declaren sobre la veracidad de lo manifestado en esta contestación.\n\nNotificaciones\nEl suscrito, en la dirección: {{direccion_notificacion}}\n\nAtentamente;\n\n\nFirma: ____________________"
+},
+
+{
+  "id": "recurso-apelacion-tutela-solicitante",
+  "title": "Recurso de Apelación de Tutela (por el Solicitante)",
+  "subtitle": "Acciones de Tutela",
+  "fields": [
+    { "name": "juez_superior", "label": "Juez Superior (Segunda Instancia)", "type": "text", "required": true },
+    { "name": "fecha_fallo", "label": "Fecha del Fallo Apelado", "type": "text", "required": true },
+    { "name": "fecha_notificacion_fallo", "label": "Fecha de Notificación del Fallo", "type": "text", "required": true },
+    { "name": "nombre_solicitante", "label": "Nombre del Solicitante", "type": "text", "required": true },
+    { "name": "cedula_solicitante", "label": "Cédula del Solicitante", "type": "text", "required": true },
+    { "name": "ciudad_residencia", "label": "Ciudad de Residencia", "type": "text", "required": true },
+    { "name": "fecha_presentacion_tutela", "label": "Fecha de Presentación de la Tutela", "type": "text", "required": true },
+    { "name": "juzgado_origen", "label": "Juzgado de Primera Instancia", "type": "text", "required": true },
+    { "name": "derecho_fundamental", "label": "Derecho Fundamental Invocado", "type": "text", "required": true },
+    { "name": "fecha_contestacion", "label": "Fecha de Contestación de la Entidad", "type": "text", "required": true },
+    { "name": "nombre_entidad_accionada", "label": "Nombre de la Entidad Accionada", "type": "text", "required": true },
+    { "name": "pruebas_aportadas", "label": "Descripción de Pruebas Aportadas", "type": "text", "required": true },
+    { "name": "razones_negacion", "label": "Razones que dio el Juez para Negar la Tutela", "type": "text", "required": true },
+    { "name": "argumentos_apelacion", "label": "Argumentos de la Apelación", "type": "text", "required": true },
+    { "name": "peticion_final", "label": "Petición Final", "type": "text", "required": true }
+  ],
+  "template": "Señor\nJuez {{juez_superior}}\nE. S. D.\n\nRef: Recurso de apelación de la sentencia de fecha {{fecha_fallo}}\n\n{{nombre_solicitante}}, identificado con la cédula de ciudadanía Nº {{cedula_solicitante}}, residente en la ciudad de {{ciudad_residencia}}, obrando en causa propia, por medio del presente documento presento ante usted recurso de apelación contra el fallo de fecha {{fecha_fallo}} que fue notificado el {{fecha_notificacion_fallo}}, de acuerdo con los siguientes:\n\nHechos\n1. El {{fecha_presentacion_tutela}} se presentó ante el juzgado {{juzgado_origen}} solicitud de tutela para que se protegieran los derechos fundamentales de {{derecho_fundamental}}.\n2. El {{fecha_contestacion}} la entidad {{nombre_entidad_accionada}} contestó la solicitud presentada y anexó las siguientes pruebas: {{pruebas_aportadas}}.\n3. El {{fecha_fallo}} el juzgado {{juzgado_origen}} dictó sentencia de tutela negando la protección solicitada.\n4. Como razones para negar la acción de tutela indicó las siguientes: {{razones_negacion}}.\n5. El Señor Juez no tuvo en cuenta las pruebas allegadas para demostrar la vulneración del derecho invocado. {{argumentos_apelacion}}\n\nPeticiones\n1. Que se revoque el fallo de tutela proferido por el juzgado {{juzgado_origen}} el {{fecha_fallo}} y notificado el {{fecha_notificacion_fallo}}.\n2. {{peticion_final}}\n\nFundamentos de derecho\nComo fundamento de derecho se invocan los artículos 31 y 32 del Decreto 2591 de 1991.\n\nAtentamente;\n\n__________________"
+},
+
+{
+  "id": "recurso-apelacion-tutela-accionado",
+  "title": "Recurso de Apelación de Tutela (por la Entidad Accionada)",
+  "subtitle": "Acciones de Tutela",
+  "fields": [
+    { "name": "juez_superior", "label": "Juez Superior (Segunda Instancia)", "type": "text", "required": true },
+    { "name": "fecha_fallo", "label": "Fecha del Fallo Apelado", "type": "text", "required": true },
+    { "name": "fecha_notificacion_fallo", "label": "Fecha de Notificación del Fallo", "type": "text", "required": true },
+    { "name": "nombre_representante", "label": "Nombre de quien Apela", "type": "text", "required": true },
+    { "name": "ciudad_domicilio", "label": "Ciudad de Domicilio", "type": "text", "required": true },
+    { "name": "nombre_entidad_representada", "label": "Nombre de la Entidad Representada", "type": "text", "required": true },
+    { "name": "fecha_presentacion_tutela", "label": "Fecha de Presentación de la Tutela", "type": "text", "required": true },
+    { "name": "juzgado_origen", "label": "Juzgado de Primera Instancia", "type": "text", "required": true },
+    { "name": "nombre_accionante", "label": "Nombre del Accionante", "type": "text", "required": true },
+    { "name": "fecha_contestacion", "label": "Fecha de la Contestación", "type": "text", "required": true },
+    { "name": "pruebas_aportadas", "label": "Descripción de Pruebas Aportadas en la Contestación", "type": "text", "required": true },
+    { "name": "derechos_tutelados", "label": "Derechos que el Juez Tuteló", "type": "text", "required": true },
+    { "name": "razones_tutela", "label": "Razones que dio el Juez para Tutelar", "type": "text", "required": true },
+    { "name": "argumentos_apelacion", "label": "Argumentos de la Apelación", "type": "text", "required": true },
+    { "name": "tarjeta_profesional", "label": "Tarjeta Profesional (si es abogado)", "type": "text", "required": false }
+  ],
+  "template": "Señor\nJuez {{juez_superior}}\nE. S. D.\n\nRef.: Recurso de apelación de la sentencia de fecha {{fecha_fallo}}\n\n{{nombre_representante}}, mayor de edad, domiciliado y residente en {{ciudad_domicilio}}, obrando en representación de {{nombre_entidad_representada}}, por medio del presente documento presento ante usted recurso de apelación contra el fallo de fecha {{fecha_fallo}} que fue notificado el {{fecha_notificacion_fallo}}, de acuerdo con los siguientes:\n\nHechos\n1. El {{fecha_presentacion_tutela}} se presentó ante el juzgado {{juzgado_origen}} solicitud de tutela por parte de {{nombre_accionante}}.\n2. El {{fecha_contestacion}} mi representada contestó la solicitud presentada y anexó las siguientes pruebas: {{pruebas_aportadas}}.\n3. El {{fecha_fallo}} el juzgado {{juzgado_origen}} dictó sentencia tutelando los derechos fundamentales de {{derechos_tutelados}}.\n4. Como razones para tutelar los derechos fundamentales indicó las siguientes: {{razones_tutela}}.\n5. El juez no tuvo en cuenta las pruebas y argumentos allegados en la contestación que demuestran la ausencia de vulneración del derecho invocado. {{argumentos_apelacion}}\n\nPeticiones\n1. Que se revoque el fallo de tutela proferido por el juzgado {{juzgado_origen}} el {{fecha_fallo}} y notificado el {{fecha_notificacion_fallo}} mediante el cual se tutelan los derechos fundamentales de {{derechos_tutelados}}.\n2. Que como consecuencia de lo anterior se ordene archivar el caso y se le notifique tal decisión al accionante.\n\nFundamentos de derecho\nComo fundamento de derecho se invocan los artículos 31 y 32 del Decreto 2591 de 1991.\n\nAtentamente;\n\n__________________\nT.P. Nº {{tarjeta_profesional}} del C.S.J."
+}
 ]
