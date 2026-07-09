@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import './App.css'
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+
 // BADGE TIPO TRÁMITE -
 function getBadgeTramite(tipo) {
   if (tipo === 'Notarial') return {
@@ -7766,7 +7768,7 @@ function App() {
   const [expandedSubtitles, setExpandedSubtitles] = useState({})
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/minutas')
+    fetch(`${API_URL}/api/minutas`)
       .then(r => r.json())
       .then(setCategories)
       .catch(() => setCategories([]))
@@ -7778,7 +7780,7 @@ function App() {
     setFormData({})
     setShowPasos(false)
     setErrores({})
-    const res = await fetch(`http://localhost:3001/api/minutas/${selectedCategory.id}/${minuta.id}`)
+    const res = await fetch(`${API_URL}/api/minutas/${selectedCategory.id}/${minuta.id}`)
     const data = await res.json()
     setMinutaDetail(data)
   }
@@ -7818,7 +7820,7 @@ function App() {
       return
     }
     setLoading(true)
-    const res = await fetch('http://localhost:3001/api/generate/preview', {
+    const res = await fetch(`${API_URL}/api/generate/preview`, {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ template: minutaDetail.template, title: minutaDetail.title, data: formData, tipo_tramite: minutaDetail.tipo_tramite, categoryId: selectedCategory.id })
     })
@@ -7846,7 +7848,7 @@ function App() {
         if (h1) h1.remove()
         textoActual = clone.innerText
       }
-      const res = await fetch('http://localhost:3001/api/generate/word-edited', {
+      const res = await fetch(`${API_URL}/api/generate/word-edited`, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ editedText: textoActual, title: tituloActual, fileName: minutaDetail.title })
       })
