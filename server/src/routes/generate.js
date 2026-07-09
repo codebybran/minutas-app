@@ -29,7 +29,7 @@ function notaLegal(tipo_tramite, categoryId) {
   // ── DERECHO ADMINISTRATIVO ──────────────────────────────────────────────────
   if (categoryId === 'derecho-administrativo') {
     return `
-<div style="margin-top:48pt;font-family:'Times New Roman',serif;">
+<div class="aviso-legal-print" style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
     <div style="height:5px;background:linear-gradient(90deg,#1565c0,#42a5f5,#1565c0);"></div>
     <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
@@ -64,7 +64,7 @@ function notaLegal(tipo_tramite, categoryId) {
   // ── DERECHO CONSTITUCIONAL ──────────────────────────────────────────────────
   if (categoryId === 'derecho-constitucional') {
     return `
-<div style="margin-top:48pt;font-family:'Times New Roman',serif;">
+<div class="aviso-legal-print" style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
     <div style="height:5px;background:linear-gradient(90deg,#4a0080,#9c27b0,#4a0080);"></div>
     <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
@@ -99,7 +99,7 @@ function notaLegal(tipo_tramite, categoryId) {
 // ── DERECHO DE FAMILIA (minutas judiciales) ─
   if (categoryId === 'derecho-familia' && t !== 'notarial') {
     return `
-<div style="margin-top:48pt;font-family:'Times New Roman',serif;">
+<div class="aviso-legal-print" style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
     <div style="height:5px;background:linear-gradient(90deg,#880e4f,#e91e63,#880e4f);"></div>
     <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
@@ -131,7 +131,7 @@ function notaLegal(tipo_tramite, categoryId) {
   // ── DERECHO PROCESAL CIVIL ──────────────────────────────────────────────────
   if (categoryId === 'derecho-procesal-civil') {
     return `
-<div style="margin-top:48pt;font-family:'Times New Roman',serif;">
+<div class="aviso-legal-print" style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
     <div style="height:5px;background:linear-gradient(90deg,#1b5e20,#43a047,#1b5e20);"></div>
     <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
@@ -166,7 +166,7 @@ function notaLegal(tipo_tramite, categoryId) {
   // ── NOTARIAL ────────────────────────────────────────────────────────────────
   if (t === 'notarial') {
     return `
-<div style="margin-top:48pt;font-family:'Times New Roman',serif;">
+<div class="aviso-legal-print" style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
     <div style="height:5px;background:linear-gradient(90deg,#b8962e,#e2b94a,#b8962e);"></div>
     <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
@@ -197,7 +197,7 @@ function notaLegal(tipo_tramite, categoryId) {
 
   // ── PRIVADO (default) ───────────────────────────────────────────────────────
   return `
-<div style="margin-top:48pt;font-family:'Times New Roman',serif;">
+<div class="aviso-legal-print" style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
     <div style="height:5px;background:linear-gradient(90deg,#b8962e,#e2b94a,#b8962e);"></div>
     <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
@@ -261,6 +261,7 @@ function toHTML(filledText, title, tipo_tramite, categoryId) {
     @media print {
       body { margin: 2.5cm 3cm !important; padding: 0 !important; }
       header, footer { display: none !important; }
+      .aviso-legal-print { display: none !important; }
     }
     body {
       font-family: 'Times New Roman', Times, serif;
@@ -368,6 +369,21 @@ router.post('/word', async (req, res) => {
     res.set({
       'Content-Type': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
       'Content-Disposition': `attachment; filename="${cleanTitle(title)}.docx"`
+    });
+    res.send(buffer);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+router.post('/word-edited', async (req, res) => {
+  try {
+    const { editedText, title, fileName } = req.body;
+    const buffer = await toDocx(editedText, title || '');
+    const nombreArchivo = fileName || title || 'documento';
+    res.set({
+      'Content-Type': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+      'Content-Disposition': `attachment; filename="${cleanTitle(nombreArchivo)}.docx"`
     });
     res.send(buffer);
   } catch (error) {

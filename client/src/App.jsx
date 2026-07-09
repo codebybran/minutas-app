@@ -7755,6 +7755,7 @@ function App() {
   const [minutaDetail, setMinutaDetail] = useState(null)
   const [formData, setFormData] = useState({})
   const [previewHTML, setPreviewHTML] = useState('')
+  const [editedText, setEditedText] = useState('')
   const [loading, setLoading] = useState(false)
   const [loadingWord, setLoadingWord] = useState(false)
   const [showPasos, setShowPasos] = useState(false)
@@ -7823,6 +7824,7 @@ function App() {
     })
     const data = await res.json()
     setPreviewHTML(data.html)
+    setEditedText(data.filled)
     setLoading(false)
     setHistorial(prev => [{ id: Date.now(), titulo: minutaDetail.title, hora: new Date().toLocaleTimeString('es-CO', { hour: '2-digit', minute: '2-digit' }), html: data.html }, ...prev.slice(0, 9)])
   }
@@ -7832,9 +7834,21 @@ function App() {
   const handleDownloadWord = async () => {
     setLoadingWord(true)
     try {
-      const res = await fetch('http://localhost:3001/api/generate/word', {
+      const iframeDoc = document.getElementById('preview-iframe')?.contentDocument
+      let textoActual = editedText
+      let tituloActual = minutaDetail.title
+      if (iframeDoc) {
+        const clone = iframeDoc.body.cloneNode(true)
+        const aviso = clone.querySelector('.aviso-legal-print')
+        if (aviso) aviso.remove()
+        const h1 = clone.querySelector('h1')
+        tituloActual = h1 ? h1.innerText.trim() : ''
+        if (h1) h1.remove()
+        textoActual = clone.innerText
+      }
+      const res = await fetch('http://localhost:3001/api/generate/word-edited', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ template: minutaDetail.template, title: minutaDetail.title, data: formData, tipo_tramite: minutaDetail.tipo_tramite, categoryId: selectedCategory.id })
+        body: JSON.stringify({ editedText: textoActual, title: tituloActual, fileName: minutaDetail.title })
       })
       const blob = await res.blob()
       const url = URL.createObjectURL(blob)
@@ -8173,7 +8187,7 @@ function App() {
                     <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#e2b94a', boxShadow: '0 0 6px #e2b94a' }}></div>
                     <span style={{ color: '#a0bcd8', fontSize: '12px', letterSpacing: '1px' }}>VISTA PREVIA DEL DOCUMENTO</span>
                   </div>
-                  <iframe id="preview-iframe" srcDoc={previewHTML} style={{ width: '100%', height: '850px', border: 'none' }} title="Vista previa del documento" />
+                  <iframe id="preview-iframe" srcDoc={previewHTML} style={{ width: '100%', height: '850px', border: 'none' }} title="Vista previa del documento" onLoad={(e) => { const doc = e.target.contentDocument; if (doc && doc.body) { doc.body.contentEditable = "true"; doc.body.style.cursor = "text"; doc.body.style.outline = "none" } }} />
                 </div>
               )}
             </div>
