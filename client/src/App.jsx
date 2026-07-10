@@ -7767,11 +7767,21 @@ function App() {
   const [errores, setErrores] = useState({})
   const [expandedSubtitles, setExpandedSubtitles] = useState({})
 
-  useEffect(() => {
+  const [categoriasListas, setCategoriasListas] = useState(false)
+  const cargarCategorias = (intentos) => {
     fetch(`${API_URL}/api/minutas`)
       .then(r => r.json())
-      .then(setCategories)
-      .catch(() => setCategories([]))
+      .then(data => { setCategories(data); setCategoriasListas(true) })
+      .catch(() => {
+        if (intentos > 0) {
+          setTimeout(() => cargarCategorias(intentos - 1), 4000)
+        } else {
+          setCategoriasListas(true)
+        }
+      })
+  }
+  useEffect(() => {
+    cargarCategorias(15)
   }, [])
 
   const handleSelectMinuta = async (minuta) => {
