@@ -8009,15 +8009,15 @@ function App() {
                   <p style={{ color:'rgba(200,216,232,0.65)', fontSize:'12px', letterSpacing:'4px', textTransform:'uppercase', margin:'0 0 20px' }}>Generador Profesional de Minutas Legales · Colombia</p>
                   <div style={{ display:'inline-flex', alignItems:'center', gap:'10px', border:'1px solid rgba(226,185,74,0.4)', borderRadius:'40px', padding:'9px 26px', animation:'border-glow 2.5s ease-in-out infinite', background:'rgba(226,185,74,0.06)' }}>
                     <div style={{ width:'8px', height:'8px', borderRadius:'50%', background:'#4ade80', boxShadow:'0 0 10px #4ade80' }} />
-                    <span style={{ color:'#8a6a10', fontSize:'12px', fontWeight:700, letterSpacing:'1px' }}>Sistema activo · 222+ documentos disponibles</span>
+                    <span style={{ color:'#8a6a10', fontSize:'12px', fontWeight:700, letterSpacing:'1px' }}>Sistema activo · {categories.reduce((acc,cat)=>acc+cat.minutas.length,0)}+ documentos disponibles</span>
                   </div>
                 </div>
               </div>
 
               <div className="grid-responsive grid-4" style={{ padding:'0 36px 28px', display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:'14px' }}>
                 {[
-                  { num:'+222', label:'Minutas disponibles', sub:'Documentos', color:'#e2b94a', br:'rgba(226,185,74,0.3)', icon:'📄', a:1 },
-                  { num:'4', label:'Áreas del derecho', sub:'Categorías', color:'#60a5fa', br:'rgba(96,165,250,0.3)', icon:'⚖️', a:2 },
+                  { num:'+'+categories.reduce((acc,cat)=>acc+cat.minutas.length,0), label:'Minutas disponibles', sub:'Documentos', color:'#e2b94a', br:'rgba(226,185,74,0.3)', icon:'📄', a:1 },
+                  { num:String(categories.length), label:'Áreas del derecho', sub:'Categorías', color:'#60a5fa', br:'rgba(96,165,250,0.3)', icon:'⚖️', a:2 },
                   { num:'100%', label:'Derecho colombiano', sub:'Normatividad', color:'#4ade80', br:'rgba(74,222,128,0.3)', icon:'🇨🇴', a:3 },
                   { num:'Word', label:'Descarga inmediata', sub:'+ PDF incluido', color:'#f472b6', br:'rgba(244,114,182,0.3)', icon:'⬇️', a:1 },
                 ].map((s,i) => (
@@ -8059,12 +8059,11 @@ function App() {
                   <span style={{ color:'#1a3a5c', fontSize:'11px', fontWeight:800, letterSpacing:'3px', textTransform:'uppercase' }}>Áreas del derecho cubiertas</span>
                 </div>
                 <div className="grid-responsive grid-2" style={{ display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:'12px' }}>
-                  {[
-                    { icon:'👨‍👩‍👧', area:'Derecho de Familia', desc:'Divorcios, custodias, liquidación de sociedad conyugal, adopción, alimentos y más.', count:'21 minutas', c:'#1a3a5c', b:'rgba(244,114,182,0.45)' },
-                    { icon:'📜', area:'Derecho Civil', desc:'Promesas de compraventa, arrendamientos, poderes, testamentos, hipotecas y más.', count:'43 minutas', c:'#162d4a', b:'rgba(226,185,74,0.45)' },
-                    { icon:'🏢', area:'Derecho Comercial', desc:'Pagarés, franquicias, agencias, corretaje, derechos de autor, outsourcing y más.', count:'22 minutas', c:'#162d4a', b:'rgba(96,165,250,0.45)' },
-                    { icon:'🏛️', area:'Derecho de Sociedades', desc:'Constitución de empresas, S.A., asambleas, dictámenes, poderes notariales y más.', count:'22 minutas', c:'#1a3a5c', b:'rgba(74,222,128,0.45)' },
-                  ].map((a,i) => (
+                  {categories.map((cat,i) => {
+                    const iconos = {'derecho-civil':'📜','derecho-familia':'👨‍👩‍👧','derecho-comercial':'🏢','derecho-sociedades':'🏛️','derecho-laboral':'💼','derecho-administrativo':'🏢','derecho-constitucional':'⚖️','derecho-procesal-civil':'📋','derecho-procesal-laboral':'📋','derecho-penal':'🚔','resolucion-conflictos':'🤝','derecho-tributario':'💰'};
+                    const colores = ['rgba(244,114,182,0.45)','rgba(226,185,74,0.45)','rgba(96,165,250,0.45)','rgba(74,222,128,0.45)','rgba(167,139,250,0.45)','rgba(251,146,60,0.45)'];
+                    const a = { icon: iconos[cat.id] || '📄', area: cat.name, desc: 'Consulte las ' + cat.minutas.length + ' minutas disponibles en esta área del derecho.', count: cat.minutas.length + ' minutas', c: i%2===0 ? '#1a3a5c' : '#162d4a', b: colores[i % colores.length] };
+                    return (
                     <div key={i} className="lx-area" style={{ display:'flex', gap:'16px', padding:'18px', background:a.c, borderRadius:'12px', borderLeft:`3px solid ${a.b}`, cursor:'default' }}>
                       <div style={{ fontSize:'38px', flexShrink:0, animation:`float${(i%3)+1} ${2.8+i*0.35}s ease-in-out infinite` }}>{a.icon}</div>
                       <div>
@@ -8075,15 +8074,16 @@ function App() {
                         <div style={{ color:'rgba(200,216,232,0.55)', fontSize:'12px', lineHeight:1.65 }}>{a.desc}</div>
                       </div>
                     </div>
-                  ))}
+                    )
+                  })}
                 </div>
               </div>
 
               <div className="grid-responsive grid-2" style={{ padding:'0 36px 40px', display:'grid', gridTemplateColumns:'1fr 1fr', gap:'14px' }}>
                 <div style={{ background:'#1e3a5f', border:'1px solid rgba(226,185,74,0.2)', borderRadius:'12px', padding:'24px' }}>
                   <div style={{ color:'#e2b94a', fontSize:'52px', lineHeight:1, fontFamily:'Georgia,serif', marginBottom:'10px', animation:'float1 3s ease-in-out infinite', display:'inline-block' }}>"</div>
-                  <p style={{ color:'rgba(200,216,232,0.8)', fontSize:'13px', lineHeight:1.8, margin:'0 0 14px', fontStyle:'italic' }}>La ley es la expresión de la voluntad general. Todos los ciudadanos tienen derecho a concurrir personalmente o por sus representantes en su formación.</p>
-                  <div style={{ color:'#e2b94a', fontSize:'11px', fontWeight:700, letterSpacing:'1px' }}>— Declaración de los Derechos del Hombre, 1789</div>
+                  <p style={{ color:'rgba(200,216,232,0.8)', fontSize:'13px', lineHeight:1.8, margin:'0 0 14px', fontStyle:'italic' }}>Conocer el derecho no es solo conocer las palabras de la ley, sino su fuerza y su alcance real en la vida de las personas.</p>
+                  <div style={{ color:'#e2b94a', fontSize:'11px', fontWeight:700, letterSpacing:'1px' }}>— Digesto de Justiniano, Libro I</div>
                 </div>
                 <div style={{ background:'#1e3a5f', border:'1px solid rgba(255,255,255,0.08)', borderRadius:'12px', padding:'24px' }}>
                   <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'14px' }}>
