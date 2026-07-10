@@ -444,3 +444,57 @@ input:focus {
     0 2px 0 #0a1e35,
     0 4px 8px rgba(0,0,0,0.3) !important;
 }
+/* ── RESPONSIVE: MÓVIL Y TABLET ── */
+@media (max-width: 768px) {
+  .layout-container {
+    flex-direction: column !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+  .sidebar-3d {
+    width: 100% !important;
+    max-height: 45vh;
+    flex-shrink: 0 !important;
+  }
+  .main-panel {
+    width: 100% !important;
+    overflow-y: visible !important;
+  }
+  .modal-3d {
+    width: 92vw !important;
+    max-width: 92vw !important;
+  }
+}
+
+/* ── RESPONSIVE: HEADER MÓVIL ── */
+@media (max-width: 768px) {
+  .main-header {
+    height: auto !important;
+    min-height: 68px;
+    padding: 10px 14px !important;
+    flex-wrap: wrap;
+  }
+  .header-title {
+    font-size: 20px !important;
+    letter-spacing: 1px !important;
+  }
+  .header-subtitle {
+    font-size: 9px !important;
+    letter-spacing: 0.5px !important;
+  }
+  .header-counter-text {
+    font-size: 11px !important;
+  }
+}
+
+/* ── RESPONSIVE: GRILLAS DE TARJETAS ── */
+@media (max-width: 768px) {
+  .grid-responsive {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}

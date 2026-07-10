@@ -7870,17 +7870,17 @@ function App() {
 
       {showPasos && <PanelPasos minutaId={minutaDetail?.id} onClose={() => setShowPasos(false)} />}
 
-      <header className="header-3d" style={{ background: 'linear-gradient(135deg, #1a3a5c 0%, #2c5282 100%)', padding: '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '68px', flexShrink: 0 }}>
+      <header className="header-3d main-header" style={{ background: 'linear-gradient(135deg, #1a3a5c 0%, #2c5282 100%)', padding: '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '68px', flexShrink: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{ fontSize: '28px', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.4))' }}>⚖️</div>
           <div>
-            <div style={{ color: '#e2b94a', fontSize: '30px', fontWeight: 'bold', letterSpacing: '3px', textShadow: '0 1px 0 rgba(255,255,255,0.1), 0 2px 4px rgba(0,0,0,0.4)' }}>LEXDOC</div>
-            <div style={{ color: '#a0bcd8', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>Generador de Minutas Legales · Colombia</div>
+            <div className="header-title" style={{ color: '#e2b94a', fontSize: '30px', fontWeight: 'bold', letterSpacing: '3px', textShadow: '0 1px 0 rgba(255,255,255,0.1), 0 2px 4px rgba(0,0,0,0.4)' }}>LEXDOC</div>
+            <div className="header-subtitle" style={{ color: '#a0bcd8', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>Generador de Minutas Legales · Colombia</div>
           </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{ color: '#e2b94a', fontSize: '16px', letterSpacing: '1px', fontWeight: 'bold', textShadow: '0 1px 4px rgba(0,0,0,0.5)' }}>
-            {categories.reduce((acc, cat) => acc + cat.minutas.length, 0)} minutas disponibles
+            <span className="header-counter-text">{categories.reduce((acc, cat) => acc + cat.minutas.length, 0)} minutas disponibles</span>
           </div>
           {historial.length > 0 && (
             <button onClick={() => setShowHistorial(!showHistorial)} style={{ background: showHistorial ? 'linear-gradient(135deg, #e2b94a, #c9a030)' : 'rgba(255,255,255,0.08)', border: '1px solid #e2b94a66', color: showHistorial ? '#1a3a5c' : '#e2b94a', borderRadius: '6px', padding: '6px 14px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold', boxShadow: showHistorial ? '0 2px 0 #8a6418, 0 4px 10px rgba(0,0,0,0.3)' : '0 2px 0 rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.2)' }}>
@@ -7902,7 +7902,7 @@ function App() {
         </div>
       )}
 
-      <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
+      <div className="layout-container" style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
         <aside className="sidebar-3d" style={{ width: '300px', background: 'linear-gradient(180deg, #1e3a5c 0%, #162d4a 100%)', overflowY: 'auto', overflowX: 'hidden', flexShrink: 0 }}>
           <div style={{ padding: '20px' }}>
             <div style={{ marginBottom: '16px', position: 'relative' }}>
@@ -7993,7 +7993,7 @@ function App() {
           </div>
         </aside>
 
-        <main style={{ flex: 1, overflowY: 'auto', background: 'transparent' }}>
+        <main className="main-panel" style={{ flex: 1, overflowY: 'auto', background: 'transparent' }}>
           {!minutaDetail && (
             <div id="lexdoc-home" style={{ overflowY:'auto', height:'100%', background:'#b0b7bd' }}>
               <style>{LEXDOC_HOME_CSS}</style>
@@ -8014,7 +8014,7 @@ function App() {
                 </div>
               </div>
 
-              <div style={{ padding:'0 36px 28px', display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:'14px' }}>
+              <div className="grid-responsive grid-4" style={{ padding:'0 36px 28px', display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:'14px' }}>
                 {[
                   { num:'+222', label:'Minutas disponibles', sub:'Documentos', color:'#e2b94a', br:'rgba(226,185,74,0.3)', icon:'📄', a:1 },
                   { num:'4', label:'Áreas del derecho', sub:'Categorías', color:'#60a5fa', br:'rgba(96,165,250,0.3)', icon:'⚖️', a:2 },
@@ -8035,7 +8035,7 @@ function App() {
                   <div style={{ width:'3px', height:'20px', background:'linear-gradient(180deg,#e2b94a,transparent)', borderRadius:'2px' }} />
                   <span style={{ color:'#7a5c0e', fontSize:'11px', fontWeight:800, letterSpacing:'3px', textTransform:'uppercase' }}>¿Cómo usar LEXDOC?</span>
                 </div>
-                <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'14px' }}>
+                <div className="grid-responsive grid-3" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'14px' }}>
                   {[
                     { n:'01', icon:'📂', t:'Elige el documento', d:'Selecciona la categoría jurídica y la minuta del panel izquierdo.', c:'#1a3a5c', b:'rgba(226,185,74,0.3)' },
                     { n:'02', icon:'✍️', t:'Completa los datos', d:'Rellena los campos. El botón ? en cada campo te explica qué escribir.', c:'#1a3a5c', b:'rgba(96,165,250,0.3)' },
@@ -8058,7 +8058,7 @@ function App() {
                   <div style={{ width:'3px', height:'20px', background:'linear-gradient(180deg,#60a5fa,transparent)', borderRadius:'2px' }} />
                   <span style={{ color:'#1a3a5c', fontSize:'11px', fontWeight:800, letterSpacing:'3px', textTransform:'uppercase' }}>Áreas del derecho cubiertas</span>
                 </div>
-                <div style={{ display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:'12px' }}>
+                <div className="grid-responsive grid-2" style={{ display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:'12px' }}>
                   {[
                     { icon:'👨‍👩‍👧', area:'Derecho de Familia', desc:'Divorcios, custodias, liquidación de sociedad conyugal, adopción, alimentos y más.', count:'21 minutas', c:'#1a3a5c', b:'rgba(244,114,182,0.45)' },
                     { icon:'📜', area:'Derecho Civil', desc:'Promesas de compraventa, arrendamientos, poderes, testamentos, hipotecas y más.', count:'43 minutas', c:'#162d4a', b:'rgba(226,185,74,0.45)' },
@@ -8079,7 +8079,7 @@ function App() {
                 </div>
               </div>
 
-              <div style={{ padding:'0 36px 40px', display:'grid', gridTemplateColumns:'1fr 1fr', gap:'14px' }}>
+              <div className="grid-responsive grid-2" style={{ padding:'0 36px 40px', display:'grid', gridTemplateColumns:'1fr 1fr', gap:'14px' }}>
                 <div style={{ background:'#1e3a5f', border:'1px solid rgba(226,185,74,0.2)', borderRadius:'12px', padding:'24px' }}>
                   <div style={{ color:'#e2b94a', fontSize:'52px', lineHeight:1, fontFamily:'Georgia,serif', marginBottom:'10px', animation:'float1 3s ease-in-out infinite', display:'inline-block' }}>"</div>
                   <p style={{ color:'rgba(200,216,232,0.8)', fontSize:'13px', lineHeight:1.8, margin:'0 0 14px', fontStyle:'italic' }}>La ley es la expresión de la voluntad general. Todos los ciudadanos tienen derecho a concurrir personalmente o por sus representantes en su formación.</p>
@@ -8156,7 +8156,7 @@ function App() {
                     🧪 Llenar con datos de prueba
                   </button>
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                <div className="grid-responsive grid-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                   {minutaDetail.fields.map(field => (
                     <TooltipField key={field.name} field={field} onChange={handleChange} value={formData[field.name]} error={errores[field.name]} />
                   ))}

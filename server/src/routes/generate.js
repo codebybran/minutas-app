@@ -270,6 +270,12 @@ function toHTML(filledText, title, tipo_tramite, categoryId) {
       margin: 2.5cm 3cm;
       color: #000;
     }
+    @media screen and (max-width: 600px) {
+      body {
+        margin: 16px 12px !important;
+        font-size: 11pt;
+      }
+    }
     h1 {
       text-align: center;
       font-size: 14pt;
