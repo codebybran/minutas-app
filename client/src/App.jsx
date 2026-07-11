@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
+import { Routes, Route, useParams, useNavigate } from 'react-router-dom'
 import './App.css'
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
@@ -7861,7 +7862,7 @@ const LEXDOC_HOME_CSS = `
                 .lx-stat,.lx-area,.lx-step{transition:all 0.3s cubic-bezier(0.34,1.56,0.64,1)}
               `;
 
-function App() {
+function AppContent() {
   const [categories, setCategories] = useState([])
   const [selectedCategory, setSelectedCategory] = useState(null)
   const [selectedMinuta, setSelectedMinuta] = useState(null)
@@ -7879,6 +7880,8 @@ function App() {
   const [expandedSubtitles, setExpandedSubtitles] = useState({})
 
   const [categoriasListas, setCategoriasListas] = useState(false)
+  const params = useParams()
+  const navigate = useNavigate()
   const cargarCategorias = (intentos) => {
     fetch(`${API_URL}/api/minutas`)
       .then(r => r.json())
@@ -7894,14 +7897,34 @@ function App() {
   useEffect(() => {
     cargarCategorias(15)
   }, [])
+  useEffect(() => {
+    if (!categoriasListas) return
+    if (params.categoriaId) {
+      const cat = categories.find(c => String(c.id) === String(params.categoriaId))
+      if (cat) {
+        setSelectedCategory(cat)
+        if (params.minutaId) {
+          const m = cat.minutas.find(mm => String(mm.id) === String(params.minutaId))
+          if (m && selectedMinuta?.id !== m.id) {
+            handleSelectMinuta(m, cat.id)
+          }
+        }
+      }
+    } else {
+      setSelectedCategory(null)
+      setSelectedMinuta(null)
+      setMinutaDetail(null)
+    }
+  }, [params.categoriaId, params.minutaId, categoriasListas, categories])
 
-  const handleSelectMinuta = async (minuta) => {
+  const handleSelectMinuta = async (minuta, categoryId) => {
     setSelectedMinuta(minuta)
     setPreviewHTML('')
     setFormData({})
     setShowPasos(false)
     setErrores({})
-    const res = await fetch(`${API_URL}/api/minutas/${selectedCategory.id}/${minuta.id}`)
+    const catId = categoryId || selectedCategory?.id
+    const res = await fetch(`${API_URL}/api/minutas/${catId}/${minuta.id}`)
     const data = await res.json()
     setMinutaDetail(data)
   }
@@ -8005,6 +8028,9 @@ function App() {
           <div style={{ color: '#e2b94a', fontSize: '16px', letterSpacing: '1px', fontWeight: 'bold', textShadow: '0 1px 4px rgba(0,0,0,0.5)' }}>
             <span className="header-counter-text">{categories.reduce((acc, cat) => acc + cat.minutas.length, 0)} minutas disponibles</span>
           </div>
+          <button onClick={() => navigate('/')} style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid #e2b94a66', color: '#e2b94a', borderRadius: '6px', padding: '6px 14px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold', boxShadow: '0 2px 0 rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.2)' }}>
+            🏠 Inicio
+          </button>
           {historial.length > 0 && (
             <button onClick={() => setShowHistorial(!showHistorial)} style={{ background: showHistorial ? 'linear-gradient(135deg, #e2b94a, #c9a030)' : 'rgba(255,255,255,0.08)', border: '1px solid #e2b94a66', color: showHistorial ? '#1a3a5c' : '#e2b94a', borderRadius: '6px', padding: '6px 14px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold', boxShadow: showHistorial ? '0 2px 0 #8a6418, 0 4px 10px rgba(0,0,0,0.3)' : '0 2px 0 rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.2)' }}>
               🕒 Historial ({historial.length})
@@ -8035,7 +8061,7 @@ function App() {
               {busqueda && minutasFiltradas.length > 0 && (
                 <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, background: '#0a1628', border: '1px solid #2c5282', borderRadius: '6px', zIndex: 100, marginTop: '4px', boxShadow: '0 8px 24px rgba(0,0,0,0.5)' }}>
                   {minutasFiltradas.map(m => (
-                    <div key={m.id} onClick={() => { setSelectedCategory(categories.find(c => c.id === m.catId)); handleSelectMinuta(m); setBusqueda('') }}
+                    <div key={m.id} onClick={() => { navigate(`/categoria/${m.catId}/${m.id}`); setBusqueda('') }}
                       style={{ padding: '8px 12px', cursor: 'pointer', borderBottom: '1px solid #1e3a5f', color: '#a0bcd8', fontSize: '11px', lineHeight: '1.4' }}
                       onMouseEnter={e => e.currentTarget.style.background = '#1e3a5c'}
                       onMouseLeave={e => e.currentTarget.style.background = 'transparent'}>
@@ -8055,7 +8081,7 @@ function App() {
             {categories.length === 0 && <p style={{ fontSize: '13px', color: '#6b8caa' }}>No hay minutas cargadas aún.</p>}
             {categories.map(cat => (
               <div key={cat.id} style={{ marginBottom: '8px' }}>
-                <div onClick={() => setSelectedCategory(selectedCategory?.id === cat.id ? null : cat)}
+                <div onClick={() => navigate(selectedCategory?.id === cat.id ? '/' : `/categoria/${cat.id}`)}
                   className={selectedCategory?.id === cat.id ? 'cat-btn-active-3d' : 'cat-btn-3d'}
                   style={{ cursor: 'pointer', padding: '10px 14px', background: selectedCategory?.id === cat.id ? 'linear-gradient(135deg, #2c5282, #1e3a5c)' : 'linear-gradient(135deg, #162d4a, #0f2238)', border: `1px solid ${selectedCategory?.id === cat.id ? '#e2b94a' : '#2c5282'}`, borderRadius: '6px', fontSize: '14px', fontWeight: 'bold', color: selectedCategory?.id === cat.id ? '#e2b94a' : '#90b4d0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
                   <span>📂 {cat.name}</span>
@@ -8083,7 +8109,7 @@ function App() {
                             {isExpanded && (
                               <div style={{ marginLeft: '8px', borderLeft: '2px solid #e2b94a44', paddingLeft: '8px' }}>
                                 {subtitleGroups[sub].map(m => (
-                                  <div key={m.id} onClick={() => handleSelectMinuta(m)}
+                                  <div key={m.id} onClick={() => navigate(`/categoria/${cat.id}/${m.id}`)}
                                     style={{ cursor: 'pointer', padding: '7px 10px', background: selectedMinuta?.id === m.id ? 'linear-gradient(135deg, #2c5282, #1e3a5c)' : 'transparent', borderRadius: '4px', fontSize: '13px', color: selectedMinuta?.id === m.id ? '#e2b94a' : '#90b4d0', marginBottom: '2px', lineHeight: '1.4', borderLeft: selectedMinuta?.id === m.id ? '2px solid #e2b94a' : '2px solid transparent', transition: 'all 0.15s ease' }}>
                                     <div style={{ marginBottom: m.tipo_tramite ? '4px' : '0' }}>{m.title}</div>
                                     {m.tipo_tramite && (() => {
@@ -8187,7 +8213,7 @@ function App() {
                     const colores = ['rgba(244,114,182,0.45)','rgba(226,185,74,0.45)','rgba(96,165,250,0.45)','rgba(74,222,128,0.45)','rgba(167,139,250,0.45)','rgba(251,146,60,0.45)'];
                     const a = { icon: iconos[cat.id] || '📄', area: cat.name, desc: 'Consulte las ' + cat.minutas.length + ' minutas disponibles en esta área del derecho.', count: cat.minutas.length + ' minutas', c: i%2===0 ? '#1a3a5c' : '#162d4a', b: colores[i % colores.length] };
                     return (
-                    <div key={i} className="lx-area" onClick={() => { setSelectedCategory(cat); window.scrollTo({top:0, behavior:'smooth'}); document.querySelector('.sidebar-3d')?.scrollIntoView({behavior:'smooth'}) }} style={{ display:'flex', gap:'16px', padding:'18px', background:a.c, borderRadius:'12px', borderLeft:`3px solid ${a.b}`, cursor:'pointer' }}>
+                    <div key={i} className="lx-area" onClick={() => { navigate(`/categoria/${cat.id}`); window.scrollTo({top:0, behavior:'smooth'}); document.querySelector('.sidebar-3d')?.scrollIntoView({behavior:'smooth'}) }} style={{ display:'flex', gap:'16px', padding:'18px', background:a.c, borderRadius:'12px', borderLeft:`3px solid ${a.b}`, cursor:'pointer' }}>
                       <div style={{ fontSize:'38px', flexShrink:0, animation:`float${(i%3)+1} ${2.8+i*0.35}s ease-in-out infinite` }}>{a.icon}</div>
                       <div>
                         <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'7px', flexWrap:'wrap' }}>
@@ -8320,6 +8346,16 @@ function App() {
         </main>
       </div>
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<AppContent />} />
+      <Route path="/categoria/:categoriaId" element={<AppContent />} />
+      <Route path="/categoria/:categoriaId/:minutaId" element={<AppContent />} />
+    </Routes>
   )
 }
 
