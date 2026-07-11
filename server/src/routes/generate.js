@@ -229,7 +229,8 @@ function notaLegal(tipo_tramite, categoryId) {
 function toHTML(filledText, title, tipo_tramite, categoryId) {
   const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:', 'PRIMERA.', 'SEGUNDA.', 'TERCERA.', 'CUARTA.', 'QUINTA.', 'SEXTA.', 'SÉPTIMA.', 'OCTAVA.', 'PRIMERO.', 'SEGUNDO.', 'TERCERO.', 'CUARTO.', 'QUINTO.', 'SEXTO.', 'SÉPTIMO.', 'OCTAVO.', 'NOVENO.'];
   const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE', 'EL VENDEDOR', 'EL COMPRADOR', 'LAS COMPARECIENTES', 'COMPARECIENTES:', 'PODERDANTE:', 'CONTRAYENTES:'];
-
+  const ROMANOS = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX'];
+  let numeroClausula = 0;
   const parrafos = filledText
     .split('\n')
     .map(line => line.trim())
@@ -238,20 +239,29 @@ function toHTML(filledText, title, tipo_tramite, categoryId) {
       const isClausula = CLAUSULAS.some(c => line.startsWith(c));
       const isFirma = FIRMAS.some(f => line.startsWith(f));
       const isLinea = line.startsWith('_');
-
       if (isClausula) {
-        return `<p style="text-align:justify;margin:10pt 0 4pt 0;">${line}</p>`;
+        const romano = ROMANOS[numeroClausula] || String(numeroClausula + 1);
+        numeroClausula++;
+        const partes = line.split(/[:.]/);
+        const encabezado = partes[0] + (partes[1] ? ':' + partes[1].trim() : '');
+        const resto = line.slice(encabezado.length).replace(/^[:.]?\s*/, '');
+        return `<div class="lx-clause">
+      <div class="lx-clause-num">${romano}.</div>
+      <div class="lx-clause-body">
+        <p class="lx-clause-head">${encabezado}</p>
+        <p class="lx-clause-text">${resto}</p>
+      </div>
+    </div>`;
       }
       if (isFirma && !isLinea) {
-        return `<p style="margin:20pt 0 4pt 0;">${line}</p>`;
+        return `<p class="lx-firma-label">${line}</p>`;
       }
       if (isLinea) {
-        return `<p style="font-family:monospace;margin:2pt 0;">${line}</p>`;
+        return `<p class="lx-firma-linea">${line}</p>`;
       }
-      return `<p style="text-align:justify;margin:0 0 8pt 0;">${line}</p>`;
+      return `<p class="lx-intro">${line}</p>`;
     })
     .join('\n');
-
   return `<!DOCTYPE html>
 <html>
 <head>
@@ -259,41 +269,83 @@ function toHTML(filledText, title, tipo_tramite, categoryId) {
   <style>
     @page { margin: 0; size: A4; }
     @media print {
-      body { margin: 2.5cm 3cm !important; padding: 0 !important; }
+      body { padding: 0 !important; background: #fff !important; }
       header, footer { display: none !important; }
       .aviso-legal-print { display: none !important; }
+      .lx-page { box-shadow: none !important; border: none !important; max-width: none !important; margin: 0 !important; }
     }
+    * { box-sizing: border-box; }
     body {
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 12pt;
-      line-height: 1.5;
-      margin: 2.5cm 3cm;
-      color: #000;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background: #e9e6df;
+      margin: 0;
+      padding: 32px 16px;
+      color: #1a1a1a;
     }
-    @media screen and (max-width: 600px) {
-      body {
-        margin: 16px 12px !important;
-        font-size: 11pt;
-      }
+    .lx-page {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fdfcfa;
+      border: 1px solid #ddd6c8;
+      padding: 44px 56px 36px;
     }
+    .lx-brand { text-align: center; margin-bottom: 14pt; }
+    .lx-brand-name { font-size: 24pt; letter-spacing: 10pt; color: #1a3a5c; margin: 0; }
+    .lx-brand-sub { font-size: 8.5pt; letter-spacing: 3pt; color: #8a7550; margin: 4pt 0 2pt; text-transform: uppercase; }
+    .lx-brand-tag { font-size: 7.5pt; letter-spacing: 2pt; color: #999; margin: 0; text-transform: uppercase; }
+    .lx-hr { display: flex; align-items: center; gap: 10px; margin: 16pt 0; }
+    .lx-hr::before, .lx-hr::after { content: ''; flex: 1; height: 1px; background: #ccc3ac; }
+    .lx-hr span { color: #b8962e; font-size: 11pt; }
     h1 {
       text-align: center;
-      font-size: 14pt;
-      font-weight: bold;
+      font-size: 15pt;
+      font-weight: normal;
+      letter-spacing: 0.5pt;
       text-transform: uppercase;
-      margin-bottom: 16pt;
+      margin: 0 0 14pt 0;
+      line-height: 1.45;
+      color: #1a1a1a;
     }
-    p { text-align: justify; word-wrap: break-word; }
+    .lx-intro { text-align: justify; word-wrap: break-word; margin: 0 0 14pt 0; font-size: 11pt; line-height: 1.65; }
+    .lx-intro strong, .lx-clause-text strong { font-weight: 700; }
+    .lx-clause { display: flex; gap: 14px; margin-bottom: 13pt; align-items: flex-start; }
+    .lx-clause-num { flex-shrink: 0; width: 30px; font-size: 12pt; font-weight: 700; color: #8a7550; padding-top: 1pt; }
+    .lx-clause-head { font-weight: 700; text-transform: uppercase; letter-spacing: 0.3pt; margin: 0 0 3pt 0; font-size: 10.5pt; color: #1a1a1a; }
+    .lx-clause-text { text-align: justify; word-wrap: break-word; margin: 0; font-size: 10.5pt; line-height: 1.6; }
+    .lx-firma-label { font-weight: 700; font-size: 10.5pt; margin: 14pt 0 2pt 0; text-transform: uppercase; }
+    .lx-firma-linea { font-family: monospace; font-size: 10.5pt; margin: 2pt 0; }
+    .lx-signblock { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 20pt; padding-top: 12pt; border-top: 1px solid #ddd6c8; }
+    .lx-footer-diamond { text-align: center; color: #b8962e; font-size: 10pt; margin: 22pt 0 12pt; }
+    .lx-footer { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; font-size: 8pt; color: #999; }
+    @media screen and (max-width: 600px) {
+      body { padding: 12px 6px; }
+      .lx-page { padding: 22px 18px 20px; }
+      .lx-brand-name { font-size: 16pt; letter-spacing: 5pt; }
+      .lx-signblock { grid-template-columns: 1fr; }
+      .lx-footer { flex-direction: column; gap: 4px; text-align: center; }
+    }
   </style>
 </head>
 <body>
-  <h1>${cleanTitle(title)}</h1>
-  ${parrafos}
-  ${notaLegal(tipo_tramite, categoryId)}
+  <div class="lx-page">
+    <div class="lx-brand">
+      <p class="lx-brand-name">LEXDOC</p>
+      <p class="lx-brand-sub">Generador de minutas legales</p>
+      <p class="lx-brand-tag">Derecho · Claridad · Confianza</p>
+    </div>
+    <div class="lx-hr"><span>◆</span></div>
+    <h1>${cleanTitle(title)}</h1>
+    ${parrafos}
+    ${notaLegal(tipo_tramite, categoryId)}
+    <div class="lx-footer-diamond">◆</div>
+    <div class="lx-footer">
+      <span>LEXDOC · Colombia</span>
+      <span>Documento generado automáticamente</span>
+    </div>
+  </div>
 </body>
 </html>`;
 }
-
 async function toDocx(filledText, title) {
   const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:', 'PRIMERA.', 'SEGUNDA.', 'TERCERA.', 'CUARTA.', 'QUINTA.', 'SEXTA.', 'SÉPTIMA.', 'OCTAVA.', 'PRIMERO.', 'SEGUNDO.', 'TERCERO.', 'CUARTO.', 'QUINTO.'];
   const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE', 'EL VENDEDOR', 'EL COMPRADOR', 'LAS COMPARECIENTES', 'COMPARECIENTES:', 'PODERDANTE:', 'CONTRAYENTES:'];
