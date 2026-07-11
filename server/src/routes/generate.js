@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Document, Packer, Paragraph, TextRun, AlignmentType } = require('docx');
+const { Document, Packer, Paragraph, TextRun, AlignmentType, Table, TableRow, TableCell, WidthType, BorderStyle, Header, Footer, VerticalAlign } = require('docx');
 
 function generateFromTemplate(template, data) {
   let filled = template;
@@ -231,10 +231,13 @@ function toHTML(filledText, title, tipo_tramite, categoryId) {
   const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE', 'EL VENDEDOR', 'EL COMPRADOR', 'LAS COMPARECIENTES', 'COMPARECIENTES:', 'PODERDANTE:', 'CONTRAYENTES:'];
   const ROMANOS = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX'];
   let numeroClausula = 0;
+  const normalizar = s => s.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim();
+  const tituloNormalizado = normalizar(cleanTitle(title));
   const parrafos = filledText
     .split('\n')
     .map(line => line.trim())
     .filter(line => line.length > 0)
+    .filter((line, idx) => !(idx === 0 && line === line.toUpperCase() && line.length < 90 && !line.includes(":")))
     .map(line => {
       const isClausula = CLAUSULAS.some(c => line.startsWith(c));
       const isFirma = FIRMAS.some(f => line.startsWith(f));
@@ -242,14 +245,13 @@ function toHTML(filledText, title, tipo_tramite, categoryId) {
       if (isClausula) {
         const romano = ROMANOS[numeroClausula] || String(numeroClausula + 1);
         numeroClausula++;
-        const partes = line.split(/[:.]/);
-        const encabezado = partes[0] + (partes[1] ? ':' + partes[1].trim() : '');
-        const resto = line.slice(encabezado.length).replace(/^[:.]?\s*/, '');
+        const m = line.match(/^([A-ZÁÉÍÓÚÑ]+[:.])\s*(.*)$/);
+        const ordinal = m ? m[1] : line.split(' ')[0];
+        const resto = m ? m[2] : line.slice(ordinal.length).trim();
         return `<div class="lx-clause">
       <div class="lx-clause-num">${romano}.</div>
       <div class="lx-clause-body">
-        <p class="lx-clause-head">${encabezado}</p>
-        <p class="lx-clause-text">${resto}</p>
+        <p class="lx-clause-text"><strong>${ordinal} </strong>${resto}</p>
       </div>
     </div>`;
       }
@@ -309,7 +311,7 @@ function toHTML(filledText, title, tipo_tramite, categoryId) {
     .lx-intro { text-align: justify; word-wrap: break-word; margin: 0 0 14pt 0; font-size: 11pt; line-height: 1.65; }
     .lx-intro strong, .lx-clause-text strong { font-weight: 700; }
     .lx-clause { display: flex; gap: 14px; margin-bottom: 13pt; align-items: flex-start; }
-    .lx-clause-num { flex-shrink: 0; width: 30px; font-size: 12pt; font-weight: 700; color: #8a7550; padding-top: 1pt; }
+    .lx-clause-num { flex-shrink: 0; width: 34px; font-size: 12pt; font-weight: 700; color: #8a7550; padding-top: 1pt; white-space: nowrap; }
     .lx-clause-head { font-weight: 700; text-transform: uppercase; letter-spacing: 0.3pt; margin: 0 0 3pt 0; font-size: 10.5pt; color: #1a1a1a; }
     .lx-clause-text { text-align: justify; word-wrap: break-word; margin: 0; font-size: 10.5pt; line-height: 1.6; }
     .lx-firma-label { font-weight: 700; font-size: 10.5pt; margin: 14pt 0 2pt 0; text-transform: uppercase; }
@@ -349,45 +351,73 @@ function toHTML(filledText, title, tipo_tramite, categoryId) {
 async function toDocx(filledText, title) {
   const CLAUSULAS = ['PRIMERA:', 'SEGUNDA:', 'TERCERA:', 'CUARTA:', 'QUINTA:', 'SEXTA:', 'SÉPTIMA:', 'OCTAVA:', 'NOVENA:', 'DÉCIMA:', 'PRIMERA.', 'SEGUNDA.', 'TERCERA.', 'CUARTA.', 'QUINTA.', 'SEXTA.', 'SÉPTIMA.', 'OCTAVA.', 'PRIMERO.', 'SEGUNDO.', 'TERCERO.', 'CUARTO.', 'QUINTO.'];
   const FIRMAS = ['EL PROMINENTE', 'TESTIGOS', 'PROMITIENTE', 'PROMETIENTE', 'EL VENDEDOR', 'EL COMPRADOR', 'LAS COMPARECIENTES', 'COMPARECIENTES:', 'PODERDANTE:', 'CONTRAYENTES:'];
-
+  const ROMANOS = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX'];
+  const normalizarDocx = s => s.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim();
+  const tituloNormalizadoDocx = normalizarDocx(cleanTitle(title));
   const lines = filledText
     .split('\n')
     .map(line => line.trim())
-    .filter(line => line.length > 0);
-
+    .filter(line => line.length > 0)
+    .filter((line, idx) => !(idx === 0 && line === line.toUpperCase() && line.length < 90 && !line.includes(":")));
   const paragraphs = [];
 
   paragraphs.push(new Paragraph({
     alignment: AlignmentType.CENTER,
+    spacing: { after: 40 },
+    children: [ new TextRun({ text: 'LEXDOC', bold: true, size: 40, font: 'Georgia', color: '1a3a5c', characterSpacing: 60 }) ]
+  }));
+  paragraphs.push(new Paragraph({
+    alignment: AlignmentType.CENTER,
+    spacing: { after: 20 },
+    children: [ new TextRun({ text: 'GENERADOR DE MINUTAS LEGALES', size: 15, font: 'Georgia', color: '8a7550', characterSpacing: 20 }) ]
+  }));
+  paragraphs.push(new Paragraph({
+    alignment: AlignmentType.CENTER,
     spacing: { after: 200 },
-    children: [
-      new TextRun({
-        text: cleanTitle(title).toUpperCase(),
-        bold: true,
-        size: 28,
-        font: 'Times New Roman'
-      })
-    ]
+    border: { bottom: { color: 'ccc3ac', space: 8, style: BorderStyle.SINGLE, size: 6 } },
+    children: [ new TextRun({ text: 'DERECHO · CLARIDAD · CONFIANZA', size: 12, font: 'Georgia', color: '999999', characterSpacing: 15 }) ]
   }));
 
+  paragraphs.push(new Paragraph({
+    alignment: AlignmentType.CENTER,
+    spacing: { after: 280 },
+    children: [ new TextRun({ text: cleanTitle(title).toUpperCase(), bold: true, size: 28, font: 'Georgia' }) ]
+  }));
+
+  let numeroClausula = 0;
   lines.forEach(line => {
     const isClausula = CLAUSULAS.some(c => line.startsWith(c));
     const isFirma = FIRMAS.some(f => line.startsWith(f));
     const isLinea = line.startsWith('_');
-
+    if (isClausula) {
+      const romano = ROMANOS[numeroClausula] || String(numeroClausula + 1);
+      numeroClausula++;
+      const m = line.match(/^([A-ZÁÉÍÓÚÑ]+[:.])\s*(.*)$/);
+      const ordinal = m ? m[1] : line.split(" ")[0];
+      const resto = m ? m[2] : line.slice(ordinal.length).trim();
+      paragraphs.push(new Paragraph({
+        alignment: AlignmentType.JUSTIFIED,
+        spacing: { before: 200, after: 120 },
+        indent: { left: 340, hanging: 340 },
+        children: [
+          new TextRun({ text: romano + ".  ", bold: true, size: 24, font: "Georgia", color: "8a7550" }),
+          new TextRun({ text: ordinal + " ", bold: true, size: 22, font: "Georgia" }),
+          new TextRun({ text: resto, size: 22, font: "Georgia" })
+        ]
+      }));
+      return;
+    }
+    if (isFirma && !isLinea) {
+      paragraphs.push(new Paragraph({
+        spacing: { before: 300, after: 60 },
+        children: [ new TextRun({ text: line, bold: true, size: 22, font: 'Georgia' }) ]
+      }));
+      return;
+    }
     paragraphs.push(new Paragraph({
-      alignment: isLinea || isFirma ? AlignmentType.LEFT : AlignmentType.JUSTIFIED,
-      spacing: {
-        before: isClausula ? 200 : isFirma ? 400 : 0,
-        after: isClausula ? 100 : 160
-      },
-      children: [
-        new TextRun({
-          text: line,
-          size: 24,
-          font: 'Times New Roman'
-        })
-      ]
+      alignment: isLinea ? AlignmentType.LEFT : AlignmentType.JUSTIFIED,
+      spacing: { after: isLinea ? 40 : 180 },
+      children: [ new TextRun({ text: line, size: 22, font: isLinea ? 'Courier New' : 'Georgia' }) ]
     }));
   });
 
@@ -398,13 +428,22 @@ async function toDocx(filledText, title) {
           margin: { top: 1418, right: 1701, bottom: 1418, left: 1701 }
         }
       },
+      footers: {
+        default: new Footer({
+          children: [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              border: { top: { color: 'ddd6c8', space: 6, style: BorderStyle.SINGLE, size: 4 } },
+              children: [ new TextRun({ text: 'LEXDOC · Colombia  ·  Documento generado automáticamente', size: 14, font: 'Georgia', color: '999999' }) ]
+            })
+          ]
+        })
+      },
       children: paragraphs
     }]
   });
-
   return await Packer.toBuffer(doc);
 }
-
 router.post('/preview', (req, res) => {
   const { template, title, data, tipo_tramite, categoryId } = req.body;
   const filled = generateFromTemplate(template, data);

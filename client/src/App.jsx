@@ -3476,6 +3476,117 @@ const DATOS_PRUEBA = {
     nombre_administrador: 'Jhon Brandon Martínez Vélez',
   },
 
+  'demanda-proceso-ordinario-laboral': {
+  ciudad_firma: 'El Cerrito', fecha_firma: '8 de mayo de 2026',
+  tipo_juzgado: 'Laboral del Circuito de El Cerrito',
+  nombre_abogado: 'Roberto Salcedo Muñoz', cedula_abogado: '16345678',
+  ciudad_cedula_abogado: 'El Cerrito', tarjeta_profesional_abogado: '654321-B',
+  nombre_demandante: 'Alexander García López', cedula_demandante: '0987654321',
+  ciudad_cedula_demandante: 'Cali',
+  nombre_demandado: 'Comercializadora El Cerrito S.A.S.', nit_demandado: '900.123.456-7',
+  direccion_demandado: 'Carrera 8 # 12-34, El Cerrito',
+  fecha_inicio_contrato: '1 de marzo de 2023', fecha_fin_contrato: '15 de abril de 2026',
+  cargo_desempenado: 'auxiliar de bodega',
+  salario_devengado: 'un millón trescientos mil pesos ($1.300.000)',
+  descripcion_hechos: '1. El demandante ingresó a laborar el 1 de marzo de 2023.\n2. Fue despedido el 15 de abril de 2026 sin justa causa.\n3. No se le cancelaron las prestaciones sociales correspondientes.',
+  pretensiones: '1. Se ordene el pago de cesantías, intereses a las cesantías, prima de servicios y vacaciones.\n2. Se ordene el pago de la indemnización por despido injustificado.',
+  pruebas: '1. Contrato de trabajo.\n2. Comprobantes de pago de salario.\n3. Carta de despido.',
+  direccion_notificacion_demandante: 'Calle 4 Sur # 2A-56, El Cerrito',
+  direccion_abogado: 'Carrera 5 # 3-20, oficina 102, El Cerrito',
+},
+
+'demanda-ordinario-laboral-honorarios': {
+  ciudad_firma: 'El Cerrito', fecha_firma: '8 de mayo de 2026',
+  tipo_juzgado: 'Laboral del Circuito de El Cerrito',
+  nombre_abogado: 'Roberto Salcedo Muñoz', cedula_abogado: '16345678',
+  ciudad_cedula_abogado: 'El Cerrito', tarjeta_profesional_abogado: '654321-B',
+  nombre_demandante: 'Luis Fernando Gómez Torres', cedula_demandante: '0987654321',
+  ciudad_cedula_demandante: 'Cali',
+  nombre_demandado: 'Comercializadora El Cerrito S.A.S.',
+  direccion_demandado: 'Carrera 8 # 12-34, El Cerrito',
+  descripcion_servicios: 'servicios de asesoría contable y tributaria mensual',
+  fecha_inicio_servicios: '1 de enero de 2026', fecha_fin_servicios: '30 de abril de 2026',
+  valor_honorarios: 'cuatro millones de pesos ($4.000.000)',
+  descripcion_hechos: '1. El demandante prestó servicios de asesoría contable desde enero de 2026.\n2. El demandado no canceló los honorarios pactados.\n3. Se han hecho requerimientos de pago sin obtener respuesta.',
+  pruebas: '1. Contrato de prestación de servicios.\n2. Facturas emitidas.\n3. Correos de requerimiento de pago.',
+  direccion_abogado: 'Carrera 5 # 3-20, oficina 102, El Cerrito',
+},
+
+'demanda-fuero-sindical-reintegro': {
+  ciudad_firma: 'El Cerrito', fecha_firma: '8 de mayo de 2026',
+  tipo_juzgado: 'Laboral del Circuito de El Cerrito',
+  nombre_abogado: 'Roberto Salcedo Muñoz', cedula_abogado: '16345678',
+  ciudad_cedula_abogado: 'El Cerrito', tarjeta_profesional_abogado: '654321-B',
+  nombre_trabajador: 'Carlos Eduardo Pérez Ríos', cedula_trabajador: '1122334455',
+  ciudad_cedula_trabajador: 'El Cerrito',
+  cargo_sindical: 'secretario de la junta directiva',
+  nombre_sindicato: 'Sindicato de Trabajadores de Comercializadora El Cerrito',
+  nombre_demandado: 'Comercializadora El Cerrito S.A.S.',
+  direccion_demandado: 'Carrera 8 # 12-34, El Cerrito',
+  fecha_despido: '20 de abril de 2026',
+  descripcion_hechos: '1. El trabajador fue elegido secretario de la junta directiva del sindicato el 10 de enero de 2026.\n2. El empleador lo despidió el 20 de abril de 2026 sin solicitar el levantamiento del fuero sindical ante el juez laboral.',
+  salario_devengado: 'un millón quinientos mil pesos ($1.500.000)',
+  pruebas: '1. Acta de elección de junta directiva.\n2. Carta de despido.\n3. Certificado de inscripción sindical.',
+  direccion_abogado: 'Carrera 5 # 3-20, oficina 102, El Cerrito',
+},
+
+'contestacion-demanda-laboral': {
+  ciudad_firma: 'El Cerrito', fecha_firma: '8 de mayo de 2026',
+  tipo_juzgado: 'Laboral del Circuito de El Cerrito',
+  referencia_proceso: '2026-00234',
+  nombre_abogado: 'Roberto Salcedo Muñoz', cedula_abogado: '16345678',
+  ciudad_cedula_abogado: 'El Cerrito', tarjeta_profesional_abogado: '654321-B',
+  nombre_demandado: 'Comercializadora El Cerrito S.A.S.',
+  nombre_demandante: 'Alexander García López',
+  hechos_aceptados: 'Se aceptan los hechos 1 y 2 relacionados con la fecha de inicio del contrato de trabajo.',
+  hechos_negados: 'Se niega el hecho 3, por cuanto el despido se produjo con justa causa debidamente comprobada.',
+  excepciones: '1. Inexistencia de la obligación reclamada.\n2. Buena fe del empleador.',
+  argumentos_defensa: 'El despido se produjo por justa causa, según lo establecido en el artículo 62 del Código Sustantivo del Trabajo, debido a incumplimientos reiterados del trabajador debidamente documentados.',
+  pruebas: '1. Actas de llamado de atención.\n2. Carta de despido con causal específica.\n3. Testimonios de compañeros de trabajo.',
+  direccion_abogado: 'Carrera 5 # 3-20, oficina 102, El Cerrito',
+},
+
+'solicitud-prescindencia-termino-probatorio': {
+  ciudad_firma: 'El Cerrito', fecha_firma: '8 de mayo de 2026',
+  tipo_juzgado: 'Laboral del Circuito de El Cerrito',
+  referencia_proceso: '2026-00234',
+  nombre_abogado: 'Roberto Salcedo Muñoz', cedula_abogado: '16345678',
+  ciudad_cedula_abogado: 'El Cerrito', tarjeta_profesional_abogado: '654321-B',
+  nombre_poderdante: 'Alexander García López', calidad_parte: 'demandante',
+  nombre_contraparte: 'Comercializadora El Cerrito S.A.S.',
+  razon_prescindencia: 'el proceso versa exclusivamente sobre una controversia de puro derecho, no existiendo hechos controvertidos que requieran práctica de pruebas adicionales',
+  direccion_abogado: 'Carrera 5 # 3-20, oficina 102, El Cerrito',
+},
+
+'solicitud-termino-adicional-pruebas': {
+  ciudad_firma: 'El Cerrito', fecha_firma: '8 de mayo de 2026',
+  tipo_juzgado: 'Laboral del Circuito de El Cerrito',
+  referencia_proceso: '2026-00234',
+  nombre_abogado: 'Roberto Salcedo Muñoz', cedula_abogado: '16345678',
+  ciudad_cedula_abogado: 'El Cerrito', tarjeta_profesional_abogado: '654321-B',
+  nombre_poderdante: 'Alexander García López', calidad_parte: 'demandante',
+  nombre_contraparte: 'Comercializadora El Cerrito S.A.S.',
+  pruebas_pendientes: 'testimonio de dos compañeros de trabajo que no pudieron ser notificados oportunamente para la audiencia programada',
+  dias_adicionales: 'diez (10)',
+  direccion_abogado: 'Carrera 5 # 3-20, oficina 102, El Cerrito',
+},
+
+'demanda-ejecutiva-laboral': {
+  ciudad_firma: 'El Cerrito', fecha_firma: '8 de mayo de 2026',
+  tipo_juzgado: 'Laboral del Circuito de El Cerrito',
+  nombre_abogado: 'Roberto Salcedo Muñoz', cedula_abogado: '16345678',
+  ciudad_cedula_abogado: 'El Cerrito', tarjeta_profesional_abogado: '654321-B',
+  nombre_ejecutante: 'Alexander García López', cedula_ejecutante: '0987654321',
+  ciudad_cedula_ejecutante: 'Cali',
+  nombre_ejecutado: 'Comercializadora El Cerrito S.A.S.',
+  direccion_ejecutado: 'Carrera 8 # 12-34, El Cerrito',
+  titulo_ejecutivo: 'sentencia judicial N°. 123 del 15 de enero de 2026 del Juzgado Laboral del Circuito de El Cerrito, debidamente ejecutoriada',
+  valor_ejecutar: 'ocho millones de pesos ($8.000.000)',
+  medidas_cautelares: 'embargo y secuestro de cuentas bancarias y bienes muebles del ejecutado',
+  direccion_ejecutante: 'Calle 4 Sur # 2A-56, El Cerrito',
+  direccion_abogado: 'Carrera 5 # 3-20, oficina 102, El Cerrito',
+},
+
   'recurso-reconsideracion': {
   ciudad_fecha: 'Cali, 8 de mayo de 2026',
   nombre_jefe_juridica: 'Fernando Ramírez Ospina',
@@ -7853,6 +7964,8 @@ function App() {
         const clone = iframeDoc.body.cloneNode(true)
         const aviso = clone.querySelector('.aviso-legal-print')
         if (aviso) aviso.remove()
+        const extras = clone.querySelectorAll('.lx-brand, .lx-hr, .lx-footer, .lx-footer-diamond')
+        extras.forEach(el => el.remove())
         const h1 = clone.querySelector('h1')
         tituloActual = h1 ? h1.innerText.trim() : ''
         if (h1) h1.remove()
