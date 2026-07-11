@@ -8074,7 +8074,7 @@ function App() {
                     const colores = ['rgba(244,114,182,0.45)','rgba(226,185,74,0.45)','rgba(96,165,250,0.45)','rgba(74,222,128,0.45)','rgba(167,139,250,0.45)','rgba(251,146,60,0.45)'];
                     const a = { icon: iconos[cat.id] || '📄', area: cat.name, desc: 'Consulte las ' + cat.minutas.length + ' minutas disponibles en esta área del derecho.', count: cat.minutas.length + ' minutas', c: i%2===0 ? '#1a3a5c' : '#162d4a', b: colores[i % colores.length] };
                     return (
-                    <div key={i} className="lx-area" style={{ display:'flex', gap:'16px', padding:'18px', background:a.c, borderRadius:'12px', borderLeft:`3px solid ${a.b}`, cursor:'default' }}>
+                    <div key={i} className="lx-area" onClick={() => { setSelectedCategory(cat); window.scrollTo({top:0, behavior:'smooth'}); document.querySelector('.sidebar-3d')?.scrollIntoView({behavior:'smooth'}) }} style={{ display:'flex', gap:'16px', padding:'18px', background:a.c, borderRadius:'12px', borderLeft:`3px solid ${a.b}`, cursor:'pointer' }}>
                       <div style={{ fontSize:'38px', flexShrink:0, animation:`float${(i%3)+1} ${2.8+i*0.35}s ease-in-out infinite` }}>{a.icon}</div>
                       <div>
                         <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'7px', flexWrap:'wrap' }}>
