@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "promesa-compraventa-inmueble",
     "title": "Modelo de contrato de promesa de compraventa de inmueble",
     "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}, entre los suscritos {{nombre_vendedor}}, mayor de edad, vecino de esta ciudad, identificado como aparece al pie de su correspondiente firma, de estado civil {{estado_civil_vendedor}}, {{sociedad_conyugal_vendedor}}, quien para los efectos de este contrato se denominará el Prominente Vendedor, por una parte, y {{nombre_comprador}}, también mayor de edad y vecino de esta ciudad, de estado civil {{estado_civil_comprador}}, {{sociedad_conyugal_comprador}}, identificado como aparece al pie de su respectiva firma quien en adelante se denominará el Prominente Comprador, se ha celebrado un contrato de promesa de compraventa, que se condensa dentro de las siguientes cláusulas:\n\nPRIMERA: El prominente vendedor se obliga a transferir a favor del prominente comprador, a título de compraventa y éste se obliga a adquirir del primero, al mismo título, el derecho de dominio, propiedad y posesión que tiene y ejerce sobre el siguiente bien inmueble: {{tipo_inmueble}}, ubicado en el barrio {{barrio}}, con dirección {{direccion_inmueble}}, localizado en el Perímetro Urbano de la ciudad de {{ciudad}}, con superficie aproximada de {{metros}} metros cuadrados, Registro Catastral número {{registro_catastral}}, Folio de Matrícula Inmobiliaria número {{folio_matricula}}. No obstante la cabida y linderos, la venta se verificará como cuerpo cierto.\n\nSEGUNDA: El inmueble prometido en venta y de que da cuenta la cláusula anterior, fue adquirido por el prominente vendedor, en su estado civil actual, por compra que de él hizo a {{fecha_adquisicion}} como consta en la escritura pública número {{numero_escritura}} de fecha {{fecha_escritura}}, otorgada en la Notaria {{notaria}} del Círculo de {{circulo}}, registrada en la oficina de registro de Instrumentos Públicos de la misma ciudad, al folio de Matrícula Inmobiliaria número {{folio_matricula}}.\n\nTERCERA: El inmueble objeto de esta promesa, le será entregado al prominente comprador, libre de derecho de usufructo, censo, uso o habitación, servidumbres, gravámenes, limitaciones o condiciones de dominio, embargos, pleitos pendientes y en general, de todo factor que pudiera afectar el derecho del prominente comprador sobre el inmueble.\n\nCUARTA: El bien materia de este contrato, le será entregado por el prominente vendedor al prominente comprador, a paz y salvo por todo concepto, en especial, en impuestos de valorización, tasas, contribuciones, acueducto y alcantarillado, energía, etc. Por consiguiente, serán de cargo del prominente comprador, los que se causaren a partir de la fecha de la escritura que eleve a tal acto este contrato.\n\nQUINTA: La entrega del inmueble se verificará el día en que se otorgue la respectiva escritura de compraventa, para lo cual los contratantes han acordado la hora de las {{hora_escritura}} del día {{dia_escritura}} del mes de {{mes_escritura}} de {{anio_escritura}}, en la Notaría {{notaria_escritura}} del Círculo de {{circulo_escritura}}.\n\nSEXTA: El precio o valor del inmueble, objeto de este contrato, es la suma de {{valor_letras}} (${{valor_numeros}}), que el prominente comprador se obliga a pagar al prominente vendedor, en la siguiente forma: El día de hoy, al suscribirse este contrato, la cantidad de {{pago_inicial_letras}} (${{pago_inicial_numeros}}) y el saldo de {{saldo_letras}} (${{saldo_numeros}}) el día señalado para el otorgamiento de la escritura de compraventa del inmueble, sin perjuicio de que antes del plazo estipulado, se otorgue la escritura, de común acuerdo entre los contratantes. Es entendido que los gastos que demande la escrituración por razón de este contrato, serán sufragados por los prominentes vendedor y comprador, por partes iguales.\n\nSÉPTIMA: En este contrato queda incluido el derecho a la línea telefónica número {{telefono}} junto con su respectivo aparato.\n\nOCTAVA: El contratante que incumpliere alguna o varias de las cláusulas aquí consignadas, pagará al contratante cumplido, a título de multa la suma de {{multa_letras}} (${{multa_numeros}}), la cual podrá hacerse efectiva desde el día siguiente a su cumplimiento o infracción, por la vía ejecutiva, sin que haya lugar a requerimiento ni constitución en mora.\n\nEL PROMINENTE VENDEDOR\n_________________________\nCC Nº: ...........\nL.M. Nº: .........\n\nEL PROMINENTE COMPRADOR\n_________________________\nCC Nº: ...........\nL.M. Nº: .........\n\nTESTIGOS\n\n_________________________\nNombre: ..................\nCC Nº: ....................\n\n_________________________\nNombre: ..................\nCC Nº: ....................",
     "fields": [
@@ -224,7 +224,7 @@
     "subtitle": "Transferencia de Dominio"
   },
   {
-    "id": 2,
+    "id": "promesa-donacion",
     "title": "Modelo de promesa de donación (inmueble o mueble)",
     "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos {{nombre_donante}} y {{nombre_donatario}}, mayores de edad y vecinos de la ciudad de {{ciudad}}, identificados como aparece al pie de nuestras correspondientes firmas, denominados en adelante promitente donante y promitente donatario, respectivamente, hemos acordado celebrar el contrato de promesa de donación, regido por las siguientes cláusulas:\n\nPRIMERA. OBJETO. El donante, con plena capacidad para disponer, obrando en nombre propio, promete donar a favor del donatario, también plenamente capaz, y el último promete aceptar la donación objeto del presente contrato, consistente en {{descripcion_bien}}.\n\nSEGUNDA. El bien que por este contrato se promete donar lo adquirió el prometiente donante por {{forma_adquisicion}}, según consta en {{documento_adquisicion}}.\n\nTERCERA. INSINUACIÓN DONATARIA. Las partes contratantes convienen que el aquí prometiente donatario, en su propio nombre y también en el del donante, haga la solicitud en debida forma para la obtención de la insinuación ante el Notario que sea indispensable, sin perjuicio de la suscripción también por el donante y el donatario, de la escritura pública correspondiente.\n\nCUARTA. DONACIÓN PROMETIDA. La donación que aquí se promete y que será recogida en la escritura pública correspondiente contendrá además lo siguiente: Los bienes objeto de la presente promesa de donación, estarán destinados exclusivamente a {{destinacion_bien}}. El donatario adquiere la obligación de no vender los objetos donados durante los próximos {{plazo_no_venta}} años, y la de no arrendar o entregar en comodato a otras personas o entidades sin autorización expresa del donante.\n\nQUINTA. PLAZO. La Escritura Pública que recoja la insinuación notarial necesaria para la donación del bien, será extendida en la Notaría {{notaria}}, del círculo de {{circulo}}, el día {{dia_escritura}}, del mes {{mes_escritura}} del año {{anio_escritura}} a las {{hora_escritura}}.\n\nSEXTA. PRÓRROGA. Mediante acuerdo expreso por escrito, firmado por ambas partes, podrán convenir un término diferente para la firma de la referida escritura pública.\n\nSÉPTIMA. ENTREGA. En la fecha del otorgamiento de la escritura pública el prominente donante hará la entrega material del bien al promitente donatario, libre de limitaciones al dominio, gravámenes, condiciones resolutorias, pleito pendiente, embargo y paz y salvo de impuestos, tasas y contribuciones causadas hasta la fecha de la escritura pública.\n\nOCTAVA. GASTOS. Los gastos que ocasione este instrumento de promesa, así como los que demande la autorización y registro de la escritura pública de insinuación y donación, serán de cargo de {{responsable_gastos}}.\n\nEn señal de asentimiento firman las partes intervinientes.\n\nPROMITIENTE DONANTE\n_________________________\nCC Nº: ...........\n\nPROMITIENTE DONATARIO\n_________________________\nCC Nº: ...........",
     "fields": [
@@ -340,7 +340,7 @@
     "subtitle": "Transferencia de Dominio"
   },
   {
-    "id": 3,
+    "id": "compraventa-inmueble",
     "title": "Modelo de contrato de compraventa de inmueble",
     "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos {{nombre_vendedor}} (vendedor) y {{nombre_comprador}} (comprador), ambos mayores de edad, vecinos de esta ciudad, de estado civil {{estado_civil_vendedor}} y {{estado_civil_comprador}} respectivamente, {{sociedad_conyugal}}, identificados como aparece al pie de nuestras respectivas firmas, manifestamos que mediante el presente escrito hemos decidido celebrar un contrato de compraventa que consignamos en las siguientes cláusulas:\n\nPRIMERA: {{nombre_vendedor}} transfiere a título de venta llana y simple a favor de {{nombre_comprador}} el derecho de dominio y posesión que tiene y ejerce sobre el siguiente bien inmueble: {{tipo_inmueble}}, ubicado en el barrio {{barrio}}, con dirección {{direccion_inmueble}}, con superficie aproximada de {{metros}} metros cuadrados, Registro Catastral número {{registro_catastral}}, localizada en el Perímetro Urbano de la ciudad de {{ciudad}}.\n\nSEGUNDA: El precio o valor del inmueble materia de este contrato, es la cantidad de {{valor_letras}} (${{valor_numeros}}), suma que el vendedor declara tener recibida del comprador, en este acto, a su entera satisfacción.\n\nTERCERA: Declara el vendedor que el inmueble que enajena mediante este instrumento, lo adquirió en su estado civil actual por compra que de él hizo a {{fecha_adquisicion}}, mediante escritura pública número {{numero_escritura}} de fecha {{fecha_escritura}}, otorgada en la Notaría {{notaria}} del Círculo de {{circulo}}, la cual fue registrada en la oficina de registro de Instrumentos Públicos del mismo Círculo al folio de Matrícula Inmobiliaria número {{folio_matricula}}.\n\nCUARTA: Declara igualmente el vendedor que el inmueble que transfiere por medio de esta escritura pública, se encuentra libre de censo, hipoteca, embargo, pleito pendiente, demanda civil registrada, arrendamiento, anticresis, y patrimonio de familia inembargable consignado por escritura pública, condiciones resolutorias de dominio, limitaciones del mismo y en general, libre de todo gravamen, pero que, en todo caso, se compromete a salir al saneamiento de lo vendido, conforme a la ley.\n\nQUINTA: Que desde esta misma fecha, el vendedor le hace entrega real y material del inmueble al comprador, junto con todos sus usos y costumbres que legalmente le corresponden, sin reserva ni limitación alguna y en el estado en que se encuentra, aclarando que en esta venta queda incluido el derecho a la línea telefónica número {{telefono}}, junto con su respectivo aparato.\n\nEL VENDEDOR\n_________________________\nCC Nº: ...........\n\nEL COMPRADOR\n_________________________\nCC Nº: ...........",
     "fields": [
@@ -486,7 +486,7 @@
     "subtitle": "Transferencia de Dominio"
   },
   {
-    "id": 4,
+    "id": "contrato-permuta",
     "title": "Modelo de contrato de permuta",
     "template": "En la ciudad de {{ciudad}}, entre los suscritos {{nombre_parte1}} y {{nombre_parte2}}, mayores de edad, vecinos de esta ciudad, de estado civil {{estado_civil_parte1}} y {{estado_civil_parte2}} respectivamente, {{sociedad_conyugal}}, identificados como aparece al pie de nuestras respectivas firmas, mediante el presente documento manifestamos que hemos celebrado un Contrato de Permuta que consignamos en las siguientes cláusulas:\n\nPRIMERA: {{nombre_parte1}} transfiere a título de permuta, a favor de {{nombre_parte2}}, el siguiente bien inmueble: {{tipo_inmueble1}}, ubicado en el barrio {{barrio1}}, con dirección {{direccion1}}, con superficie aproximada de {{metros1}} metros cuadrados, Registro Catastral número {{registro_catastral1}}, localizada en el Perímetro Urbano de la ciudad de {{ciudad}}, adquirido mediante escritura pública número {{numero_escritura1}} de fecha {{fecha_escritura1}}, otorgada en la Notaría {{notaria1}} del Círculo de {{circulo1}}, debidamente registrada en la Oficina de Registro de Instrumentos Públicos al Folio de Matrícula Inmobiliaria número {{folio_matricula1}}, por compra que de él hizo a {{vendedor_original1}}, adquisición que se operó en su estado civil actual.\n\nSEGUNDA: A su turno, {{nombre_parte2}} transfiere al mismo título de permuta a favor de {{nombre_parte1}}, el siguiente bien inmueble: {{tipo_inmueble2}}, ubicado en el barrio {{barrio2}}, con dirección {{direccion2}}, con superficie aproximada de {{metros2}} metros cuadrados, Registro Catastral número {{registro_catastral2}}, localizada en el Perímetro Urbano de la ciudad de {{ciudad}}, el cual adquirió en su estado civil actual por compra que de él hizo a {{vendedor_original2}}, mediante escritura pública número {{numero_escritura2}} de fecha {{fecha_escritura2}}, otorgada en la Notaría {{notaria2}} del Círculo de {{circulo2}}, registrada en la Oficina de Registro de Instrumentos Públicos al Folio de Matrícula Inmobiliaria número {{folio_matricula2}}.\n\nTERCERA: Para todos los efectos legales, acordamos dar a los inmuebles materia de este contrato un valor comercial de {{valor_letras}} (${{valor_numeros}}) a cada uno.\n\nCUARTA: Expresamos y así lo declaramos que los bienes que son objeto de esta permuta los garantizamos libres de censo, hipoteca, embargo, pleito pendiente, demanda civil registrada, arrendamiento y patrimonio de familia inembargable consignado por escritura pública, condiciones resolutorias de dominio, limitaciones del mismo y en general, libres de todo gravamen, pero en todo caso nos comprometemos a salir a su saneamiento conforme a la ley.\n\nQUINTA: Manifestamos que desde esta misma fecha, hacemos entrega real y material de los inmuebles, junto con todos sus usos, costumbres y servidumbres que legalmente les corresponde, sin reserva ni limitación alguna y en el estado en que se encuentran.\n\nLAS COMPARECIENTES\n\n_________________________\nCC Nº: ...........\n\n_________________________\nCC Nº: ...........",
     "fields": [
@@ -674,7 +674,7 @@
     "subtitle": "Transferencia de Dominio"
   },
   {
-    "id": 5,
+    "id": "compraventa-bien-mueble-reserva-dominio",
     "title": "Modelo de contrato de compraventa de bien mueble con pacto de reserva de dominio",
     "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}, entre los suscritos {{nombre_comprador}}, mayor y vecino de {{ciudad_comprador}}, quien en adelante se denominará El Comprador, y {{nombre_vendedor}}, mayor y vecino de {{ciudad_vendedor}}, en su condición de representante legal de la empresa {{nombre_empresa}}, domiciliada en {{domicilio_empresa}}, han celebrado un contrato de compraventa con pacto de reserva de dominio, que se regirá por las siguientes cláusulas:\n\nPRIMERA: El vendedor ha entregado desde hoy a El Comprador, en perfecto buen estado, y el último confiesa haber recibido el bien mueble que a continuación se describe: {{descripcion_bien}}.\n\nSEGUNDA: El Comprador se obliga a conservar en debida forma el bien antes citado, pero tendrá facultad para hacer uso de dicho bien destinándolo en su provecho al objeto u objetos para los cuales fueron construidos.\n\nTERCERA: El Vendedor, no obstante, seguirá ejerciendo la posesión del bien de que se trata, dado que El Comprador solamente tendrá la tenencia del bien indicado, en lugar y a nombre de El Vendedor, de acuerdo con lo previsto en el artículo 762 del Código Civil.\n\nCUARTA: El precio de este contrato es la suma de {{valor_letras}} (${{valor_numeros}}) que El Comprador se obliga a pagar a El Vendedor, en la ciudad de {{ciudad_pago}}, en la siguiente forma: {{forma_pago}}.\n\nQUINTA: El dominio del bien objeto de este contrato no se transferirá a El Comprador sino en virtud del pago total del precio, pues el vendedor se reserva expresamente el dominio de lo vendido.\n\nSEXTA: La mora en el pago de una cualquiera de las cuotas, causará de inmediato el vencimiento de todas las demás cuotas pendientes aún cuando no estuvieren vencidas. Desde el momento de la mora El Vendedor podrá exigir ejecutivamente el pago de las cuotas pendientes o la entrega inmediata del bien mueble de su propiedad. Si El Vendedor opta por lo último no tendrá que devolver, por ningún motivo, a El Comprador, las cuotas que éste le hubiere abonado, las cuales retendrá como indemnización por el uso, deterioro y demérito del objeto u objetos a que se refiere este contrato, como indemnización por el incumplimiento de esta convención.\n\nSÉPTIMA: Es entendido que si El Comprador vende, grava o dispone en cualquier forma del bien o bienes sobre que versa este contrato, incurre en el delito de abuso de confianza, de conformidad con el Código Penal.\n\nOCTAVA: En el caso de embargo o secuestro del bien o bienes en referencia, el comprador queda obligado a lo siguiente: a) A dar aviso inmediatamente a El Vendedor; b) A oponerse al embargo o secuestro manifestando que es mero tenedor; y c) A hacer todas las diligencias a su alcance a fin de evitar el embargo o secuestro.\n\nPara constancia, se firma en dos ejemplares de un mismo tenor, por las partes que intervienen en la negociación y ante dos testigos.\n\nEL VENDEDOR\n_________________________\nCC Nº: ...........\n\nEL COMPRADOR\n_________________________\nCC Nº: ...........",
     "fields": [
@@ -772,7 +772,7 @@
     "subtitle": "Transferencia de Dominio"
   },
   {
-    "id": 6,
+    "id": "compraventa-vehiculo-automotor",
     "title": "Modelo de contrato de compraventa de vehículo automotor",
     "template": "Entre los suscritos: {{nombre_vendedor}}, mayor de edad, vecino de {{ciudad_vendedor}}, identificado con la cédula de ciudadanía número {{cedula_vendedor}} expedida en {{expedicion_cedula_vendedor}}, quien en adelante se denominará EL VENDEDOR, de una parte, y {{nombre_comprador}}, también mayor de edad, vecino de {{ciudad_comprador}}, identificado con la cédula de ciudadanía número {{cedula_comprador}} expedida en {{expedicion_cedula_comprador}}, quien para efectos del presente instrumento se designará como EL COMPRADOR, de otra parte, manifestamos que hemos acordado celebrar un contrato de compraventa que se regirá por las siguientes cláusulas:\n\nPRIMERA: EL VENDEDOR transfiere a título de venta a favor del COMPRADOR, y éste recibe en los términos y condiciones que aquí se determinan el siguiente VEHÍCULO AUTOMOTOR:\nClase: {{clase_vehiculo}}\nMarca: {{marca_vehiculo}}\nTipo: {{tipo_vehiculo}}\nColor: {{color_vehiculo}}\nModelo: {{modelo_vehiculo}}\nNo. Motor: {{numero_motor}}\nNo. Serie: {{numero_serie}}\nPlaca: {{placa_vehiculo}}\nLínea: {{linea_vehiculo}}\nCilindraje: {{cilindraje}}\nServicio: {{servicio_vehiculo}}\nCarrocería: {{carroceria}}\nNo. Puertas: {{numero_puertas}}\nCapacidad: {{capacidad}}\n\nSEGUNDA: El vehículo automotor anteriormente descrito presenta {{documento_aduana}}, posee sus accesorios correspondientes y se encuentra y entrega en {{estado_vehiculo}}, a entera satisfacción del comprador, circunstancia que éste declara expresamente, para lo cual es plena prueba de recibo el presente documento.\n\nTERCERA: Las partes acuerdan como precio de venta del vehículo objeto del presente contrato, la suma de {{valor_letras}} (${{valor_numeros}}), cantidad que el comprador entrega y el vendedor recibe a la firma de este instrumento.\n\nCUARTA: Manifiesta EL VENDEDOR que responde al comprador por su calidad de propietario del vehículo vendido y declara no haberlo dejado enajenado antes, encontrarse libre de gravámenes, limitaciones o condiciones, comprometiéndose, en todo caso, a salir al saneamiento de lo vendido en los eventos previstos por la ley.\n\nQUINTA: Los gastos que se deriven del traspaso del vehículo serán cubiertos por {{responsable_gastos}}.\n\nEn fe de lo anterior, se firma por las partes contratantes a los {{dia}} días del mes de {{mes}} del año {{anio}}, en dos ejemplares, uno para cada parte, en la ciudad de {{ciudad}}.\n\nEL COMPRADOR\n_________________________\nCC Nº: ...........\n\nEL VENDEDOR\n_________________________\nCC Nº: ...........",
     "fields": [
@@ -966,7 +966,7 @@
     "subtitle": "Transferencia de Dominio"
   },
   {
-    "id": 7,
+    "id": "compraventa-vehiculo-reserva-dominio",
     "title": "Modelo de contrato de compraventa de vehículo automotor con reserva de dominio",
     "template": "Entre los suscritos: {{nombre_vendedor}}, mayor de edad, vecino de {{ciudad_vendedor}}, identificado con la cédula de ciudadanía número {{cedula_vendedor}} expedida en {{expedicion_cedula_vendedor}}, quien en adelante se denominará EL VENDEDOR, de una parte, y {{nombre_comprador}}, también mayor de edad, vecino de {{ciudad_comprador}}, identificado con la cédula de ciudadanía número {{cedula_comprador}} expedida en {{expedicion_cedula_comprador}}, quien para efectos del presente instrumento se designará como EL COMPRADOR, de otra parte, manifestamos que hemos acordado celebrar un contrato de compraventa que se regirá por las disposiciones legales correspondientes y en especial por las siguientes cláusulas:\n\nPRIMERA: EL VENDEDOR transfiere a título de venta a favor del COMPRADOR y éste recibe en los términos y condiciones que aquí se determinan el siguiente VEHÍCULO AUTOMOTOR:\nClase: {{clase_vehiculo}}\nMarca: {{marca_vehiculo}}\nTipo: {{tipo_vehiculo}}\nColor: {{color_vehiculo}}\nModelo: {{modelo_vehiculo}}\nNo. Motor: {{numero_motor}}\nNo. Serie: {{numero_serie}}\nPlaca: {{placa_vehiculo}}\nLínea: {{linea_vehiculo}}\nCilindraje: {{cilindraje}}\nServicio: {{servicio_vehiculo}}\nCarrocería: {{carroceria}}\nNo. Puertas: {{numero_puertas}}\nCapacidad: {{capacidad}}\n\nSEGUNDA: El vehículo automotor relacionado anteriormente presenta {{documento_aduana}}, posee sus accesorios correspondientes y se encuentra y entrega en {{estado_vehiculo}}, a entera satisfacción del comprador, circunstancia que éste declara expresamente, para lo cual es plena prueba de recibo el presente documento.\n\nTERCERA: Las partes acuerdan como precio de venta del vehículo objeto del presente contrato, la suma de {{valor_letras}} (${{valor_numeros}}), cantidad que el comprador se obliga a pagar al vendedor a su orden en la ciudad de {{ciudad_pago}}, en la siguiente forma: A la firma del presente contrato la suma de {{pago_inicial_letras}} (${{pago_inicial_numeros}}) y el saldo así: {{forma_pago_saldo}}.\n\nCUARTA: Los gastos que se deriven del traspaso del vehículo serán cubiertos por {{responsable_gastos}}. Los gastos inherentes al funcionamiento y movilización del vehículo serán de cargo del comprador.\n\nQUINTA: Acuerdan las partes que el vehículo objeto del presente contrato es vendido y adquirido bajo reserva de dominio hasta tanto no sea pagada por el comprador la totalidad del precio pactado. Así mismo, la tradición del vehículo queda subordinada a la condición suspensiva del pago total del precio pactado y, entre tanto, el comprador no será poseedor sino mero tenedor del mismo, a la orden del vendedor y a título de depositario gratuito. En consecuencia, el incumplimiento en el pago de una o varias de las cuotas mensuales estipuladas, o de cualquiera de las obligaciones que por este documento adquiere el comprador, dará derecho opcional al vendedor o a quien legalmente sus derechos represente, a dar por resuelto el presente contrato, o demandar judicialmente su resolución, o demandar las obligaciones del comprador por la vía ejecutiva, en cuyo caso será título de recaudo suficiente el presente contrato.\n\nSEXTA: El comprador, en su condición de depositario gratuito del vehículo objeto del presente contrato, se obliga a hacerle por su cuenta las reparaciones necesarias, sin derecho a reembolso; a continuar pagando las cuotas hasta cubrir el precio total aún si ocurriere hurto, incendio, accidente o cualquier otra causa que disminuyere o hiciere perder el valor comercial del vehículo, pues todos los riesgos son de su cargo, debiendo responder de toda clase de culpa y caso fortuito. Se obliga igualmente a comunicar al vendedor cualquier persecución del vehículo por terceros, antes de pagarse totalmente el precio, así como a no transferir el vehículo, ni venderlo, gravarlo o ejecutar cualquier otro acto de disposición distinto al uso ordinario mientras no haya pagado todo el precio, so pena de hacerse responsable de las acciones civiles y penales a que haya lugar. Queda también obligado el comprador a asegurar el vehículo vendido por el precio total estipulado en el presente contrato y la póliza respectiva deberá endosarse a favor del vendedor, quien se obliga a reendosar al comprador una vez que éste hubiera pagado la totalidad del precio.\n\nEn fe de lo anterior, se firma por las partes contratantes a los {{dia}} días del mes de {{mes}} del año {{anio}}, en dos ejemplares, uno para cada parte, en la ciudad de {{ciudad}}.\n\nEL COMPRADOR\n_________________________\nCC Nº: ...........\n\nEL VENDEDOR\n_________________________\nCC Nº: ...........",
     "fields": [
@@ -1184,7 +1184,7 @@
     "subtitle": "Transferencia de Dominio"
   },
   {
-    "id": 8,
+    "id": "contrato-anticresis",
     "title": "Modelo de contrato de anticresis",
     "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los firmantes {{nombre_deudor}} y {{nombre_acreedor}}, personas mayores y vecinos de {{ciudad}}, identificados con las cédulas de ciudadanía números {{cedula_deudor}} y {{cedula_acreedor}} expedidas en {{expedicion_cedula_deudor}} y {{expedicion_cedula_acreedor}} respectivamente, acordamos celebrar un contrato de anticresis sometido a las siguientes cláusulas:\n\nPRIMERA: {{nombre_deudor}} da en anticresis a {{nombre_acreedor}} el siguiente bien: {{descripcion_bien}}, que éste recibe en el acto.\n\nSEGUNDA: {{nombre_acreedor}} se obliga a restituir el bien descrito a {{nombre_deudor}} en el plazo de {{plazo_anos}} años contado desde el {{dia_inicio}} de {{mes_inicio}} de {{anio_inicio}}.\n\nTERCERA: La entrega del bien mencionado se hace para cubrir y garantizar la deuda que entre {{nombre_deudor}} y {{nombre_acreedor}} se contrajo el día {{dia_deuda}} del mes de {{mes_deuda}} del año {{anio_deuda}}, por la suma de {{valor_deuda_letras}} (${{valor_deuda_numeros}}), más los intereses del {{interes_mensual}} por ciento mensual, a partir de la fecha, según se hace constar en el documento suscrito por las partes aquí contratantes.\n\nCUARTA: {{nombre_deudor}} autoriza expresamente a {{nombre_acreedor}} a: a) Retener el bien afectado hasta el pago íntegro del crédito e intereses causados. b) Percibir los frutos del bien bajo condición de imputar su valor sobre los intereses del crédito y en lo que excediera sobre el capital. c) Descontar del valor de los frutos los gastos que hiciere para la conservación del bien. d) Pedir la venta judicial en caso de que el deudor no pagase el crédito en el plazo convenido o dejare transcurrir {{periodos_mora}} períodos sin abonar los intereses devengados. e) Hacer valer sus derechos constituidos por la anticresis contra terceros adquirientes del bien y contra acreedores del mismo que adquieran derechos posteriores a este acto. f) Restituir el bien en cualquier tiempo aunque no hubiera cobrado su crédito y perseguir el pago del mismo por los medios legales.\n\nQUINTA: El acreedor a su vez se obliga a: a) Cuidar el bien y proveer a su conservación sin introducirle cambio alguno, ni alterar el género de explotación, que solo podrá ser de carácter {{tipo_explotacion}}. b) Reparar los perjuicios que sufriera el bien por su culpa o negligencia y restituirlo aún antes de ser pagado el crédito, si abusare de sus facultades. c) Pagar los impuestos y contribuciones que graven la propiedad, descontando de los frutos el desembolso que hiciere. d) Responder de los perjuicios que ocasione al deudor, si no conservara los derechos que tiene la propiedad. e) Restituir el bien al deudor una vez que esté íntegramente pagado su crédito e intereses devengados.\n\nLeída y aprobada, es firmada por los contratantes.\n\nEL DEUDOR\n_________________________\nCC Nº: ...........\n\nEL ACREEDOR\n_________________________\nCC Nº: ...........",
     "fields": [
@@ -1336,7 +1336,7 @@
     "subtitle": "Uso y Goce"
   },
   {
-    "id": 9,
+    "id": "contrato-usufructo",
     "title": "Modelo de contrato de usufructo",
     "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos {{nombre_propietario}}, persona mayor y vecino de {{ciudad_propietario}}, identificado con la cédula de ciudadanía número {{cedula_propietario}} expedida en {{expedicion_cedula_propietario}}, quien para efectos del presente contrato se denominará el propietario, y {{nombre_usufructuario}}, de iguales condiciones, domiciliado en {{ciudad_usufructuario}}, identificado con la cédula de ciudadanía número {{cedula_usufructuario}} expedida en {{expedicion_cedula_usufructuario}}, quien en adelante se llamará el usufructuario, hemos acordado celebrar el presente contrato de constitución de derecho real de usufructo bajo las cláusulas y condiciones siguientes:\n\nPRIMERA: El propietario concede al usufructuario a título de usufructo el uso y el goce de un bien inmueble ubicado en {{direccion_inmueble}}, con la siguiente descripción: {{descripcion_inmueble}}, usado para {{uso_inmueble}}.\n\nSEGUNDA: El plazo por el que se constituye el presente usufructo es de {{plazo_anos}} años contados a partir del {{dia_inicio}} de {{mes_inicio}} de {{anio_inicio}}, no pudiendo exceder dicho plazo de {{plazo_maximo}} años.\n\nTERCERA: El usufructuario puede usar y explotar el inmueble objeto de este contrato conforme a derecho, además podrá {{facultades_adicionales}}.\n\nCUARTA: El precio del presente usufructo se establece en la suma de {{valor_letras}} (${{valor_numeros}}) que el usufructuario paga en este acto al propietario, quien acepta de conformidad, sirviendo el presente de suficiente recibo.\n\nQUINTA: El propietario entrega el inmueble libre de toda posesión y con todos los derechos correspondientes al usufructo conforme a derecho, lo cual es aceptado de conformidad por el usufructuario.\n\nSEXTA: Las partes realizaron un inventario por separado de todos los accesorios, muebles y útiles, dejando constancia del estado en que se encuentran, al igual que del inmueble, ejemplar que debidamente firmado por ambos se agrega al presente contrato.\n\nSÉPTIMA: El propietario manifiesta que el inmueble objeto de este contrato no tiene deudas de ninguna especie respecto de tasas, impuestos y demás contribuciones, ni está afectado por gravámenes de ninguna naturaleza; asimismo él no está inhibido para disponer de sus bienes.\n\nLeída por propietario y usufructuario, se firma, comprometiéndose las partes a elevar a escritura pública el presente contrato.\n\nEL PROPIETARIO\n_________________________\nCC Nº: ...........\n\nEL USUFRUCTUARIO\n_________________________\nCC Nº: ...........",
     "fields": [
@@ -1482,7 +1482,7 @@
     "subtitle": "Uso y Goce"
   },
   {
-    "id": 10,
+    "id": "contrato-comodato",
     "title": "Modelo de contrato de comodato",
     "template": "En la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos a saber: {{nombre_comodante}} y {{nombre_comodatario}}, quienes para los efectos del presente contrato se denominarán EL COMODANTE y EL COMODATARIO, respectivamente, ambos mayores de edad y vecinos de la ciudad de {{ciudad}}, identificados como aparece al pie de nuestras respectivas firmas, hemos convenido celebrar el presente CONTRATO DE COMODATO que se regirá por las cláusulas que a continuación se señalan y en su defecto por la normatividad correspondiente del Código Civil.\n\nPRIMERA: EL COMODANTE entrega a EL COMODATARIO y éste recibe, a título de comodato o préstamo de uso, los bienes que se relacionan a continuación: {{descripcion_bienes}}, los cuales pertenecen al COMODANTE.\n\nSEGUNDA: Los bienes anteriormente descritos deberán permanecer durante la vigencia del presente contrato en la siguiente dirección: {{direccion_bienes}}, de la ciudad de {{ciudad_bienes}}. En consecuencia, EL COMODATARIO no podrá cambiar el sitio de ubicación de los bienes entregados en comodato sin la previa y escrita autorización de EL COMODANTE.\n\nTERCERA: EL COMODATARIO podrá utilizar los bienes objeto de este contrato única y exclusivamente para los siguientes fines: {{fines_uso}}.\n\nCUARTA: EL COMODATARIO se obliga a: {{obligaciones_comodatario}}.\n\nQUINTA: Declara EL COMODATARIO haber recibido los bienes objeto del presente contrato a su entera satisfacción.\n\nSEXTA: El presente contrato tiene una duración de {{duracion}}, contados a partir de su firma, fecha desde la cual se perfecciona.\n\nSÉPTIMA: A la terminación del presente contrato surge la obligación para EL COMODATARIO de restituir los bienes en perfecto estado de funcionamiento.\n\nOCTAVA: Acuerdan las partes estimar el valor de los bienes dados en comodato en {{valor_letras}} (${{valor_numeros}}), suma que deberá pagar EL COMODATARIO a EL COMODANTE si éste ejerce la facultad que en su favor consagra el artículo 2203 del Código Civil.\n\nNOVENA: Manifiestan las partes que al momento de firmarse el presente contrato los bienes entregados en comodato se encuentran en perfecto estado.\n\nEn señal de conformidad se suscribe por las partes intervinientes en dos ejemplares del mismo tenor, una para cada una.\n\nEL COMODANTE\n_________________________\nCC Nº: ...........\n\nEL COMODATARIO\n_________________________\nCC Nº: ...........",
     "fields": [
@@ -6459,302 +6459,1286 @@
       }
     ]
   },
-
   {
-  "id": "acta-asamblea-propietarios",
-  "subtitle": "Propiedad Horizontal",
-  "title": "Acta de Asamblea General de Propietarios",
-  "template": "ACTA Nº {{numero_acta}} DE ASAMBLEA GENERAL {{tipo_asamblea}}\n{{nombre_conjunto}} PROPIEDAD HORIZONTAL\n\nEn la ciudad de {{ciudad}}, siendo las {{hora}} del día {{dia}} de {{mes}} de {{anio}}, según convocatoria realizada por parte de {{convocante}}, a través de comunicación escrita de fecha {{fecha_convocatoria}}, en {{lugar_reunion}}, se reunieron los propietarios del {{nombre_conjunto}} propiedad horizontal, a fin de deliberar y tomar decisiones de acuerdo al orden del día propuesto en la respectiva convocatoria.\n\nUna vez verificado el quórum se procedió a leer el orden del día por parte del secretario señor {{secretario_lectura}}, el que contempló lo siguiente:\n\n{{orden_del_dia}}\n\nDESARROLLO DEL ORDEN DEL DÍA\n\n1. VERIFICACIÓN DEL QUÓRUM. Para la realización de la presente asamblea se contó con el quórum deliberatorio establecido por el reglamento de propiedad horizontal, siendo los siguientes los asistentes:\n\n{{lista_asistentes}}\n\n2. NOMBRAMIENTO DEL PRESIDENTE Y SECRETARIO. Para presidir la asamblea se eligió por mayoría al señor {{nombre_presidente}}, propietario del inmueble {{inmueble_presidente}} que hace parte de la copropiedad. Para dicha designación fueron postuladas las siguientes personas: {{postulados_presidente}}.\n\nPara hacer las labores de secretaría se eligió por mayoría al señor {{nombre_secretario}}, propietario del inmueble {{inmueble_secretario}} que hace parte de la copropiedad. Para dicha designación fueron postuladas las siguientes personas: {{postulados_secretario}}.\n\n3. INFORME DEL ADMINISTRADOR. El presidente solicita al administrador {{nombre_administrador}} presentar el informe del período. {{resumen_informe_administrador}}.\n\n4. INFORME DEL REVISOR FISCAL. {{informe_revisor_fiscal}}.\n\n5. PRESENTACIÓN Y APROBACIÓN DEL BALANCE. El presidente solicita al administrador presentar el balance de la vigencia del {{fecha_inicio_balance}} al {{fecha_fin_balance}}. {{resultado_balance}}.\n\n6. PRESENTACIÓN Y APROBACIÓN DEL PRESUPUESTO. El administrador presentó el proyecto de presupuesto de la presente vigencia por valor de {{valor_presupuesto}}. {{resultado_presupuesto}}.\n\n7. NOMBRAMIENTOS. {{nombramientos}}.\n\n8. PROPUESTAS, OBSERVACIONES Y COMENTARIOS. {{propuestas_observaciones}}.\n\nAgotado el orden del día, siendo las {{hora_cierre}} del día {{dia}} de {{mes}} de {{anio}}, se da por terminada la asamblea.\n\nPara constancia se firma la presente acta.\n\nPRESIDENTE DE LA ASAMBLEA\n_________________________\n{{nombre_presidente}}\nCC Nº: {{cedula_presidente}}\n\nSECRETARIO DE LA ASAMBLEA\n_________________________\n{{nombre_secretario}}\nCC Nº: {{cedula_secretario}}",
-  "fields": [
-    { "name": "numero_acta", "label": "Número del acta (ej: 001, 015)", "type": "text", "required": true },
-    { "name": "tipo_asamblea", "label": "Tipo de asamblea (escriba: ORDINARIA o EXTRAORDINARIA)", "type": "text", "required": true },
-    { "name": "nombre_conjunto", "label": "Nombre del edificio o conjunto residencial (ej: Conjunto Residencial Los Nogales)", "type": "text", "required": true },
-    { "name": "ciudad", "label": "Ciudad donde se realiza la asamblea", "type": "text", "required": true },
-    { "name": "hora", "label": "Hora de inicio de la asamblea (ej: 7:00 p.m., 9:00 a.m.)", "type": "text", "required": true },
-    { "name": "dia", "label": "Día de la asamblea (número)", "type": "number", "required": true },
-    { "name": "mes", "label": "Mes de la asamblea (ej: abril, marzo)", "type": "text", "required": true },
-    { "name": "anio", "label": "Año de la asamblea (ej: 2026)", "type": "number", "required": true },
-    { "name": "convocante", "label": "Quién convocó la asamblea (ej: el administrador / el revisor fiscal / un grupo de propietarios que representan el 20% de los coeficientes)", "type": "text", "required": true },
-    { "name": "fecha_convocatoria", "label": "Fecha en que se envió la convocatoria (ej: 5 de abril de 2026)", "type": "text", "required": true },
-    { "name": "lugar_reunion", "label": "Lugar donde se realizó la asamblea (ej: salón comunal del conjunto / oficinas de la administración)", "type": "text", "required": true },
-    { "name": "secretario_lectura", "label": "Nombre de quien leyó el orden del día al inicio", "type": "text", "required": true },
-    { "name": "orden_del_dia", "label": "Puntos del orden del día (ej: 1. Verificación del quórum. 2. Nombramiento del presidente y secretario. 3. Informe del administrador. 4. Aprobación del presupuesto. 5. Propuestas y comentarios.)", "type": "text", "required": true },
-    { "name": "lista_asistentes", "label": "Lista de propietarios asistentes con su coeficiente (ej: 1. Jhon Brandon Martínez Vélez - Apto 101 - Coeficiente 5.2%. 2. Alexander García López - Apto 202 - Coeficiente 4.8%.)", "type": "text", "required": true },
-    { "name": "nombre_presidente", "label": "Nombre completo del presidente elegido para la asamblea", "type": "text", "required": true },
-    { "name": "cedula_presidente", "label": "Número de cédula del presidente de la asamblea", "type": "text", "required": true },
-    { "name": "inmueble_presidente", "label": "Número del apartamento o unidad del presidente (ej: apartamento 301)", "type": "text", "required": true },
-    { "name": "postulados_presidente", "label": "Nombres de quienes fueron postulados para presidente (ej: Jhon Brandon Martínez Vélez y Alexander García López)", "type": "text", "required": true },
-    { "name": "nombre_secretario", "label": "Nombre completo del secretario elegido para la asamblea", "type": "text", "required": true },
-    { "name": "cedula_secretario", "label": "Número de cédula del secretario de la asamblea", "type": "text", "required": true },
-    { "name": "inmueble_secretario", "label": "Número del apartamento o unidad del secretario (ej: apartamento 202)", "type": "text", "required": true },
-    { "name": "postulados_secretario", "label": "Nombres de quienes fueron postulados para secretario", "type": "text", "required": true },
-    { "name": "nombre_administrador", "label": "Nombre completo del administrador del conjunto", "type": "text", "required": true },
-    { "name": "resumen_informe_administrador", "label": "Resumen del informe presentado por el administrador (actividades realizadas, estado de cartera, novedades del período)", "type": "text", "required": true },
-    { "name": "informe_revisor_fiscal", "label": "Informe del revisor fiscal. Si no hay revisor fiscal escriba: El conjunto no cuenta con revisor fiscal para el presente período.", "type": "text", "required": true },
-    { "name": "fecha_inicio_balance", "label": "Fecha de inicio del período del balance (ej: 1 de enero de 2025)", "type": "text", "required": true },
-    { "name": "fecha_fin_balance", "label": "Fecha de cierre del período del balance (ej: 31 de diciembre de 2025)", "type": "text", "required": true },
-    { "name": "resultado_balance", "label": "Resultado de la votación sobre el balance (ej: El balance fue aprobado por unanimidad / El balance fue aprobado con 8 votos a favor y 2 en contra)", "type": "text", "required": true },
-    { "name": "valor_presupuesto", "label": "Valor total del presupuesto aprobado (ej: cuarenta y ocho millones de pesos ($48.000.000) para la vigencia 2026)", "type": "text", "required": true },
-    { "name": "resultado_presupuesto", "label": "Resultado de la votación sobre el presupuesto (ej: El presupuesto fue aprobado por unanimidad con una cuota mensual de administración de $200.000 por unidad)", "type": "text", "required": true },
-    { "name": "nombramientos", "label": "Resultado de los nombramientos realizados (administrador, consejo de administración, revisor fiscal). Ej: Se nombró como administrador a Jhon Brandon Martínez Vélez por el período 2026-2027. Se eligió consejo de administración integrado por: Alexander García López, Carlos Eduardo Pérez Ríos y Diana Patricia Ruiz Morales.", "type": "text", "required": true },
-    { "name": "propuestas_observaciones", "label": "Propuestas, observaciones y comentarios de los asistentes. Si no hubo escriba: Los asistentes no presentaron propuestas adicionales.", "type": "text", "required": true },
-    { "name": "hora_cierre", "label": "Hora de cierre de la asamblea (ej: 9:30 p.m., 11:00 a.m.)", "type": "text", "required": true }
-  ]
-},
-
-{
-  "id": "carta-primera-convocatoria",
-  "subtitle": "Propiedad Horizontal",
-  "title": "Carta de Primera Convocatoria a Asamblea General de Propietarios",
-  "template": "{{ciudad_fecha}}\n\nSeñores\nCopropietarios del {{nombre_conjunto}}\nInterior {{unidad_privada}}\nLa Ciudad\n\nRef.: Convocatoria a Asamblea General {{tipo_asamblea}} año {{anio}}\n\nEn mi calidad de administrador(a) del conjunto residencial denominado {{nombre_conjunto}}, por medio del presente documento se cita en primera convocatoria a la asamblea general {{tipo_asamblea_lower}}, que se llevará a cabo el {{fecha_asamblea}} a partir de las {{hora_asamblea}} en {{lugar_asamblea}}, conforme a lo establecido en el artículo {{articulo_reglamento}} del reglamento de propiedad horizontal de este conjunto residencial.\n\nEl orden del día será el siguiente:\n\n{{orden_del_dia}}\n\nLa presente convocatoria se hace de acuerdo con el artículo 39 de la Ley 675 de 2001, régimen al que está sometido el conjunto residencial denominado {{nombre_conjunto}}. En esta asamblea se sesionará y decidirá si se encuentra reunido o representado el {{porcentaje_quorum}} por ciento ({{porcentaje_quorum}}%) de los propietarios de acuerdo con sus porcentajes de participación. En caso contrario será necesaria la realización de una segunda convocatoria, en la cual se entrará a deliberar válidamente con cualquier número de participantes. Las decisiones tomadas obligarán a los ausentes, disidentes y a los órganos de administración del conjunto.\n\nEn caso de que usted no pueda asistir, se puede hacer representar a través de un poder debidamente constituido, el cual deberá ser presentado al momento de iniciar la asamblea.\n\nAtentamente,\n\n_________________________\n{{nombre_administrador}}\nAdministrador(a)\n{{nombre_conjunto}}\nTeléfono: {{telefono_administrador}}",
-  "fields": [
-    { "name": "ciudad_fecha", "label": "Ciudad y fecha de la carta (ej: El Cerrito, 5 de abril de 2026)", "type": "text", "required": true },
-    { "name": "nombre_conjunto", "label": "Nombre del conjunto o edificio (ej: Conjunto Residencial Los Nogales)", "type": "text", "required": true },
-    { "name": "unidad_privada", "label": "Interior o apartamento del destinatario (ej: apartamento 101 / interior 5)", "type": "text", "required": true },
-    { "name": "tipo_asamblea", "label": "Tipo de asamblea en mayúsculas (escriba: ORDINARIA o EXTRAORDINARIA)", "type": "text", "required": true },
-    { "name": "tipo_asamblea_lower", "label": "Tipo de asamblea en minúsculas (escriba: ordinaria o extraordinaria)", "type": "text", "required": true },
-    { "name": "anio", "label": "Año de la asamblea (ej: 2026)", "type": "number", "required": true },
-    { "name": "fecha_asamblea", "label": "Fecha completa de la asamblea (ej: viernes 25 de abril de 2026)", "type": "text", "required": true },
-    { "name": "hora_asamblea", "label": "Hora de inicio de la asamblea (ej: 7:00 p.m.)", "type": "text", "required": true },
-    { "name": "lugar_asamblea", "label": "Lugar donde se realizará la asamblea (ej: salón comunal del conjunto, ubicado en el primer piso del edificio)", "type": "text", "required": true },
-    { "name": "articulo_reglamento", "label": "Número del artículo del reglamento que regula las convocatorias (ej: 27, 28, 39)", "type": "text", "required": true },
-    { "name": "orden_del_dia", "label": "Puntos del orden del día numerados (ej: 1. Verificación del quórum. 2. Lectura del acta anterior. 3. Elección del presidente y secretario. 4. Informe del administrador. 5. Aprobación del balance. 6. Aprobación del presupuesto. 7. Nombramiento del administrador. 8. Otros asuntos.)", "type": "text", "required": true },
-    { "name": "porcentaje_quorum", "label": "Porcentaje de coeficientes requerido para el quórum (normalmente escriba: 51)", "type": "text", "required": true },
-    { "name": "nombre_administrador", "label": "Nombre completo del administrador que firma la convocatoria", "type": "text", "required": true },
-    { "name": "telefono_administrador", "label": "Teléfono de contacto de la administración (ej: 315 123 4567)", "type": "text", "required": true }
-  ]
-},
-
-{
-  "id": "carta-segunda-convocatoria",
-  "subtitle": "Propiedad Horizontal",
-  "title": "Carta de Segunda Convocatoria a Asamblea General de Propietarios",
-  "template": "{{ciudad_fecha}}\n\nSeñores\nCopropietarios del {{nombre_conjunto}}\nInterior {{unidad_privada}}\nLa Ciudad\n\nRef.: Segunda Convocatoria a Asamblea General {{tipo_asamblea}} año {{anio}}\n\nEn mi calidad de administrador(a) del conjunto residencial denominado {{nombre_conjunto}}, por medio del presente escrito se cita en segunda convocatoria a la asamblea general {{tipo_asamblea_lower}}, que se llevará a cabo el {{fecha_asamblea}} a partir de las {{hora_asamblea}} en {{lugar_asamblea}}, debido a que en la primera reunión convocada para el {{fecha_primera_convocatoria}} no se cumplió con el quórum establecido para sesionar, de acuerdo con lo señalado en el artículo {{articulo_reglamento}} del reglamento de propiedad horizontal.\n\nEl orden del día será el mismo propuesto en la primera convocatoria:\n\n{{orden_del_dia}}\n\nRecordamos que por tratarse de la segunda convocatoria, de conformidad con el artículo 41 de la Ley 675 de 2001, la asamblea sesionará y decidirá válidamente con cualquier número plural de propietarios, cualquiera que sea el porcentaje de coeficientes representados. Las decisiones tomadas obligarán a los ausentes, disidentes y a los órganos de administración del conjunto.\n\nEn caso de que usted no pueda asistir, se puede hacer representar a través de un poder debidamente constituido, el cual deberá ser presentado al momento de constituirse la asamblea.\n\nAtentamente,\n\n_________________________\n{{nombre_administrador}}\nAdministrador(a)\n{{nombre_conjunto}}\nTeléfono: {{telefono_administrador}}",
-  "fields": [
-    { "name": "ciudad_fecha", "label": "Ciudad y fecha de la carta (ej: El Cerrito, 10 de abril de 2026)", "type": "text", "required": true },
-    { "name": "nombre_conjunto", "label": "Nombre del conjunto o edificio (ej: Conjunto Residencial Los Nogales)", "type": "text", "required": true },
-    { "name": "unidad_privada", "label": "Interior o apartamento del destinatario (ej: apartamento 101 / interior 5)", "type": "text", "required": true },
-    { "name": "tipo_asamblea", "label": "Tipo de asamblea en mayúsculas (escriba: ORDINARIA o EXTRAORDINARIA)", "type": "text", "required": true },
-    { "name": "tipo_asamblea_lower", "label": "Tipo de asamblea en minúsculas (escriba: ordinaria o extraordinaria)", "type": "text", "required": true },
-    { "name": "anio", "label": "Año de la asamblea (ej: 2026)", "type": "number", "required": true },
-    { "name": "fecha_asamblea", "label": "Fecha de la segunda reunión (ej: martes 14 de abril de 2026)", "type": "text", "required": true },
-    { "name": "hora_asamblea", "label": "Hora de inicio (ej: 8:00 p.m.)", "type": "text", "required": true },
-    { "name": "lugar_asamblea", "label": "Lugar donde se realizará la asamblea (ej: salón comunal del conjunto, primer piso)", "type": "text", "required": true },
-    { "name": "fecha_primera_convocatoria", "label": "Fecha en que se realizó la primera convocatoria fallida (ej: el 8 de abril de 2026)", "type": "text", "required": true },
-    { "name": "articulo_reglamento", "label": "Número del artículo del reglamento que regula las convocatorias (ej: 27, 28, 39)", "type": "text", "required": true },
-    { "name": "orden_del_dia", "label": "Puntos del orden del día — los mismos de la primera convocatoria", "type": "text", "required": true },
-    { "name": "nombre_administrador", "label": "Nombre completo del administrador que firma la convocatoria", "type": "text", "required": true },
-    { "name": "telefono_administrador", "label": "Teléfono de contacto de la administración (ej: 315 123 4567)", "type": "text", "required": true }
-  ]
-},
-
-{
-  "id": "poder-asistir-asamblea",
-  "subtitle": "Propiedad Horizontal",
-  "title": "Poder Especial para Asistir y Representar al Propietario en Asamblea",
-  "template": "Señor\nAdministrador\n{{nombre_conjunto}}\nCiudad\n\nRef.: Poder especial para asistencia y representación en la asamblea general {{tipo_asamblea_lower}}\n\n{{nombre_poderdante}}, mayor de edad, identificado(a) con la cédula de ciudadanía Nº {{cedula_poderdante}} de {{expedicion_poderdante}}, en mi calidad de propietario(a) del {{tipo_unidad}} {{numero_unidad}} del interior {{interior_unidad}} del conjunto residencial denominado {{nombre_conjunto}}, por medio del presente documento otorgo poder especial, amplio y suficiente al señor(a) {{nombre_apoderado}}, identificado(a) con la cédula de ciudadanía Nº {{cedula_apoderado}} de {{expedicion_apoderado}}, para que en mi nombre y representación realice con derecho a voz y voto las deliberaciones con motivo del orden del día propuesto en la {{numero_convocatoria}} convocatoria a asamblea general {{tipo_asamblea_lower}} a celebrarse el {{fecha_asamblea}}, según consta en la carta de citación de fecha {{fecha_carta_citacion}}.\n\nMi apoderado(a) queda además facultado(a) para representar mis intereses en todo lo relacionado con la asamblea general {{tipo_asamblea_lower}}.\n\nEn constancia firmo a los {{dia_firma}} días del mes de {{mes_firma}} de {{anio_firma}}.\n\nPROPIETARIO(A)\n_________________________\n{{nombre_poderdante}}\nCC Nº: {{cedula_poderdante}} de {{expedicion_poderdante}}\n\nACEPTO\n\nAPODERADO(A)\n_________________________\n{{nombre_apoderado}}\nCC Nº: {{cedula_apoderado}} de {{expedicion_apoderado}}",
-  "fields": [
-    { "name": "nombre_conjunto", "label": "Nombre del conjunto o edificio (ej: Conjunto Residencial Los Nogales)", "type": "text", "required": true },
-    { "name": "tipo_asamblea_lower", "label": "Tipo de asamblea en minúsculas (escriba: ordinaria o extraordinaria)", "type": "text", "required": true },
-    { "name": "nombre_poderdante", "label": "Nombre completo del propietario que otorga el poder", "type": "text", "required": true },
-    { "name": "cedula_poderdante", "label": "Número de cédula del propietario que otorga el poder", "type": "text", "required": true },
-    { "name": "expedicion_poderdante", "label": "Ciudad donde fue expedida la cédula del propietario", "type": "text", "required": true },
-    { "name": "tipo_unidad", "label": "Tipo de unidad privada del propietario (ej: apartamento / local / oficina)", "type": "text", "required": true },
-    { "name": "numero_unidad", "label": "Número del apartamento o unidad (ej: 101, 302-A)", "type": "text", "required": true },
-    { "name": "interior_unidad", "label": "Número del interior si aplica (si no aplica escriba: no aplica)", "type": "text", "required": true },
-    { "name": "nombre_apoderado", "label": "Nombre completo de la persona que recibirá el poder y asistirá a la asamblea", "type": "text", "required": true },
-    { "name": "cedula_apoderado", "label": "Número de cédula del apoderado", "type": "text", "required": true },
-    { "name": "expedicion_apoderado", "label": "Ciudad donde fue expedida la cédula del apoderado", "type": "text", "required": true },
-    { "name": "numero_convocatoria", "label": "Número de convocatoria (escriba: primera o segunda)", "type": "text", "required": true },
-    { "name": "fecha_asamblea", "label": "Fecha de la asamblea (ej: 25 de abril de 2026)", "type": "text", "required": true },
-    { "name": "fecha_carta_citacion", "label": "Fecha de la carta de citación que recibió (ej: 5 de abril de 2026)", "type": "text", "required": true },
-    { "name": "dia_firma", "label": "Día en que firma el poder (número)", "type": "number", "required": true },
-    { "name": "mes_firma", "label": "Mes en que firma el poder (ej: abril, mayo)", "type": "text", "required": true },
-    { "name": "anio_firma", "label": "Año en que firma el poder (ej: 2026)", "type": "number", "required": true }
-  ]
-},
-
-{
-  "id": "estatutos-fundacion-gobernacion",
-  "subtitle": "Personas Jurídicas",
-  "title": "Estatutos de Fundación o Institución de Utilidad Común (Competencia Gobernación)",
-  "template": "ESTATUTOS DE LA {{nombre_entidad}}\n\nCAPÍTULO I\nNOMBRE, DOMICILIO, OBJETO Y DURACIÓN\n\nARTÍCULO 1°. NOMBRE. {{nombre_entidad}} es una fundación de nacionalidad colombiana.\n\nARTÍCULO 2°. DOMICILIO. La fundación {{nombre_entidad}} tiene su domicilio en el municipio de {{municipio_domicilio}}, departamento de {{departamento_domicilio}}.\n\nARTÍCULO 3°. OBJETO. Como entidad sin ánimo de lucro, la fundación tendrá como finalidad en el desarrollo de sus actividades la realización de: {{objeto_fundacion}}.\n\nARTÍCULO 4°. DURACIÓN. La fundación que se constituye tendrá una duración de {{duracion_fundacion}}.\n\nCAPÍTULO II\nPATRIMONIO\n\nARTÍCULO 5°. PATRIMONIO. La fundación {{nombre_entidad}} obtendrá sus fondos de las cuotas que aporten los fundadores y otras personas, y con los demás bienes que a cualquier título adquiera. Sin embargo, el fondo inicial está conformado por {{descripcion_patrimonio_inicial}}.\n\nARTÍCULO 6°. DESTINO DEL PATRIMONIO. El patrimonio de la fundación {{nombre_entidad}} no podrá destinarse a fin distinto del expresado en su objeto.\n\nCAPÍTULO III\nDIRECCIÓN Y ADMINISTRACIÓN\n\nARTÍCULO 7°. DIRECCIÓN. La fundación {{nombre_entidad}} será administrada y dirigida por la asamblea de delegatarios de los fundadores, y estará integrada por un consejo de administración, por un director y tendrá un revisor fiscal.\n\nARTÍCULO 8°. ASAMBLEA DE DELEGATARIOS. La asamblea de delegatarios de la fundación {{nombre_entidad}} estará integrada por {{num_miembros_asamblea}} miembros con sus respectivos suplentes personales.\n\nARTÍCULO 9°. DESIGNACIÓN DE LOS MIEMBROS. Cada uno de los miembros de la asamblea de delegatarios será designado por {{quien_designa_miembros}}.\n\nARTÍCULO 10°. PRESIDENTE DE LA ASAMBLEA. La asamblea de delegatarios será presidida por el miembro que ella misma designe.\n\nARTÍCULO 11°. QUÓRUM. El quórum para las reuniones ordinarias o extraordinarias de la asamblea de delegatarios lo hará la concurrencia de un número de personas que represente, por lo menos, la mayoría absoluta de sus integrantes.\n\nARTÍCULO 12°. REUNIONES. La asamblea de delegatarios se reunirá por lo menos una vez al año en {{ciudad_reuniones}}, durante los {{dias_reunion}} primeros días del mes de {{mes_reunion}} de cada año, previa convocatoria de quien haga las veces de presidente. Las reuniones extraordinarias se realizarán cada vez que lo quiera la mayoría absoluta de los miembros de la asamblea.\n\nARTÍCULO 13°. LIBRO DE ACTAS. De las reuniones, resoluciones, acuerdos, deliberaciones y en general los actos de la asamblea de delegatarios se dejará constancia escrita en un libro de actas de vigencia anual, y cada una de tales actas será firmada por el Presidente y el Secretario.\n\nARTÍCULO 14°. FUNCIONES DE LA ASAMBLEA DE DELEGATARIOS. Son funciones de la asamblea de delegatarios: a) Nombrar {{num_miembros_consejo}} miembros y sus respectivos suplentes personales para integrar el consejo de administración de la fundación y removerlos; b) Nombrar al revisor fiscal y su suplente para períodos de {{periodo_revisor}} y fijarle su asignación; c) Aprobar, improbar y fenecer las cuentas de la fundación; d) Reformar los estatutos de la fundación; e) Disolver extraordinariamente la fundación por extinción de sus fondos; f) Las demás que le correspondan como suprema autoridad de la fundación, siempre que no estén atribuidas a otro órgano.\n\nARTÍCULO 15°. DECISIONES. Las determinaciones de la asamblea de delegatarios se tomarán por la mayoría absoluta de votos presentes, siempre y cuando exista quórum.\n\nARTÍCULO 16°. REFORMA DE ESTATUTOS. Las reformas de estatutos deberán ser sometidas a la aprobación de la entidad pública correspondiente.\n\nARTÍCULO 17°. CONSEJO DE ADMINISTRACIÓN. El consejo de administración estará conformado por {{num_miembros_consejo}} miembros con sus suplentes personales respectivos, designados por la asamblea de delegatarios para períodos de {{periodo_consejo}}.\n\nARTÍCULO 18°. REUNIONES DEL CONSEJO. El consejo de administración se reunirá cada vez que sea convocado por el director o por la mayoría de sus integrantes.\n\nARTÍCULO 19°. FUNCIONES DEL CONSEJO DE ADMINISTRACIÓN. Son funciones del consejo de administración: a) Ejercer la dirección administrativa de la fundación; b) Establecer los empleos necesarios y señalarles sus asignaciones, con excepción de aquellas que correspondan a la asamblea de delegatarios; c) Nombrar y remover a las personas que deban desempeñar los empleos; d) Nombrar y remover al director de la fundación; e) Establecer el reglamento de servicios de la fundación; f) Presentar a la asamblea de delegatarios los informes, cuentas, inventarios y balances que esta le solicite; g) Autorizar al director la celebración de contratos cuya cuantía exceda de {{cuantia_contratos}}, autorización que será previa y por escrito.\n\nARTÍCULO 20°. ACTAS DEL CONSEJO. De las reuniones del consejo se elaborará un acta firmada por el presidente y el secretario del mismo.\n\nARTÍCULO 21°. VACANTES EN EL CONSEJO. Las vacantes definitivas de alguno de los integrantes del consejo serán provistas por el mismo organismo hasta tanto la asamblea de delegatarios designe para tal cargo.\n\nARTÍCULO 22°. QUÓRUM DEL CONSEJO. El quórum para las reuniones del consejo se formará con la concurrencia de {{quorum_consejo}} de sus miembros, y las decisiones las adoptará por la mayoría de los miembros presentes.\n\nARTÍCULO 23°. DIRECTOR. El representante legal de la fundación será el director, quien es de libre nombramiento y remoción del consejo de administración. Él ejercerá en asocio de la asamblea y del consejo la dirección y administración de la institución.\n\nARTÍCULO 24°. FUNCIONES DEL DIRECTOR. Son funciones del director: a) Velar por el cumplimiento de los estatutos, reglamentos, determinaciones e instrucciones de la asamblea y el consejo; b) Realizar los contratos que fuesen necesarios para el desarrollo del objeto de la fundación, conforme lo dispuesto por estos estatutos; c) Representar a la fundación con facultades para transigir, desistir, delegar y sustituir; d) Constituir apoderados judiciales para la defensa de los intereses de la fundación; e) Presentar los informes que le solicite el consejo o la asamblea; f) Las demás que correspondan a la naturaleza de su cargo y las que le sean asignadas por la asamblea de delegatarios.\n\nCAPÍTULO IV\nDISOLUCIÓN Y LIQUIDACIÓN\n\nARTÍCULO 25°. DISOLUCIÓN. La fundación se disolverá por las causales que la ley establece de manera general para esta clase de instituciones y en particular, cuando la asamblea de delegatarios decida con el voto favorable de {{votos_disolucion}} de sus miembros disolverla extraordinariamente en el evento de la extinción de los fondos de su patrimonio. Igualmente, la fundación se disolverá cuando su personería jurídica sea cancelada por autoridad competente.\n\nARTÍCULO 26°. LIQUIDADOR. Cuando la fundación decrete su disolución, en el mismo acto la asamblea de delegatarios procederá a nombrar liquidador. En caso de no llegarse a acuerdo, ejercerá como tal el director de la fundación en su calidad de representante legal. Si no existe representante legal inscrito, designará al liquidador el gobernador del departamento de {{departamento_domicilio}}.\n\nARTÍCULO 27°. PUBLICIDAD. Con cargo al patrimonio de la fundación, el liquidador designado publicará tres (3) avisos en un periódico de amplia circulación nacional, dejando entre uno y otro un plazo de quince (15) días, en los cuales informará a la ciudadanía sobre el proceso de liquidación, instando a los acreedores a hacer valer sus derechos.\n\nARTÍCULO 28°. PROCEDIMIENTO DE LIQUIDACIÓN. Quince (15) días después de la publicación del último aviso se liquidará la fundación, pagando las obligaciones contraídas con terceros y observando las disposiciones legales sobre prelación de créditos. Si cumplido lo anterior queda un remanente de activo patrimonial, este pasará a {{entidad_remanente}}.\n\nCAPÍTULO V\nDISPOSICIONES VARIAS\n\nARTÍCULO 29°. REVISOR FISCAL. Las funciones del revisor fiscal de la fundación serán las mismas que la ley señala a los revisores fiscales de las sociedades. El revisor fiscal deberá ser contador público titulado con su respectivo número de matrícula.\n\nARTÍCULO 30°. SECRETARIO. La fundación tendrá un secretario nombrado por {{quien_nombra_secretario}}, quien será a la vez secretario de la asamblea de delegatarios, del consejo de administración y del director.\n\nARTÍCULO 31°. NOMBRAMIENTOS PROVISIONALES. En tanto la asamblea de delegatarios y el consejo de administración efectúen nuevos nombramientos, se hacen los siguientes nombramientos provisionales:\n\nDirector Principal: {{director_principal}}\nDirector Suplente: {{director_suplente}}\n\nConsejo de Administración — Miembros Principales: {{miembros_consejo_principales}}\nConsejo de Administración — Miembros Suplentes: {{miembros_consejo_suplentes}}\n\nRevisor Fiscal Principal: {{revisor_fiscal}}\nRevisor Fiscal Suplente: {{suplente_revisor}}\n\nSecretario: {{secretario}}\n\nDado en {{ciudad_firma}}, a los {{dia_firma}} días del mes de {{mes_firma}} de {{anio_firma}}.",
-  "fields": [
-    { "name": "nombre_entidad", "label": "Nombre completo de la fundación (ej: Fundación Semillas de Esperanza)", "type": "text", "required": true },
-    { "name": "municipio_domicilio", "label": "Municipio donde tendrá su sede principal (ej: El Cerrito)", "type": "text", "required": true },
-    { "name": "departamento_domicilio", "label": "Departamento donde está ubicado el municipio (ej: Valle del Cauca)", "type": "text", "required": true },
-    { "name": "objeto_fundacion", "label": "Objeto o finalidad de la fundación — describir las actividades sin ánimo de lucro (ej: promover la educación de niños en situación de vulnerabilidad mediante programas de becas y talleres formativos)", "type": "text", "required": true },
-    { "name": "duracion_fundacion", "label": "Duración de la fundación (ej: diez (10) años / indefinida / hasta la extinción total de su patrimonio)", "type": "text", "required": true },
-    { "name": "descripcion_patrimonio_inicial", "label": "Descripción del patrimonio inicial — quién aporta y cuánto (ej: la suma de cinco millones de pesos ($5.000.000) aportada por Carlos Eduardo Pérez Ríos, y la suma de cinco millones de pesos ($5.000.000) aportada por María García López)", "type": "text", "required": true },
-    { "name": "num_miembros_asamblea", "label": "Número de miembros de la asamblea de delegatarios en letras y número (ej: cinco (5), tres (3))", "type": "text", "required": true },
-    { "name": "quien_designa_miembros", "label": "Quién designa a los miembros de la asamblea (ej: los fundadores en reunión conjunta / el consejo de administración / cada fundador designa un delegado)", "type": "text", "required": true },
-    { "name": "ciudad_reuniones", "label": "Ciudad donde se realizarán las reuniones ordinarias (ej: El Cerrito, Cali)", "type": "text", "required": true },
-    { "name": "dias_reunion", "label": "Primeros días del mes para la reunión ordinaria en letras y número (ej: diez (10))", "type": "text", "required": true },
-    { "name": "mes_reunion", "label": "Mes del año en que se realizará la reunión ordinaria (ej: marzo, febrero)", "type": "text", "required": true },
-    { "name": "num_miembros_consejo", "label": "Número de miembros del consejo de administración en letras y número (ej: tres (3), cinco (5))", "type": "text", "required": true },
-    { "name": "periodo_revisor", "label": "Período del revisor fiscal en letras y número (ej: dos (2) años, un (1) año)", "type": "text", "required": true },
-    { "name": "periodo_consejo", "label": "Período del consejo de administración en letras y número (ej: dos (2) años, un (1) año)", "type": "text", "required": true },
-    { "name": "cuantia_contratos", "label": "Valor máximo de contratos que el director puede celebrar sin autorización del consejo (ej: cinco millones de pesos ($5.000.000))", "type": "text", "required": true },
-    { "name": "quorum_consejo", "label": "Quórum del consejo de administración (ej: la mayoría absoluta / tres (3) / dos (2))", "type": "text", "required": true },
-    { "name": "votos_disolucion", "label": "Votos requeridos para disolver la fundación (ej: las dos terceras partes / la mayoría absoluta / la totalidad)", "type": "text", "required": true },
-    { "name": "entidad_remanente", "label": "Entidad que recibirá los bienes remanentes al liquidarse (ej: la entidad de beneficencia que determine la asamblea de delegatarios / una institución sin ánimo de lucro de fines similares con domicilio en el municipio)", "type": "text", "required": true },
-    { "name": "quien_nombra_secretario", "label": "Quién nombra al secretario (ej: el consejo de administración / la asamblea de delegatarios / el director)", "type": "text", "required": true },
-    { "name": "director_principal", "label": "Nombre completo del director principal provisional", "type": "text", "required": true },
-    { "name": "director_suplente", "label": "Nombre completo del director suplente provisional", "type": "text", "required": true },
-    { "name": "miembros_consejo_principales", "label": "Nombres de los miembros principales del consejo separados por punto y coma (ej: Carlos Pérez Ríos; María García López; Luis Torres Mora)", "type": "text", "required": true },
-    { "name": "miembros_consejo_suplentes", "label": "Nombres de los miembros suplentes del consejo separados por punto y coma (ej: Ana Gómez Ruiz; Pedro Salcedo Vera; Rosa Martínez Gil)", "type": "text", "required": true },
-    { "name": "revisor_fiscal", "label": "Nombre completo del revisor fiscal principal (debe ser contador público titulado)", "type": "text", "required": true },
-    { "name": "suplente_revisor", "label": "Nombre completo del revisor fiscal suplente", "type": "text", "required": true },
-    { "name": "secretario", "label": "Nombre completo del secretario provisional", "type": "text", "required": true },
-    { "name": "ciudad_firma", "label": "Ciudad donde se firman los estatutos (ej: El Cerrito, Cali)", "type": "text", "required": true },
-    { "name": "dia_firma", "label": "Día en que se firman los estatutos (solo el número, ej: 21)", "type": "number", "required": true },
-    { "name": "mes_firma", "label": "Mes en que se firman los estatutos (ej: abril, mayo)", "type": "text", "required": true },
-    { "name": "anio_firma", "label": "Año en que se firman los estatutos (ej: 2026)", "type": "number", "required": true }
-  ]
-},
-
-{
-  "id": "poder-especial-compra-inmueble",
-  "title": "Poder Especial para Compra de un Inmueble",
-  "subtitle": "Representación y Poderes",
-  "fields": [
-    { "name": "notario", "label": "Notario", "type": "text", "required": true },
-    { "name": "circulo", "label": "Círculo Notarial", "type": "text", "required": true },
-    { "name": "nombre_poderdante", "label": "Nombre del Poderdante", "type": "text", "required": true },
-    { "name": "domicilio_poderdante", "label": "Domicilio del Poderdante", "type": "text", "required": true },
-    { "name": "cedula_poderdante", "label": "Cédula del Poderdante", "type": "text", "required": true },
-    { "name": "expedicion_poderdante", "label": "Expedición Cédula Poderdante", "type": "text", "required": true },
-    { "name": "nombre_apoderado", "label": "Nombre del Apoderado", "type": "text", "required": true },
-    { "name": "domicilio_apoderado", "label": "Domicilio del Apoderado", "type": "text", "required": true },
-    { "name": "cedula_apoderado", "label": "Cédula del Apoderado", "type": "text", "required": true },
-    { "name": "expedicion_apoderado", "label": "Expedición Cédula Apoderado", "type": "text", "required": true },
-    { "name": "precio_letras", "label": "Precio en Letras", "type": "text", "required": true },
-    { "name": "precio_numeros", "label": "Precio en Números", "type": "text", "required": true },
-    { "name": "descripcion_inmueble", "label": "Descripción del Inmueble", "type": "text", "required": true },
-    { "name": "lindero_norte", "label": "Lindero Norte", "type": "text", "required": true },
-    { "name": "lindero_sur", "label": "Lindero Sur", "type": "text", "required": true },
-    { "name": "lindero_oriente", "label": "Lindero Oriente", "type": "text", "required": true },
-    { "name": "lindero_occidente", "label": "Lindero Occidente", "type": "text", "required": true },
-    { "name": "matricula_inmobiliaria", "label": "Matrícula Inmobiliaria", "type": "text", "required": true }
-  ],
-  "template": "PODER ESPECIAL PARA COMPRA DE UN INMUEBLE\n\nSeñor\nNotario {{notario}} del Círculo de {{circulo}}\n\n{{nombre_poderdante}}, mayor de edad, domiciliado(a) y residente en la ciudad de {{domicilio_poderdante}}, identificado(a) con la cédula de ciudadanía Nº {{cedula_poderdante}} de {{expedicion_poderdante}}, actuando en nombre y representación propia, por medio de este documento confiero poder especial, amplio y suficiente, a {{nombre_apoderado}}, también mayor de edad, domiciliado(a) y residente en la ciudad de {{domicilio_apoderado}}, identificado(a) con la cédula de ciudadanía Nº {{cedula_apoderado}} de {{expedicion_apoderado}}, para comprar por la suma de {{precio_letras}} ({{precio_numeros}}) moneda legal y para suscribir en mi nombre la escritura pública de compraventa sobre el inmueble que a continuación se describe: {{descripcion_inmueble}}, alinderado de manera general así: por el norte, {{lindero_norte}}; por el sur, {{lindero_sur}}; por el oriente, {{lindero_oriente}}; y por el occidente, {{lindero_occidente}}. El inmueble descrito se encuentra identificado con el Nº de matrícula inmobiliaria {{matricula_inmobiliaria}}.\n\nMi apoderado está facultado para realizar todos los actos, gestiones y diligencias que sean necesarios para el perfeccionamiento del contrato de compraventa.\n\nPor lo anterior solicito se sirva tener a la persona anteriormente mencionada como mi apoderado para los efectos descritos en este memorial.\n\nSeñor notario, atentamente,\n\n\nPoderdante: _____________________\nC.C. {{cedula_poderdante}} de {{expedicion_poderdante}}\n\n\nApoderado: _____________________\nC.C. {{cedula_apoderado}} de {{expedicion_apoderado}}"
-},
-
-{
-  "id": "declaracion-fin-extraprocesal",
-  "title": "Declaración para Fin Extraprocesal",
-  "subtitle": "Declaraciones y Actos Notariales",
-  "fields": [
-    { "name": "ciudad", "label": "Ciudad", "type": "text", "required": true },
-    { "name": "departamento", "label": "Departamento", "type": "text", "required": true },
-    { "name": "dia", "label": "Día", "type": "text", "required": true },
-    { "name": "mes", "label": "Mes", "type": "text", "required": true },
-    { "name": "anio", "label": "Año", "type": "text", "required": true },
-    { "name": "notario", "label": "Notario", "type": "text", "required": true },
-    { "name": "circulo", "label": "Círculo Notarial", "type": "text", "required": true },
-    { "name": "nombre_declarante", "label": "Nombre del Declarante", "type": "text", "required": true },
-    { "name": "estado_civil_declarante", "label": "Estado Civil del Declarante", "type": "text", "required": true },
-    { "name": "cedula_declarante", "label": "Cédula del Declarante", "type": "text", "required": true },
-    { "name": "expedicion_declarante", "label": "Expedición Cédula Declarante", "type": "text", "required": true },
-    { "name": "anos_conocimiento", "label": "Años de Conocimiento", "type": "text", "required": true },
-    { "name": "nombre_tercero", "label": "Nombre del Tercero", "type": "text", "required": true },
-    { "name": "cedula_tercero", "label": "Cédula del Tercero", "type": "text", "required": true },
-    { "name": "hechos_declaracion", "label": "Hechos de la Declaración", "type": "text", "required": true },
-    { "name": "nombre_dependiente", "label": "Nombre de quien Depende Económicamente", "type": "text", "required": true },
-    { "name": "razon_testimonio", "label": "Razón del Testimonio", "type": "text", "required": true }
-  ],
-  "template": "DECLARACIÓN PARA FIN EXTRAPROCESAL\n(Escritura pública)\n\nEn la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} del mes de {{mes}} del año {{anio}}, ante mí Notario {{notario}}, del Círculo de {{circulo}}, compareció el señor(a) {{nombre_declarante}}, colombiano(a), mayor de edad, domiciliado y residente en {{ciudad}}, de estado civil {{estado_civil_declarante}}, identificado con la cédula de ciudadanía Nº {{cedula_declarante}} de {{expedicion_declarante}}, quien manifestó lo siguiente:\n\nPRIMERO.— Que por medio del presente documento procede a declarar que conoce desde hace más de {{anos_conocimiento}} años al señor(a) {{nombre_tercero}}, mayor de edad, domiciliado(a) y residente en {{ciudad}}, identificado(a) con la cédula de ciudadanía Nº {{cedula_tercero}}.\n\nSEGUNDO.— Que bajo la gravedad de juramento declara tener conocimiento de que {{hechos_declaracion}}.\n\nTERCERO.— Que {{nombre_dependiente}} depende económicamente de {{nombre_declarante}}, quien se identifica con la cédula de ciudadanía Nº {{cedula_declarante}} de {{expedicion_declarante}}.\n\nCUARTO.— Que la razón del testimonio radica en {{razon_testimonio}}, de acuerdo con lo señalado en el Decreto 1557 de 1989.\n\n\nDeclarante: _____________________\nC.C. {{cedula_declarante}} de {{expedicion_declarante}}\n\nNotario: _____________________"
-},
-
-{
-  "id": "aviso-terminacion-arrendamiento-arrendador",
-  "title": "Carta de Aviso de Terminación de Contrato de Arrendamiento (por el Arrendador)",
-  "subtitle": "Uso y Goce",
-  "fields": [
-    { "name": "ciudad_fecha", "label": "Ciudad y Fecha", "type": "text", "required": true },
-    { "name": "nombre_arrendatario", "label": "Nombre del Arrendatario", "type": "text", "required": true },
-    { "name": "direccion_notificacion_arrendatario", "label": "Dirección del Arrendatario", "type": "text", "required": true },
-    { "name": "ciudad_arrendatario", "label": "Ciudad del Arrendatario", "type": "text", "required": true },
-    { "name": "fecha_contrato", "label": "Fecha de Celebración del Contrato", "type": "text", "required": true },
-    { "name": "duracion_contrato", "label": "Duración Inicial del Contrato", "type": "text", "required": true },
-    { "name": "descripcion_inmueble", "label": "Descripción del Inmueble", "type": "text", "required": true },
-    { "name": "fecha_terminacion", "label": "Fecha de Terminación del Contrato", "type": "text", "required": true },
-    { "name": "entidad_consignacion", "label": "Entidad para la Consignación", "type": "text", "required": true }
-  ],
-  "template": "{{ciudad_fecha}}\n\nSeñor(a):\n{{nombre_arrendatario}}\nDirección: {{direccion_notificacion_arrendatario}}\nCiudad: {{ciudad_arrendatario}}\n\nRef.: Terminación contrato de arrendamiento.\n\nEstimado señor(a):\n\nPor medio de la presente le comunico que, haciendo uso de la facultad establecida en el artículo 22 de la Ley 820 de 2003, he decidido ponerle fin, unilateralmente, al contrato de arrendamiento de vivienda urbana celebrado el {{fecha_contrato}}, con un término de duración inicial de {{duracion_contrato}}, sobre el bien inmueble que se describe a continuación: {{descripcion_inmueble}}.\n\nEn consecuencia, el contrato terminará el día {{fecha_terminacion}}, es decir, tres meses después de la recepción de esta carta por parte suya.\n\nComo constituye una obligación a mi cargo cubrir, a título de indemnización, una suma de dinero igual al valor de tres mensualidades, le informo que este dinero se le consignará a su favor y a órdenes de la autoridad competente {{entidad_consignacion}}, la cual le allegará copia del título respectivo o le enviará comunicación en que se haga constar tal circunstancia, inmediatamente tenga conocimiento de la misma.\n\nAtentamente,\n\n\nArrendador: __________________"
-},
-
-{
-  "id": "aviso-terminacion-arrendamiento-arrendatario",
-  "title": "Carta de Aviso de Terminación de Contrato de Arrendamiento (por el Arrendatario)",
-  "subtitle": "Uso y Goce",
-  "fields": [
-    { "name": "ciudad_fecha", "label": "Ciudad y Fecha", "type": "text", "required": true },
-    { "name": "nombre_arrendador", "label": "Nombre del Arrendador", "type": "text", "required": true },
-    { "name": "direccion_notificacion_arrendador", "label": "Dirección del Arrendador", "type": "text", "required": true },
-    { "name": "ciudad_arrendador", "label": "Ciudad del Arrendador", "type": "text", "required": true },
-    { "name": "fecha_contrato", "label": "Fecha de Celebración del Contrato", "type": "text", "required": true },
-    { "name": "descripcion_inmueble", "label": "Descripción del Inmueble", "type": "text", "required": true },
-    { "name": "linderos_inmueble", "label": "Linderos del Inmueble", "type": "text", "required": true },
-    { "name": "fecha_terminacion", "label": "Fecha de Terminación del Contrato", "type": "text", "required": true },
-    { "name": "entidad_consignacion", "label": "Entidad para la Consignación", "type": "text", "required": true }
-  ],
-  "template": "{{ciudad_fecha}}\n\nSeñor(a):\n{{nombre_arrendador}}\nDirección: {{direccion_notificacion_arrendador}}\nCiudad: {{ciudad_arrendador}}\n\nRef.: Terminación contrato de arrendamiento.\n\nApreciado señor(a):\n\nPor medio de la presente le comunico que, haciendo uso de la facultad que confiere el artículo 24 de la Ley 820 de 2003, he decidido poner fin, unilateralmente, al contrato de arrendamiento de vivienda urbana que celebramos el día {{fecha_contrato}}, sobre el bien inmueble ubicado en {{descripcion_inmueble}} y alinderado de la siguiente manera: {{linderos_inmueble}}.\n\nEn consecuencia, el contrato terminará el día {{fecha_terminacion}}, es decir, tres meses después de la recepción de esta carta por parte suya.\n\nComo constituye una obligación a mi cargo cubrir, a título de indemnización, una suma de dinero igual al valor de tres mensualidades, le informo que este dinero le será consignado a su favor y a órdenes de la autoridad competente {{entidad_consignacion}}, la cual le allegará copia del título respectivo o le enviará comunicación en que se haga constar tal circunstancia, inmediatamente tenga conocimiento de la misma.\n\nSi usted no se presenta a recibir el inmueble me veré precisado a proceder de conformidad con lo establecido en la Ley 820 de 2003, artículo 24, numeral 4º, inciso 2º.\n\nAtentamente,\n\n\nArrendatario: __________________"
-},
-
-{
-  "id": "solicitud-primera-copia-hipoteca",
-  "title": "Solicitud de Primera Copia de Hipoteca (por Extravío)",
-  "subtitle": "Garantías y Crédito",
-  "fields": [
-    { "name": "ciudad", "label": "Ciudad", "type": "text", "required": true },
-    { "name": "departamento", "label": "Departamento", "type": "text", "required": true },
-    { "name": "dia", "label": "Día", "type": "text", "required": true },
-    { "name": "mes", "label": "Mes", "type": "text", "required": true },
-    { "name": "anio", "label": "Año", "type": "text", "required": true },
-    { "name": "notario", "label": "Notario", "type": "text", "required": true },
-    { "name": "circulo", "label": "Círculo Notarial", "type": "text", "required": true },
-    { "name": "nombre_deudor", "label": "Nombre del Deudor Hipotecario", "type": "text", "required": true },
-    { "name": "cedula_deudor", "label": "Cédula del Deudor", "type": "text", "required": true },
-    { "name": "nombre_acreedor", "label": "Nombre del Acreedor Hipotecario", "type": "text", "required": true },
-    { "name": "cedula_acreedor", "label": "Cédula del Acreedor", "type": "text", "required": true },
-    { "name": "numero_escritura_hipoteca", "label": "Número de la Escritura de Hipoteca", "type": "text", "required": true },
-    { "name": "fecha_escritura_hipoteca", "label": "Fecha de la Escritura", "type": "text", "required": true },
-    { "name": "notaria_hipoteca", "label": "Notaría que la Expidió", "type": "text", "required": true },
-    { "name": "fecha_registro", "label": "Fecha de Registro", "type": "text", "required": true },
-    { "name": "folio_matricula", "label": "Folio de Matrícula Inmobiliaria", "type": "text", "required": true },
-    { "name": "descripcion_inmueble", "label": "Descripción del Inmueble", "type": "text", "required": true },
-    { "name": "direccion_inmueble", "label": "Dirección del Inmueble", "type": "text", "required": true },
-    { "name": "cedula_catastral", "label": "Cédula Catastral", "type": "text", "required": true }
-  ],
-  "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} del mes de {{mes}} del año {{anio}}, ante mí Notario {{notario}}, del Círculo de {{circulo}}, comparecieron los señores {{nombre_deudor}}, identificado con la cédula de ciudadanía Nº {{cedula_deudor}}, y {{nombre_acreedor}}, identificado con la cédula de ciudadanía Nº {{cedula_acreedor}}, quienes manifestaron lo siguiente:\n\nPRIMERO. Constitución de hipoteca.— Que mediante la escritura pública Nº {{numero_escritura_hipoteca}} de fecha {{fecha_escritura_hipoteca}}, expedida por la Notaría {{notaria_hipoteca}}, e inscrita en la Oficina de Registro de Instrumentos Públicos el {{fecha_registro}}, bajo el folio de matrícula inmobiliaria Nº {{folio_matricula}}, el señor {{nombre_deudor}} constituyó hipoteca abierta de primer grado en favor del señor {{nombre_acreedor}} sobre el siguiente inmueble: {{descripcion_inmueble}}, ubicado en {{direccion_inmueble}}, al cual corresponde la cédula catastral Nº {{cedula_catastral}}.\n\nSEGUNDO. Primera copia.— La notaría expidió varias copias a solicitud de los interesados, siendo la primera de ellas entregada al señor {{nombre_acreedor}}, en su calidad de acreedor hipotecario.\n\nTERCERO. Extravío.— La primera copia de la escritura Nº {{numero_escritura_hipoteca}} se extravió, sin que se tenga indicio de su paradero.\n\nCUARTO. Obligaciones vigentes.— Aún subsisten obligaciones amparadas por la garantía hipotecaria en cuestión y pueden surgir otras a cargo del deudor hipotecario, haciéndose necesario para los comparecientes poseer una copia con mérito para exigir el cumplimiento de obligaciones, de conformidad con lo prescrito por el artículo 80 del Decreto-Ley 960 de 1970 modificado por el artículo 42 del Decreto 2163 de 1970.\n\nQUINTO. Solicitud de copia.— Como consecuencia de lo expuesto, los comparecientes, de común acuerdo, solicitan la expedición de una nueva copia de la escritura Nº {{numero_escritura_hipoteca}} antes mencionada, que preste mérito para exigir el cumplimiento de obligaciones, acogiéndose a lo previsto en el artículo 81 del Decreto-Ley 960 de 1970, y en todo caso expresan que si apareciere la copia extraviada se abstendrán de usarla y la devolverán al Notario que la expidió.\n\n\nComparecientes: __________\n\nNotario: __________"
-},
-
-{
-  "id": "dacion-en-pago",
-  "title": "Dación en Pago",
-  "subtitle": "Transferencia de Dominio",
-  "fields": [
-    { "name": "ciudad", "label": "Ciudad", "type": "text", "required": true },
-    { "name": "dia", "label": "Día", "type": "text", "required": true },
-    { "name": "mes", "label": "Mes", "type": "text", "required": true },
-    { "name": "anio", "label": "Año", "type": "text", "required": true },
-    { "name": "nombre_acreedor", "label": "Nombre del Acreedor", "type": "text", "required": true },
-    { "name": "cedula_acreedor", "label": "Cédula del Acreedor", "type": "text", "required": true },
-    { "name": "ciudad_acreedor", "label": "Ciudad del Acreedor", "type": "text", "required": true },
-    { "name": "nombre_deudor", "label": "Nombre del Deudor", "type": "text", "required": true },
-    { "name": "cedula_deudor", "label": "Cédula del Deudor", "type": "text", "required": true },
-    { "name": "ciudad_deudor", "label": "Ciudad del Deudor", "type": "text", "required": true },
-    { "name": "valor_capital", "label": "Valor del Capital Adeudado", "type": "text", "required": true },
-    { "name": "valor_intereses", "label": "Valor de Intereses Causados", "type": "text", "required": true },
-    { "name": "valor_honorarios", "label": "Valor de Honorarios de Cobro", "type": "text", "required": true },
-    { "name": "valor_gastos", "label": "Valor de Gastos", "type": "text", "required": true },
-    { "name": "documento_obligacion", "label": "Documento que Contiene la Obligación", "type": "text", "required": true },
-    { "name": "fecha_vencimiento_obligacion", "label": "Fecha de Vencimiento de la Obligación", "type": "text", "required": true },
-    { "name": "descripcion_bienes_dacion", "label": "Descripción de los Bienes Entregados en Dación", "type": "text", "required": true },
-    { "name": "valor_bienes_dacion", "label": "Valor de los Bienes Entregados", "type": "text", "required": true },
-    { "name": "responsable_gastos", "label": "Responsable de los Gastos", "type": "text", "required": true }
-  ],
-  "template": "DACIÓN EN PAGO\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, se reunieron a saber: {{nombre_acreedor}}, mayor de edad, domiciliado y residente en la ciudad de {{ciudad_acreedor}}, identificado con la cédula de ciudadanía Nº {{cedula_acreedor}}, quien para efectos del presente documento se denominará el ACREEDOR, y {{nombre_deudor}}, también mayor de edad y domiciliado y residente en la ciudad de {{ciudad_deudor}}, identificado con la cédula de ciudadanía Nº {{cedula_deudor}}, quien en lo sucesivo se denominará el DEUDOR, han acordado celebrar un convenio de dación en pago que se regulará por las siguientes cláusulas:\n\nPRIMERA. Obligaciones vencidas.— El DEUDOR debe al ACREEDOR la suma discriminada así: a) la suma de {{valor_capital}} por concepto de capital; b) la cantidad de {{valor_intereses}} por intereses causados; c) por concepto de honorarios de cobro la suma de {{valor_honorarios}}; d) por concepto de gastos la suma de {{valor_gastos}}. La obligación consta en el siguiente documento: {{documento_obligacion}}, y se encuentra vencida desde el {{fecha_vencimiento_obligacion}}, siendo exigible en la actualidad.\n\nSEGUNDA. Iliquidez.— Que debido a su situación económica, el DEUDOR se encuentra imposibilitado para cubrir la suma que adeuda en dinero efectivo.\n\nTERCERA. Dación en pago.— Que como consecuencia de lo anterior, el DEUDOR transfiere a título de dación en pago los siguientes bienes: {{descripcion_bienes_dacion}}.\n\nCUARTA. Valor.— Que para efectos del presente acto se estima el valor de los bienes entregados en {{valor_bienes_dacion}}, quedando, en consecuencia, extinguida la deuda.\n\nQUINTA. Propiedad de los bienes.— El DEUDOR manifiesta ser propietario de los bienes que entrega como dación en pago, que estos no soportan gravamen o limitación alguna de dominio, que están libres de impuestos y contribuciones, que no soportan embargos ni son objeto de pleito pendiente, y en todo caso se obliga a salir en defensa del ACREEDOR si fuere perturbado en su posesión por cualquier motivo, en especial por las causales de saneamiento por evicción y vicios redhibitorios que contempla la ley civil.\n\nSEXTA. Aplicación analógica.— Al presente acto serán aplicables, por analogía, las normas reguladoras del contrato de compraventa.\n\nSÉPTIMA. Entrega material.— El DEUDOR se obliga a entregar materialmente los bienes dados en pago dentro de los treinta (30) días siguientes a la firma del presente documento.\n\nOCTAVA. Condición resolutoria.— La dación en pago que por este documento se efectúa se condiciona, en todo caso, a la entrega real y material de los bienes a que alude, bajo las circunstancias anotadas en la cláusula quinta.\n\nNOVENA. Gastos.— Los gastos que ocasione el otorgamiento del presente documento correrán por cuenta de {{responsable_gastos}}.\n\n\nEl deudor: ________________________\n\nEl acreedor: ______________________"
-}
+    "id": "acta-asamblea-propietarios",
+    "subtitle": "Propiedad Horizontal",
+    "title": "Acta de Asamblea General de Propietarios",
+    "template": "ACTA Nº {{numero_acta}} DE ASAMBLEA GENERAL {{tipo_asamblea}}\n{{nombre_conjunto}} PROPIEDAD HORIZONTAL\n\nEn la ciudad de {{ciudad}}, siendo las {{hora}} del día {{dia}} de {{mes}} de {{anio}}, según convocatoria realizada por parte de {{convocante}}, a través de comunicación escrita de fecha {{fecha_convocatoria}}, en {{lugar_reunion}}, se reunieron los propietarios del {{nombre_conjunto}} propiedad horizontal, a fin de deliberar y tomar decisiones de acuerdo al orden del día propuesto en la respectiva convocatoria.\n\nUna vez verificado el quórum se procedió a leer el orden del día por parte del secretario señor {{secretario_lectura}}, el que contempló lo siguiente:\n\n{{orden_del_dia}}\n\nDESARROLLO DEL ORDEN DEL DÍA\n\n1. VERIFICACIÓN DEL QUÓRUM. Para la realización de la presente asamblea se contó con el quórum deliberatorio establecido por el reglamento de propiedad horizontal, siendo los siguientes los asistentes:\n\n{{lista_asistentes}}\n\n2. NOMBRAMIENTO DEL PRESIDENTE Y SECRETARIO. Para presidir la asamblea se eligió por mayoría al señor {{nombre_presidente}}, propietario del inmueble {{inmueble_presidente}} que hace parte de la copropiedad. Para dicha designación fueron postuladas las siguientes personas: {{postulados_presidente}}.\n\nPara hacer las labores de secretaría se eligió por mayoría al señor {{nombre_secretario}}, propietario del inmueble {{inmueble_secretario}} que hace parte de la copropiedad. Para dicha designación fueron postuladas las siguientes personas: {{postulados_secretario}}.\n\n3. INFORME DEL ADMINISTRADOR. El presidente solicita al administrador {{nombre_administrador}} presentar el informe del período. {{resumen_informe_administrador}}.\n\n4. INFORME DEL REVISOR FISCAL. {{informe_revisor_fiscal}}.\n\n5. PRESENTACIÓN Y APROBACIÓN DEL BALANCE. El presidente solicita al administrador presentar el balance de la vigencia del {{fecha_inicio_balance}} al {{fecha_fin_balance}}. {{resultado_balance}}.\n\n6. PRESENTACIÓN Y APROBACIÓN DEL PRESUPUESTO. El administrador presentó el proyecto de presupuesto de la presente vigencia por valor de {{valor_presupuesto}}. {{resultado_presupuesto}}.\n\n7. NOMBRAMIENTOS. {{nombramientos}}.\n\n8. PROPUESTAS, OBSERVACIONES Y COMENTARIOS. {{propuestas_observaciones}}.\n\nAgotado el orden del día, siendo las {{hora_cierre}} del día {{dia}} de {{mes}} de {{anio}}, se da por terminada la asamblea.\n\nPara constancia se firma la presente acta.\n\nPRESIDENTE DE LA ASAMBLEA\n_________________________\n{{nombre_presidente}}\nCC Nº: {{cedula_presidente}}\n\nSECRETARIO DE LA ASAMBLEA\n_________________________\n{{nombre_secretario}}\nCC Nº: {{cedula_secretario}}",
+    "fields": [
+      {
+        "name": "numero_acta",
+        "label": "Número del acta (ej: 001, 015)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_asamblea",
+        "label": "Tipo de asamblea (escriba: ORDINARIA o EXTRAORDINARIA)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conjunto",
+        "label": "Nombre del edificio o conjunto residencial (ej: Conjunto Residencial Los Nogales)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se realiza la asamblea",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hora",
+        "label": "Hora de inicio de la asamblea (ej: 7:00 p.m., 9:00 a.m.)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día de la asamblea (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes de la asamblea (ej: abril, marzo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año de la asamblea (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "convocante",
+        "label": "Quién convocó la asamblea (ej: el administrador / el revisor fiscal / un grupo de propietarios que representan el 20% de los coeficientes)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_convocatoria",
+        "label": "Fecha en que se envió la convocatoria (ej: 5 de abril de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_reunion",
+        "label": "Lugar donde se realizó la asamblea (ej: salón comunal del conjunto / oficinas de la administración)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "secretario_lectura",
+        "label": "Nombre de quien leyó el orden del día al inicio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "orden_del_dia",
+        "label": "Puntos del orden del día (ej: 1. Verificación del quórum. 2. Nombramiento del presidente y secretario. 3. Informe del administrador. 4. Aprobación del presupuesto. 5. Propuestas y comentarios.)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lista_asistentes",
+        "label": "Lista de propietarios asistentes con su coeficiente (ej: 1. Jhon Brandon Martínez Vélez - Apto 101 - Coeficiente 5.2%. 2. Alexander García López - Apto 202 - Coeficiente 4.8%.)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_presidente",
+        "label": "Nombre completo del presidente elegido para la asamblea",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_presidente",
+        "label": "Número de cédula del presidente de la asamblea",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "inmueble_presidente",
+        "label": "Número del apartamento o unidad del presidente (ej: apartamento 301)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "postulados_presidente",
+        "label": "Nombres de quienes fueron postulados para presidente (ej: Jhon Brandon Martínez Vélez y Alexander García López)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_secretario",
+        "label": "Nombre completo del secretario elegido para la asamblea",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_secretario",
+        "label": "Número de cédula del secretario de la asamblea",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "inmueble_secretario",
+        "label": "Número del apartamento o unidad del secretario (ej: apartamento 202)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "postulados_secretario",
+        "label": "Nombres de quienes fueron postulados para secretario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_administrador",
+        "label": "Nombre completo del administrador del conjunto",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "resumen_informe_administrador",
+        "label": "Resumen del informe presentado por el administrador (actividades realizadas, estado de cartera, novedades del período)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "informe_revisor_fiscal",
+        "label": "Informe del revisor fiscal. Si no hay revisor fiscal escriba: El conjunto no cuenta con revisor fiscal para el presente período.",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio_balance",
+        "label": "Fecha de inicio del período del balance (ej: 1 de enero de 2025)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_fin_balance",
+        "label": "Fecha de cierre del período del balance (ej: 31 de diciembre de 2025)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "resultado_balance",
+        "label": "Resultado de la votación sobre el balance (ej: El balance fue aprobado por unanimidad / El balance fue aprobado con 8 votos a favor y 2 en contra)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_presupuesto",
+        "label": "Valor total del presupuesto aprobado (ej: cuarenta y ocho millones de pesos ($48.000.000) para la vigencia 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "resultado_presupuesto",
+        "label": "Resultado de la votación sobre el presupuesto (ej: El presupuesto fue aprobado por unanimidad con una cuota mensual de administración de $200.000 por unidad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombramientos",
+        "label": "Resultado de los nombramientos realizados (administrador, consejo de administración, revisor fiscal). Ej: Se nombró como administrador a Jhon Brandon Martínez Vélez por el período 2026-2027. Se eligió consejo de administración integrado por: Alexander García López, Carlos Eduardo Pérez Ríos y Diana Patricia Ruiz Morales.",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "propuestas_observaciones",
+        "label": "Propuestas, observaciones y comentarios de los asistentes. Si no hubo escriba: Los asistentes no presentaron propuestas adicionales.",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hora_cierre",
+        "label": "Hora de cierre de la asamblea (ej: 9:30 p.m., 11:00 a.m.)",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "carta-primera-convocatoria",
+    "subtitle": "Propiedad Horizontal",
+    "title": "Carta de Primera Convocatoria a Asamblea General de Propietarios",
+    "template": "{{ciudad_fecha}}\n\nSeñores\nCopropietarios del {{nombre_conjunto}}\nInterior {{unidad_privada}}\nLa Ciudad\n\nRef.: Convocatoria a Asamblea General {{tipo_asamblea}} año {{anio}}\n\nEn mi calidad de administrador(a) del conjunto residencial denominado {{nombre_conjunto}}, por medio del presente documento se cita en primera convocatoria a la asamblea general {{tipo_asamblea_lower}}, que se llevará a cabo el {{fecha_asamblea}} a partir de las {{hora_asamblea}} en {{lugar_asamblea}}, conforme a lo establecido en el artículo {{articulo_reglamento}} del reglamento de propiedad horizontal de este conjunto residencial.\n\nEl orden del día será el siguiente:\n\n{{orden_del_dia}}\n\nLa presente convocatoria se hace de acuerdo con el artículo 39 de la Ley 675 de 2001, régimen al que está sometido el conjunto residencial denominado {{nombre_conjunto}}. En esta asamblea se sesionará y decidirá si se encuentra reunido o representado el {{porcentaje_quorum}} por ciento ({{porcentaje_quorum}}%) de los propietarios de acuerdo con sus porcentajes de participación. En caso contrario será necesaria la realización de una segunda convocatoria, en la cual se entrará a deliberar válidamente con cualquier número de participantes. Las decisiones tomadas obligarán a los ausentes, disidentes y a los órganos de administración del conjunto.\n\nEn caso de que usted no pueda asistir, se puede hacer representar a través de un poder debidamente constituido, el cual deberá ser presentado al momento de iniciar la asamblea.\n\nAtentamente,\n\n_________________________\n{{nombre_administrador}}\nAdministrador(a)\n{{nombre_conjunto}}\nTeléfono: {{telefono_administrador}}",
+    "fields": [
+      {
+        "name": "ciudad_fecha",
+        "label": "Ciudad y fecha de la carta (ej: El Cerrito, 5 de abril de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conjunto",
+        "label": "Nombre del conjunto o edificio (ej: Conjunto Residencial Los Nogales)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "unidad_privada",
+        "label": "Interior o apartamento del destinatario (ej: apartamento 101 / interior 5)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_asamblea",
+        "label": "Tipo de asamblea en mayúsculas (escriba: ORDINARIA o EXTRAORDINARIA)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_asamblea_lower",
+        "label": "Tipo de asamblea en minúsculas (escriba: ordinaria o extraordinaria)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año de la asamblea (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "fecha_asamblea",
+        "label": "Fecha completa de la asamblea (ej: viernes 25 de abril de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hora_asamblea",
+        "label": "Hora de inicio de la asamblea (ej: 7:00 p.m.)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_asamblea",
+        "label": "Lugar donde se realizará la asamblea (ej: salón comunal del conjunto, ubicado en el primer piso del edificio)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "articulo_reglamento",
+        "label": "Número del artículo del reglamento que regula las convocatorias (ej: 27, 28, 39)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "orden_del_dia",
+        "label": "Puntos del orden del día numerados (ej: 1. Verificación del quórum. 2. Lectura del acta anterior. 3. Elección del presidente y secretario. 4. Informe del administrador. 5. Aprobación del balance. 6. Aprobación del presupuesto. 7. Nombramiento del administrador. 8. Otros asuntos.)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "porcentaje_quorum",
+        "label": "Porcentaje de coeficientes requerido para el quórum (normalmente escriba: 51)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_administrador",
+        "label": "Nombre completo del administrador que firma la convocatoria",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "telefono_administrador",
+        "label": "Teléfono de contacto de la administración (ej: 315 123 4567)",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "carta-segunda-convocatoria",
+    "subtitle": "Propiedad Horizontal",
+    "title": "Carta de Segunda Convocatoria a Asamblea General de Propietarios",
+    "template": "{{ciudad_fecha}}\n\nSeñores\nCopropietarios del {{nombre_conjunto}}\nInterior {{unidad_privada}}\nLa Ciudad\n\nRef.: Segunda Convocatoria a Asamblea General {{tipo_asamblea}} año {{anio}}\n\nEn mi calidad de administrador(a) del conjunto residencial denominado {{nombre_conjunto}}, por medio del presente escrito se cita en segunda convocatoria a la asamblea general {{tipo_asamblea_lower}}, que se llevará a cabo el {{fecha_asamblea}} a partir de las {{hora_asamblea}} en {{lugar_asamblea}}, debido a que en la primera reunión convocada para el {{fecha_primera_convocatoria}} no se cumplió con el quórum establecido para sesionar, de acuerdo con lo señalado en el artículo {{articulo_reglamento}} del reglamento de propiedad horizontal.\n\nEl orden del día será el mismo propuesto en la primera convocatoria:\n\n{{orden_del_dia}}\n\nRecordamos que por tratarse de la segunda convocatoria, de conformidad con el artículo 41 de la Ley 675 de 2001, la asamblea sesionará y decidirá válidamente con cualquier número plural de propietarios, cualquiera que sea el porcentaje de coeficientes representados. Las decisiones tomadas obligarán a los ausentes, disidentes y a los órganos de administración del conjunto.\n\nEn caso de que usted no pueda asistir, se puede hacer representar a través de un poder debidamente constituido, el cual deberá ser presentado al momento de constituirse la asamblea.\n\nAtentamente,\n\n_________________________\n{{nombre_administrador}}\nAdministrador(a)\n{{nombre_conjunto}}\nTeléfono: {{telefono_administrador}}",
+    "fields": [
+      {
+        "name": "ciudad_fecha",
+        "label": "Ciudad y fecha de la carta (ej: El Cerrito, 10 de abril de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conjunto",
+        "label": "Nombre del conjunto o edificio (ej: Conjunto Residencial Los Nogales)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "unidad_privada",
+        "label": "Interior o apartamento del destinatario (ej: apartamento 101 / interior 5)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_asamblea",
+        "label": "Tipo de asamblea en mayúsculas (escriba: ORDINARIA o EXTRAORDINARIA)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_asamblea_lower",
+        "label": "Tipo de asamblea en minúsculas (escriba: ordinaria o extraordinaria)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año de la asamblea (ej: 2026)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "fecha_asamblea",
+        "label": "Fecha de la segunda reunión (ej: martes 14 de abril de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hora_asamblea",
+        "label": "Hora de inicio (ej: 8:00 p.m.)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_asamblea",
+        "label": "Lugar donde se realizará la asamblea (ej: salón comunal del conjunto, primer piso)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_primera_convocatoria",
+        "label": "Fecha en que se realizó la primera convocatoria fallida (ej: el 8 de abril de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "articulo_reglamento",
+        "label": "Número del artículo del reglamento que regula las convocatorias (ej: 27, 28, 39)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "orden_del_dia",
+        "label": "Puntos del orden del día — los mismos de la primera convocatoria",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_administrador",
+        "label": "Nombre completo del administrador que firma la convocatoria",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "telefono_administrador",
+        "label": "Teléfono de contacto de la administración (ej: 315 123 4567)",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "poder-asistir-asamblea",
+    "subtitle": "Propiedad Horizontal",
+    "title": "Poder Especial para Asistir y Representar al Propietario en Asamblea",
+    "template": "Señor\nAdministrador\n{{nombre_conjunto}}\nCiudad\n\nRef.: Poder especial para asistencia y representación en la asamblea general {{tipo_asamblea_lower}}\n\n{{nombre_poderdante}}, mayor de edad, identificado(a) con la cédula de ciudadanía Nº {{cedula_poderdante}} de {{expedicion_poderdante}}, en mi calidad de propietario(a) del {{tipo_unidad}} {{numero_unidad}} del interior {{interior_unidad}} del conjunto residencial denominado {{nombre_conjunto}}, por medio del presente documento otorgo poder especial, amplio y suficiente al señor(a) {{nombre_apoderado}}, identificado(a) con la cédula de ciudadanía Nº {{cedula_apoderado}} de {{expedicion_apoderado}}, para que en mi nombre y representación realice con derecho a voz y voto las deliberaciones con motivo del orden del día propuesto en la {{numero_convocatoria}} convocatoria a asamblea general {{tipo_asamblea_lower}} a celebrarse el {{fecha_asamblea}}, según consta en la carta de citación de fecha {{fecha_carta_citacion}}.\n\nMi apoderado(a) queda además facultado(a) para representar mis intereses en todo lo relacionado con la asamblea general {{tipo_asamblea_lower}}.\n\nEn constancia firmo a los {{dia_firma}} días del mes de {{mes_firma}} de {{anio_firma}}.\n\nPROPIETARIO(A)\n_________________________\n{{nombre_poderdante}}\nCC Nº: {{cedula_poderdante}} de {{expedicion_poderdante}}\n\nACEPTO\n\nAPODERADO(A)\n_________________________\n{{nombre_apoderado}}\nCC Nº: {{cedula_apoderado}} de {{expedicion_apoderado}}",
+    "fields": [
+      {
+        "name": "nombre_conjunto",
+        "label": "Nombre del conjunto o edificio (ej: Conjunto Residencial Los Nogales)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_asamblea_lower",
+        "label": "Tipo de asamblea en minúsculas (escriba: ordinaria o extraordinaria)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre completo del propietario que otorga el poder",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Número de cédula del propietario que otorga el poder",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_poderdante",
+        "label": "Ciudad donde fue expedida la cédula del propietario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_unidad",
+        "label": "Tipo de unidad privada del propietario (ej: apartamento / local / oficina)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_unidad",
+        "label": "Número del apartamento o unidad (ej: 101, 302-A)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "interior_unidad",
+        "label": "Número del interior si aplica (si no aplica escriba: no aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado",
+        "label": "Nombre completo de la persona que recibirá el poder y asistirá a la asamblea",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_apoderado",
+        "label": "Número de cédula del apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_apoderado",
+        "label": "Ciudad donde fue expedida la cédula del apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_convocatoria",
+        "label": "Número de convocatoria (escriba: primera o segunda)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_asamblea",
+        "label": "Fecha de la asamblea (ej: 25 de abril de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_carta_citacion",
+        "label": "Fecha de la carta de citación que recibió (ej: 5 de abril de 2026)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia_firma",
+        "label": "Día en que firma el poder (número)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes_firma",
+        "label": "Mes en que firma el poder (ej: abril, mayo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio_firma",
+        "label": "Año en que firma el poder (ej: 2026)",
+        "type": "number",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "estatutos-fundacion-gobernacion",
+    "subtitle": "Personas Jurídicas",
+    "title": "Estatutos de Fundación o Institución de Utilidad Común (Competencia Gobernación)",
+    "template": "ESTATUTOS DE LA {{nombre_entidad}}\n\nCAPÍTULO I\nNOMBRE, DOMICILIO, OBJETO Y DURACIÓN\n\nARTÍCULO 1°. NOMBRE. {{nombre_entidad}} es una fundación de nacionalidad colombiana.\n\nARTÍCULO 2°. DOMICILIO. La fundación {{nombre_entidad}} tiene su domicilio en el municipio de {{municipio_domicilio}}, departamento de {{departamento_domicilio}}.\n\nARTÍCULO 3°. OBJETO. Como entidad sin ánimo de lucro, la fundación tendrá como finalidad en el desarrollo de sus actividades la realización de: {{objeto_fundacion}}.\n\nARTÍCULO 4°. DURACIÓN. La fundación que se constituye tendrá una duración de {{duracion_fundacion}}.\n\nCAPÍTULO II\nPATRIMONIO\n\nARTÍCULO 5°. PATRIMONIO. La fundación {{nombre_entidad}} obtendrá sus fondos de las cuotas que aporten los fundadores y otras personas, y con los demás bienes que a cualquier título adquiera. Sin embargo, el fondo inicial está conformado por {{descripcion_patrimonio_inicial}}.\n\nARTÍCULO 6°. DESTINO DEL PATRIMONIO. El patrimonio de la fundación {{nombre_entidad}} no podrá destinarse a fin distinto del expresado en su objeto.\n\nCAPÍTULO III\nDIRECCIÓN Y ADMINISTRACIÓN\n\nARTÍCULO 7°. DIRECCIÓN. La fundación {{nombre_entidad}} será administrada y dirigida por la asamblea de delegatarios de los fundadores, y estará integrada por un consejo de administración, por un director y tendrá un revisor fiscal.\n\nARTÍCULO 8°. ASAMBLEA DE DELEGATARIOS. La asamblea de delegatarios de la fundación {{nombre_entidad}} estará integrada por {{num_miembros_asamblea}} miembros con sus respectivos suplentes personales.\n\nARTÍCULO 9°. DESIGNACIÓN DE LOS MIEMBROS. Cada uno de los miembros de la asamblea de delegatarios será designado por {{quien_designa_miembros}}.\n\nARTÍCULO 10°. PRESIDENTE DE LA ASAMBLEA. La asamblea de delegatarios será presidida por el miembro que ella misma designe.\n\nARTÍCULO 11°. QUÓRUM. El quórum para las reuniones ordinarias o extraordinarias de la asamblea de delegatarios lo hará la concurrencia de un número de personas que represente, por lo menos, la mayoría absoluta de sus integrantes.\n\nARTÍCULO 12°. REUNIONES. La asamblea de delegatarios se reunirá por lo menos una vez al año en {{ciudad_reuniones}}, durante los {{dias_reunion}} primeros días del mes de {{mes_reunion}} de cada año, previa convocatoria de quien haga las veces de presidente. Las reuniones extraordinarias se realizarán cada vez que lo quiera la mayoría absoluta de los miembros de la asamblea.\n\nARTÍCULO 13°. LIBRO DE ACTAS. De las reuniones, resoluciones, acuerdos, deliberaciones y en general los actos de la asamblea de delegatarios se dejará constancia escrita en un libro de actas de vigencia anual, y cada una de tales actas será firmada por el Presidente y el Secretario.\n\nARTÍCULO 14°. FUNCIONES DE LA ASAMBLEA DE DELEGATARIOS. Son funciones de la asamblea de delegatarios: a) Nombrar {{num_miembros_consejo}} miembros y sus respectivos suplentes personales para integrar el consejo de administración de la fundación y removerlos; b) Nombrar al revisor fiscal y su suplente para períodos de {{periodo_revisor}} y fijarle su asignación; c) Aprobar, improbar y fenecer las cuentas de la fundación; d) Reformar los estatutos de la fundación; e) Disolver extraordinariamente la fundación por extinción de sus fondos; f) Las demás que le correspondan como suprema autoridad de la fundación, siempre que no estén atribuidas a otro órgano.\n\nARTÍCULO 15°. DECISIONES. Las determinaciones de la asamblea de delegatarios se tomarán por la mayoría absoluta de votos presentes, siempre y cuando exista quórum.\n\nARTÍCULO 16°. REFORMA DE ESTATUTOS. Las reformas de estatutos deberán ser sometidas a la aprobación de la entidad pública correspondiente.\n\nARTÍCULO 17°. CONSEJO DE ADMINISTRACIÓN. El consejo de administración estará conformado por {{num_miembros_consejo}} miembros con sus suplentes personales respectivos, designados por la asamblea de delegatarios para períodos de {{periodo_consejo}}.\n\nARTÍCULO 18°. REUNIONES DEL CONSEJO. El consejo de administración se reunirá cada vez que sea convocado por el director o por la mayoría de sus integrantes.\n\nARTÍCULO 19°. FUNCIONES DEL CONSEJO DE ADMINISTRACIÓN. Son funciones del consejo de administración: a) Ejercer la dirección administrativa de la fundación; b) Establecer los empleos necesarios y señalarles sus asignaciones, con excepción de aquellas que correspondan a la asamblea de delegatarios; c) Nombrar y remover a las personas que deban desempeñar los empleos; d) Nombrar y remover al director de la fundación; e) Establecer el reglamento de servicios de la fundación; f) Presentar a la asamblea de delegatarios los informes, cuentas, inventarios y balances que esta le solicite; g) Autorizar al director la celebración de contratos cuya cuantía exceda de {{cuantia_contratos}}, autorización que será previa y por escrito.\n\nARTÍCULO 20°. ACTAS DEL CONSEJO. De las reuniones del consejo se elaborará un acta firmada por el presidente y el secretario del mismo.\n\nARTÍCULO 21°. VACANTES EN EL CONSEJO. Las vacantes definitivas de alguno de los integrantes del consejo serán provistas por el mismo organismo hasta tanto la asamblea de delegatarios designe para tal cargo.\n\nARTÍCULO 22°. QUÓRUM DEL CONSEJO. El quórum para las reuniones del consejo se formará con la concurrencia de {{quorum_consejo}} de sus miembros, y las decisiones las adoptará por la mayoría de los miembros presentes.\n\nARTÍCULO 23°. DIRECTOR. El representante legal de la fundación será el director, quien es de libre nombramiento y remoción del consejo de administración. Él ejercerá en asocio de la asamblea y del consejo la dirección y administración de la institución.\n\nARTÍCULO 24°. FUNCIONES DEL DIRECTOR. Son funciones del director: a) Velar por el cumplimiento de los estatutos, reglamentos, determinaciones e instrucciones de la asamblea y el consejo; b) Realizar los contratos que fuesen necesarios para el desarrollo del objeto de la fundación, conforme lo dispuesto por estos estatutos; c) Representar a la fundación con facultades para transigir, desistir, delegar y sustituir; d) Constituir apoderados judiciales para la defensa de los intereses de la fundación; e) Presentar los informes que le solicite el consejo o la asamblea; f) Las demás que correspondan a la naturaleza de su cargo y las que le sean asignadas por la asamblea de delegatarios.\n\nCAPÍTULO IV\nDISOLUCIÓN Y LIQUIDACIÓN\n\nARTÍCULO 25°. DISOLUCIÓN. La fundación se disolverá por las causales que la ley establece de manera general para esta clase de instituciones y en particular, cuando la asamblea de delegatarios decida con el voto favorable de {{votos_disolucion}} de sus miembros disolverla extraordinariamente en el evento de la extinción de los fondos de su patrimonio. Igualmente, la fundación se disolverá cuando su personería jurídica sea cancelada por autoridad competente.\n\nARTÍCULO 26°. LIQUIDADOR. Cuando la fundación decrete su disolución, en el mismo acto la asamblea de delegatarios procederá a nombrar liquidador. En caso de no llegarse a acuerdo, ejercerá como tal el director de la fundación en su calidad de representante legal. Si no existe representante legal inscrito, designará al liquidador el gobernador del departamento de {{departamento_domicilio}}.\n\nARTÍCULO 27°. PUBLICIDAD. Con cargo al patrimonio de la fundación, el liquidador designado publicará tres (3) avisos en un periódico de amplia circulación nacional, dejando entre uno y otro un plazo de quince (15) días, en los cuales informará a la ciudadanía sobre el proceso de liquidación, instando a los acreedores a hacer valer sus derechos.\n\nARTÍCULO 28°. PROCEDIMIENTO DE LIQUIDACIÓN. Quince (15) días después de la publicación del último aviso se liquidará la fundación, pagando las obligaciones contraídas con terceros y observando las disposiciones legales sobre prelación de créditos. Si cumplido lo anterior queda un remanente de activo patrimonial, este pasará a {{entidad_remanente}}.\n\nCAPÍTULO V\nDISPOSICIONES VARIAS\n\nARTÍCULO 29°. REVISOR FISCAL. Las funciones del revisor fiscal de la fundación serán las mismas que la ley señala a los revisores fiscales de las sociedades. El revisor fiscal deberá ser contador público titulado con su respectivo número de matrícula.\n\nARTÍCULO 30°. SECRETARIO. La fundación tendrá un secretario nombrado por {{quien_nombra_secretario}}, quien será a la vez secretario de la asamblea de delegatarios, del consejo de administración y del director.\n\nARTÍCULO 31°. NOMBRAMIENTOS PROVISIONALES. En tanto la asamblea de delegatarios y el consejo de administración efectúen nuevos nombramientos, se hacen los siguientes nombramientos provisionales:\n\nDirector Principal: {{director_principal}}\nDirector Suplente: {{director_suplente}}\n\nConsejo de Administración — Miembros Principales: {{miembros_consejo_principales}}\nConsejo de Administración — Miembros Suplentes: {{miembros_consejo_suplentes}}\n\nRevisor Fiscal Principal: {{revisor_fiscal}}\nRevisor Fiscal Suplente: {{suplente_revisor}}\n\nSecretario: {{secretario}}\n\nDado en {{ciudad_firma}}, a los {{dia_firma}} días del mes de {{mes_firma}} de {{anio_firma}}.",
+    "fields": [
+      {
+        "name": "nombre_entidad",
+        "label": "Nombre completo de la fundación (ej: Fundación Semillas de Esperanza)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "municipio_domicilio",
+        "label": "Municipio donde tendrá su sede principal (ej: El Cerrito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento_domicilio",
+        "label": "Departamento donde está ubicado el municipio (ej: Valle del Cauca)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "objeto_fundacion",
+        "label": "Objeto o finalidad de la fundación — describir las actividades sin ánimo de lucro (ej: promover la educación de niños en situación de vulnerabilidad mediante programas de becas y talleres formativos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion_fundacion",
+        "label": "Duración de la fundación (ej: diez (10) años / indefinida / hasta la extinción total de su patrimonio)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_patrimonio_inicial",
+        "label": "Descripción del patrimonio inicial — quién aporta y cuánto (ej: la suma de cinco millones de pesos ($5.000.000) aportada por Carlos Eduardo Pérez Ríos, y la suma de cinco millones de pesos ($5.000.000) aportada por María García López)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "num_miembros_asamblea",
+        "label": "Número de miembros de la asamblea de delegatarios en letras y número (ej: cinco (5), tres (3))",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "quien_designa_miembros",
+        "label": "Quién designa a los miembros de la asamblea (ej: los fundadores en reunión conjunta / el consejo de administración / cada fundador designa un delegado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_reuniones",
+        "label": "Ciudad donde se realizarán las reuniones ordinarias (ej: El Cerrito, Cali)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dias_reunion",
+        "label": "Primeros días del mes para la reunión ordinaria en letras y número (ej: diez (10))",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes_reunion",
+        "label": "Mes del año en que se realizará la reunión ordinaria (ej: marzo, febrero)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "num_miembros_consejo",
+        "label": "Número de miembros del consejo de administración en letras y número (ej: tres (3), cinco (5))",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_revisor",
+        "label": "Período del revisor fiscal en letras y número (ej: dos (2) años, un (1) año)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "periodo_consejo",
+        "label": "Período del consejo de administración en letras y número (ej: dos (2) años, un (1) año)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cuantia_contratos",
+        "label": "Valor máximo de contratos que el director puede celebrar sin autorización del consejo (ej: cinco millones de pesos ($5.000.000))",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "quorum_consejo",
+        "label": "Quórum del consejo de administración (ej: la mayoría absoluta / tres (3) / dos (2))",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "votos_disolucion",
+        "label": "Votos requeridos para disolver la fundación (ej: las dos terceras partes / la mayoría absoluta / la totalidad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "entidad_remanente",
+        "label": "Entidad que recibirá los bienes remanentes al liquidarse (ej: la entidad de beneficencia que determine la asamblea de delegatarios / una institución sin ánimo de lucro de fines similares con domicilio en el municipio)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "quien_nombra_secretario",
+        "label": "Quién nombra al secretario (ej: el consejo de administración / la asamblea de delegatarios / el director)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "director_principal",
+        "label": "Nombre completo del director principal provisional",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "director_suplente",
+        "label": "Nombre completo del director suplente provisional",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "miembros_consejo_principales",
+        "label": "Nombres de los miembros principales del consejo separados por punto y coma (ej: Carlos Pérez Ríos; María García López; Luis Torres Mora)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "miembros_consejo_suplentes",
+        "label": "Nombres de los miembros suplentes del consejo separados por punto y coma (ej: Ana Gómez Ruiz; Pedro Salcedo Vera; Rosa Martínez Gil)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "revisor_fiscal",
+        "label": "Nombre completo del revisor fiscal principal (debe ser contador público titulado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "suplente_revisor",
+        "label": "Nombre completo del revisor fiscal suplente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "secretario",
+        "label": "Nombre completo del secretario provisional",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad donde se firman los estatutos (ej: El Cerrito, Cali)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia_firma",
+        "label": "Día en que se firman los estatutos (solo el número, ej: 21)",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "mes_firma",
+        "label": "Mes en que se firman los estatutos (ej: abril, mayo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio_firma",
+        "label": "Año en que se firman los estatutos (ej: 2026)",
+        "type": "number",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "poder-especial-compra-inmueble",
+    "title": "Poder Especial para Compra de un Inmueble",
+    "subtitle": "Representación y Poderes",
+    "fields": [
+      {
+        "name": "notario",
+        "label": "Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo Notarial",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_poderdante",
+        "label": "Domicilio del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_poderdante",
+        "label": "Expedición Cédula Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado",
+        "label": "Nombre del Apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_apoderado",
+        "label": "Domicilio del Apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_apoderado",
+        "label": "Cédula del Apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_apoderado",
+        "label": "Expedición Cédula Apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "precio_letras",
+        "label": "Precio en Letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "precio_numeros",
+        "label": "Precio en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_inmueble",
+        "label": "Descripción del Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lindero_norte",
+        "label": "Lindero Norte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lindero_sur",
+        "label": "Lindero Sur",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lindero_oriente",
+        "label": "Lindero Oriente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lindero_occidente",
+        "label": "Lindero Occidente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "matricula_inmobiliaria",
+        "label": "Matrícula Inmobiliaria",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "PODER ESPECIAL PARA COMPRA DE UN INMUEBLE\n\nSeñor\nNotario {{notario}} del Círculo de {{circulo}}\n\n{{nombre_poderdante}}, mayor de edad, domiciliado(a) y residente en la ciudad de {{domicilio_poderdante}}, identificado(a) con la cédula de ciudadanía Nº {{cedula_poderdante}} de {{expedicion_poderdante}}, actuando en nombre y representación propia, por medio de este documento confiero poder especial, amplio y suficiente, a {{nombre_apoderado}}, también mayor de edad, domiciliado(a) y residente en la ciudad de {{domicilio_apoderado}}, identificado(a) con la cédula de ciudadanía Nº {{cedula_apoderado}} de {{expedicion_apoderado}}, para comprar por la suma de {{precio_letras}} ({{precio_numeros}}) moneda legal y para suscribir en mi nombre la escritura pública de compraventa sobre el inmueble que a continuación se describe: {{descripcion_inmueble}}, alinderado de manera general así: por el norte, {{lindero_norte}}; por el sur, {{lindero_sur}}; por el oriente, {{lindero_oriente}}; y por el occidente, {{lindero_occidente}}. El inmueble descrito se encuentra identificado con el Nº de matrícula inmobiliaria {{matricula_inmobiliaria}}.\n\nMi apoderado está facultado para realizar todos los actos, gestiones y diligencias que sean necesarios para el perfeccionamiento del contrato de compraventa.\n\nPor lo anterior solicito se sirva tener a la persona anteriormente mencionada como mi apoderado para los efectos descritos en este memorial.\n\nSeñor notario, atentamente,\n\n\nPoderdante: _____________________\nC.C. {{cedula_poderdante}} de {{expedicion_poderdante}}\n\n\nApoderado: _____________________\nC.C. {{cedula_apoderado}} de {{expedicion_apoderado}}"
+  },
+  {
+    "id": "declaracion-fin-extraprocesal",
+    "title": "Declaración para Fin Extraprocesal",
+    "subtitle": "Declaraciones y Actos Notariales",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo Notarial",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_declarante",
+        "label": "Nombre del Declarante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_declarante",
+        "label": "Estado Civil del Declarante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_declarante",
+        "label": "Cédula del Declarante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_declarante",
+        "label": "Expedición Cédula Declarante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anos_conocimiento",
+        "label": "Años de Conocimiento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_tercero",
+        "label": "Nombre del Tercero",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_tercero",
+        "label": "Cédula del Tercero",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hechos_declaracion",
+        "label": "Hechos de la Declaración",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_dependiente",
+        "label": "Nombre de quien Depende Económicamente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "razon_testimonio",
+        "label": "Razón del Testimonio",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "DECLARACIÓN PARA FIN EXTRAPROCESAL\n(Escritura pública)\n\nEn la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} del mes de {{mes}} del año {{anio}}, ante mí Notario {{notario}}, del Círculo de {{circulo}}, compareció el señor(a) {{nombre_declarante}}, colombiano(a), mayor de edad, domiciliado y residente en {{ciudad}}, de estado civil {{estado_civil_declarante}}, identificado con la cédula de ciudadanía Nº {{cedula_declarante}} de {{expedicion_declarante}}, quien manifestó lo siguiente:\n\nPRIMERO.— Que por medio del presente documento procede a declarar que conoce desde hace más de {{anos_conocimiento}} años al señor(a) {{nombre_tercero}}, mayor de edad, domiciliado(a) y residente en {{ciudad}}, identificado(a) con la cédula de ciudadanía Nº {{cedula_tercero}}.\n\nSEGUNDO.— Que bajo la gravedad de juramento declara tener conocimiento de que {{hechos_declaracion}}.\n\nTERCERO.— Que {{nombre_dependiente}} depende económicamente de {{nombre_declarante}}, quien se identifica con la cédula de ciudadanía Nº {{cedula_declarante}} de {{expedicion_declarante}}.\n\nCUARTO.— Que la razón del testimonio radica en {{razon_testimonio}}, de acuerdo con lo señalado en el Decreto 1557 de 1989.\n\n\nDeclarante: _____________________\nC.C. {{cedula_declarante}} de {{expedicion_declarante}}\n\nNotario: _____________________"
+  },
+  {
+    "id": "aviso-terminacion-arrendamiento-arrendador",
+    "title": "Carta de Aviso de Terminación de Contrato de Arrendamiento (por el Arrendador)",
+    "subtitle": "Uso y Goce",
+    "fields": [
+      {
+        "name": "ciudad_fecha",
+        "label": "Ciudad y Fecha",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_arrendatario",
+        "label": "Nombre del Arrendatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_arrendatario",
+        "label": "Dirección del Arrendatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_arrendatario",
+        "label": "Ciudad del Arrendatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_contrato",
+        "label": "Fecha de Celebración del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion_contrato",
+        "label": "Duración Inicial del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_inmueble",
+        "label": "Descripción del Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_terminacion",
+        "label": "Fecha de Terminación del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "entidad_consignacion",
+        "label": "Entidad para la Consignación",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "{{ciudad_fecha}}\n\nSeñor(a):\n{{nombre_arrendatario}}\nDirección: {{direccion_notificacion_arrendatario}}\nCiudad: {{ciudad_arrendatario}}\n\nRef.: Terminación contrato de arrendamiento.\n\nEstimado señor(a):\n\nPor medio de la presente le comunico que, haciendo uso de la facultad establecida en el artículo 22 de la Ley 820 de 2003, he decidido ponerle fin, unilateralmente, al contrato de arrendamiento de vivienda urbana celebrado el {{fecha_contrato}}, con un término de duración inicial de {{duracion_contrato}}, sobre el bien inmueble que se describe a continuación: {{descripcion_inmueble}}.\n\nEn consecuencia, el contrato terminará el día {{fecha_terminacion}}, es decir, tres meses después de la recepción de esta carta por parte suya.\n\nComo constituye una obligación a mi cargo cubrir, a título de indemnización, una suma de dinero igual al valor de tres mensualidades, le informo que este dinero se le consignará a su favor y a órdenes de la autoridad competente {{entidad_consignacion}}, la cual le allegará copia del título respectivo o le enviará comunicación en que se haga constar tal circunstancia, inmediatamente tenga conocimiento de la misma.\n\nAtentamente,\n\n\nArrendador: __________________"
+  },
+  {
+    "id": "aviso-terminacion-arrendamiento-arrendatario",
+    "title": "Carta de Aviso de Terminación de Contrato de Arrendamiento (por el Arrendatario)",
+    "subtitle": "Uso y Goce",
+    "fields": [
+      {
+        "name": "ciudad_fecha",
+        "label": "Ciudad y Fecha",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_arrendador",
+        "label": "Nombre del Arrendador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_arrendador",
+        "label": "Dirección del Arrendador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_arrendador",
+        "label": "Ciudad del Arrendador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_contrato",
+        "label": "Fecha de Celebración del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_inmueble",
+        "label": "Descripción del Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "linderos_inmueble",
+        "label": "Linderos del Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_terminacion",
+        "label": "Fecha de Terminación del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "entidad_consignacion",
+        "label": "Entidad para la Consignación",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "{{ciudad_fecha}}\n\nSeñor(a):\n{{nombre_arrendador}}\nDirección: {{direccion_notificacion_arrendador}}\nCiudad: {{ciudad_arrendador}}\n\nRef.: Terminación contrato de arrendamiento.\n\nApreciado señor(a):\n\nPor medio de la presente le comunico que, haciendo uso de la facultad que confiere el artículo 24 de la Ley 820 de 2003, he decidido poner fin, unilateralmente, al contrato de arrendamiento de vivienda urbana que celebramos el día {{fecha_contrato}}, sobre el bien inmueble ubicado en {{descripcion_inmueble}} y alinderado de la siguiente manera: {{linderos_inmueble}}.\n\nEn consecuencia, el contrato terminará el día {{fecha_terminacion}}, es decir, tres meses después de la recepción de esta carta por parte suya.\n\nComo constituye una obligación a mi cargo cubrir, a título de indemnización, una suma de dinero igual al valor de tres mensualidades, le informo que este dinero le será consignado a su favor y a órdenes de la autoridad competente {{entidad_consignacion}}, la cual le allegará copia del título respectivo o le enviará comunicación en que se haga constar tal circunstancia, inmediatamente tenga conocimiento de la misma.\n\nSi usted no se presenta a recibir el inmueble me veré precisado a proceder de conformidad con lo establecido en la Ley 820 de 2003, artículo 24, numeral 4º, inciso 2º.\n\nAtentamente,\n\n\nArrendatario: __________________"
+  },
+  {
+    "id": "solicitud-primera-copia-hipoteca",
+    "title": "Solicitud de Primera Copia de Hipoteca (por Extravío)",
+    "subtitle": "Garantías y Crédito",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo Notarial",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_deudor",
+        "label": "Nombre del Deudor Hipotecario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_deudor",
+        "label": "Cédula del Deudor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_acreedor",
+        "label": "Nombre del Acreedor Hipotecario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_acreedor",
+        "label": "Cédula del Acreedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura_hipoteca",
+        "label": "Número de la Escritura de Hipoteca",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_escritura_hipoteca",
+        "label": "Fecha de la Escritura",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_hipoteca",
+        "label": "Notaría que la Expidió",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_registro",
+        "label": "Fecha de Registro",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "folio_matricula",
+        "label": "Folio de Matrícula Inmobiliaria",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_inmueble",
+        "label": "Descripción del Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_inmueble",
+        "label": "Dirección del Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_catastral",
+        "label": "Cédula Catastral",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "En la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} del mes de {{mes}} del año {{anio}}, ante mí Notario {{notario}}, del Círculo de {{circulo}}, comparecieron los señores {{nombre_deudor}}, identificado con la cédula de ciudadanía Nº {{cedula_deudor}}, y {{nombre_acreedor}}, identificado con la cédula de ciudadanía Nº {{cedula_acreedor}}, quienes manifestaron lo siguiente:\n\nPRIMERO. Constitución de hipoteca.— Que mediante la escritura pública Nº {{numero_escritura_hipoteca}} de fecha {{fecha_escritura_hipoteca}}, expedida por la Notaría {{notaria_hipoteca}}, e inscrita en la Oficina de Registro de Instrumentos Públicos el {{fecha_registro}}, bajo el folio de matrícula inmobiliaria Nº {{folio_matricula}}, el señor {{nombre_deudor}} constituyó hipoteca abierta de primer grado en favor del señor {{nombre_acreedor}} sobre el siguiente inmueble: {{descripcion_inmueble}}, ubicado en {{direccion_inmueble}}, al cual corresponde la cédula catastral Nº {{cedula_catastral}}.\n\nSEGUNDO. Primera copia.— La notaría expidió varias copias a solicitud de los interesados, siendo la primera de ellas entregada al señor {{nombre_acreedor}}, en su calidad de acreedor hipotecario.\n\nTERCERO. Extravío.— La primera copia de la escritura Nº {{numero_escritura_hipoteca}} se extravió, sin que se tenga indicio de su paradero.\n\nCUARTO. Obligaciones vigentes.— Aún subsisten obligaciones amparadas por la garantía hipotecaria en cuestión y pueden surgir otras a cargo del deudor hipotecario, haciéndose necesario para los comparecientes poseer una copia con mérito para exigir el cumplimiento de obligaciones, de conformidad con lo prescrito por el artículo 80 del Decreto-Ley 960 de 1970 modificado por el artículo 42 del Decreto 2163 de 1970.\n\nQUINTO. Solicitud de copia.— Como consecuencia de lo expuesto, los comparecientes, de común acuerdo, solicitan la expedición de una nueva copia de la escritura Nº {{numero_escritura_hipoteca}} antes mencionada, que preste mérito para exigir el cumplimiento de obligaciones, acogiéndose a lo previsto en el artículo 81 del Decreto-Ley 960 de 1970, y en todo caso expresan que si apareciere la copia extraviada se abstendrán de usarla y la devolverán al Notario que la expidió.\n\n\nComparecientes: __________\n\nNotario: __________"
+  },
+  {
+    "id": "dacion-en-pago",
+    "title": "Dación en Pago",
+    "subtitle": "Transferencia de Dominio",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_acreedor",
+        "label": "Nombre del Acreedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_acreedor",
+        "label": "Cédula del Acreedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_acreedor",
+        "label": "Ciudad del Acreedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_deudor",
+        "label": "Nombre del Deudor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_deudor",
+        "label": "Cédula del Deudor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_deudor",
+        "label": "Ciudad del Deudor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_capital",
+        "label": "Valor del Capital Adeudado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_intereses",
+        "label": "Valor de Intereses Causados",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_honorarios",
+        "label": "Valor de Honorarios de Cobro",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_gastos",
+        "label": "Valor de Gastos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "documento_obligacion",
+        "label": "Documento que Contiene la Obligación",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_vencimiento_obligacion",
+        "label": "Fecha de Vencimiento de la Obligación",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_bienes_dacion",
+        "label": "Descripción de los Bienes Entregados en Dación",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_bienes_dacion",
+        "label": "Valor de los Bienes Entregados",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "responsable_gastos",
+        "label": "Responsable de los Gastos",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "DACIÓN EN PAGO\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, se reunieron a saber: {{nombre_acreedor}}, mayor de edad, domiciliado y residente en la ciudad de {{ciudad_acreedor}}, identificado con la cédula de ciudadanía Nº {{cedula_acreedor}}, quien para efectos del presente documento se denominará el ACREEDOR, y {{nombre_deudor}}, también mayor de edad y domiciliado y residente en la ciudad de {{ciudad_deudor}}, identificado con la cédula de ciudadanía Nº {{cedula_deudor}}, quien en lo sucesivo se denominará el DEUDOR, han acordado celebrar un convenio de dación en pago que se regulará por las siguientes cláusulas:\n\nPRIMERA. Obligaciones vencidas.— El DEUDOR debe al ACREEDOR la suma discriminada así: a) la suma de {{valor_capital}} por concepto de capital; b) la cantidad de {{valor_intereses}} por intereses causados; c) por concepto de honorarios de cobro la suma de {{valor_honorarios}}; d) por concepto de gastos la suma de {{valor_gastos}}. La obligación consta en el siguiente documento: {{documento_obligacion}}, y se encuentra vencida desde el {{fecha_vencimiento_obligacion}}, siendo exigible en la actualidad.\n\nSEGUNDA. Iliquidez.— Que debido a su situación económica, el DEUDOR se encuentra imposibilitado para cubrir la suma que adeuda en dinero efectivo.\n\nTERCERA. Dación en pago.— Que como consecuencia de lo anterior, el DEUDOR transfiere a título de dación en pago los siguientes bienes: {{descripcion_bienes_dacion}}.\n\nCUARTA. Valor.— Que para efectos del presente acto se estima el valor de los bienes entregados en {{valor_bienes_dacion}}, quedando, en consecuencia, extinguida la deuda.\n\nQUINTA. Propiedad de los bienes.— El DEUDOR manifiesta ser propietario de los bienes que entrega como dación en pago, que estos no soportan gravamen o limitación alguna de dominio, que están libres de impuestos y contribuciones, que no soportan embargos ni son objeto de pleito pendiente, y en todo caso se obliga a salir en defensa del ACREEDOR si fuere perturbado en su posesión por cualquier motivo, en especial por las causales de saneamiento por evicción y vicios redhibitorios que contempla la ley civil.\n\nSEXTA. Aplicación analógica.— Al presente acto serán aplicables, por analogía, las normas reguladoras del contrato de compraventa.\n\nSÉPTIMA. Entrega material.— El DEUDOR se obliga a entregar materialmente los bienes dados en pago dentro de los treinta (30) días siguientes a la firma del presente documento.\n\nOCTAVA. Condición resolutoria.— La dación en pago que por este documento se efectúa se condiciona, en todo caso, a la entrega real y material de los bienes a que alude, bajo las circunstancias anotadas en la cláusula quinta.\n\nNOVENA. Gastos.— Los gastos que ocasione el otorgamiento del presente documento correrán por cuenta de {{responsable_gastos}}.\n\n\nEl deudor: ________________________\n\nEl acreedor: ______________________"
+  }
 ]
