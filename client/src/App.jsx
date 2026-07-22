@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { Routes, Route, useParams, useNavigate, useLocation } from 'react-router-dom'
+import { useAuth } from './AuthContext.jsx'
+import { db } from './firebase'
+import { collection, addDoc, query, orderBy, limit, getDocs, serverTimestamp, deleteDoc, doc, updateDoc } from 'firebase/firestore'
 import './App.css'
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
@@ -9883,8 +9886,123 @@ function AppContent() {
   const [loading, setLoading] = useState(false)
   const [loadingWord, setLoadingWord] = useState(false)
   const [showPasos, setShowPasos] = useState(false)
+  const { user, logout } = useAuth()
   const [historial, setHistorial] = useState([])
+  useEffect(() => {
+    if (!user) { setHistorial([]); return }
+    const cargarHistorial = async () => {
+      try {
+        const q = query(collection(db, 'historial', user.uid, 'documentos'), orderBy('creado', 'desc'), limit(20))
+        const snap = await getDocs(q)
+        const items = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+        items.sort((a, b) => obtenerTimestampHistorial(b) - obtenerTimestampHistorial(a))
+        setHistorial(items)
+      } catch (err) {
+        console.error('Error cargando historial:', err)
+      }
+    }
+    cargarHistorial()
+  }, [user])
+  const eliminarDelHistorial = async (id) => {
+    setHistorial(prev => prev.filter(item => item.id !== id))
+    if (user) {
+      try {
+        await deleteDoc(doc(db, 'historial', user.uid, 'documentos', id))
+      } catch (err) {
+        console.error('Error eliminando del historial:', err)
+      }
+    }
+  }
+  const eliminarTodoHistorial = async () => {
+    if (!window.confirm('¿Eliminar todo el historial? Esta acción no se puede deshacer.')) return
+    const idsAEliminar = historial.map(item => item.id)
+    setHistorial([])
+    if (user) {
+      for (const id of idsAEliminar) {
+        try {
+          await deleteDoc(doc(db, 'historial', user.uid, 'documentos', id))
+        } catch (err) {
+          console.error('Error eliminando del historial:', err)
+        }
+      }
+    }
+  }
   const [showHistorial, setShowHistorial] = useState(false)
+  const [historialPreview, setHistorialPreview] = useState(null)
+  const [guardando, setGuardando] = useState(false)
+  const historialActualIdRef = useRef(null)
+  const autosaveTimerRef = useRef(null)
+  const autosaveModalTimerRef = useRef(null)
+
+  const obtenerTimestampHistorial = (item) => item.actualizado || (item.creado && item.creado.toMillis ? item.creado.toMillis() : 0)
+  const formatearFechaHistorial = (item) => {
+    const ms = obtenerTimestampHistorial(item)
+    if (!ms) return item.hora || ''
+    const d = new Date(ms)
+    const texto = d.toLocaleString('es-CO', { day: '2-digit', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' })
+    return texto.charAt(0).toUpperCase() + texto.slice(1)
+  }
+  const capturarHtmlDeIframe = (iframeId) => {
+    const iframeDoc = document.getElementById(iframeId)?.contentDocument
+    if (!iframeDoc) return null
+    return '<!DOCTYPE html>' + iframeDoc.documentElement.outerHTML
+  }
+
+  const autoguardarPrincipal = () => {
+    if (!user || !minutaDetail) return
+    if (autosaveTimerRef.current) clearTimeout(autosaveTimerRef.current)
+    autosaveTimerRef.current = setTimeout(async () => {
+      const html = capturarHtmlDeIframe('preview-iframe')
+      if (!html) return
+      setGuardando(true)
+      try {
+        if (historialActualIdRef.current) {
+          const idActual = historialActualIdRef.current
+          const ahora = Date.now()
+          await updateDoc(doc(db, 'historial', user.uid, 'documentos', idActual), { html, actualizado: ahora })
+          setHistorial(prev => {
+            const item = prev.find(i => i.id === idActual)
+            if (!item) return prev
+            const resto = prev.filter(i => i.id !== idActual)
+            return [{ ...item, html, actualizado: ahora }, ...resto]
+          })
+        } else {
+          const ahora = Date.now()
+          const nuevoItem = { titulo: minutaDetail.title, actualizado: ahora, html }
+          const docRef = await addDoc(collection(db, 'historial', user.uid, 'documentos'), { ...nuevoItem, creado: serverTimestamp() })
+          historialActualIdRef.current = docRef.id
+          setHistorial(prev => [{ id: docRef.id, ...nuevoItem }, ...prev].slice(0, 20))
+        }
+      } catch (err) {
+        console.error('Error en autoguardado:', err)
+      } finally {
+        setTimeout(() => setGuardando(false), 500)
+      }
+    }, 1200)
+  }
+  const autoguardarModal = () => {
+    if (!user || !historialPreview) return
+    if (autosaveModalTimerRef.current) clearTimeout(autosaveModalTimerRef.current)
+    autosaveModalTimerRef.current = setTimeout(async () => {
+      const html = capturarHtmlDeIframe('historial-preview-iframe')
+      if (!html) return
+      setGuardando(true)
+      try {
+        const ahora = Date.now()
+        await updateDoc(doc(db, 'historial', user.uid, 'documentos', historialPreview.id), { html, actualizado: ahora })
+        setHistorial(prev => {
+          const item = prev.find(i => i.id === historialPreview.id)
+          if (!item) return prev
+          const resto = prev.filter(i => i.id !== historialPreview.id)
+          return [{ ...item, html, actualizado: ahora }, ...resto]
+        })
+      } catch (err) {
+        console.error('Error en autoguardado del modal:', err)
+      } finally {
+        setTimeout(() => setGuardando(false), 500)
+      }
+    }, 1200)
+  }
   const [busqueda, setBusqueda] = useState('')
   const [errores, setErrores] = useState({})
   const [expandedSubtitles, setExpandedSubtitles] = useState({})
@@ -9981,10 +10099,11 @@ function AppContent() {
       body: JSON.stringify({ template: minutaDetail.template, title: minutaDetail.title, data: formData, tipo_tramite: minutaDetail.tipo_tramite, categoryId: selectedCategory.id })
     })
     const data = await res.json()
+    historialActualIdRef.current = null
     setPreviewHTML(data.html)
     setEditedText(data.filled)
     setLoading(false)
-    setHistorial(prev => [{ id: Date.now(), titulo: minutaDetail.title, hora: new Date().toLocaleTimeString('es-CO', { hour: '2-digit', minute: '2-digit' }), html: data.html }, ...prev.slice(0, 9)])
+
   }
 
   const handlePrint = () => { document.getElementById('preview-iframe').contentWindow.print() }
@@ -10027,6 +10146,28 @@ function AppContent() {
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', width: '100vw', background: 'linear-gradient(135deg, #d8e4f0 0%, #e8f0f8 50%, #d0dcea 100%)', fontFamily: 'Georgia, serif' }}>
 
       {showPasos && <PanelPasos minutaId={minutaDetail?.id} onClose={() => setShowPasos(false)} />}
+      {historialPreview && (
+        <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', background: 'rgba(0,0,0,0.65)', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center', backdropFilter: 'blur(4px)' }}>
+          <div style={{ background: '#fff', borderRadius: '10px', width: '1100px', maxWidth: '96vw', height: '94vh', display: 'flex', flexDirection: 'column', overflow: 'hidden', border: '1px solid #c8d8e8' }}>
+            <div style={{ background: 'linear-gradient(135deg, #1a3a5c 0%, #0d2240 100%)', padding: '14px 20px', borderBottom: '3px solid #b8962e', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <div>
+                <div style={{ color: '#e2b94a', fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '3px' }}>Historial</div>
+                <div style={{ color: '#fff', fontSize: '14px', fontWeight: 'bold' }}>{historialPreview.titulo} · {formatearFechaHistorial(historialPreview)}</div>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                {guardando && (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#90b4d0', fontSize: '11px', fontStyle: 'italic' }}>
+                    <div style={{ width: '10px', height: '10px', border: '2px solid #90b4d044', borderTopColor: '#e2b94a', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
+                    Guardando...
+                  </div>
+                )}
+                <button onClick={() => setHistorialPreview(null)} style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid #ffffff44', color: '#fff', borderRadius: '6px', padding: '6px 12px', cursor: 'pointer', fontSize: '13px' }}>✕ Cerrar</button>
+              </div>
+            </div>
+            <iframe id="historial-preview-iframe" srcDoc={historialPreview.html} style={{ flex: 1, border: 'none', width: '100%' }} title="Documento del historial" onLoad={(e) => { const doc = e.target.contentDocument; if (doc && doc.body) { doc.body.contentEditable = "true"; doc.body.style.cursor = "text"; doc.body.style.outline = "none"; doc.body.addEventListener('input', autoguardarModal) } }} />
+          </div>
+        </div>
+      )}
 
       <header className="header-3d main-header" style={{ background: 'linear-gradient(135deg, #1a3a5c 0%, #2c5282 100%)', padding: '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '68px', flexShrink: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
@@ -10040,6 +10181,15 @@ function AppContent() {
           <div style={{ color: '#e2b94a', fontSize: '16px', letterSpacing: '1px', fontWeight: 'bold', textShadow: '0 1px 4px rgba(0,0,0,0.5)' }}>
             <span className="header-counter-text">{categories.reduce((acc, cat) => acc + cat.minutas.length, 0)} minutas disponibles</span>
           </div>
+          {guardando && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#90b4d0', fontSize: '11px', fontStyle: 'italic' }}>
+              <div style={{ width: '10px', height: '10px', border: '2px solid #90b4d044', borderTopColor: '#e2b94a', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
+              Guardando...
+            </div>
+          )}
+          <button onClick={logout} style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid #e2b94a66', color: '#e2b94a', borderRadius: '6px', padding: '6px 14px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold', boxShadow: '0 2px 0 rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.2)' }}>
+            Cerrar sesión
+          </button>
           <button onClick={() => navigate('/')} style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid #e2b94a66', color: '#e2b94a', borderRadius: '6px', padding: '6px 14px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold', boxShadow: '0 2px 0 rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.2)' }}>
             🏠 Inicio
           </button>
@@ -10052,14 +10202,24 @@ function AppContent() {
       </header>
 
       {showHistorial && historial.length > 0 && (
-        <div style={{ background: 'linear-gradient(135deg, #0a1628, #0d1e30)', borderBottom: '1px solid #1e3a5f', padding: '12px 32px', display: 'flex', gap: '10px', overflowX: 'auto', boxShadow: '0 4px 12px rgba(0,0,0,0.3) inset' }}>
-          {historial.map(item => (
-            <div key={item.id} className="historial-item-3d" onClick={() => { setPreviewHTML(item.html); setShowHistorial(false) }}
-              style={{ background: 'linear-gradient(135deg, #1e3a5c, #162d4a)', border: '1px solid #2c5282', borderRadius: '6px', padding: '8px 14px', cursor: 'pointer', flexShrink: 0, minWidth: '180px' }}>
-              <div style={{ color: '#e2b94a', fontSize: '10px', marginBottom: '2px' }}>{item.hora}</div>
-              <div style={{ color: '#a0bcd8', fontSize: '11px', lineHeight: '1.3' }}>{item.titulo.replace('Modelo de ', '').replace('Modelo ', '')}</div>
+        <div className="historial-panel" style={{ position: 'fixed', top: '58px', right: '32px', width: '380px', maxHeight: '75vh', borderRadius: '16px', zIndex: 999, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+          <div className="historial-panel-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 20px', flexShrink: 0 }}>
+            <span style={{ color: '#f0cf6e', fontSize: '15px', fontWeight: 'bold', letterSpacing: '0.3px' }}>🕒 Historial</span>
+            <div onClick={eliminarTodoHistorial} className="historial-eliminar-todo" style={{ color: '#e89999', fontSize: '12px', cursor: 'pointer', fontWeight: '600', letterSpacing: '0.2px', whiteSpace: 'nowrap' }}>
+              Eliminar todo
             </div>
-          ))}
+          </div>
+          <div style={{ overflowY: 'auto', flex: 1 }}>
+            {historial.map(item => (
+              <div key={item.id} className="historial-item" onClick={() => { setHistorialPreview(item); setShowHistorial(false) }}
+                style={{ position: 'relative', padding: '14px 20px', cursor: 'pointer' }}>
+                <div onClick={(e) => { e.stopPropagation(); eliminarDelHistorial(item.id) }} title="Eliminar" className="historial-delete-btn"
+                  style={{ position: 'absolute', top: '12px', right: '12px', width: '24px', height: '24px', borderRadius: '50%', background: '#a63333', border: '1px solid rgba(255,255,255,0.25)', color: '#fff', fontSize: '13px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', lineHeight: 1 }}>✕</div>
+                <div style={{ color: '#e2b94a', fontSize: '12px', fontWeight: '600', marginBottom: '5px', opacity: 0.9 }}>{formatearFechaHistorial(item)}</div>
+                <div style={{ color: '#d3e3f2', fontSize: '14px', lineHeight: '1.4', paddingRight: '26px', fontWeight: '500' }}>{item.titulo.replace('Modelo de ', '').replace('Modelo ', '')}</div>
+              </div>
+            ))}
+          </div>
         </div>
       )}
 
@@ -10362,7 +10522,7 @@ function AppContent() {
                     <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#e2b94a', boxShadow: '0 0 6px #e2b94a' }}></div>
                     <span style={{ color: '#a0bcd8', fontSize: '12px', letterSpacing: '1px' }}>VISTA PREVIA DEL DOCUMENTO</span>
                   </div>
-                  <iframe id="preview-iframe" srcDoc={previewHTML} style={{ width: '100%', height: '850px', border: 'none' }} title="Vista previa del documento" onLoad={(e) => { const doc = e.target.contentDocument; if (doc && doc.body) { doc.body.contentEditable = "true"; doc.body.style.cursor = "text"; doc.body.style.outline = "none" } }} />
+                  <iframe id="preview-iframe" srcDoc={previewHTML} style={{ width: '100%', height: '850px', border: 'none' }} title="Vista previa del documento" onLoad={(e) => { const doc = e.target.contentDocument; if (doc && doc.body) { doc.body.contentEditable = "true"; doc.body.style.cursor = "text"; doc.body.style.outline = "none"; doc.body.addEventListener('input', autoguardarPrincipal) } }} />
                 </div>
               )}
             </div>

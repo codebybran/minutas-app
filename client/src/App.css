@@ -498,3 +498,49 @@ input:focus {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* --- Historial: panel estilo espejo (glassmorphism) --- */
+.historial-panel {
+  background: linear-gradient(135deg, rgba(24,44,74,0.82), rgba(8,18,32,0.94));
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(226,185,74,0.3);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.09);
+}
+.historial-panel-header {
+  background: linear-gradient(135deg, rgba(226,185,74,0.14), rgba(226,185,74,0.02));
+  border-bottom: 1px solid rgba(226,185,74,0.28);
+}
+.historial-item {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: background 0.2s ease, padding-left 0.2s ease;
+}
+.historial-item:hover {
+  background: rgba(226,185,74,0.09);
+  padding-left: 26px !important;
+}
+.historial-delete-btn {
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.historial-delete-btn:hover {
+  background: #c23a3a !important;
+  transform: scale(1.18);
+}
+.historial-eliminar-todo:hover {
+  color: #ffb0b0 !important;
+  text-decoration: underline;
+}
+.historial-panel::-webkit-scrollbar,
+.historial-panel div::-webkit-scrollbar {
+  width: 8px;
+}
+.historial-panel::-webkit-scrollbar-thumb,
+.historial-panel div::-webkit-scrollbar-thumb {
+  background: rgba(226,185,74,0.35);
+  border-radius: 8px;
+}
