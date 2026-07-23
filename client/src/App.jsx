@@ -1828,6 +1828,7 @@ const FIELD_HELP = {
   ano_inicio_posesion: 'Escribe el año desde el cual el poseedor habita el inmueble. Ej: 2015.',
   actos_posesion: 'Describe los actos de señor y dueño ejercidos. Ej: pago de impuesto predial, construcción de cerramiento, instalación de servicios públicos a su nombre.',
   tipo_prescripcion: 'Escribe el tipo de prescripción que alega. Ej: ordinaria (requiere 5 años y justo título) / extraordinaria (requiere 10 años sin necesidad de título).',
+  fundamento_titulo_buena_fe: 'Solo llénelo si la prescripción es ORDINARIA: describa el título que originó la posesión (ej: escritura, contrato de compraventa, herencia) y manifieste que actuó de buena fe. Si la prescripción es EXTRAORDINARIA, déjelo en blanco, no se requiere.',
   anos_prescripcion: 'Escribe el número de años de posesión ininterrumpida. Debe coincidir con el tipo de prescripción alegado.',
   direccion_demandado_notif: 'Escribe la dirección del demandado para notificaciones.',
  
@@ -2392,6 +2393,13 @@ const FIELD_HELP = {
   'porcentaje_votos_aprobacion': 'Con qué mayoría se aprobó. Ej: unanimidad / el 70% de las cuotas representadas.',
   'nombre_secretario_certificante': 'Secretario que certifica que el extracto es fiel copia del libro de actas.',
 
+}
+
+const FIELD_OPTIONS = {
+  tipo_prescripcion: [
+    { label: 'Ordinaria (5 años)', value: 'ordinaria de cinco (5) años' },
+    { label: 'Extraordinaria (10 años)', value: 'extraordinaria de diez (10) años' },
+  ],
 }
 
 const DATOS_PRUEBA = {
@@ -9733,6 +9741,7 @@ function TooltipField({ field, onChange, value, error }) {
   const [tooltipData, setTooltipData] = useState(null)
   const btnRef = useRef(null)
   const help = FIELD_HELP[field.name] || field.help || null
+  const opciones = FIELD_OPTIONS[field.name] || null
 
   const handleMouseEnter = () => {
     if (!btnRef.current || !help) return
@@ -9770,23 +9779,42 @@ function TooltipField({ field, onChange, value, error }) {
           </div>
         )}
       </div>
-      <input
-        type={field.type}
-        placeholder={`Ingrese ${field.label.toLowerCase()}`}
-        value={value !== undefined ? value : ''}
-        onChange={e => onChange(field.name, e.target.value)}
-        className={error ? 'campo-error' : 'input-3d'}
-        spellCheck={true}
-        lang="es"
-        style={{
-          width: '100%', padding: '10px 14px',
-          background: value ? 'linear-gradient(160deg, #f0faf0, #e8f5e8)' : 'linear-gradient(160deg, #f8fbff, #f0f6ff)',
-          border: `1px solid ${value ? '#4caf50' : '#c8d8e8'}`,
-          borderRadius: '6px', fontSize: '13px', color: '#1a3a5c',
-          boxSizing: 'border-box', outline: 'none', fontFamily: 'Georgia, serif',
-          transition: 'all 0.2s ease'
-        }}
-      />
+      {opciones ? (
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+          {opciones.map(op => (
+            <button key={op.value} type="button" onClick={() => onChange(field.name, op.value)}
+              style={{
+                padding: '8px 14px', borderRadius: '6px', fontSize: '12px', cursor: 'pointer',
+                fontFamily: 'Georgia, serif', fontWeight: value === op.value ? 'bold' : 'normal',
+                background: value === op.value ? 'linear-gradient(135deg, #c9a030, #b8962e)' : 'linear-gradient(160deg, #f8fbff, #f0f6ff)',
+                color: value === op.value ? '#fff' : '#1a3a5c',
+                border: `1px solid ${value === op.value ? '#b8962e' : '#c8d8e8'}`,
+                boxShadow: value === op.value ? '0 2px 6px rgba(0,0,0,0.2)' : 'none',
+                transition: 'all 0.2s ease'
+              }}>
+              {op.label}
+            </button>
+          ))}
+        </div>
+      ) : (
+        <input
+          type={field.type}
+          placeholder={`Ingrese ${field.label.toLowerCase()}`}
+          value={value !== undefined ? value : ''}
+          onChange={e => onChange(field.name, e.target.value)}
+          className={error ? 'campo-error' : 'input-3d'}
+          spellCheck={true}
+          lang="es"
+          style={{
+            width: '100%', padding: '10px 14px',
+            background: value ? 'linear-gradient(160deg, #f0faf0, #e8f5e8)' : 'linear-gradient(160deg, #f8fbff, #f0f6ff)',
+            border: `1px solid ${value ? '#4caf50' : '#c8d8e8'}`,
+            borderRadius: '6px', fontSize: '13px', color: '#1a3a5c',
+            boxSizing: 'border-box', outline: 'none', fontFamily: 'Georgia, serif',
+            transition: 'all 0.2s ease'
+          }}
+        />
+      )}
       {tooltipData && help && createPortal(
         <div style={{
           position: 'fixed', top: tooltipData.top, left: tooltipData.left,

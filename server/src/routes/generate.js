@@ -4,12 +4,20 @@ const { Document, Packer, Paragraph, TextRun, AlignmentType, Table, TableRow, Ta
 
 function generateFromTemplate(template, data) {
   let filled = template;
+  // Hecho 5 (justo titulo y buena fe) solo aparece si el usuario lo lleno
+  const justoTitulo = (data.fundamento_titulo_buena_fe || '').toString().trim();
+  if (justoTitulo && justoTitulo.toLowerCase() !== 'nada') {
+    data = { ...data, hecho_justo_titulo_completo: '\n\n5. ' + justoTitulo };
+  }
+  // si esta vacio, no se agrega la clave: el placeholder queda sin reemplazar y se limpia mas abajo sin dejar rayitas
   Object.entries(data).forEach(([key, value]) => {
     const regex = new RegExp(`{{${key}}}`, 'g');
     // Si el valor es 'nada' o está vacío, reemplazar por cadena vacía
     const val = (!value || value.toString().trim().toLowerCase() === 'nada') ? '' : value;
     filled = filled.replace(regex, val || '___________');
   });
+  // Reemplazar cualquier placeholder que haya quedado sin usar (ej: campos opcionales que el usuario no llenó)
+  filled = filled.replace(/\{\{[a-zA-Z0-9_]+\}\}/g, '');
   // Limpiar líneas vacías dobles que queden después de eliminar campos
   filled = filled.replace(/\n{3,}/g, '\n\n');
   return filled;
