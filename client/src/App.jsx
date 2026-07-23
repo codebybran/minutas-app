@@ -5359,6 +5359,29 @@ const DATOS_PRUEBA = {
     direccion_demandante_notif: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito',
     direccion_abogado: 'Carrera 5 # 3-20, oficina 102, El Cerrito',
   },
+  'demanda-accion-reivindicatoria': {
+    ciudad_firma: 'El Cerrito',
+    fecha_firma: '8 de mayo de 2026',
+    nombre_abogado: 'Luis Fernando Gómez Torres',
+    cedula_abogado: '0987654321',
+    ciudad_cedula_abogado: 'Cali',
+    tarjeta_profesional: '123456-A',
+    nombre_poderdante: 'Carlos Eduardo Pérez Ríos',
+    cedula_poderdante: '1122334455',
+    ciudad_cedula_poderdante: 'El Cerrito',
+    domicilio_poderdante: 'El Cerrito',
+    nombre_demandado: 'Jhon Brandon Martínez Vélez',
+    domicilio_demandado: 'El Cerrito',
+    ubicacion_inmueble: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito, cuyos linderos son: Norte: con la Calle 4 Sur en extensión de diez (10) metros; Sur: con el predio de Roberto Salcedo Muñoz en diez (10) metros; Oriente: con la Carrera 2A en doce (12) metros; Occidente: con el predio de Patricia Londoño Vera en doce (12) metros',
+    matricula_inmobiliaria: '370-123456',
+    titulo_dominio: 'Escritura Pública N°. 1245 del 15 de marzo de 2010, otorgada en la Notaría Única de El Cerrito, registrada en la Oficina de Instrumentos Públicos el 20 de marzo de 2010',
+    fecha_inicio_posesion_demandado: '5 de enero de 2023',
+    circunstancias_posesion_demandado: 'el demandado ingresó al inmueble sin autorización del propietario, aprovechando que este residía en otra ciudad, y desde entonces se ha negado a desocuparlo pese a los requerimientos verbales realizados',
+    pruebas_demanda: 'Documentales:\n1. Copia de la Escritura Pública N°. 1245 del 15 de marzo de 2010.\n2. Certificado de tradición y libertad matrícula 370-123456.\nTestimoniales:\n1. Alexander García López, Carrera 8 # 12-34, El Cerrito.\nInspección judicial al inmueble.',
+    direccion_demandante: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito',
+    direccion_demandado_notif: 'Calle 10 # 5-20, Barrio El Jardín, El Cerrito',
+    direccion_abogado: 'Calle 10 # 5-67, oficina 201, El Cerrito',
+  },
   'demanda-proceso-pertenencia': {
     ciudad_firma: 'El Cerrito',
     fecha_firma: '8 de mayo de 2026',
@@ -9595,6 +9618,15 @@ const PASOS_SIGUIENTE = {
       { num: 1, titulo: "Radicar la contestación dentro del término legal", descripcion: "Cuente con el plazo otorgado en el auto admisorio (usualmente 20 días) para presentar la contestación ante el juzgado." },
       { num: 2, titulo: "Adjuntar las pruebas que sustenten su defensa", descripcion: "Anexe los documentos, solicite testimonios o dictámenes periciales que respalden las excepciones propuestas." },
       { num: 3, titulo: "Asistir a la audiencia inicial", descripcion: "Prepárese para la audiencia de conciliación, saneamiento y fijación del litigio con su apoderado." },
+    ]
+  },
+  'demanda-accion-reivindicatoria': {
+    titulo: "Demanda de Acción Reivindicatoria (Acción de Dominio)",
+    pasos: [
+      { num: 1, titulo: "Reunir el título de dominio y el certificado de tradición", descripcion: "Obtenga copia de la escritura pública registrada y un certificado de tradición y libertad actualizado que acredite su calidad de propietario inscrito." },
+      { num: 2, titulo: "Identificar plenamente al poseedor y el inmueble", descripcion: "Precise linderos, matrícula inmobiliaria y la identidad de quien ocupa el bien sin derecho, para que la demanda no sea rechazada por falta de identificación." },
+      { num: 3, titulo: "Radicar la demanda ante el juzgado civil competente", descripcion: "Presente la demanda según el lugar de ubicación del inmueble, adjuntando el título de dominio y las pruebas de la posesión indebida." },
+      { num: 4, titulo: "Obtener la sentencia y solicitar la restitución material", descripcion: "Si el juez declara el dominio a su favor, solicite el mandamiento de entrega para que la autoridad haga efectiva la restitución física del inmueble." },
     ]
   },
   'demanda-proceso-pertenencia': {

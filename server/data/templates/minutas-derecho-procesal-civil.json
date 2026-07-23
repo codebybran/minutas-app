@@ -2752,5 +2752,140 @@
       }
     ],
     "template": "INCIDENTE DE NULIDAD DEL REMATE\n\n{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez {{tipo_juzgado}}\nE. S. D.\n\nRef.: Proceso ejecutivo de {{nombre_ejecutante}} contra {{nombre_ejecutado}} — Incidente de nulidad del remate\n\n{{nombre_abogado}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, obrando en mi calidad de apoderado judicial del demandado {{nombre_ejecutado}}, según poder a mí conferido, solicito a usted por el presente escrito y con citación y audiencia del señor {{nombre_ejecutante}}, como parte actora, se tramite y resuelva favorablemente este incidente de nulidad del remate.\n\nDECLARACIONES SOLICITADAS\n\n1ª. Declarar la nulidad de la diligencia de remate de los bienes embargados y secuestrados, ubicados en {{ubicacion_bienes_rematados}}.\n\n2ª. Condenar a la parte demandante al pago de las costas y gastos de este incidente.\n\nCAUSAL DE NULIDAD\n\nFundamento el presente incidente en la causal de nulidad por falta de las formalidades prescritas para hacer el remate de bienes, específicamente:\n\n{{causal_nulidad}}\n\nHECHOS\n\n1°. El juez del conocimiento señaló como fecha para el remate de los bienes embargados y secuestrados el día {{fecha_remate}}.\n\n2°. El aviso mediante el cual se anunció al público el remate de dichos bienes apareció publicado en el periódico «{{nombre_periodico}}» el día {{fecha_publicacion}}, es decir, únicamente {{dias_anticipacion}} antes de la fecha señalada para efectuar la diligencia de remate.\n\n3°. Una simple comparación de fechas demuestra claramente que se desconoció el mandato imperativo del Código General del Proceso, que ordena que el aviso se publique con antelación no inferior a cinco días a la fecha señalada para el remate, en un periódico de amplia circulación en el lugar.\n\nFUNDAMENTOS DE DERECHO\n\nEn derecho me fundamento en los artículos 133, 134, 135 y concordantes del Código General del Proceso (Ley 1564 de 2012) relativos a las nulidades procesales, y las disposiciones sobre el remate de bienes.\n\nCOMPETENCIA\n\nEs usted competente señor juez, por estar conociendo del proceso principal.\n\nTRÁMITE\n\nDebe adelantarse por el trámite incidental previsto en el Código General del Proceso.\n\nPRUEBAS\n\n{{pruebas_nulidad}}\n\nNOTIFICACIONES\n\nDemandante: {{direccion_ejecutante}}\nDemandado: {{direccion_ejecutado}}\nEl suscrito: {{direccion_abogado}}\n\nAtentamente,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
+  },
+  {
+    "id": "demanda-accion-reivindicatoria",
+    "title": "Demanda de Acción Reivindicatoria (Acción de Dominio)",
+    "subtitle": "Procesos Declarativos",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Demanda",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo del Poderdante (Demandante - Propietario)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Número de Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_poderdante",
+        "label": "Ciudad de Expedición de la Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_poderdante",
+        "label": "Domicilio del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado",
+        "label": "Nombre del Demandado (Poseedor Actual)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_demandado",
+        "label": "Domicilio del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ubicacion_inmueble",
+        "label": "Ubicación y Linderos del Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "matricula_inmobiliaria",
+        "label": "Número de Matrícula Inmobiliaria del Predio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "titulo_dominio",
+        "label": "Título de Dominio del Demandante (Ej: Escritura Pública N° 123 del 10 de enero de 2010, Notaría 2 de Cali, registrada el...)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio_posesion_demandado",
+        "label": "Fecha desde la cual el Demandado Posee u Ocupa el Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circunstancias_posesion_demandado",
+        "label": "Circunstancias de la Posesión del Demandado (cómo y por qué ocupa sin derecho)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pruebas_demanda",
+        "label": "Pruebas que Aporta (documentales, testimoniales, inspección)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_demandante",
+        "label": "Dirección del Demandante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_demandado_notif",
+        "label": "Dirección del Demandado para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez Civil del Circuito de {{ciudad_firma}} (Reparto)\nE.S.D.\n\nRef.: Proceso de acción reivindicatoria de {{nombre_poderdante}} contra {{nombre_demandado}}\n\n{{nombre_abogado}}, mayor de edad, abogado en ejercicio, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, en mi calidad de apoderado especial del señor {{nombre_poderdante}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}, domiciliado en {{domicilio_poderdante}}, según poder que se adjunta, presento a su despacho Demanda de Acción Reivindicatoria (Acción de Dominio), de conformidad con el artículo 946 y siguientes del Código Civil y el artículo 396 del Código General del Proceso, en contra de {{nombre_demandado}}, persona mayor de edad y domiciliada en {{domicilio_demandado}}, previos los siguientes:\n\nHECHOS\n\n1. Mi poderdante es propietario del bien inmueble ubicado en {{ubicacion_inmueble}}, registrado en la Oficina de Instrumentos Públicos con matrícula inmobiliaria N°. {{matricula_inmobiliaria}}.\n\n2. El derecho de dominio de mi poderdante sobre el inmueble consta en el siguiente título: {{titulo_dominio}}.\n\n3. El demandado {{nombre_demandado}} se encuentra en posesión material del inmueble desde el {{fecha_inicio_posesion_demandado}}, sin que exista título, contrato o autorización alguna de mi poderdante que legitime dicha ocupación.\n\n4. Las circunstancias en que el demandado ocupa el inmueble son las siguientes: {{circunstancias_posesion_demandado}}.\n\n5. Pese a los requerimientos extrajudiciales realizados, el demandado se ha negado a restituir el inmueble a su legítimo propietario.\n\nPRETENSIONES\n\n1. Que se declare que el señor {{nombre_poderdante}} es propietario del bien inmueble ubicado en {{ubicacion_inmueble}}, con matrícula inmobiliaria N°. {{matricula_inmobiliaria}}.\n\n2. Que, como consecuencia de lo anterior, se condene a {{nombre_demandado}} a restituir a mi poderdante la posesión material del inmueble, libre de personas y cosas.\n\n3. Que se condene al demandado al pago de los frutos civiles y naturales producidos por el inmueble desde el inicio de la posesión indebida.\n\n4. Que se condene en costas a la parte demandada.\n\nFUNDAMENTOS DE DERECHO\n\nArtículo 946 y siguientes del Código Civil (acción reivindicatoria o de dominio); artículo 396 y siguientes del Código General del Proceso.\n\nPRUEBAS\n\n{{pruebas_demanda}}\n\nNOTIFICACIONES\n\nDemandante: {{direccion_demandante}}.\nDemandado: {{direccion_demandado_notif}}.\nEl suscrito: {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   }
 ]
