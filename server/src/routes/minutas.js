@@ -222,6 +222,7 @@ const TIPO_TRAMITE = {
   'contestacion-demanda-civil':'Privado',
   'demanda-proceso-pertenencia':'Privado',
   'demanda-accion-reivindicatoria':'Privado',
+  'demanda-proceso-monitorio':'Privado',
   'demanda-restitucion-inmueble-arrendado':'Privado',
   'demanda-pago-consignacion':'Privado',
   'demanda-imposicion-servidumbre':'Privado',

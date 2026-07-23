@@ -2392,9 +2392,15 @@ const FIELD_HELP = {
   'descripcion_reforma': 'Qué reforma se aprobó. Ej: cesión de 50 cuotas del socio Carlos López al señor Pedro Torres.',
   'porcentaje_votos_aprobacion': 'Con qué mayoría se aprobó. Ej: unanimidad / el 70% de las cuotas representadas.',
   'nombre_secretario_certificante': 'Secretario que certifica que el extracto es fiel copia del libro de actas.',
-
+  titulo_dominio: 'Describa el documento que acredita que usted es el propietario registrado: tipo de escritura, número, fecha, notaría, y fecha de registro en la Oficina de Instrumentos Públicos.',
+  fecha_inicio_posesion_demandado: 'Indique desde qué fecha el demandado empezó a ocupar el inmueble sin su autorización.',
+  circunstancias_posesion_demandado: 'Explique cómo y por qué el demandado terminó ocupando el inmueble sin derecho: si entró sin permiso, si se quedó tras vencer un contrato, etc.',
+  origen_deuda: 'Explique brevemente de dónde viene la deuda: un préstamo, la venta de algo, un servicio que usted prestó, etc.',
+  fecha_origen_deuda: 'Escriba la fecha en que se prestó el dinero o se generó la obligación.',
+  fecha_vencimiento_deuda: 'Escriba la fecha en la que el deudor debía pagar y no lo hizo.',
+  pruebas_deuda: 'Liste las pruebas que demuestran que la deuda existe: mensajes de WhatsApp, correos, comprobantes de transferencia, testigos, etc.',
+  gestiones_cobro: 'Describa los intentos que ha hecho para cobrar la deuda antes de demandar: llamadas, mensajes, cartas de cobro, y en qué fechas.',
 }
-
 const FIELD_OPTIONS = {
   tipo_prescripcion: [
     { label: 'Ordinaria (5 años)', value: 'ordinaria de cinco (5) años' },
@@ -5358,6 +5364,29 @@ const DATOS_PRUEBA = {
     direccion_poderdante: 'Carrera 8 # 12-34, Barrio Los Pinos, El Cerrito',
     direccion_demandante_notif: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito',
     direccion_abogado: 'Carrera 5 # 3-20, oficina 102, El Cerrito',
+  },
+  'demanda-proceso-monitorio': {
+    ciudad_firma: 'El Cerrito',
+    fecha_firma: '8 de mayo de 2026',
+    nombre_abogado: 'Luis Fernando Gómez Torres',
+    cedula_abogado: '0987654321',
+    ciudad_cedula_abogado: 'Cali',
+    tarjeta_profesional: '123456-A',
+    nombre_poderdante: 'Alexander García López',
+    cedula_poderdante: '1122334455',
+    ciudad_cedula_poderdante: 'El Cerrito',
+    domicilio_poderdante: 'El Cerrito',
+    nombre_demandado: 'Carlos Eduardo Pérez Ríos',
+    domicilio_demandado: 'El Cerrito',
+    valor_deuda: 'cinco millones de pesos ($5.000.000)',
+    origen_deuda: 'un préstamo personal en dinero efectivo para cubrir gastos médicos urgentes',
+    fecha_origen_deuda: '10 de enero de 2026',
+    fecha_vencimiento_deuda: '10 de marzo de 2026',
+    pruebas_deuda: 'Capturas de pantalla de conversación de WhatsApp del 10 de enero de 2026 donde el demandado reconoce la deuda y se compromete a pagar; comprobante de transferencia bancaria por $5.000.000 del 10 de enero de 2026; testimonio de Roberto Salcedo Muñoz, testigo presencial del préstamo',
+    gestiones_cobro: 'mensajes de WhatsApp de cobro enviados los días 15 de marzo, 1 de abril y 20 de abril de 2026, y una llamada telefónica el 5 de mayo de 2026',
+    direccion_demandante: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito',
+    direccion_demandado_notif: 'Calle 10 # 5-20, Barrio El Jardín, El Cerrito',
+    direccion_abogado: 'Calle 10 # 5-67, oficina 201, El Cerrito',
   },
   'demanda-accion-reivindicatoria': {
     ciudad_firma: 'El Cerrito',
@@ -9618,6 +9647,15 @@ const PASOS_SIGUIENTE = {
       { num: 1, titulo: "Radicar la contestación dentro del término legal", descripcion: "Cuente con el plazo otorgado en el auto admisorio (usualmente 20 días) para presentar la contestación ante el juzgado." },
       { num: 2, titulo: "Adjuntar las pruebas que sustenten su defensa", descripcion: "Anexe los documentos, solicite testimonios o dictámenes periciales que respalden las excepciones propuestas." },
       { num: 3, titulo: "Asistir a la audiencia inicial", descripcion: "Prepárese para la audiencia de conciliación, saneamiento y fijación del litigio con su apoderado." },
+    ]
+  },
+  'demanda-proceso-monitorio': {
+    titulo: "Demanda de Proceso Monitorio",
+    pasos: [
+      { num: 1, titulo: "Reunir toda prueba de la existencia y el monto de la deuda", descripcion: "Recopile mensajes de texto, correos, capturas de WhatsApp, comprobantes de transferencia o cualquier evidencia que demuestre que la deuda existe y cuánto se debe." },
+      { num: 2, titulo: "Documentar las gestiones de cobro previas", descripcion: "Reúna registros de llamadas, mensajes de cobro o cualquier intento de cobro extrajudicial realizado antes de acudir al juzgado." },
+      { num: 3, titulo: "Radicar la demanda ante el juez civil municipal", descripcion: "Presente la demanda con sus pruebas ante el juzgado civil municipal del domicilio del deudor." },
+      { num: 4, titulo: "Esperar el mandamiento de pago y la respuesta del deudor", descripcion: "El juez librará mandamiento de pago. Si el deudor no se opone dentro del plazo legal, la decisión queda en firme y presta mérito ejecutivo para embargar bienes." },
     ]
   },
   'demanda-accion-reivindicatoria': {
