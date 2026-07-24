@@ -3022,5 +3022,134 @@
       }
     ],
     "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez Civil Municipal de {{ciudad_firma}} (Reparto)\nE.S.D.\n\nRef.: Proceso monitorio de {{nombre_poderdante}} contra {{nombre_demandado}}\n\n{{nombre_abogado}}, mayor de edad, abogado en ejercicio, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, en mi calidad de apoderado especial del señor {{nombre_poderdante}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}, domiciliado en {{domicilio_poderdante}}, según poder que se adjunta, presento a su despacho Demanda de Proceso Monitorio, de conformidad con el artículo 419 y siguientes del Código General del Proceso, en contra de {{nombre_demandado}}, persona mayor de edad y domiciliada en {{domicilio_demandado}}, previos los siguientes:\n\nHECHOS\n\n1. El demandado {{nombre_demandado}} adeuda a mi poderdante la suma de {{valor_deuda}}, deuda que se originó por concepto de {{origen_deuda}}.\n\n2. La obligación se contrajo el {{fecha_origen_deuda}} y se hizo exigible desde el {{fecha_vencimiento_deuda}}, sin que a la fecha el demandado haya cancelado suma alguna.\n\n3. No existe documento que preste mérito ejecutivo respecto de esta obligación, razón por la cual se acude al proceso monitorio, aportando como soporte de la existencia y cuantía de la deuda lo siguiente: {{pruebas_deuda}}.\n\n4. Mi poderdante ha realizado gestiones de cobro extrajudicial, consistentes en: {{gestiones_cobro}}, sin obtener respuesta favorable del demandado.\n\nPRETENSIONES\n\n1. Que se libre mandamiento de pago requiriendo al demandado {{nombre_demandado}} para que en el plazo legal pague a mi poderdante la suma de {{valor_deuda}}, o formule oposición motivada.\n\n2. Que, en caso de no presentarse oposición dentro del término legal, se dicte sentencia que tenga efectos de cosa juzgada y preste mérito ejecutivo.\n\n3. Que se condene en costas a la parte demandada.\n\nFUNDAMENTOS DE DERECHO\n\nArtículo 419 y siguientes del Código General del Proceso (proceso monitorio).\n\nPRUEBAS\n\n{{pruebas_deuda}}\n\nNOTIFICACIONES\n\nDemandante: {{direccion_demandante}}.\nDemandado: {{direccion_demandado_notif}}.\nEl suscrito: {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
+  },
+  {
+    "id": "demanda-verbal-sumario-perjuicios-obligacion",
+    "title": "Demanda de Proceso Verbal Sumario (Regulación de Perjuicios / Declaración de Existencia de Obligación)",
+    "subtitle": "Procesos Declarativos",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_firma",
+        "label": "Fecha de la Demanda",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Número de Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_abogado",
+        "label": "Ciudad de Expedición de la Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Número de Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre Completo del Poderdante (Demandante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Número de Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_cedula_poderdante",
+        "label": "Ciudad de Expedición de la Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_poderdante",
+        "label": "Domicilio del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado",
+        "label": "Nombre del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_demandado",
+        "label": "Domicilio del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_pretension",
+        "label": "Tipo de Pretensión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "relacion_juridica",
+        "label": "Origen de la Relación entre las Partes (Ej: contrato verbal de servicios, acuerdo comercial, relación de vecindad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_hechos",
+        "label": "Descripción de los Hechos que Motivan la Demanda",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_estimado_obligacion",
+        "label": "Valor Estimado de la Obligación o del Perjuicio (en letras y números)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pruebas_demanda",
+        "label": "Pruebas que Aporta (documentales, testimoniales, etc.)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_demandante",
+        "label": "Dirección del Demandante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_demandado_notif",
+        "label": "Dirección del Demandado para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "{{ciudad_firma}}, {{fecha_firma}}\n\nSeñor\nJuez Civil Municipal de {{ciudad_firma}} (Reparto)\nE.S.D.\n\nRef.: Proceso verbal sumario de {{nombre_poderdante}} contra {{nombre_demandado}}\n\n{{nombre_abogado}}, mayor de edad, abogado en ejercicio, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, identificado con la cédula de ciudadanía N°. {{cedula_abogado}} de {{ciudad_cedula_abogado}}, en mi calidad de apoderado especial del señor {{nombre_poderdante}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_poderdante}} de {{ciudad_cedula_poderdante}}, domiciliado en {{domicilio_poderdante}}, según poder que se adjunta, presento a su despacho Demanda de Proceso Verbal Sumario, de conformidad con el artículo 390 y siguientes del Código General del Proceso, en contra de {{nombre_demandado}}, persona mayor de edad y domiciliada en {{domicilio_demandado}}, previos los siguientes:\n\nHECHOS\n\n1. Entre mi poderdante y el demandado existe una relación jurídica originada en: {{relacion_juridica}}.\n\n2. Los hechos que motivan la presente demanda son los siguientes: {{descripcion_hechos}}.\n\n3. La pretensión formulada corresponde a {{tipo_pretension}}, estimándose el valor de la obligación o del perjuicio en {{valor_estimado_obligacion}}.\n\n4. Pese a los requerimientos realizados, no ha sido posible llegar a un acuerdo directo con el demandado, razón por la cual se hace necesario acudir a la vía judicial.\n\nPRETENSIONES\n\n1. Que se declare {{tipo_pretension}} respecto de la relación jurídica existente entre mi poderdante y el demandado {{nombre_demandado}}.\n\n2. Que, como consecuencia de la declaración anterior, se condene al demandado al pago de la suma de {{valor_estimado_obligacion}} a favor de mi poderdante.\n\n3. Que se condene en costas a la parte demandada.\n\nFUNDAMENTOS DE DERECHO\n\nArtículo 390 y siguientes del Código General del Proceso (proceso verbal sumario).\n\nPRUEBAS\n\n{{pruebas_demanda}}\n\nNOTIFICACIONES\n\nDemandante: {{direccion_demandante}}.\nDemandado: {{direccion_demandado_notif}}.\nEl suscrito: {{direccion_abogado}}.\n\nAtentamente,\n\n\n____________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   }
 ]

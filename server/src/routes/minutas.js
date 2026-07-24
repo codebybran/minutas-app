@@ -223,6 +223,7 @@ const TIPO_TRAMITE = {
   'demanda-proceso-pertenencia':'Privado',
   'demanda-accion-reivindicatoria':'Privado',
   'demanda-proceso-monitorio':'Privado',
+  'demanda-verbal-sumario-perjuicios-obligacion':'Privado',
   'demanda-restitucion-inmueble-arrendado':'Privado',
   'demanda-pago-consignacion':'Privado',
   'demanda-imposicion-servidumbre':'Privado',

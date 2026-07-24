@@ -2400,6 +2400,10 @@ const FIELD_HELP = {
   fecha_vencimiento_deuda: 'Escriba la fecha en la que el deudor debía pagar y no lo hizo.',
   pruebas_deuda: 'Liste las pruebas que demuestran que la deuda existe: mensajes de WhatsApp, correos, comprobantes de transferencia, testigos, etc.',
   gestiones_cobro: 'Describa los intentos que ha hecho para cobrar la deuda antes de demandar: llamadas, mensajes, cartas de cobro, y en qué fechas.',
+  tipo_pretension: 'Indique qué quiere que el juez declare: por ejemplo, la existencia de una obligación de pago, o la regulación (fijación del monto) de un perjuicio sufrido.',
+  relacion_juridica: 'Explique brevemente cómo se originó la relación con el demandado: un contrato verbal, un acuerdo comercial, una relación de vecindad, etc.',
+  descripcion_hechos: 'Cuente en orden cronológico qué pasó: cuándo, dónde, y por qué considera que el demandado le debe algo.',
+  valor_estimado_obligacion: 'Escriba en letras y en números el valor que reclama, ya sea de la obligación o del perjuicio sufrido.',
 }
 const FIELD_OPTIONS = {
   tipo_prescripcion: [
@@ -5364,6 +5368,28 @@ const DATOS_PRUEBA = {
     direccion_poderdante: 'Carrera 8 # 12-34, Barrio Los Pinos, El Cerrito',
     direccion_demandante_notif: 'Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito',
     direccion_abogado: 'Carrera 5 # 3-20, oficina 102, El Cerrito',
+  },
+  'demanda-verbal-sumario-perjuicios-obligacion': {
+    ciudad_firma: 'El Cerrito',
+    fecha_firma: '8 de mayo de 2026',
+    nombre_abogado: 'Luis Fernando Gómez Torres',
+    cedula_abogado: '0987654321',
+    ciudad_cedula_abogado: 'Cali',
+    tarjeta_profesional: '123456-A',
+    nombre_poderdante: 'Roberto Salcedo Muñoz',
+    cedula_poderdante: '1133445566',
+    ciudad_cedula_poderdante: 'El Cerrito',
+    domicilio_poderdante: 'El Cerrito',
+    nombre_demandado: 'Alexander García López',
+    domicilio_demandado: 'El Cerrito',
+    tipo_pretension: 'la existencia de una obligación de pago a cargo del demandado',
+    relacion_juridica: 'un acuerdo verbal mediante el cual mi poderdante prestó servicios de remodelación y mantenimiento en el inmueble del demandado',
+    descripcion_hechos: 'entre el 5 de febrero y el 20 de marzo de 2026, mi poderdante ejecutó labores de remodelación en la vivienda del demandado, con la autorización expresa y verbal de este; al finalizar los trabajos, el demandado reconoció verbalmente la deuda mediante mensajes de WhatsApp, pero no ha cancelado el valor pactado',
+    valor_estimado_obligacion: 'tres millones quinientos mil pesos ($3.500.000)',
+    pruebas_demanda: 'Documentales:\n1. Capturas de pantalla de conversación de WhatsApp donde el demandado reconoce la deuda.\n2. Fotografías de los trabajos ejecutados en el inmueble.\nTestimoniales:\n1. Carlos Eduardo Pérez Ríos, vecino del inmueble, quien presenció la ejecución de los trabajos.',
+    direccion_demandante: 'Calle 5 # 8-20, El Cerrito',
+    direccion_demandado_notif: 'Calle 10 # 5-20, Barrio El Jardín, El Cerrito',
+    direccion_abogado: 'Calle 10 # 5-67, oficina 201, El Cerrito',
   },
   'demanda-proceso-monitorio': {
     ciudad_firma: 'El Cerrito',
@@ -9647,6 +9673,15 @@ const PASOS_SIGUIENTE = {
       { num: 1, titulo: "Radicar la contestación dentro del término legal", descripcion: "Cuente con el plazo otorgado en el auto admisorio (usualmente 20 días) para presentar la contestación ante el juzgado." },
       { num: 2, titulo: "Adjuntar las pruebas que sustenten su defensa", descripcion: "Anexe los documentos, solicite testimonios o dictámenes periciales que respalden las excepciones propuestas." },
       { num: 3, titulo: "Asistir a la audiencia inicial", descripcion: "Prepárese para la audiencia de conciliación, saneamiento y fijación del litigio con su apoderado." },
+    ]
+  },
+  'demanda-verbal-sumario-perjuicios-obligacion': {
+    titulo: "Demanda de Proceso Verbal Sumario (Regulación de Perjuicios / Declaración de Existencia de Obligación)",
+    pasos: [
+      { num: 1, titulo: "Reunir toda prueba de la relación jurídica y los hechos", descripcion: "Recopile mensajes, correos, fotografías, facturas o cualquier evidencia que respalde el acuerdo entre las partes y los hechos que sustentan su reclamación." },
+      { num: 2, titulo: "Verificar que el asunto sea de mínima o menor cuantía", descripcion: "El proceso verbal sumario aplica para asuntos de menor complejidad y cuantía; consulte con su abogado si su caso encaja en esta vía." },
+      { num: 3, titulo: "Radicar la demanda ante el juez civil municipal", descripcion: "Presente la demanda con sus pruebas ante el juzgado civil municipal del domicilio del demandado." },
+      { num: 4, titulo: "Asistir a la audiencia única del proceso", descripcion: "El proceso verbal sumario se surte en una sola audiencia donde se practican pruebas y el juez dicta sentencia." },
     ]
   },
   'demanda-proceso-monitorio': {
