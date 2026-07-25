@@ -10715,6 +10715,58 @@ function AppContent() {
             </div>
           )}
 
+          {enOrientacion && !articuloActual && (
+            <div style={{ padding: '28px 36px' }}>
+              <div style={{ textAlign: 'center', marginBottom: '28px' }}>
+                <div style={{ fontSize: '40px', marginBottom: '10px' }}>📚</div>
+                <h1 style={{ color: '#1a3a5c', fontSize: '22px', fontWeight: 'bold', margin: '0 0 8px' }}>Orientación Jurídica</h1>
+                <p style={{ color: '#5a7a9a', fontSize: '13px', maxWidth: '520px', margin: '0 auto' }}>Guías cortas en lenguaje claro sobre trámites frecuentes, con pasos reales y ejemplos.</p>
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px', maxWidth: '900px', margin: '0 auto' }}>
+                {ARTICULOS_ORIENTACION.map(art => (
+                  <div key={art.id} onClick={() => navigate(`/orientacion-juridica/${art.id}`)}
+                    style={{ cursor: 'pointer', background: 'linear-gradient(135deg, #162d4a, #0f2238)', border: '1px solid #2c5282', borderRadius: '12px', padding: '22px' }}
+                    onMouseEnter={e => e.currentTarget.style.borderColor = '#e2b94a'}
+                    onMouseLeave={e => e.currentTarget.style.borderColor = '#2c5282'}>
+                    <div style={{ fontSize: '32px', marginBottom: '10px' }}>{art.icono}</div>
+                    <div style={{ color: '#e2b94a', fontSize: '15px', fontWeight: 'bold', marginBottom: '8px' }}>{art.titulo}</div>
+                    <div style={{ color: '#a0bcd8', fontSize: '12px', lineHeight: '1.6' }}>{art.resumen}</div>
+                    <div style={{ color: '#e2b94a', fontSize: '11px', fontWeight: 'bold', marginTop: '14px' }}>Leer guía →</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          {enOrientacion && articuloActual && (
+            <div style={{ padding: '28px 36px', maxWidth: '760px', margin: '0 auto' }}>
+              <div onClick={() => navigate('/orientacion-juridica')} style={{ cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#e2b94a', fontSize: '12px', fontWeight: 'bold', marginBottom: '20px' }}>
+                ← Todos los artículos
+              </div>
+              <div style={{ textAlign: 'center', marginBottom: '28px' }}>
+                <div style={{ fontSize: '40px', marginBottom: '10px' }}>{articuloActual.icono}</div>
+                <h1 style={{ color: '#1a3a5c', fontSize: '22px', fontWeight: 'bold', margin: '0 0 8px' }}>{articuloActual.titulo}</h1>
+                <p style={{ color: '#5a7a9a', fontSize: '13px' }}>{articuloActual.resumen}</p>
+              </div>
+              {articuloActual.secciones.map((sec, i) => (
+                <div key={i} style={{ marginBottom: '22px' }}>
+                  <h3 style={{ color: '#1a3a5c', fontSize: '15px', fontWeight: 'bold', borderLeft: '3px solid #e2b94a', paddingLeft: '10px', marginBottom: '10px' }}>{sec.subtitulo}</h3>
+                  {sec.parrafos.map((p, j) => (
+                    <p key={j} style={{ color: '#3a5a7a', fontSize: '13px', lineHeight: '1.75', margin: '0 0 8px' }}>{p}</p>
+                  ))}
+                </div>
+              ))}
+              <div style={{ background: '#fff8e1', border: '1px solid #e2b94a66', borderRadius: '8px', padding: '16px 18px', marginBottom: '24px' }}>
+                <div style={{ color: '#8a6a10', fontSize: '12px', fontWeight: 'bold', marginBottom: '4px' }}>⚠️ Importante</div>
+                <div style={{ color: '#6b5410', fontSize: '12px', lineHeight: '1.6' }}>Esta guía es informativa y no reemplaza la asesoría de un abogado. Cada caso puede tener particularidades que requieren revisión profesional antes de actuar.</div>
+              </div>
+              <div style={{ textAlign: 'center' }}>
+                <button onClick={() => navigate(`/categoria/${articuloActual.minutaRelacionada.catId}/${articuloActual.minutaRelacionada.minutaId}`)}
+                  style={{ cursor: 'pointer', background: 'linear-gradient(135deg, #e2b94a, #c9a030)', color: '#1a2a3a', border: 'none', borderRadius: '8px', padding: '14px 32px', fontSize: '14px', fontWeight: 'bold', boxShadow: '0 4px 12px rgba(226,185,74,0.4)' }}>
+                  Generar este documento →
+                </button>
+              </div>
+            </div>
+          )}
           {minutaDetail && (
             <div style={{ padding: '28px 36px' }}>
               <div className="card-3d" style={{ borderLeft: '5px solid #b8962e !important', borderRadius: '8px', padding: '18px 24px', marginBottom: '24px', textAlign: 'center' }}>
