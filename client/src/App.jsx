@@ -10535,6 +10535,10 @@ function AppContent() {
                 ← Todas las categorías
               </div>
             )}
+            <div onClick={() => navigate('/orientacion-juridica')}
+              style={{ cursor: 'pointer', padding: '10px 14px', background: enOrientacion ? 'linear-gradient(135deg, #2c5282, #1e3a5c)' : 'linear-gradient(135deg, #162d4a, #0f2238)', border: `1px solid ${enOrientacion ? '#e2b94a' : '#2c5282'}`, borderRadius: '6px', fontSize: '14px', fontWeight: 'bold', color: enOrientacion ? '#e2b94a' : '#90b4d0', marginBottom: '14px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+              📚 Orientación Jurídica
+            </div>
             <div style={{ color: '#e2b94a', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '14px', borderBottom: '1px solid #2c5282', paddingBottom: '8px', textShadow: '0 1px 3px rgba(0,0,0,0.4)' }}>{modoCategoria ? (selectedCategory?.name || 'Categoría') : 'Categorías de Minutas'}</div>
             {categories.length === 0 && <p style={{ fontSize: '13px', color: '#6b8caa' }}>No hay minutas cargadas aún.</p>}
             {(modoCategoria ? categories.filter(c => c.id === selectedCategory?.id) : categories).map(cat => (
