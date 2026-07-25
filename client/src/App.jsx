@@ -10267,6 +10267,8 @@ function AppContent() {
   const navigate = useNavigate()
   const location = useLocation()
   const modoCategoria = !!params.categoriaId && location.state?.fromCard === true
+  const enOrientacion = location.pathname.startsWith('/orientacion-juridica')
+  const articuloActual = params.articuloId ? ARTICULOS_ORIENTACION.find(a => a.id === params.articuloId) : null
   const cargarCategorias = (intentos) => {
     fetch(`${API_URL}/api/minutas`)
       .then(r => r.json())
@@ -10606,7 +10608,7 @@ function AppContent() {
               <div style={{ fontSize: '13px' }}>Selecciona una minuta del panel izquierdo para comenzar.</div>
             </div>
           )}
-          {!minutaDetail && !modoCategoria && (
+          {!minutaDetail && !modoCategoria && !enOrientacion && (
             <div id="lexdoc-home" style={{ overflowY:'auto', height:'100%', background:'#b0b7bd' }}>
               <style>{LEXDOC_HOME_CSS}</style>
 
