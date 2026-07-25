@@ -97,6 +97,8 @@ const TIPO_TRAMITE = {
   'presentacion-inventarios-avaluos-judicial':'Privado',
   'demanda-cancelacion-patrimonio-familia':'Privado',
   'cancelacion-patrimonio-familia-hijos-mayores':'Notarial',
+  'constitucion-patrimonio-familia':'Notarial',
+  'solicitud-medida-proteccion-violencia-intrafamiliar':'Privado',
   'autorizacion-hijos-cancelar-patrimonio':'Privado',
   'demanda-divorcio-mutuo-consentimiento':'Privado',
   'acuerdo-divorcio-mutuo-consentimiento':'Privado',

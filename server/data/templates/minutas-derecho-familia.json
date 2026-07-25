@@ -3206,8 +3206,7 @@
     ],
     "template": "Señor Notario {{notario}} del Círculo de {{circulo}}\n\nRef.: Sucesión de {{nombre_causante}} — Trabajo de partición.\n\n{{nombre_apoderado}}, como apoderado de los interesados y de conformidad con lo dispuesto por el Decreto 902 de 1988, atentamente solicito a usted se sirva elevar a escritura pública el trabajo de partición y adjudicación cuya descripción es como sigue:\n\n1. El señor (a) {{nombre_causante}} murió en la ciudad de {{ciudad_fallecimiento}} el {{fecha_fallecimiento}}, fecha en la cual por ministerio de la ley se defirió su herencia a quienes por normas de la misma ley están llamados a recogerla.\n\n2. El causante contrajo matrimonio el {{fecha_matrimonio_causante}} con {{nombre_conyuge_superstite}}. No existiendo capitulaciones matrimoniales, vino a formarse la sociedad conyugal legal de bienes, la cual no ha sido liquidada hasta ahora por ninguno de los medios legales.\n\n3. Los herederos del causante son: {{hijos_causante}} y el cónyuge supérstite {{nombre_conyuge_superstite}}.\n\n4. Se trata de una sucesión {{tipo_sucesion}}. Los bienes del causante, una vez liquidada la sociedad, se repartirán entre los legitimarios y el cónyuge sobreviviente en la proporción legal.\n\nACERVO HEREDITARIO\n\nSegún los inventarios y el avalúo, el monto del activo es de {{total_activo_letras}} ($ {{total_activo_numeros}}) moneda legal colombiana. Los bienes son los siguientes:\n\n{{descripcion_bienes}}\n\nPasivo total: {{total_pasivo_letras}} ($ {{total_pasivo_numeros}}) moneda legal colombiana.\n\nLIQUIDACION\n\nDel monto del acervo bruto inventariado se deducen los gananciales que corresponden al cónyuge supérstite {{nombre_conyuge_superstite}}, estimados en {{gananciales_conyuge_letras}} ($ {{gananciales_conyuge_numeros}}) moneda legal colombiana.\n\nDISTRIBUCION (HIJUELAS)\n\n{{hijuelas}}\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nAtentamente,\n\nApoderado: _______________________\n{{nombre_apoderado}}"
   },
-
-   {
+  {
     "id": "demanda-filiacion-natural",
     "title": "Demanda de Filiación Natural",
     "subtitle": "Filiación y Reconocimiento",
@@ -4482,18 +4481,78 @@
     "subtitle": "Patrimonio de Familia",
     "tipo_tramite": "Judicial",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_esposo", "label": "Nombre Completo del Esposo", "type": "text", "required": true},
-      {"name": "nombre_esposa", "label": "Nombre Completo de la Esposa", "type": "text", "required": true},
-      {"name": "descripcion_inmueble", "label": "Descripción del Inmueble con Patrimonio de Familia (dirección, linderos, matrícula)", "type": "textarea", "required": true},
-      {"name": "datos_escritura_patrimonio", "label": "Datos de la Escritura que Constituyó el Patrimonio (N°, fecha, notaría)", "type": "text", "required": true},
-      {"name": "nombre_hijos_menores", "label": "Nombres de los Hijos Menores Beneficiarios del Patrimonio", "type": "textarea", "required": true},
-      {"name": "razon_cancelacion", "label": "Razón por la que se Solicita la Cancelación", "type": "textarea", "required": true},
-      {"name": "testigos", "label": "Nombres y Direcciones de los Testigos", "type": "textarea", "required": true},
-      {"name": "direccion_notificacion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_esposo",
+        "label": "Nombre Completo del Esposo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_esposa",
+        "label": "Nombre Completo de la Esposa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_inmueble",
+        "label": "Descripción del Inmueble con Patrimonio de Familia (dirección, linderos, matrícula)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "datos_escritura_patrimonio",
+        "label": "Datos de la Escritura que Constituyó el Patrimonio (N°, fecha, notaría)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_hijos_menores",
+        "label": "Nombres de los Hijos Menores Beneficiarios del Patrimonio",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "razon_cancelacion",
+        "label": "Razón por la que se Solicita la Cancelación",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "testigos",
+        "label": "Nombres y Direcciones de los Testigos",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "DEMANDA DE CANCELACIÓN DEL PATRIMONIO DE FAMILIA\n\nSeñor\nJuez de Familia de {{ciudad_firma}}\nE. S. D.\n\n{{nombre_abogado}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_abogado}}, con tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, domiciliado en {{ciudad_firma}}, en ejercicio del poder especial conferido por los esposos {{nombre_esposo}} y {{nombre_esposa}}, formulo Demanda de Cancelación de Patrimonio de Familia, de acuerdo con los siguientes:\n\nHECHOS\n\n1°. Mis mandantes {{nombre_esposo}} y {{nombre_esposa}} son propietarios del siguiente inmueble sobre el cual pesa el patrimonio de familia inembargable: {{descripcion_inmueble}}\n\n2°. El patrimonio de familia fue constituido por escritura N°. {{datos_escritura_patrimonio}}, en favor de los comparecientes y de sus hijos: {{nombre_hijos_menores}}\n\n3°. {{razon_cancelacion}}\n\n4°. Para adquirir otra vivienda, mis mandantes necesitan cancelar el patrimonio de familia inembargable para poder enajenar el inmueble.\n\n5°. El inmueble está libre de otros gravámenes y limitaciones del dominio.\n\nPRETENSIONES\n\n1ª. Que se designe a los menores {{nombre_hijos_menores}} un curador ad hoc para que otorgue a nombre de los menores su consentimiento para levantar el patrimonio de familia.\n\n2ª. Que se disponga la posesión del curador, autorizándolo para el ejercicio del cargo.\n\n3ª. Que se decrete el levantamiento del patrimonio de familia sobre el bien inmueble descrito.\n\n4ª. Que se autorice al curador ad hoc para comparecer al otorgamiento de la escritura pública de cancelación.\n\nFUNDAMENTOS DE DERECHO\n\nArtículo 649 Código de Procedimiento Civil; Ley 70 de 1931; Ley 91 de 1936; Decreto 2476 de 1953; Ley 75 de 1968.\n\nCOMPETENCIA\n\nEs usted competente por la naturaleza del proceso y la vecindad de los interesados.\n\nPRUEBAS\n\nDocumentales: Copia de la escritura de adquisición; certificado de registro; registro civil de matrimonio; registros civiles de nacimiento de los hijos menores.\n\nTestimoniales: {{testigos}}\n\nNOTIFICACIONES\n\nEl suscrito en {{direccion_notificacion_abogado}}.\n\nSeñor juez, con todo respeto,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -4503,25 +4562,120 @@
     "subtitle": "Patrimonio de Familia",
     "tipo_tramite": "Notarial",
     "fields": [
-      {"name": "ciudad", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "departamento", "label": "Departamento", "type": "text", "required": true},
-      {"name": "dia", "label": "Día", "type": "text", "required": true},
-      {"name": "mes", "label": "Mes", "type": "text", "required": true},
-      {"name": "anio", "label": "Año", "type": "text", "required": true},
-      {"name": "notario", "label": "Nombre o Número del Notario", "type": "text", "required": true},
-      {"name": "circulo", "label": "Círculo Notarial (ciudad)", "type": "text", "required": true},
-      {"name": "nombre_esposo", "label": "Nombre Completo del Esposo", "type": "text", "required": true},
-      {"name": "cedula_esposo", "label": "Cédula del Esposo", "type": "text", "required": true},
-      {"name": "expedicion_esposo", "label": "Ciudad de Expedición Cédula del Esposo", "type": "text", "required": true},
-      {"name": "nombre_esposa", "label": "Nombre Completo de la Esposa", "type": "text", "required": true},
-      {"name": "cedula_esposa", "label": "Cédula de la Esposa", "type": "text", "required": true},
-      {"name": "expedicion_esposa", "label": "Ciudad de Expedición Cédula de la Esposa", "type": "text", "required": true},
-      {"name": "datos_escritura_adquisicion", "label": "Datos de la Escritura de Adquisición del Inmueble (N°, fecha, notaría)", "type": "text", "required": true},
-      {"name": "matricula_inmobiliaria", "label": "Número de Matrícula Inmobiliaria del Inmueble", "type": "text", "required": true},
-      {"name": "descripcion_inmueble", "label": "Descripción del Inmueble (dirección, linderos)", "type": "textarea", "required": true},
-      {"name": "entidad_vendedora", "label": "Entidad que Vendió el Inmueble (ej: Inurbe, banco)", "type": "text", "required": true},
-      {"name": "clausula_patrimonio", "label": "Cláusula del Instrumento donde se Constituyó el Patrimonio", "type": "text", "required": true},
-      {"name": "nombres_hijos_mayores", "label": "Nombres y Cédulas de los Hijos Mayores de Edad", "type": "textarea", "required": true}
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o Número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo Notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_esposo",
+        "label": "Nombre Completo del Esposo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_esposo",
+        "label": "Cédula del Esposo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_esposo",
+        "label": "Ciudad de Expedición Cédula del Esposo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_esposa",
+        "label": "Nombre Completo de la Esposa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_esposa",
+        "label": "Cédula de la Esposa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_esposa",
+        "label": "Ciudad de Expedición Cédula de la Esposa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "datos_escritura_adquisicion",
+        "label": "Datos de la Escritura de Adquisición del Inmueble (N°, fecha, notaría)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "matricula_inmobiliaria",
+        "label": "Número de Matrícula Inmobiliaria del Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_inmueble",
+        "label": "Descripción del Inmueble (dirección, linderos)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "entidad_vendedora",
+        "label": "Entidad que Vendió el Inmueble (ej: Inurbe, banco)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "clausula_patrimonio",
+        "label": "Cláusula del Instrumento donde se Constituyó el Patrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombres_hijos_mayores",
+        "label": "Nombres y Cédulas de los Hijos Mayores de Edad",
+        "type": "textarea",
+        "required": true
+      }
     ],
     "template": "CANCELACIÓN DE PATRIMONIO DE FAMILIA INEMBARGABLE CON HIJOS MAYORES DE EDAD\n\nEn la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, comparecieron los señores {{nombre_esposo}} y {{nombre_esposa}}, casados entre sí, con sociedad conyugal vigente, mayores de edad, domiciliados en {{ciudad}}, identificados con las cédulas de ciudadanía N°. {{cedula_esposo}} de {{expedicion_esposo}}, y N°. {{cedula_esposa}} de {{expedicion_esposa}}, y manifestaron lo siguiente:\n\nPRIMERO: Que por escritura pública N°. {{datos_escritura_adquisicion}}, debidamente registrada en la Oficina de Registro de Instrumentos Públicos del Círculo de {{circulo}}, al folio de matrícula inmobiliaria N°. {{matricula_inmobiliaria}}, adquirieron por compra a {{entidad_vendedora}}, el siguiente bien inmueble: {{descripcion_inmueble}}.\n\nSEGUNDO: Que conforme a la cláusula {{clausula_patrimonio}} del citado instrumento público, los comparecientes constituyeron patrimonio de familia inembargable en su favor y en el de sus hijos.\n\nTERCERO: Que tanto los comparecientes como sus hijos: {{nombres_hijos_mayores}} son en la actualidad mayores de edad, tal como se comprueba con la autorización dada por estos, reconocida ante notario público, que se protocoliza con este instrumento.\n\nCUARTO: Que acogiéndose a lo dispuesto por el artículo 29 de la Ley 70 de 1931, proceden a cancelar dicho patrimonio de familia por medio de esta escritura pública, liberando en consecuencia de tal gravamen el inmueble relacionado.\n\nLeído el presente instrumento, en señal de asentimiento lo firman junto con el Notario.\n\n_______________________________          _______________________________\n{{nombre_esposo}}                              {{nombre_esposa}}\nC.C. N°. {{cedula_esposo}}                    C.C. N°. {{cedula_esposa}}\n\nEl Notario,\n_______________________________"
   },
@@ -4531,20 +4685,90 @@
     "subtitle": "Patrimonio de Familia",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "dia", "label": "Día", "type": "text", "required": true},
-      {"name": "mes", "label": "Mes", "type": "text", "required": true},
-      {"name": "anio", "label": "Año", "type": "text", "required": true},
-      {"name": "notario", "label": "Nombre o Número del Notario al que se Dirige", "type": "text", "required": true},
-      {"name": "circulo", "label": "Círculo Notarial (ciudad)", "type": "text", "required": true},
-      {"name": "nombres_hijos_cedulas", "label": "Nombres Completos y Cédulas de los Hijos que Autorizan", "type": "textarea", "required": true},
-      {"name": "nombre_padre", "label": "Nombre Completo del Padre", "type": "text", "required": true},
-      {"name": "nombre_madre", "label": "Nombre Completo de la Madre", "type": "text", "required": true},
-      {"name": "descripcion_inmueble", "label": "Descripción del Inmueble (dirección, linderos)", "type": "textarea", "required": true},
-      {"name": "numero_catastral", "label": "Registro Catastral del Inmueble", "type": "text", "required": true},
-      {"name": "entidad_vendedora", "label": "Entidad que Vendió el Inmueble", "type": "text", "required": true},
-      {"name": "datos_escritura", "label": "Datos de la Escritura de Adquisición (N°, fecha, notaría)", "type": "text", "required": true},
-      {"name": "matricula_inmobiliaria", "label": "Número de Matrícula Inmobiliaria", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o Número del Notario al que se Dirige",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo Notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombres_hijos_cedulas",
+        "label": "Nombres Completos y Cédulas de los Hijos que Autorizan",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "nombre_padre",
+        "label": "Nombre Completo del Padre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_madre",
+        "label": "Nombre Completo de la Madre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_inmueble",
+        "label": "Descripción del Inmueble (dirección, linderos)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "numero_catastral",
+        "label": "Registro Catastral del Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "entidad_vendedora",
+        "label": "Entidad que Vendió el Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "datos_escritura",
+        "label": "Datos de la Escritura de Adquisición (N°, fecha, notaría)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "matricula_inmobiliaria",
+        "label": "Número de Matrícula Inmobiliaria",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "AUTORIZACIÓN DE LOS HIJOS MAYORES DE EDAD PARA CANCELAR EL PATRIMONIO DE FAMILIA INEMBARGABLE\n\n{{ciudad_firma}}, {{dia}} de {{mes}} de {{anio}}\n\nSeñor\nNotario {{notario}} del Círculo de {{circulo}}\nE. S. D.\n\nNosotros, {{nombres_hijos_cedulas}}, respetuosamente nos dirigimos a usted con el objeto de manifestarle que hemos autorizado plenamente a nuestros padres {{nombre_padre}} y {{nombre_madre}}, para que mediante escritura pública procedan a cancelar el patrimonio de familia inembargable que grava el inmueble de su propiedad situado en: {{descripcion_inmueble}}, con registro catastral N°. {{numero_catastral}}.\n\nEl inmueble fue adquirido por compra que de él hicieron a {{entidad_vendedora}}, por escritura pública N°. {{datos_escritura}}, registrada al folio de matrícula inmobiliaria N°. {{matricula_inmobiliaria}} de la Oficina de Registro de Instrumentos Públicos del Círculo de {{circulo}}, instrumento que contiene la constitución del gravamen.\n\nROGAMOS al señor notario proceder de conformidad con la Ley 27 de 1977.\n\nAtentamente,\n\n_______________________________\nC.C. N°. ______ de ______\n\n_______________________________\nC.C. N°. ______ de ______\n\n_______________________________\nC.C. N°. ______ de ______"
   },
@@ -4554,23 +4778,108 @@
     "subtitle": "Separación y Divorcio",
     "tipo_tramite": "Judicial",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_conyuge1", "label": "Nombre Completo del Primer Cónyuge", "type": "text", "required": true},
-      {"name": "cedula_conyuge1", "label": "Cédula del Primer Cónyuge", "type": "text", "required": true},
-      {"name": "nombre_conyuge2", "label": "Nombre Completo del Segundo Cónyuge", "type": "text", "required": true},
-      {"name": "cedula_conyuge2", "label": "Cédula del Segundo Cónyuge", "type": "text", "required": true},
-      {"name": "fecha_matrimonio", "label": "Fecha del Matrimonio", "type": "text", "required": true},
-      {"name": "notaria_matrimonio", "label": "Notaría donde se Celebró el Matrimonio", "type": "text", "required": true},
-      {"name": "hijos_menores", "label": "Nombres y Fechas de Nacimiento de los Hijos Menores (si no hay escriba: No tuvieron hijos menores)", "type": "textarea", "required": true},
-      {"name": "conyuge_custodia", "label": "Padre o Madre a cargo de la Tenencia de los Hijos", "type": "text", "required": true},
-      {"name": "cuota_alimentaria", "label": "Cuota Alimentaria Acordada para los Hijos (en números)", "type": "text", "required": true},
-      {"name": "cuenta_deposito", "label": "Banco y Número de Cuenta para el Depósito de Alimentos", "type": "text", "required": true},
-      {"name": "direccion_conyuge1", "label": "Dirección del Primer Cónyuge para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_conyuge2", "label": "Dirección del Segundo Cónyuge para Notificaciones", "type": "text", "required": true},
-      {"name": "direccion_notificacion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge1",
+        "label": "Nombre Completo del Primer Cónyuge",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_conyuge1",
+        "label": "Cédula del Primer Cónyuge",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge2",
+        "label": "Nombre Completo del Segundo Cónyuge",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_conyuge2",
+        "label": "Cédula del Segundo Cónyuge",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_matrimonio",
+        "label": "Fecha del Matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_matrimonio",
+        "label": "Notaría donde se Celebró el Matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijos_menores",
+        "label": "Nombres y Fechas de Nacimiento de los Hijos Menores (si no hay escriba: No tuvieron hijos menores)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "conyuge_custodia",
+        "label": "Padre o Madre a cargo de la Tenencia de los Hijos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cuota_alimentaria",
+        "label": "Cuota Alimentaria Acordada para los Hijos (en números)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cuenta_deposito",
+        "label": "Banco y Número de Cuenta para el Depósito de Alimentos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_conyuge1",
+        "label": "Dirección del Primer Cónyuge para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_conyuge2",
+        "label": "Dirección del Segundo Cónyuge para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "DEMANDA DE DIVORCIO DE MATRIMONIO CIVIL\n(Mutuo Consentimiento)\n\nSeñor\nJuez de Familia de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Demanda de divorcio\n\n{{nombre_abogado}}, mayor de edad, domiciliado en {{ciudad_firma}}, identificado con la cédula de ciudadanía N°. {{cedula_abogado}}, abogado con Tarjeta Profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, actuando en mi calidad de apoderado especial de los señores {{nombre_conyuge1}}, identificado con cédula N°. {{cedula_conyuge1}}, y {{nombre_conyuge2}}, identificada con cédula N°. {{cedula_conyuge2}}, cónyuges entre sí por matrimonio civil, presento Demanda de Divorcio de su matrimonio por mutuo acuerdo, con fundamento en la causal 9ª del artículo 6° de la Ley 25 de 1992.\n\nHECHOS\n\n1°. Los señores {{nombre_conyuge1}} y {{nombre_conyuge2}} contrajeron matrimonio civil el {{fecha_matrimonio}} ante el señor Notario {{notaria_matrimonio}}.\n\n2°. Dentro de ese matrimonio nacieron los siguientes hijos: {{hijos_menores}}\n\n3°. Por mutuo consentimiento los esposos han decidido adelantar el proceso de divorcio de matrimonio civil, con la correspondiente disolución de la sociedad conyugal.\n\nPRETENSIONES\n\n1ª. Decretar el divorcio del matrimonio civil entre los señores {{nombre_conyuge1}} y {{nombre_conyuge2}}.\n\n2ª. Declarar disuelta y en estado de liquidación la sociedad conyugal existente.\n\n3ª. Ordenar la tenencia y cuidado de los hijos menores a cargo de {{conyuge_custodia}}.\n\n4ª. Decretar para alimentos de los hijos la suma de $ {{cuota_alimentaria}} mensuales, consignados en la cuenta N°. {{cuenta_deposito}}, reajustada anualmente conforme al IPC.\n\n5ª. Ordenar la residencia separada de ambos cónyuges.\n\n6ª. Disponer la inscripción de la sentencia en el Registro Civil de Nacimiento y del Matrimonio.\n\nFUNDAMENTOS DE DERECHO\n\nArtículo 154 del Código Civil modificado por el artículo 6°, numeral 9° de la Ley 25 de 1992; artículo 27 de la Ley 446 de 1998.\n\nCOMPETENCIA Y PROCEDIMIENTO\n\nTrámite de jurisdicción voluntaria. Es usted competente por la naturaleza del proceso y el domicilio de las partes.\n\nPRUEBAS\n\nRegistro civil de matrimonio; registros civiles de nacimiento de los hijos; documentos que acreditan los bienes de la sociedad conyugal.\n\nANEXOS\n\n1. Poder. 2. Documentos de prueba. 3. Copias de la demanda. 4. Acuerdo de divorcio suscrito por los cónyuges.\n\nNOTIFICACIONES\n\nEl primer cónyuge en {{direccion_conyuge1}}. El segundo cónyuge en {{direccion_conyuge2}}. El suscrito en {{direccion_notificacion_abogado}}.\n\nSeñor juez, con todo respeto,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -4580,18 +4889,78 @@
     "subtitle": "Separación y Divorcio",
     "tipo_tramite": "Privado",
     "fields": [
-      {"name": "nombre_conyuge1", "label": "Nombre Completo del Primer Cónyuge", "type": "text", "required": true},
-      {"name": "nombre_conyuge2", "label": "Nombre Completo del Segundo Cónyuge", "type": "text", "required": true},
-      {"name": "notaria_liquidacion", "label": "Notaría donde se Liquidará la Sociedad Conyugal (o escriba: dentro del proceso)", "type": "text", "required": true},
-      {"name": "hijos_menores", "label": "Nombres de los Hijos Menores (si no hay escriba: No tuvieron hijos menores)", "type": "textarea", "required": true},
-      {"name": "conyuge_custodia", "label": "Padre o Madre a cuyo Cargo quedarán los Hijos", "type": "text", "required": true},
-      {"name": "conyuge_visitas", "label": "Padre o Madre con Derecho de Visita", "type": "text", "required": true},
-      {"name": "cuota_alimentaria", "label": "Cuota Mensual de Alimentos Acordada (en números)", "type": "text", "required": true},
-      {"name": "cuenta_banco_alimentos", "label": "Banco y Número de Cuenta para el Depósito de Alimentos", "type": "text", "required": true},
-      {"name": "ciudad_firma", "label": "Ciudad donde se Suscribe el Acuerdo", "type": "text", "required": true},
-      {"name": "dia", "label": "Día", "type": "text", "required": true},
-      {"name": "mes", "label": "Mes", "type": "text", "required": true},
-      {"name": "anio", "label": "Año", "type": "text", "required": true}
+      {
+        "name": "nombre_conyuge1",
+        "label": "Nombre Completo del Primer Cónyuge",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge2",
+        "label": "Nombre Completo del Segundo Cónyuge",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_liquidacion",
+        "label": "Notaría donde se Liquidará la Sociedad Conyugal (o escriba: dentro del proceso)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijos_menores",
+        "label": "Nombres de los Hijos Menores (si no hay escriba: No tuvieron hijos menores)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "conyuge_custodia",
+        "label": "Padre o Madre a cuyo Cargo quedarán los Hijos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "conyuge_visitas",
+        "label": "Padre o Madre con Derecho de Visita",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cuota_alimentaria",
+        "label": "Cuota Mensual de Alimentos Acordada (en números)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cuenta_banco_alimentos",
+        "label": "Banco y Número de Cuenta para el Depósito de Alimentos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad donde se Suscribe el Acuerdo",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "ACUERDO ANEXO A LA DEMANDA DE DIVORCIO POR MUTUO CONSENTIMIENTO\n\n{{nombre_conyuge1}} y {{nombre_conyuge2}}, cónyuges entre sí por matrimonio civil, hemos acordado lo siguiente:\n\n1°. Promover, invocando la causal de mutuo consentimiento, el proceso de divorcio de nuestro matrimonio.\n\n2°. Disolver y liquidar la sociedad conyugal de común acuerdo en {{notaria_liquidacion}}.\n\n3°. La tenencia y cuidado de los hijos menores {{hijos_menores}} en cabeza de {{conyuge_custodia}}, sin perjuicio de los derechos de la potestad parental que por ley nos corresponde a ambos.\n\n4°. El cónyuge {{conyuge_visitas}} tendrá derecho de visita a los menores hijos cuantas veces lo deseen, previo aviso al otro cónyuge.\n\n5°. Se obliga a título de alimentos para los hijos menores a contribuir con la suma de $ {{cuota_alimentaria}} mensuales, depositada en la cuenta {{cuenta_banco_alimentos}}, reajustada anualmente según el alza en el costo de vida señalada por el DANE.\n\n6°. Conservar nuestras residencias separadas.\n\n7°. Los cónyuges acuerdan que no tendrán obligaciones alimentarias para con el otro.\n\nEn {{ciudad_firma}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\nAtentamente,\n\n_______________________________          _______________________________\n{{nombre_conyuge1}}                              {{nombre_conyuge2}}\nC.C. N°. ______                                      C.C. N°. ______"
   },
@@ -4601,41 +4970,216 @@
     "subtitle": "Separación y Divorcio",
     "tipo_tramite": "Notarial",
     "fields": [
-      {"name": "ciudad", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "departamento", "label": "Departamento", "type": "text", "required": true},
-      {"name": "dia", "label": "Día", "type": "text", "required": true},
-      {"name": "mes", "label": "Mes", "type": "text", "required": true},
-      {"name": "anio", "label": "Año", "type": "text", "required": true},
-      {"name": "notario", "label": "Nombre o Número del Notario", "type": "text", "required": true},
-      {"name": "circulo", "label": "Círculo Notarial (ciudad)", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado Apoderado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_conyuge1", "label": "Nombre Completo del Primer Cónyuge", "type": "text", "required": true},
-      {"name": "cedula_conyuge1", "label": "Cédula del Primer Cónyuge", "type": "text", "required": true},
-      {"name": "nombre_conyuge2", "label": "Nombre Completo del Segundo Cónyuge", "type": "text", "required": true},
-      {"name": "cedula_conyuge2", "label": "Cédula del Segundo Cónyuge", "type": "text", "required": true},
-      {"name": "fecha_matrimonio", "label": "Fecha del Matrimonio Civil", "type": "text", "required": true},
-      {"name": "lugar_matrimonio", "label": "Notaría y Ciudad donde se Celebró el Matrimonio", "type": "text", "required": true},
-      {"name": "hijos_matrimonio", "label": "Hijos del Matrimonio (si no tuvieron escriba: Los cónyuges no tuvieron hijos durante el matrimonio)", "type": "textarea", "required": true},
-      {"name": "activo_bruto_sociedad", "label": "Descripción del Activo Bruto de la Sociedad Conyugal (bienes y valores)", "type": "textarea", "required": true},
-      {"name": "total_activo_letras", "label": "Total Activo Bruto en Letras", "type": "text", "required": true},
-      {"name": "total_activo_numeros", "label": "Total Activo Bruto en Números", "type": "text", "required": true},
-      {"name": "pasivo_externo", "label": "Descripción del Pasivo Externo — si no hay escriba: No existe pasivo externo", "type": "textarea", "required": true},
-      {"name": "total_pasivo_letras", "label": "Total Pasivo en Letras (si no hay escriba: cero pesos)", "type": "text", "required": true},
-      {"name": "total_pasivo_numeros", "label": "Total Pasivo en Números (si no hay escriba: 0)", "type": "text", "required": true},
-      {"name": "total_liquidacion_letras", "label": "Total Liquidación (Activo menos Pasivo) en Letras", "type": "text", "required": true},
-      {"name": "total_liquidacion_numeros", "label": "Total Liquidación en Números", "type": "text", "required": true},
-      {"name": "gananciales_letras", "label": "Gananciales por Cónyuge en Letras", "type": "text", "required": true},
-      {"name": "gananciales_numeros", "label": "Gananciales por Cónyuge en Números", "type": "text", "required": true},
-      {"name": "hijuela1_conyuge", "label": "Nombre del Cónyuge que Recibe la Hijuela 1", "type": "text", "required": true},
-      {"name": "hijuela1_bienes", "label": "Bienes Adjudicados en la Hijuela 1 con sus Valores", "type": "textarea", "required": true},
-      {"name": "hijuela1_total_letras", "label": "Total Hijuela 1 en Letras", "type": "text", "required": true},
-      {"name": "hijuela1_total_numeros", "label": "Total Hijuela 1 en Números", "type": "text", "required": true},
-      {"name": "hijuela2_conyuge", "label": "Nombre del Cónyuge que Recibe la Hijuela 2", "type": "text", "required": true},
-      {"name": "hijuela2_bienes", "label": "Bienes Adjudicados en la Hijuela 2 con sus Valores", "type": "textarea", "required": true},
-      {"name": "hijuela2_total_letras", "label": "Total Hijuela 2 en Letras", "type": "text", "required": true},
-      {"name": "hijuela2_total_numeros", "label": "Total Hijuela 2 en Números", "type": "text", "required": true}
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o Número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo Notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado Apoderado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge1",
+        "label": "Nombre Completo del Primer Cónyuge",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_conyuge1",
+        "label": "Cédula del Primer Cónyuge",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge2",
+        "label": "Nombre Completo del Segundo Cónyuge",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_conyuge2",
+        "label": "Cédula del Segundo Cónyuge",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_matrimonio",
+        "label": "Fecha del Matrimonio Civil",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_matrimonio",
+        "label": "Notaría y Ciudad donde se Celebró el Matrimonio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijos_matrimonio",
+        "label": "Hijos del Matrimonio (si no tuvieron escriba: Los cónyuges no tuvieron hijos durante el matrimonio)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "activo_bruto_sociedad",
+        "label": "Descripción del Activo Bruto de la Sociedad Conyugal (bienes y valores)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "total_activo_letras",
+        "label": "Total Activo Bruto en Letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_activo_numeros",
+        "label": "Total Activo Bruto en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pasivo_externo",
+        "label": "Descripción del Pasivo Externo — si no hay escriba: No existe pasivo externo",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "total_pasivo_letras",
+        "label": "Total Pasivo en Letras (si no hay escriba: cero pesos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_pasivo_numeros",
+        "label": "Total Pasivo en Números (si no hay escriba: 0)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_liquidacion_letras",
+        "label": "Total Liquidación (Activo menos Pasivo) en Letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "total_liquidacion_numeros",
+        "label": "Total Liquidación en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "gananciales_letras",
+        "label": "Gananciales por Cónyuge en Letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "gananciales_numeros",
+        "label": "Gananciales por Cónyuge en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela1_conyuge",
+        "label": "Nombre del Cónyuge que Recibe la Hijuela 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela1_bienes",
+        "label": "Bienes Adjudicados en la Hijuela 1 con sus Valores",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "hijuela1_total_letras",
+        "label": "Total Hijuela 1 en Letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela1_total_numeros",
+        "label": "Total Hijuela 1 en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela2_conyuge",
+        "label": "Nombre del Cónyuge que Recibe la Hijuela 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela2_bienes",
+        "label": "Bienes Adjudicados en la Hijuela 2 con sus Valores",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "hijuela2_total_letras",
+        "label": "Total Hijuela 2 en Letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hijuela2_total_numeros",
+        "label": "Total Hijuela 2 en Números",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "DIVORCIO DE MATRIMONIO CIVIL ANTE NOTARIO\n(Escritura Pública)\n\nEn la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, compareció: {{nombre_abogado}}, colombiano, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_abogado}}, abogado en ejercicio con tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, actuando en nombre y representación de {{nombre_conyuge1}}, colombiano(a), mayor de edad, identificado(a) con la cédula de ciudadanía N°. {{cedula_conyuge1}}, y {{nombre_conyuge2}}, colombiano(a), mayor de edad, identificado(a) con la cédula de ciudadanía N°. {{cedula_conyuge2}}, según poder que se anexa, quien manifestó lo siguiente:\n\nPRIMERO. Matrimonio.— Que los poderdantes contrajeron matrimonio civil el {{fecha_matrimonio}} en {{lugar_matrimonio}}, según consta en la copia del registro civil de matrimonio que se protocoliza con este instrumento.\n\nSEGUNDO. Hijos del matrimonio.— {{hijos_matrimonio}}\n\nTERCERO. Objeto.— Que por mutuo consentimiento han decidido divorciarse de acuerdo con lo establecido en el artículo 34 de la Ley 962 de 2005, y consecuencialmente liquidar la sociedad conyugal.\n\nCUARTO. Causal de divorcio.— Los poderdantes invocan como causal de divorcio el mutuo consentimiento, para lo cual se anexa el acuerdo suscrito por los cónyuges.\n\nQUINTO. Responsabilidad frente a terceros.— Que los poderdantes responderán solidariamente ante presuntos acreedores y terceros con título anterior al registro de esta escritura.\n\nSEXTO. Activo Bruto.— El activo bruto de la sociedad conyugal está integrado por los siguientes bienes:\n\n{{activo_bruto_sociedad}}\n\nTotal activo bruto: {{total_activo_letras}} ($ {{total_activo_numeros}}) moneda legal colombiana.\n\nSÉPTIMO. Pasivo Externo.— {{pasivo_externo}}\n\nTotal pasivo externo: {{total_pasivo_letras}} ($ {{total_pasivo_numeros}}) moneda legal colombiana.\n\nOCTAVO. Liquidación.— Activo bruto: $ {{total_activo_numeros}}. Pasivo externo: $ {{total_pasivo_numeros}}. Total liquidación: {{total_liquidacion_letras}} ($ {{total_liquidacion_numeros}}) moneda legal colombiana.\n\nNOVENO. Gananciales.— A cada uno de los cónyuges corresponde la suma de {{gananciales_letras}} ($ {{gananciales_numeros}}) moneda legal colombiana.\n\nDÉCIMO. Adjudicaciones:\n\nHijuela número uno, para {{hijuela1_conyuge}}:\n{{hijuela1_bienes}}\nValor total de esta hijuela: {{hijuela1_total_letras}} ($ {{hijuela1_total_numeros}}) moneda legal colombiana.\n\nHijuela número dos, para {{hijuela2_conyuge}}:\n{{hijuela2_bienes}}\nValor total de esta hijuela: {{hijuela2_total_letras}} ($ {{hijuela2_total_numeros}}) moneda legal colombiana.\n\nDÉCIMO PRIMERO. Aceptación y Renuncia.— Los cónyuges declaran el divorcio civil y liquidada la sociedad conyugal, y a paz y salvo por todo concepto proveniente de gananciales, igualaciones, compensaciones y restituciones. El presente instrumento deberá registrarse conforme la ley.\n\nUna vez leído el presente instrumento, en señal de asentimiento lo firman los comparecientes junto con el Notario.\n\n_______________________________\n{{nombre_abogado}}\nApoderado\n\nEl Notario,\n_______________________________"
   },
@@ -4645,18 +5189,78 @@
     "subtitle": "Permisos y Declaraciones",
     "tipo_tramite": "Judicial",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_solicitante", "label": "Nombre Completo del Solicitante", "type": "text", "required": true},
-      {"name": "nombre_desaparecido", "label": "Nombre Completo del Desaparecido", "type": "text", "required": true},
-      {"name": "relacion_solicitante", "label": "Relación del Solicitante con el Desaparecido (ej: es su esposa)", "type": "text", "required": true},
-      {"name": "fecha_matrimonio", "label": "Fecha del Matrimonio (si aplica, sino escriba: no aplica)", "type": "text", "required": true},
-      {"name": "fecha_desaparicion", "label": "Fecha en que Desapareció", "type": "text", "required": true},
-      {"name": "descripcion_diligencias", "label": "Descripción de las Diligencias Realizadas para Localizarlo", "type": "textarea", "required": true},
-      {"name": "testigos", "label": "Nombres y Domicilios de los Testigos", "type": "textarea", "required": true},
-      {"name": "direccion_notificacion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_solicitante",
+        "label": "Nombre Completo del Solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_desaparecido",
+        "label": "Nombre Completo del Desaparecido",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "relacion_solicitante",
+        "label": "Relación del Solicitante con el Desaparecido (ej: es su esposa)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_matrimonio",
+        "label": "Fecha del Matrimonio (si aplica, sino escriba: no aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_desaparicion",
+        "label": "Fecha en que Desapareció",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_diligencias",
+        "label": "Descripción de las Diligencias Realizadas para Localizarlo",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "testigos",
+        "label": "Nombres y Domicilios de los Testigos",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "SOLICITUD DE DECLARACIÓN DE MUERTE POR DESAPARECIMIENTO\n\nSeñor\nJuez de Familia de {{ciudad_firma}}\nE. S. D.\n\n{{nombre_abogado}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_abogado}}, portador de la tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, actuando como apoderado de {{nombre_solicitante}}, mayor de edad, domiciliado en {{ciudad_firma}}, solicito a usted que mediante el trámite de jurisdicción voluntaria declare la muerte presunta por desaparecimiento del señor(a) {{nombre_desaparecido}}, para lo cual me fundamento en los hechos y normas siguientes:\n\nHECHOS\n\n1°. El señor {{nombre_desaparecido}} y mi mandante {{nombre_solicitante}} — {{relacion_solicitante}}, habiendo contraído matrimonio el {{fecha_matrimonio}}, conviviendo en {{ciudad_firma}} donde establecieron su domicilio.\n\n2°. El señor {{nombre_desaparecido}} salió de su residencia el {{fecha_desaparicion}} sin que desde ese instante se haya vuelto a tener noticia de su paradero, habiendo transcurrido más de dos años.\n\n3°. Desde la fecha indicada se han adelantado las siguientes diligencias para dar con su paradero: {{descripcion_diligencias}}\n\n4°. Mi mandante tiene interés legítimo en la declaración de muerte presunta, ya que {{relacion_solicitante}}.\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 96 y siguientes del Código Civil; artículo 649 del Código de Procedimiento Civil y demás disposiciones concordantes.\n\nCOMPETENCIA\n\nEs usted competente por ser el juez de familia del último domicilio del señor {{nombre_desaparecido}}.\n\nPRUEBAS\n\nDocumentales: Copia del registro civil de matrimonio; certificaciones del DAS y la policía sobre las diligencias realizadas.\n\nTestimoniales: {{testigos}}\n\nNOTIFICACIONES\n\nMi mandante en {{ciudad_firma}}. Yo en {{direccion_notificacion_abogado}}.\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -4666,21 +5270,96 @@
     "subtitle": "Filiación y Reconocimiento",
     "tipo_tramite": "Judicial",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_adoptante_principal", "label": "Nombre Completo del Adoptante Principal", "type": "text", "required": true},
-      {"name": "nombre_adoptante_secundario", "label": "Nombre del Segundo Adoptante (si es adopción conjunta, sino escriba: no aplica)", "type": "text", "required": true},
-      {"name": "tipo_vinculo_adoptantes", "label": "Tipo de Vínculo de los Adoptantes (ej: matrimonio civil, unión marital)", "type": "text", "required": true},
-      {"name": "fecha_inicio_vinculo", "label": "Fecha del Matrimonio o Inicio de Convivencia", "type": "text", "required": true},
-      {"name": "nombre_menor_adoptar", "label": "Nombre Completo del Menor a Adoptar", "type": "text", "required": true},
-      {"name": "edad_menor", "label": "Edad del Menor", "type": "text", "required": true},
-      {"name": "descripcion_situacion_menor", "label": "Descripción de la Situación del Menor (cómo llegó al ICBF, declaratoria de abandono)", "type": "textarea", "required": true},
-      {"name": "fecha_declaratoria_abandono", "label": "Fecha de la Declaratoria de Abandono", "type": "text", "required": true},
-      {"name": "razon_adopcion", "label": "Razón por la que los Adoptantes Desean Adoptar al Menor", "type": "textarea", "required": true},
-      {"name": "testigos", "label": "Nombres y Direcciones de los Testigos de Solvencia Moral y Económica", "type": "textarea", "required": true},
-      {"name": "direccion_notificacion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_adoptante_principal",
+        "label": "Nombre Completo del Adoptante Principal",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_adoptante_secundario",
+        "label": "Nombre del Segundo Adoptante (si es adopción conjunta, sino escriba: no aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_vinculo_adoptantes",
+        "label": "Tipo de Vínculo de los Adoptantes (ej: matrimonio civil, unión marital)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio_vinculo",
+        "label": "Fecha del Matrimonio o Inicio de Convivencia",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_menor_adoptar",
+        "label": "Nombre Completo del Menor a Adoptar",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "edad_menor",
+        "label": "Edad del Menor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_situacion_menor",
+        "label": "Descripción de la Situación del Menor (cómo llegó al ICBF, declaratoria de abandono)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "fecha_declaratoria_abandono",
+        "label": "Fecha de la Declaratoria de Abandono",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "razon_adopcion",
+        "label": "Razón por la que los Adoptantes Desean Adoptar al Menor",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "testigos",
+        "label": "Nombres y Direcciones de los Testigos de Solvencia Moral y Económica",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "DEMANDA DE ADOPCIÓN\n\nSeñor\nJuez de Familia de {{ciudad_firma}} (Reparto)\nE. S. D.\n\n{{nombre_abogado}}, mayor de edad, domiciliado en {{ciudad_firma}}, identificado con la cédula de ciudadanía N°. {{cedula_abogado}}, abogado en ejercicio con tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, actuando en mi condición de apoderado del señor {{nombre_adoptante_principal}} y de {{nombre_adoptante_secundario}}, mayores de edad y vecinos de {{ciudad_firma}}, según poder que adjunto, por medio de la presente formulo demanda de adopción plena del menor {{nombre_menor_adoptar}}.\n\nHECHOS\n\n1°. El señor {{nombre_adoptante_principal}} y {{nombre_adoptante_secundario}} tienen entre sí {{tipo_vinculo_adoptantes}} desde el {{fecha_inicio_vinculo}}.\n\n2°. El menor {{nombre_menor_adoptar}}, de {{edad_menor}} años de edad, se encuentra en la siguiente situación: {{descripcion_situacion_menor}}\n\n3°. El Defensor de Familia produjo la correspondiente declaración de abandono el {{fecha_declaratoria_abandono}}.\n\n4°. Los adoptantes han decidido adoptar al menor por las siguientes razones: {{razon_adopcion}}\n\n5°. El adoptante principal es mayor de 25 años y tiene una diferencia superior a los 15 años respecto del menor a adoptar.\n\nPETICIÓN\n\n1ª. Notificar al Defensor de Familia de la existencia de este proceso.\n2ª. Realizar audiencia con los adoptantes para constatar su solvencia moral, física y económica.\n3ª. Decretar la adopción plena del menor {{nombre_menor_adoptar}}, quedando como padres adoptantes mis poderdantes.\n4ª. Ordenar al funcionario del registro civil el cambio de inscripción y constituir una nueva acta de nacimiento.\n5ª. La expedición de copia ejecutoriada de la sentencia.\n\nFUNDAMENTOS DE DERECHO\n\nDecreto 2737 de 1989; Ley 1098 de 2006 (Código de la Infancia y la Adolescencia).\n\nCOMPETENCIA Y TRÁMITE\n\nEs usted competente por el domicilio del menor. Se aplica el trámite de jurisdicción voluntaria.\n\nPRUEBAS\n\nDocumentales: Declaración de abandono; registro civil de nacimiento del menor; registros civiles de nacimiento de los adoptantes; registro de matrimonio o convivencia; declaración de renta; certificación del ICBF.\n\nTestimoniales: {{testigos}}\n\nNOTIFICACIONES\n\nMis poderdantes en {{ciudad_firma}}. Yo en {{direccion_notificacion_abogado}}.\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -4690,18 +5369,78 @@
     "subtitle": "Filiación y Reconocimiento",
     "tipo_tramite": "Judicial",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "nombre_abogado", "label": "Nombre Completo del Abogado", "type": "text", "required": true},
-      {"name": "cedula_abogado", "label": "Cédula del Abogado", "type": "text", "required": true},
-      {"name": "tarjeta_profesional", "label": "Tarjeta Profesional del Abogado", "type": "text", "required": true},
-      {"name": "nombre_madre_representante", "label": "Nombre de la Madre (Representante Legal del Menor)", "type": "text", "required": true},
-      {"name": "nombre_menor", "label": "Nombre Completo del Menor", "type": "text", "required": true},
-      {"name": "nombre_presunto_padre", "label": "Nombre Completo del Presunto Padre (Citado)", "type": "text", "required": true},
-      {"name": "ciudad_domicilio_padre", "label": "Ciudad de Domicilio del Presunto Padre", "type": "text", "required": true},
-      {"name": "fecha_inicio_relaciones", "label": "Fecha de Inicio de las Relaciones", "type": "text", "required": true},
-      {"name": "fecha_fin_relaciones", "label": "Fecha de Terminación de las Relaciones", "type": "text", "required": true},
-      {"name": "fecha_nacimiento_menor", "label": "Fecha de Nacimiento del Menor", "type": "text", "required": true},
-      {"name": "direccion_notificacion_abogado", "label": "Dirección del Abogado para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_madre_representante",
+        "label": "Nombre de la Madre (Representante Legal del Menor)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_menor",
+        "label": "Nombre Completo del Menor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_presunto_padre",
+        "label": "Nombre Completo del Presunto Padre (Citado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_domicilio_padre",
+        "label": "Ciudad de Domicilio del Presunto Padre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio_relaciones",
+        "label": "Fecha de Inicio de las Relaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_fin_relaciones",
+        "label": "Fecha de Terminación de las Relaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_nacimiento_menor",
+        "label": "Fecha de Nacimiento del Menor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "SOLICITUD DE RECONOCIMIENTO DE HIJO EXTRAMATRIMONIAL\n\nJuez de Familia de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Diligencia de Reconocimiento\n\n{{nombre_abogado}}, mayor de edad, domiciliado en {{ciudad_firma}}, identificado con la cédula de ciudadanía N°. {{cedula_abogado}}, abogado con Tarjeta Profesional N°. {{tarjeta_profesional}} del C.S.J., actuando en mi calidad de apoderado especial de la señora {{nombre_madre_representante}}, quien obra en su condición de representante legal del menor {{nombre_menor}}, formulo Solicitud de Reconocimiento de Hijo Extramatrimonial, de acuerdo con los siguientes:\n\nHECHOS\n\n1°. El señor {{nombre_presunto_padre}} y la señora {{nombre_madre_representante}} sostuvieron relaciones desde {{fecha_inicio_relaciones}} hasta {{fecha_fin_relaciones}}.\n\n2°. Con ocasión de estas relaciones nació el menor {{nombre_menor}} el {{fecha_nacimiento_menor}}.\n\n3°. A pesar de reiteradas solicitudes de mi poderdante, el señor {{nombre_presunto_padre}} se ha negado a reconocer voluntariamente al menor {{nombre_menor}}.\n\nPETICIONES\n\n1ª. Se cite y haga comparecer a su despacho al señor {{nombre_presunto_padre}}, con domicilio en {{ciudad_domicilio_padre}}, para que bajo la gravedad del juramento manifieste si acepta o no ser el padre del menor {{nombre_menor}}.\n\n2ª. En caso de que se le repita la citación al señor {{nombre_presunto_padre}} y no compareciere, se declare reconocida la paternidad, previo trámite incidental.\n\n3ª. Como consecuencia de lo anterior, se ordene la corrección del registro civil de nacimiento.\n\nFUNDAMENTOS DE DERECHO\n\nNumeral 4° del artículo 10 de la Ley 75 de 1968; artículo 10 del Decreto 2272 de 1989; Ley 721 de 2001.\n\nCOMPETENCIA Y PROCEDIMIENTO\n\nPor la naturaleza del asunto y el territorio, es usted señor juez competente, por el trámite señalado en el artículo 10 del Decreto 2272 de 1989.\n\nPRUEBAS\n\nDocumental: Registro civil de nacimiento del menor {{nombre_menor}}.\n\nNOTIFICACIONES\n\nEl suscrito en {{direccion_notificacion_abogado}}; mi poderdante en {{ciudad_firma}}; el citado señor {{nombre_presunto_padre}} en {{ciudad_domicilio_padre}}.\n\nDel señor juez,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   },
@@ -4711,45 +5450,411 @@
     "subtitle": "Permisos y Declaraciones",
     "tipo_tramite": "Judicial",
     "fields": [
-      {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
-      {"name": "nombre_padre_solicitante", "label": "Nombre Completo del Padre o Madre Solicitante", "type": "text", "required": true},
-      {"name": "cedula_solicitante", "label": "Cédula del Solicitante", "type": "text", "required": true},
-      {"name": "nombre_menor", "label": "Nombre Completo del Menor", "type": "text", "required": true},
-      {"name": "fecha_matrimonio", "label": "Fecha del Matrimonio con el Otro Padre o Madre", "type": "text", "required": true},
-      {"name": "nombre_conyuge_ausente", "label": "Nombre del Padre o Madre Ausente", "type": "text", "required": true},
-      {"name": "razon_viaje", "label": "Razón del Viaje (ej: trabajo, estudio, tratamiento médico)", "type": "text", "required": true},
-      {"name": "pais_destino", "label": "País de Destino", "type": "text", "required": true},
-      {"name": "duracion_estadia", "label": "Duración de la Estadía (ej: tres meses)", "type": "text", "required": true},
-      {"name": "testigos", "label": "Nombres y Direcciones de los Testigos", "type": "textarea", "required": true},
-      {"name": "direccion_notificacion", "label": "Dirección del Solicitante para Notificaciones", "type": "text", "required": true}
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_padre_solicitante",
+        "label": "Nombre Completo del Padre o Madre Solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_solicitante",
+        "label": "Cédula del Solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_menor",
+        "label": "Nombre Completo del Menor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_matrimonio",
+        "label": "Fecha del Matrimonio con el Otro Padre o Madre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge_ausente",
+        "label": "Nombre del Padre o Madre Ausente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "razon_viaje",
+        "label": "Razón del Viaje (ej: trabajo, estudio, tratamiento médico)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pais_destino",
+        "label": "País de Destino",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion_estadia",
+        "label": "Duración de la Estadía (ej: tres meses)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "testigos",
+        "label": "Nombres y Direcciones de los Testigos",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion",
+        "label": "Dirección del Solicitante para Notificaciones",
+        "type": "text",
+        "required": true
+      }
     ],
     "template": "SOLICITUD DE PERMISO PARA QUE UN MENOR SALGA DEL PAÍS\n\nSeñor\nJuez de Familia de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Permiso para salir del país\n\n{{nombre_padre_solicitante}}, mayor de edad, domiciliado en {{ciudad_firma}}, identificado con la cédula de ciudadanía N°. {{cedula_solicitante}}, actuando en mi condición de padre (madre) del menor {{nombre_menor}}, respetuosamente me dirijo a usted con el fin de solicitar permiso para salir del país de mi hijo menor {{nombre_menor}}, teniendo en cuenta los siguientes:\n\nHECHOS\n\n1°. El {{fecha_matrimonio}} contraje matrimonio civil con el señor(a) {{nombre_conyuge_ausente}} en la ciudad de {{ciudad_firma}}.\n\n2°. El señor(a) {{nombre_conyuge_ausente}}, padre (madre) del menor, abandonó el hogar hace varios años y actualmente ignoro su paradero.\n\n3°. Debido a circunstancias de {{razon_viaje}}, me veo en la obligación de viajar a {{pais_destino}}.\n\n4°. Mi estadía en el citado país será de {{duracion_estadia}}.\n\nPETICIÓN\n\nSolicito señor Juez sea autorizado mi hijo {{nombre_menor}} a salir del país en compañía mía, con destino a {{pais_destino}}, por el lapso de {{duracion_estadia}}.\n\nAdicionalmente solicito:\na) Que se cite a el señor(a) {{nombre_conyuge_ausente}} por medio de un periódico de amplia circulación.\nb) Que se ordene la práctica de una investigación socio-familiar.\nc) Que una vez otorgado el permiso, se envíen copias al Ministerio de Relaciones Exteriores y a la División de Extranjería del DAS.\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 435 y siguientes del Código de Procedimiento Civil; Decreto 2272 de 1989; Ley 962 de 2005, artículo 82.\n\nCOMPETENCIA\n\nEs usted señor juez competente para conocer del asunto, por la naturaleza de la petición y el domicilio de las partes.\n\nPRUEBAS\n\nTestimoniales: {{testigos}}\n\nDocumentales: Registro civil de matrimonio; registro civil de nacimiento del menor {{nombre_menor}}.\n\nNOTIFICACIONES\n\nEl suscrito en {{direccion_notificacion}}.\n\nAtentamente,\n\n_______________________________\n{{nombre_padre_solicitante}}\nC.C. N°. {{cedula_solicitante}}"
   },
-
   {
-  "id": "revocatoria-poder-contraer-matrimonio",
-  "title": "Revocatoria de Poder para Contraer Matrimonio",
-  "subtitle": "Matrimonio",
-  "fields": [
-    { "name": "ciudad", "label": "Ciudad", "type": "text", "required": true },
-    { "name": "departamento", "label": "Departamento", "type": "text", "required": true },
-    { "name": "dia", "label": "Día", "type": "text", "required": true },
-    { "name": "mes", "label": "Mes", "type": "text", "required": true },
-    { "name": "anio", "label": "Año", "type": "text", "required": true },
-    { "name": "notario", "label": "Notario", "type": "text", "required": true },
-    { "name": "circulo", "label": "Círculo Notarial", "type": "text", "required": true },
-    { "name": "nombre_poderdante", "label": "Nombre del Poderdante", "type": "text", "required": true },
-    { "name": "cedula_poderdante", "label": "Cédula del Poderdante", "type": "text", "required": true },
-    { "name": "expedicion_poderdante", "label": "Expedición Cédula Poderdante", "type": "text", "required": true },
-    { "name": "nombre_apoderado_revocado", "label": "Nombre del Apoderado a quien se Revoca", "type": "text", "required": true },
-    { "name": "cedula_apoderado_revocado", "label": "Cédula del Apoderado Revocado", "type": "text", "required": true },
-    { "name": "nombre_contrayente", "label": "Nombre de la Persona con quien se iba a Casar", "type": "text", "required": true },
-    { "name": "numero_clausula_poder", "label": "Número de la Cláusula del Poder Original", "type": "text", "required": true },
-    { "name": "numero_escritura_poder", "label": "Número de la Escritura del Poder Original", "type": "text", "required": true },
-    { "name": "fecha_escritura_poder", "label": "Fecha de la Escritura del Poder Original", "type": "text", "required": true },
-    { "name": "notaria_poder", "label": "Notaría que Expidió el Poder Original", "type": "text", "required": true },
-    { "name": "circulo_poder", "label": "Círculo Notarial del Poder Original", "type": "text", "required": true }
-  ],
-  "template": "REVOCATORIA DE PODER PARA CONTRAER MATRIMONIO\n\nEn la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí Notario {{notario}}, del Círculo de {{circulo}}, compareció el señor {{nombre_poderdante}}, varón, mayor de edad, domiciliado y residente en {{ciudad}}, identificado con la cédula de ciudadanía Nº {{cedula_poderdante}} de {{expedicion_poderdante}}, quien manifestó lo siguiente:\n\nPRIMERO.— Que por medio de la presente escritura revoca en todos sus efectos el poder especial conferido al señor {{nombre_apoderado_revocado}}, mayor de edad, identificado con la cédula de ciudadanía Nº {{cedula_apoderado_revocado}}, para que en nombre y representación del compareciente celebrara matrimonio con la señorita {{nombre_contrayente}}, según consta en la cláusula Nº {{numero_clausula_poder}} de la escritura pública Nº {{numero_escritura_poder}} de fecha {{fecha_escritura_poder}}, expedida por la Notaría {{notaria_poder}} del Círculo de {{circulo_poder}}.\n\nLeído el presente instrumento se aprueba por el compareciente y se firma conmigo, de todo lo cual doy fe.\n\n\nPoderdante: ____________________\n\nNotario: ____________________"
-}
+    "id": "revocatoria-poder-contraer-matrimonio",
+    "title": "Revocatoria de Poder para Contraer Matrimonio",
+    "subtitle": "Matrimonio",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo Notarial",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_poderdante",
+        "label": "Nombre del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_poderdante",
+        "label": "Cédula del Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_poderdante",
+        "label": "Expedición Cédula Poderdante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_apoderado_revocado",
+        "label": "Nombre del Apoderado a quien se Revoca",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_apoderado_revocado",
+        "label": "Cédula del Apoderado Revocado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_contrayente",
+        "label": "Nombre de la Persona con quien se iba a Casar",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_clausula_poder",
+        "label": "Número de la Cláusula del Poder Original",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "numero_escritura_poder",
+        "label": "Número de la Escritura del Poder Original",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_escritura_poder",
+        "label": "Fecha de la Escritura del Poder Original",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notaria_poder",
+        "label": "Notaría que Expidió el Poder Original",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo_poder",
+        "label": "Círculo Notarial del Poder Original",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "REVOCATORIA DE PODER PARA CONTRAER MATRIMONIO\n\nEn la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí Notario {{notario}}, del Círculo de {{circulo}}, compareció el señor {{nombre_poderdante}}, varón, mayor de edad, domiciliado y residente en {{ciudad}}, identificado con la cédula de ciudadanía Nº {{cedula_poderdante}} de {{expedicion_poderdante}}, quien manifestó lo siguiente:\n\nPRIMERO.— Que por medio de la presente escritura revoca en todos sus efectos el poder especial conferido al señor {{nombre_apoderado_revocado}}, mayor de edad, identificado con la cédula de ciudadanía Nº {{cedula_apoderado_revocado}}, para que en nombre y representación del compareciente celebrara matrimonio con la señorita {{nombre_contrayente}}, según consta en la cláusula Nº {{numero_clausula_poder}} de la escritura pública Nº {{numero_escritura_poder}} de fecha {{fecha_escritura_poder}}, expedida por la Notaría {{notaria_poder}} del Círculo de {{circulo_poder}}.\n\nLeído el presente instrumento se aprueba por el compareciente y se firma conmigo, de todo lo cual doy fe.\n\n\nPoderdante: ____________________\n\nNotario: ____________________"
+  },
+  {
+    "id": "constitucion-patrimonio-familia",
+    "title": "Constitución de Patrimonio de Familia Inembargable",
+    "subtitle": "Patrimonio de Familia",
+    "tipo_tramite": "Notarial",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o Número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo Notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_union",
+        "label": "Tipo de Unión (ej: matrimonio / unión marital de hecho)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge_1",
+        "label": "Nombre Completo del Cónyuge o Compañero(a) Permanente 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_conyuge_1",
+        "label": "Cédula del Cónyuge/Compañero(a) 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_conyuge_1",
+        "label": "Ciudad de Expedición Cédula 1",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_conyuge_2",
+        "label": "Nombre Completo del Cónyuge o Compañero(a) Permanente 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_conyuge_2",
+        "label": "Cédula del Cónyuge/Compañero(a) 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_conyuge_2",
+        "label": "Ciudad de Expedición Cédula 2",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombres_hijos_menores",
+        "label": "Nombres de los Hijos Menores de Edad (si no hay, escriba 'Ninguno')",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "datos_escritura_adquisicion",
+        "label": "Datos de la Escritura de Adquisición del Inmueble (N°, fecha, notaría)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "matricula_inmobiliaria",
+        "label": "Número de Matrícula Inmobiliaria del Inmueble",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_inmueble",
+        "label": "Descripción del Inmueble (dirección, linderos)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "avaluo_inmueble",
+        "label": "Avalúo Catastral o Valor del Inmueble",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "ESCRITURA PÚBLICA DE CONSTITUCIÓN DE PATRIMONIO DE FAMILIA INEMBARGABLE\n\nEn la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, comparecieron los señores {{nombre_conyuge_1}} y {{nombre_conyuge_2}}, unidos entre sí mediante {{tipo_union}}, mayores de edad, domiciliados en {{ciudad}}, identificados con las cédulas de ciudadanía N°. {{cedula_conyuge_1}} de {{expedicion_conyuge_1}}, y N°. {{cedula_conyuge_2}} de {{expedicion_conyuge_2}}, y manifestaron lo siguiente:\n\nPRIMERO: Que son propietarios del siguiente bien inmueble, adquirido mediante escritura pública N°. {{datos_escritura_adquisicion}}, registrada en la Oficina de Registro de Instrumentos Públicos del Círculo de {{circulo}}, al folio de matrícula inmobiliaria N°. {{matricula_inmobiliaria}}: {{descripcion_inmueble}}, con un avalúo de {{avaluo_inmueble}}.\n\nSEGUNDO: Que tienen los siguientes hijos menores de edad: {{nombres_hijos_menores}}.\n\nTERCERO: Que de conformidad con lo dispuesto en la Ley 70 de 1931 y la Ley 495 de 1999, por medio de este instrumento CONSTITUYEN PATRIMONIO DE FAMILIA INEMBARGABLE sobre el inmueble antes descrito, en favor de sí mismos y de sus hijos menores relacionados, con el fin de garantizar la vivienda y protección económica del núcleo familiar.\n\nCUARTO: Que en consecuencia, a partir de la fecha de registro de este instrumento en la Oficina de Registro de Instrumentos Públicos, el inmueble descrito quedará afectado con dicho gravamen, siendo inalienable e inembargable en los términos de la ley, salvo las excepciones legales.\n\nQUINTO: Que este patrimonio de familia únicamente protege al cónyuge o compañero(a) permanente y a los hijos menores de edad de los comparecientes, no cobijando a otros parientes o terceros.\n\nLeído el presente instrumento, en señal de asentimiento lo firman junto con el Notario.\n\n_______________________________          _______________________________\n{{nombre_conyuge_1}}                              {{nombre_conyuge_2}}\nC.C. N°. {{cedula_conyuge_1}}                    C.C. N°. {{cedula_conyuge_2}}\n\nEl Notario,\n_______________________________"
+  },
+  {
+    "id": "solicitud-medida-proteccion-violencia-intrafamiliar",
+    "title": "Solicitud de Medida de Protección por Violencia Intrafamiliar",
+    "subtitle": "Violencia Intrafamiliar",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "comisaria_destino",
+        "label": "Comisaría de Familia a la que se Dirige (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_solicitante",
+        "label": "Nombre Completo del Solicitante (víctima)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_solicitante",
+        "label": "Cédula del Solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_solicitante",
+        "label": "Dirección de Residencia del Solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "telefono_solicitante",
+        "label": "Teléfono de Contacto del Solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_agresor",
+        "label": "Nombre Completo del Presunto Agresor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "relacion_agresor",
+        "label": "Relación o Parentesco con el Agresor (ej: padrastro, tío, conviviente)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_hechos",
+        "label": "Dirección donde Ocurrieron los Hechos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_hechos",
+        "label": "Fecha en que Ocurrieron los Hechos",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "relato_hechos",
+        "label": "Relato Detallado de los Hechos de Violencia",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "medidas_solicitadas",
+        "label": "Medidas de Protección Solicitadas (ej: retiro del agresor del hogar)",
+        "type": "textarea",
+        "required": true
+      }
+    ],
+    "template": "SOLICITUD DE MEDIDA DE PROTECCIÓN POR VIOLENCIA INTRAFAMILIAR\n\nSeñor(a)\nComisario(a) de Familia de {{comisaria_destino}}\nE. S. D.\n\n{{nombre_solicitante}}, mayor de edad, identificado(a) con cédula de ciudadanía N°. {{cedula_solicitante}}, con domicilio en {{direccion_solicitante}}, teléfono de contacto {{telefono_solicitante}}, comedidamente me dirijo a su despacho para solicitar MEDIDA DE PROTECCIÓN por hechos de violencia intrafamiliar, con fundamento en los siguientes:\n\nHECHOS\n\n1°. Convivo o comparto núcleo familiar con el señor(a) {{nombre_agresor}}, quien es mi {{relacion_agresor}}.\n\n2°. El día {{fecha_hechos}}, en la dirección {{direccion_hechos}}, ocurrieron los siguientes hechos: {{relato_hechos}}\n\n3°. Estos hechos constituyen actos de violencia intrafamiliar que ponen en riesgo mi integridad física y/o psicológica.\n\nPETICIÓN\n\nCon fundamento en la Ley 294 de 1996, modificada por la Ley 575 de 2000 y la Ley 1257 de 2008, solicito respetuosamente se decrete de manera inmediata la(s) siguiente(s) medida(s) de protección: {{medidas_solicitadas}}\n\nFUNDAMENTOS DE DERECHO\n\nLey 294 de 1996; Ley 575 de 2000; Ley 1257 de 2008.\n\nNOTIFICACIONES\n\nRecibiré notificaciones en {{direccion_solicitante}}, teléfono {{telefono_solicitante}}.\n\nEn {{comisaria_destino}}, a los {{dia}} días del mes de {{mes}} de {{anio}}.\n\nAtentamente,\n\n_______________________________\n{{nombre_solicitante}}\nC.C. N°. {{cedula_solicitante}}"
+  }
 ]

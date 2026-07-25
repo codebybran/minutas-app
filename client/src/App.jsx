@@ -35,6 +35,24 @@ function getBadgeTramite(tipo) {
 // 
 
 const FIELD_HELP = {
+  // -- PATRIMONIO DE FAMILIA (NUEVO) --
+  tipo_union: 'Escriba el tipo de unión entre los comparecientes. Ejemplo: matrimonio, unión marital de hecho.',
+  nombres_hijos_menores: 'Escriba el nombre completo de cada hijo menor de edad. Si no tienen hijos menores, escriba: Ninguno.',
+  avaluo_inmueble: 'Escriba el valor o avalúo catastral del inmueble. Ejemplo: cien millones de pesos ($100.000.000).',
+  nombre_conyuge_1: 'Escriba el nombre completo del primer cónyuge o compañero(a) permanente.',
+  cedula_conyuge_1: 'Escriba el número de cédula del primer cónyuge o compañero(a) permanente.',
+  expedicion_conyuge_1: 'Escriba la ciudad donde fue expedida la cédula del primer cónyuge o compañero(a).',
+  nombre_conyuge_2: 'Escriba el nombre completo del segundo cónyuge o compañero(a) permanente.',
+  cedula_conyuge_2: 'Escriba el número de cédula del segundo cónyuge o compañero(a) permanente.',
+  expedicion_conyuge_2: 'Escriba la ciudad donde fue expedida la cédula del segundo cónyuge o compañero(a).',
+  // -- VIOLENCIA INTRAFAMILIAR (NUEVO) --
+  comisaria_destino: 'Escriba la ciudad de la Comisaría de Familia a la que dirige la solicitud. Ejemplo: El Cerrito, Cali.',
+  nombre_agresor: 'Escriba el nombre completo del presunto agresor.',
+  relacion_agresor: 'Escriba la relación o parentesco con el agresor. Ejemplo: padrastro, tío, conviviente, expareja.',
+  direccion_hechos: 'Escriba la dirección exacta donde ocurrieron los hechos de violencia.',
+  relato_hechos: 'Describa con claridad qué pasó, cuándo y cómo. Sea lo más detallado posible: esto es clave para que la autoridad actúe rápido.',
+  medidas_solicitadas: 'Describa qué medida de protección necesita. Ejemplo: orden de desalojo del agresor del hogar, prohibición de acercamiento.',
+
   // -- DERECHO TRIBUTARIO --
   nombre_jefe_juridica: 'Escriba el nombre del funcionario Jefe de la División Jurídica de la Administración de Impuestos. Si no lo conoce, escriba: el que corresponda según el organigrama vigente.',
   ciudad_administracion: 'Escriba la ciudad donde queda la Administración de Impuestos y Aduanas Nacionales que expidió el acto. Ej: Cali, Bogotá.',
