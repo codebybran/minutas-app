@@ -34,6 +34,75 @@ function getBadgeTramite(tipo) {
 }
 // 
 
+const ARTICULOS_ORIENTACION = [
+  {
+    id: 'patrimonio-familia',
+    icono: '🏠',
+    titulo: 'Patrimonio de Familia (Proteger la casa)',
+    resumen: 'Cómo blindar tu casa contra embargos, y a quién protege exactamente la ley.',
+    minutaRelacionada: { catId: 'derecho-familia', minutaId: 'constitucion-patrimonio-familia' },
+    secciones: [
+      {
+        subtitulo: '¿Cómo se hace el procedimiento en la vida real?',
+        parrafos: [
+          'Supongamos que compras tu casa en El Cerrito. ¿Cómo haces para ponerle la "figura legal"?',
+          'Paso 1: Vas con la escritura de la casa a una Notaría.',
+          'Paso 2: Le pides al notario que redacte una Escritura Pública de Constitución de Patrimonio de Familia Inembargable (amparado en la Ley 70 de 1931 y la Ley 495 de 1999).',
+          'Paso 3: Llevas esa escritura a la Oficina de Registro de Instrumentos Públicos. Allí le ponen un "sello" oficial a la casa en su certificado de libertad.',
+          'A partir de ese segundo, la casa queda blindada: ningún banco ni prestamista te la puede embargar ni rematar por deudas que adquieras después.',
+        ]
+      },
+      {
+        subtitulo: '¿A quiénes cubre exactamente?',
+        parrafos: [
+          'Tiene un límite estricto. La ley protege únicamente a:',
+          '• Los cónyuges o compañeros permanentes (esposo/esposa o pareja en unión libre).',
+          '• Los hijos menores de edad (y los hijos futuros que lleguen a tener).',
+        ]
+      },
+      {
+        subtitulo: '¿Quiénes quedan por fuera?',
+        parrafos: [
+          'Quedan por fuera los padres (abuelos), tíos, sobrinos, primos y hermanos mayores de edad.',
+          'Ejemplo: Si vives en la casa con tu esposa, tus dos hijos pequeños y tu mamá, la casa está blindada. Pero el blindaje existe para no dejar sin techo a tus hijos y a tu esposa. La ley no protegió la casa pensando en tu mamá ni en tus sobrinos, sino en tus hijos menores.',
+        ]
+      },
+    ]
+  },
+  {
+    id: 'violencia-intrafamiliar',
+    icono: '🛡️',
+    titulo: 'Violencia Intrafamiliar (Proteger a la gente)',
+    resumen: 'Por qué la ley protege a todos los que viven bajo el mismo techo, no solo a los parientes directos.',
+    minutaRelacionada: { catId: 'derecho-familia', minutaId: 'solicitud-medida-proteccion-violencia-intrafamiliar' },
+    secciones: [
+      {
+        subtitulo: '¿Cómo funciona en la vida real?',
+        parrafos: [
+          'Aquí el objetivo de la ley no es proteger ladrillos ni plata, es proteger la vida y la integridad de los seres humanos.',
+          'Imagina que en una misma casa viven: la mamá, el padrastro, un hijo de 15 años, un tío y una prima.',
+          'Un día, el tío o el padrastro empiezan a insultar, amenazar o agredir físicamente al muchacho de 15 años o a la prima.',
+          'La víctima va a la Comisaría de Familia o ante un Juez a denunciar Violencia Intrafamiliar.',
+        ]
+      },
+      {
+        subtitulo: '¿Por qué aquí la ley NO pone límites?',
+        parrafos: [
+          'Si la ley dijera "solo es violencia intrafamiliar si te pega tu papá o tu mamá", el tío que vive en la misma casa quedaría impune y el juez no podría actuar rápido.',
+          'Por eso la Ley 294 de 1996 dice: para proteger contra el maltrato, "familia" son TODOS los que comparten la vida bajo el mismo techo.',
+          'Gracias a eso, el Comisario de Familia puede dictar una medida de protección inmediata (por ejemplo, ordenar a la Policía que saque al agresor de la casa esa misma tarde), porque para la ley de violencia, esa persona sí es parte del grupo familiar.',
+        ]
+      },
+      {
+        subtitulo: 'La gran diferencia en una sola idea',
+        parrafos: [
+          'Para el Patrimonio de Familia (bienes/plata): la ley es estricta y chiquita (solo pareja e hijos menores).',
+          'Para la Violencia Intrafamiliar (seguridad/salud): la ley es amplia y grande (todos los que vivan bajo el mismo techo).',
+        ]
+      },
+    ]
+  },
+]
 const FIELD_HELP = {
   // -- PATRIMONIO DE FAMILIA (NUEVO) --
   tipo_union: 'Escriba el tipo de unión entre los comparecientes. Ejemplo: matrimonio, unión marital de hecho.',
