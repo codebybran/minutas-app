@@ -10332,6 +10332,11 @@ function AppContent() {
     (m.subtitle || '').toLowerCase().includes(textoBusqueda) ||
     (m.catName || '').toLowerCase().includes(textoBusqueda)
   ) : []
+  const palabrasBusqueda = textoBusqueda.split(/\s+/).filter(p => p.length > 2)
+  const sugerencias = (textoBusqueda && minutasFiltradas.length === 0) ? todasLasMinutas.filter(m => {
+    const texto = (m.title + ' ' + (m.subtitle || '') + ' ' + (m.catName || '')).toLowerCase()
+    return palabrasBusqueda.some(p => texto.includes(p))
+  }).slice(0, 5) : []
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', width: '100vw', background: 'linear-gradient(135deg, #d8e4f0 0%, #e8f0f8 50%, #d0dcea 100%)', fontFamily: 'Georgia, serif' }}>
