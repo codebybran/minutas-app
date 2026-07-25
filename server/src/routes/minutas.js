@@ -12,7 +12,7 @@ const SUBTITLE_ORDER_FAMILIA = [
   'Matrimonio','Sociedad Conyugal y Patrimonial','Estado Civil','Sucesiones',
   'Filiación y Reconocimiento','Unión Marital de Hecho','Rendición de Cuentas',
   'Separación y Divorcio','Alimentos','Sucesiones Judiciales',
-  'Patrimonio de Familia','Permisos y Declaraciones'
+  'Patrimonio de Familia','Violencia Intrafamiliar','Permisos y Declaraciones'
 ]
 const SUBTITLE_ORDER_COMERCIAL = ['Títulos Valores','Contratos Mercantiles','Propiedad Intelectual','Cobranza']
 const SUBTITLE_ORDER_SOCIEDADES = [
