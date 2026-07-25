@@ -10381,9 +10381,23 @@ function AppContent() {
                   ))}
                 </div>
               )}
-              {busqueda && minutasFiltradas.length === 0 && (
-                <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, background: '#0a1628', border: '1px solid #2c5282', borderRadius: '6px', zIndex: 100, marginTop: '4px', padding: '10px 12px', color: '#6b8caa', fontSize: '12px', boxShadow: '0 8px 24px rgba(0,0,0,0.5)' }}>
-                  No se encontraron minutas
+                            {busqueda && minutasFiltradas.length === 0 && (
+                <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, background: '#0a1628', border: '1px solid #2c5282', borderRadius: '6px', zIndex: 100, marginTop: '4px', padding: '10px 12px', color: '#6b8caa', fontSize: '12px', boxShadow: '0 8px 24px rgba(0,0,0,0.5)', maxHeight: '260px', overflowY: 'auto' }}>
+                  <div style={{ marginBottom: sugerencias.length ? '8px' : 0 }}>No se encontraron minutas para "{busqueda}"</div>
+                  {sugerencias.length > 0 && (
+                    <>
+                      <div style={{ color: '#e2b94a', fontSize: '10px', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '6px', borderTop: '1px solid #1e3a5f', paddingTop: '8px' }}>Quizás te refieres a:</div>
+                      {sugerencias.map(m => (
+                        <div key={m.id} onClick={() => { navigate(`/categoria/${m.catId}/${m.id}`, { state: location.state }); setBusqueda('') }}
+                          style={{ padding: '6px 8px', cursor: 'pointer', borderRadius: '4px', color: '#a0bcd8', fontSize: '11px', lineHeight: '1.4' }}
+                          onMouseEnter={e => e.currentTarget.style.background = '#1e3a5c'}
+                          onMouseLeave={e => e.currentTarget.style.background = 'transparent'}>
+                          <div style={{ color: '#e2b94a', fontSize: '10px' }}>{m.catName}</div>
+                          {m.title}
+                        </div>
+                      ))}
+                    </>
+                  )}
                 </div>
               )}
             </div>
