@@ -2431,6 +2431,30 @@ const FIELD_OPTIONS = {
 }
 
 const DATOS_PRUEBA = {
+  'constitucion-patrimonio-familia': {
+    ciudad: 'El Cerrito', departamento: 'Valle del Cauca', dia: '21', mes: 'abril', anio: '2026',
+    notario: 'Única', circulo: 'El Cerrito',
+    tipo_union: 'matrimonio',
+    nombre_conyuge_1: 'Jhon Brandon Martínez Vélez', cedula_conyuge_1: '1234567890', expedicion_conyuge_1: 'El Cerrito',
+    nombre_conyuge_2: 'Diana Patricia García López', cedula_conyuge_2: '0987654321', expedicion_conyuge_2: 'Cali',
+    nombres_hijos_menores: 'Samuel Martínez García (10 años), Valentina Martínez García (7 años)',
+    datos_escritura_adquisicion: 'escritura pública No. 890 del 15 de mayo de 2010 de la Notaría Única de El Cerrito',
+    matricula_inmobiliaria: '370-123456',
+    descripcion_inmueble: 'casa de habitación ubicada en la Calle 4 Sur # 2A-56, Barrio Villa del Carmen, El Cerrito',
+    avaluo_inmueble: 'cien millones de pesos ($100.000.000)',
+  },
+  'solicitud-medida-proteccion-violencia-intrafamiliar': {
+    ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
+    comisaria_destino: 'El Cerrito',
+    nombre_solicitante: 'Diana Patricia García López', cedula_solicitante: '0987654321',
+    direccion_solicitante: 'Calle 4 Sur # 2A-56, El Cerrito', telefono_solicitante: '315 123 4567',
+    nombre_agresor: 'Carlos Andrés García López', relacion_agresor: 'hermano conviviente en el mismo hogar',
+    direccion_hechos: 'Calle 4 Sur # 2A-56, El Cerrito',
+    fecha_hechos: 'el 18 de julio de 2026',
+    relato_hechos: 'El agresor profirió insultos y amenazas verbales reiteradas contra la solicitante, generando temor y afectación emocional.',
+    medidas_solicitadas: 'Orden de desalojo del agresor del hogar y prohibición de acercamiento a la solicitante.',
+  },
+
 
   'declaracion-fin-extraprocesal': {
   ciudad: 'El Cerrito', departamento: 'Valle del Cauca', dia: '21', mes: 'abril', anio: '2026',
@@ -7556,6 +7580,17 @@ const DATOS_PRUEBA = {
 }
 
 const PASOS_SIGUIENTE = {
+  'constitucion-patrimonio-familia': [
+    { num:1, titulo:'Reúna los documentos del inmueble', descripcion:'Necesita la escritura de adquisición, el certificado de tradición y libertad, y las cédulas de los comparecientes.' },
+    { num:2, titulo:'Acuda a una Notaría con este modelo', descripcion:'El notario redacta la escritura pública definitiva a partir de estos datos.' },
+    { num:3, titulo:'Registre la escritura en la Oficina de Registro de Instrumentos Públicos', descripcion:'Solo desde el registro el inmueble queda protegido frente a embargos.' },
+  ],
+  'solicitud-medida-proteccion-violencia-intrafamiliar': [
+    { num:1, titulo:'Acuda de inmediato a la Comisaría de Familia', descripcion:'Si hay riesgo inminente, puede acudir directamente sin este documento; la Policía y la Comisaría pueden actuar de forma inmediata.' },
+    { num:2, titulo:'Aporte pruebas si las tiene', descripcion:'Fotos, mensajes, testigos o certificados médicos ayudan a sustentar la solicitud, aunque no son obligatorios para pedir la medida.' },
+    { num:3, titulo:'El Comisario puede dictar la medida el mismo día', descripcion:'Con base en la Ley 294 de 1996 y sus modificaciones, la medida de protección puede ordenarse de forma inmediata.' },
+  ],
+
 
   'recurso-reconsideracion': {
   titulo: 'Recurso de Reconsideración',
