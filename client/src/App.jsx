@@ -10749,6 +10749,8 @@ function App() {
       <Route path="/" element={<AppContent />} />
       <Route path="/categoria/:categoriaId" element={<AppContent />} />
       <Route path="/categoria/:categoriaId/:minutaId" element={<AppContent />} />
+      <Route path="/orientacion-juridica" element={<AppContent />} />
+      <Route path="/orientacion-juridica/:articuloId" element={<AppContent />} />
     </Routes>
   )
 }
