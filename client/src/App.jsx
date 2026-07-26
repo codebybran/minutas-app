@@ -10133,6 +10133,7 @@ const LEXDOC_HOME_CSS = `
 function AppContent() {
   const [categories, setCategories] = useState([])
   const [selectedCategory, setSelectedCategory] = useState(null)
+  const [bannerOrientacionCerrado, setBannerOrientacionCerrado] = useState(() => localStorage.getItem('lexdoc_banner_orientacion_cerrado') === 'true')
   const [selectedMinuta, setSelectedMinuta] = useState(null)
   const [minutaDetail, setMinutaDetail] = useState(null)
   const [formData, setFormData] = useState({})
@@ -10615,6 +10616,24 @@ function AppContent() {
           {!minutaDetail && !modoCategoria && !enOrientacion && (
             <div id="lexdoc-home" style={{ overflowY:'auto', height:'100%', background:'#b0b7bd' }}>
               <style>{LEXDOC_HOME_CSS}</style>
+              {!bannerOrientacionCerrado && (
+                <div style={{ margin: '18px 36px 0', background: 'linear-gradient(135deg, #1e3a5c, #162d4a)', border: '1px solid #e2b94a66', borderRadius: '10px', padding: '14px 18px', display: 'flex', alignItems: 'center', gap: '14px', boxShadow: '0 4px 14px rgba(0,0,0,0.25)' }}>
+                  <div style={{ fontSize: '26px', flexShrink: 0 }}>📚</div>
+                  <div style={{ flex: 1 }}>
+                    <div style={{ color: '#e2b94a', fontSize: '13px', fontWeight: 'bold', marginBottom: '2px' }}>Nuevo: Orientación Jurídica</div>
+                    <div style={{ color: '#a0bcd8', fontSize: '12px' }}>Guías claras sobre Patrimonio de Familia y Violencia Intrafamiliar, con pasos reales y ejemplos.</div>
+                  </div>
+                  <button onClick={() => navigate('/orientacion-juridica')}
+                    style={{ cursor: 'pointer', background: 'rgba(226,185,74,0.15)', color: '#e2b94a', border: '1px solid #e2b94a88', borderRadius: '6px', padding: '8px 16px', fontSize: '12px', fontWeight: 'bold', whiteSpace: 'nowrap', flexShrink: 0 }}>
+                    Ver guías →
+                  </button>
+                  <button onClick={() => { setBannerOrientacionCerrado(true); localStorage.setItem('lexdoc_banner_orientacion_cerrado', 'true') }}
+                    style={{ cursor: 'pointer', background: 'transparent', color: '#7a9ab5', border: 'none', fontSize: '18px', lineHeight: 1, padding: '0 4px', flexShrink: 0 }}
+                    title="Cerrar aviso">
+                    ×
+                  </button>
+                </div>
+              )}
 
               <div style={{ position:'relative', padding:'48px 36px 32px', overflow:'hidden', background:'radial-gradient(ellipse at 50% 0%, rgba(226,185,74,0.08) 0%, transparent 65%)' }}>
                 <div style={{ position:'absolute', left:0, right:0, height:'1px', background:'linear-gradient(90deg, transparent, rgba(226,185,74,0.5), transparent)', animation:'scan-line 4s linear infinite', pointerEvents:'none', zIndex:1 }}></div>
