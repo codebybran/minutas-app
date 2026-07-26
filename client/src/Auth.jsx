@@ -115,11 +115,11 @@ export default function Auth() {
           <form onSubmit={handleSubmit}>
             <div style={{ position: 'relative', marginBottom: '14px' }}>
               <div style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)' }}><IconoCorreo /></div>
-              <input type="email" placeholder="Correo electrónico" value={email} onChange={e => setEmail(e.target.value)} required style={inputStyle} />
+              <input type="email" placeholder="Correo electrónico" value={email} onChange={e => setEmail(e.target.value)} required style={inputStyle} data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false" />
             </div>
             <div style={{ position: 'relative', marginBottom: '10px' }}>
               <div style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)' }}><IconoCandado /></div>
-              <input type={verPassword ? 'text' : 'password'} placeholder="Contraseña" value={password} onChange={e => setPassword(e.target.value)} required style={{ ...inputStyle, paddingRight: '38px' }} />
+              <input type={verPassword ? 'text' : 'password'} placeholder="Contraseña" value={password} onChange={e => setPassword(e.target.value)} required style={{ ...inputStyle, paddingRight: '38px' }} data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false" />
               <div onClick={() => setVerPassword(!verPassword)} style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', cursor: 'pointer' }}>
                 <IconoOjo visible={verPassword} />
               </div>
