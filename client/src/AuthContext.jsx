@@ -12,7 +12,10 @@ export function AuthProvider({ children }) {
     return unsubscribe
   }, [])
 
-  const logout = () => firebaseSignOut(auth)
+  const logout = () => {
+    sessionStorage.removeItem('lexdoc_banner_orientacion_cerrado')
+    return firebaseSignOut(auth)
+  }
 
   return (
     <AuthContext.Provider value={{ user, logout }}>
