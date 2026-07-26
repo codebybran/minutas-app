@@ -5,15 +5,18 @@ import './index.css'
 import App from './App.jsx'
 import { AuthProvider } from './AuthContext.jsx'
 import AuthGate from './AuthGate.jsx'
+import ErrorBoundary from './ErrorBoundary.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AuthProvider>
-      <AuthGate>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </AuthGate>
-    </AuthProvider>
+    <ErrorBoundary>
+      <AuthProvider>
+        <AuthGate>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </AuthGate>
+      </AuthProvider>
+    </ErrorBoundary>
   </StrictMode>,
 )
