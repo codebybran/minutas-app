@@ -10617,20 +10617,33 @@ function AppContent() {
             <div id="lexdoc-home" style={{ overflowY:'auto', height:'100%', background:'#b0b7bd' }}>
               <style>{LEXDOC_HOME_CSS}</style>
               {!bannerOrientacionCerrado && (
-                <div style={{ margin: '18px 36px 0', background: 'linear-gradient(135deg, #1e3a5c, #162d4a)', border: '1px solid #e2b94a66', borderRadius: '10px', padding: '14px 18px', display: 'flex', alignItems: 'center', gap: '14px', boxShadow: '0 4px 14px rgba(0,0,0,0.25)' }}>
-                  <div style={{ fontSize: '26px', flexShrink: 0 }}>📚</div>
-                  <div style={{ flex: 1 }}>
-                    <div style={{ color: '#e2b94a', fontSize: '13px', fontWeight: 'bold', marginBottom: '2px' }}>Orientación Jurídica</div>
-                    <div style={{ color: '#a0bcd8', fontSize: '12px' }}>{ARTICULOS_ORIENTACION.length} guías claras sobre trámites frecuentes, con pasos reales y ejemplos.</div>
-                  </div>
-                  <button onClick={() => navigate('/orientacion-juridica')}
-                    style={{ cursor: 'pointer', background: 'rgba(226,185,74,0.15)', color: '#e2b94a', border: '1px solid #e2b94a88', borderRadius: '6px', padding: '8px 16px', fontSize: '12px', fontWeight: 'bold', whiteSpace: 'nowrap', flexShrink: 0 }}>
-                    Ver guías →
-                  </button>
+                <div style={{ margin: '18px 36px 0', position: 'relative', borderRadius: '14px', padding: '20px 24px', background: 'linear-gradient(160deg, #1e3a5c 0%, #16304f 55%, #10253f 100%)', border: '1px solid rgba(226,185,74,0.35)', boxShadow: '0 1px 0 rgba(255,255,255,0.06) inset, 0 -1px 0 rgba(0,0,0,0.3) inset, 0 3px 0 #0d1e30, 0 6px 0 #0a1826, 0 10px 24px rgba(0,0,0,0.35), 0 20px 44px rgba(0,0,0,0.25)' }}>
                   <button onClick={() => { setBannerOrientacionCerrado(true); sessionStorage.setItem('lexdoc_banner_orientacion_cerrado', 'true') }}
-                    style={{ cursor: 'pointer', background: 'transparent', color: '#7a9ab5', border: 'none', fontSize: '18px', lineHeight: 1, padding: '0 4px', flexShrink: 0 }}
+                    style={{ position: 'absolute', top: '12px', right: '14px', cursor: 'pointer', background: 'rgba(255,255,255,0.06)', color: '#8fb0cc', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '50%', width: '24px', height: '24px', fontSize: '15px', lineHeight: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                     title="Cerrar aviso">
                     ×
+                  </button>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '14px' }}>
+                    <div style={{ fontSize: '30px', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.4))' }}>📚</div>
+                    <div>
+                      <div style={{ color: '#e2b94a', fontSize: '15px', fontWeight: 'bold', textShadow: '0 1px 2px rgba(0,0,0,0.4)' }}>Orientación Jurídica</div>
+                      <div style={{ color: '#8fb0cc', fontSize: '12px' }}>Explora nuestras guías gratuitas sobre trámites frecuentes</div>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '16px' }}>
+                    {ARTICULOS_ORIENTACION.map(art => (
+                      <div key={art.id} onClick={() => navigate(`/orientacion-juridica/${art.id}`)}
+                        style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(226,185,74,0.25)', borderRadius: '20px', padding: '7px 14px 7px 10px', boxShadow: '0 1px 0 rgba(255,255,255,0.08) inset, 0 2px 6px rgba(0,0,0,0.2)', transition: 'transform 0.15s ease, background 0.15s ease' }}
+                        onMouseEnter={e => { e.currentTarget.style.background = 'rgba(226,185,74,0.12)'; e.currentTarget.style.transform = 'translateY(-1px)' }}
+                        onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; e.currentTarget.style.transform = 'translateY(0)' }}>
+                        <span style={{ fontSize: '16px' }}>{art.icono}</span>
+                        <span style={{ color: '#d8e6f2', fontSize: '12px', fontWeight: 600 }}>{art.titulo.split(' (')[0]}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <button onClick={() => navigate('/orientacion-juridica')}
+                    style={{ cursor: 'pointer', background: 'linear-gradient(135deg, #e2b94a, #c9a030)', color: '#1a2a3a', border: 'none', borderRadius: '7px', padding: '9px 18px', fontSize: '12px', fontWeight: 'bold', boxShadow: '0 1px 0 rgba(255,255,255,0.4) inset, 0 3px 0 #a8811f, 0 5px 12px rgba(226,185,74,0.35)' }}>
+                    Ver todas las guías →
                   </button>
                 </div>
               )}
