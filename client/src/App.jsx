@@ -10133,7 +10133,7 @@ const LEXDOC_HOME_CSS = `
 function AppContent() {
   const [categories, setCategories] = useState([])
   const [selectedCategory, setSelectedCategory] = useState(null)
-  const [bannerOrientacionCerrado, setBannerOrientacionCerrado] = useState(() => localStorage.getItem('lexdoc_banner_orientacion_cerrado') === 'true')
+  const [bannerOrientacionCerrado, setBannerOrientacionCerrado] = useState(() => sessionStorage.getItem('lexdoc_banner_orientacion_cerrado') === 'true')
   const [selectedMinuta, setSelectedMinuta] = useState(null)
   const [minutaDetail, setMinutaDetail] = useState(null)
   const [formData, setFormData] = useState({})
@@ -10627,7 +10627,7 @@ function AppContent() {
                     style={{ cursor: 'pointer', background: 'rgba(226,185,74,0.15)', color: '#e2b94a', border: '1px solid #e2b94a88', borderRadius: '6px', padding: '8px 16px', fontSize: '12px', fontWeight: 'bold', whiteSpace: 'nowrap', flexShrink: 0 }}>
                     Ver guías →
                   </button>
-                  <button onClick={() => { setBannerOrientacionCerrado(true); localStorage.setItem('lexdoc_banner_orientacion_cerrado', 'true') }}
+                  <button onClick={() => { setBannerOrientacionCerrado(true); sessionStorage.setItem('lexdoc_banner_orientacion_cerrado', 'true') }}
                     style={{ cursor: 'pointer', background: 'transparent', color: '#7a9ab5', border: 'none', fontSize: '18px', lineHeight: 1, padding: '0 4px', flexShrink: 0 }}
                     title="Cerrar aviso">
                     ×
