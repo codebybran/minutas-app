@@ -10620,8 +10620,8 @@ function AppContent() {
                 <div style={{ margin: '18px 36px 0', background: 'linear-gradient(135deg, #1e3a5c, #162d4a)', border: '1px solid #e2b94a66', borderRadius: '10px', padding: '14px 18px', display: 'flex', alignItems: 'center', gap: '14px', boxShadow: '0 4px 14px rgba(0,0,0,0.25)' }}>
                   <div style={{ fontSize: '26px', flexShrink: 0 }}>📚</div>
                   <div style={{ flex: 1 }}>
-                    <div style={{ color: '#e2b94a', fontSize: '13px', fontWeight: 'bold', marginBottom: '2px' }}>Nuevo: Orientación Jurídica</div>
-                    <div style={{ color: '#a0bcd8', fontSize: '12px' }}>Guías claras sobre Patrimonio de Familia y Violencia Intrafamiliar, con pasos reales y ejemplos.</div>
+                    <div style={{ color: '#e2b94a', fontSize: '13px', fontWeight: 'bold', marginBottom: '2px' }}>Orientación Jurídica</div>
+                    <div style={{ color: '#a0bcd8', fontSize: '12px' }}>{ARTICULOS_ORIENTACION.length} guías claras sobre trámites frecuentes, con pasos reales y ejemplos.</div>
                   </div>
                   <button onClick={() => navigate('/orientacion-juridica')}
                     style={{ cursor: 'pointer', background: 'rgba(226,185,74,0.15)', color: '#e2b94a', border: '1px solid #e2b94a88', borderRadius: '6px', padding: '8px 16px', fontSize: '12px', fontWeight: 'bold', whiteSpace: 'nowrap', flexShrink: 0 }}>
