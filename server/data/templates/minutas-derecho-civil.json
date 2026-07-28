@@ -7740,5 +7740,743 @@
       }
     ],
     "template": "DACIÓN EN PAGO\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, se reunieron a saber: {{nombre_acreedor}}, mayor de edad, domiciliado y residente en la ciudad de {{ciudad_acreedor}}, identificado con la cédula de ciudadanía Nº {{cedula_acreedor}}, quien para efectos del presente documento se denominará el ACREEDOR, y {{nombre_deudor}}, también mayor de edad y domiciliado y residente en la ciudad de {{ciudad_deudor}}, identificado con la cédula de ciudadanía Nº {{cedula_deudor}}, quien en lo sucesivo se denominará el DEUDOR, han acordado celebrar un convenio de dación en pago que se regulará por las siguientes cláusulas:\n\nPRIMERA. Obligaciones vencidas.— El DEUDOR debe al ACREEDOR la suma discriminada así: a) la suma de {{valor_capital}} por concepto de capital; b) la cantidad de {{valor_intereses}} por intereses causados; c) por concepto de honorarios de cobro la suma de {{valor_honorarios}}; d) por concepto de gastos la suma de {{valor_gastos}}. La obligación consta en el siguiente documento: {{documento_obligacion}}, y se encuentra vencida desde el {{fecha_vencimiento_obligacion}}, siendo exigible en la actualidad.\n\nSEGUNDA. Iliquidez.— Que debido a su situación económica, el DEUDOR se encuentra imposibilitado para cubrir la suma que adeuda en dinero efectivo.\n\nTERCERA. Dación en pago.— Que como consecuencia de lo anterior, el DEUDOR transfiere a título de dación en pago los siguientes bienes: {{descripcion_bienes_dacion}}.\n\nCUARTA. Valor.— Que para efectos del presente acto se estima el valor de los bienes entregados en {{valor_bienes_dacion}}, quedando, en consecuencia, extinguida la deuda.\n\nQUINTA. Propiedad de los bienes.— El DEUDOR manifiesta ser propietario de los bienes que entrega como dación en pago, que estos no soportan gravamen o limitación alguna de dominio, que están libres de impuestos y contribuciones, que no soportan embargos ni son objeto de pleito pendiente, y en todo caso se obliga a salir en defensa del ACREEDOR si fuere perturbado en su posesión por cualquier motivo, en especial por las causales de saneamiento por evicción y vicios redhibitorios que contempla la ley civil.\n\nSEXTA. Aplicación analógica.— Al presente acto serán aplicables, por analogía, las normas reguladoras del contrato de compraventa.\n\nSÉPTIMA. Entrega material.— El DEUDOR se obliga a entregar materialmente los bienes dados en pago dentro de los treinta (30) días siguientes a la firma del presente documento.\n\nOCTAVA. Condición resolutoria.— La dación en pago que por este documento se efectúa se condiciona, en todo caso, a la entrega real y material de los bienes a que alude, bajo las circunstancias anotadas en la cláusula quinta.\n\nNOVENA. Gastos.— Los gastos que ocasione el otorgamiento del presente documento correrán por cuenta de {{responsable_gastos}}.\n\n\nEl deudor: ________________________\n\nEl acreedor: ______________________"
+  },
+  {
+    "id": "arrendamiento-local-comercial",
+    "title": "Modelo de contrato de arrendamiento de local comercial",
+    "subtitle": "Uso y Goce",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_arrendador",
+        "label": "Nombre Completo o Razón Social del Arrendador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_arrendador",
+        "label": "Cédula o NIT del Arrendador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_arrendador",
+        "label": "Ciudad de Expedición de la Cédula del Arrendador (si aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_arrendatario",
+        "label": "Nombre Completo o Razón Social del Arrendatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_arrendatario",
+        "label": "Cédula o NIT del Arrendatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_arrendatario",
+        "label": "Ciudad de Expedición de la Cédula del Arrendatario (si aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_inmueble",
+        "label": "Dirección del Local Comercial",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_inmueble",
+        "label": "Ciudad donde está Ubicado el Local",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "linderos_inmueble",
+        "label": "Linderos del Local (si se conocen)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "destinacion_comercial",
+        "label": "Actividad Comercial a la que se Destinará el Local (ej: venta de ropa, restaurante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion_meses",
+        "label": "Duración del Contrato en Meses",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia_inicio",
+        "label": "Día de Inicio del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes_inicio",
+        "label": "Mes de Inicio del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio_inicio",
+        "label": "Año de Inicio del Contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "canon_letras",
+        "label": "Canon de Arrendamiento Mensual en Letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "canon_numeros",
+        "label": "Canon de Arrendamiento Mensual en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lugar_pago",
+        "label": "Lugar de Pago del Canon",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "porcentaje_reajuste",
+        "label": "Porcentaje de Reajuste Anual del Canon",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "pago_servicios",
+        "label": "Quién Paga los Servicios Públicos (arrendador/arrendatario)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_arrendador",
+        "label": "Dirección de Notificaciones del Arrendador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_arrendatario",
+        "label": "Dirección de Notificaciones del Arrendatario",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO DE ARRENDAMIENTO DE LOCAL COMERCIAL\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos: {{nombre_arrendador}}, identificado con cédula de ciudadanía o NIT número {{cedula_arrendador}} de {{expedicion_arrendador}}, en adelante EL ARRENDADOR, de una parte; y {{nombre_arrendatario}}, identificado con cédula de ciudadanía o NIT número {{cedula_arrendatario}} de {{expedicion_arrendatario}}, en adelante EL ARRENDATARIO, de otra parte, acuerdan celebrar el presente contrato de arrendamiento de local comercial, regido por las siguientes cláusulas:\n\nPRIMERA. OBJETO. El arrendador entrega en arrendamiento al arrendatario, y este recibe a título de arrendamiento, el local comercial ubicado en {{direccion_inmueble}}, en la ciudad de {{ciudad_inmueble}}, alinderado así: {{linderos_inmueble}}.\n\nSEGUNDA. DESTINACIÓN. El local se destinará exclusivamente para el desarrollo de la siguiente actividad comercial: {{destinacion_comercial}}. El arrendatario no podrá cambiar la destinación del inmueble sin autorización previa y escrita del arrendador.\n\nTERCERA. DURACIÓN. El presente contrato tendrá una duración de {{duracion_meses}} meses, contados a partir del {{dia_inicio}} de {{mes_inicio}} de {{anio_inicio}}.\n\nCUARTA. DESAHUCIO Y PRÓRROGA. De conformidad con el artículo 520 del Código de Comercio, si el arrendador no desea continuar con el arrendamiento a la expiración del término contractual, deberá desahuciar al arrendatario con no menos de seis (6) meses de anticipación a la fecha de terminación. De no hacerlo, el contrato se entenderá renovado o prorrogado en las mismas condiciones y por el mismo término inicial.\n\nQUINTA. DERECHO DE RENOVACIÓN. En los términos del artículo 518 del Código de Comercio, si el arrendatario ha ocupado el local por no menos de dos (2) años consecutivos con el mismo establecimiento de comercio, tendrá derecho a la renovación del contrato al vencimiento del mismo, salvo que se presente alguna de las causales previstas en la ley: (i) incumplimiento del contrato por parte del arrendatario; (ii) que el arrendador necesite el inmueble para su propia habitación o para un establecimiento suyo destinado a una empresa sustancialmente distinta; o (iii) que el inmueble deba ser reconstruido, reparado con obras que requieran su desocupación, o demolido por su estado de ruina o para la construcción de una obra nueva.\n\nSEXTA. CANON DE ARRENDAMIENTO. El canon de arrendamiento mensual es la suma de {{canon_letras}} ({{canon_numeros}}), que el arrendatario pagará anticipadamente dentro de los primeros cinco (5) días de cada mes, en {{lugar_pago}}.\n\nSÉPTIMA. REAJUSTE. El canon de arrendamiento se reajustará anualmente en un {{porcentaje_reajuste}} por ciento ({{porcentaje_reajuste}}%), sin exceder los límites que llegare a establecer la ley para este tipo de inmuebles.\n\nOCTAVA. SERVICIOS PÚBLICOS. El pago de los servicios públicos domiciliarios del inmueble estará a cargo de: {{pago_servicios}}.\n\nNOVENA. CESIÓN Y SUBARRIENDO. El arrendatario no podrá ceder este contrato ni subarrendar el local, total o parcialmente, sin el consentimiento previo y escrito del arrendador.\n\nDÉCIMA. ESTADO DEL INMUEBLE. El arrendatario declara recibir el local en buen estado, comprometiéndose a devolverlo en las mismas condiciones, salvo el deterioro natural por el uso legítimo. Ninguna mejora podrá realizarse sin autorización escrita del arrendador, y el arrendatario no tendrá derecho de retención sobre el inmueble por razón de mejoras.\n\nDÉCIMA PRIMERA. TERMINACIÓN POR INCUMPLIMIENTO. El arrendador podrá dar por terminado el contrato de forma anticipada en caso de mora en el pago del canon o de los servicios públicos, uso indebido del inmueble, o incumplimiento de cualquiera de las obligaciones aquí pactadas, sin perjuicio de las acciones legales a que haya lugar.\n\nDÉCIMA SEGUNDA. MÉRITO EJECUTIVO. Las obligaciones dinerarias derivadas del presente contrato prestarán mérito ejecutivo de conformidad con el Código General del Proceso.\n\nDÉCIMA TERCERA. NORMAS APLICABLES. Este contrato se rige por las disposiciones de los artículos 518 a 524 del Código de Comercio y demás normas civiles y comerciales aplicables. Las estipulaciones contrarias a lo dispuesto en dichos artículos no producirán efectos, por tratarse de normas de orden público.\n\nDÉCIMA CUARTA. NOTIFICACIONES. Las partes acuerdan las siguientes direcciones para recibir notificaciones judiciales y extrajudiciales: el arrendador en {{direccion_notificacion_arrendador}}, y el arrendatario en {{direccion_notificacion_arrendatario}}.\n\nSe firma en la ciudad de {{ciudad}}, en dos ejemplares, quedando cada parte con uno de ellos.\n\nEL ARRENDADOR\n_________________________\n{{nombre_arrendador}}\nC.C./NIT: {{cedula_arrendador}}\n\nEL ARRENDATARIO\n_________________________\n{{nombre_arrendatario}}\nC.C./NIT: {{cedula_arrendatario}}"
+  },
+  {
+    "id": "mutuo-civil-simple",
+    "title": "Modelo de contrato de mutuo civil simple (préstamo de dinero sin garantía real)",
+    "subtitle": "Garantías y Crédito",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_mutuante",
+        "label": "Nombre Completo del Mutuante (quien presta el dinero)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_mutuante",
+        "label": "Cédula del Mutuante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_mutuante",
+        "label": "Ciudad de Domicilio del Mutuante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_mutuario",
+        "label": "Nombre Completo del Mutuario (quien recibe el préstamo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_mutuario",
+        "label": "Cédula del Mutuario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_mutuario",
+        "label": "Ciudad de Domicilio del Mutuario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_prestamo_letras",
+        "label": "Valor del Préstamo en Letras (ej: cinco millones de pesos)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_prestamo_numeros",
+        "label": "Valor del Préstamo en Números (ej: 5.000.000)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "forma_entrega_dinero",
+        "label": "Cómo se Entrega el Dinero (ej: efectivo, transferencia bancaria)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_vencimiento",
+        "label": "Fecha en que Debe Devolverse el Dinero",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "forma_pago_cuotas",
+        "label": "Forma de Devolución (ej: un solo pago / cuotas mensuales de $500.000)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "interes_corriente",
+        "label": "Tasa de Interés Pactada en Porcentaje Mensual (ej: 1.5). Si no se pacta, escriba: Ninguno",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "interes_mora",
+        "label": "Tasa de Interés de Mora en Porcentaje Mensual (ej: 2)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_mutuante",
+        "label": "Dirección de Notificaciones del Mutuante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_mutuario",
+        "label": "Dirección de Notificaciones del Mutuario",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO DE MUTUO CIVIL\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos {{nombre_mutuante}}, identificado con cédula de ciudadanía número {{cedula_mutuante}}, domiciliado en {{domicilio_mutuante}}, en adelante EL MUTUANTE, de una parte; y {{nombre_mutuario}}, identificado con cédula de ciudadanía número {{cedula_mutuario}}, domiciliado en {{domicilio_mutuario}}, en adelante EL MUTUARIO, de otra parte, hemos convenido celebrar el presente contrato de mutuo, de conformidad con el artículo 2221 del Código Civil, regido por las siguientes cláusulas:\n\nPRIMERA. OBJETO. EL MUTUANTE entrega a título de mutuo a EL MUTUARIO la suma de {{valor_prestamo_letras}} ({{valor_prestamo_numeros}}), mediante {{forma_entrega_dinero}}, suma que EL MUTUARIO reconoce haber recibido a su entera satisfacción en este acto, y que se obliga a restituir en los términos de este contrato. De conformidad con el artículo 2222 del Código Civil, este contrato se perfecciona por la tradición del dinero, la cual transfiere el dominio del mismo a EL MUTUARIO.\n\nSEGUNDA. PLAZO Y FORMA DE PAGO. EL MUTUARIO se obliga a restituir la suma prestada a más tardar el {{fecha_vencimiento}}, mediante {{forma_pago_cuotas}}.\n\nTERCERA. INTERESES. Sobre la suma prestada se pactan intereses corrientes del {{interes_corriente}}% mensual. En caso de mora, se pactan intereses moratorios del {{interes_mora}}% mensual. Las partes declaran expresamente que ninguna de las tasas de interés aquí pactadas excede el límite de la tasa de usura vigente al momento de la suscripción del presente contrato, certificada mensualmente por la Superintendencia Financiera de Colombia, de conformidad con el artículo 884 del Código de Comercio y el artículo 305 del Código Penal. En caso de que, por variación de dicha certificación, alguna de las tasas aquí pactadas llegare a exceder el límite legal vigente, se entenderá automáticamente reducida al máximo permitido por la ley.\n\nCUARTA. PAGO ANTICIPADO. EL MUTUARIO podrá abonar o cancelar total o anticipadamente la obligación en cualquier tiempo, sin que ello genere sanción o penalidad alguna a su cargo.\n\nQUINTA. MÉRITO EJECUTIVO. El presente contrato, junto con la prueba de la entrega del dinero, prestará mérito ejecutivo para su cobro por la vía judicial correspondiente, de conformidad con el Código General del Proceso.\n\nSEXTA. GASTOS. Los gastos que llegare a generar el cobro judicial o extrajudicial de esta obligación, incluyendo honorarios de abogado, serán a cargo de EL MUTUARIO, en caso de incumplimiento.\n\nSÉPTIMA. NOTIFICACIONES. Las partes acuerdan las siguientes direcciones para recibir notificaciones judiciales y extrajudiciales: EL MUTUANTE en {{direccion_notificacion_mutuante}}, y EL MUTUARIO en {{direccion_notificacion_mutuario}}.\n\nPara constancia se firma en la ciudad de {{ciudad}}, en dos ejemplares del mismo tenor, quedando cada parte con uno de ellos.\n\nEL MUTUANTE\n_________________________\n{{nombre_mutuante}}\nC.C. Nº: {{cedula_mutuante}}\n\nEL MUTUARIO\n_________________________\n{{nombre_mutuario}}\nC.C. Nº: {{cedula_mutuario}}"
+  },
+  {
+    "id": "mandato-civil",
+    "title": "Modelo de contrato de mandato civil",
+    "subtitle": "Servicios y Obra",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_mandante",
+        "label": "Nombre Completo del Mandante (quien confía el encargo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_mandante",
+        "label": "Cédula del Mandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_mandante",
+        "label": "Ciudad de Domicilio del Mandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_mandatario",
+        "label": "Nombre Completo del Mandatario (quien acepta el encargo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_mandatario",
+        "label": "Cédula del Mandatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_mandatario",
+        "label": "Ciudad de Domicilio del Mandatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "objeto_mandato",
+        "label": "Descripción del Negocio o Gestión Encomendada",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "con_representacion",
+        "label": "El Mandatario Actuará a Nombre del Mandante? (con representación / sin representación)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "remuneracion",
+        "label": "Remuneración Pactada (escriba el valor, o 'gratuito' si no hay pago)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion_mandato",
+        "label": "Duración o Plazo del Mandato (ej: 6 meses, hasta que se cumpla la gestión)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_mandante",
+        "label": "Dirección de Notificaciones del Mandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_mandatario",
+        "label": "Dirección de Notificaciones del Mandatario",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO DE MANDATO CIVIL\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos {{nombre_mandante}}, identificado con cédula de ciudadanía número {{cedula_mandante}}, domiciliado en {{domicilio_mandante}}, en adelante EL MANDANTE, de una parte; y {{nombre_mandatario}}, identificado con cédula de ciudadanía número {{cedula_mandatario}}, domiciliado en {{domicilio_mandatario}}, en adelante EL MANDATARIO, de otra parte, hemos convenido celebrar el presente contrato de mandato, de conformidad con el artículo 2142 del Código Civil, regido por las siguientes cláusulas:\n\nPRIMERA. OBJETO. EL MANDANTE confía a EL MANDATARIO, quien acepta, la gestión del siguiente negocio: {{objeto_mandato}}.\n\nSEGUNDA. REPRESENTACIÓN. EL MANDATARIO actuará {{con_representacion}} frente a los terceros con quienes deba relacionarse en desarrollo del presente mandato.\n\nTERCERA. REMUNERACIÓN. De conformidad con el artículo 2143 del Código Civil, el presente mandato se pacta de la siguiente manera: {{remuneracion}}.\n\nCUARTA. OBLIGACIONES DEL MANDATARIO. EL MANDATARIO se obliga a cumplir el encargo con la diligencia de un buen padre de familia, ciñéndose estrictamente a los términos del mandato, y a rendir cuentas de su gestión a EL MANDANTE, de conformidad con el artículo 2181 del Código Civil.\n\nQUINTA. OBLIGACIONES DEL MANDANTE. EL MANDANTE se obliga a proveer a EL MANDATARIO de los medios necesarios para la ejecución del mandato, a reembolsarle los gastos razonables causados en el cumplimiento del encargo, y a pagar la remuneración pactada en la cláusula tercera.\n\nSEXTA. DURACIÓN Y TERMINACIÓN. El presente mandato tendrá una duración de {{duracion_mandato}}. El mandato podrá terminar, además, por revocación del mandante, renuncia del mandatario, muerte de cualquiera de las partes, o por las demás causales previstas en el artículo 2189 del Código Civil.\n\nSÉPTIMA. RENDICIÓN DE CUENTAS. Al finalizar el mandato, o cuando el mandante lo requiera, EL MANDATARIO deberá presentar un informe detallado de su gestión, incluyendo los gastos incurridos y los resultados obtenidos.\n\nOCTAVA. NORMAS APLICABLES. El presente contrato se rige por lo dispuesto en los artículos 2142 a 2199 del Código Civil colombiano y demás normas civiles aplicables.\n\nNOVENA. NOTIFICACIONES. Las partes acuerdan las siguientes direcciones para recibir notificaciones judiciales y extrajudiciales: EL MANDANTE en {{direccion_notificacion_mandante}}, y EL MANDATARIO en {{direccion_notificacion_mandatario}}.\n\nPara constancia se firma en la ciudad de {{ciudad}}, en dos ejemplares del mismo tenor, quedando cada parte con uno de ellos.\n\nEL MANDANTE\n_________________________\n{{nombre_mandante}}\nC.C. Nº: {{cedula_mandante}}\n\nEL MANDATARIO\n_________________________\n{{nombre_mandatario}}\nC.C. Nº: {{cedula_mandatario}}"
+  },
+  {
+    "id": "contrato-mandato-civil",
+    "title": "Modelo de contrato de mandato civil",
+    "subtitle": "Servicios y Obra",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_mandante",
+        "label": "Nombre Completo del Mandante (quien encarga la gestión)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_mandante",
+        "label": "Cédula del Mandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_mandante",
+        "label": "Ciudad de Domicilio del Mandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_mandatario",
+        "label": "Nombre Completo del Mandatario (quien recibe el encargo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_mandatario",
+        "label": "Cédula del Mandatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_mandatario",
+        "label": "Ciudad de Domicilio del Mandatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_mandato",
+        "label": "Tipo de Mandato (general o especial)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "objeto_mandato",
+        "label": "Descripción del Negocio o Gestión Encomendada",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "con_representacion",
+        "label": "¿El mandatario actuará en nombre y representación del mandante? (sí/no)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "remuneracion",
+        "label": "Remuneración (escriba 'gratuito' o el valor pactado)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion_mandato",
+        "label": "Duración del Mandato (ej: seis meses, o hasta cumplir el encargo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_mandante",
+        "label": "Dirección de Notificaciones del Mandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_mandatario",
+        "label": "Dirección de Notificaciones del Mandatario",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO DE MANDATO\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos {{nombre_mandante}}, identificado con cédula de ciudadanía número {{cedula_mandante}}, domiciliado en {{domicilio_mandante}}, en adelante EL MANDANTE, de una parte; y {{nombre_mandatario}}, identificado con cédula de ciudadanía número {{cedula_mandatario}}, domiciliado en {{domicilio_mandatario}}, en adelante EL MANDATARIO, de otra parte, hemos convenido celebrar el presente contrato de mandato, de conformidad con el artículo 2142 del Código Civil, regido por las siguientes cláusulas:\n\nPRIMERA. OBJETO. EL MANDANTE confía a EL MANDATARIO, quien acepta, la gestión del siguiente negocio: {{objeto_mandato}}.\n\nSEGUNDA. CLASE DE MANDATO. De conformidad con el artículo 2156 del Código Civil, el presente es un mandato de carácter {{tipo_mandato}}.\n\nTERCERA. REPRESENTACIÓN. EL MANDATARIO actuará en nombre y representación de EL MANDANTE: {{con_representacion}}. En caso afirmativo, los actos ejecutados por EL MANDATARIO dentro de los límites del presente mandato obligarán directamente a EL MANDANTE frente a terceros, en los términos del artículo 1505 del Código Civil.\n\nCUARTA. REMUNERACIÓN. De conformidad con el artículo 2143 del Código Civil, el presente mandato es: {{remuneracion}}.\n\nQUINTA. OBLIGACIONES DEL MANDATARIO. EL MANDATARIO se obliga a ejecutar el encargo con la diligencia de un buen padre de familia, ciñéndose estrictamente a los términos del mandato, a rendir cuentas de su gestión, y a entregar a EL MANDANTE cuanto haya recibido en virtud del mandato, incluso lo que el mandante no le debiera.\n\nSEXTA. OBLIGACIONES DEL MANDANTE. EL MANDANTE se obliga a proveer a EL MANDATARIO de lo necesario para la ejecución del mandato, a reembolsarle los gastos razonables causados por la ejecución del encargo, y a pagar la remuneración pactada, si la hubiere.\n\nSÉPTIMA. DURACIÓN. El presente mandato tendrá una duración de {{duracion_mandato}}.\n\nOCTAVA. TERMINACIÓN. El presente mandato terminará por el cumplimiento del negocio para el que fue constituido, por revocación de EL MANDANTE, por renuncia de EL MANDATARIO, por muerte de cualquiera de las partes, o por mutuo acuerdo, de conformidad con las causales previstas en el Código Civil.\n\nNOVENA. RENDICIÓN DE CUENTAS. Al término del mandato, EL MANDATARIO deberá rendir cuenta detallada de su gestión a EL MANDANTE.\n\nDÉCIMA. NOTIFICACIONES. Las partes acuerdan las siguientes direcciones para recibir notificaciones judiciales y extrajudiciales: EL MANDANTE en {{direccion_notificacion_mandante}}, y EL MANDATARIO en {{direccion_notificacion_mandatario}}.\n\nPara constancia se firma en la ciudad de {{ciudad}}, en dos ejemplares del mismo tenor, quedando cada parte con uno de ellos.\n\nEL MANDANTE\n_________________________\n{{nombre_mandante}}\nC.C. Nº: {{cedula_mandante}}\n\nEL MANDATARIO\n_________________________\n{{nombre_mandatario}}\nC.C. Nº: {{cedula_mandatario}}"
+  },
+  {
+    "id": "cesion-creditos-ordinaria",
+    "title": "Modelo de contrato de cesión de créditos",
+    "subtitle": "Litigios y Créditos",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se firma el contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_cedente",
+        "label": "Nombre Completo del Cedente (acreedor actual que transfiere el crédito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_cedente",
+        "label": "Cédula del Cedente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_cedente",
+        "label": "Ciudad de Domicilio del Cedente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_cesionario",
+        "label": "Nombre Completo del Cesionario (nuevo acreedor)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_cesionario",
+        "label": "Cédula del Cesionario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_cesionario",
+        "label": "Ciudad de Domicilio del Cesionario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_deudor",
+        "label": "Nombre Completo del Deudor Cedido",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_credito",
+        "label": "Descripción del Crédito Cedido (origen, título, fecha)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "valor_credito_letras",
+        "label": "Valor del Crédito en Letras",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "valor_credito_numeros",
+        "label": "Valor del Crédito en Números",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "precio_cesion_letras",
+        "label": "Precio de la Cesión en Letras (si es gratuita, escriba: a título gratuito)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "precio_cesion_numeros",
+        "label": "Precio de la Cesión en Números (si es gratuita, escriba: N/A)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "forma_pago_cesion",
+        "label": "Forma de Pago del Precio de la Cesión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_cedente",
+        "label": "Dirección de Notificaciones del Cedente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_cesionario",
+        "label": "Dirección de Notificaciones del Cesionario",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO DE CESIÓN DE CRÉDITOS\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, entre los suscritos {{nombre_cedente}}, identificado con cédula de ciudadanía número {{cedula_cedente}}, domiciliado en {{domicilio_cedente}}, en adelante EL CEDENTE, de una parte; y {{nombre_cesionario}}, identificado con cédula de ciudadanía número {{cedula_cesionario}}, domiciliado en {{domicilio_cesionario}}, en adelante EL CESIONARIO, de otra parte, hemos convenido celebrar el presente contrato de cesión de créditos, de conformidad con el artículo 1959 y siguientes del Código Civil, regido por las siguientes cláusulas:\n\nPRIMERA. OBJETO. EL CEDENTE transfiere a título de cesión a EL CESIONARIO, quien acepta, el crédito que tiene a su favor y en contra de {{nombre_deudor}}, en adelante EL DEUDOR CEDIDO, consistente en: {{descripcion_credito}}, por un valor de {{valor_credito_letras}} ({{valor_credito_numeros}}).\n\nSEGUNDA. PRECIO DE LA CESIÓN. La presente cesión se realiza por la suma de {{precio_cesion_letras}} ({{precio_cesion_numeros}}), que EL CESIONARIO pagará a EL CEDENTE mediante {{forma_pago_cesion}}.\n\nTERCERA. ENTREGA DEL TÍTULO. En este acto, de conformidad con el artículo 1959 del Código Civil, EL CEDENTE hace entrega material a EL CESIONARIO del título en que consta el crédito cedido, o, en caso de no constar en documento, otorga el presente instrumento como título para todos los efectos legales.\n\nCUARTA. NOTIFICACIÓN AL DEUDOR. De conformidad con los artículos 1960 y 1961 del Código Civil, la presente cesión no producirá efectos frente a EL DEUDOR CEDIDO ni frente a terceros mientras no le sea notificada por EL CESIONARIO con exhibición del título, o sea aceptada expresamente por este. Las partes se obligan a adelantar dicha notificación dentro de los cinco (5) días siguientes a la firma del presente contrato.\n\nQUINTA. GARANTÍA. EL CEDENTE garantiza la existencia y titularidad del crédito cedido al momento de la cesión, pero no garantiza la solvencia del deudor, salvo pacto expreso en contrario.\n\nSEXTA. EFECTOS DE LA CESIÓN. La cesión comprende el crédito con todos sus privilegios, garantías, intereses y accesorios, de conformidad con el artículo 1964 del Código Civil, sin que se extinga ni novè la obligación primitiva.\n\nSÉPTIMA. MÉRITO EJECUTIVO. El presente contrato, junto con el título del crédito cedido y la constancia de notificación al deudor, prestará mérito ejecutivo para su cobro por la vía judicial correspondiente.\n\nOCTAVA. NOTIFICACIONES. Las partes acuerdan las siguientes direcciones para recibir notificaciones judiciales y extrajudiciales: EL CEDENTE en {{direccion_notificacion_cedente}}, y EL CESIONARIO en {{direccion_notificacion_cesionario}}.\n\nPara constancia se firma en la ciudad de {{ciudad}}, en dos ejemplares del mismo tenor, quedando cada parte con uno de ellos.\n\nEL CEDENTE\n_________________________\n{{nombre_cedente}}\nC.C. Nº: {{cedula_cedente}}\n\nEL CESIONARIO\n_________________________\n{{nombre_cesionario}}\nC.C. Nº: {{cedula_cesionario}}"
+  },
+  {
+    "id": "estatutos-corporacion-asociacion",
+    "title": "Modelo de estatutos para constitución de corporación o asociación sin ánimo de lucro",
+    "subtitle": "Personas Jurídicas",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad donde se constituye",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_asociacion",
+        "label": "Nombre de la Corporación o Asociación",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_asociacion",
+        "label": "Ciudad de Domicilio Principal de la Asociación",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "objeto_social",
+        "label": "Objeto Social (fines que persigue la asociación)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "duracion_asociacion",
+        "label": "Duración (ej: indefinida, o un número de años)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "patrimonio_inicial",
+        "label": "Patrimonio Inicial (valor y origen de los aportes fundacionales)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fundador_1_nombre",
+        "label": "Nombre Completo del Primer Fundador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fundador_1_cedula",
+        "label": "Cédula del Primer Fundador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fundador_2_nombre",
+        "label": "Nombre Completo del Segundo Fundador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fundador_2_cedula",
+        "label": "Cédula del Segundo Fundador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "otros_fundadores",
+        "label": "Nombres y Cédulas de Otros Fundadores Adicionales (si no hay más, escriba: Ninguno)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "nombre_representante_legal",
+        "label": "Nombre Completo del Representante Legal Inicial",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_representante_legal",
+        "label": "Cédula del Representante Legal Inicial",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "quorum_decisorio",
+        "label": "Quórum Decisorio de la Asamblea General (ej: mayoría simple de los asociados)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "destino_remanente",
+        "label": "Destino del Remanente en Caso de Disolución (ej: entidad sin ánimo de lucro de objeto similar)",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "ESTATUTOS DE CONSTITUCIÓN\n{{nombre_asociacion}}\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, los suscritos {{fundador_1_nombre}}, identificado con cédula de ciudadanía número {{fundador_1_cedula}}, y {{fundador_2_nombre}}, identificado con cédula de ciudadanía número {{fundador_2_cedula}}, junto con: {{otros_fundadores}}, en ejercicio del derecho de libre asociación consagrado en el artículo 38 de la Constitución Política, y de conformidad con el artículo 633 y siguientes del Código Civil, hemos decidido constituir una corporación o asociación sin ánimo de lucro, la cual se regirá por los siguientes estatutos:\n\nARTÍCULO PRIMERO. NATURALEZA, DENOMINACIÓN Y DOMICILIO. Constitúyese una persona jurídica de derecho privado, sin ánimo de lucro, de naturaleza asociativa, que se denominará {{nombre_asociacion}}, con domicilio principal en la ciudad de {{domicilio_asociacion}}, sin perjuicio de que pueda desarrollar sus actividades en otros lugares del territorio nacional.\n\nARTÍCULO SEGUNDO. OBJETO SOCIAL. La asociación tendrá como objeto social: {{objeto_social}}. La entidad no perseguirá ánimo de lucro, y los excedentes que llegare a generar se destinarán exclusivamente al cumplimiento de su objeto social, sin que en ningún caso puedan repartirse entre los asociados.\n\nARTÍCULO TERCERO. DURACIÓN. La duración de la asociación será {{duracion_asociacion}}, contada a partir de la fecha del presente documento.\n\nARTÍCULO CUARTO. PATRIMONIO. El patrimonio inicial de la asociación estará constituido por: {{patrimonio_inicial}}, sin perjuicio de los demás bienes y recursos que adquiera en el desarrollo de su objeto social, por donaciones, aportes de sus miembros o cualquier otro medio lícito.\n\nARTÍCULO QUINTO. DE LOS ASOCIADOS. Podrán ser miembros de la asociación las personas naturales o jurídicas que compartan su objeto social y sean admitidas conforme al reglamento interno que para tal efecto expida la Asamblea General.\n\nARTÍCULO SEXTO. DERECHOS Y DEBERES DE LOS ASOCIADOS. Son derechos de los asociados: participar con voz y voto en la Asamblea General, elegir y ser elegidos para los órganos de dirección, y las demás que establezca el reglamento interno. Son deberes: cumplir los presentes estatutos y las decisiones de los órganos sociales, y contribuir al cumplimiento del objeto social.\n\nARTÍCULO SÉPTIMO. PÉRDIDA DE LA CALIDAD DE ASOCIADO. La calidad de asociado se pierde por renuncia voluntaria, exclusión decretada por la Asamblea General conforme al reglamento interno, o muerte, en el caso de personas naturales.\n\nARTÍCULO OCTAVO. ÓRGANOS DE DIRECCIÓN Y ADMINISTRACIÓN. La asociación tendrá los siguientes órganos: la Asamblea General de Asociados, como máximo órgano de dirección; la Junta Directiva, como órgano de administración; y el Representante Legal, como órgano de administración y ejecución.\n\nARTÍCULO NOVENO. ASAMBLEA GENERAL. La Asamblea General estará conformada por la totalidad de los asociados hábiles, y sus decisiones se adoptarán con el siguiente quórum decisorio: {{quorum_decisorio}}. Son funciones de la Asamblea General: aprobar y reformar los presentes estatutos, elegir a los miembros de la Junta Directiva y al Representante Legal, aprobar el presupuesto anual, y decretar la disolución de la asociación.\n\nARTÍCULO DÉCIMO. JUNTA DIRECTIVA. La Junta Directiva será elegida por la Asamblea General y tendrá a su cargo la administración de la asociación entre reuniones de Asamblea, conforme al reglamento interno que esta expida.\n\nARTÍCULO DÉCIMO PRIMERO. REPRESENTANTE LEGAL. Actuará como primer Representante Legal de la asociación {{nombre_representante_legal}}, identificado con cédula de ciudadanía número {{cedula_representante_legal}}, quien tendrá la representación judicial y extrajudicial de la entidad, sin perjuicio de las facultades que la Asamblea General le confiera o restrinja mediante el reglamento interno.\n\nARTÍCULO DÉCIMO SEGUNDO. RÉGIMEN ECONÓMICO. Los bienes y recursos de la asociación se destinarán exclusivamente al cumplimiento de su objeto social. En ningún caso se distribuirán utilidades, excedentes o remanentes entre los asociados, sus directivos o fundadores, ni siquiera al momento de su retiro o de la disolución de la entidad.\n\nARTÍCULO DÉCIMO TERCERO. REFORMA DE ESTATUTOS. Los presentes estatutos podrán ser reformados por la Asamblea General, con el quórum decisorio establecido en el artículo noveno.\n\nARTÍCULO DÉCIMO CUARTO. DISOLUCIÓN Y LIQUIDACIÓN. La asociación se disolverá por decisión de la Asamblea General, por vencimiento del término de duración, o por las demás causales previstas en la ley. En caso de disolución, una vez cancelado el pasivo externo, el remanente de los bienes se destinará a: {{destino_remanente}}.\n\nARTÍCULO DÉCIMO QUINTO. NORMAS APLICABLES. La asociación se regirá por los presentes estatutos, por el artículo 38 de la Constitución Política, por el artículo 633 y siguientes del Código Civil, y por las normas del Decreto 2150 de 1995 y demás disposiciones concordantes sobre entidades sin ánimo de lucro.\n\nEn constancia, se firma en la ciudad de {{ciudad}}, en la fecha indicada.\n\n_________________________\n{{fundador_1_nombre}}\nC.C. Nº: {{fundador_1_cedula}}\n\n_________________________\n{{fundador_2_nombre}}\nC.C. Nº: {{fundador_2_cedula}}"
   }
 ]
