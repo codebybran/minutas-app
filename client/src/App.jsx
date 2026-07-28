@@ -2547,6 +2547,47 @@ const FIELD_OPTIONS = {
 }
 
 const DATOS_PRUEBA = {
+  'mutuo-civil-simple': {
+    ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
+    nombre_mutuante: 'Jhon Brandon Martínez Vélez', cedula_mutuante: '1234567890', domicilio_mutuante: 'El Cerrito',
+    nombre_mutuario: 'Alexander García López', cedula_mutuario: '0987654321', domicilio_mutuario: 'Cali',
+    valor_prestamo_letras: 'cinco millones de pesos', valor_prestamo_numeros: '5.000.000',
+    forma_entrega_dinero: 'transferencia bancaria', fecha_vencimiento: 'el 21 de octubre de 2026',
+    forma_pago_cuotas: 'un solo pago al vencimiento', interes_corriente: '1.5', interes_mora: '2',
+    direccion_notificacion_mutuante: 'Calle 4 Sur # 2A-56, El Cerrito', direccion_notificacion_mutuario: 'Carrera 10 # 5-20, Cali',
+  },
+  'contrato-mandato-civil': {
+    ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
+    nombre_mandante: 'Diana Patricia García López', cedula_mandante: '0987654321', domicilio_mandante: 'El Cerrito',
+    nombre_mandatario: 'Jhon Brandon Martínez Vélez', cedula_mandatario: '1234567890', domicilio_mandatario: 'El Cerrito',
+    tipo_mandato: 'especial', objeto_mandato: 'Realizar los trámites de venta del vehículo de placas ABC-123 ante el organismo de tránsito.',
+    con_representacion: 'sí', remuneracion: 'gratuito', duracion_mandato: 'seis meses',
+    direccion_notificacion_mandante: 'Calle 4 Sur # 2A-56, El Cerrito', direccion_notificacion_mandatario: 'Carrera 10 # 5-20, El Cerrito',
+  },
+  'cesion-creditos-ordinaria': {
+    ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
+    nombre_cedente: 'Jhon Brandon Martínez Vélez', cedula_cedente: '1234567890', domicilio_cedente: 'El Cerrito',
+    nombre_cesionario: 'Alexander García López', cedula_cesionario: '0987654321', domicilio_cesionario: 'Cali',
+    nombre_deudor: 'Carlos Andrés García López',
+    descripcion_credito: 'crédito por venta de mercancía según factura No. 4521 del 10 de marzo de 2026',
+    valor_credito_letras: 'tres millones de pesos', valor_credito_numeros: '3.000.000',
+    precio_cesion_letras: 'dos millones ochocientos mil pesos', precio_cesion_numeros: '2.800.000',
+    forma_pago_cesion: 'transferencia bancaria al momento de la firma',
+    direccion_notificacion_cedente: 'Calle 4 Sur # 2A-56, El Cerrito', direccion_notificacion_cesionario: 'Carrera 10 # 5-20, Cali',
+  },
+  'estatutos-corporacion-asociacion': {
+    ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
+    nombre_asociacion: 'Corporación Amigos de El Cerrito', domicilio_asociacion: 'El Cerrito',
+    objeto_social: 'Promover actividades culturales, deportivas y de bienestar comunitario en el municipio.',
+    duracion_asociacion: 'indefinida', patrimonio_inicial: 'quinientos mil pesos aportados en partes iguales por los fundadores',
+    fundador_1_nombre: 'Jhon Brandon Martínez Vélez', fundador_1_cedula: '1234567890',
+    fundador_2_nombre: 'Diana Patricia García López', fundador_2_cedula: '0987654321',
+    otros_fundadores: 'Ninguno',
+    nombre_representante_legal: 'Jhon Brandon Martínez Vélez', cedula_representante_legal: '1234567890',
+    quorum_decisorio: 'mayoría simple de los asociados hábiles presentes',
+    destino_remanente: 'una entidad sin ánimo de lucro de objeto social similar, designada por la Asamblea General',
+  },
+
   'constitucion-patrimonio-familia': {
     ciudad: 'El Cerrito', departamento: 'Valle del Cauca', dia: '21', mes: 'abril', anio: '2026',
     notario: 'Única', circulo: 'El Cerrito',
@@ -7696,6 +7737,27 @@ const DATOS_PRUEBA = {
 }
 
 const PASOS_SIGUIENTE = {
+  'mutuo-civil-simple': [
+    { num:1, titulo:'Firmen el contrato entre las partes', descripcion:'No requiere notaría; basta la firma de ambas partes para que el préstamo sea exigible.' },
+    { num:2, titulo:'Conserven prueba de la entrega del dinero', descripcion:'Guarden el comprobante de transferencia o el recibo de entrega en efectivo, junto con el contrato.' },
+    { num:3, titulo:'Si hay mora, pueden cobrar por vía ejecutiva', descripcion:'El contrato firmado presta mérito ejecutivo para reclamar el pago ante un juez si no se cumple.' },
+  ],
+  'contrato-mandato-civil': [
+    { num:1, titulo:'Defina con claridad el negocio encomendado', descripcion:'Entre más específico sea el objeto del mandato, menos dudas habrá sobre lo que el mandatario puede hacer.' },
+    { num:2, titulo:'Si es con representación, informe a los terceros', descripcion:'El mandatario deberá exhibir este documento ante quienes vaya a tratar en nombre del mandante.' },
+    { num:3, titulo:'Guarden constancia de la rendición de cuentas', descripcion:'Al finalizar la gestión, el mandatario debe entregar un informe de lo realizado.' },
+  ],
+  'cesion-creditos-ordinaria': [
+    { num:1, titulo:'Entreguen el título del crédito', descripcion:'El cedente debe entregar físicamente al cesionario el documento donde consta el crédito.' },
+    { num:2, titulo:'Notifiquen al deudor cedido', descripcion:'Sin esta notificación, la cesión no tiene efectos frente al deudor y este puede seguir pagándole al cedente original.' },
+    { num:3, titulo:'Conserven prueba de la notificación', descripcion:'Guarden copia de la carta o acta de notificación, útil si más adelante hay que cobrar judicialmente.' },
+  ],
+  'estatutos-corporacion-asociacion': [
+    { num:1, titulo:'Reúnan mínimo dos fundadores', descripcion:'La ley exige al menos dos personas para constituir una asociación o corporación.' },
+    { num:2, titulo:'Registren el documento en la Cámara de Comercio', descripcion:'La personalidad jurídica se obtiene con el registro, no se requiere trámite ante Gobernación en la mayoría de los casos.' },
+    { num:3, titulo:'Obtengan el NIT ante la DIAN', descripcion:'Una vez registrada, la asociación debe tramitar su Número de Identificación Tributaria.' },
+  ],
+
   'constitucion-patrimonio-familia': [
     { num:1, titulo:'Reúna los documentos del inmueble', descripcion:'Necesita la escritura de adquisición, el certificado de tradición y libertad, y las cédulas de los comparecientes.' },
     { num:2, titulo:'Acuda a una Notaría con este modelo', descripcion:'El notario redacta la escritura pública definitiva a partir de estos datos.' },
