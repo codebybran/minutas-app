@@ -10507,15 +10507,16 @@ function AppContent() {
 
   const camposConError = Object.keys(errores).filter(k => errores[k]).length
   const todasLasMinutas = categories.flatMap(cat => cat.minutas.map(m => ({ ...m, catId: cat.id, catName: cat.name })))
-  const textoBusqueda = busqueda.trim().toLowerCase()
+  const quitarTildes = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  const textoBusqueda = quitarTildes(busqueda.trim().toLowerCase())
   const minutasFiltradas = textoBusqueda ? todasLasMinutas.filter(m =>
-    m.title.toLowerCase().includes(textoBusqueda) ||
-    (m.subtitle || '').toLowerCase().includes(textoBusqueda) ||
-    (m.catName || '').toLowerCase().includes(textoBusqueda)
+    quitarTildes(m.title.toLowerCase()).includes(textoBusqueda) ||
+    quitarTildes((m.subtitle || '').toLowerCase()).includes(textoBusqueda) ||
+    quitarTildes((m.catName || '').toLowerCase()).includes(textoBusqueda)
   ) : []
   const palabrasBusqueda = textoBusqueda.split(/\s+/).filter(p => p.length > 2)
   const sugerencias = (textoBusqueda && minutasFiltradas.length === 0) ? todasLasMinutas.filter(m => {
-    const texto = (m.title + ' ' + (m.subtitle || '') + ' ' + (m.catName || '')).toLowerCase()
+    const texto = quitarTildes((m.title + ' ' + (m.subtitle || '') + ' ' + (m.catName || '')).toLowerCase())
     return palabrasBusqueda.some(p => texto.includes(p))
   }).slice(0, 5) : []
 
