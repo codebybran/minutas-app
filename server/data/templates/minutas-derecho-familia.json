@@ -5856,5 +5856,338 @@
       }
     ],
     "template": "SOLICITUD DE MEDIDA DE PROTECCIÓN POR VIOLENCIA INTRAFAMILIAR\n\nSeñor(a)\nComisario(a) de Familia de {{comisaria_destino}}\nE. S. D.\n\n{{nombre_solicitante}}, mayor de edad, identificado(a) con cédula de ciudadanía N°. {{cedula_solicitante}}, con domicilio en {{direccion_solicitante}}, teléfono de contacto {{telefono_solicitante}}, comedidamente me dirijo a su despacho para solicitar MEDIDA DE PROTECCIÓN por hechos de violencia intrafamiliar, con fundamento en los siguientes:\n\nHECHOS\n\n1°. Convivo o comparto núcleo familiar con el señor(a) {{nombre_agresor}}, quien es mi {{relacion_agresor}}.\n\n2°. El día {{fecha_hechos}}, en la dirección {{direccion_hechos}}, ocurrieron los siguientes hechos: {{relato_hechos}}\n\n3°. Estos hechos constituyen actos de violencia intrafamiliar que ponen en riesgo mi integridad física y/o psicológica.\n\nPETICIÓN\n\nCon fundamento en la Ley 294 de 1996, modificada por la Ley 575 de 2000 y la Ley 1257 de 2008, solicito respetuosamente se decrete de manera inmediata la(s) siguiente(s) medida(s) de protección: {{medidas_solicitadas}}\n\nFUNDAMENTOS DE DERECHO\n\nLey 294 de 1996; Ley 575 de 2000; Ley 1257 de 2008.\n\nNOTIFICACIONES\n\nRecibiré notificaciones en {{direccion_solicitante}}, teléfono {{telefono_solicitante}}.\n\nEn {{comisaria_destino}}, a los {{dia}} días del mes de {{mes}} de {{anio}}.\n\nAtentamente,\n\n_______________________________\n{{nombre_solicitante}}\nC.C. N°. {{cedula_solicitante}}"
+  },
+  {
+    "id": "declaracion-union-marital-hecho-notarial",
+    "title": "Escritura Pública de Declaración de Unión Marital de Hecho (por Mutuo Acuerdo)",
+    "subtitle": "Unión Marital de Hecho",
+    "tipo_tramite": "Notarial",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o Número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo Notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_companero_1",
+        "label": "Nombre Completo del Primer Compañero(a) Permanente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_companero_1",
+        "label": "Cédula del Primer Compañero(a)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_companero_1",
+        "label": "Ciudad de Expedición Cédula del Primer Compañero(a)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_anterior_1",
+        "label": "Estado Civil Anterior del Primer Compañero(a) (ej: soltero, divorciado, viudo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_companero_2",
+        "label": "Nombre Completo del Segundo Compañero(a) Permanente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_companero_2",
+        "label": "Cédula del Segundo Compañero(a)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_companero_2",
+        "label": "Ciudad de Expedición Cédula del Segundo Compañero(a)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "estado_civil_anterior_2",
+        "label": "Estado Civil Anterior del Segundo Compañero(a) (ej: soltero, divorciado, viudo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio_union",
+        "label": "Fecha Desde Cuándo Conviven (ej: 15 de marzo de 2022)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "domicilio_comun",
+        "label": "Dirección donde Conviven Actualmente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "declarar_sociedad_patrimonial",
+        "label": "¿También declaran la Sociedad Patrimonial? (sí/no)",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "ESCRITURA PÚBLICA DE DECLARACIÓN DE UNIÓN MARITAL DE HECHO\n\nEn la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, comparecieron los señores {{nombre_companero_1}}, identificado con cédula de ciudadanía N°. {{cedula_companero_1}} de {{expedicion_companero_1}}, de estado civil anterior {{estado_civil_anterior_1}}, y {{nombre_companero_2}}, identificado con cédula de ciudadanía N°. {{cedula_companero_2}} de {{expedicion_companero_2}}, de estado civil anterior {{estado_civil_anterior_2}}, mayores de edad, domiciliados de común acuerdo en {{domicilio_comun}}, quienes de manera libre y espontánea manifestaron lo siguiente:\n\nPRIMERO: Que desde el {{fecha_inicio_union}} conviven de manera permanente y singular, conformando una comunidad de vida bajo el mismo techo, con la finalidad de constituir una familia.\n\nSEGUNDO: Que declaran no tener impedimento legal para contraer matrimonio entre sí, y que, en caso de haber estado casados con anterioridad, sus respectivas sociedades conyugales se encuentran disueltas y liquidadas.\n\nTERCERO: Que de conformidad con el artículo 4° de la Ley 54 de 1990, modificado por el artículo 2° de la Ley 979 de 2005, por medio de este instrumento DECLARAN LA EXISTENCIA DE LA UNIÓN MARITAL DE HECHO entre {{nombre_companero_1}} y {{nombre_companero_2}}, en calidad de compañeros permanentes, a partir de la fecha indicada en la cláusula primera.\n\nCUARTO: Que respecto a la declaración de la sociedad patrimonial de hecho entre compañeros permanentes: {{declarar_sociedad_patrimonial}}. En caso afirmativo, los comparecientes declaran cumplir los requisitos del artículo 2° de la Ley 54 de 1990, modificado por el artículo 1° de la Ley 979 de 2005, para que se presuma la existencia de dicha sociedad patrimonial.\n\nQUINTO: Que la presente declaración se realiza para todos los efectos legales a que haya lugar, incluyendo pero sin limitarse a los relacionados con seguridad social, herencia y régimen patrimonial entre compañeros permanentes.\n\nLeído el presente instrumento, en señal de asentimiento lo firman junto con el Notario.\n\n_______________________________          _______________________________\n{{nombre_companero_1}}                              {{nombre_companero_2}}\nC.C. N°. {{cedula_companero_1}}                    C.C. N°. {{cedula_companero_2}}\n\nEl Notario,\n_______________________________"
+  },
+  {
+    "id": "disolucion-sociedad-patrimonial-umh-mutuo-consentimiento",
+    "title": "Escritura Pública de Disolución de Sociedad Patrimonial de Unión Marital de Hecho por Mutuo Consentimiento (sin sentencia judicial previa)",
+    "subtitle": "Unión Marital de Hecho",
+    "tipo_tramite": "Notarial",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "departamento",
+        "label": "Departamento",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "notario",
+        "label": "Nombre o Número del Notario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "circulo",
+        "label": "Círculo Notarial (ciudad)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_companero_1",
+        "label": "Nombre Completo del Primer Compañero(a) Permanente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_companero_1",
+        "label": "Cédula del Primer Compañero(a)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_companero_1",
+        "label": "Ciudad de Expedición Cédula del Primer Compañero(a)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_companero_2",
+        "label": "Nombre Completo del Segundo Compañero(a) Permanente",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_companero_2",
+        "label": "Cédula del Segundo Compañero(a)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "expedicion_companero_2",
+        "label": "Ciudad de Expedición Cédula del Segundo Compañero(a)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio_union",
+        "label": "Fecha Desde Cuándo Convivieron",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_separacion",
+        "label": "Fecha en que Terminó la Convivencia",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "descripcion_bienes",
+        "label": "Descripción de los Bienes a Repartir (si no hay bienes comunes, escriba: No existen bienes comunes que liquidar)",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "forma_distribucion",
+        "label": "Cómo se Distribuyen los Bienes entre los Compañeros",
+        "type": "textarea",
+        "required": true
+      }
+    ],
+    "template": "ESCRITURA PÚBLICA DE DISOLUCIÓN Y LIQUIDACIÓN DE SOCIEDAD PATRIMONIAL ENTRE COMPAÑEROS PERMANENTES POR MUTUO CONSENTIMIENTO\n\nEn la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, comparecieron los señores {{nombre_companero_1}}, identificado con cédula de ciudadanía N°. {{cedula_companero_1}} de {{expedicion_companero_1}}, y {{nombre_companero_2}}, identificado con cédula de ciudadanía N°. {{cedula_companero_2}} de {{expedicion_companero_2}}, mayores de edad, quienes de manera libre y espontánea manifestaron lo siguiente:\n\nPRIMERO: Que sostuvieron una unión marital de hecho desde el {{fecha_inicio_union}} hasta el {{fecha_separacion}}, fecha en la cual cesó de manera definitiva su convivencia.\n\nSEGUNDO: Que de conformidad con el artículo 5° de la Ley 54 de 1990, modificado por el artículo 3° de la Ley 979 de 2005, por mutuo consentimiento y sin que exista controversia entre ellos, DECLARAN DISUELTA la sociedad patrimonial que entre ellos existió en virtud de dicha unión marital de hecho.\n\nTERCERO: Que los bienes que conforman la sociedad patrimonial a liquidar son los siguientes: {{descripcion_bienes}}.\n\nCUARTO: Que dichos bienes se distribuyen de la siguiente manera: {{forma_distribucion}}.\n\nQUINTO: Que con la suscripción de la presente escritura, los comparecientes declaran a paz y salvo toda obligación patrimonial derivada de la sociedad patrimonial disuelta, sin que quede pendiente reclamación alguna entre ellos por este concepto.\n\nSEXTO: Que los comparecientes fueron advertidos por el suscrito Notario del término de un (1) año, contado a partir de la separación física y definitiva, para adelantar las acciones de disolución y liquidación de la sociedad patrimonial, de conformidad con el artículo 8° de la Ley 54 de 1990.\n\nLeído el presente instrumento, en señal de asentimiento lo firman junto con el Notario.\n\n_______________________________          _______________________________\n{{nombre_companero_1}}                              {{nombre_companero_2}}\nC.C. N°. {{cedula_companero_1}}                    C.C. N°. {{cedula_companero_2}}\n\nEl Notario,\n_______________________________"
+  },
+  {
+    "id": "demanda-impugnacion-paternidad",
+    "title": "Demanda de Impugnación de Paternidad",
+    "subtitle": "Filiación y Reconocimiento",
+    "tipo_tramite": "Judicial",
+    "fields": [
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandante",
+        "label": "Nombre Completo del Demandante (Poderdante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_demandante",
+        "label": "Cédula del Demandante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "calidad_demandante",
+        "label": "Calidad en que Actúa el Demandante (Ej: cónyuge, compañero permanente, madre, el hijo)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_menor",
+        "label": "Nombre Completo del Menor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_nacimiento_menor",
+        "label": "Fecha de Nacimiento del Menor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_demandado",
+        "label": "Nombre Completo del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_demandado",
+        "label": "Cédula del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_domicilio_demandado",
+        "label": "Ciudad de Domicilio del Demandado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hechos_impugnacion",
+        "label": "Hechos que Fundamentan la Impugnación",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "fecha_conocimiento",
+        "label": "Fecha en que el Demandante Tuvo Conocimiento del Hecho que Genera la Duda",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "testigos",
+        "label": "Nombres y Direcciones de los Testigos",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "DEMANDA DE IMPUGNACIÓN DE PATERNIDAD\n\nSeñor\nJuez de Familia de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Demanda de impugnación de paternidad\n\n{{nombre_abogado}}, mayor de edad, domiciliado en {{ciudad_firma}}, identificado con la cédula de ciudadanía N°. {{cedula_abogado}}, abogado en ejercicio con tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, en mi calidad de apoderado especial de {{nombre_demandante}}, mayor de edad, identificado(a) con la cédula de ciudadanía N°. {{cedula_demandante}}, quien actúa en calidad de {{calidad_demandante}}, por medio de este escrito presento Demanda de Impugnación de Paternidad en contra de {{nombre_demandado}}, mayor de edad, domiciliado en {{ciudad_domicilio_demandado}}, identificado con la cédula de ciudadanía N°. {{cedula_demandado}}, de acuerdo con los siguientes:\n\nHECHOS\n\n1°. El menor {{nombre_menor}} nació el {{fecha_nacimiento_menor}}, quedando registrado bajo la paternidad de {{nombre_demandado}} por efecto de la presunción legal de paternidad consagrada en el artículo 214 del Código Civil.\n\n2°. {{hechos_impugnacion}}\n\n3°. Mi mandante tuvo conocimiento del hecho que hace dudar de la paternidad el {{fecha_conocimiento}}.\n\n4°. La presente demanda se instaura dentro del término de ciento cuarenta (140) días señalado en el artículo 216 del Código Civil, modificado por el artículo 4° de la Ley 1060 de 2006, contado desde la fecha en que mi mandante tuvo conocimiento de que no es el padre o madre biológico.\n\nPRETENSIONES\n\n1ª. Que se declare que {{nombre_demandado}} no es el padre biológico del menor {{nombre_menor}}.\n\n2ª. Que, como consecuencia de lo anterior, se ordene al funcionario competente la corrección del registro civil de nacimiento del menor, eliminando la anotación de paternidad de {{nombre_demandado}}.\n\n3ª. Que se condene en costas a quien se oponga a la demanda.\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 213 a 224 del Código Civil, modificados por la Ley 1060 de 2006 (en especial los artículos 216 y 217); Ley 721 de 2001 sobre prueba de ADN en procesos de filiación.\n\nPROCEDIMIENTO Y COMPETENCIA\n\nDebe seguirse el proceso verbal establecido en el Código General del Proceso, en concordancia con la Ley 1060 de 2006 y la Ley 721 de 2001. Es usted competente por la naturaleza del asunto y el domicilio del demandado.\n\nPRUEBAS\n\nDocumentales: Registro civil de nacimiento del menor. Poder conferido.\n\nTestimoniales: Sírvase llamar a declarar a las siguientes personas: {{testigos}}\n\nDictamen pericial: Sírvase decretar los exámenes científicos de ADN para determinar la paternidad, con un índice de probabilidad superior al 99.9%, conforme a la Ley 721 de 2001.\n\nInterrogatorio de parte: Sírvase recibir declaración de parte a {{nombre_demandado}}.\n\nANEXOS\n\n1. Poder conferido. 2. Copias de la demanda y sus anexos. 3. Documentos relacionados en el capítulo de pruebas.\n\nNOTIFICACIONES\n\nEl suscrito en {{direccion_notificacion_abogado}}; el demandado en {{ciudad_domicilio_demandado}}.\n\nDel señor juez,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   }
 ]
