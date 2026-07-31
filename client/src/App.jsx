@@ -10598,11 +10598,16 @@ function AppContent() {
   const todasLasMinutas = categories.flatMap(cat => cat.minutas.map(m => ({ ...m, catId: cat.id, catName: cat.name })))
   const quitarTildes = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
   const textoBusqueda = quitarTildes(busqueda.trim().toLowerCase())
-  const palabrasBusquedaAND = textoBusqueda.split(/\s+/).filter(Boolean)
-  const minutasFiltradas = textoBusqueda ? todasLasMinutas.filter(m => {
-    const texto = quitarTildes((m.title + ' ' + (m.subtitle || '') + ' ' + (m.catName || '')).toLowerCase())
-    return palabrasBusquedaAND.every(p => texto.includes(p))
-  }) : []
+  const palabrasBusquedaOR = textoBusqueda.split(/\s+/).filter(Boolean)
+  const minutasFiltradas = textoBusqueda ? todasLasMinutas
+    .map(m => {
+      const texto = quitarTildes((m.title + ' ' + (m.subtitle || '') + ' ' + (m.catName || '')).toLowerCase())
+      const puntaje = palabrasBusquedaOR.filter(p => texto.includes(p)).length
+      return { m, puntaje }
+    })
+    .filter(x => x.puntaje > 0)
+    .sort((a, b) => b.puntaje - a.puntaje)
+    .map(x => x.m) : []
   const palabrasBusqueda = textoBusqueda.split(/\s+/).filter(p => p.length > 2)
   const sugerencias = (textoBusqueda && minutasFiltradas.length === 0) ? todasLasMinutas.filter(m => {
     const texto = quitarTildes((m.title + ' ' + (m.subtitle || '') + ' ' + (m.catName || '')).toLowerCase())
