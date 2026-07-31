@@ -6071,7 +6071,7 @@
         "required": true
       },
       {
-        "name": "descripcion_bienes",
+        "name": "bienes_sociedad_patrimonial",
         "label": "Descripción de los Bienes a Repartir (si no hay bienes comunes, escriba: No existen bienes comunes que liquidar)",
         "type": "textarea",
         "required": true
@@ -6083,7 +6083,7 @@
         "required": true
       }
     ],
-    "template": "ESCRITURA PÚBLICA DE DISOLUCIÓN Y LIQUIDACIÓN DE SOCIEDAD PATRIMONIAL ENTRE COMPAÑEROS PERMANENTES POR MUTUO CONSENTIMIENTO\n\nEn la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, comparecieron los señores {{nombre_companero_1}}, identificado con cédula de ciudadanía N°. {{cedula_companero_1}} de {{expedicion_companero_1}}, y {{nombre_companero_2}}, identificado con cédula de ciudadanía N°. {{cedula_companero_2}} de {{expedicion_companero_2}}, mayores de edad, quienes de manera libre y espontánea manifestaron lo siguiente:\n\nPRIMERO: Que sostuvieron una unión marital de hecho desde el {{fecha_inicio_union}} hasta el {{fecha_separacion}}, fecha en la cual cesó de manera definitiva su convivencia.\n\nSEGUNDO: Que de conformidad con el artículo 5° de la Ley 54 de 1990, modificado por el artículo 3° de la Ley 979 de 2005, por mutuo consentimiento y sin que exista controversia entre ellos, DECLARAN DISUELTA la sociedad patrimonial que entre ellos existió en virtud de dicha unión marital de hecho.\n\nTERCERO: Que los bienes que conforman la sociedad patrimonial a liquidar son los siguientes: {{descripcion_bienes}}.\n\nCUARTO: Que dichos bienes se distribuyen de la siguiente manera: {{forma_distribucion}}.\n\nQUINTO: Que con la suscripción de la presente escritura, los comparecientes declaran a paz y salvo toda obligación patrimonial derivada de la sociedad patrimonial disuelta, sin que quede pendiente reclamación alguna entre ellos por este concepto.\n\nSEXTO: Que los comparecientes fueron advertidos por el suscrito Notario del término de un (1) año, contado a partir de la separación física y definitiva, para adelantar las acciones de disolución y liquidación de la sociedad patrimonial, de conformidad con el artículo 8° de la Ley 54 de 1990.\n\nLeído el presente instrumento, en señal de asentimiento lo firman junto con el Notario.\n\n_______________________________          _______________________________\n{{nombre_companero_1}}                              {{nombre_companero_2}}\nC.C. N°. {{cedula_companero_1}}                    C.C. N°. {{cedula_companero_2}}\n\nEl Notario,\n_______________________________"
+    "template": "ESCRITURA PÚBLICA DE DISOLUCIÓN Y LIQUIDACIÓN DE SOCIEDAD PATRIMONIAL ENTRE COMPAÑEROS PERMANENTES POR MUTUO CONSENTIMIENTO\n\nEn la ciudad de {{ciudad}}, departamento de {{departamento}}, República de Colombia, a los {{dia}} días del mes de {{mes}} del año {{anio}}, ante mí {{notario}} Notario del Círculo de {{circulo}}, comparecieron los señores {{nombre_companero_1}}, identificado con cédula de ciudadanía N°. {{cedula_companero_1}} de {{expedicion_companero_1}}, y {{nombre_companero_2}}, identificado con cédula de ciudadanía N°. {{cedula_companero_2}} de {{expedicion_companero_2}}, mayores de edad, quienes de manera libre y espontánea manifestaron lo siguiente:\n\nPRIMERO: Que sostuvieron una unión marital de hecho desde el {{fecha_inicio_union}} hasta el {{fecha_separacion}}, fecha en la cual cesó de manera definitiva su convivencia.\n\nSEGUNDO: Que de conformidad con el artículo 5° de la Ley 54 de 1990, modificado por el artículo 3° de la Ley 979 de 2005, por mutuo consentimiento y sin que exista controversia entre ellos, DECLARAN DISUELTA la sociedad patrimonial que entre ellos existió en virtud de dicha unión marital de hecho.\n\nTERCERO: Que los bienes que conforman la sociedad patrimonial a liquidar son los siguientes: {{bienes_sociedad_patrimonial}}.\n\nCUARTO: Que dichos bienes se distribuyen de la siguiente manera: {{forma_distribucion}}.\n\nQUINTO: Que con la suscripción de la presente escritura, los comparecientes declaran a paz y salvo toda obligación patrimonial derivada de la sociedad patrimonial disuelta, sin que quede pendiente reclamación alguna entre ellos por este concepto.\n\nSEXTO: Que los comparecientes fueron advertidos por el suscrito Notario del término de un (1) año, contado a partir de la separación física y definitiva, para adelantar las acciones de disolución y liquidación de la sociedad patrimonial, de conformidad con el artículo 8° de la Ley 54 de 1990.\n\nLeído el presente instrumento, en señal de asentimiento lo firman junto con el Notario.\n\n_______________________________          _______________________________\n{{nombre_companero_1}}                              {{nombre_companero_2}}\nC.C. N°. {{cedula_companero_1}}                    C.C. N°. {{cedula_companero_2}}\n\nEl Notario,\n_______________________________"
   },
   {
     "id": "demanda-impugnacion-paternidad",
@@ -6189,5 +6189,116 @@
       }
     ],
     "template": "DEMANDA DE IMPUGNACIÓN DE PATERNIDAD\n\nSeñor\nJuez de Familia de {{ciudad_firma}} (Reparto)\nE. S. D.\n\nRef.: Demanda de impugnación de paternidad\n\n{{nombre_abogado}}, mayor de edad, domiciliado en {{ciudad_firma}}, identificado con la cédula de ciudadanía N°. {{cedula_abogado}}, abogado en ejercicio con tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, en mi calidad de apoderado especial de {{nombre_demandante}}, mayor de edad, identificado(a) con la cédula de ciudadanía N°. {{cedula_demandante}}, quien actúa en calidad de {{calidad_demandante}}, por medio de este escrito presento Demanda de Impugnación de Paternidad en contra de {{nombre_demandado}}, mayor de edad, domiciliado en {{ciudad_domicilio_demandado}}, identificado con la cédula de ciudadanía N°. {{cedula_demandado}}, de acuerdo con los siguientes:\n\nHECHOS\n\n1°. El menor {{nombre_menor}} nació el {{fecha_nacimiento_menor}}, quedando registrado bajo la paternidad de {{nombre_demandado}} por efecto de la presunción legal de paternidad consagrada en el artículo 214 del Código Civil.\n\n2°. {{hechos_impugnacion}}\n\n3°. Mi mandante tuvo conocimiento del hecho que hace dudar de la paternidad el {{fecha_conocimiento}}.\n\n4°. La presente demanda se instaura dentro del término de ciento cuarenta (140) días señalado en el artículo 216 del Código Civil, modificado por el artículo 4° de la Ley 1060 de 2006, contado desde la fecha en que mi mandante tuvo conocimiento de que no es el padre o madre biológico.\n\nPRETENSIONES\n\n1ª. Que se declare que {{nombre_demandado}} no es el padre biológico del menor {{nombre_menor}}.\n\n2ª. Que, como consecuencia de lo anterior, se ordene al funcionario competente la corrección del registro civil de nacimiento del menor, eliminando la anotación de paternidad de {{nombre_demandado}}.\n\n3ª. Que se condene en costas a quien se oponga a la demanda.\n\nFUNDAMENTOS DE DERECHO\n\nArtículos 213 a 224 del Código Civil, modificados por la Ley 1060 de 2006 (en especial los artículos 216 y 217); Ley 721 de 2001 sobre prueba de ADN en procesos de filiación.\n\nPROCEDIMIENTO Y COMPETENCIA\n\nDebe seguirse el proceso verbal establecido en el Código General del Proceso, en concordancia con la Ley 1060 de 2006 y la Ley 721 de 2001. Es usted competente por la naturaleza del asunto y el domicilio del demandado.\n\nPRUEBAS\n\nDocumentales: Registro civil de nacimiento del menor. Poder conferido.\n\nTestimoniales: Sírvase llamar a declarar a las siguientes personas: {{testigos}}\n\nDictamen pericial: Sírvase decretar los exámenes científicos de ADN para determinar la paternidad, con un índice de probabilidad superior al 99.9%, conforme a la Ley 721 de 2001.\n\nInterrogatorio de parte: Sírvase recibir declaración de parte a {{nombre_demandado}}.\n\nANEXOS\n\n1. Poder conferido. 2. Copias de la demanda y sus anexos. 3. Documentos relacionados en el capítulo de pruebas.\n\nNOTIFICACIONES\n\nEl suscrito en {{direccion_notificacion_abogado}}; el demandado en {{ciudad_domicilio_demandado}}.\n\nDel señor juez,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
+  },
+  {
+    "id": "solicitud-exoneracion-reduccion-cuota-alimentaria",
+    "title": "Solicitud de Exoneración o Disminución de Cuota Alimentaria",
+    "subtitle": "Alimentos",
+    "tipo_tramite": "Judicial",
+    "fields": [
+      {
+        "name": "ciudad_firma",
+        "label": "Ciudad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_abogado",
+        "label": "Nombre Completo del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_abogado",
+        "label": "Cédula del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tarjeta_profesional",
+        "label": "Tarjeta Profesional del Abogado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_solicitante",
+        "label": "Nombre Completo del Solicitante (Alimentante)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_solicitante",
+        "label": "Cédula del Solicitante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_madre_representante",
+        "label": "Nombre de Quien Representa al Menor (Alimentario)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombres_menores",
+        "label": "Nombres de los Menores Beneficiarios de la Cuota",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "juzgado_alimentos",
+        "label": "Juzgado que Fijó la Cuota Alimentaria (Ej: Juzgado 2 de Familia)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "ciudad_juzgado_alimentos",
+        "label": "Ciudad del Juzgado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_sentencia_alimentos",
+        "label": "Fecha de la Sentencia que Fijó la Cuota",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cuota_fijada",
+        "label": "Valor de la Cuota Fijada (en números)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_solicitud",
+        "label": "Tipo de Solicitud (Ej: exoneración total, disminución)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cuota_propuesta",
+        "label": "Nueva Cuota Propuesta (si es disminución; si es exoneración total, escriba: no aplica)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hechos_solicitud",
+        "label": "Hechos que Justifican la Solicitud",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "direccion_demandante",
+        "label": "Dirección del Solicitante para Notificaciones",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_notificacion_abogado",
+        "label": "Dirección del Abogado para Notificaciones",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "SOLICITUD DE EXONERACIÓN O DISMINUCIÓN DE CUOTA ALIMENTARIA\n\nSeñor\n{{juzgado_alimentos}} de Familia de {{ciudad_juzgado_alimentos}}\nE. S. D.\n\nRef.: Solicitud de {{tipo_solicitud}} de cuota alimentaria, dentro del proceso en que se fijaron alimentos a favor de {{nombres_menores}}\n\n{{nombre_abogado}}, mayor de edad, identificado con la cédula de ciudadanía N°. {{cedula_abogado}}, con tarjeta profesional N°. {{tarjeta_profesional}} del Consejo Superior de la Judicatura, actuando en mi calidad de apoderado judicial de {{nombre_solicitante}}, identificado(a) con la cédula de ciudadanía N°. {{cedula_solicitante}}, dentro del proceso de alimentos adelantado por {{nombre_madre_representante}} en representación de {{nombres_menores}}, comedidamente me dirijo a este despacho para solicitar {{tipo_solicitud}} de la cuota alimentaria, de acuerdo con los siguientes:\n\nHECHOS\n\n1°. Mediante sentencia proferida por este despacho el {{fecha_sentencia_alimentos}}, se fijó a cargo de {{nombre_solicitante}} una cuota alimentaria mensual de $ {{cuota_fijada}} en favor de {{nombres_menores}}.\n\n2°. {{hechos_solicitud}}\n\n3°. Las circunstancias que dieron origen a la obligación alimentaria fijada han variado, conforme lo dispone el artículo 422 del Código Civil, según el cual los alimentos se deben mientras subsistan las circunstancias que legitimaron la demanda.\n\nPETICIONES\n\n1ª. Que se decrete {{tipo_solicitud}} de la cuota alimentaria fijada a cargo de {{nombre_solicitante}} en favor de {{nombres_menores}}.\n\n2ª. En caso de disminución, que la nueva cuota mensual quede fijada en $ {{cuota_propuesta}}.\n\n3ª. Que la presente solicitud se tramite ante el mismo despacho y en el mismo expediente que fijó la obligación alimentaria, conforme al parágrafo 2° del artículo 390 del Código General del Proceso, sin necesidad de conciliación prejudicial previa.\n\nFUNDAMENTOS DE DERECHO\n\nArtículo 422 del Código Civil; artículos 411 y siguientes del Código Civil; artículo 390, numeral 2 y parágrafo 2°, del Código General del Proceso (Ley 1564 de 2012); Ley 1098 de 2006 (Código de la Infancia y la Adolescencia), en cuanto la decisión debe garantizar el interés superior de los menores.\n\nCOMPETENCIA Y TRÁMITE\n\nDe conformidad con el parágrafo 2° del artículo 390 del Código General del Proceso, la presente solicitud se tramitará ante el mismo juez y en el mismo expediente del proceso de alimentos, y se decidirá en audiencia, previa citación a la parte contraria.\n\nPRUEBAS\n\nDocumentales: Copia de la sentencia que fijó la cuota alimentaria y demás documentos que acreditan el cambio de circunstancias.\n\nNOTIFICACIONES\n\nEl solicitante en {{direccion_demandante}}. La parte contraria en el lugar donde fue notificada dentro del proceso original. El suscrito en {{direccion_notificacion_abogado}}.\n\nDel señor juez,\n\n_______________________________\n{{nombre_abogado}}\nT.P. N°. {{tarjeta_profesional}} del C.S.J."
   }
 ]
