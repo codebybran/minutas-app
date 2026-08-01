@@ -44,6 +44,8 @@ const SUBTITLE_ORDER_TRIBUTARIO = ['Recursos y Respuestas', 'Cobro Coactivo']
 
 
 const TIPO_TRAMITE = {
+  'declaracion-union-marital-hecho-notarial':'Notarial',
+  'disolucion-sociedad-patrimonial-umh-mutuo-consentimiento':'Notarial',
   1:'Notarial',2:'Notarial',3:'Notarial',4:'Notarial',5:'Privado',6:'Privado',7:'Privado',
   8:'Privado',9:'Notarial',10:'Privado',
   'compraventa-retroventa':'Notarial','cesion-derechos-hereditarios-civil':'Notarial',
