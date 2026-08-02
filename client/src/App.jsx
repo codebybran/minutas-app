@@ -5869,6 +5869,15 @@ const DATOS_PRUEBA = {
   },
 
   // -- DERECHO COMERCIAL --
+  'letra-de-cambio': {
+    numero_letra: '001', ciudad_giro: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
+    valor_numeros: '5.000.000', valor_letras: 'cinco millones de pesos',
+    forma_vencimiento: 'a 90 días fecha',
+    ciudad_pago: 'El Cerrito', direccion_pago: 'Calle 10 # 5-20, Of. 301',
+    nombre_girador: 'Jhon Brandon Martínez Vélez', cedula_girador: '1234567890', expedicion_girador: 'El Cerrito',
+    nombre_girado: 'Alexander García López', cedula_girado: '0987654321', expedicion_girado: 'Cali',
+    nombre_beneficiario: 'Laura Vanessa García Ríos',
+  },
   'pagare': {
     numero_pagare: '001', ciudad_lugar: 'Cali', dia: '15', mes: 'abril', anio: '2026',
     valor_numeros: '5.000.000', ciudad_pago: 'Cali', direccion_pago: 'Calle 10 # 5-20 Of. 301',
@@ -8709,6 +8718,11 @@ const PASOS_SIGUIENTE = {
   },
 
   // -- DERECHO COMERCIAL --
+  'letra-de-cambio': [
+    { num:1, titulo:'Debe ser aceptada por el girado', descripcion:'La letra de cambio solo genera obligación para el girado cuando la acepta firmándola. Sin aceptación, no puede exigirse el pago a esa persona, salvo excepciones legales.' },
+    { num:2, titulo:'Verifique la forma de vencimiento', descripcion:'Según el artículo 673 del Código de Comercio, la letra puede vencer a la vista, a día cierto, con vencimientos sucesivos, o a día cierto después de la fecha o de la vista. Sea claro y preciso al redactar esta cláusula.' },
+    { num:3, titulo:'Prescripción de 3 años', descripcion:'La acción cambiaria derivada de la letra de cambio prescribe en tres (3) años contados desde que la obligación se hizo exigible. Antes de ese plazo, puede exigirse su pago por vía ejecutiva.' },
+  ],
   'pagare': [
     'Imprima el pagaré en papel tamaño carta.',
     'Firme el documento junto con todos los deudores en presencia de un notario para autenticar las firmas.',
