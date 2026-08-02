@@ -114,6 +114,7 @@ const TIPO_TRAMITE = {
   'solicitud-reconocimiento-hijo-extramatrimonial':'Privado',
   'solicitud-permiso-menor-salir-pais':'Privado',
   // --- DERECHO COMERCIAL ---
+  'letra-de-cambio':'Privado',
   'pagare':'Privado','carta-instrucciones-pagare':'Privado',
   'compraventa-establecimiento-comercio':'Privado','arrendamiento-local-comercial':'Privado',
   'subarriendo-local-comercial':'Privado','agencia-comercial':'Privado',
