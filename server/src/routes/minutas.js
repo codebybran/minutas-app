@@ -116,6 +116,7 @@ const TIPO_TRAMITE = {
   // --- DERECHO COMERCIAL ---
   'letra-de-cambio':'Privado',
   'endoso-titulo-valor':'Privado',
+  'contrato-distribucion':'Privado',
   'pagare':'Privado','carta-instrucciones-pagare':'Privado',
   'compraventa-establecimiento-comercio':'Privado','arrendamiento-local-comercial':'Privado',
   'subarriendo-local-comercial':'Privado','agencia-comercial':'Privado',
