@@ -4081,5 +4081,148 @@
       }
     ],
     "template": "ENDOSO DE TÍTULO VALOR\n\nTítulo valor endosado: {{tipo_titulo}} Nº. {{numero_titulo}}, de fecha {{fecha_titulo}}, por valor de $ {{valor_titulo}}.\n\nEn la ciudad de {{ciudad_endoso}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, yo, {{nombre_endosante}}, identificado con cédula de ciudadanía o NIT Nº. {{cedula_endosante}}, en calidad de tenedor legítimo del título valor arriba referenciado, por medio del presente escrito ENDOSO {{clase_endoso}} dicho título a favor de {{nombre_endosatario}}, identificado con cédula de ciudadanía o NIT Nº. {{cedula_endosatario}}, quien en adelante será su tenedor legítimo, de conformidad con lo dispuesto en los artículos 651 y siguientes del Código de Comercio.\n\nValor recibido: {{valor_recibido}}.\n\nEste endoso se hace de forma pura y simple, sin condiciones, y por la totalidad del valor del título, conforme al artículo 655 del Código de Comercio.\n\nEndosante:\n\n_______________________________\n{{nombre_endosante}}\nC.C./NIT Nº. {{cedula_endosante}}"
+  },
+  {
+    "id": "contrato-distribucion",
+    "title": "Contrato de Distribución Mercantil",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad de firma",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_proveedor",
+        "label": "Nombre o razón social del proveedor",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo o razón social de la empresa que vende los productos al distribuidor."
+      },
+      {
+        "name": "nit_proveedor",
+        "label": "NIT del proveedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "representante_proveedor",
+        "label": "Representante legal del proveedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_proveedor",
+        "label": "Dirección del proveedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_distribuidor",
+        "label": "Nombre o razón social del distribuidor",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo o razón social de quien compra los productos para revenderlos por su cuenta y riesgo."
+      },
+      {
+        "name": "nit_distribuidor",
+        "label": "NIT o cédula del distribuidor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "representante_distribuidor",
+        "label": "Representante legal del distribuidor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_distribuidor",
+        "label": "Dirección del distribuidor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "productos_distribucion",
+        "label": "Productos objeto del contrato",
+        "type": "textarea",
+        "required": true,
+        "help": "Describa los productos que el distribuidor comprará al proveedor para revender."
+      },
+      {
+        "name": "territorio_distribucion",
+        "label": "Territorio de distribución",
+        "type": "text",
+        "required": true,
+        "help": "Zona geográfica donde el distribuidor podrá revender los productos. Ej: departamento del Valle del Cauca."
+      },
+      {
+        "name": "exclusividad_distribucion",
+        "label": "Cláusula de exclusividad",
+        "type": "textarea",
+        "required": true,
+        "help": "Indique si hay exclusividad territorial a favor del distribuidor, del proveedor, de ambos, o si no existe exclusividad. Ej: 'El proveedor se obliga a no vender ni autorizar la venta de los productos a otros distribuidores dentro del territorio asignado' o 'No existe pacto de exclusividad entre las partes'."
+      },
+      {
+        "name": "duracion",
+        "label": "Duración del contrato",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "fecha_inicio",
+        "label": "Fecha de inicio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "condiciones_pago_distribuidor",
+        "label": "Condiciones de pago del distribuidor al proveedor",
+        "type": "textarea",
+        "required": true,
+        "help": "Describa cómo y cuándo el distribuidor pagará los productos comprados. Ej: 'de contado contra entrega' o 'a 30 días fecha de factura'."
+      },
+      {
+        "name": "margen_reventa",
+        "label": "Margen o condiciones de reventa",
+        "type": "textarea",
+        "required": true,
+        "help": "Explique si el proveedor sugiere un precio de reventa, si el distribuidor tiene libertad de precios, o cómo se calcula el margen del distribuidor."
+      },
+      {
+        "name": "preaviso_terminacion",
+        "label": "Plazo de preaviso para terminación unilateral",
+        "type": "text",
+        "required": true,
+        "help": "Tiempo mínimo de aviso previo que debe dar la parte que decida terminar el contrato unilateralmente. Ej: 60 días, 90 días."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad del arbitraje",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO DE DISTRIBUCIÓN MERCANTIL\n\nEntre los suscritos, a saber: {{nombre_proveedor}}, sociedad identificada con NIT Nº. {{nit_proveedor}}, representada legalmente por {{representante_proveedor}}, con domicilio en {{direccion_proveedor}}, quien en adelante se denominará EL PROVEEDOR; y {{nombre_distribuidor}}, identificado con NIT/cédula Nº. {{nit_distribuidor}}, representado legalmente por {{representante_distribuidor}}, con domicilio en {{direccion_distribuidor}}, quien en adelante se denominará EL DISTRIBUIDOR, hemos convenido celebrar el presente contrato de distribución mercantil, que se regirá por las siguientes cláusulas:\n\nPRIMERA. NATURALEZA DEL CONTRATO.— El presente es un contrato de distribución mercantil atípico, regido por la autonomía de la voluntad privada (artículo 4º del Código de Comercio y artículo 1602 del Código Civil) y el principio de buena fe (artículo 871 del Código de Comercio). Las partes declaran expresamente que este contrato NO constituye un contrato de agencia comercial en los términos del artículo 1317 del Código de Comercio, por cuanto EL DISTRIBUIDOR adquiere los productos objeto del presente contrato en firme, a su propio nombre y por su cuenta y riesgo, para revenderlos en el mercado de manera independiente, sin actuar como representante, mandatario o intermediario de EL PROVEEDOR. En consecuencia, la terminación del presente contrato, cualquiera que sea su causa, no genera a favor de EL DISTRIBUIDOR derecho alguno a la prestación o cesantía comercial prevista en el artículo 1324 del Código de Comercio, ni a las demás prestaciones propias del contrato de agencia mercantil.\n\nSEGUNDA. OBJETO.— EL PROVEEDOR se obliga a vender a EL DISTRIBUIDOR, y este a comprar, los siguientes productos: {{productos_distribucion}}; para su posterior reventa por parte de EL DISTRIBUIDOR, a nombre propio y por su cuenta y riesgo, dentro del siguiente territorio: {{territorio_distribucion}}.\n\nTERCERA. EXCLUSIVIDAD.— {{exclusividad_distribucion}}\n\nCUARTA. DURACIÓN.— El presente contrato tendrá una duración de {{duracion}}, contada a partir del {{fecha_inicio}}.\n\nQUINTA. CONDICIONES DE COMPRA Y PAGO.— EL DISTRIBUIDOR pagará a EL PROVEEDOR los productos adquiridos de acuerdo con las siguientes condiciones: {{condiciones_pago_distribuidor}}.\n\nSEXTA. MARGEN DE REVENTA.— {{margen_reventa}}\n\nSÉPTIMA. OBLIGACIONES DE EL DISTRIBUIDOR.— EL DISTRIBUIDOR se obliga a: (i) pagar oportunamente el precio de los productos adquiridos; (ii) promover adecuadamente la venta de los productos dentro del territorio asignado; (iii) mantener existencias suficientes para atender la demanda; (iv) no utilizar indebidamente las marcas y signos distintivos de EL PROVEEDOR; (v) informar a EL PROVEEDOR sobre las condiciones del mercado cuando este lo solicite.\n\nOCTAVA. OBLIGACIONES DE EL PROVEEDOR.— EL PROVEEDOR se obliga a: (i) entregar oportunamente los productos adquiridos por EL DISTRIBUIDOR conforme a los pedidos realizados; (ii) garantizar la calidad de los productos suministrados; (iii) prestar a EL DISTRIBUIDOR el apoyo técnico y comercial razonable para la adecuada comercialización de los productos.\n\nNOVENA. INDEPENDENCIA DE LAS PARTES.— Las partes actúan como comerciantes independientes. Nada de lo aquí pactado se entenderá como constitutivo de sociedad, mandato, representación, agencia comercial ni relación laboral entre las partes ni sus empleados o dependientes.\n\nDÉCIMA. TERMINACIÓN.— El presente contrato podrá darse por terminado: (i) por vencimiento del plazo pactado; (ii) por mutuo acuerdo entre las partes; (iii) por incumplimiento grave de las obligaciones a cargo de cualquiera de las partes; (iv) por decisión unilateral de cualquiera de las partes, previo aviso escrito dado a la otra con una antelación no menor a {{preaviso_terminacion}}.\n\nDÉCIMA PRIMERA. CLÁUSULA COMPROMISORIA.— Toda controversia que se derive del presente contrato o que se relacione con él se resolverá por un Tribunal de Arbitramento que sesionará en la ciudad de {{ciudad_arbitraje}}, de acuerdo con las normas legales vigentes sobre la materia.\n\nPara constancia se firma en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}.\n\nEL PROVEEDOR:\n\n_______________________________\n{{nombre_proveedor}}\n{{representante_proveedor}}\n\nEL DISTRIBUIDOR:\n\n_______________________________\n{{nombre_distribuidor}}\n{{representante_distribuidor}}"
   }
 ]
