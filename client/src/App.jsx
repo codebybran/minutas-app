@@ -5900,6 +5900,16 @@ const DATOS_PRUEBA = {
     preaviso_terminacion: '60 días',
     ciudad_arbitraje: 'Cali',
   },
+  'acuerdo-confidencialidad-comercial': {
+    ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
+    nombre_parte1: 'Distribuidora Andina S.A.S.', nit_parte1: '900123456-1', representante_parte1: 'Jhon Brandon Martínez Vélez', direccion_parte1: 'Calle 10 # 5-67, El Cerrito',
+    nombre_parte2: 'Comercializadora García Ríos S.A.S.', nit_parte2: '900654321-2', representante_parte2: 'Laura Vanessa García Ríos', direccion_parte2: 'Carrera 8 # 12-34, Cali',
+    proposito_acuerdo: 'la evaluación de una posible alianza comercial entre las partes',
+    descripcion_informacion_confidencial: 'información financiera, listas de clientes, estrategias comerciales y demás información técnica o comercial que las partes intercambien',
+    plazo_confidencialidad: 'tres (3) años',
+    clausula_penal: '20.000.000',
+    ciudad_arbitraje: 'Cali',
+  },
   'pagare': {
     numero_pagare: '001', ciudad_lugar: 'Cali', dia: '15', mes: 'abril', anio: '2026',
     valor_numeros: '5.000.000', ciudad_pago: 'Cali', direccion_pago: 'Calle 10 # 5-20 Of. 301',
@@ -8754,6 +8764,11 @@ const PASOS_SIGUIENTE = {
     { num:1, titulo:'No es lo mismo que agencia comercial', descripcion:'Este contrato deja explícito que el distribuidor compra y revende por su cuenta y riesgo, por lo que no genera la cesantía comercial del artículo 1324 del Código de Comercio. Evite prácticas que hagan parecer al distribuidor como un simple intermediario del proveedor (control excesivo, imposición de precios), pues eso podría llevar a que un juez lo reclasifique como agencia comercial.' },
     { num:2, titulo:'La exclusividad debe quedar clara', descripcion:'Defina expresamente si hay exclusividad territorial y a favor de quién. La ambigüedad en este punto es una fuente frecuente de conflictos entre proveedores y distribuidores.' },
     { num:3, titulo:'Preaviso para terminar el contrato', descripcion:'Respete el plazo de preaviso pactado antes de terminar unilateralmente el contrato. Terminarlo de forma abrupta y sin aviso puede dar lugar a una indemnización de perjuicios por responsabilidad contractual, aunque no exista cesantía comercial.' },
+  ],
+  'acuerdo-confidencialidad-comercial': [
+    { num:1, titulo:'Describa bien la información protegida', descripcion:'Cuanto más específica sea la descripción de la información confidencial, más fácil será demostrar su incumplimiento. Evite descripciones genéricas como "toda la información de la empresa".' },
+    { num:2, titulo:'La cláusula penal no reemplaza la indemnización total', descripcion:'La cláusula penal es un valor mínimo garantizado, pero la parte afectada puede reclamar adicionalmente el resto de los perjuicios probados (daño emergente y lucro cesante) conforme al Código Civil.' },
+    { num:3, titulo:'Puede haber acciones penales', descripcion:'La violación de secretos comerciales puede constituir además el delito previsto en el artículo 308 del Código Penal, independiente de las acciones civiles derivadas del acuerdo.' },
   ],
   'pagare': [
     'Imprima el pagaré en papel tamaño carta.',
