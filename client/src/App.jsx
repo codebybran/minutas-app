@@ -5878,6 +5878,14 @@ const DATOS_PRUEBA = {
     nombre_girado: 'Alexander García López', cedula_girado: '0987654321', expedicion_girado: 'Cali',
     nombre_beneficiario: 'Laura Vanessa García Ríos',
   },
+  'endoso-titulo-valor': {
+    tipo_titulo: 'Pagaré', numero_titulo: '001', fecha_titulo: 'el 21 de abril de 2026', valor_titulo: '5.000.000',
+    ciudad_endoso: 'El Cerrito', dia: '25', mes: 'abril', anio: '2026',
+    nombre_endosante: 'Jhon Brandon Martínez Vélez', cedula_endosante: '1234567890',
+    nombre_endosatario: 'Laura Vanessa García Ríos', cedula_endosatario: '0987654321',
+    clase_endoso: 'en propiedad',
+    valor_recibido: 'en pago de una deuda existente entre las partes',
+  },
   'pagare': {
     numero_pagare: '001', ciudad_lugar: 'Cali', dia: '15', mes: 'abril', anio: '2026',
     valor_numeros: '5.000.000', ciudad_pago: 'Cali', direccion_pago: 'Calle 10 # 5-20 Of. 301',
@@ -8722,6 +8730,11 @@ const PASOS_SIGUIENTE = {
     { num:1, titulo:'Debe ser aceptada por el girado', descripcion:'La letra de cambio solo genera obligación para el girado cuando la acepta firmándola. Sin aceptación, no puede exigirse el pago a esa persona, salvo excepciones legales.' },
     { num:2, titulo:'Verifique la forma de vencimiento', descripcion:'Según el artículo 673 del Código de Comercio, la letra puede vencer a la vista, a día cierto, con vencimientos sucesivos, o a día cierto después de la fecha o de la vista. Sea claro y preciso al redactar esta cláusula.' },
     { num:3, titulo:'Prescripción de 3 años', descripcion:'La acción cambiaria derivada de la letra de cambio prescribe en tres (3) años contados desde que la obligación se hizo exigible. Antes de ese plazo, puede exigirse su pago por vía ejecutiva.' },
+  ],
+  'endoso-titulo-valor': [
+    { num:1, titulo:'Elija bien la clase de endoso', descripcion:'Un endoso "en propiedad" transfiere el título por completo. Un endoso "en procuración o al cobro" solo autoriza al endosatario a cobrarlo en nombre del endosante, sin transferirle la propiedad. Un endoso "en garantía" constituye una prenda sobre el título (Arts. 656 a 659 C. Co.).' },
+    { num:2, titulo:'Debe ser puro, simple y total', descripcion:'El endoso condicionado se tiene por no escrito y el endoso parcial no produce efectos como título valor (Art. 655 C. Co.). No se puede endosar solo una parte del valor.' },
+    { num:3, titulo:'Entregue físicamente el título', descripcion:'El endoso por sí solo no basta: para que el endosatario adquiera los derechos, también debe hacérsele entrega material del título valor.' },
   ],
   'pagare': [
     'Imprima el pagaré en papel tamaño carta.',
