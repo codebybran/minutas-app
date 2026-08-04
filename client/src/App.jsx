@@ -5886,6 +5886,20 @@ const DATOS_PRUEBA = {
     clase_endoso: 'en propiedad',
     valor_recibido: 'en pago de una deuda existente entre las partes',
   },
+  'contrato-distribucion': {
+    ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
+    nombre_proveedor: 'Distribuidora Andina S.A.S.', nit_proveedor: '900123456-1', representante_proveedor: 'Jhon Brandon Martínez Vélez', direccion_proveedor: 'Calle 10 # 5-67, El Cerrito',
+    nombre_distribuidor: 'Comercializadora García Ríos S.A.S.', nit_distribuidor: '900654321-2', representante_distribuidor: 'Laura Vanessa García Ríos', direccion_distribuidor: 'Carrera 8 # 12-34, Cali',
+    productos_distribucion: 'Electrodomésticos de línea blanca de la marca comercializada por el proveedor.',
+    territorio_distribucion: 'Departamento del Valle del Cauca',
+    exclusividad_distribucion: 'El proveedor se obliga a no vender ni autorizar la venta de los productos objeto de este contrato a otros distribuidores dentro del territorio asignado.',
+    duracion: 'un (1) año',
+    fecha_inicio: 'el 1 de mayo de 2026',
+    condiciones_pago_distribuidor: 'de contado, contra entrega de cada pedido',
+    margen_reventa: 'El distribuidor tiene libertad para fijar el precio de reventa al público, sin perjuicio de los precios sugeridos que el proveedor pueda recomendar.',
+    preaviso_terminacion: '60 días',
+    ciudad_arbitraje: 'Cali',
+  },
   'pagare': {
     numero_pagare: '001', ciudad_lugar: 'Cali', dia: '15', mes: 'abril', anio: '2026',
     valor_numeros: '5.000.000', ciudad_pago: 'Cali', direccion_pago: 'Calle 10 # 5-20 Of. 301',
@@ -8735,6 +8749,11 @@ const PASOS_SIGUIENTE = {
     { num:1, titulo:'Elija bien la clase de endoso', descripcion:'Un endoso "en propiedad" transfiere el título por completo. Un endoso "en procuración o al cobro" solo autoriza al endosatario a cobrarlo en nombre del endosante, sin transferirle la propiedad. Un endoso "en garantía" constituye una prenda sobre el título (Arts. 656 a 659 C. Co.).' },
     { num:2, titulo:'Debe ser puro, simple y total', descripcion:'El endoso condicionado se tiene por no escrito y el endoso parcial no produce efectos como título valor (Art. 655 C. Co.). No se puede endosar solo una parte del valor.' },
     { num:3, titulo:'Entregue físicamente el título', descripcion:'El endoso por sí solo no basta: para que el endosatario adquiera los derechos, también debe hacérsele entrega material del título valor.' },
+  ],
+  'contrato-distribucion': [
+    { num:1, titulo:'No es lo mismo que agencia comercial', descripcion:'Este contrato deja explícito que el distribuidor compra y revende por su cuenta y riesgo, por lo que no genera la cesantía comercial del artículo 1324 del Código de Comercio. Evite prácticas que hagan parecer al distribuidor como un simple intermediario del proveedor (control excesivo, imposición de precios), pues eso podría llevar a que un juez lo reclasifique como agencia comercial.' },
+    { num:2, titulo:'La exclusividad debe quedar clara', descripcion:'Defina expresamente si hay exclusividad territorial y a favor de quién. La ambigüedad en este punto es una fuente frecuente de conflictos entre proveedores y distribuidores.' },
+    { num:3, titulo:'Preaviso para terminar el contrato', descripcion:'Respete el plazo de preaviso pactado antes de terminar unilateralmente el contrato. Terminarlo de forma abrupta y sin aviso puede dar lugar a una indemnización de perjuicios por responsabilidad contractual, aunque no exista cesantía comercial.' },
   ],
   'pagare': [
     'Imprima el pagaré en papel tamaño carta.',
