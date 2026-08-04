@@ -4224,5 +4224,120 @@
       }
     ],
     "template": "CONTRATO DE DISTRIBUCIÓN MERCANTIL\n\nEntre los suscritos, a saber: {{nombre_proveedor}}, sociedad identificada con NIT Nº. {{nit_proveedor}}, representada legalmente por {{representante_proveedor}}, con domicilio en {{direccion_proveedor}}, quien en adelante se denominará EL PROVEEDOR; y {{nombre_distribuidor}}, identificado con NIT/cédula Nº. {{nit_distribuidor}}, representado legalmente por {{representante_distribuidor}}, con domicilio en {{direccion_distribuidor}}, quien en adelante se denominará EL DISTRIBUIDOR, hemos convenido celebrar el presente contrato de distribución mercantil, que se regirá por las siguientes cláusulas:\n\nPRIMERA. NATURALEZA DEL CONTRATO.— El presente es un contrato de distribución mercantil atípico, regido por la autonomía de la voluntad privada (artículo 4º del Código de Comercio y artículo 1602 del Código Civil) y el principio de buena fe (artículo 871 del Código de Comercio). Las partes declaran expresamente que este contrato NO constituye un contrato de agencia comercial en los términos del artículo 1317 del Código de Comercio, por cuanto EL DISTRIBUIDOR adquiere los productos objeto del presente contrato en firme, a su propio nombre y por su cuenta y riesgo, para revenderlos en el mercado de manera independiente, sin actuar como representante, mandatario o intermediario de EL PROVEEDOR. En consecuencia, la terminación del presente contrato, cualquiera que sea su causa, no genera a favor de EL DISTRIBUIDOR derecho alguno a la prestación o cesantía comercial prevista en el artículo 1324 del Código de Comercio, ni a las demás prestaciones propias del contrato de agencia mercantil.\n\nSEGUNDA. OBJETO.— EL PROVEEDOR se obliga a vender a EL DISTRIBUIDOR, y este a comprar, los siguientes productos: {{productos_distribucion}}; para su posterior reventa por parte de EL DISTRIBUIDOR, a nombre propio y por su cuenta y riesgo, dentro del siguiente territorio: {{territorio_distribucion}}.\n\nTERCERA. EXCLUSIVIDAD.— {{exclusividad_distribucion}}\n\nCUARTA. DURACIÓN.— El presente contrato tendrá una duración de {{duracion}}, contada a partir del {{fecha_inicio}}.\n\nQUINTA. CONDICIONES DE COMPRA Y PAGO.— EL DISTRIBUIDOR pagará a EL PROVEEDOR los productos adquiridos de acuerdo con las siguientes condiciones: {{condiciones_pago_distribuidor}}.\n\nSEXTA. MARGEN DE REVENTA.— {{margen_reventa}}\n\nSÉPTIMA. OBLIGACIONES DE EL DISTRIBUIDOR.— EL DISTRIBUIDOR se obliga a: (i) pagar oportunamente el precio de los productos adquiridos; (ii) promover adecuadamente la venta de los productos dentro del territorio asignado; (iii) mantener existencias suficientes para atender la demanda; (iv) no utilizar indebidamente las marcas y signos distintivos de EL PROVEEDOR; (v) informar a EL PROVEEDOR sobre las condiciones del mercado cuando este lo solicite.\n\nOCTAVA. OBLIGACIONES DE EL PROVEEDOR.— EL PROVEEDOR se obliga a: (i) entregar oportunamente los productos adquiridos por EL DISTRIBUIDOR conforme a los pedidos realizados; (ii) garantizar la calidad de los productos suministrados; (iii) prestar a EL DISTRIBUIDOR el apoyo técnico y comercial razonable para la adecuada comercialización de los productos.\n\nNOVENA. INDEPENDENCIA DE LAS PARTES.— Las partes actúan como comerciantes independientes. Nada de lo aquí pactado se entenderá como constitutivo de sociedad, mandato, representación, agencia comercial ni relación laboral entre las partes ni sus empleados o dependientes.\n\nDÉCIMA. TERMINACIÓN.— El presente contrato podrá darse por terminado: (i) por vencimiento del plazo pactado; (ii) por mutuo acuerdo entre las partes; (iii) por incumplimiento grave de las obligaciones a cargo de cualquiera de las partes; (iv) por decisión unilateral de cualquiera de las partes, previo aviso escrito dado a la otra con una antelación no menor a {{preaviso_terminacion}}.\n\nDÉCIMA PRIMERA. CLÁUSULA COMPROMISORIA.— Toda controversia que se derive del presente contrato o que se relacione con él se resolverá por un Tribunal de Arbitramento que sesionará en la ciudad de {{ciudad_arbitraje}}, de acuerdo con las normas legales vigentes sobre la materia.\n\nPara constancia se firma en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}.\n\nEL PROVEEDOR:\n\n_______________________________\n{{nombre_proveedor}}\n{{representante_proveedor}}\n\nEL DISTRIBUIDOR:\n\n_______________________________\n{{nombre_distribuidor}}\n{{representante_distribuidor}}"
+  },
+  {
+    "id": "acuerdo-confidencialidad-comercial",
+    "title": "Acuerdo de Confidencialidad Comercial (NDA)",
+    "subtitle": "Contratos Mercantiles",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad de firma",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_parte1",
+        "label": "Nombre o razón social de la primera parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nit_parte1",
+        "label": "NIT o cédula de la primera parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "representante_parte1",
+        "label": "Representante legal de la primera parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_parte1",
+        "label": "Dirección de la primera parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_parte2",
+        "label": "Nombre o razón social de la segunda parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nit_parte2",
+        "label": "NIT o cédula de la segunda parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "representante_parte2",
+        "label": "Representante legal de la segunda parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_parte2",
+        "label": "Dirección de la segunda parte",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "proposito_acuerdo",
+        "label": "Propósito del intercambio de información",
+        "type": "textarea",
+        "required": true,
+        "help": "Explique para qué se va a compartir la información confidencial. Ej: 'la evaluación de una posible alianza comercial entre las partes' o 'la negociación de un contrato de suministro'."
+      },
+      {
+        "name": "descripcion_informacion_confidencial",
+        "label": "Descripción de la información confidencial",
+        "type": "textarea",
+        "required": true,
+        "help": "Describa qué tipo de información se va a proteger. Ej: 'información financiera, listas de clientes, procesos productivos, estrategias comerciales y demás información técnica o comercial que las partes intercambien'."
+      },
+      {
+        "name": "plazo_confidencialidad",
+        "label": "Plazo de la obligación de confidencialidad",
+        "type": "text",
+        "required": true,
+        "help": "Tiempo durante el cual seguirá vigente la obligación de reserva después de terminada la relación entre las partes. Ej: 'tres (3) años', 'cinco (5) años'."
+      },
+      {
+        "name": "clausula_penal",
+        "label": "Valor de la cláusula penal",
+        "type": "text",
+        "required": true,
+        "help": "Suma de dinero que deberá pagar quien incumpla el acuerdo, sin perjuicio de la indemnización de perjuicios. Ej: 20.000.000."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad del arbitraje",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "ACUERDO DE CONFIDENCIALIDAD (NDA)\n\nEntre los suscritos, a saber: {{nombre_parte1}}, identificado con NIT/cédula Nº. {{nit_parte1}}, representado legalmente por {{representante_parte1}}, con domicilio en {{direccion_parte1}}; y {{nombre_parte2}}, identificado con NIT/cédula Nº. {{nit_parte2}}, representado legalmente por {{representante_parte2}}, con domicilio en {{direccion_parte2}}; quienes en adelante se denominarán conjuntamente LAS PARTES, hemos convenido celebrar el presente Acuerdo de Confidencialidad, que se regirá por las siguientes cláusulas:\n\nPRIMERA. OBJETO.— Con ocasión de {{proposito_acuerdo}}, LAS PARTES podrán intercambiar información de carácter confidencial, por lo cual acuerdan las condiciones bajo las cuales dicha información será tratada, protegida y utilizada.\n\nSEGUNDA. INFORMACIÓN CONFIDENCIAL.— Para efectos del presente acuerdo, se entenderá por \"Información Confidencial\" toda información, de cualquier naturaleza, que una parte revele a la otra en desarrollo del propósito indicado en la cláusula primera, incluyendo especialmente: {{descripcion_informacion_confidencial}}. Se considerará Información Confidencial siempre que cumpla con los requisitos del artículo 260 de la Decisión Andina 486 de 2000: (i) sea secreta, es decir, no generalmente conocida ni fácilmente accesible; (ii) tenga valor comercial por su carácter secreto; y (iii) haya sido objeto de medidas razonables para mantenerla en reserva.\n\nTERCERA. OBLIGACIONES DE LAS PARTES.— Cada una de LAS PARTES se obliga a: (i) mantener en estricta reserva la Información Confidencial recibida de la otra; (ii) no divulgarla, publicarla ni revelarla a terceros sin autorización previa y escrita de la parte titular; (iii) no utilizarla para fines distintos a los previstos en la cláusula primera; (iv) restringir su acceso únicamente a los empleados, asesores o dependientes que razonablemente la requieran, quienes deberán estar sujetos a obligaciones de confidencialidad al menos igual de estrictas; (v) devolver o destruir la Información Confidencial recibida al finalizar la relación entre LAS PARTES, si así se lo solicita la parte titular.\n\nCUARTA. EXCEPCIONES.— No se considerará violación del presente acuerdo la divulgación de información que: (i) sea de dominio público sin culpa de la parte receptora; (ii) haya sido conocida legítimamente por la parte receptora con anterioridad y sin obligación de reserva; (iii) deba divulgarse por mandato legal o de autoridad competente, caso en el cual la parte obligada informará previamente a la otra, en la medida en que la ley se lo permita.\n\nQUINTA. VIGENCIA.— El presente acuerdo tendrá vigencia mientras dure la relación entre LAS PARTES, y las obligaciones de confidencialidad aquí pactadas se mantendrán vigentes por {{plazo_confidencialidad}} contados a partir de la terminación de dicha relación o de la firma del presente acuerdo, lo que ocurra de último.\n\nSEXTA. CLÁUSULA PENAL.— En caso de incumplimiento de las obligaciones de confidencialidad aquí pactadas, la parte incumplida deberá pagar a la otra, a título de cláusula penal, la suma de $ {{clausula_penal}}, sin perjuicio del derecho de la parte afectada a reclamar la indemnización total de los perjuicios causados, incluyendo daño emergente y lucro cesante, conforme a los artículos 1613 a 1616 del Código Civil.\n\nSÉPTIMA. MARCO LEGAL.— Este acuerdo se rige, en lo pertinente, por los artículos 260 a 266 de la Decisión Andina 486 de 2000 sobre información no divulgada, el artículo 16 de la Ley 256 de 1996 sobre competencia desleal por violación de secretos, y el artículo 308 del Código Penal sobre violación de secretos comerciales, sin perjuicio de las demás acciones civiles, penales o administrativas a que haya lugar.\n\nOCTAVA. CLÁUSULA COMPROMISORIA.— Toda controversia que se derive del presente acuerdo o que se relacione con él se resolverá por un Tribunal de Arbitramento que sesionará en la ciudad de {{ciudad_arbitraje}}, de acuerdo con las normas legales vigentes sobre la materia.\n\nPara constancia se firma en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}.\n\n_______________________________\n{{nombre_parte1}}\n{{representante_parte1}}\n\n_______________________________\n{{nombre_parte2}}\n{{representante_parte2}}"
   }
 ]
