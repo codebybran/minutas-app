@@ -4339,5 +4339,154 @@
       }
     ],
     "template": "ACUERDO DE CONFIDENCIALIDAD (NDA)\n\nEntre los suscritos, a saber: {{nombre_parte1}}, identificado con NIT/cédula Nº. {{nit_parte1}}, representado legalmente por {{representante_parte1}}, con domicilio en {{direccion_parte1}}; y {{nombre_parte2}}, identificado con NIT/cédula Nº. {{nit_parte2}}, representado legalmente por {{representante_parte2}}, con domicilio en {{direccion_parte2}}; quienes en adelante se denominarán conjuntamente LAS PARTES, hemos convenido celebrar el presente Acuerdo de Confidencialidad, que se regirá por las siguientes cláusulas:\n\nPRIMERA. OBJETO.— Con ocasión de {{proposito_acuerdo}}, LAS PARTES podrán intercambiar información de carácter confidencial, por lo cual acuerdan las condiciones bajo las cuales dicha información será tratada, protegida y utilizada.\n\nSEGUNDA. INFORMACIÓN CONFIDENCIAL.— Para efectos del presente acuerdo, se entenderá por \"Información Confidencial\" toda información, de cualquier naturaleza, que una parte revele a la otra en desarrollo del propósito indicado en la cláusula primera, incluyendo especialmente: {{descripcion_informacion_confidencial}}. Se considerará Información Confidencial siempre que cumpla con los requisitos del artículo 260 de la Decisión Andina 486 de 2000: (i) sea secreta, es decir, no generalmente conocida ni fácilmente accesible; (ii) tenga valor comercial por su carácter secreto; y (iii) haya sido objeto de medidas razonables para mantenerla en reserva.\n\nTERCERA. OBLIGACIONES DE LAS PARTES.— Cada una de LAS PARTES se obliga a: (i) mantener en estricta reserva la Información Confidencial recibida de la otra; (ii) no divulgarla, publicarla ni revelarla a terceros sin autorización previa y escrita de la parte titular; (iii) no utilizarla para fines distintos a los previstos en la cláusula primera; (iv) restringir su acceso únicamente a los empleados, asesores o dependientes que razonablemente la requieran, quienes deberán estar sujetos a obligaciones de confidencialidad al menos igual de estrictas; (v) devolver o destruir la Información Confidencial recibida al finalizar la relación entre LAS PARTES, si así se lo solicita la parte titular.\n\nCUARTA. EXCEPCIONES.— No se considerará violación del presente acuerdo la divulgación de información que: (i) sea de dominio público sin culpa de la parte receptora; (ii) haya sido conocida legítimamente por la parte receptora con anterioridad y sin obligación de reserva; (iii) deba divulgarse por mandato legal o de autoridad competente, caso en el cual la parte obligada informará previamente a la otra, en la medida en que la ley se lo permita.\n\nQUINTA. VIGENCIA.— El presente acuerdo tendrá vigencia mientras dure la relación entre LAS PARTES, y las obligaciones de confidencialidad aquí pactadas se mantendrán vigentes por {{plazo_confidencialidad}} contados a partir de la terminación de dicha relación o de la firma del presente acuerdo, lo que ocurra de último.\n\nSEXTA. CLÁUSULA PENAL.— En caso de incumplimiento de las obligaciones de confidencialidad aquí pactadas, la parte incumplida deberá pagar a la otra, a título de cláusula penal, la suma de $ {{clausula_penal}}, sin perjuicio del derecho de la parte afectada a reclamar la indemnización total de los perjuicios causados, incluyendo daño emergente y lucro cesante, conforme a los artículos 1613 a 1616 del Código Civil.\n\nSÉPTIMA. MARCO LEGAL.— Este acuerdo se rige, en lo pertinente, por los artículos 260 a 266 de la Decisión Andina 486 de 2000 sobre información no divulgada, el artículo 16 de la Ley 256 de 1996 sobre competencia desleal por violación de secretos, y el artículo 308 del Código Penal sobre violación de secretos comerciales, sin perjuicio de las demás acciones civiles, penales o administrativas a que haya lugar.\n\nOCTAVA. CLÁUSULA COMPROMISORIA.— Toda controversia que se derive del presente acuerdo o que se relacione con él se resolverá por un Tribunal de Arbitramento que sesionará en la ciudad de {{ciudad_arbitraje}}, de acuerdo con las normas legales vigentes sobre la materia.\n\nPara constancia se firma en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}.\n\n_______________________________\n{{nombre_parte1}}\n{{representante_parte1}}\n\n_______________________________\n{{nombre_parte2}}\n{{representante_parte2}}"
+  },
+  {
+    "id": "licencia-uso-marca",
+    "title": "Contrato de Licencia de Uso de Marca",
+    "subtitle": "Propiedad Intelectual",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad de firma",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_licenciante",
+        "label": "Nombre o razón social del licenciante",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo o razón social del titular de la marca que autoriza su uso."
+      },
+      {
+        "name": "nit_licenciante",
+        "label": "NIT o cédula del licenciante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "representante_licenciante",
+        "label": "Representante legal del licenciante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_licenciante",
+        "label": "Dirección del licenciante",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_licenciatario",
+        "label": "Nombre o razón social del licenciatario",
+        "type": "text",
+        "required": true,
+        "help": "Nombre completo o razón social de quien recibe autorización para usar la marca."
+      },
+      {
+        "name": "nit_licenciatario",
+        "label": "NIT o cédula del licenciatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "representante_licenciatario",
+        "label": "Representante legal del licenciatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_licenciatario",
+        "label": "Dirección del licenciatario",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "marca_licenciada",
+        "label": "Marca objeto de la licencia",
+        "type": "text",
+        "required": true,
+        "help": "Nombre o descripción de la marca registrada que se licencia. Ej: 'ANDINA' (mixta)."
+      },
+      {
+        "name": "numero_registro_marca",
+        "label": "Número de certificado de registro",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "clase_niza",
+        "label": "Clase de la Clasificación de Niza",
+        "type": "text",
+        "required": true,
+        "help": "Número de la clase internacional de Niza bajo la cual está registrada la marca. Ej: Clase 25 (prendas de vestir)."
+      },
+      {
+        "name": "productos_servicios_licencia",
+        "label": "Productos o servicios cubiertos por la licencia",
+        "type": "textarea",
+        "required": true,
+        "help": "Describa los productos o servicios que el licenciatario podrá identificar con la marca."
+      },
+      {
+        "name": "tipo_licencia",
+        "label": "Tipo de licencia",
+        "type": "text",
+        "required": true,
+        "help": "Indique si la licencia es exclusiva o no exclusiva. Recuerde que, según el artículo 163 de la Decisión 486, la exclusividad no puede usarse para restringir importaciones paralelas ni el comercio de forma indebida."
+      },
+      {
+        "name": "territorio_licencia",
+        "label": "Territorio de la licencia",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "duracion_licencia",
+        "label": "Duración de la licencia",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "regalias",
+        "label": "Regalías o contraprestación",
+        "type": "textarea",
+        "required": true,
+        "help": "Explique cómo se calcula y paga la contraprestación por el uso de la marca. Ej: 'un pago único de $10.000.000' o 'el 5% de las ventas netas mensuales de los productos identificados con la marca'."
+      },
+      {
+        "name": "estandares_calidad",
+        "label": "Estándares de calidad exigidos",
+        "type": "textarea",
+        "required": true,
+        "help": "Describa los estándares de calidad que el licenciatario debe cumplir. Son importantes porque el uso inadecuado de la marca puede afectar su validez."
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad del arbitraje",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "CONTRATO DE LICENCIA DE USO DE MARCA\n\nEntre los suscritos, a saber: {{nombre_licenciante}}, identificado con NIT/cédula Nº. {{nit_licenciante}}, representado legalmente por {{representante_licenciante}}, con domicilio en {{direccion_licenciante}}, titular de la marca que se identifica en la cláusula primera, quien en adelante se denominará EL LICENCIANTE; y {{nombre_licenciatario}}, identificado con NIT/cédula Nº. {{nit_licenciatario}}, representado legalmente por {{representante_licenciatario}}, con domicilio en {{direccion_licenciatario}}, quien en adelante se denominará EL LICENCIATARIO, hemos convenido celebrar el presente contrato de licencia de uso de marca, que se regirá por las siguientes cláusulas:\n\nPRIMERA. MARCA OBJETO DE LA LICENCIA.— EL LICENCIANTE es titular de la marca {{marca_licenciada}}, registrada ante la Superintendencia de Industria y Comercio bajo el certificado de registro Nº. {{numero_registro_marca}}, para distinguir productos y/o servicios de la clase {{clase_niza}} de la Clasificación Internacional de Niza.\n\nSEGUNDA. OBJETO.— EL LICENCIANTE autoriza a EL LICENCIATARIO el uso de la marca referida en la cláusula anterior, para distinguir los siguientes productos y/o servicios: {{productos_servicios_licencia}}.\n\nTERCERA. TIPO DE LICENCIA Y TERRITORIO.— La presente licencia se otorga en forma {{tipo_licencia}}, para ser utilizada dentro del siguiente territorio: {{territorio_licencia}}.\n\nCUARTA. DURACIÓN.— El presente contrato tendrá una duración de {{duracion_licencia}}, contada a partir de la fecha de suscripción del presente documento.\n\nQUINTA. REGALÍAS.— Como contraprestación por el uso de la marca licenciada, EL LICENCIATARIO pagará a EL LICENCIANTE: {{regalias}}.\n\nSEXTA. CONTROL DE CALIDAD.— EL LICENCIATARIO se obliga a mantener, respecto de los productos y/o servicios que identifique con la marca licenciada, los siguientes estándares de calidad: {{estandares_calidad}}. EL LICENCIANTE tendrá derecho a verificar el cumplimiento de dichos estándares, dado que el uso inadecuado de la marca puede afectar su distintividad y su registro, conforme a la Decisión 486 de 2000.\n\nSÉPTIMA. PROHIBICIÓN DE SUBLICENCIA Y CESIÓN.— EL LICENCIATARIO no podrá sublicenciar, ceder ni transferir a terceros los derechos aquí conferidos, sin autorización previa y escrita de EL LICENCIANTE.\n\nOCTAVA. CLÁUSULAS RESTRICTIVAS PROHIBIDAS.— Las partes declaran que el presente contrato no contiene cláusulas restrictivas del comercio ni contrarias a las normas comunitarias andinas sobre propiedad industrial, tratamiento a capitales extranjeros y prácticas comerciales restrictivas de la libre competencia, de conformidad con el artículo 163 de la Decisión 486 de 2000.\n\nNOVENA. REGISTRO DEL CONTRATO.— Las partes acuerdan que el presente contrato podrá ser inscrito ante la Superintendencia de Industria y Comercio, conforme al artículo 162 de la Decisión 486 de 2000, con el fin de que sea oponible frente a terceros.\n\nDÉCIMA. TERMINACIÓN.— El presente contrato podrá darse por terminado: (i) por vencimiento del plazo pactado; (ii) por mutuo acuerdo entre las partes; (iii) por incumplimiento grave de las obligaciones a cargo de cualquiera de las partes, en especial de los estándares de calidad pactados en la cláusula sexta; (iv) por cancelación, nulidad o caducidad del registro de la marca licenciada.\n\nDÉCIMA PRIMERA. CLÁUSULA COMPROMISORIA.— Toda controversia que se derive del presente contrato o que se relacione con él se resolverá por un Tribunal de Arbitramento que sesionará en la ciudad de {{ciudad_arbitraje}}, de acuerdo con las normas legales vigentes sobre la materia.\n\nPara constancia se firma en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}.\n\nEL LICENCIANTE:\n\n_______________________________\n{{nombre_licenciante}}\n{{representante_licenciante}}\n\nEL LICENCIATARIO:\n\n_______________________________\n{{nombre_licenciatario}}\n{{representante_licenciatario}}"
   }
 ]
