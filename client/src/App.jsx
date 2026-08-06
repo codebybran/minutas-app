@@ -5910,6 +5910,21 @@ const DATOS_PRUEBA = {
     clausula_penal: '20.000.000',
     ciudad_arbitraje: 'Cali',
   },
+  'licencia-uso-marca': {
+    ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
+    nombre_licenciante: 'Distribuidora Andina S.A.S.', nit_licenciante: '900123456-1', representante_licenciante: 'Jhon Brandon Martínez Vélez', direccion_licenciante: 'Calle 10 # 5-67, El Cerrito',
+    nombre_licenciatario: 'Comercializadora García Ríos S.A.S.', nit_licenciatario: '900654321-2', representante_licenciatario: 'Laura Vanessa García Ríos', direccion_licenciatario: 'Carrera 8 # 12-34, Cali',
+    marca_licenciada: 'ANDINA (mixta)',
+    numero_registro_marca: '654321',
+    clase_niza: '25 (prendas de vestir)',
+    productos_servicios_licencia: 'Camisetas, pantalones y demás prendas de vestir para adulto.',
+    tipo_licencia: 'no exclusiva',
+    territorio_licencia: 'Departamento del Valle del Cauca',
+    duracion_licencia: 'dos (2) años',
+    regalias: 'un pago único de $10.000.000 a la firma del presente contrato',
+    estandares_calidad: 'Los productos deberán cumplir con los mismos estándares de calidad, materiales y acabados que utiliza el licenciante en sus propios productos identificados con la marca.',
+    ciudad_arbitraje: 'Cali',
+  },
   'pagare': {
     numero_pagare: '001', ciudad_lugar: 'Cali', dia: '15', mes: 'abril', anio: '2026',
     valor_numeros: '5.000.000', ciudad_pago: 'Cali', direccion_pago: 'Calle 10 # 5-20 Of. 301',
@@ -8769,6 +8784,11 @@ const PASOS_SIGUIENTE = {
     { num:1, titulo:'Describa bien la información protegida', descripcion:'Cuanto más específica sea la descripción de la información confidencial, más fácil será demostrar su incumplimiento. Evite descripciones genéricas como "toda la información de la empresa".' },
     { num:2, titulo:'La cláusula penal no reemplaza la indemnización total', descripcion:'La cláusula penal es un valor mínimo garantizado, pero la parte afectada puede reclamar adicionalmente el resto de los perjuicios probados (daño emergente y lucro cesante) conforme al Código Civil.' },
     { num:3, titulo:'Puede haber acciones penales', descripcion:'La violación de secretos comerciales puede constituir además el delito previsto en el artículo 308 del Código Penal, independiente de las acciones civiles derivadas del acuerdo.' },
+  ],
+  'licencia-uso-marca': [
+    { num:1, titulo:'Considere registrar el contrato ante la SIC', descripcion:'Registrar el contrato de licencia ante la Superintendencia de Industria y Comercio lo hace oponible frente a terceros, conforme al artículo 162 de la Decisión 486 de 2000. No es obligatorio, pero da mayor seguridad jurídica.' },
+    { num:2, titulo:'El control de calidad protege la marca', descripcion:'Si el licenciante no exige ni verifica estándares de calidad, el uso de la marca por terceros puede terminar afectando su distintividad e incluso dar lugar a su cancelación. No deje esta cláusula genérica.' },
+    { num:3, titulo:'Revise que no haya cláusulas restrictivas', descripcion:'El artículo 163 de la Decisión 486 prohíbe cláusulas que restrinjan indebidamente el comercio, como impedir importaciones paralelas o imponer condiciones abusivas al licenciatario. Cláusulas de este tipo pueden ser declaradas nulas.' },
   ],
   'pagare': [
     'Imprima el pagaré en papel tamaño carta.',
