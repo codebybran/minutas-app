@@ -5925,6 +5925,17 @@ const DATOS_PRUEBA = {
     estandares_calidad: 'Los productos deberán cumplir con los mismos estándares de calidad, materiales y acabados que utiliza el licenciante en sus propios productos identificados con la marca.',
     ciudad_arbitraje: 'Cali',
   },
+  'cesion-marca': {
+    ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
+    nombre_cedente_marca: 'Distribuidora Andina S.A.S.', nit_cedente: '900123456-1', representante_cedente: 'Jhon Brandon Martínez Vélez', direccion_cedente: 'Calle 10 # 5-67, El Cerrito',
+    nombre_cesionario_marca: 'Comercializadora García Ríos S.A.S.', nit_cesionario: '900654321-2', representante_cesionario: 'Laura Vanessa García Ríos', direccion_cesionario: 'Carrera 8 # 12-34, Cali',
+    marca_cedida: 'ANDINA (mixta)',
+    numero_registro_marca: '654321',
+    clase_niza: '25 (prendas de vestir)',
+    precio_cesion: 'cincuenta millones de pesos ($50.000.000)',
+    forma_pago_cesion: 'de contado, mediante transferencia bancaria, al momento de la firma del presente contrato',
+    ciudad_arbitraje: 'Cali',
+  },
   'pagare': {
     numero_pagare: '001', ciudad_lugar: 'Cali', dia: '15', mes: 'abril', anio: '2026',
     valor_numeros: '5.000.000', ciudad_pago: 'Cali', direccion_pago: 'Calle 10 # 5-20 Of. 301',
@@ -8789,6 +8800,11 @@ const PASOS_SIGUIENTE = {
     { num:1, titulo:'Considere registrar el contrato ante la SIC', descripcion:'Registrar el contrato de licencia ante la Superintendencia de Industria y Comercio lo hace oponible frente a terceros, conforme al artículo 162 de la Decisión 486 de 2000. No es obligatorio, pero da mayor seguridad jurídica.' },
     { num:2, titulo:'El control de calidad protege la marca', descripcion:'Si el licenciante no exige ni verifica estándares de calidad, el uso de la marca por terceros puede terminar afectando su distintividad e incluso dar lugar a su cancelación. No deje esta cláusula genérica.' },
     { num:3, titulo:'Revise que no haya cláusulas restrictivas', descripcion:'El artículo 163 de la Decisión 486 prohíbe cláusulas que restrinjan indebidamente el comercio, como impedir importaciones paralelas o imponer condiciones abusivas al licenciatario. Cláusulas de este tipo pueden ser declaradas nulas.' },
+  ],
+  'cesion-marca': [
+    { num:1, titulo:'Inscriba la cesión ante la SIC', descripcion:'La cesión solo es oponible frente a terceros una vez se inscribe ante la Superintendencia de Industria y Comercio, conforme al artículo 161 de la Decisión 486 de 2000. Mientras no se registre, un tercero de buena fe podría desconocer la transferencia.' },
+    { num:2, titulo:'Verifique que la marca esté libre de gravámenes', descripcion:'Antes de firmar, revise en el registro de la SIC que la marca no tenga licencias vigentes, embargos o litigios pendientes que puedan afectar la cesión.' },
+    { num:3, titulo:'Reúna la documentación para el trámite', descripcion:'El cedente debe entregar los documentos necesarios para que el cesionario pueda adelantar la inscripción ante la SIC sin contratiempos.' },
   ],
   'pagare': [
     'Imprima el pagaré en papel tamaño carta.',
