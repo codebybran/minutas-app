@@ -118,6 +118,7 @@ const TIPO_TRAMITE = {
   'endoso-titulo-valor':'Privado',
   'contrato-distribucion':'Privado',
   'acuerdo-confidencialidad-comercial':'Privado',
+  'licencia-uso-marca':'Privado',
   'pagare':'Privado','carta-instrucciones-pagare':'Privado',
   'compraventa-establecimiento-comercio':'Privado','arrendamiento-local-comercial':'Privado',
   'subarriendo-local-comercial':'Privado','agencia-comercial':'Privado',
