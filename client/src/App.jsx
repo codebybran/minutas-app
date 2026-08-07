@@ -5936,6 +5936,15 @@ const DATOS_PRUEBA = {
     forma_pago_cesion: 'de contado, mediante transferencia bancaria, al momento de la firma del presente contrato',
     ciudad_arbitraje: 'Cali',
   },
+  'acuerdo-de-pago': {
+    ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
+    nombre_acreedor: 'Jhon Brandon Martínez Vélez', cedula_acreedor: '1234567890', direccion_acreedor: 'Calle 10 # 5-67, El Cerrito',
+    nombre_deudor: 'Alexander García López', cedula_deudor: '0987654321', direccion_deudor: 'Carrera 8 # 12-34, Cali',
+    origen_deuda: 'la venta de mercancía realizada mediante factura de venta N°. FV-0234 del 10 de enero de 2026, que a la fecha se encuentra pendiente de pago',
+    valor_total_deuda: '8.000.000',
+    forma_pago_cuotas: 'en 4 cuotas mensuales de $2.000.000 cada una, pagaderas los días 5 de mayo, junio, julio y agosto de 2026',
+    consecuencias_incumplimiento: 'No aplican consecuencias adicionales a las previstas en este documento.',
+  },
   'pagare': {
     numero_pagare: '001', ciudad_lugar: 'Cali', dia: '15', mes: 'abril', anio: '2026',
     valor_numeros: '5.000.000', ciudad_pago: 'Cali', direccion_pago: 'Calle 10 # 5-20 Of. 301',
@@ -8805,6 +8814,11 @@ const PASOS_SIGUIENTE = {
     { num:1, titulo:'Inscriba la cesión ante la SIC', descripcion:'La cesión solo es oponible frente a terceros una vez se inscribe ante la Superintendencia de Industria y Comercio, conforme al artículo 161 de la Decisión 486 de 2000. Mientras no se registre, un tercero de buena fe podría desconocer la transferencia.' },
     { num:2, titulo:'Verifique que la marca esté libre de gravámenes', descripcion:'Antes de firmar, revise en el registro de la SIC que la marca no tenga licencias vigentes, embargos o litigios pendientes que puedan afectar la cesión.' },
     { num:3, titulo:'Reúna la documentación para el trámite', descripcion:'El cedente debe entregar los documentos necesarios para que el cesionario pueda adelantar la inscripción ante la SIC sin contratiempos.' },
+  ],
+  'acuerdo-de-pago': [
+    { num:1, titulo:'Este documento presta mérito ejecutivo', descripcion:'Si el deudor incumple, puede iniciar directamente un proceso ejecutivo con este documento, sin necesidad de un juicio declarativo previo, conforme al artículo 422 del Código General del Proceso.' },
+    { num:2, titulo:'La cláusula aceleratoria protege al acreedor', descripcion:'Si el deudor no paga una sola cuota, usted puede exigir el pago de todo el saldo pendiente de inmediato, sin esperar a que venzan las demás cuotas.' },
+    { num:3, titulo:'Guarde prueba del incumplimiento', descripcion:'Si en el futuro necesita cobrar judicialmente, conserve los comprobantes de pago recibidos y la evidencia de las cuotas no pagadas.' },
   ],
   'pagare': [
     'Imprima el pagaré en papel tamaño carta.',
