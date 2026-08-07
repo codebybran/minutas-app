@@ -4609,5 +4609,101 @@
       }
     ],
     "template": "CONTRATO DE CESIÓN DE MARCA\n\nEntre los suscritos, a saber: {{nombre_cedente_marca}}, identificado con NIT/cédula Nº. {{nit_cedente}}, representado legalmente por {{representante_cedente}}, con domicilio en {{direccion_cedente}}, titular de la marca que se identifica en la cláusula primera, quien en adelante se denominará EL CEDENTE; y {{nombre_cesionario_marca}}, identificado con NIT/cédula Nº. {{nit_cesionario}}, representado legalmente por {{representante_cesionario}}, con domicilio en {{direccion_cesionario}}, quien en adelante se denominará EL CESIONARIO, hemos convenido celebrar el presente contrato de cesión de marca, que se regirá por las siguientes cláusulas:\n\nPRIMERA. MARCA OBJETO DE LA CESIÓN.— EL CEDENTE es titular de la marca {{marca_cedida}}, registrada ante la Superintendencia de Industria y Comercio bajo el certificado de registro Nº. {{numero_registro_marca}}, para distinguir productos y/o servicios de la clase {{clase_niza}} de la Clasificación Internacional de Niza.\n\nSEGUNDA. OBJETO.— EL CEDENTE transfiere a título de venta a EL CESIONARIO, en forma total, definitiva e irrevocable, todos los derechos de propiedad industrial que ostenta sobre la marca descrita en la cláusula anterior, incluyendo el derecho al uso exclusivo, goce y disposición de la misma, de conformidad con el artículo 161 de la Decisión 486 de 2000.\n\nTERCERA. PRECIO Y FORMA DE PAGO.— El precio de la presente cesión es de {{precio_cesion}}, que EL CESIONARIO pagará a EL CEDENTE de la siguiente manera: {{forma_pago_cesion}}.\n\nCUARTA. SANEAMIENTO.— EL CEDENTE declara que la marca objeto de este contrato se encuentra libre de gravámenes, embargos, litigios, licencias vigentes u otros derechos de terceros que puedan afectar su libre disposición, y se obliga al saneamiento por evicción en los términos del Código Civil, en caso de que un tercero reclame mejor derecho sobre la marca.\n\nQUINTA. REGISTRO DE LA TRANSFERENCIA.— Las partes se obligan a realizar, dentro de los términos legales, el trámite de inscripción de la presente cesión ante la Superintendencia de Industria y Comercio, requisito indispensable para que la transferencia sea oponible frente a terceros, conforme al artículo 161 de la Decisión 486 de 2000 y la jurisprudencia del Tribunal Andino de Justicia.\n\nSEXTA. ENTREGA DE DOCUMENTOS.— EL CEDENTE se obliga a entregar a EL CESIONARIO, dentro de los cinco (5) días siguientes a la firma del presente contrato, los documentos e información relacionados con la marca cedida que sean necesarios para el trámite de inscripción de la transferencia.\n\nSÉPTIMA. CLÁUSULA COMPROMISORIA.— Toda controversia que se derive del presente contrato o que se relacione con él se resolverá por un Tribunal de Arbitramento que sesionará en la ciudad de {{ciudad_arbitraje}}, de acuerdo con las normas legales vigentes sobre la materia.\n\nPara constancia se firma en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}.\n\nEL CEDENTE:\n\n_______________________________\n{{nombre_cedente_marca}}\n{{representante_cedente}}\n\nEL CESIONARIO:\n\n_______________________________\n{{nombre_cesionario_marca}}\n{{representante_cesionario}}"
+  },
+  {
+    "id": "acuerdo-de-pago",
+    "title": "Acuerdo de Pago",
+    "subtitle": "Cobranza",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad de firma",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_acreedor",
+        "label": "Nombre completo del acreedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_acreedor",
+        "label": "Cédula o NIT del acreedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_acreedor",
+        "label": "Dirección del acreedor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_deudor",
+        "label": "Nombre completo del deudor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_deudor",
+        "label": "Cédula o NIT del deudor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "direccion_deudor",
+        "label": "Dirección del deudor",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "origen_deuda",
+        "label": "Origen de la deuda",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "valor_total_deuda",
+        "label": "Valor total de la deuda",
+        "type": "text",
+        "required": true,
+        "help": "Valor total reconocido de la deuda, en números. Ej: 8.000.000."
+      },
+      {
+        "name": "forma_pago_cuotas",
+        "label": "Forma y plan de pago",
+        "type": "textarea",
+        "required": true,
+        "help": "Describa el plan de pagos: número de cuotas, valor de cada una, y fechas exactas de pago. Ej: 'en 4 cuotas mensuales de $2.000.000 cada una, pagaderas los días 5 de mayo, junio, julio y agosto de 2026'."
+      },
+      {
+        "name": "consecuencias_incumplimiento",
+        "label": "Consecuencias adicionales del incumplimiento",
+        "type": "textarea",
+        "required": true,
+        "help": "Puede agregar consecuencias adicionales específicas para su caso (opcional). Si no aplica, escriba: 'No aplican consecuencias adicionales a las previstas en este documento.' — de todas formas, el documento ya incluye la cláusula aceleratoria estándar."
+      }
+    ],
+    "template": "ACUERDO DE PAGO\n\nEntre los suscritos, a saber: {{nombre_acreedor}}, identificado con cédula de ciudadanía o NIT Nº. {{cedula_acreedor}}, con domicilio en {{direccion_acreedor}}, quien en adelante se denominará EL ACREEDOR; y {{nombre_deudor}}, identificado con cédula de ciudadanía o NIT Nº. {{cedula_deudor}}, con domicilio en {{direccion_deudor}}, quien en adelante se denominará EL DEUDOR, hemos convenido celebrar el presente Acuerdo de Pago, que se regirá por las siguientes cláusulas:\n\nPRIMERA. RECONOCIMIENTO DE LA DEUDA.— EL DEUDOR reconoce expresa, clara e incondicionalmente que debe a EL ACREEDOR la suma de $ {{valor_total_deuda}}, originada en: {{origen_deuda}}.\n\nSEGUNDA. FORMA DE PAGO.— EL DEUDOR se obliga a pagar la suma reconocida en la cláusula anterior de la siguiente manera: {{forma_pago_cuotas}}.\n\nTERCERA. CLÁUSULA ACELERATORIA.— {{consecuencias_incumplimiento}} En todo caso, el incumplimiento en el pago de cualquiera de las cuotas pactadas dará derecho a EL ACREEDOR a exigir el pago inmediato de la totalidad del saldo insoluto, como si la obligación fuera de plazo vencido, sin necesidad de requerimiento previo.\n\nCUARTA. NATURALEZA DEL DOCUMENTO.— Las partes dejan constancia de que el presente documento contiene una obligación clara, expresa y actualmente exigible, en los términos del artículo 422 del Código General del Proceso, por lo que presta mérito ejecutivo en caso de incumplimiento, sin necesidad de trámite judicial declarativo previo.\n\nQUINTA. INTERESES DE MORA.— En caso de incumplimiento, EL DEUDOR reconocerá a EL ACREEDOR intereses moratorios a la tasa máxima legal permitida, sobre el saldo insoluto, desde la fecha de exigibilidad hasta el pago total de la obligación.\n\nPara constancia se firma en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}.\n\nEL ACREEDOR:\n\n_______________________________\n{{nombre_acreedor}}\nC.C./NIT Nº. {{cedula_acreedor}}\n\nEL DEUDOR:\n\n_______________________________\n{{nombre_deudor}}\nC.C./NIT Nº. {{cedula_deudor}}"
   }
 ]
