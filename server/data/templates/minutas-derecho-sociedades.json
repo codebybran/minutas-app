@@ -4481,5 +4481,108 @@
       }
     ],
     "template": "CONSTITUCIÓN DE SOCIEDAD POR ACCIONES SIMPLIFICADA (S.A.S.)\n\nEn la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}, los suscritos: {{accionistas}}; en su calidad de accionistas fundadores, hemos decidido constituir una sociedad por acciones simplificada, la cual se regirá por los siguientes estatutos, de conformidad con la Ley 1258 de 2008:\n\nCAPÍTULO I. RAZÓN SOCIAL, DOMICILIO, OBJETO Y DURACIÓN\n\nARTÍCULO 1°. RAZÓN SOCIAL.— La sociedad se denominará {{nombre_sociedad}} SOCIEDAD POR ACCIONES SIMPLIFICADA, pudiendo utilizar también la sigla {{nombre_sociedad}} S.A.S.\n\nARTÍCULO 2°. DOMICILIO.— El domicilio principal de la sociedad será la ciudad de {{domicilio_sociedad}}.\n\nARTÍCULO 3°. DURACIÓN.— La duración de la sociedad será {{duracion_sociedad}}.\n\nARTÍCULO 4°. OBJETO SOCIAL.— La sociedad tendrá como objeto social: {{objeto_social}}. En todo caso, la sociedad podrá realizar cualquier actividad comercial o civil lícita, conforme al artículo 5° de la Ley 1258 de 2008.\n\nCAPÍTULO II. CAPITAL Y ACCIONES\n\nARTÍCULO 5°. CAPITAL AUTORIZADO.— El capital autorizado de la sociedad es la suma de {{capital_autorizado_letras}} ($ {{capital_autorizado_numeros}}), dividido en {{numero_acciones}} acciones ordinarias de un valor nominal de $ {{valor_nominal_accion}} cada una.\n\nARTÍCULO 6°. CAPITAL SUSCRITO Y PAGADO.— El capital suscrito es la suma de {{capital_suscrito_letras}} ($ {{capital_suscrito_numeros}}), y el capital pagado a la fecha es la suma de {{capital_pagado_letras}} ($ {{capital_pagado_numeros}}). El saldo pendiente de pago deberá cancelarse dentro de {{plazo_pago_capital}}, término que en todo caso no podrá exceder de dos (2) años contados a partir de la fecha del presente documento, conforme al artículo 9° de la Ley 1258 de 2008.\n\nCAPÍTULO III. ADMINISTRACIÓN Y REPRESENTACIÓN LEGAL\n\nARTÍCULO 7°. ADMINISTRACIÓN.— La sociedad será administrada de la siguiente manera: {{forma_administracion}}.\n\nARTÍCULO 8°. REPRESENTANTE LEGAL.— La representación legal de la sociedad estará a cargo de {{nombre_representante_legal}}, identificado con cédula de ciudadanía Nº. {{cedula_representante_legal}}, quien tendrá las siguientes facultades: {{facultades_representante_legal}}.\n\nCAPÍTULO IV. DISPOSICIONES FINALES\n\nARTÍCULO 9°. RÉGIMEN LEGAL.— En lo no previsto en estos estatutos, la sociedad se regirá por las normas legales que rigen a la sociedad anónima y, en su defecto, por las disposiciones generales que rigen a las sociedades previstas en el Código de Comercio, conforme al artículo 3° de la Ley 1258 de 2008.\n\nARTÍCULO 10°. CLÁUSULA COMPROMISORIA.— Toda controversia que se derive del contrato social, de sus estatutos o que se relacione con la sociedad, se resolverá por un Tribunal de Arbitramento que sesionará en la ciudad de {{ciudad_arbitraje}}, de acuerdo con las normas legales vigentes sobre la materia.\n\nEn constancia de lo anterior, se firma el presente documento privado de constitución en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} del año {{anio}}.\n\n_______________________________\n(Firma de cada uno de los accionistas)"
+  },
+  {
+    "id": "reforma-estatutos-sas",
+    "title": "Acta de Asamblea - Reforma de Estatutos de S.A.S.",
+    "subtitle": "Empresa Unipersonal y Sociedades Básicas",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad de la reunión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hora",
+        "label": "Hora de inicio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre de la sociedad (sin S.A.S.)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nit_sociedad",
+        "label": "NIT de la sociedad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "accionistas_asistentes",
+        "label": "Accionistas asistentes y acciones que representan",
+        "type": "textarea",
+        "required": true,
+        "help": "Liste cada accionista asistente con el número de acciones que representa. Ej: 'Jhon Brandon Martínez Vélez, titular de 6.000 acciones; Laura Vanessa García Ríos, titular de 4.000 acciones.'"
+      },
+      {
+        "name": "porcentaje_representado",
+        "label": "Porcentaje de acciones representadas en la reunión",
+        "type": "text",
+        "required": true,
+        "help": "Porcentaje del total de acciones suscritas que está representado por los asistentes. Ej: 100%."
+      },
+      {
+        "name": "presidente_asamblea",
+        "label": "Presidente de la reunión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "secretario_asamblea",
+        "label": "Secretario de la reunión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "articulo_reformado",
+        "label": "Artículo de los estatutos que se reforma",
+        "type": "text",
+        "required": true,
+        "help": "Indique el número y nombre del artículo. Ej: 'Artículo 2°. Domicilio.'"
+      },
+      {
+        "name": "texto_anterior",
+        "label": "Texto anterior del artículo",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "texto_nuevo",
+        "label": "Nuevo texto aprobado",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "votos_favor",
+        "label": "Porcentaje o descripción de los votos a favor",
+        "type": "text",
+        "required": true,
+        "help": "Ej: '100% de las acciones presentes' o 'la totalidad de las acciones presentes en la reunión'. Recuerde que la ley exige cuando menos la mitad más una de las acciones presentes (Art. 29 Ley 1258 de 2008)."
+      }
+    ],
+    "template": "ACTA DE ASAMBLEA GENERAL DE ACCIONISTAS – REFORMA DE ESTATUTOS\n\nEn la ciudad de {{ciudad}}, siendo las {{hora}} del día {{dia}} de {{mes}} de {{anio}}, se reunió la Asamblea General de Accionistas de {{nombre_sociedad}} S.A.S., identificada con NIT Nº. {{nit_sociedad}}, previa convocatoria realizada en los términos de los estatutos sociales, con el fin de deliberar y decidir sobre el siguiente orden del día:\n\n1. Verificación del quórum.\n2. Elección de Presidente y Secretario de la reunión.\n3. Aprobación de la reforma de estatutos.\n\nDESARROLLO DE LA REUNIÓN\n\nPRIMERO. VERIFICACIÓN DEL QUÓRUM.— Se deja constancia de la asistencia de los siguientes accionistas: {{accionistas_asistentes}}; quienes en conjunto representan el {{porcentaje_representado}} de las acciones suscritas de la sociedad, por lo cual se verificó la existencia de quórum suficiente para deliberar y decidir, conforme al artículo 22 de la Ley 1258 de 2008.\n\nSEGUNDO. ELECCIÓN DE PRESIDENTE Y SECRETARIO.— Se designó como Presidente de la reunión a {{presidente_asamblea}} y como Secretario a {{secretario_asamblea}}.\n\nTERCERO. REFORMA DE ESTATUTOS.— El Presidente sometió a consideración de la Asamblea la siguiente reforma estatutaria:\n\nArtículo reformado: {{articulo_reformado}}\n\nTexto anterior: {{texto_anterior}}\n\nNuevo texto aprobado: {{texto_nuevo}}\n\nSometida a votación la anterior propuesta, fue aprobada con el voto favorable de accionistas que representan el {{votos_favor}} de las acciones presentes en la reunión, cumpliendo así con la mayoría exigida por el artículo 29 de la Ley 1258 de 2008, según el cual las reformas estatutarias requieren el voto favorable de cuando menos la mitad más una de las acciones presentes.\n\nCUARTO. FORMALIZACIÓN.— La presente reforma constará en documento privado, el cual deberá inscribirse en el Registro Mercantil de la Cámara de Comercio del domicilio social para que produzca efectos frente a terceros, conforme al artículo 29 de la Ley 1258 de 2008.\n\nNo habiendo otro asunto que tratar, se levantó la sesión, siendo aprobada la presente acta por los asistentes.\n\n_______________________________\n{{presidente_asamblea}}\nPresidente\n\n_______________________________\n{{secretario_asamblea}}\nSecretario"
   }
 ]
