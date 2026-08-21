@@ -140,6 +140,7 @@ const TIPO_TRAMITE = {
   'demanda-cancelacion-reposicion-titulo-valor':'Privado',
   // --- DERECHO DE SOCIEDADES ---
   'constitucion-sas':'Privado',
+  'reforma-estatutos-sas':'Privado',
   'constitucion-empresa-unipersonal':'Privado','constitucion-sociedad-hecho':'Privado',
   'constitucion-sociedad-colectiva':'Notarial','poder-constituir-sociedad-anonima':'Privado',
   'poder-representar-asamblea':'Privado','poder-representar-accionista-permanente':'Privado',
