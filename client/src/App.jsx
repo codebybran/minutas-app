@@ -6490,6 +6490,17 @@ const DATOS_PRUEBA = {
     domicilio_sociedad_colombiana: 'Cali', ciudad_notario: 'Nueva York',
     dia: '15', mes: 'enero', anio: '2026',
   },
+  'reforma-estatutos-sas': {
+    ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026', hora: '9:00 a.m.',
+    nombre_sociedad: 'Distribuidora Andina', nit_sociedad: '900.123.456-7',
+    accionistas_asistentes: 'Jhon Brandon Martínez Vélez, titular de 6.000 acciones; Laura Vanessa García Ríos, titular de 4.000 acciones.',
+    porcentaje_representado: '100%',
+    presidente_asamblea: 'Jhon Brandon Martínez Vélez', secretario_asamblea: 'Laura Vanessa García Ríos',
+    articulo_reformado: 'Artículo 2°. Domicilio.',
+    texto_anterior: 'El domicilio principal de la sociedad será la ciudad de El Cerrito.',
+    texto_nuevo: 'El domicilio principal de la sociedad será la ciudad de Cali.',
+    votos_favor: '100% de las acciones presentes',
+  },
   'constitucion-sas': {
     ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
     accionistas: 'Jhon Brandon Martínez Vélez, C.C. 1234567890, domiciliado en El Cerrito; Laura Vanessa García Ríos, C.C. 0987654321, domiciliada en Cali.',
@@ -9723,6 +9734,11 @@ const PASOS_SIGUIENTE = {
     'Registre el poder ante la sociedad para que surta efectos en todas las asambleas.',
     'Los apoderados pueden ejercer todos los derechos del accionista incluyendo el de inspección.',
     'El poder es vigente hasta que sea revocado o renovado por otro instrumento.',
+  ],
+  'reforma-estatutos-sas': [
+    { num:1, titulo:'Verifique la mayoría requerida', descripcion:'La reforma debe aprobarse con el voto favorable de cuando menos la mitad más una de las acciones presentes en la reunión, conforme al artículo 29 de la Ley 1258 de 2008.' },
+    { num:2, titulo:'Inscriba el acta en la Cámara de Comercio', descripcion:'La reforma solo produce efectos frente a terceros una vez el acta se inscribe en el Registro Mercantil de la Cámara de Comercio del domicilio social.' },
+    { num:3, titulo:'Verifique si necesita escritura pública', descripcion:'Si la reforma implica el aporte o transferencia de bienes inmuebles u otros que la ley exija formalizar por escritura pública, deberá elevarse a ese instrumento adicionalmente.' },
   ],
   'constitucion-sas': [
     { num:1, titulo:'Autentique las firmas antes de registrar', descripcion:'El documento privado de constitución debe autenticarse (firmas de todos los accionistas) ante notaría o ante la propia Cámara de Comercio, antes de la inscripción en el Registro Mercantil.' },
