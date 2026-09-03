@@ -142,6 +142,7 @@ const TIPO_TRAMITE = {
   'constitucion-sas':'Privado',
   'reforma-estatutos-sas':'Privado',
   'acuerdo-accionistas':'Privado',
+  'disolucion-liquidacion-sociedad-comercial':'Privado',
   'constitucion-empresa-unipersonal':'Privado','constitucion-sociedad-hecho':'Privado',
   'constitucion-sociedad-colectiva':'Notarial','poder-constituir-sociedad-anonima':'Privado',
   'poder-representar-asamblea':'Privado','poder-representar-accionista-permanente':'Privado',
