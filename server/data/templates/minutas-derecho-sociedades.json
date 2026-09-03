@@ -4691,5 +4691,122 @@
       }
     ],
     "template": "ACUERDO DE ACCIONISTAS\n\nEntre los suscritos accionistas de {{nombre_sociedad}} S.A.S., identificada con NIT Nº. {{nit_sociedad}}, a saber: {{accionistas_firmantes}}; hemos convenido celebrar el presente Acuerdo de Accionistas, de conformidad con el artículo 24 de la Ley 1258 de 2008, el cual se regirá por las siguientes cláusulas:\n\nPRIMERA. OBJETO.— El presente acuerdo tiene por objeto regular entre los suscriptores las siguientes materias: {{materias_acuerdo}}.\n\nSEGUNDA. DERECHO DE PREFERENCIA.— {{derecho_preferencia}}\n\nTERCERA. RESTRICCIONES A LA TRANSFERENCIA DE ACCIONES.— {{restricciones_transferencia}}\n\nCUARTA. EJERCICIO DEL DERECHO DE VOTO.— {{forma_ejercicio_voto}}\n\nQUINTA. REPRESENTANTE DEL ACUERDO.— Los accionistas suscriptores designan a {{representante_acuerdo}} como la persona que los representará ante la administración de la sociedad para efectos de recibir y suministrar información relacionada con el presente acuerdo, conforme al artículo 24 de la Ley 1258 de 2008.\n\nSEXTA. PLAZO.— El presente acuerdo tendrá una vigencia de {{plazo_acuerdo}}, término que no podrá exceder de diez (10) años, prorrogable por voluntad unánime de los suscriptores por períodos que tampoco podrán exceder de diez (10) años, conforme al artículo 24 de la Ley 1258 de 2008.\n\nSÉPTIMA. DEPÓSITO DEL ACUERDO.— Los suscriptores se obligan a depositar el presente acuerdo en las oficinas donde funcione la administración de la sociedad, requisito indispensable para que sea acatado por la compañía. Una vez depositado, el Presidente de la Asamblea no podrá computar los votos proferidos en contravención a lo aquí pactado, conforme al parágrafo 1° del artículo 24 de la Ley 1258 de 2008.\n\nOCTAVA. INCUMPLIMIENTO.— {{consecuencias_incumplimiento_acuerdo}} Sin perjuicio de lo anterior, los suscriptores podrán promover ante la Superintendencia de Sociedades, mediante el trámite del proceso verbal sumario, la ejecución específica de las obligaciones aquí pactadas, conforme al parágrafo 2° del artículo 24 de la Ley 1258 de 2008.\n\nNOVENA. CLÁUSULA COMPROMISORIA.— Toda controversia que se derive del presente acuerdo o que se relacione con él, distinta de la ejecución específica prevista en la cláusula anterior, se resolverá por un Tribunal de Arbitramento que sesionará en la ciudad de {{ciudad_arbitraje}}, de acuerdo con las normas legales vigentes sobre la materia.\n\nPara constancia se firma en la ciudad de {{ciudad}}, a los {{dia}} días del mes de {{mes}} de {{anio}}.\n\n(Firma de cada uno de los accionistas suscriptores del presente acuerdo)"
+  },
+  {
+    "id": "disolucion-liquidacion-sociedad-comercial",
+    "title": "Acta de Disolución y Liquidación de Sociedad Comercial",
+    "subtitle": "Empresa Unipersonal y Sociedades Básicas",
+    "tipo_tramite": "Privado",
+    "fields": [
+      {
+        "name": "ciudad",
+        "label": "Ciudad de la reunión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dia",
+        "label": "Día",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "mes",
+        "label": "Mes",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "anio",
+        "label": "Año",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "hora",
+        "label": "Hora de inicio",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "nombre_sociedad",
+        "label": "Nombre de la sociedad (sin el tipo societario)",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "tipo_societario",
+        "label": "Tipo de sociedad",
+        "type": "text",
+        "required": true,
+        "help": "Ej: S.A.S., Ltda., S.A."
+      },
+      {
+        "name": "nit_sociedad",
+        "label": "NIT de la sociedad",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "socios_asistentes",
+        "label": "Socios asistentes y participación de cada uno",
+        "type": "textarea",
+        "required": true,
+        "help": "Liste cada socio o accionista asistente con su participación. Ej: 'Jhon Brandon Martínez Vélez, titular del 60% del capital; Laura Vanessa García Ríos, titular del 40%.'"
+      },
+      {
+        "name": "porcentaje_representado",
+        "label": "Porcentaje del capital representado en la reunión",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "causal_disolucion",
+        "label": "Causal de disolución",
+        "type": "textarea",
+        "required": true,
+        "help": "Indique la causal según el artículo 218 del Código de Comercio. Ej: 'decisión voluntaria de los socios, adoptada conforme a la ley y a los estatutos sociales' (la más común cuando es voluntaria), o 'vencimiento del término de duración previsto en los estatutos'."
+      },
+      {
+        "name": "nombre_liquidador",
+        "label": "Nombre del liquidador designado",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "cedula_liquidador",
+        "label": "Cédula del liquidador",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "activos_sociedad",
+        "label": "Activos de la sociedad (inventario)",
+        "type": "textarea",
+        "required": true,
+        "help": "Describa los activos de la sociedad con su valor. Ej: 'Saldo en cuenta bancaria: $5.000.000; equipos de oficina: $3.000.000. Total activos: $8.000.000.'"
+      },
+      {
+        "name": "pasivos_sociedad",
+        "label": "Pasivos de la sociedad",
+        "type": "textarea",
+        "required": true,
+        "help": "Describa las deudas de la sociedad con sus acreedores. Si no hay pasivos, escriba: 'La sociedad no registra pasivos pendientes de pago.'"
+      },
+      {
+        "name": "remanente_distribucion",
+        "label": "Distribución del remanente entre los socios",
+        "type": "textarea",
+        "required": true,
+        "help": "Explique cómo se reparte lo que queda después de pagar el pasivo, en proporción a la participación de cada socio. Si no queda remanente, escriba: 'No existe remanente a distribuir.'"
+      },
+      {
+        "name": "ciudad_arbitraje",
+        "label": "Ciudad del arbitraje",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "template": "ACTA DE DISOLUCIÓN Y LIQUIDACIÓN DE SOCIEDAD\n\nEn la ciudad de {{ciudad}}, siendo las {{hora}} del día {{dia}} de {{mes}} de {{anio}}, se reunieron los socios de {{nombre_sociedad}} {{tipo_societario}}, identificada con NIT Nº. {{nit_sociedad}}, con el fin de deliberar y decidir sobre la disolución y liquidación de la sociedad, conforme al siguiente orden del día:\n\n1. Verificación del quórum.\n2. Declaratoria de disolución de la sociedad.\n3. Nombramiento del liquidador.\n4. Aprobación de la cuenta final de liquidación.\n\nDESARROLLO DE LA REUNIÓN\n\nPRIMERO. VERIFICACIÓN DEL QUÓRUM.— Se deja constancia de la asistencia de los siguientes socios: {{socios_asistentes}}; quienes en conjunto representan el {{porcentaje_representado}} del capital social, por lo cual se verificó la existencia de quórum suficiente para deliberar y decidir.\n\nSEGUNDO. DECLARATORIA DE DISOLUCIÓN.— Los socios declaran disuelta la sociedad {{nombre_sociedad}} {{tipo_societario}}, por la siguiente causal: {{causal_disolucion}}, de conformidad con el artículo 218 del Código de Comercio. A partir de la fecha, la sociedad deberá adicionar a su razón social la expresión \"EN LIQUIDACIÓN\", conforme al artículo 222 del Código de Comercio.\n\nTERCERO. NOMBRAMIENTO DEL LIQUIDADOR.— Los socios designan como liquidador a {{nombre_liquidador}}, identificado con cédula de ciudadanía Nº. {{cedula_liquidador}}, quien tendrá las funciones y facultades previstas en el artículo 238 y siguientes del Código de Comercio para adelantar el proceso de liquidación del patrimonio social.\n\nCUARTO. INVENTARIO DEL PATRIMONIO SOCIAL.— El liquidador presenta el siguiente inventario del patrimonio social, conforme a los artículos 233 y siguientes del Código de Comercio:\n\nActivos: {{activos_sociedad}}\n\nPasivos: {{pasivos_sociedad}}\n\nQUINTO. CUENTA FINAL DE LIQUIDACIÓN Y DISTRIBUCIÓN DE REMANENTES.— Cancelado el pasivo externo de la sociedad, se aprueba la siguiente distribución del remanente entre los socios, conforme a los artículos 247 y 248 del Código de Comercio: {{remanente_distribucion}}\n\nSEXTO. FORMALIZACIÓN Y REGISTRO.— La presente acta deberá inscribirse en el Registro Mercantil de la Cámara de Comercio del domicilio social, tanto en lo referente a la disolución como a la aprobación de la cuenta final de liquidación. Si la distribución del remanente incluye bienes inmuebles, la presente acta deberá adicionalmente elevarse a escritura pública, conforme al parágrafo del artículo 247 del Código de Comercio.\n\nSÉPTIMO. CLÁUSULA COMPROMISORIA.— Toda controversia que se derive del presente proceso de disolución y liquidación se resolverá por un Tribunal de Arbitramento que sesionará en la ciudad de {{ciudad_arbitraje}}, de acuerdo con las normas legales vigentes sobre la materia.\n\nNo habiendo otro asunto que tratar, se levantó la sesión, siendo aprobada la presente acta por los asistentes.\n\n_______________________________\n{{nombre_liquidador}}\nLiquidador"
   }
 ]
