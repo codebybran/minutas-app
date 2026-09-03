@@ -6514,6 +6514,18 @@ const DATOS_PRUEBA = {
     consecuencias_incumplimiento_acuerdo: 'No se pactan consecuencias adicionales a las previstas en la ley.',
     ciudad_arbitraje: 'Cali',
   },
+  'disolucion-liquidacion-sociedad-comercial': {
+    ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026', hora: '9:00 a.m.',
+    nombre_sociedad: 'Distribuidora Andina', tipo_societario: 'S.A.S.', nit_sociedad: '900.123.456-7',
+    socios_asistentes: 'Jhon Brandon Martínez Vélez, titular del 60% del capital; Laura Vanessa García Ríos, titular del 40%.',
+    porcentaje_representado: '100%',
+    causal_disolucion: 'decisión voluntaria de los socios, adoptada conforme a la ley y a los estatutos sociales',
+    nombre_liquidador: 'Jhon Brandon Martínez Vélez', cedula_liquidador: '1234567890',
+    activos_sociedad: 'Saldo en cuenta bancaria: $8.000.000; equipos de oficina: $2.000.000. Total activos: $10.000.000.',
+    pasivos_sociedad: 'La sociedad no registra pasivos pendientes de pago.',
+    remanente_distribucion: 'El remanente de $10.000.000 se distribuye en proporción a la participación de cada socio: $6.000.000 para Jhon Brandon Martínez Vélez y $4.000.000 para Laura Vanessa García Ríos.',
+    ciudad_arbitraje: 'Cali',
+  },
   'constitucion-sas': {
     ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
     accionistas: 'Jhon Brandon Martínez Vélez, C.C. 1234567890, domiciliado en El Cerrito; Laura Vanessa García Ríos, C.C. 0987654321, domiciliada en Cali.',
@@ -9757,6 +9769,11 @@ const PASOS_SIGUIENTE = {
     { num:1, titulo:'Debe depositarse en la sociedad', descripcion:'El acuerdo solo será acatado por la compañía una vez se deposite en las oficinas donde funcione su administración. Sin ese depósito, el acuerdo solo genera efectos entre los firmantes, no frente a la sociedad.' },
     { num:2, titulo:'El plazo máximo es de 10 años', descripcion:'El acuerdo no puede pactarse por más de diez (10) años, aunque puede prorrogarse por voluntad unánime de los firmantes por períodos que tampoco excedan ese límite.' },
     { num:3, titulo:'Tiene un mecanismo de ejecución especial', descripcion:'Si se incumple, los firmantes pueden acudir directamente a la Superintendencia de Sociedades mediante proceso verbal sumario para pedir la ejecución específica del acuerdo, sin necesidad de un proceso ordinario más largo.' },
+  ],
+  'disolucion-liquidacion-sociedad-comercial': [
+    { num:1, titulo:'Adicione "EN LIQUIDACIÓN" a la razón social', descripcion:'Desde el momento de la disolución, la sociedad debe usar la expresión "EN LIQUIDACIÓN" junto a su nombre en todos sus documentos, conforme al artículo 222 del Código de Comercio.' },
+    { num:2, titulo:'Registre el acta en dos momentos', descripcion:'Debe inscribirse en la Cámara de Comercio tanto la declaratoria de disolución como, al finalizar el proceso, la aprobación de la cuenta final de liquidación (Arts. 247 y 248 C. Co.).' },
+    { num:3, titulo:'Verifique si necesita escritura pública', descripcion:'Si el remanente que se reparte entre los socios incluye bienes inmuebles, el acta deberá además elevarse a escritura pública, conforme al parágrafo del artículo 247 del Código de Comercio.' },
   ],
   'constitucion-sas': [
     { num:1, titulo:'Autentique las firmas antes de registrar', descripcion:'El documento privado de constitución debe autenticarse (firmas de todos los accionistas) ante notaría o ante la propia Cámara de Comercio, antes de la inscripción en el Registro Mercantil.' },
