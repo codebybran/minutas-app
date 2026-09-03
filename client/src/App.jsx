@@ -6501,6 +6501,19 @@ const DATOS_PRUEBA = {
     texto_nuevo: 'El domicilio principal de la sociedad será la ciudad de Cali.',
     votos_favor: '100% de las acciones presentes',
   },
+  'acuerdo-accionistas': {
+    ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
+    nombre_sociedad: 'Distribuidora Andina', nit_sociedad: '900.123.456-7',
+    accionistas_firmantes: 'Jhon Brandon Martínez Vélez, titular de 6.000 acciones; Laura Vanessa García Ríos, titular de 4.000 acciones.',
+    materias_acuerdo: 'el derecho de preferencia en la venta de acciones, las restricciones a su transferencia, y el ejercicio conjunto del derecho de voto en la designación del representante legal',
+    derecho_preferencia: 'Si alguno de los accionistas desea vender sus acciones, deberá ofrecerlas primero a los demás accionistas firmantes, en proporción a su participación, quienes tendrán 30 días para ejercer su derecho de preferencia.',
+    restricciones_transferencia: 'Ningún accionista podrá transferir sus acciones a terceros ajenos a la sociedad sin el consentimiento previo y escrito de los demás accionistas firmantes.',
+    forma_ejercicio_voto: 'Los accionistas se comprometen a votar en el mismo sentido en las decisiones relativas a la designación del representante legal.',
+    representante_acuerdo: 'Jhon Brandon Martínez Vélez',
+    plazo_acuerdo: 'cinco (5) años',
+    consecuencias_incumplimiento_acuerdo: 'No se pactan consecuencias adicionales a las previstas en la ley.',
+    ciudad_arbitraje: 'Cali',
+  },
   'constitucion-sas': {
     ciudad: 'El Cerrito', dia: '21', mes: 'abril', anio: '2026',
     accionistas: 'Jhon Brandon Martínez Vélez, C.C. 1234567890, domiciliado en El Cerrito; Laura Vanessa García Ríos, C.C. 0987654321, domiciliada en Cali.',
@@ -9739,6 +9752,11 @@ const PASOS_SIGUIENTE = {
     { num:1, titulo:'Verifique la mayoría requerida', descripcion:'La reforma debe aprobarse con el voto favorable de cuando menos la mitad más una de las acciones presentes en la reunión, conforme al artículo 29 de la Ley 1258 de 2008.' },
     { num:2, titulo:'Inscriba el acta en la Cámara de Comercio', descripcion:'La reforma solo produce efectos frente a terceros una vez el acta se inscribe en el Registro Mercantil de la Cámara de Comercio del domicilio social.' },
     { num:3, titulo:'Verifique si necesita escritura pública', descripcion:'Si la reforma implica el aporte o transferencia de bienes inmuebles u otros que la ley exija formalizar por escritura pública, deberá elevarse a ese instrumento adicionalmente.' },
+  ],
+  'acuerdo-accionistas': [
+    { num:1, titulo:'Debe depositarse en la sociedad', descripcion:'El acuerdo solo será acatado por la compañía una vez se deposite en las oficinas donde funcione su administración. Sin ese depósito, el acuerdo solo genera efectos entre los firmantes, no frente a la sociedad.' },
+    { num:2, titulo:'El plazo máximo es de 10 años', descripcion:'El acuerdo no puede pactarse por más de diez (10) años, aunque puede prorrogarse por voluntad unánime de los firmantes por períodos que tampoco excedan ese límite.' },
+    { num:3, titulo:'Tiene un mecanismo de ejecución especial', descripcion:'Si se incumple, los firmantes pueden acudir directamente a la Superintendencia de Sociedades mediante proceso verbal sumario para pedir la ejecución específica del acuerdo, sin necesidad de un proceso ordinario más largo.' },
   ],
   'constitucion-sas': [
     { num:1, titulo:'Autentique las firmas antes de registrar', descripcion:'El documento privado de constitución debe autenticarse (firmas de todos los accionistas) ante notaría o ante la propia Cámara de Comercio, antes de la inscripción en el Registro Mercantil.' },
