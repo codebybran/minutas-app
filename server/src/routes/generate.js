@@ -34,8 +34,10 @@ function notaLegal(tipo_tramite, categoryId) {
   if (!tipo_tramite) return ''
   const t = tipo_tramite.toLowerCase()
 
-  // ── DERECHO ADMINISTRATIVO ──────────────────────────────────────────────────
-  if (categoryId === 'derecho-administrativo') {
+  // Las notas por categoría solo aplican cuando el tipo coincide; si no, se usa la nota general del tipo (más abajo).
+
+  // ── DERECHO ADMINISTRATIVO (peticiones y trámites ante entidades) ─────────
+  if (categoryId === 'derecho-administrativo' && t === 'administrativo') {
     return `
 <div class="aviso-legal-print" style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
@@ -70,7 +72,7 @@ function notaLegal(tipo_tramite, categoryId) {
   }
 
   // ── DERECHO CONSTITUCIONAL ──────────────────────────────────────────────────
-  if (categoryId === 'derecho-constitucional') {
+  if (categoryId === 'derecho-constitucional' && t === 'judicial') {
     return `
 <div class="aviso-legal-print" style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
@@ -105,7 +107,7 @@ function notaLegal(tipo_tramite, categoryId) {
   }
 
 // ── DERECHO DE FAMILIA (minutas judiciales) ─
-  if (categoryId === 'derecho-familia' && t !== 'notarial') {
+  if (categoryId === 'derecho-familia' && t === 'judicial') {
     return `
 <div class="aviso-legal-print" style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
@@ -137,7 +139,7 @@ function notaLegal(tipo_tramite, categoryId) {
   }
 
   // ── DERECHO PROCESAL CIVIL ──────────────────────────────────────────────────
-  if (categoryId === 'derecho-procesal-civil') {
+  if (categoryId === 'derecho-procesal-civil' && t === 'judicial') {
     return `
 <div class="aviso-legal-print" style="margin-top:48pt;font-family:'Times New Roman',serif;">
   <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
@@ -197,6 +199,76 @@ function notaLegal(tipo_tramite, categoryId) {
     <div style="background:rgba(184,150,46,0.12);border-top:1px solid rgba(226,185,74,0.25);padding:8px 28px;">
       <p style="color:rgba(200,216,232,0.6);font-size:7.5pt;margin:0;letter-spacing:0.3px;">
         LEXDOC · Documento generado con fines informativos · Naturaleza: Minuta para Acto Notarial · Colombia
+      </p>
+    </div>
+  </div>
+</div>`
+  }
+
+  // ── JUDICIAL (general) ──────────────────────────────────────────────────────
+  if (t === 'judicial') {
+    return `
+<div class="aviso-legal-print" style="margin-top:48pt;font-family:'Times New Roman',serif;">
+  <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
+    <div style="height:5px;background:linear-gradient(90deg,#4527a0,#9c6fe0,#4527a0);"></div>
+    <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
+      <div style="flex-shrink:0;width:52px;height:52px;background:rgba(156,111,224,0.15);border:2px solid #9c6fe0;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;line-height:1;text-align:center;padding-top:4px;">
+        ⚖️
+      </div>
+      <div style="flex:1;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+          <span style="background:#9c6fe0;color:#fff;font-size:8pt;font-weight:bold;letter-spacing:1.5px;padding:2px 10px;border-radius:20px;text-transform:uppercase;">Documento Judicial</span>
+        </div>
+        <p style="color:#c4a0f0;font-size:12pt;font-weight:bold;margin:0 0 8px 0;letter-spacing:0.5px;">RECOMENDACIONES ANTES DE PRESENTAR</p>
+        <p style="color:#c8d8e8;font-size:9.5pt;margin:0 0 6px 0;line-height:1.55;text-align:justify;">
+          Este documento se radica ante un <strong style="color:#fff;">juez, la Fiscalía o el tribunal</strong> que corresponda. Para garantizar su efectividad recuerde:
+        </p>
+        <ul style="color:#c8d8e8;font-size:9.5pt;margin:0 0 6px 0;padding-left:18px;line-height:1.7;">
+          <li>Preséntelo en la <strong style="color:#fff;">oficina de reparto o en el canal digital</strong> del despacho y conserve la constancia de radicado con fecha y número.</li>
+          <li>Por regla general debe presentarlo un <strong style="color:#c4a0f0;">abogado con tarjeta profesional vigente</strong>. Hay excepciones, como la denuncia penal y los asuntos de mínima cuantía.</li>
+          <li>Si actúa por medio de apoderado, adjunte el <strong style="color:#fff;">poder</strong> y los documentos que prueban los hechos.</li>
+          <li>Los procesos tienen <strong style="color:#c4a0f0;">términos estrictos</strong>: revise el estado del proceso con frecuencia para no perder oportunidades de actuar.</li>
+        </ul>
+      </div>
+    </div>
+    <div style="background:rgba(156,111,224,0.10);border-top:1px solid rgba(156,111,224,0.25);padding:8px 28px;">
+      <p style="color:rgba(200,216,232,0.6);font-size:7.5pt;margin:0;letter-spacing:0.3px;">
+        LEXDOC · Documento generado con fines informativos · Naturaleza: Escrito Judicial · Colombia
+      </p>
+    </div>
+  </div>
+</div>`
+  }
+
+  // ── ADMINISTRATIVO (general) ────────────────────────────────────────────────
+  if (t === 'administrativo') {
+    return `
+<div class="aviso-legal-print" style="margin-top:48pt;font-family:'Times New Roman',serif;">
+  <div style="background:linear-gradient(135deg,#0d2137 0%,#1a3a5c 60%,#0d2137 100%);border-radius:8px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.18);">
+    <div style="height:5px;background:linear-gradient(90deg,#00838f,#26b5c9,#00838f);"></div>
+    <div style="padding:20px 28px 18px 28px;display:flex;align-items:flex-start;gap:20px;">
+      <div style="flex-shrink:0;width:52px;height:52px;background:rgba(38,181,201,0.15);border:2px solid #26b5c9;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;line-height:1;text-align:center;padding-top:4px;">
+        🏢
+      </div>
+      <div style="flex:1;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+          <span style="background:#26b5c9;color:#0d2137;font-size:8pt;font-weight:bold;letter-spacing:1.5px;padding:2px 10px;border-radius:20px;text-transform:uppercase;">Trámite Administrativo</span>
+        </div>
+        <p style="color:#7fdbe8;font-size:12pt;font-weight:bold;margin:0 0 8px 0;letter-spacing:0.5px;">RECOMENDACIONES ANTES DE PRESENTAR</p>
+        <p style="color:#c8d8e8;font-size:9.5pt;margin:0 0 6px 0;line-height:1.55;text-align:justify;">
+          Este documento se presenta ante una <strong style="color:#fff;">entidad pública o autoridad administrativa</strong>. Para garantizar su efectividad recuerde:
+        </p>
+        <ul style="color:#c8d8e8;font-size:9.5pt;margin:0 0 6px 0;padding-left:18px;line-height:1.7;">
+          <li>Radíquelo en la <strong style="color:#fff;">ventanilla o el canal digital</strong> de la entidad y exija copia con sello o número de radicado y fecha.</li>
+          <li>Cada trámite tiene <strong style="color:#7fdbe8;">plazos legales</strong> para presentarlo y para que la entidad responda. Los recursos contra una decisión suelen tener plazos cortos, a menudo de 10 días hábiles.</li>
+          <li>Adjunte los <strong style="color:#fff;">documentos de soporte</strong> que pide la entidad (identificación, certificados, pruebas).</li>
+          <li>Por regla general <strong style="color:#fff;">no requiere notaría ni abogado</strong>, salvo que la norma del trámite lo exija.</li>
+        </ul>
+      </div>
+    </div>
+    <div style="background:rgba(38,181,201,0.10);border-top:1px solid rgba(38,181,201,0.25);padding:8px 28px;">
+      <p style="color:rgba(200,216,232,0.6);font-size:7.5pt;margin:0;letter-spacing:0.3px;">
+        LEXDOC · Documento generado con fines informativos · Naturaleza: Trámite Administrativo · Colombia
       </p>
     </div>
   </div>

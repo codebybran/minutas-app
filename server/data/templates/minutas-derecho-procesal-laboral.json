@@ -3,7 +3,7 @@
     "id": "demanda-proceso-ordinario-laboral",
     "title": "Demanda de Proceso Ordinario Laboral",
     "subtitle": "Procesos Laborales",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
@@ -34,7 +34,7 @@
     "id": "demanda-ordinario-laboral-honorarios",
     "title": "Demanda Ordinario Laboral por Honorarios",
     "subtitle": "Procesos Laborales",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
@@ -62,7 +62,7 @@
     "id": "demanda-fuero-sindical-reintegro",
     "title": "Demanda de Fuero Sindical — Acción de Reintegro",
     "subtitle": "Procesos Laborales",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
@@ -90,7 +90,7 @@
     "id": "contestacion-demanda-laboral",
     "title": "Contestación de Demanda Laboral",
     "subtitle": "Procesos Laborales",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Contestación", "type": "text", "required": true},
@@ -115,7 +115,7 @@
     "id": "solicitud-prescindencia-termino-probatorio",
     "title": "Solicitud de Prescindencia del Término Probatorio",
     "subtitle": "Procesos Laborales",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Solicitud", "type": "text", "required": true},
@@ -137,7 +137,7 @@
     "id": "solicitud-termino-adicional-pruebas",
     "title": "Solicitud de Término Adicional para Pruebas",
     "subtitle": "Procesos Laborales",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Solicitud", "type": "text", "required": true},
@@ -160,7 +160,7 @@
     "id": "demanda-ejecutiva-laboral",
     "title": "Demanda Ejecutiva Laboral",
     "subtitle": "Procesos Laborales",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},

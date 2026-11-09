@@ -3,7 +3,7 @@
     "id": "acta-conciliacion-inspeccion-trabajo",
     "title": "Acta de Conciliación ante Inspección de Trabajo",
     "subtitle": "Conciliación",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha del Acta", "type": "text", "required": true},
@@ -92,7 +92,7 @@
     "id": "convocatoria-tribunal-arbitramento-administrativo",
     "title": "Convocatoria Tribunal de Arbitramento — Contratación Administrativa",
     "subtitle": "Arbitramento",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Convocatoria", "type": "text", "required": true},
@@ -115,7 +115,7 @@
     "id": "convocatoria-tribunal-arbitramento-comercial",
     "title": "Convocatoria Tribunal de Arbitramento — Materia Comercial",
     "subtitle": "Arbitramento",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Convocatoria", "type": "text", "required": true},

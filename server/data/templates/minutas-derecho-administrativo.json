@@ -3,7 +3,7 @@
     "id": "derecho-peticion-interes-general",
     "title": "Derecho de Petición en Interés General",
     "subtitle": "Derechos de Petición",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "nombre_trabajador",
@@ -72,7 +72,7 @@
     "id": "derecho-peticion-interes-particular",
     "title": "Derecho de Petición en Interés Particular (Reclamo Servicios Públicos)",
     "subtitle": "Derechos de Petición",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "nombre_trabajador",
@@ -147,7 +147,7 @@
     "id": "derecho-peticion-informacion-copias",
     "title": "Derecho de Petición de Información y Copias",
     "subtitle": "Derechos de Petición",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "nombre_trabajador",
@@ -279,7 +279,7 @@
     "id": "queja-entidad-financiera",
     "title": "Queja contra Entidad Financiera",
     "subtitle": "Quejas y Reclamos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -384,7 +384,7 @@
     "id": "desistimiento-derecho-peticion",
     "title": "Desistimiento de Derecho de Petición",
     "subtitle": "Derechos de Petición",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -471,7 +471,7 @@
     "id": "solicitud-facultades-oficiosas",
     "title": "Solicitud para Ejercicio de Facultades Oficiosas",
     "subtitle": "Derechos de Petición",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -912,7 +912,7 @@
     "id": "pliego-condiciones-licitacion",
     "title": "Pliego de Condiciones — Licitación Pública",
     "subtitle": "Contratación Estatal",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "numero_licitacion",
@@ -1047,7 +1047,7 @@
     "id": "informe-interventoria-obra",
     "title": "Informe de Interventoría para Iniciar Contrato de Obra",
     "subtitle": "Contratación Estatal",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1128,7 +1128,7 @@
     "id": "acta-iniciacion-contrato-obra",
     "title": "Acta de Iniciación de Contrato de Obra",
     "subtitle": "Contratación Estatal",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1251,7 +1251,7 @@
     "id": "contrato-obra-estatal",
     "title": "Contrato de Obra Estatal",
     "subtitle": "Contratación Estatal",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1434,7 +1434,7 @@
     "id": "contrato-compraventa-estatal",
     "title": "Contrato de Compraventa Estatal",
     "subtitle": "Contratación Estatal",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1581,7 +1581,7 @@
     "id": "contrato-suministro-estatal",
     "title": "Contrato de Suministro Estatal",
     "subtitle": "Contratación Estatal",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1746,7 +1746,7 @@
     "id": "contrato-administracion-delegada",
     "title": "Contrato de Administración Delegada para Construcción",
     "subtitle": "Contratación Estatal",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1857,7 +1857,7 @@
     "id": "poder-lanzamiento-ocupacion-hecho",
     "title": "Poder para Tramitar Proceso de Lanzamiento por Ocupación de Hecho",
     "subtitle": "Procesos Policivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1950,7 +1950,7 @@
     "id": "querella-lanzamiento-ocupacion-hecho",
     "title": "Querella de Lanzamiento por Ocupación de Hecho de Predios Urbanos",
     "subtitle": "Procesos Policivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2079,7 +2079,7 @@
     "id": "solicitud-declaracion-extrajuicio",
     "title": "Solicitud de Declaración Extrajuicio ante Notario",
     "subtitle": "Procesos Policivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Notarial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2184,7 +2184,7 @@
     "id": "poder-amparo-domicilio",
     "title": "Poder para Proceso Policivo de Amparo al Domicilio",
     "subtitle": "Procesos Policivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2265,7 +2265,7 @@
     "id": "querella-amparo-domicilio-propietario",
     "title": "Querella de Amparo al Domicilio (del Propietario o Poseedor)",
     "subtitle": "Procesos Policivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2424,7 +2424,7 @@
     "id": "querella-amparo-domicilio-tenedor",
     "title": "Querella de Amparo al Domicilio (del Tenedor o Arrendatario)",
     "subtitle": "Procesos Policivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2577,7 +2577,7 @@
     "id": "poder-perturbacion-posesion",
     "title": "Poder para Proceso de Perturbación a la Posesión o Mera Tenencia",
     "subtitle": "Procesos Policivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2664,7 +2664,7 @@
     "id": "querella-perturbacion-posesion",
     "title": "Querella por Perturbación a la Posesión o Mera Tenencia",
     "subtitle": "Procesos Policivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2805,7 +2805,7 @@
     "id": "poder-recuperacion-espacio-publico",
     "title": "Poder para Tramitar Querella de Recuperación del Espacio Público",
     "subtitle": "Procesos Policivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2892,7 +2892,7 @@
     "id": "querella-recuperacion-espacio-publico",
     "title": "Querella de Recuperación de Espacio Público",
     "subtitle": "Procesos Policivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -3009,7 +3009,7 @@
     "id": "recurso-reposicion",
     "title": "Recurso de Reposición ante Entidad Pública",
     "subtitle": "Vía Gubernativa y Contencioso Administrativo",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -3138,7 +3138,7 @@
     "id": "recurso-apelacion-administrativo",
     "title": "Recurso de Apelación ante Entidad Pública",
     "subtitle": "Vía Gubernativa y Contencioso Administrativo",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -3273,7 +3273,7 @@
     "id": "revocatoria-directa",
     "title": "Solicitud de Revocatoria Directa de Acto Administrativo",
     "subtitle": "Vía Gubernativa y Contencioso Administrativo",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -3414,7 +3414,7 @@
     "id": "demanda-nulidad-simple",
     "title": "Demanda de Nulidad Simple ante el Consejo de Estado o Tribunal",
     "subtitle": "Vía Gubernativa y Contencioso Administrativo",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -3531,7 +3531,7 @@
     "id": "demanda-nulidad-restablecimiento-derecho",
     "title": "Demanda de Nulidad y Restablecimiento del Derecho",
     "subtitle": "Vía Gubernativa y Contencioso Administrativo",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -3672,7 +3672,7 @@
     "id": "demanda-electoral",
     "title": "Demanda Electoral ante el Consejo de Estado",
     "subtitle": "Vía Gubernativa y Contencioso Administrativo",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",

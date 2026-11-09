@@ -1287,7 +1287,7 @@
     "id": "solicitud-compensacion-vacaciones",
     "title": "Solicitud de Compensación de Vacaciones ante el Ministerio del Trabajo",
     "subtitle": "Terminación del Contrato",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "nombre_empresa",

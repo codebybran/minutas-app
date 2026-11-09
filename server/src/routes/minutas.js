@@ -42,236 +42,6 @@ const SUBTITLE_ORDER_PROCESAL_CIVIL = [
 ]
 const SUBTITLE_ORDER_TRIBUTARIO = ['Recursos y Respuestas', 'Cobro Coactivo']
 
-
-const TIPO_TRAMITE = {
-  'declaracion-union-marital-hecho-notarial':'Notarial',
-  'disolucion-sociedad-patrimonial-umh-mutuo-consentimiento':'Notarial',
-  1:'Notarial',2:'Notarial',3:'Notarial',4:'Notarial',5:'Privado',6:'Privado',7:'Privado',
-  8:'Privado',9:'Notarial',10:'Privado',
-  'compraventa-retroventa':'Notarial','cesion-derechos-hereditarios-civil':'Notarial',
-  'estatutos-fundacion':'Privado','estatutos-fundacion-gobernacion':'Privado',
-  'contrato-construccion':'Privado','contrato-construccion-materiales':'Privado',
-  'contrato-deposito':'Privado','cesion-derechos-litigiosos':'Privado',
-  'arrendamiento-vivienda-urbana':'Privado','arrendamiento-inmueble-muebles':'Privado',
-  'cesion-contrato-arrendamiento':'Privado','notificacion-cesion-arrendamiento':'Privado',
-  'prestacion-servicios-profesionales':'Privado','servicios-abogado':'Privado',
-  'poder-general':'Notarial','poder-especial-venta-inmueble':'Notarial',
-  'revocatoria-poder-general':'Notarial','contrato-civil-obra':'Privado',
-  'contrato-aparceria':'Privado','fianza-abierta':'Privado','prenda-abierta':'Privado',
-  'pignoracion-rentas':'Privado','hipoteca-abierta':'Notarial','mutuo-civil-hipoteca':'Notarial',
-  'hipoteca-garantizar-saldo':'Notarial','ampliacion-hipoteca':'Notarial',
-  'cancelacion-hipoteca':'Notarial','compraventa-propiedad-horizontal':'Notarial',
-  'reglamento-propiedad-horizontal':'Notarial','acta-asamblea-propietarios':'Privado',
-  'carta-primera-convocatoria':'Privado','carta-segunda-convocatoria':'Privado',
-  'poder-asistir-asamblea':'Privado',
-  // --- DERECHO DE FAMILIA ---
-  'capitulaciones-matrimoniales':'Notarial','poder-contraer-matrimonio':'Notarial',
-  'solicitud-matrimonio-notario':'Notarial','matrimonio-civil-notario':'Notarial',
-  'disolucion-liquidacion-sociedad-conyugal':'Notarial',
-  'disolucion-sociedad-conyugal-sin-bienes':'Notarial',
-  'disolucion-liquidacion-sociedad-patrimonial':'Notarial',
-  'legitimacion-hijo-extramatrimonial':'Notarial',
-  'reconocimiento-hijo-extramatrimonial':'Notarial',
-  'solicitud-correccion-registro-civil':'Privado',
-  'correccion-errores-registro-civil':'Notarial',
-  'cambio-correccion-adicion-nombre':'Notarial',
-  'testamento-abierto':'Notarial','testamento-cerrado-presentacion':'Notarial',
-  'constitucion-testamento-cerrado':'Privado','solicitud-apertura-testamento-cerrado':'Privado',
-  'cesion-derechos-hereditarios':'Notarial','poder-liquidacion-sucesion':'Privado',
-  'solicitud-liquidacion-sucesion':'Privado','inventarios-avaluos-sucesion':'Privado',
-  'trabajo-particion-adjudicacion':'Privado',
-  'revocatoria-poder-contraer-matrimonio':'Notarial',
-  // Familia nuevas
-  'demanda-filiacion-natural':'Privado',
-  'demanda-declaracion-union-marital':'Privado',
-  'poder-rendicion-provocada-cuentas':'Privado',
-  'demanda-rendicion-provocada-cuentas':'Privado',
-  'poder-rendicion-espontanea-cuentas':'Privado',
-  'demanda-rendicion-espontanea-cuentas':'Privado',
-  'poder-proceso-separacion-bienes':'Privado',
-  'demanda-separacion-bienes':'Privado',
-  'medidas-cautelares-separacion-bienes':'Privado',
-  'demanda-separacion-cuerpos':'Privado',
-  'demanda-divorcio-contencioso':'Privado',
-  'demanda-fijacion-cuota-alimentaria':'Privado',
-  'demanda-ejecutivo-alimentos':'Privado',
-  'demanda-apertura-sucesion':'Privado',
-  'presentacion-inventarios-avaluos-judicial':'Privado',
-  'demanda-cancelacion-patrimonio-familia':'Privado',
-  'cancelacion-patrimonio-familia-hijos-mayores':'Notarial',
-  'constitucion-patrimonio-familia':'Notarial',
-  'solicitud-medida-proteccion-violencia-intrafamiliar':'Privado',
-  'mutuo-civil-simple':'Privado',
-  'contrato-mandato-civil':'Privado',
-  'cesion-creditos-ordinaria':'Privado',
-  'estatutos-corporacion-asociacion':'Privado',
-  'autorizacion-hijos-cancelar-patrimonio':'Privado',
-  'demanda-divorcio-mutuo-consentimiento':'Privado',
-  'acuerdo-divorcio-mutuo-consentimiento':'Privado',
-  'divorcio-ante-notario':'Notarial',
-  'solicitud-declaracion-muerte-desaparecimiento':'Privado',
-  'demanda-adopcion':'Privado',
-  'solicitud-reconocimiento-hijo-extramatrimonial':'Privado',
-  'solicitud-permiso-menor-salir-pais':'Privado',
-  // --- DERECHO COMERCIAL ---
-  'letra-de-cambio':'Privado',
-  'endoso-titulo-valor':'Privado',
-  'contrato-distribucion':'Privado',
-  'acuerdo-confidencialidad-comercial':'Privado',
-  'licencia-uso-marca':'Privado',
-  'cesion-marca':'Privado',
-  'acuerdo-de-pago':'Privado',
-  'pagare':'Privado','carta-instrucciones-pagare':'Privado',
-  'compraventa-establecimiento-comercio':'Privado','arrendamiento-local-comercial':'Privado',
-  'subarriendo-local-comercial':'Privado','agencia-comercial':'Privado',
-  'concesion-comercial':'Privado','contrato-suministro':'Privado',
-  'constancia-contrato-suministro':'Privado','contrato-franquicia':'Privado',
-  'contrato-fabricacion':'Privado','outsourcing-sistemas':'Privado',
-  'contrato-consignacion':'Privado','cuentas-en-participacion':'Privado',
-  'contrato-revisoria-fiscal':'Privado','contrato-corretaje':'Privado',
-  'corretaje-inmuebles':'Privado','consultoria-extranjeros':'Privado',
-  'poder-derechos-autor':'Privado','contrato-edicion':'Privado',
-  'cesion-derechos-patrimoniales-autor':'Privado','contrato-traduccion':'Privado',
-  'contrato-licencia-productos':'Privado',
-  'contrato-factoring':'Privado',
-  'carta-cobro':'Privado',
-  'cuenta-cobro':'Privado',
-  // Comercial nueva
-  'demanda-cancelacion-reposicion-titulo-valor':'Privado',
-  // --- DERECHO DE SOCIEDADES ---
-  'constitucion-sas':'Privado',
-  'reforma-estatutos-sas':'Privado',
-  'acuerdo-accionistas':'Privado',
-  'disolucion-liquidacion-sociedad-comercial':'Privado',
-  'constitucion-empresa-unipersonal':'Privado','constitucion-sociedad-hecho':'Privado',
-  'constitucion-sociedad-colectiva':'Notarial','poder-constituir-sociedad-anonima':'Privado',
-  'poder-representar-asamblea':'Privado','poder-representar-accionista-permanente':'Privado',
-  'constitucion-sociedad-anonima':'Notarial','estatutos-sociedad-anonima-compleja':'Notarial',
-  'constitucion-sociedad-limitada':'Notarial',
-  'acta-junta-socios-ordinaria':'Privado',
-  'acta-junta-socios-cesion-cuotas':'Privado',
-  'extracto-asamblea-reforma-estatutos':'Privado',
-  'autorizacion-reforma-estatutaria-supersociedades':'Privado',
-  'escritura-reforma-cesion-cuotas-ltda':'Notarial',
-  'certificacion-legalidad-cesion-cuotas':'Privado',
-  'estatutos-sociedad-comandita-simple':'Notarial',
-  'estatutos-sociedad-comandita-acciones':'Notarial',
-  'acta-asamblea-general':'Privado','dictamen-revisor-fiscal-sin-salvedades-sa':'Privado',
-  'dictamen-revisor-fiscal-sin-salvedades-sucursal':'Privado',
-  'dictamen-revisor-fiscal-abstencion':'Privado','reglamento-emision-acciones':'Privado',
-  'transformacion-comandita-simple-acciones':'Notarial',
-  'acta-asamblea-aprueba-fusion':'Privado',
-  'estatutos-fondo-empleados':'Privado',
-  // --- DERECHO LABORAL ---
-  'contrato-termino-indefinido':'Privado',
-  'contrato-termino-fijo-1-3':'Privado',
-  'contrato-termino-fijo-inferior-1':'Privado',
-  'contrato-obra-labor':'Privado',
-  'contrato-salario-integral':'Privado',
-  'reglamento-interno-trabajo':'Privado',
-  'reglamento-higiene-seguridad':'Privado',
-  'contrato-direccion-confianza-manejo':'Privado',
-  'contrato-celadores-vigilantes':'Privado',
-  'contrato-servicio-domestico':'Privado',
-  'contrato-aprendizaje':'Privado',
-  'carta-terminacion-justa-causa':'Privado',
-  'terminacion-sin-justa-causa':'Privado',
-  'liquidacion-prestaciones-sociales':'Privado',
-  'solicitud-compensacion-vacaciones':'Privado',
-  'estatutos-organizacion-sindical':'Privado',
-  'acta-iniciacion-arreglo-directo':'Privado',
-  'actas-tramite-arreglo-directo':'Privado',
-  'acta-final-arreglo-directo':'Privado',
-  'solicitud-licencia-paternidad':'Privado',
-  // --- DERECHO ADMINISTRATIVO ---
-  'derecho-peticion-interes-general':'Privado',
-  'derecho-peticion-interes-particular':'Privado',
-  'derecho-peticion-informacion-copias':'Privado',
-  'modelo-quejas-reclamos':'Privado',
-  'queja-entidad-financiera':'Privado',
-  'desistimiento-derecho-peticion':'Privado',
-  'solicitud-facultades-oficiosas':'Privado',
-  'constitucion-union-temporal':'Privado',
-  'constitucion-consorcio':'Privado',
-  'pliego-condiciones-licitacion':'Privado',
-  'informe-interventoria-obra':'Privado',
-  'acta-iniciacion-contrato-obra':'Privado',
-  'contrato-obra-estatal':'Privado',
-  'contrato-compraventa-estatal':'Privado',
-  'contrato-suministro-estatal':'Privado',
-  'contrato-administracion-delegada':'Privado',
-  'poder-lanzamiento-ocupacion-hecho':'Privado',
-  'querella-lanzamiento-ocupacion-hecho':'Privado',
-  'solicitud-declaracion-extrajuicio':'Privado',
-  'poder-amparo-domicilio':'Privado',
-  'querella-amparo-domicilio-propietario':'Privado',
-  'querella-amparo-domicilio-tenedor':'Privado',
-  'poder-perturbacion-posesion':'Privado',
-  'querella-perturbacion-posesion':'Privado',
-  'poder-recuperacion-espacio-publico':'Privado',
-  'querella-recuperacion-espacio-publico':'Privado',
-  'recurso-reposicion':'Privado',
-  'recurso-apelacion-administrativo':'Privado',
-  'revocatoria-directa':'Privado',
-  'demanda-nulidad-simple':'Privado',
-  'demanda-nulidad-restablecimiento-derecho':'Privado',
-  'demanda-electoral':'Privado',
-  // --- DERECHO CONSTITUCIONAL ---
-  'accion-tutela':'Privado',
-  'tutela-agente-oficioso':'Privado',
-  'poder-tramitar-tutela':'Privado',
-  'poder-contestar-tutela':'Privado',
-  'solicitud-insistencia-revision-tutela':'Privado',
-  'accion-popular':'Privado',
-  'accion-cumplimiento':'Privado',
-  'contestacion-accion-cumplimiento':'Privado',
-  'accion-inconstitucionalidad':'Privado',
-  'desistimiento-accion-tutela':'Privado',
-  'contestacion-accion-tutela-general':'Privado',
-  'recurso-apelacion-tutela-solicitante':'Privado',
-  'recurso-apelacion-tutela-accionado':'Privado',
-  // --- DERECHO PROCESAL CIVIL ---
-  'cesion-derechos-litigiosos-procesal':'Privado',
-  'solicitud-amparo-pobreza':'Privado',
-  'solicitud-suspension-proceso-civil':'Privado',
-  'poder-pruebas-anticipadas':'Privado',
-  'solicitud-interrogatorio-parte':'Privado',
-  'poder-proceso-ordinario':'Privado',
-  'demanda-ordinaria-civil':'Privado',
-  'contestacion-demanda-civil':'Privado',
-  'demanda-proceso-pertenencia':'Privado',
-  'demanda-accion-reivindicatoria':'Privado',
-  'demanda-proceso-monitorio':'Privado',
-  'demanda-verbal-sumario-perjuicios-obligacion':'Privado',
-  'demanda-restitucion-inmueble-arrendado':'Privado',
-  'demanda-pago-consignacion':'Privado',
-  'demanda-imposicion-servidumbre':'Privado',
-  'demanda-division-material':'Privado',
-  'poder-proceso-ejecutivo':'Privado',
-  'demanda-proceso-ejecutivo-singular':'Privado',
-  'demanda-ejecutiva-titulo-hipotecario':'Privado',
-  'excepciones-previas-proceso-ejecutivo':'Privado',
-  'excepciones-merito-proceso-ejecutivo':'Privado',
-  // Procesal Civil nuevas
-  'solicitud-medidas-cautelares':'Privado',
-  'incidente-levantamiento-medidas-cautelares':'Privado',
-  'terminacion-proceso-ejecutivo-pago':'Privado',
-  'acumulacion-procesos-ejecutivos':'Privado',
-  'recurso-queja-auto-apelable':'Privado',
-  'incidente-nulidad-remate':'Privado',
-  'poder-especial-compra-inmueble':'Notarial',
-  'declaracion-fin-extraprocesal':'Notarial',
-  'aviso-terminacion-arrendamiento-arrendador':'Privado',
-  'aviso-terminacion-arrendamiento-arrendatario':'Privado',
-  'solicitud-primera-copia-hipoteca':'Notarial',
-  'dacion-en-pago':'Privado',
-  // --- DERECHO TRIBUTARIO ---
-  'recurso-reconsideracion':'Privado',
-  'respuesta-requerimiento-especial':'Privado',
-  'respuesta-requerimiento-ordinario':'Privado',
-  'excepcion-prescripcion-mandamiento-pago':'Privado',
-}
-
 function ordenarMinutas(minutas, order) {
   const grupos = {}
   order.forEach(s => grupos[s] = [])
@@ -321,84 +91,84 @@ router.get('/', (req, res) => {
         id: 'derecho-civil', name: 'Derecho Civil',
         minutas: ordenarMinutas(minutasCivil, SUBTITLE_ORDER_CIVIL).map(m => ({
           id: m.id, title: m.title, subtitle: m.subtitle,
-          tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+          tipo_tramite: m.tipo_tramite
         }))
       },
       {
         id: 'derecho-familia', name: 'Derecho de Familia',
         minutas: ordenarMinutas(minutasFamilia, SUBTITLE_ORDER_FAMILIA).map(m => ({
           id: m.id, title: m.title, subtitle: m.subtitle,
-          tipo_tramite: TIPO_TRAMITE[m.id] || 'Notarial'
+          tipo_tramite: m.tipo_tramite
         }))
       },
       {
         id: 'derecho-comercial', name: 'Derecho Comercial',
         minutas: ordenarMinutas(minutasComercial, SUBTITLE_ORDER_COMERCIAL).map(m => ({
           id: m.id, title: m.title, subtitle: m.subtitle,
-          tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+          tipo_tramite: m.tipo_tramite
         }))
       },
       {
         id: 'derecho-sociedades', name: 'Derecho de Sociedades',
         minutas: ordenarMinutas(minutasSociedades, SUBTITLE_ORDER_SOCIEDADES).map(m => ({
           id: m.id, title: m.title, subtitle: m.subtitle,
-          tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+          tipo_tramite: m.tipo_tramite
         }))
       },
       {
         id: 'derecho-laboral', name: 'Derecho Laboral',
         minutas: ordenarMinutas(minutasLaboral, SUBTITLE_ORDER_LABORAL).map(m => ({
           id: m.id, title: m.title, subtitle: m.subtitle,
-          tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+          tipo_tramite: m.tipo_tramite
         }))
       },
       {
         id: 'derecho-administrativo', name: 'Derecho Administrativo',
         minutas: ordenarMinutas(minutasAdministrativo, SUBTITLE_ORDER_ADMINISTRATIVO).map(m => ({
           id: m.id, title: m.title, subtitle: m.subtitle,
-          tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+          tipo_tramite: m.tipo_tramite
         }))
       },
       {
         id: 'derecho-constitucional', name: 'Derecho Constitucional',
         minutas: ordenarMinutas(minutasConstitucional, SUBTITLE_ORDER_CONSTITUCIONAL).map(m => ({
           id: m.id, title: m.title, subtitle: m.subtitle,
-          tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+          tipo_tramite: m.tipo_tramite
         }))
       },
       {
         id: 'derecho-procesal-civil', name: 'Derecho Procesal Civil',
         minutas: ordenarMinutas(minutasProcesalCivil, SUBTITLE_ORDER_PROCESAL_CIVIL).map(m => ({
           id: m.id, title: m.title, subtitle: m.subtitle,
-          tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+          tipo_tramite: m.tipo_tramite
         }))
       }
     ,{
       id: 'derecho-procesal-laboral', name: 'Derecho Procesal Laboral',
       minutas: ordenarMinutas(minutasProcesalLaboral, SUBTITLE_ORDER_PROCESAL_LABORAL).map(m => ({
         id: m.id, title: m.title, subtitle: m.subtitle,
-        tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+        tipo_tramite: m.tipo_tramite
       }))
     }
   ,{
       id: 'derecho-penal', name: 'Derecho Penal',
       minutas: ordenarMinutas(minutasPenal, SUBTITLE_ORDER_PENAL).map(m => ({
         id: m.id, title: m.title, subtitle: m.subtitle,
-        tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+        tipo_tramite: m.tipo_tramite
       }))
     }
     ,{
       id: 'resolucion-conflictos', name: 'Resolución de Conflictos',
       minutas: ordenarMinutas(minutasResolucion, SUBTITLE_ORDER_RESOLUCION).map(m => ({
         id: m.id, title: m.title, subtitle: m.subtitle,
-        tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+        tipo_tramite: m.tipo_tramite
       }))
     }
     ,{
   id: 'derecho-tributario', name: 'Derecho Tributario',
   minutas: ordenarMinutas(minutasTributario, SUBTITLE_ORDER_TRIBUTARIO).map(m => ({
     id: m.id, title: m.title, subtitle: m.subtitle,
-    tipo_tramite: TIPO_TRAMITE[m.id] || 'Privado'
+    tipo_tramite: m.tipo_tramite
   }))
 }
     ]
@@ -444,7 +214,7 @@ router.get('/:categoryId/:minutaId', (req, res) => {
     if (!minuta) return res.status(404).json({ error: 'Minuta no encontrada' })
     res.json({
       id: minuta.id, title: minuta.title, template: minuta.template,
-      fields: minuta.fields, tipo_tramite: TIPO_TRAMITE[minuta.id] || 'Privado'
+      fields: minuta.fields, tipo_tramite: minuta.tipo_tramite
     })
   } catch (err) {
     console.error(err)

@@ -15,20 +15,34 @@ function getBadgeTramite(tipo) {
     bg: 'linear-gradient(135deg, #1a3a5c, #0d2240)',
     border: '#e2b94a', color: '#e2b94a', dot: '#e2b94a',
     shadow: '0 2px 0 #061528, 0 4px 10px rgba(0,0,0,0.3)',
-    tooltip: 'Este documento debe otorgarse ante Notario mediante Escritura Pública o autenticación de firmas.'
+    tooltip: 'Se lleva a una notaría. Allí se firma ante el notario y, cuando la ley lo exige, se convierte en escritura pública. Sin ese paso el documento puede no tener validez.'
   }
   if (tipo === 'Privado') return {
     label: '📄 DOCUMENTO PRIVADO',
     bg: 'linear-gradient(135deg, #0d3018, #0a2010)',
     border: '#4caf50', color: '#6fcf7a', dot: '#4caf50',
     shadow: '0 2px 0 #061508, 0 4px 10px rgba(0,0,0,0.3)',
-    tooltip: 'Este documento se firma entre las partes. Se recomienda autenticar firmas ante Notario.'
+    tooltip: 'Lo firman las partes entre ellas; no hay que presentarlo en ninguna oficina. Es recomendable autenticar las firmas en una notaría para que nadie pueda negarlas después.'
   }
-  return {
-    label: '⚖️ DOCUMENTO LEGAL',
+  if (tipo === 'Judicial') return {
+    label: '⚖️ TRÁMITE JUDICIAL',
     bg: 'linear-gradient(135deg, #2a1a4a, #1a0d30)',
     border: '#9c6fe0', color: '#c4a0f0', dot: '#9c6fe0',
     shadow: '0 2px 0 #100820, 0 4px 10px rgba(0,0,0,0.3)',
+    tooltip: 'Se radica ante un juez o la Fiscalía. Casi siempre debe presentarlo un abogado; la tutela y la denuncia penal son excepciones que puede presentar usted mismo.'
+  }
+  if (tipo === 'Administrativo') return {
+    label: '🏢 TRÁMITE ADMINISTRATIVO',
+    bg: 'linear-gradient(135deg, #0b3540, #06232b)',
+    border: '#26b5c9', color: '#7fdbe8', dot: '#26b5c9',
+    shadow: '0 2px 0 #031418, 0 4px 10px rgba(0,0,0,0.3)',
+    tooltip: 'Se presenta ante una entidad pública, como una alcaldía, un ministerio, la DIAN o una superintendencia. Pida siempre una copia con sello o número de radicado.'
+  }
+  return {
+    label: '📑 DOCUMENTO LEGAL',
+    bg: 'linear-gradient(135deg, #2b2b2b, #1a1a1a)',
+    border: '#9e9e9e', color: '#cfcfcf', dot: '#9e9e9e',
+    shadow: '0 2px 0 #0a0a0a, 0 4px 10px rgba(0,0,0,0.3)',
     tooltip: 'Documento legal.'
   }
 }

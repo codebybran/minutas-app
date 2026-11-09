@@ -3,7 +3,7 @@
     "id": "poder-defensa-penal",
     "title": "Poder para Ejercer la Defensa Penal",
     "subtitle": "Defensa Penal",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha del Poder", "type": "text", "required": true},
@@ -24,7 +24,7 @@
     "id": "denuncia-penal",
     "title": "Denuncia Penal",
     "subtitle": "Defensa Penal",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Denuncia", "type": "text", "required": true},
@@ -46,7 +46,7 @@
     "id": "poder-accion-civil-proceso-penal",
     "title": "Poder para Ejercer Acción Civil en Proceso Penal",
     "subtitle": "Acción Civil",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha del Poder", "type": "text", "required": true},
@@ -69,7 +69,7 @@
     "id": "memorial-entrega-provisional-vehiculo",
     "title": "Memorial Solicitud Entrega Provisional de Vehículo",
     "subtitle": "Acción Civil",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha del Memorial", "type": "text", "required": true},
@@ -90,7 +90,7 @@
     "id": "demanda-constitucion-parte-civil",
     "title": "Demanda de Constitución de Parte Civil",
     "subtitle": "Acción Civil",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
@@ -115,7 +115,7 @@
     "id": "designacion-auxiliar-proceso-penal",
     "title": "Designación de Auxiliar en Proceso Penal",
     "subtitle": "Defensa Penal",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha", "type": "text", "required": true},
@@ -137,7 +137,7 @@
     "id": "solicitud-nulidad-proceso-penal",
     "title": "Solicitud de Nulidad en Proceso Penal",
     "subtitle": "Defensa Penal",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Solicitud", "type": "text", "required": true},
@@ -158,7 +158,7 @@
     "id": "desistimiento-querella",
     "title": "Desistimiento de Querella",
     "subtitle": "Defensa Penal",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha del Desistimiento", "type": "text", "required": true},
@@ -178,7 +178,7 @@
     "id": "solicitud-mediacion-penal",
     "title": "Solicitud de Mediación",
     "subtitle": "Mecanismos Alternativos",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Solicitud", "type": "text", "required": true},
@@ -200,7 +200,7 @@
     "id": "estipulaciones-probatorias",
     "title": "Estipulaciones Probatorias",
     "subtitle": "Defensa Penal",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha", "type": "text", "required": true},

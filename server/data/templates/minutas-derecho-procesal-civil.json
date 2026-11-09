@@ -102,7 +102,7 @@
     "id": "solicitud-amparo-pobreza",
     "title": "Solicitud de Amparo de Pobreza",
     "subtitle": "Disposiciones Generales",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -213,7 +213,7 @@
     "id": "solicitud-suspension-proceso-civil",
     "title": "Solicitud de Suspensión de Proceso Civil",
     "subtitle": "Disposiciones Generales",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -300,7 +300,7 @@
     "id": "poder-pruebas-anticipadas",
     "title": "Poder Especial para Solicitar Pruebas Anticipadas",
     "subtitle": "Procesos Declarativos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -381,7 +381,7 @@
     "id": "solicitud-interrogatorio-parte",
     "title": "Solicitud de Interrogatorio de Parte como Prueba Anticipada",
     "subtitle": "Procesos Declarativos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -486,7 +486,7 @@
     "id": "poder-proceso-ordinario",
     "title": "Poder para Adelantar Proceso Ordinario Civil",
     "subtitle": "Procesos Declarativos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -591,7 +591,7 @@
     "id": "demanda-ordinaria-civil",
     "title": "Demanda Ordinaria Civil (Simulación de Contrato)",
     "subtitle": "Procesos Declarativos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -720,7 +720,7 @@
     "id": "contestacion-demanda-civil",
     "title": "Contestación de Demanda Civil",
     "subtitle": "Procesos Declarativos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -837,7 +837,7 @@
     "id": "demanda-proceso-pertenencia",
     "title": "Demanda de Proceso de Pertenencia (Prescripción Adquisitiva)",
     "subtitle": "Procesos Declarativos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -978,7 +978,7 @@
     "id": "demanda-restitucion-inmueble-arrendado",
     "title": "Demanda de Restitución de Inmueble Arrendado",
     "subtitle": "Procesos Declarativos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1107,7 +1107,7 @@
     "id": "demanda-pago-consignacion",
     "title": "Demanda de Pago por Consignación",
     "subtitle": "Procesos Declarativos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1236,7 +1236,7 @@
     "id": "demanda-imposicion-servidumbre",
     "title": "Demanda para Imposición de Servidumbre",
     "subtitle": "Procesos Declarativos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1353,7 +1353,7 @@
     "id": "demanda-division-material",
     "title": "Demanda de División Material de Bien Común",
     "subtitle": "Procesos Declarativos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1488,7 +1488,7 @@
     "id": "poder-proceso-ejecutivo",
     "title": "Poder Especial para Adelantar Proceso Ejecutivo",
     "subtitle": "Procesos Ejecutivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1587,7 +1587,7 @@
     "id": "demanda-proceso-ejecutivo-singular",
     "title": "Demanda de Proceso Ejecutivo Singular",
     "subtitle": "Procesos Ejecutivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1710,7 +1710,7 @@
     "id": "demanda-ejecutiva-titulo-hipotecario",
     "title": "Demanda Ejecutiva con Título Hipotecario",
     "subtitle": "Procesos Ejecutivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1881,7 +1881,7 @@
     "id": "excepciones-previas-proceso-ejecutivo",
     "title": "Excepciones Previas en Proceso Ejecutivo (Recurso de Reposición contra Mandamiento de Pago)",
     "subtitle": "Procesos Ejecutivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -1974,7 +1974,7 @@
     "id": "excepciones-merito-proceso-ejecutivo",
     "title": "Excepciones de Mérito en Proceso Ejecutivo (Cheque)",
     "subtitle": "Procesos Ejecutivos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2067,7 +2067,7 @@
     "id": "solicitud-medidas-cautelares",
     "title": "Solicitud de Medidas Cautelares (Embargo y Secuestro)",
     "subtitle": "Medidas Cautelares",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2220,7 +2220,7 @@
     "id": "incidente-levantamiento-medidas-cautelares",
     "title": "Incidente de Levantamiento de Medidas Cautelares por Tercero",
     "subtitle": "Medidas Cautelares",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2343,7 +2343,7 @@
     "id": "terminacion-proceso-ejecutivo-pago",
     "title": "Terminación del Proceso Ejecutivo por Pago",
     "subtitle": "Medidas Cautelares",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2430,7 +2430,7 @@
     "id": "acumulacion-procesos-ejecutivos",
     "title": "Acumulación de Procesos Ejecutivos",
     "subtitle": "Incidentes y Recursos",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2529,7 +2529,7 @@
     "id": "recurso-queja-auto-apelable",
     "title": "Recurso de Queja por Denegación de Auto Apelable",
     "subtitle": "Incidentes y Recursos",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2628,7 +2628,7 @@
     "id": "incidente-nulidad-remate",
     "title": "Incidente de Nulidad del Remate",
     "subtitle": "Incidentes y Recursos",
-    "tipo_tramite": "Procesal",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2757,7 +2757,7 @@
     "id": "demanda-accion-reivindicatoria",
     "title": "Demanda de Acción Reivindicatoria (Acción de Dominio)",
     "subtitle": "Procesos Declarativos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -2892,7 +2892,7 @@
     "id": "demanda-proceso-monitorio",
     "title": "Demanda de Proceso Monitorio",
     "subtitle": "Procesos Declarativos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -3027,7 +3027,7 @@
     "id": "demanda-verbal-sumario-perjuicios-obligacion",
     "title": "Demanda de Proceso Verbal Sumario (Regulación de Perjuicios / Declaración de Existencia de Obligación)",
     "subtitle": "Procesos Declarativos",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "ciudad_firma",

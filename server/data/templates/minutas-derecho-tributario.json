@@ -1,6 +1,7 @@
 [
   {
     "id": "recurso-reconsideracion",
+    "tipo_tramite": "Administrativo",
     "title": "Recurso de Reconsideración",
     "subtitle": "Recursos y Respuestas",
     "fields": [
@@ -32,6 +33,7 @@
   },
   {
     "id": "respuesta-requerimiento-especial",
+    "tipo_tramite": "Administrativo",
     "title": "Respuesta a Requerimiento Especial",
     "subtitle": "Recursos y Respuestas",
     "fields": [
@@ -62,6 +64,7 @@
   },
   {
     "id": "respuesta-requerimiento-ordinario",
+    "tipo_tramite": "Administrativo",
     "title": "Respuesta a Requerimiento Ordinario",
     "subtitle": "Recursos y Respuestas",
     "fields": [
@@ -81,6 +84,7 @@
   },
   {
     "id": "excepcion-prescripcion-mandamiento-pago",
+    "tipo_tramite": "Administrativo",
     "title": "Excepción de Prescripción contra Mandamiento de Pago",
     "subtitle": "Cobro Coactivo",
     "fields": [

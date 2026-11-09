@@ -3,7 +3,7 @@
     "id": "accion-tutela",
     "title": "Acción de Tutela",
     "subtitle": "Acciones de Tutela",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad donde se Presenta la Tutela", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de Presentación", "type": "text", "required": true},
@@ -26,7 +26,7 @@
     "id": "tutela-agente-oficioso",
     "title": "Solicitud de Acción de Tutela por Agente Oficioso",
     "subtitle": "Acciones de Tutela",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad donde se Presenta la Tutela", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de Presentación", "type": "text", "required": true},
@@ -54,7 +54,7 @@
     "id": "poder-tramitar-tutela",
     "title": "Poder para Tramitar Acción de Tutela",
     "subtitle": "Acciones de Tutela",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha del Poder", "type": "text", "required": true},
@@ -76,7 +76,7 @@
     "id": "poder-contestar-tutela",
     "title": "Poder para Contestar Solicitud de Tutela",
     "subtitle": "Acciones de Tutela",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha del Poder", "type": "text", "required": true},
@@ -99,7 +99,7 @@
     "id": "solicitud-insistencia-revision-tutela",
     "title": "Solicitud de Insistencia de Revisión de Tutela",
     "subtitle": "Acciones de Tutela",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Solicitud", "type": "text", "required": true},
@@ -124,7 +124,7 @@
     "id": "accion-popular",
     "title": "Acción Popular",
     "subtitle": "Acciones Populares y de Cumplimiento",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad donde se Presenta la Acción", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de Presentación", "type": "text", "required": true},
@@ -147,7 +147,7 @@
     "id": "accion-cumplimiento",
     "title": "Acción de Cumplimiento",
     "subtitle": "Acciones Populares y de Cumplimiento",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad donde se Presenta la Acción", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de Presentación", "type": "text", "required": true},
@@ -169,7 +169,7 @@
     "id": "contestacion-accion-cumplimiento",
     "title": "Contestación a la Demanda de Acción de Cumplimiento",
     "subtitle": "Acciones Populares y de Cumplimiento",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Contestación", "type": "text", "required": true},
@@ -193,7 +193,7 @@
     "id": "accion-inconstitucionalidad",
     "title": "Demanda de Acción de Inconstitucionalidad",
     "subtitle": "Control Constitucional",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {"name": "ciudad_firma", "label": "Ciudad", "type": "text", "required": true},
       {"name": "fecha_firma", "label": "Fecha de la Demanda", "type": "text", "required": true},
@@ -212,6 +212,7 @@
 
   {
   "id": "desistimiento-accion-tutela",
+  "tipo_tramite": "Judicial",
   "title": "Desistimiento de la Acción de Tutela",
   "subtitle": "Acciones de Tutela",
   "fields": [
@@ -229,6 +230,7 @@
 
 {
   "id": "contestacion-accion-tutela-general",
+  "tipo_tramite": "Judicial",
   "title": "Contestación de la Acción de Tutela",
   "subtitle": "Acciones de Tutela",
   "fields": [
@@ -251,6 +253,7 @@
 
 {
   "id": "recurso-apelacion-tutela-solicitante",
+  "tipo_tramite": "Judicial",
   "title": "Recurso de Apelación de Tutela (por el Solicitante)",
   "subtitle": "Acciones de Tutela",
   "fields": [
@@ -275,6 +278,7 @@
 
 {
   "id": "recurso-apelacion-tutela-accionado",
+  "tipo_tramite": "Judicial",
   "title": "Recurso de Apelación de Tutela (por la Entidad Accionada)",
   "subtitle": "Acciones de Tutela",
   "fields": [

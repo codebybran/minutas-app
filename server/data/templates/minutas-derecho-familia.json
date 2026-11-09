@@ -1536,7 +1536,7 @@
     "id": "solicitud-correccion-registro-civil",
     "title": "Solicitud de Corrección de Errores en el Registro del Estado Civil",
     "subtitle": "Estado Civil",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Notarial",
     "fields": [
       {
         "name": "notario",
@@ -2289,7 +2289,7 @@
     "id": "constitucion-testamento-cerrado",
     "title": "Constitución de Testamento Cerrado",
     "subtitle": "Sucesiones",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Notarial",
     "fields": [
       {
         "name": "ciudad",
@@ -2472,7 +2472,7 @@
     "id": "solicitud-apertura-testamento-cerrado",
     "title": "Solicitud de Apertura y Publicación de Testamento Cerrado",
     "subtitle": "Sucesiones",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Notarial",
     "fields": [
       {
         "name": "ciudad",
@@ -2772,7 +2772,7 @@
     "id": "poder-liquidacion-sucesion",
     "title": "Poder para Solicitar Liquidación de Sucesión ante Notario",
     "subtitle": "Sucesiones",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Notarial",
     "fields": [
       {
         "name": "ciudad",
@@ -2871,7 +2871,7 @@
     "id": "solicitud-liquidacion-sucesion",
     "title": "Solicitud de Liquidación de Sucesión y Sociedad Conyugal",
     "subtitle": "Sucesiones",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Notarial",
     "fields": [
       {
         "name": "ciudad",
@@ -2976,7 +2976,7 @@
     "id": "inventarios-avaluos-sucesion",
     "title": "Relación de Inventarios y Avalúos de Bienes",
     "subtitle": "Sucesiones",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Notarial",
     "fields": [
       {
         "name": "ciudad",
@@ -3069,7 +3069,7 @@
     "id": "trabajo-particion-adjudicacion",
     "title": "Trabajo de Partición y Adjudicación",
     "subtitle": "Sucesiones",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Notarial",
     "fields": [
       {
         "name": "ciudad",
@@ -4683,7 +4683,7 @@
     "id": "autorizacion-hijos-cancelar-patrimonio",
     "title": "Autorización de Hijos Mayores para Cancelar Patrimonio de Familia",
     "subtitle": "Patrimonio de Familia",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Notarial",
     "fields": [
       {
         "name": "ciudad_firma",
@@ -4887,7 +4887,7 @@
     "id": "acuerdo-divorcio-mutuo-consentimiento",
     "title": "Acuerdo Anexo a Demanda de Divorcio por Mutuo Consentimiento",
     "subtitle": "Separación y Divorcio",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Judicial",
     "fields": [
       {
         "name": "nombre_conyuge1",
@@ -5521,6 +5521,7 @@
   },
   {
     "id": "revocatoria-poder-contraer-matrimonio",
+    "tipo_tramite": "Notarial",
     "title": "Revocatoria de Poder para Contraer Matrimonio",
     "subtitle": "Matrimonio",
     "fields": [
@@ -5762,7 +5763,7 @@
     "id": "solicitud-medida-proteccion-violencia-intrafamiliar",
     "title": "Solicitud de Medida de Protección por Violencia Intrafamiliar",
     "subtitle": "Violencia Intrafamiliar",
-    "tipo_tramite": "Privado",
+    "tipo_tramite": "Administrativo",
     "fields": [
       {
         "name": "ciudad",
